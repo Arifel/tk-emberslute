@@ -1,0 +1,4 @@
+new entry "New_Stat_0"
+type "StatusData"
+data "StatusType" "POLYMORPHED"
+

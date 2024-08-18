@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="5d0dc1bd-d008-4dd0-90be-e49bc9ece2fe" OwnerUUID="f968d509-9e23-44fa-a18c-3abdbbaa12a6" Name="EMLUTE_LUTE_B_StatusEffect_01">
+  <EffectInfo UUID="9173bcb7-00cf-4bcc-ae59-1fa7de35c0c1" EffectResourceGuid="2e1d9adb-574e-ae95-8298-02e3be81c746" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_FX_02" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

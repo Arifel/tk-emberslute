@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="d94233c2-ec55-4524-875b-5e8334e928a2" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_AURA_CircleWave_01_StatusEffect">
+  <EffectInfo UUID="5634b119-2643-48d7-8486-fab9045c5901" EffectResourceGuid="d04c1602-893d-b7bf-0c88-3c022819233d" DetachSource="false" DetachTarget="true" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

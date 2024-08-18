@@ -1,0 +1,11 @@
+new entry "EMLUTE_CONT_MAIN"
+type "Object"
+using "_Container"
+data "RootTemplate" "f2ef5e3b-ae30-425a-98c0-7ec2e0186c10"
+data "Weight" "0.1"
+
+new entry "EMLUTE_CONT_MUSICALSPRITES"
+type "Object"
+using "EMLUTE_CONT_MAIN"
+data "RootTemplate" "201c7bd7-baf7-40a6-b9a6-aee748999b15"
+

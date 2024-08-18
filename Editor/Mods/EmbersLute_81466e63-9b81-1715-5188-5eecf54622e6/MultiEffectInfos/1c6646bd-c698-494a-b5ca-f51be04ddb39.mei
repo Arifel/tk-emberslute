@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="1c6646bd-c698-494a-b5ca-f51be04ddb39" OwnerUUID="f968d509-9e23-44fa-a18c-3abdbbaa12a6" Name="EMLUTE_LUTE_WhiteSheetMusic_StatusEffect_WhiteGlow">
+  <EffectInfo UUID="bf13755c-4dcd-4b64-bedf-a99cc3314347" EffectResourceGuid="9e3c01f8-affb-ee57-76cb-555fd9786b3e" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

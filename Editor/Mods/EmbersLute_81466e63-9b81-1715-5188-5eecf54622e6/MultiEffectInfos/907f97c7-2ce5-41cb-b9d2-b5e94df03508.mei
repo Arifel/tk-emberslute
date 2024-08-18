@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="907f97c7-2ce5-41cb-b9d2-b5e94df03508" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_FLAIR_SWIRLSSUBTLE_01">
+  <EffectInfo UUID="c9a6722a-dd6b-45a1-bcb3-fbca02c27e7b" EffectResourceGuid="f1ac5403-158b-dafb-88bc-51c9ecfff403" DetachSource="false" DetachTarget="true" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" TargetIgnoreTag="8b887261-0cfc-4f86-8e57-48b2287c98c0" />
+</MultiEffectInfos>

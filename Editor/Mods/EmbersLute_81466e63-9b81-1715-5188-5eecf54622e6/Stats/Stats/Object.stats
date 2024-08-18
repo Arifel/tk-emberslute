@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e078e210-b9ba-48e5-afe3-c5eb91ba8545">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONT_MAIN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="18cec264-22ab-44d0-a46f-f36fe4fe9e3a" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f2ef5e3b-ae30-425a-98c0-7ec2e0186c10" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20d813eb-78cb-4451-8051-5720143012ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONT_MUSICALSPRITES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="201c7bd7-baf7-40a6-b9a6-aee748999b15" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

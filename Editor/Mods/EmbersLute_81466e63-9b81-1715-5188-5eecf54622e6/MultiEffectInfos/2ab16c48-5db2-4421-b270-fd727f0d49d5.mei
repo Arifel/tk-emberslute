@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="2ab16c48-5db2-4421-b270-fd727f0d49d5" OwnerUUID="f968d509-9e23-44fa-a18c-3abdbbaa12a6" Name="EMLUTE_LUTE_BlackMono_StatusEffect_BlueGlow">
+  <EffectInfo UUID="e0b7bc2f-7ade-46e8-973a-560623de8d56" EffectResourceGuid="7ef883ea-95d3-1f37-4d28-c8e8d23b8d31" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

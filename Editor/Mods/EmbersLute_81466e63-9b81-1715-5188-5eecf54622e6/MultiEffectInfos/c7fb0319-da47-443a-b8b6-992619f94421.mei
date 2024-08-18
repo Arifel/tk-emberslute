@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="c7fb0319-da47-443a-b8b6-992619f94421" OwnerUUID="f968d509-9e23-44fa-a18c-3abdbbaa12a6" Name="EMLUTE_LUTE_BlackGoldEdge_StatusEffect_ScriptPurple">
+  <EffectInfo UUID="e845467e-65ab-4bee-aac7-d00cddf8d905" EffectResourceGuid="559c86c3-a2ec-4826-00f2-20eb5a54cf08" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

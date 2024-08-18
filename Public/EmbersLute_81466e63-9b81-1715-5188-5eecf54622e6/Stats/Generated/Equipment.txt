@@ -1,0 +1,25 @@
+new equipment "EMLUTE_EQP_Invis_Drum"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "EMBERS_LUTE_INVIS_DRUM"
+
+new equipment "EMLUTE_EQP_Invis_Lyre"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "EMBERS_LUTE_INVIS_LYRE"
+
+new equipment "EMLUTE_EQP_Invis_Lute"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "EMBERS_LUTE_INVIS_LUTE"
+
+new equipment "EMLUTE_EQP_Invis_Violin"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "EMBERS_LUTE_INVIS_VIOLIN"
+
+new equipment "EMLUTE_EQP_Invis_Flute"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "EMBERS_LUTE_INVIS_FLUTE"
+

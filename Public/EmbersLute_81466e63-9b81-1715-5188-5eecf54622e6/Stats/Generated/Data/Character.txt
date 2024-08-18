@@ -1,0 +1,16 @@
+new entry "_Emlute_Music_Spirit_Base"
+type "Character"
+using "_Base"
+data "Strength" "4"
+data "Constitution" "6"
+data "Charisma" "20"
+data "XPReward" "40806669-8c6b-4068-8bc4-07e4981bb020"
+data "Weight" "1"
+data "Flags" "Floating"
+data "DefaultBoosts" "Invulnerable();CanShootThrough(true);SightRangeOverride(0);DetectDisturbancesBlock(true);BlockRegainHP(Undead;Construct;Living)"
+data "SpellCastingAbility" "Charisma"
+
+new entry "Emlute_Music_Spawned_Portal"
+type "Character"
+using "_Emlute_Music_Spirit_Base"
+

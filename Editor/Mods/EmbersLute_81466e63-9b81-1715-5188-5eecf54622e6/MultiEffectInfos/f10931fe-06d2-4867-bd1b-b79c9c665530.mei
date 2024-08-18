@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="f10931fe-06d2-4867-bd1b-b79c9c665530" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_FLAIR_VORTEX_01">
+  <EffectInfo UUID="830763ae-6a3b-4cf1-bdc8-7570ebd72f01" EffectResourceGuid="6e49f629-6ba5-a042-1c5b-05c7fb068607" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

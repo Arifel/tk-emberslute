@@ -1,0 +1,28 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_OneTimeRewards_EmbersLute(1,(ITEMROOT)EmbersLute_MusicalSpritesWhite_a2a12008-23ae-4006-9d3e-4cb55c1c829e);
+DB_OneTimeRewards_EmbersLute(2,(ITEMROOT)EmbersLute_MusicalSpritesBlackMonochrome_888e0a01-2ed8-4392-be2f-cc2be009f021);
+KBSECTION
+//On loading or starting game, add the lutes to player inventory
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Avatars(_Player)
+THEN
+PROC_OneTimeReward_GiveReward(1,1,1,_Player);
+PROC_OneTimeReward_GiveReward(2,1,1,_Player);
+
+//Send to inventory
+PROC
+PROC_OneTimeReward_GiveReward((INTEGER)_RewardNo,(INTEGER)_Amount,(INTEGER)_Notification,(GUIDSTRING)_Player)
+AND
+NOT DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo)
+AND
+DB_OneTimeRewards_EmbersLute(_RewardNo,_Reward)
+THEN
+DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo);
+TemplateAddTo(_Reward,_Player,_Amount,_Notification);
+EXITSECTION
+
+ENDEXITSECTION

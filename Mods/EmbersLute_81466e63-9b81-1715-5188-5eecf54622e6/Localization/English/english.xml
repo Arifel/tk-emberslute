@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="14">Lute of Musical Sprites (Black)</content>
+  <content contentuid="hcc751221g7408g56e7gf2d8g79f22adae505" version="1">Musical Maestro</content>
+  <content contentuid="h3ff672ccg53d4gec6bg0d4fg0dec3f5eb2ae" version="1">Emitting an aura of instruction to nearby musical sprites and spirits.</content>
+  <content contentuid="h42b4d5a9gba63g5347ga182g2e0ed376f363" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="hac6523f0g1765gce4ag8353g041f0e525188" version="1">If you can see this it is a bug.</content>
+  <content contentuid="h2ececa62g5220gfef7g070fgcbce9d3b8266" version="1">Musical Silence</content>
+  <content contentuid="h4d3bef61gd94ag9b9eg6e63g86156504c7d2" version="1">Received instruction to stop performing.</content>
+  <content contentuid="h04af4db2g10acg2737ga5c1g1128312fc82e" version="1">Musical Spirit</content>
+  <content contentuid="h61695194ga9ccgfad2g83e6g934dbe0e4fe2" version="1">Start a performance on one of Ember's instruments; this musical spirit will join you.</content>
+  <content contentuid="h0ff1eb70g5d88g53dcg49f8gde4b6b039062" version="1">Show Time!</content>
+  <content contentuid="h7ddc7f3agf285geff8gf5dfgff2ce61d3293" version="1">This spirit will play along with performances on Ember's instruments.</content>
+  <content contentuid="he1c1997bg33c1gbdf8gef3aga82f8eb95448" version="1">Musical Portal</content>
+  <content contentuid="hc605408agd66dg8d6cg9d60g4719d2e2abac" version="1">A mysterious portal through which only music can travel.</content>
+  <content contentuid="h73cacd61gfbadg814fg660dg5cd73594b448" version="1">|Hidden| Hidden</content>
+  <content contentuid="h76fa66afg7951gf6e9g410fgf6732b9c26d5" version="2">Intentionally hidden. If you can see this, it is a bug.</content>
+  <content contentuid="h6428f250g5e50gb064gc1c0gcc951052932d" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="hf91e1944g09b1gce6ag0e81g3c4220db0cc5" version="1">If you can see this it is a bug.</content>
+  <content contentuid="he22a0b2bgc980gaa71gc78ag7694b5095e65" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="habb03dc1gd59ag1cdcgd488g80d624595e35" version="1">If you can see this it is a bug.</content>
+  <content contentuid="h48a1b931g2cd3g7211gc881g4077e6a6441e" version="1">|Hidden| Hidden</content>
+  <content contentuid="had84f3a8g3cc8ge2f7g55d8gd72a8c1a390d" version="1">Intentionally hidden. If you can see this, it is a bug.</content>
+  <content contentuid="h26081640g84d5g94a5g3e54gb5edab142531" version="1">Sprite Summoning</content>
+  <content contentuid="hd7d97d06g2228gef52g1c7eg1740137e4aea" version="1">Music-loving instrument sprites will join in with songs played on this instrument.</content>
+  <content contentuid="he60380cegf440g72bdgc9dag2f1cc519e144" version="1">Sprite-Summoning Disabled</content>
+  <content contentuid="h3a3f9b07gea16gcaa0g4293g432a529ef1c4" version="1">The auto-summoning of musical sprites to complete musical performances is being suppressed.</content>
+  <content contentuid="hd247fae5g8610g6536gbe24g9d5d357260f1" version="1">Sprite-Summoning Enabled</content>
+  <content contentuid="hf815332ag9d8dg1857g4667gfc57ea732531" version="2">Invisible Drum</content>
+  <content contentuid="hec9bf578gf114g2667gf4beg3d10d754ff45" version="2">Invisible drum used by musical sprites</content>
+  <content contentuid="h095ddae4gbd97g1e01gc61dg9b46c830d9ae" version="5">A Thunder of Drums</content>
+  <content contentuid="hc3f75e90g834agd480g377egf96e108dbc4d" version="2">|Hidden| Perform with Sprites</content>
+  <content contentuid="h81faf5b5gf9d6g4c3egc30ag659545e826c1" version="2">Perform music with instrument sprites.</content>
+  <content contentuid="h4c8ef786g598dg8581g3dd2g755d7db6af2d" version="1">Perform with Sprites</content>
+  <content contentuid="h38b2a6f3ge2d2gdaf5gec92g7ae28ef54561" version="1">Perform music with sprites.</content>
+  <content contentuid="hfcec3908g8c4cgb441g62b3g1bff0cfef140" version="1">Drum Sprites</content>
+  <content contentuid="ha371df7dg885fgb3abgae5eg183a8e2e92bf" version="2">Drum sprites will auto-join music performances.</content>
+  <content contentuid="hc5e95c27g1620g7bd8g703fg706cce751286" version="1">Toggle Drum Support</content>
+  <content contentuid="h7a98a23dgec8bgb90fg7f14ga586eedea107" version="1">Disable or enable to manage whether drums should accompany your musical performances.</content>
+  <content contentuid="h81a69cd1ga18egfdb2g52b3g50bc735ad028" version="1">Toggle Flute Support</content>
+  <content contentuid="h0fb443aag13faga7e5ga607gcfae29296176" version="1">Disable or enable to manage whether flutes should accompany your musical performances.</content>
+  <content contentuid="h9191d535g39deg07b1gae71g8ae8215d9d95" version="1">Toggle Violin Support</content>
+  <content contentuid="h1e2dbafag0c42gc954g2ad2ga23dc4d814ae" version="1">Disable or enable to manage whether violins should accompany your musical performances.</content>
+  <content contentuid="hf92be1b8g0ae4g81b0g8367g4dbd200a5d19" version="1">Toggle Lyre Support</content>
+  <content contentuid="h2be6ef8ag723bg751bg0f56g169712f96249" version="1">Disable or enable to manage whether lyres should accompany your musical performances.</content>
+  <content contentuid="h7075b924gda9fgecbfg80f2g854bd0d116ff" version="1">Disable or enable to manage whether lutes should accompany your musical performances.</content>
+  <content contentuid="hb1491831gf18eg5f2cge6b9g4741e6512b12" version="1">Toggle Vocal Support</content>
+  <content contentuid="h8b221e78g830bg849bgaf1dga98e9e4fc49a" version="1">Disable or enable to manage whether vocals should accompany your musical performances.</content>
+  <content contentuid="h099a6b51g82f5gd1d4g14edga8f973a14b68" version="1">Toggle Lute Support</content>
+  <content contentuid="h639544f5gc899g83a3gbe6fg7ab66fd3885b" version="1">Musical Conductor</content>
+  <content contentuid="h59c40e85g303dg41acg1cafg1e1d048057c4" version="1">Manage which instrument types support your performances by toggling the corresponding Passive ability.</content>
+  <content contentuid="h6f61b67dg08afg92e9gfbb2gd78262d50625" version="1">|Hidden| Hidden</content>
+  <content contentuid="h0edd7310g2ed7g96a8ga3cega9b4735d78be" version="1">Intentionally hidden. If you can see this, it is a bug.</content>
+  <content contentuid="h19798fb0g6f6cgfc67gdfa0g8012476ba893" version="1">Invisible Lute</content>
+  <content contentuid="ha364c9adgfbddgf079geb93gd6b127631b98" version="1">Invisible drum used by musical sprites</content>
+  <content contentuid="h252b87fbg04a6g32f6g6800g997c326c4d1c" version="1">Invisible Flute</content>
+  <content contentuid="h1c12ae00g15e0g9532g9b17g0e28ccfd6c91" version="1">Invisible flute used by musical sprites</content>
+  <content contentuid="h887704d9gef0cg770dgbfe7g46e0e93b73f6" version="2">An invisible lute used by the musical sprites</content>
+  <content contentuid="hda95aea0g9e61gad31gf682gb57157c80975" version="1">Invisible Lyre</content>
+  <content contentuid="he4f97340gcdb1g1764gb1a8g51dc8b2ac302" version="2">Invisible Violin</content>
+  <content contentuid="hbce14df8ge753g0b1dg0583ga2fe5d66de33" version="2">An invisible violin used by the musical sprites</content>
+  <content contentuid="h9ffd9cf8g68bbg669egbf71gc231a708822c" version="2">A Crescendo of Flutes</content>
+  <content contentuid="h6dbe14c1g3605g3286g99e2g00b354e0c92d" version="2">A Cacophony of Violins</content>
+  <content contentuid="h398b98e0gb762gd211g1c38ge6363d0d699b" version="2">A Cascade of Lyres</content>
+  <content contentuid="h45d6821ega24agd227ge999gc3143f0d3f52" version="2">A Chorus of Lutes</content>
+  <content contentuid="hb3ddf5d4g75cdg642fg0aa6gfbd4cc493d95" version="1">Flute Sprites</content>
+  <content contentuid="hf51d5fdcg1142gacc9g7c1dg071967d2d2fa" version="2">Flute sprites will auto-join music performances.</content>
+  <content contentuid="h646e327cg8f61g04d5g10dbg3e4a4ba1adf8" version="1">A Harmonizing of Vocals</content>
+  <content contentuid="h7bed5cefg0be7g099ege40eg607ceb50435b" version="1">Lyre Sprites</content>
+  <content contentuid="h2f46778bg6114g3c96gdb82g69a896df27dc" version="1">Lyre sprites will auto-join music performances.</content>
+  <content contentuid="h7aac2789gac8agf0e2ga87bg2074f83557fe" version="1">Lute Sprites</content>
+  <content contentuid="hf58b7eafgcaf6gdd8bg7b73gd44a1c090113" version="1">Lute sprites will auto-join music performances.</content>
+  <content contentuid="h16b8c85dg89dcgb556g54ecg7479c6a0e7bf" version="1">Violin Sprites</content>
+  <content contentuid="h29837054g74c5g0eb6g9585gfcf334186ad4" version="1">Violin sprites will auto-join music performances.</content>
+  <content contentuid="h4d51c882g70c6g3859g8abeg248f857fb428" version="1">Vocal Sprites</content>
+  <content contentuid="ha8f71ba7gb88agfeceg7cbcg989d20d0ddef" version="1">Vocal sprites will auto-join music performances.</content>
+  <content contentuid="h97b07c7bg44d2g6424g3725g4070a5140aee" version="1">Invisible Flute</content>
+  <content contentuid="hfa0ff3dcgf1e9g5197gec98gc37e663ec82c" version="1">Invisible Lute</content>
+  <content contentuid="hbb754a04g74fagca3dg8bc0ga99f998f8b58" version="1">Musical Sprites</content>
+  <content contentuid="h518838bbgb20cg01b5g4963g0e7f7fdd8247" version="2">Mysterious musical sprites dance around the performer whenever music is played on this instrument.</content>
+  <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="8">Lute of Musical Sprites</content>
+  <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="8">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="8">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="3">Musical Sprites Instruments</content>
+  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="3">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
+  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="2">Instrument Chest</content>
+  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="2">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
+  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="7">Lute of Musical Sprites (White)</content>
+  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="7">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="hb6cf612cgfa35g5e6bg3cc1gf32d239e655b" version="7">Lute of Musical Sprites (VT TEST)</content>
+  <content contentuid="hc22b08b0g6fc3g7924gd3a6gb6f1df879da0" version="7">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="hba31e0dfg7022g3dc5gedb9gf51e7e56a9a1" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h383196bdg2f1eg3b08g3e38g3cbe5c363486" version="2">Applying Instrument Visual</content>
+  <content contentuid="h985a7b1eg01e8g6631g7887g0145b18131e8" version="1">Sprites are changing the appearance of your instrument.</content>
+  <content contentuid="h269cf71bg023dg05bcg87a1g4cc5edb07b7a" version="1">Apply VFX</content>
+  <content contentuid="h2b5905eeg72d1g47c1gc6b4g7145ec457361" version="1">Visual: Smoke (Purple)</content>
+  <content contentuid="h4f8bdeebgd555g4de3g2e2fgb3e4bc0e3c67" version="2">Apply a subtle smoke and sparkles visual effect.</content>
+  <content contentuid="h0c65fedbg674cg0de5g780bg1d345cc8f45b" version="1">Toggle off to suppress the music performance VFX.</content>
+  <content contentuid="ha6408864g8365ge6a9gf01dgc59adab12d69" version="1">SCRIPT TEST</content>
+  <content contentuid="h7522e18ag2499g8c88g0599g7468a8455c99" version="1">I AM A TEST</content>
+  <content contentuid="h6435cd31gab9dgd538ge5d8g73b1459f87cc" version="1">Clearing Instrument Visual</content>
+  <content contentuid="hc9726cd3g0681g5768ga715gdb95fe041517" version="1">Clear the instrument visual effect.</content>
+  <content contentuid="he064e9feg62c2gb086gceaag4a2565b8f366" version="1">Smoke Visual</content>
+  <content contentuid="h35411d26g6ad5gdca7gec0dga0348d5a06fb" version="1">A smoke and sparkles visual is applied to this lute.</content>
+  <content contentuid="h17e96c86gf314ga35ag089fgccf0100316f5" version="1">The auto-summoning of musical sprites is enabled.</content>
+  <content contentuid="h818f7d88g3c05gdff4g1006gaf19d725256d" version="1">Glowmap: Script (Purple)</content>
+  <content contentuid="hc8b59e56g1d5eg1a99g7433ge7e889d237fd" version="1">Apply a purple script glowmap effect.</content>
+  <content contentuid="hbc15f766g0d52g82eag1309geae31da4f3e8" version="1">Purple Script Visual</content>
+  <content contentuid="h8486ba14g6e42gb4deg15e5ge8ab4117ded1" version="1">A purple script glowmap visual is applied to this lute.</content>
+  <content contentuid="hec0a8ebeg22f3gdfd7g5238g55e8d109447f" version="1">Mysterious musical sprites inhabit this instrument.</content>
+  <content contentuid="h154fc043gf4bbg21b8g2533g8c2192754bd2" version="1">Toggle off to perform single instrument tracks only.</content>
+  <content contentuid="h561e2b26gb593g9c70gd3dbg881c2919938e" version="1">Lore description test.</content>
+  <content contentuid="h398d0669g2a73g11bdg64f4g5174f98dfc14" version="1">Clearing Instrument Lighting</content>
+  <content contentuid="ha64e9a62gf6ceg112ag5993g12b9f946713e" version="1">Clear the instrument lighting effect.</content>
+  <content contentuid="h66bf518eg7a75g21a8g8ed3g9d22f0f1fdb0" version="1">Musical Spirit (Honorary)</content>
+  <content contentuid="h7c224ed9g4b42gc0e6gb6e6geec2847decba" version="1">Has been granted musical gifts. Will automatically join in with nearby performances if the lead perfomer is using one of Ember's instruments. Effects will wear off after a long rest.</content>
+  <content contentuid="h14f280fbgc270g7b04g63d8ga279cd2097fc" version="1">Share Musical Gifts</content>
+  <content contentuid="h88072179g8a79g6a0bgf3aag76f47c6c96fa" version="1">Instrument sprites will grant musical gifts to your nearby party. They will auto join in with music if the lead perfomer is using one of Ember's instruments.</content>
+  <content contentuid="h39827b06gcce7gceffg01c1gbdc3d1dcf0b4" version="1">Effects will wear off after a long rest.</content>
+  <content contentuid="h5a7504e2g2651gf50eg0b1cg62138707fb95" version="1">Instrument sprites will grant musical gifts to your nearby party.</content>
+  <content contentuid="hedc7c935g263fgdb25g83ecg8d2f9cb8e869" version="1">Purple Music Visual</content>
+  <content contentuid="h3af6fea0g54efg251dg7017g5a4477039522" version="1">A glowing purple sheet music visual is applied to this lute.</content>
+  <content contentuid="hc5c404dfga903g5b24ga364g8b4ea55fa869" version="1">Glowmap: Music (Purple)</content>
+  <content contentuid="h485287ecgd837g975cg5cfdg73602e3d6fd8" version="1">Apply a glowing purple sheet music effect.</content>
+  <content contentuid="h22bc4c4cgc521g2ac6g4fc4g0251001d3a83" version="1">Blue Music Visual</content>
+  <content contentuid="h735a06c3gc81bga717g88ffg9db18f84b5e3" version="1">A glowing blue sheet music visual is applied to this lute.</content>
+  <content contentuid="h6b068448g7d67g5e7age436gad506798cc1b" version="1">Glowmap: Music (Blue)</content>
+  <content contentuid="h202623fbgc93fgca4fgf4cdg02e730b5d772" version="1">Apply a glowing blue sheet music effect.</content>
+  <content contentuid="h1bd5031eg3d3fgad66g37fega1db4ac223aa" version="1">Lute Glowmaps</content>
+  <content contentuid="hb72a357eg7a9cge019gd2fcge2f46486bd4e" version="1">Apply a visual to the equipped instrument.</content>
+  <content contentuid="h64be9c46gdca0g7e17g73dag10553b5fc112" version="1">Purple Sheet Music</content>
+  <content contentuid="h6dcf1eddg03ffg4b02g6d5ag5dcda31a5e05" version="1">Apply a glowing purple sheet music visual to the equipped instrument.</content>
+  <content contentuid="ha1a8ecebg0562gcde9g28eeg71eb3bc7fd85" version="1">Blue Sheet Music</content>
+  <content contentuid="h5cedf44dgd45eg8e41g3819gd4eb7ca5b80b" version="1">Apply a glowing blue sheet music visual to the equipped instrument.</content>
+  <content contentuid="hbe5764a1g8774g800cg5816gd0df0f58de59" version="1">White Music Visual</content>
+  <content contentuid="h3dc83749g9c93g9217g6c05g9ae64e138f96" version="1">A glowing white sheet music visual is applied to this lute.</content>
+  <content contentuid="hb196dc30gefb7g413bg231ag795a14094643" version="1">Blue Flourish Visual</content>
+  <content contentuid="h88a39453g98d4gc7aag5609g32f339dd1a1b" version="1">A glowing blue sheet music visual is applied to this lute.</content>
+  <content contentuid="hab3060e8gd127g9698ge999ge074af3c715a" version="1">Purple Flourish Visual</content>
+  <content contentuid="h0374a4c6gbfc9g83e1g81b2gd1997b3351ad" version="1">A glowing purple flourish visual is applied to this lute.</content>
+  <content contentuid="hcc079547g971ag3fd6gb9e6gd959fe2e82db" version="1">White Flourish Visual</content>
+  <content contentuid="h8626d7b2gf30eg2117g45f2g56b04722565c" version="1">A glowing white flourish visual is applied to this lute.</content>
+  <content contentuid="hac2097f2g9170ge03bgf9adge7465b38d3b6" version="1">White Sheet Music</content>
+  <content contentuid="hee91d3dcg7155g980eg5dcfg1ac8e1e4fa01" version="1">Apply a glowing white sheet music visual to the equipped instrument.</content>
+  <content contentuid="hde92c870g5142g93b4g4267g0bb59820575b" version="1">Purple Flourish</content>
+  <content contentuid="hc066a731gafeege150geeb3g1ea7bf960a9c" version="1">Apply a glowing purple flourish visual to the equipped instrument.</content>
+  <content contentuid="h69a9f12bgba45g9a78g68e4gb2496828ce3a" version="1">Lute Glowmaps</content>
+  <content contentuid="h48fe047cg0805g261dgfa2dgda904cb62c93" version="1">Apply a visual to the equipped instrument.</content>
+  <content contentuid="hd7ab4a8cga827gb2d9g94deg3896ecebf2fc" version="1">Blue Flourish</content>
+  <content contentuid="hf1c85510g7498g585eg28f7g46bd33432eb6" version="1">Apply a glowing blue flourish visual to the equipped instrument.</content>
+  <content contentuid="hae26994cgb558g736bg456fga3555e5c6e0f" version="1">White Flourish</content>
+  <content contentuid="he7e9c3b7g91c5g8c19g4e18g7ac849880f03" version="1">Apply a glowing white flourish visual to the equipped instrument.</content>
+  <content contentuid="ha01550f0g06d7gc1dega4ccg3fd20f4ad051" version="1">Clear Glowmap</content>
+  <content contentuid="h82aae23ag79d4gc8d9ge41cge7f08799185b" version="1">Clear any glowmap effects from the equipped instrument.</content>
+  <content contentuid="hf5d5f6dcg2c1eg3b5dg959ag9b95ca55e96f" version="1">Clear Glowmap</content>
+  <content contentuid="hdf53eb06gef20g7027g5d63g861462fcc04b" version="1">Clear any glowmap effects from the equipped instrument.</content>
+  <content contentuid="h9103e622g4bfeg6299g7423g38044d878c3f" version="1">Combat Performance</content>
+  <content contentuid="h9663f48dg1c6eg88d7g6d35gac1eaf9d856b" version="1">Use &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to perform music in combat. Not available out of combat.</content>
+  <content contentuid="h63bf970cgf7f4g6459g6e3bg0f33cb8bd22a" version="1">Combat Performance</content>
+  <content contentuid="h2eded194g2db4g2c50ga65cg579c1f8d3966" version="1">While focused on a musical performance in-combat, you are unable to take actions or move. Break &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to restore your action points and movement.</content>
+</contentList>

@@ -1,0 +1,12 @@
+new entry "Target_MusicFriendlyMainHandAttack_Emlute"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_MainHandAttack"
+data "SpellFlags" "IsAttack;IsMelee;IsHarmful;CanDualWield;DontAbortPerforming"
+
+new entry "Target_MusicFriendlyUnarmedAttack_Emlute"
+type "SpellData"
+data "SpellType" "Target"
+using "Target_UnarmedAttack"
+data "SpellFlags" "IsAttack;IsMelee;IsHarmful;DisableBlood;DontAbortPerforming"
+

@@ -1,0 +1,6 @@
+new entry "Projectile_MusicFriendlyMainHandAttack_Emlute"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_MainHandAttack"
+data "SpellFlags" "IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;DontAbortPerforming"
+

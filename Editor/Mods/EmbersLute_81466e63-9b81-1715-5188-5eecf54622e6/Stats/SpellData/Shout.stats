@@ -80,6 +80,92 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_HighSeas" />
       </fields>
     </stat_object>
+    <stat_object color="#FF4169E1" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36a1804b-2849-4876-822f-117046fda430" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Combat_Emlute" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_ThePower_Combat_Emlute;Shout_Bard_Perform_BardDance_Combat_Emlute;Shout_Bard_Perform_Stargazing_Combat_Emlute;Shout_Bard_Perform_DoS2_1_Combat_Emlute;Shout_Bard_Perform_DoS2_2_Combat_Emlute;Shout_Bard_Perform_DoS2_3_Combat_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Perform_Combat" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9103e622g4bfeg6299g7423g38044d878c3f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9663f48dg1c6eg88d7g6d35gac1eaf9d856b" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c8cbc9e-6fdd-4c8b-b6b0-e84a0573d43e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_ThePower_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f1308056-8a05-4979-b097-4f2636f31d1c" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWER,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ac27b2b-a32b-47a3-824f-db42338fcb02" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_BardDance_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4f310a22-7772-4462-8eaa-d2f77455f210" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BARDDANCE,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2147382b-587f-4ac4-94d7-7bca6f968393" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stargazing_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db6ef2b3-97f5-40b5-9c95-b72702e347d3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_STARGAZING,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb6217ad-6dab-49a7-a77f-fda7607f6637" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_1_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="899d0ded-7bb8-4d07-b4e0-659ff2665fd0" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_1,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="63f6d752-f61f-46c8-aa36-84cebc281ee9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_2_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8f7b4213-0488-47ba-9d3e-a57f59df9507" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_2,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8446b720-4389-424a-b04b-42eb230e2811" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS3_3_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d01b2df4-38e6-4476-9b9e-69cc6ed20cb7" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="805c92c1-5bea-47af-be66-873713fda639" />

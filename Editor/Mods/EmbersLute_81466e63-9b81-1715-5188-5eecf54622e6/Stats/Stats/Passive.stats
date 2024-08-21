@@ -3,17 +3,6 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSpritesSpellContainer" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc3f75e90g834agd480g377egf96e108dbc4d" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81faf5b5gf9d6g4c3egc30ag659545e826c1" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a7c742ca-7f31-4288-9039-ca6c844eb9a5" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_DancingSprites" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbb754a04g74fagca3dg8bc0ga99f998f8b58" version="1" />
@@ -359,6 +348,42 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="78a72601-ec51-4118-8c30-74b16e848819" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc5c404dfga903g5b24ga364g8b4ea55fa869" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h485287ecgd837g975cg5cfdg73602e3d6fd8" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF0000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+        <field name="Name" type="NameTableFieldDefinition" value="_EMLUTE_LEGACY_PASSIVES" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSpritesSpellContainer" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc3f75e90g834agd480g377egf96e108dbc4d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h81faf5b5gf9d6g4c3egc30ag659545e826c1" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="44c7b7e5-922c-4748-b5e1-4a787a07d649" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_SpellContainer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6bf1ffe2-4a91-4455-b3d7-201539c6775d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_CombatSpellContainer" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc401351cgd3f7g5097g0c41g7c33cebe792c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he57f6867ga6bbge023g903fg9fcfc9caa600" version="1" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h31805e88gbf17g0042ga9acg53206ed9d929" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Combat_Emlute)" />
       </fields>
     </stat_object>
   </stat_objects>

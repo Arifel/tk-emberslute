@@ -82,6 +82,13 @@
                     <attribute id="V2" type="float" value="0.062011719"/>
                 </node>
                 <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_Perform_Combat"/>
+                    <attribute id="U1" type="float" value="0.87548828"/>
+                    <attribute id="U2" type="float" value="0.93701172"/>
+                    <attribute id="V1" type="float" value="0.00048828125"/>
+                    <attribute id="V2" type="float" value="0.062011719"/>
+                </node>
+                <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_RehearsalGates"/>
                     <attribute id="U1" type="float" value="0.62548828"/>
                     <attribute id="U2" type="float" value="0.68701172"/>

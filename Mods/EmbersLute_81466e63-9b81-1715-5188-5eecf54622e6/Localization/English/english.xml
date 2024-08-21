@@ -26,8 +26,8 @@
   <content contentuid="he60380cegf440g72bdgc9dag2f1cc519e144" version="1">Sprite-Summoning Disabled</content>
   <content contentuid="h3a3f9b07gea16gcaa0g4293g432a529ef1c4" version="1">The auto-summoning of musical sprites to complete musical performances is being suppressed.</content>
   <content contentuid="hd247fae5g8610g6536gbe24g9d5d357260f1" version="1">Sprite-Summoning Enabled</content>
-  <content contentuid="hf815332ag9d8dg1857g4667gfc57ea732531" version="2">Invisible Drum</content>
-  <content contentuid="hec9bf578gf114g2667gf4beg3d10d754ff45" version="2">Invisible drum used by musical sprites</content>
+  <content contentuid="hf815332ag9d8dg1857g4667gfc57ea732531" version="3">Invisible Drum</content>
+  <content contentuid="hec9bf578gf114g2667gf4beg3d10d754ff45" version="3">Invisible drum used by musical sprites</content>
   <content contentuid="h095ddae4gbd97g1e01gc61dg9b46c830d9ae" version="5">A Thunder of Drums</content>
   <content contentuid="hc3f75e90g834agd480g377egf96e108dbc4d" version="2">|Hidden| Perform with Sprites</content>
   <content contentuid="h81faf5b5gf9d6g4c3egc30ag659545e826c1" version="2">Perform music with instrument sprites.</content>
@@ -55,10 +55,10 @@
   <content contentuid="ha364c9adgfbddgf079geb93gd6b127631b98" version="1">Invisible drum used by musical sprites</content>
   <content contentuid="h252b87fbg04a6g32f6g6800g997c326c4d1c" version="1">Invisible Flute</content>
   <content contentuid="h1c12ae00g15e0g9532g9b17g0e28ccfd6c91" version="1">Invisible flute used by musical sprites</content>
-  <content contentuid="h887704d9gef0cg770dgbfe7g46e0e93b73f6" version="2">An invisible lute used by the musical sprites</content>
-  <content contentuid="hda95aea0g9e61gad31gf682gb57157c80975" version="1">Invisible Lyre</content>
-  <content contentuid="he4f97340gcdb1g1764gb1a8g51dc8b2ac302" version="2">Invisible Violin</content>
-  <content contentuid="hbce14df8ge753g0b1dg0583ga2fe5d66de33" version="2">An invisible violin used by the musical sprites</content>
+  <content contentuid="h887704d9gef0cg770dgbfe7g46e0e93b73f6" version="3">An invisible lute used by the musical sprites</content>
+  <content contentuid="hda95aea0g9e61gad31gf682gb57157c80975" version="2">Invisible Lyre</content>
+  <content contentuid="he4f97340gcdb1g1764gb1a8g51dc8b2ac302" version="3">Invisible Violin</content>
+  <content contentuid="hbce14df8ge753g0b1dg0583ga2fe5d66de33" version="3">An invisible violin used by the musical sprites</content>
   <content contentuid="h9ffd9cf8g68bbg669egbf71gc231a708822c" version="2">A Crescendo of Flutes</content>
   <content contentuid="h6dbe14c1g3605g3286g99e2g00b354e0c92d" version="2">A Cacophony of Violins</content>
   <content contentuid="h398b98e0gb762gd211g1c38ge6363d0d699b" version="2">A Cascade of Lyres</content>
@@ -74,8 +74,8 @@
   <content contentuid="h29837054g74c5g0eb6g9585gfcf334186ad4" version="1">Violin sprites will auto-join music performances.</content>
   <content contentuid="h4d51c882g70c6g3859g8abeg248f857fb428" version="1">Vocal Sprites</content>
   <content contentuid="ha8f71ba7gb88agfeceg7cbcg989d20d0ddef" version="1">Vocal sprites will auto-join music performances.</content>
-  <content contentuid="h97b07c7bg44d2g6424g3725g4070a5140aee" version="1">Invisible Flute</content>
-  <content contentuid="hfa0ff3dcgf1e9g5197gec98gc37e663ec82c" version="1">Invisible Lute</content>
+  <content contentuid="h97b07c7bg44d2g6424g3725g4070a5140aee" version="2">Invisible Flute</content>
+  <content contentuid="hfa0ff3dcgf1e9g5197gec98gc37e663ec82c" version="2">Invisible Lute</content>
   <content contentuid="hbb754a04g74fagca3dg8bc0ga99f998f8b58" version="1">Musical Sprites</content>
   <content contentuid="h518838bbgb20cg01b5g4963g0e7f7fdd8247" version="2">Mysterious musical sprites dance around the performer whenever music is played on this instrument.</content>
   <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="8">Lute of Musical Sprites</content>

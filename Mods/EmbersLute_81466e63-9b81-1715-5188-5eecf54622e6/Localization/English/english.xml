@@ -90,9 +90,9 @@
   <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="7">Lute of Musical Sprites (White)</content>
   <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="7">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="hb6cf612cgfa35g5e6bg3cc1gf32d239e655b" version="7">Lute of Musical Sprites (VT TEST)</content>
-  <content contentuid="hc22b08b0g6fc3g7924gd3a6gb6f1df879da0" version="7">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="hba31e0dfg7022g3dc5gedb9gf51e7e56a9a1" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="hb6cf612cgfa35g5e6bg3cc1gf32d239e655b" version="8">Lute of Musical Sprites (VT TEST)</content>
+  <content contentuid="hc22b08b0g6fc3g7924gd3a6gb6f1df879da0" version="8">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="hba31e0dfg7022g3dc5gedb9gf51e7e56a9a1" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="h383196bdg2f1eg3b08g3e38g3cbe5c363486" version="2">Applying Instrument Visual</content>
   <content contentuid="h985a7b1eg01e8g6631g7887g0145b18131e8" version="1">Sprites are changing the appearance of your instrument.</content>
   <content contentuid="h269cf71bg023dg05bcg87a1g4cc5edb07b7a" version="1">Apply VFX</content>
@@ -161,7 +161,7 @@
   <content contentuid="h9663f48dg1c6eg88d7g6d35gac1eaf9d856b" version="1">Use &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to perform music in combat. Not available out of combat.</content>
   <content contentuid="h63bf970cgf7f4g6459g6e3bg0f33cb8bd22a" version="1">Combat Performance</content>
   <content contentuid="h2eded194g2db4g2c50ga65cg579c1f8d3966" version="1">While focused on a musical performance in-combat, you are unable to take actions or move. Break &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to restore your action points and movement.</content>
-  <content contentuid="hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9" version="4">|Divider|</content>
+  <content contentuid="hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9" version="5">Legacy Passive</content>
   <content contentuid="h1d208db4ge704g2904g5617ge03fbff461ae" version="1">|Hidden| Hidden</content>
   <content contentuid="h79fc2cc0ga85bg7f35g26ddg76e5fcd04cdb" version="1">Intentionally hidden. If you can see this, it is a bug.</content>
   <content contentuid="h765be200g4696g3231g3a33g2c92585f373f" version="1">Clear Instruction Aura</content>
@@ -193,4 +193,20 @@
   <content contentuid="h8eb5a380g3765g606ag0d1fg882bb0b78b0c" version="1">Sending instruction for 1 round of silence.</content>
   <content contentuid="h73bdb72cg50beg9c34gf5a6g4e0c3803c381" version="1">Perform with an Ensemble</content>
   <content contentuid="h2a74394fg7755gf5ecg09abgb94bc4a9e43f" version="1">Perform music with summoned ensembles.</content>
+  <content contentuid="h44ed2f5cg3991ge7f0g326egfca8c7845e7f" version="1">Performing 'The Weeping Dawn'</content>
+  <content contentuid="hbc2373f8g7784g6757gd364ga191e4146e4b" version="1">Playing a heartfelt tribute to lost friends..</content>
+  <content contentuid="h3e6f6028gba8ega408gb8ecgb5b051ed82b8" version="1">Perform 'The Weeping Dawn'</content>
+  <content contentuid="he2d45343g932dgecefgb33bg72062277cfb4" version="1">Join the spirit of a tragic tiefling bard and play a heartfelt tribute to lost friends.</content>
+  <content contentuid="hc6d5f327g7033gccc1g483fgc0913d622a1e" version="3">Ver1 Legacy</content>
+  <content contentuid="h0abbf36fg42b8g8ab9g72f3gf582d90bb712" version="1">This is a legacy status for backwards compatibility. Please unequip and re-equip the Ember's Lute instrument to remove this.</content>
+  <content contentuid="h4503a1c4gb9fcg6eedg1365g55e25ba9daae" version="1">This is a legacy status for backwards compatibility. Please unequip and re-equip the Ember's Lute instrument to remove this if it does not remove itself.</content>
+  <content contentuid="hb9f04893g97a6gcfc0g3f29g785f17f7ff20" version="1">Dislikes Violence</content>
+  <content contentuid="h2345d59dg7b40g46e1gc83ag3b1f3f137e03" version="1">This spirit will vanish if violence breaks out.</content>
+  <content contentuid="h77e0bb1cgd4eeg358bg0dcdg621b2ac87348" version="1">Honorary Bard</content>
+  <content contentuid="h5f62c870gff0eg9febge3b1g256d15319cb2" version="1">The spirits within this lute grant you the title of Bard.</content>
+  <content contentuid="h91d57cb3g5829g3b16gb71dg3e8869a2b857" version="1">Curtain Call</content>
+  <content contentuid="h25291922g749eg4e90gb28bg01a513b0a4ef" version="1">Dismissing sprites and musical spirit summons.</content>
+  <content contentuid="h58128bbeg9c18g8aa7g24ffg85a858aa94a2" version="1">Curtain Call</content>
+  <content contentuid="haeaedeb2gbb28g5c6dgdce6g8ae0135dc155" version="1">Dismissing musical sprites.</content>
+  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="2">Spirit of a Tragic Tiefling Bard</content>
 </contentList>

@@ -61,6 +61,11 @@ function Emlute_StatusIsPerformWithSpirits()
 	return (emlutePerform1)
 end
 
+function Emlute_StatusIsPerformWithSprites_Summon()
+	local emlutePerform1 = StatusId('EMLUTE_PERFORM_THEPOWER') | StatusId('EMLUTE_PERFORM_BARDDANCE') | StatusId('EMLUTE_PERFORM_STARGAZING') | StatusId('EMLUTE_PERFORM_DOS2_1') | StatusId('EMLUTE_PERFORM_DOS2_2') | StatusId('EMLUTE_PERFORM_DOS2_3')
+	return (emlutePerform1)
+end
+
 function Emlute_StatusIsPerform()
 	local baseGamePerform = Emlute_StatusIsPerformBaseGame()
 	local emlutePerform1 = Emlute_StatusIsPerformWithSpirits()

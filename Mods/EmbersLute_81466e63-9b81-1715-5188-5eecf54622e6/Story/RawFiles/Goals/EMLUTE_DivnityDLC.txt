@@ -1,0 +1,157 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Shout_Bard_Perform_DoS2_1_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Shout_Bard_Perform_DoS2_2_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Shout_Bard_Perform_DoS2_3_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_1_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_2_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_3_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Shout_Bard_Perform_DoS2_1_Ensemble_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Shout_Bard_Perform_DoS2_2_Ensemble_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Shout_Bard_Perform_DoS2_3_Ensemble_Emlute");
+
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95);
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f);
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b);
+
+KBSECTION
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// QUERIES and PROCS
+// Little unsure about how scope of these works. 
+// Read guides, still confused, so I'm going to trial and error it a bit.
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Add QUERY to check for digital delux
+// Do I need to redefine this in my script or will it already exist in this scope?
+QRY
+QRY_CharacterHasSongDLC((CHARACTER)_Character)
+AND
+CharacterHasDLC(_Character, (DLC)DLC_Gustav_DigitalDeluxe_43962845-7d10-4bf0-ac1f-f13984e430b3,1)
+THEN
+DB_NOOP(1);
+
+// Add QUERY to check for collectors edition
+// Do I need to redefine this in my script or will it already exist in this scope?
+QRY
+QRY_CharacterHasSongDLC((CHARACTER)_Character)
+AND
+CharacterHasDLC(_Character, (DLC)DLC_Gustav_CollectorsEdition_9d5e85a2-75e0-4c70-b432-60254b974a58,1)
+THEN
+DB_NOOP(1);
+
+// Add QUERY to check for instrument
+// Do I need to redefine this in my script or will it already exist in this scope?
+QRY
+QRY_DLC_HasInstrument((CHARACTER)_Character,(TAG)_Tag)
+AND
+_Tag != MUSIC_VFX_VOCAL_233a89ec-140a-4f77-a13d-72020f53e6d0
+AND
+GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+DB_NOOP(1);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// DLC SPELL TRIGGERS
+// Think I can re-use the same logic as the Gustav script here for the DLC spell triggers
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Player with Divinity DLC enabled equips an instrument from the Ember's Lute mod.
+IF
+Equipped(_Instrument, _Character)
+AND
+DB_Players(_Character)
+AND
+QRY_CharacterHasSongDLC((CHARACTER)_Character)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+PROC_DLC_AddDivinitySongs_EmbersLute(_Tag, _Character);
+
+// Any player unequips an Ember's Lute mod instrument.
+IF
+Unequipped(_Instrument, _Character)
+AND
+DB_Players(_Character)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+PROC_DLC_RemoveDivinitySongs_EmbersLute(_Tag, _Character);
+
+// A character is added to DB_Players
+IF
+DB_Players(_Player)
+AND
+QRY_CharacterHasSongDLC(_Player)
+AND
+GetEquippedItem(_Player, "MusicalInstrument", _Instrument)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+PROC_DLC_AddDivinitySongs_EmbersLute(_Tag, _Player);
+
+// I will also add a trigger check on loading or entering a level
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Players(_Player)
+AND
+QRY_CharacterHasSongDLC(_Player)
+AND
+GetEquippedItem(_Player, "MusicalInstrument", _Instrument)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+PROC_DLC_AddDivinitySongs_EmbersLute(_Tag, _Player);
+
+// I will also add a trigger check on loading or entering a level
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Players(_Player)
+AND
+NOT QRY_CharacterHasSongDLC(_Player)
+AND
+GetEquippedItem(_Player, "MusicalInstrument", _Instrument)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+PROC_DLC_RemoveDivinitySongs_EmbersLute(_Tag, _Player);
+
+
+// Add PROC to grant custom Ember's Lute music spells by equipped instrument tag
+// Only add spell if character does not already have it
+PROC
+PROC_DLC_AddDivinitySongs_EmbersLute((TAG)_Tag, (CHARACTER)_Character)
+AND
+QRY_DLC_HasInstrument((CHARACTER)_Character,(TAG)_Tag)
+AND
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute(_Tag, _Spell)
+AND
+HasSpell(_Character, _Spell, 0)
+THEN
+AddSpell(_Character, _Spell, 1, 1);
+
+PROC
+PROC_DLC_RemoveDivinitySongs_EmbersLute((TAG)_Tag, (CHARACTER)_Character)
+AND
+NOT QRY_DLC_HasInstrument((CHARACTER)_Character,(TAG)_Tag)
+AND
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute(_Tag, _Spell)
+THEN
+RemoveSpell(_Character, _Spell, 1);
+EXITSECTION
+
+ENDEXITSECTION

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="f61de881-a957-40b5-93ef-a3bd77b64178" OwnerUUID="b5dbb7db-3158-4c31-b6f5-1f5dfbfaee78" Name="EMLUTE_GHOST_FX_PALEPINK_StatusEffect">
+  <EffectInfo UUID="bb6d85ef-f60d-4e83-9a43-5ad36fc1dcbd" EffectResourceGuid="7649a8f2-244f-bf61-bb44-ee48bc60696d" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

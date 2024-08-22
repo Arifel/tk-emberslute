@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="fc870e09-c951-47c0-9575-d91820405a98" OwnerUUID="b5dbb7db-3158-4c31-b6f5-1f5dfbfaee78" Name="EMLUTE_GHOST_FX_ORANGE_StatusEffect">
+  <EffectInfo UUID="670b71e6-b5b7-4f64-97ff-c401ed396a5d" EffectResourceGuid="f612ed91-c491-1481-43da-4f406f4a138c" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

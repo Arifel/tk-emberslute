@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="14cb6dfd-a032-4620-9035-c22c510bdf3d" OwnerUUID="b5dbb7db-3158-4c31-b6f5-1f5dfbfaee78" Name="EMLUTE_GHOST_FX_PINK_StatusEffect">
+  <EffectInfo UUID="401f7aab-bb5b-4513-a302-72e5ccee896d" EffectResourceGuid="d00d5fe9-2e5e-cf11-6101-44131e851c82" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

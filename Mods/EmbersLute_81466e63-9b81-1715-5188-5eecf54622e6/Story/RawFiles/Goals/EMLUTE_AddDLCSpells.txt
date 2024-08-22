@@ -1,0 +1,56 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_EmbersLute_TestingDLCEnabled(1);
+KBSECTION
+IF
+Unequipped(_Item,_Character)
+AND
+DB_EmbersLute_TestingEnabled(1)
+AND
+IsTagged(_Item,(TAG)EMLUTE_SPIRIT_INSTRUMENT_e5c99a15-0e54-48bd-995d-4ea760278983, 1)
+THEN
+DebugText(_Character, "I just unequipped my lute");
+
+IF
+Unequipped(_Item,_Character)
+AND
+DB_EmbersLute_TestingEnabled(1)
+AND
+IsTagged(_Item,(TAG)EMLUTE_SPIRIT_INSTRUMENT_e5c99a15-0e54-48bd-995d-4ea760278983, 1)
+AND
+QRY_CharacterHasSongDLC((CHARACTER)_Character)
+THEN
+DebugText(_Character, "I unequipped my lute and I have DLC");
+
+IF
+Unequipped(_Item,_Character)
+AND
+DB_EmbersLute_TestingEnabled(1)
+AND
+IsTagged(_Item,(TAG)EMLUTE_SPIRIT_INSTRUMENT_e5c99a15-0e54-48bd-995d-4ea760278983, 1)
+AND
+NOT QRY_CharacterHasSongDLC((CHARACTER)_Character)
+THEN
+DebugText(_Character, "I unequipped my lute and I do NOT have DLC");
+
+// Player with Divinity DLC enabled equips an instrument from the Ember's Lute mod.
+IF
+Equipped(_Instrument, _Character)
+AND
+DB_EmbersLute_TestingEnabled(1)
+AND
+DB_EmbersLute_TestingDLCEnabled(1)
+AND
+DB_Players(_Character)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+DebugText(_Character, "Adding the Divinity Songs");
+PROC_DLC_AddDivinitySongs_EmbersLute(_Tag, _Character);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "EMLUTE_Testing"

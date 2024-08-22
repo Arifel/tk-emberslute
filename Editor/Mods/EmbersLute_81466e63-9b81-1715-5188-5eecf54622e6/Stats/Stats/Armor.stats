@@ -8,7 +8,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="888e0a01-2ed8-4392-be2f-cc2be009f021" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
@@ -20,7 +20,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_WHITE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a2a12008-23ae-4006-9d3e-4cb55c1c829e" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Lute_WhiteSheetMusic_GlowMaps_Emlute);" />
       </fields>
     </stat_object>
@@ -30,7 +30,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_GOLD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="47e8de31-ffbd-476b-b219-7b48dff23a09" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -42,7 +42,7 @@
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.3" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Gnomes;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
       </fields>
     </stat_object>

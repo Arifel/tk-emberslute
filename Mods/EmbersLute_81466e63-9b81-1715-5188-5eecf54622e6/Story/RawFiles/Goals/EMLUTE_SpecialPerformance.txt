@@ -1,0 +1,40 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Song, Requires Sound Switch, Sound Switch Event, Sound Start Event, Sound Stop Event, Status
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn",0,"","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN");
+KBSECTION
+IF
+MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_,_,_StartEvent,_,_)
+THEN
+PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent);
+
+IF
+StatusRemoved((CHARACTER)_Performer,_Status,_,_)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_,_,_,_StopEvent,_Status)
+THEN
+PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
+
+PROC
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent)
+AND
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+THEN
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
+MusicPlayOnCharacter(_Performer,_StartEvent);
+
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+THEN
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
+MusicPlayOnCharacter(_Performer,_StopEvent);
+EXITSECTION
+
+ENDEXITSECTION

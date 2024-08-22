@@ -47,6 +47,8 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="CycleConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

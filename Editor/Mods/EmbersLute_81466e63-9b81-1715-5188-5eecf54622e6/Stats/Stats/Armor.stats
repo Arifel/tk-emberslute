@@ -41,8 +41,8 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="403e0f11-57dd-41db-b322-c3ca913331a3" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.3" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Bard_Perform_Lute);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_AugmentAuras;Emlute_ClearAuras;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
       </fields>
     </stat_object>

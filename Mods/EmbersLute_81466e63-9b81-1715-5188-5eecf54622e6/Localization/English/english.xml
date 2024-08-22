@@ -176,18 +176,21 @@
   <content contentuid="hee2b2ff8g3da0gf61egd728gf2d6edcac063" version="1">If you can see this it is a bug.</content>
   <content contentuid="h360ccfdbg2abcg244bg4a5dgbb2d478e29ae" version="1">The Vicious Rockery</content>
   <content contentuid="h02ae1f77gb0afg3443g1b24g834e3dd2773c" version="1">Call upon the departed souls of the long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
-  <content contentuid="h30b17412gafffg475fgbe0ag39518e784d5a" version="11">Percival Stonegroove</content>
-  <content contentuid="h5947565fg2760g4b7bgb2a4gc29476da19fc" version="9">Scorchwood Reedstorm</content>
-  <content contentuid="h7f838005gc8c2g403bgbe96gc856105a05b5" version="8">Lysandra Dusksong</content>
-  <content contentuid="h4e50174fgaf3fg4533g8331gb180f2e3084c" version="7">Sprocket Puddlepop</content>
-  <content contentuid="h98766396g8852g4275gb2d0g0db751f93455" version="6">Melody Gearfiddle</content>
-  <content contentuid="hd2958104ged5cg459bgb39cgbe17157571d6" version="5">Ember's Lute of Vicious Rockery</content>
-  <content contentuid="h834c5fa1g3ea7g78a4g897cgc948903ca18c" version="4">This slightly scratched lute has multi-coloured gnomes decal on its body.</content>
-  <content contentuid="hcf95bac3gd0eag7deegbfaeg897908f03e61" version="4">This lute offers an alternative way to perform with spirits and sprites. Summon the Vicious Rockery band members, play a song, and they will join in.</content>
-  <content contentuid="h74115438g1b31g423eg9ca8gc301a82dfdcf" version="5">As you move the lute rose closer to your ear, you can hear the faintest sounds of what seems to be a heated argument.</content>
+  <content contentuid="h30b17412gafffg475fgbe0ag39518e784d5a" version="12">Percival Stonegroove</content>
+  <content contentuid="h5947565fg2760g4b7bgb2a4gc29476da19fc" version="10">Scorchwood Reedstorm</content>
+  <content contentuid="h7f838005gc8c2g403bgbe96gc856105a05b5" version="9">Lysandra Dusksong</content>
+  <content contentuid="h4e50174fgaf3fg4533g8331gb180f2e3084c" version="8">Sprocket Puddlepop</content>
+  <content contentuid="h98766396g8852g4275gb2d0g0db751f93455" version="7">Melody Gearfiddle</content>
+  <content contentuid="hd2958104ged5cg459bgb39cgbe17157571d6" version="6">Ember's Lute of Vicious Rockery</content>
+  <content contentuid="h834c5fa1g3ea7g78a4g897cgc948903ca18c" version="5">This slightly scratched lute has multi-coloured gnomes decal on its body.</content>
+  <content contentuid="hcf95bac3gd0eag7deegbfaeg897908f03e61" version="5">This lute offers an alternative way to perform with spirits and sprites. Summon the Vicious Rockery band members, play a song, and they will join in.</content>
+  <content contentuid="h74115438g1b31g423eg9ca8gc301a82dfdcf" version="6">As you move the lute rose closer to your ear, you can hear the faintest sounds of what seems to be a heated argument.</content>
   <content contentuid="hec9d93b8g649ag7791g9927g7c79cd8744f8" version="1">Dismiss Vicious Rockery</content>
   <content contentuid="h1b697b56g0ebeg022eg56a6g8920bee8e431" version="1">Dismiss all Vicious Rockery ensemble members.</content>
   <content contentuid="hd5589ffeg6e6dg9023g66edge5825fb202c5" version="1">The Vicious Rockery</content>
   <content contentuid="hcfce2788g2f39gdc4agcb77g5afee65b2242" version="1">Call upon the departed souls of the long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
-  <content contentuid="ha09f7a69ged95gb9f6g95b3g849b0d16d034" version="1">Clearing Join Aura</content>
+  <content contentuid="ha09f7a69ged95gb9f6g95b3g849b0d16d034" version="2">Clearing Perform Aura</content>
+  <content contentuid="h8eb5a380g3765g606ag0d1fg882bb0b78b0c" version="1">Sending instruction for 1 round of silence.</content>
+  <content contentuid="h73bdb72cg50beg9c34gf5a6g4e0c3803c381" version="1">Perform with an Ensemble</content>
+  <content contentuid="h2a74394fg7755gf5ecg09abgb94bc4a9e43f" version="1">Perform music with summoned ensembles.</content>
 </contentList>

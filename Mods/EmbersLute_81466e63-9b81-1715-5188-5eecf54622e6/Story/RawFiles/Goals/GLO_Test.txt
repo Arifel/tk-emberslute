@@ -1,7 +1,8 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_EmbersLute_TestingEnabled(0);
+DB_EmbersLute_TestingEnabled(1);
+DB_EmbersLute_TestingDLCEnabled(0);
 KBSECTION
 IF
 Unequipped(_Item,_Character)
@@ -39,6 +40,8 @@ IF
 Equipped(_Instrument, _Character)
 AND
 DB_EmbersLute_TestingEnabled(1)
+AND
+DB_EmbersLute_TestingDLCEnabled(1)
 AND
 DB_Players(_Character)
 AND

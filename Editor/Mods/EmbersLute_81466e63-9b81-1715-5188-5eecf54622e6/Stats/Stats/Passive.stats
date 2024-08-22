@@ -50,7 +50,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerformBaseGame()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_AURA,100,-1);IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_MGMT_AURA,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_AURA,100,1);IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_MGMT_AURA,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">

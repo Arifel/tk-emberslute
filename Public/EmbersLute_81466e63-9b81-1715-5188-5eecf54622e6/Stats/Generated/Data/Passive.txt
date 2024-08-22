@@ -36,7 +36,7 @@ data "Description" "h9720288cg3909g7616gcae9g11cd7d6da3e0;1"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnStatusRemoved"
 data "Conditions" "Emlute_StatusIsPerformBaseGame()"
-data "StatsFunctors" "IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_AURA,100,-1);IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_MGMT_AURA,100,-1)"
+data "StatsFunctors" "IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_AURA,100,1);IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_MGMT_AURA,100,1)"
 
 new entry "Emlute_SummonOnPerform"
 type "PassiveData"

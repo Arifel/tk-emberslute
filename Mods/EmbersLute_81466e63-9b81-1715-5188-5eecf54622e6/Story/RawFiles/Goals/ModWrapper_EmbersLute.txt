@@ -3,10 +3,7 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
-IF
-GameModeStarted("Campaign", _, _)
-THEN
-GoalCompleted;
+
 EXITSECTION
 
 ENDEXITSECTION

@@ -26,3 +26,4 @@ TemplateAddTo(_Reward,_Player,_Amount,_Notification);
 EXITSECTION
 
 ENDEXITSECTION
+ParentTargetEdge "ModWrapper_EmbersLute"

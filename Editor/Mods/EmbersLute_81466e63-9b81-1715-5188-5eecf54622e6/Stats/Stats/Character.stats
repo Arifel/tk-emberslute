@@ -23,5 +23,51 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="03e5b329-b607-4b8b-94db-a12e163d23a5" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+        <field name="Name" type="NameTableFieldDefinition" value="_Emlute_Vicious_Rockery_Gnome" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ae833af-ef14-4746-be64-9ed42f15a2f4" />
+        <field name="Intelligence" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Charisma" type="IntegerTableFieldDefinition" value="18" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Emlute_Musical_Spirit;Emlute_Dismissable;Emlute_ViciousRockery;Emlute_Pacifist;Ethereal;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cac96a4a-b875-4f2c-b621-e34fd45ce81e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Gnome_Flute_Spirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97804423-e2df-4b2c-a6a5-f19b51379357" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Gnome_Drum_Spirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db0b9520-e788-4c00-acd9-4757a571c4b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Gnome_Violin_Spirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dae6b9db-f128-418c-be1a-375154925d4f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Gnome_Lyre_Spirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d54b61e-3d32-4cd2-8d8b-3b7bd42a45be" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Gnome_Lute_Spirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

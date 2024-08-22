@@ -11,7 +11,7 @@
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX;Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
-        <field name="Weight" type="FloatTableFieldDefinition" value="0.5" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -35,13 +35,37 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="93998b4e-4622-4760-b862-4d162378ebfc" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VT_TEST" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
-        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="35029eb1-100c-40f7-88a1-818ae58c9032" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7b0902a7-1912-46bb-980b-1f53b94551ff" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VICIOUSROCKERY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="403e0f11-57dd-41db-b322-c3ca913331a3" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.3" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Bard_Perform_Lute);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_AugmentAuras;Emlute_ClearAuras;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
+        <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16e6dec4-3e49-47ab-a507-ddfe24cb1e56" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_ROLLINGBONES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="3a3efd76-db5d-4c34-a6cb-00a3879ac955" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.5" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Bard_Perform_Lyre);UnlockSpell(Shout_Summon_Skelly_Band_Emute);Tag(EMLUTE_LYRES_ON)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_RollingBonesVFX;Emlute_AugmentAuras_Bones;Emlute_ClearAuras;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LutesToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
+        <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lyre" enumeration_type_name="InstrumentType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc2eb1a1-4840-48b2-adba-9c28bfa63528" />
+        <field name="Name" type="NameTableFieldDefinition" value="_EMBERS_LUTE_HELPERS" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="30d83949-89d2-40e9-b510-d87a8258d408" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_INVIS_DRUM" />
@@ -49,7 +73,7 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="09ee44aa-b647-4efe-8578-227398dc03ce" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b9c56d49-554b-4a39-95f2-f2dc38665700" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_INVIS_FLUTE" />
@@ -57,7 +81,7 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="1fcec3a8-747f-4eb8-bfc6-40f4dc577710" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="94560385-651f-46e2-a087-2c6e85d5e67a" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_INVIS_LYRE" />
@@ -65,7 +89,7 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="e4f99753-203c-4102-8cb4-334da449346b" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fa996627-5617-4160-a4d5-0326995e0459" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_INVIS_VIOLIN" />
@@ -73,12 +97,46 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="06f2bc8d-8d7e-4110-8145-6324610334e0" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b0d52472-4e59-4a85-885a-7bd5d01436da" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_INVIS_LUTE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9f9c081e-3896-47f3-ba62-53203866de66" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d96d0941-673a-4511-9aab-d95b160f6ba6" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cbe23470-8d98-4e30-8db2-460522b62115" />
+        <field name="Name" type="NameTableFieldDefinition" value="_EMBERS_LUTE_TESTING" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA0522D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="93998b4e-4622-4760-b862-4d162378ebfc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VT_TEST" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="35029eb1-100c-40f7-88a1-818ae58c9032" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc3c91e3-bd64-4ffa-88f7-59903f314361" />
+        <field name="Name" type="NameTableFieldDefinition" value="_EMBERS_LUTE_COMPATIBILITY" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed531c66-9cd4-4d06-be2d-f449c50d501d" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_GNOMES_VER_1_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7b0902a7-1912-46bb-980b-1f53b94551ff" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e2c92e04-98cc-406e-aa13-2303ecfe8135" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BONES_VER_1_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="16e6dec4-3e49-47ab-a507-ddfe24cb1e56" />
       </fields>
     </stat_object>
   </stat_objects>

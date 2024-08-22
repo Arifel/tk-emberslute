@@ -161,4 +161,33 @@
   <content contentuid="h9663f48dg1c6eg88d7g6d35gac1eaf9d856b" version="1">Use &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to perform music in combat. Not available out of combat.</content>
   <content contentuid="h63bf970cgf7f4g6459g6e3bg0f33cb8bd22a" version="1">Combat Performance</content>
   <content contentuid="h2eded194g2db4g2c50ga65cg579c1f8d3966" version="1">While focused on a musical performance in-combat, you are unable to take actions or move. Break &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to restore your action points and movement.</content>
+  <content contentuid="hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9" version="4">|Divider|</content>
+  <content contentuid="h1d208db4ge704g2904g5617ge03fbff461ae" version="1">|Hidden| Hidden</content>
+  <content contentuid="h79fc2cc0ga85bg7f35g26ddg76e5fcd04cdb" version="1">Intentionally hidden. If you can see this, it is a bug.</content>
+  <content contentuid="h765be200g4696g3231g3a33g2c92585f373f" version="1">Clear Instruction Aura</content>
+  <content contentuid="h2ebbc3e0g5aa7gbc09gccabg3b35deae860f" version="1">Clearing auras of instruction.</content>
+  <content contentuid="h0d42b27cg0ca0gfeb6g9cbbg03c811eb7aba" version="1">|Divider|</content>
+  <content contentuid="h9016ad03g197ag3960g3afcgcea9d19a3ec5" version="1">Vicious Rockery</content>
+  <content contentuid="hccc44eefga3e0g116fg5881g5c41d943d229" version="1">Proud member of the once popular Rock Gnome musical ensemble, Vicious Rockery. </content>
+  <content contentuid="h8fff6529g8368gd17dg6e49gfe604fa72402" version="1">Ahead of their time, their band name often lead to assumptions they were specialists in stone-based gardening rather than performing.</content>
+  <content contentuid="hdea3459dgfe73gace1gd97fgac4edd4263be" version="1">|Hidden| Hidden</content>
+  <content contentuid="h9720288cg3909g7616gcae9g11cd7d6da3e0" version="1">Intentionally hidden. If you can see this, it is a bug.</content>
+  <content contentuid="h0216f18ag6649gcd2cg9221g08d5cb98a366" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="hee2b2ff8g3da0gf61egd728gf2d6edcac063" version="1">If you can see this it is a bug.</content>
+  <content contentuid="h360ccfdbg2abcg244bg4a5dgbb2d478e29ae" version="1">The Vicious Rockery</content>
+  <content contentuid="h02ae1f77gb0afg3443g1b24g834e3dd2773c" version="1">Call upon the departed souls of the long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
+  <content contentuid="h30b17412gafffg475fgbe0ag39518e784d5a" version="11">Percival Stonegroove</content>
+  <content contentuid="h5947565fg2760g4b7bgb2a4gc29476da19fc" version="9">Scorchwood Reedstorm</content>
+  <content contentuid="h7f838005gc8c2g403bgbe96gc856105a05b5" version="8">Lysandra Dusksong</content>
+  <content contentuid="h4e50174fgaf3fg4533g8331gb180f2e3084c" version="7">Sprocket Puddlepop</content>
+  <content contentuid="h98766396g8852g4275gb2d0g0db751f93455" version="6">Melody Gearfiddle</content>
+  <content contentuid="hd2958104ged5cg459bgb39cgbe17157571d6" version="5">Ember's Lute of Vicious Rockery</content>
+  <content contentuid="h834c5fa1g3ea7g78a4g897cgc948903ca18c" version="4">This slightly scratched lute has multi-coloured gnomes decal on its body.</content>
+  <content contentuid="hcf95bac3gd0eag7deegbfaeg897908f03e61" version="4">This lute offers an alternative way to perform with spirits and sprites. Summon the Vicious Rockery band members, play a song, and they will join in.</content>
+  <content contentuid="h74115438g1b31g423eg9ca8gc301a82dfdcf" version="5">As you move the lute rose closer to your ear, you can hear the faintest sounds of what seems to be a heated argument.</content>
+  <content contentuid="hec9d93b8g649ag7791g9927g7c79cd8744f8" version="1">Dismiss Vicious Rockery</content>
+  <content contentuid="h1b697b56g0ebeg022eg56a6g8920bee8e431" version="1">Dismiss all Vicious Rockery ensemble members.</content>
+  <content contentuid="hd5589ffeg6e6dg9023g66edge5825fb202c5" version="1">The Vicious Rockery</content>
+  <content contentuid="hcfce2788g2f39gdc4agcb77g5afee65b2242" version="1">Call upon the departed souls of the long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
+  <content contentuid="ha09f7a69ged95gb9f6g95b3g849b0d16d034" version="1">Clearing Join Aura</content>
 </contentList>

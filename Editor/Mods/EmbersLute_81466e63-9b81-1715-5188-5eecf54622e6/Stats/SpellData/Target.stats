@@ -17,5 +17,82 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#00FFFFFF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Summon_Vicious_Rockery_Emlute" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Summon_Vicious_Rockery_Emlute" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(36f2416e-abb4-49af-94a8-855b95927e3f,UntilLongRest,,,'MusicalViolinSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);GROUND:Summon(2507263a-a2c8-495f-b485-be77566ba1ff,UntilLongRest,,,'MusicalDrumSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);GROUND:Summon(7f8ae293-5f9b-41ed-bad4-d113b0058ed0,UntilLongRest,,,'MusicalFluteSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);GROUND:Summon(4118f9af-a8db-4a17-a785-eec7faadb2df,UntilLongRest,,,'MusicalLyreSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);GROUND:Summon(a37df723-3ce0-436d-9356-f2d60c395ed0,UntilLongRest,,,'MusicalLuteSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="7" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Character()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ViciousRockery" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Bard_SongOfRest_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Bard_SongOfRest_L1to3" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Prepare" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Loop" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Cast" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Impact" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="850cd2f3-dde2-475d-b3a3-f35c47333523,,;,,;8bfc0edf-5baa-4344-a486-14032de5ab69,,;3935e00c-7d43-4243-a4ef-4c680530d593,,;ad775f69-0d9f-4215-bfc2-8e0ec7e32189,,;,,;6bfce8a0-80f1-47a8-97f4-34f4b8b6fe9e,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Summon" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="d2c9dc70-d8d8-40fc-87a8-3c14a3ea842a" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="5e248293-1a8d-4557-a2e1-f399e4552ff0" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="b4d2ce64-af72-45a2-8146-6a9c3b71f1a6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5d786ea9-65c3-44a8-b4bc-35579a6d29d2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5589ffeg6e6dg9023g66edge5825fb202c5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcfce2788g2f39gdc4agcb77g5afee65b2242" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8179aeed-1d34-49be-bc2f-5656b9dc3e7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Violin_Spirit_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(36f2416e-abb4-49af-94a8-855b95927e3f,UntilLongRest,,,'MusicalViolinSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Female" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="118d934e-1a5a-480c-9f6e-936f4296a7ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Drum_Spirit_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(2507263a-a2c8-495f-b485-be77566ba1ff,UntilLongRest,,,'MusicalDrumSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Male" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e9b1b0f9-fe96-47ea-ba2d-b0b4e973ed9e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Flute_Spirit_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(7f8ae293-5f9b-41ed-bad4-d113b0058ed0,UntilLongRest,,,'MusicalFluteSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Male" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0194a17f-cbe6-4dfc-acea-65583fe7b347" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Lyre_Spirit_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(4118f9af-a8db-4a17-a785-eec7faadb2df,UntilLongRest,,,'MusicalLyreSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Male" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c2d9b2b-578c-4b52-ae78-892a66668d57" />
+        <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Lute_Spirit_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(a37df723-3ce0-436d-9356-f2d60c395ed0,UntilLongRest,,,'MusicalLuteSpiritStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Gnome_Female" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

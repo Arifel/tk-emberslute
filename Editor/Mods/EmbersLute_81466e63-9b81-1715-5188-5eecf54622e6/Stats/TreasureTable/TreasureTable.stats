@@ -18,7 +18,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_MusicalSprites_substat" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_MUSICALSPRITES_GOLD" />
-        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">
@@ -38,10 +38,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="743f52e6-0481-452f-8b1d-ae2b9b024ff8_substat_2" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_VT_TEST" />
-        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
       </fields>
     </stat_object>
-    <stat_object color="#FF800000" is_substat="false">
+    <stat_object color="#FF8B008B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content" />
@@ -51,7 +51,7 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" color="#FFB22222" value="0" />
       </fields>
     </stat_object>
-    <stat_object color="#FF800000" is_substat="true">
+    <stat_object color="#FF8B008B" is_substat="true">
       <fields>
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5" />
         <field name="UUID" type="IdTableFieldDefinition" value="c32c7e18-4ae5-42ed-b8c3-a24e5a39aa17" />
@@ -61,13 +61,33 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF800000" is_substat="true">
+    <stat_object color="#FF8B008B" is_substat="true">
       <fields>
         <field name="Using" type="BaseClassTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5" />
         <field name="UUID" type="IdTableFieldDefinition" value="228cc009-45dd-4dd3-ae5b-0232e39549ff" />
         <field name="Name" type="NameTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5_substat_0" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_MUSICALSPRITES_WHITE" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8B008B" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="55e899b0-cd9e-46cb-8c6a-bf98b944cc1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5_substat_1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_VICIOUSROCKERY" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8B008B" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a9e5e2ed-6b97-4643-97e1-426eb7d81ee6" />
+        <field name="Name" type="NameTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5_substat_2" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_ROLLINGBONES" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>

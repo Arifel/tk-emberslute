@@ -1,32 +1,44 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-// Song, Requires Sound Switch, Sound Switch Event, Sound Start Event, Sound Stop Event, Status
-DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn",0,"","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN");
+// Song, Sound Start Event, Sound Stop Event, Status, SongDuration (ms)
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 KBSECTION
 IF
 MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
-DB_SpecialPerformance_EmbersLute(_Song,_,_,_StartEvent,_,_)
+DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
 THEN
-PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent);
+PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
 
 IF
 StatusRemoved((CHARACTER)_Performer,_Status,_,_)
 AND
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
 AND
-DB_SpecialPerformance_EmbersLute(_Song,_,_,_,_StopEvent,_Status)
+DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
 THEN
+ObjectTimerCancel(_Performer,_Song);
 PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
 
+IF
+ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName)
+AND
+DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
+THEN
+RemoveStatus(_Performer,_Status);
+
 PROC
-PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent)
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
 THEN
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
 MusicPlayOnCharacter(_Performer,_StartEvent);
+ObjectTimerCancel(_Performer,_Song);
+ObjectTimerLaunch(_Performer,_Song,_Duration);
 
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)

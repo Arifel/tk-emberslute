@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="14">Lute of Musical Sprites (Black)</content>
+  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="15">Lute of Musical Sprites (Black)</content>
   <content contentuid="hcc751221g7408g56e7gf2d8g79f22adae505" version="1">Musical Maestro</content>
   <content contentuid="h3ff672ccg53d4gec6bg0d4fg0dec3f5eb2ae" version="1">Emitting an aura of instruction to nearby musical sprites and spirits.</content>
   <content contentuid="h42b4d5a9gba63g5347ga182g2e0ed376f363" version="1">|HIDDEN| Hidden</content>
@@ -36,19 +36,19 @@
   <content contentuid="hfcec3908g8c4cgb441g62b3g1bff0cfef140" version="1">Drum Sprites</content>
   <content contentuid="ha371df7dg885fgb3abgae5eg183a8e2e92bf" version="2">Drum sprites will auto-join music performances.</content>
   <content contentuid="hc5e95c27g1620g7bd8g703fg706cce751286" version="1">Toggle Drum Support</content>
-  <content contentuid="h7a98a23dgec8bgb90fg7f14ga586eedea107" version="1">Disable or enable to manage whether drums should accompany your musical performances.</content>
+  <content contentuid="h7a98a23dgec8bgb90fg7f14ga586eedea107" version="2">Toggle drum track silence in musical performances.</content>
   <content contentuid="h81a69cd1ga18egfdb2g52b3g50bc735ad028" version="1">Toggle Flute Support</content>
-  <content contentuid="h0fb443aag13faga7e5ga607gcfae29296176" version="1">Disable or enable to manage whether flutes should accompany your musical performances.</content>
+  <content contentuid="h0fb443aag13faga7e5ga607gcfae29296176" version="2">Toggle flute track silence in musical performances.</content>
   <content contentuid="h9191d535g39deg07b1gae71g8ae8215d9d95" version="1">Toggle Violin Support</content>
-  <content contentuid="h1e2dbafag0c42gc954g2ad2ga23dc4d814ae" version="1">Disable or enable to manage whether violins should accompany your musical performances.</content>
+  <content contentuid="h1e2dbafag0c42gc954g2ad2ga23dc4d814ae" version="2">Toggle violin track silence in musical performances.</content>
   <content contentuid="hf92be1b8g0ae4g81b0g8367g4dbd200a5d19" version="1">Toggle Lyre Support</content>
-  <content contentuid="h2be6ef8ag723bg751bg0f56g169712f96249" version="1">Disable or enable to manage whether lyres should accompany your musical performances.</content>
-  <content contentuid="h7075b924gda9fgecbfg80f2g854bd0d116ff" version="1">Disable or enable to manage whether lutes should accompany your musical performances.</content>
+  <content contentuid="h2be6ef8ag723bg751bg0f56g169712f96249" version="2">Toggle lyre track silence in musical performances.</content>
+  <content contentuid="h7075b924gda9fgecbfg80f2g854bd0d116ff" version="2">Toggle lute track silence in musical performances.</content>
   <content contentuid="hb1491831gf18eg5f2cge6b9g4741e6512b12" version="1">Toggle Vocal Support</content>
-  <content contentuid="h8b221e78g830bg849bgaf1dga98e9e4fc49a" version="1">Disable or enable to manage whether vocals should accompany your musical performances.</content>
+  <content contentuid="h8b221e78g830bg849bgaf1dga98e9e4fc49a" version="2">Toggle vocal track silence in musical performances.</content>
   <content contentuid="h099a6b51g82f5gd1d4g14edga8f973a14b68" version="1">Toggle Lute Support</content>
   <content contentuid="h639544f5gc899g83a3gbe6fg7ab66fd3885b" version="1">Musical Conductor</content>
-  <content contentuid="h59c40e85g303dg41acg1cafg1e1d048057c4" version="1">Manage which instrument types support your performances by toggling the corresponding Passive ability.</content>
+  <content contentuid="h59c40e85g303dg41acg1cafg1e1d048057c4" version="2">Use Passive toggles to conduct instruments in and out of silence while performing music.</content>
   <content contentuid="h6f61b67dg08afg92e9gfbb2gd78262d50625" version="1">|Hidden| Hidden</content>
   <content contentuid="h0edd7310g2ed7g96a8ga3cega9b4735d78be" version="1">Intentionally hidden. If you can see this, it is a bug.</content>
   <content contentuid="h19798fb0g6f6cgfc67gdfa0g8012476ba893" version="1">Invisible Lute</content>
@@ -73,7 +73,7 @@
   <content contentuid="h16b8c85dg89dcgb556g54ecg7479c6a0e7bf" version="1">Violin Sprites</content>
   <content contentuid="h29837054g74c5g0eb6g9585gfcf334186ad4" version="1">Violin sprites will auto-join music performances.</content>
   <content contentuid="h4d51c882g70c6g3859g8abeg248f857fb428" version="1">Vocal Sprites</content>
-  <content contentuid="ha8f71ba7gb88agfeceg7cbcg989d20d0ddef" version="1">Vocal sprites will auto-join music performances.</content>
+  <content contentuid="ha8f71ba7gb88agfeceg7cbcg989d20d0ddef" version="2">Toggle on to add the vocal (whistling) track to music performances.</content>
   <content contentuid="h97b07c7bg44d2g6424g3725g4070a5140aee" version="2">Invisible Flute</content>
   <content contentuid="hfa0ff3dcgf1e9g5197gec98gc37e663ec82c" version="2">Invisible Lute</content>
   <content contentuid="hbb754a04g74fagca3dg8bc0ga99f998f8b58" version="1">Musical Sprites</content>
@@ -81,8 +81,8 @@
   <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="8">Lute of Musical Sprites</content>
   <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="8">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="8">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="9">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="9">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="3">Musical Sprites Instruments</content>
   <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="3">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
   <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="2">Instrument Chest</content>
@@ -111,8 +111,8 @@
   <content contentuid="hbc15f766g0d52g82eag1309geae31da4f3e8" version="1">Purple Script Visual</content>
   <content contentuid="h8486ba14g6e42gb4deg15e5ge8ab4117ded1" version="1">A purple script glowmap visual is applied to this lute.</content>
   <content contentuid="hec0a8ebeg22f3gdfd7g5238g55e8d109447f" version="1">Mysterious musical sprites inhabit this instrument.</content>
-  <content contentuid="h154fc043gf4bbg21b8g2533g8c2192754bd2" version="1">Toggle off to perform single instrument tracks only.</content>
-  <content contentuid="h561e2b26gb593g9c70gd3dbg881c2919938e" version="1">Lore description test.</content>
+  <content contentuid="h154fc043gf4bbg21b8g2533g8c2192754bd2" version="2">[Toggle off to perform single instrument tracks only.]</content>
+  <content contentuid="h561e2b26gb593g9c70gd3dbg881c2919938e" version="2">Tiny, colourful instrument sprites flit eagerly around the lute rose, awaiting the next performance.</content>
   <content contentuid="h398d0669g2a73g11bdg64f4g5174f98dfc14" version="1">Clearing Instrument Lighting</content>
   <content contentuid="ha64e9a62gf6ceg112ag5993g12b9f946713e" version="1">Clear the instrument lighting effect.</content>
   <content contentuid="h66bf518eg7a75g21a8g8ed3g9d22f0f1fdb0" version="1">Musical Spirit (Honorary)</content>
@@ -153,9 +153,9 @@
   <content contentuid="hf1c85510g7498g585eg28f7g46bd33432eb6" version="1">Apply a glowing blue flourish visual to the equipped instrument.</content>
   <content contentuid="hae26994cgb558g736bg456fga3555e5c6e0f" version="1">White Flourish</content>
   <content contentuid="he7e9c3b7g91c5g8c19g4e18g7ac849880f03" version="1">Apply a glowing white flourish visual to the equipped instrument.</content>
-  <content contentuid="ha01550f0g06d7gc1dega4ccg3fd20f4ad051" version="1">Clear Glowmap</content>
+  <content contentuid="ha01550f0g06d7gc1dega4ccg3fd20f4ad051" version="2">Clear Effects</content>
   <content contentuid="h82aae23ag79d4gc8d9ge41cge7f08799185b" version="1">Clear any glowmap effects from the equipped instrument.</content>
-  <content contentuid="hf5d5f6dcg2c1eg3b5dg959ag9b95ca55e96f" version="1">Clear Glowmap</content>
+  <content contentuid="hf5d5f6dcg2c1eg3b5dg959ag9b95ca55e96f" version="2">Clear Effects</content>
   <content contentuid="hdf53eb06gef20g7027g5d63g861462fcc04b" version="1">Clear any glowmap effects from the equipped instrument.</content>
   <content contentuid="h9103e622g4bfeg6299g7423g38044d878c3f" version="1">Combat Performance</content>
   <content contentuid="h9663f48dg1c6eg88d7g6d35gac1eaf9d856b" version="1">Use &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; to perform music in combat. Not available out of combat.</content>
@@ -176,15 +176,15 @@
   <content contentuid="hee2b2ff8g3da0gf61egd728gf2d6edcac063" version="1">If you can see this it is a bug.</content>
   <content contentuid="h360ccfdbg2abcg244bg4a5dgbb2d478e29ae" version="1">The Vicious Rockery</content>
   <content contentuid="h02ae1f77gb0afg3443g1b24g834e3dd2773c" version="1">Call upon the departed souls of the long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
-  <content contentuid="h30b17412gafffg475fgbe0ag39518e784d5a" version="22">Percival Stonegroove</content>
-  <content contentuid="h5947565fg2760g4b7bgb2a4gc29476da19fc" version="20">Scorchwood Reedstorm</content>
-  <content contentuid="h7f838005gc8c2g403bgbe96gc856105a05b5" version="19">Lysandra Dusksong</content>
-  <content contentuid="h4e50174fgaf3fg4533g8331gb180f2e3084c" version="18">Sprocket Puddlepop</content>
-  <content contentuid="h98766396g8852g4275gb2d0g0db751f93455" version="17">Melody Gearfiddle</content>
-  <content contentuid="hd2958104ged5cg459bgb39cgbe17157571d6" version="16">Ember's Lute of Vicious Rockery</content>
-  <content contentuid="h834c5fa1g3ea7g78a4g897cgc948903ca18c" version="15">This slightly scratched lute has multi-coloured gnomes decal on its body.</content>
-  <content contentuid="hcf95bac3gd0eag7deegbfaeg897908f03e61" version="15">This lute offers an alternative way to perform with spirits and sprites. Summon the Vicious Rockery band members, play a song, and they will join in.</content>
-  <content contentuid="h74115438g1b31g423eg9ca8gc301a82dfdcf" version="16">Several voices engaged in a heated but indiscernible argument can be heard when pressing one's ear against the lute rose.</content>
+  <content contentuid="h30b17412gafffg475fgbe0ag39518e784d5a" version="24">Percival Stonegroove</content>
+  <content contentuid="h5947565fg2760g4b7bgb2a4gc29476da19fc" version="22">Scorchwood Reedstorm</content>
+  <content contentuid="h7f838005gc8c2g403bgbe96gc856105a05b5" version="21">Lysandra Dusksong</content>
+  <content contentuid="h4e50174fgaf3fg4533g8331gb180f2e3084c" version="20">Sprocket Puddlepop</content>
+  <content contentuid="h98766396g8852g4275gb2d0g0db751f93455" version="19">Melody Gearfiddle</content>
+  <content contentuid="hd2958104ged5cg459bgb39cgbe17157571d6" version="18">Ember's Lute of Vicious Rockery</content>
+  <content contentuid="h834c5fa1g3ea7g78a4g897cgc948903ca18c" version="17">This slightly scratched lute has multi-coloured gnomes decal on its body.</content>
+  <content contentuid="hcf95bac3gd0eag7deegbfaeg897908f03e61" version="17">This lute offers an alternative way to perform with spirits and sprites. Summon the Vicious Rockery band members, play a song, and they will join in.</content>
+  <content contentuid="h74115438g1b31g423eg9ca8gc301a82dfdcf" version="18">Several voices engaged in a heated but indiscernible argument can be heard when pressing one's ear against the lute rose.</content>
   <content contentuid="hec9d93b8g649ag7791g9927g7c79cd8744f8" version="1">Dismiss Vicious Rockery</content>
   <content contentuid="h1b697b56g0ebeg022eg56a6g8920bee8e431" version="1">Dismiss all Vicious Rockery ensemble members.</content>
   <content contentuid="hd5589ffeg6e6dg9023g66edge5825fb202c5" version="1">The Vicious Rockery</content>
@@ -208,7 +208,7 @@
   <content contentuid="h25291922g749eg4e90gb28bg01a513b0a4ef" version="1">Dismissing sprites and musical spirit summons.</content>
   <content contentuid="h58128bbeg9c18g8aa7g24ffg85a858aa94a2" version="1">Curtain Call</content>
   <content contentuid="haeaedeb2gbb28g5c6dgdce6g8ae0135dc155" version="1">Dismissing musical sprites.</content>
-  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="3">Spirit of a Tragic Tiefling Bard</content>
+  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="4">Spirit of a Tragic Tiefling Bard</content>
   <content contentuid="h31850c2aga592g1894ga37eg89582b18352f" version="1">Melody Gearfiddle</content>
   <content contentuid="hc9266932g15ebgb66bg984eg52431a2179ee" version="1">Summon Melody Gearfiddle. Her rivals called her Queen Bow, because she wielded it like a rapier when crossed.</content>
   <content contentuid="he5c3fcc5g9177g365agcdcag493dfdaefdb8" version="1">Percival Stonegroove</content>
@@ -227,16 +227,16 @@
   <content contentuid="h57c77132g2132g8e5egcfcbgc3a07b0b4986" version="1">A glowing green sheet music visual is applied to this lute.</content>
   <content contentuid="hd678a989g2473g8e79ga2bcga2ce1c6fc849" version="1">Green Music Visual</content>
   <content contentuid="h404e4e2dgcc60g162ag645eg13711b0f1725" version="1">A glowing green sheet music visual is applied to this lute.</content>
-  <content contentuid="heb1f543cg7619g4832g92fbg5dd6436cdffa" version="11">Spider's Lyre of Rolling Bones</content>
-  <content contentuid="h668b093dg2e36g91d1g770ag98b6386a8fd0" version="10">Grants the ability to summon The Rolling Bones.</content>
-  <content contentuid="ha44d9298g8deag6ea7g22b5g67a232da35b7" version="10">This lyre offers an alternative way to perform with spirits and sprites. Summon the Rolling Bones band members, play a song, and they will join in.</content>
-  <content contentuid="h76085d3eg8911g41cdg9fadg1578bbdbaca9" version="11">The lyre emits a dull rythmic rattling of bones and chains.</content>
-  <content contentuid="hb44ca9d6gc106g40e6g9958g214f3a426bf6" version="10">Zombie Drummer</content>
-  <content contentuid="hafbbeac3g2072g4e01ga685gf5e3691db10c" version="8">Skeletal Flutist</content>
-  <content contentuid="h7d28c5b9g35e9g48fbgae13gff6c0e5357ff" version="7">Nightmare Lute Maestro</content>
-  <content contentuid="hbb1753d7gf6ccg44ddg87a8ge7882744b449" version="6">Skeletal Violinist</content>
-  <content contentuid="h05e104c4g2ef1g4c91g82e0g1e74841a0116" version="5">Skeletal Lyrist</content>
-  <content contentuid="hc1301ef5ga3afg7f16g8857gca824fb065cf" version="1">Spider Lyre Light Source</content>
+  <content contentuid="heb1f543cg7619g4832g92fbg5dd6436cdffa" version="13">Spider's Lyre of Rolling Bones</content>
+  <content contentuid="h668b093dg2e36g91d1g770ag98b6386a8fd0" version="12">Grants the ability to summon The Rolling Bones.</content>
+  <content contentuid="ha44d9298g8deag6ea7g22b5g67a232da35b7" version="12">This lyre offers an alternative way to perform with spirits and sprites. Summon the Rolling Bones band members, play a song, and they will join in.</content>
+  <content contentuid="h76085d3eg8911g41cdg9fadg1578bbdbaca9" version="13">The lyre emits a dull rythmic rattling of bones and chains.</content>
+  <content contentuid="hb44ca9d6gc106g40e6g9958g214f3a426bf6" version="12">Zombie Drummer</content>
+  <content contentuid="hafbbeac3g2072g4e01ga685gf5e3691db10c" version="10">Skeletal Flutist</content>
+  <content contentuid="h7d28c5b9g35e9g48fbgae13gff6c0e5357ff" version="9">Nightmare Lute Maestro</content>
+  <content contentuid="hbb1753d7gf6ccg44ddg87a8ge7882744b449" version="8">Skeletal Violinist</content>
+  <content contentuid="h05e104c4g2ef1g4c91g82e0g1e74841a0116" version="7">Skeletal Lyrist</content>
+  <content contentuid="hc1301ef5ga3afg7f16g8857gca824fb065cf" version="2">Visual: Green Lights</content>
   <content contentuid="h22083193g65bdg8ddbgf370gcbe68fd7f79f" version="1">Toggle the instrument visual effects on or off on the Spider Lyre.</content>
   <content contentuid="h83870553g15b9g7505g8e8dgd39834c7b9d6" version="1">Lighting Effect</content>
   <content contentuid="h7c7ba5c7g632cg01aeg2be8g060a5576176b" version="1">Lighting visual for the Spider's Lyre.</content>
@@ -246,4 +246,24 @@
   <content contentuid="h41c031ecgbe24g130dgb9feg4f3dfd91b7f2" version="1">Dismiss the undead musicians of The Rolling Bones.</content>
   <content contentuid="h37258c8fg2e65g88c0g94fbgc2c853a2ab9b" version="1">The Rolling Bones</content>
   <content contentuid="h6856cc8dgfb25gd941ga826g911c306ee0b1" version="1">Eternally called, where matters of music are concerned.</content>
+  <content contentuid="hfe2cf332g8877gf310g74f7geb0b38235a61" version="2">[If sprites are already summoned, step outside the white circle to dismiss them. The vocal sprite will be summoned the next time you perform music.]</content>
+  <content contentuid="h630492fag00c2g47b7g2c0bgc4ca8f9269d8" version="1">Instrument tracks can be turned on and off mid-performance. Looks for the toggle options in your Passives toolbar.</content>
+  <content contentuid="h961fc30fg6b1eg97e0g6419gb9d238ab4796" version="1">"Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything."</content>
+  <content contentuid="hac6a79d6g5bffg87ccga9e7g2198b6ce3610" version="1">"Nobody likes a whistler, particularly not the divinity that shapes our ends."</content>
+  <content contentuid="hf640173dgb467gc7e7gcb9eg0398df13cf3f" version="1">“Fills bring the thrills, but grooves pay the bills.”</content>
+  <content contentuid="h7d518080g2a92gd01bg6935g8bd604b84cbe" version="1">"The breath is the bridge between the mind and the body."</content>
+  <content contentuid="h8b9ecfeag2a85g2413g1538g134e66aaa020" version="1">“A table, a chair, a bowl of fruit and a violin; what else does a man need to be happy?”</content>
+  <content contentuid="hdcfb746cg82cag6fd0g5ec5gc3318b743a72" version="1">“’T is believ’d that this harp which I wake now for thee, Was a siren of old who sung under the sea.”</content>
+  <content contentuid="hae3a98cfg5df1ge64cg3a11g7ccbe4f1cf3d" version="1">“Guitar is easy. All it takes is 5 fingers, 6 strings, and one asshole.”</content>
+  <content contentuid="h47547397gc916g9682g26c2g683edeae144d" version="1">“You know how to whistle, don’t you, Steve? You just put your lips together and blow.”</content>
+  <content contentuid="h7d48d089g6f7bg12a2g0568g4824ae615304" version="1">Even though these statuses aren't used in this version, I think they need to be retained as empty headers at least, in case they are chilling out somewhere in someone's save game</content>
+  <content contentuid="he9ebad74g2c36g8e24g536eg2f4b3482bd8e" version="2">Purple Smoke</content>
+  <content contentuid="h2184f51bgd397gd41ag9262gc28707a38b6d" version="1">Apply purple lighting with a smoke and sparkles effect.</content>
+  <content contentuid="h70c98618g4e16gee20g0bfagd834033d93cb" version="2">Purple Smoke</content>
+  <content contentuid="h84c28ad1ga1d8gb773g4099gddd9ebbcd448" version="1">Apply purple lighting with a smoke and sparkles effect.</content>
+  <content contentuid="h968ed308g5586g5caag20c8g773ae1ae2035" version="2">Green Lights</content>
+  <content contentuid="h1b37fd50gf7d8g2f4agb8f1g68bb4b0ca268" version="1">Turn on the Spider Lyre green lighting effects.</content>
+  <content contentuid="h3aa9d35bg338dgd69ag1790gcd82c78f5515" version="1">Clear Effects</content>
+  <content contentuid="h4b3575feg67bbg9d9bg41deg83a470ba1ce6" version="1">Turn off the Spider Lyre green lights.</content>
+  <content contentuid="hb725bd91gfce1g9466gda06g05b0b5e38b94" version="1">Spider Lyre Visuals</content>
 </contentList>

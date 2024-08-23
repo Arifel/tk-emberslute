@@ -1,0 +1,18 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Reposition the tiefling bard summon when she spawns in so she doesn't hug the player too much
+KBSECTION
+IF
+EnteredLevel((CHARACTER)_Summon, (ROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6, _)
+AND
+GetPosition(_Summon,_X,_Y,_Z)
+AND
+RealSum(_X,1.5,_NewX)
+THEN
+PROC_TeleportToSafePosition(_Summon,_NewX,_Y,_Z);
+
+
+EXITSECTION
+
+ENDEXITSECTION

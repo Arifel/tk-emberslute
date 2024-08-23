@@ -16,42 +16,6 @@ DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561
 DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b);
 
 KBSECTION
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// QUERIES and PROCS
-// Little unsure about how scope of these works. 
-// Read guides, still confused, so I'm going to trial and error it a bit.
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-// Add QUERY to check for digital delux
-// Do I need to redefine this in my script or will it already exist in this scope?
-QRY
-QRY_CharacterHasSongDLC((CHARACTER)_Character)
-AND
-CharacterHasDLC(_Character, (DLC)DLC_Gustav_DigitalDeluxe_43962845-7d10-4bf0-ac1f-f13984e430b3,1)
-THEN
-DB_NOOP(1);
-
-// Add QUERY to check for collectors edition
-// Do I need to redefine this in my script or will it already exist in this scope?
-QRY
-QRY_CharacterHasSongDLC((CHARACTER)_Character)
-AND
-CharacterHasDLC(_Character, (DLC)DLC_Gustav_CollectorsEdition_9d5e85a2-75e0-4c70-b432-60254b974a58,1)
-THEN
-DB_NOOP(1);
-
-// Add QUERY to check for instrument
-// Do I need to redefine this in my script or will it already exist in this scope?
-QRY
-QRY_DLC_HasInstrument((CHARACTER)_Character,(TAG)_Tag)
-AND
-_Tag != MUSIC_VFX_VOCAL_233a89ec-140a-4f77-a13d-72020f53e6d0
-AND
-GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
-AND
-IsTagged(_Instrument, _Tag, 1)
-THEN
-DB_NOOP(1);
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // DLC SPELL TRIGGERS

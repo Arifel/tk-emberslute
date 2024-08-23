@@ -39,6 +39,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f0a82fe-ed7b-4bf7-9723-2093c7d2f561" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_ManagementAura_Bones" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="12a9d5b1-dafc-4775-82d0-d5899e9511ae" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_SPIRIT_MGMT_AURA_BONES')):ApplyStatus(EMLUTE_SPIRIT_MGMT_AURA_BONES,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="32eccc94-29b3-4821-8573-6a90f58f35d1" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_AugmentAuras" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d208db4ge704g2904g5617ge03fbff461ae" version="1" />
@@ -400,7 +408,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF4169E1" is_substat="false">
+    <stat_object color="#FF38306B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="78a72601-ec51-4118-8c30-74b16e848819" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Instrument_VFX" />
@@ -408,12 +416,24 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Light" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_VFX_CHANGE_HELPER_01,100,1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_INSTRUMENT_VFX_CLEAR,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_INSTRUMENT_VFX_CLEAR,100,1)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="EmluteInstrumentVFX" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="6" />
       </fields>
     </stat_object>
-    <stat_object color="#FF5D2684" is_substat="false">
+    <stat_object color="#FF483D8B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2975904-cf80-4651-a761-33ea2bb39e38" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_RollingBonesVFX" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc1301ef5ga3afg7f16g8857gca824fb065cf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h22083193g65bdg8ddbgf370gcbe68fd7f79f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Generic_Light" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_ROLLING_BONES_LYRE_LIGHT_VFX_01100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LIGHT_VFX_CLEAR,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF483D8B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="92a0ca80-b9b1-4f81-97e7-96b516fd85ba" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX" />
@@ -422,7 +442,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Light" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LUTE_B_LIGHT_VFX_01,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LIGHT_VFX_CLEAR,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LIGHT_VFX_CLEAR,100,1)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="EmluteInstrumentLightVFX" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5" />
       </fields>

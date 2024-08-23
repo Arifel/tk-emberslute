@@ -132,10 +132,6 @@ data "StatusType" "EFFECT"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "StatusEffect" "fb63d6fe-e9b5-49d1-bab8-ec8b5013da6e"
 
-new entry "EMLUTE_ROLLING_BONES_LYRE_VFX"
-type "StatusData"
-data "StatusType" "EFFECT"
-
 new entry "EMLUTE_ANNOYING_LUTE_VFX"
 type "StatusData"
 data "StatusType" "EFFECT"
@@ -153,6 +149,11 @@ type "StatusData"
 data "StatusType" "EFFECT"
 using "_LEGACY_AND_COMPATIBILITY"
 data "Description" "h4503a1c4gb9fcg6eedg1365g55e25ba9daae;1"
+
+new entry "EMLUTE_ROLLING_BONES_LYRE_VFX"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "_LEGACY_AND_COMPATIBILITY"
 
 new entry "EMLUTE_LUTEB_VFX_02"
 type "StatusData"

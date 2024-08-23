@@ -181,12 +181,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b317e9e8-578f-4879-bac6-ebd4f6fcf285" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ROLLING_BONES_LYRE_VFX" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fff4d5c9-2b5a-478c-93c4-dd2b425fab7c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ANNOYING_LUTE_VFX" />
       </fields>
@@ -207,6 +201,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_01" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4503a1c4gb9fcg6eedg1365g55e25ba9daae" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b317e9e8-578f-4879-bac6-ebd4f6fcf285" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ROLLING_BONES_LYRE_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
       </fields>
     </stat_object>
     <stat_object color="#FF2E2E2E" is_substat="false">

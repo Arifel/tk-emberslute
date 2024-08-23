@@ -284,11 +284,11 @@
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
       </fields>
     </stat_object>
-    <stat_object color="#FF593046" is_substat="false">
+    <stat_object color="#FF5E3A5E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="958bb940-cf60-4c2e-94e1-a963e48a9b09" />
         <field name="Name" type="NameTableFieldDefinition" value="Lute_WhiteSheetMusic_GlowMaps_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PurpleSheetMusic_Emlute;Shout_BlueSheetMusic_Emlute;Shout_WhiteSheetMusic_Emlute;Shout_RemoveInstrumentGlowMap_WhiteLute_Emlute" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PurpleSheetMusic_Emlute;Shout_BlueSheetMusic_Emlute;Shout_WhiteSheetMusic_Emlute;Shout_GreenSheetMusic_Emlute;Shout_RemoveInstrumentGlowMap_WhiteLute_Emlute" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ApplyGlowMaps" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1bd5031eg3d3fgad66g37fega1db4ac223aa" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb72a357eg7a9cge019gd2fcge2f46486bd4e" version="1" />
@@ -296,7 +296,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="DontAbortPerforming;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF593046" is_substat="false">
+    <stat_object color="#FF5E3A5E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
         <field name="Name" type="NameTableFieldDefinition" value="PurpleSheetMusic_Emlute" />
@@ -318,7 +318,7 @@
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b94fcfde-d824-4e7d-b9c5-833a50b66537" />
       </fields>
     </stat_object>
-    <stat_object color="#FF593046" is_substat="false">
+    <stat_object color="#FF5E3A5E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b36afba9-0667-4e47-950c-0c0e92552a39" />
         <field name="Name" type="NameTableFieldDefinition" value="BlueSheetMusic_Emlute" />
@@ -329,7 +329,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_WHITEMUSIC_VFX_03,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF593046" is_substat="false">
+    <stat_object color="#FF5E3A5E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="910dcee8-11f4-49ca-b3bf-ca330eb038da" />
         <field name="Name" type="NameTableFieldDefinition" value="WhiteSheetMusic_Emlute" />
@@ -340,7 +340,18 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_WHITEMUSIC_VFX_04,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF593046" is_substat="false">
+    <stat_object color="#FF5E3A5E" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aaed2099-59fb-4ed4-8d8b-840be2227f22" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenSheetMusic_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_VFX_CHANGE_HELPER_09,100,1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h620eb33bg345agf93ag1c8fg4e8c053ce2d1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb4822fdegf0f0g7afag1d57g8798d6873171" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_WHITEMUSIC_VFX_09,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5E3A5E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a1b78510-f45b-4b54-9371-247ce35be874" />
         <field name="Name" type="NameTableFieldDefinition" value="RemoveInstrumentGlowMap_WhiteLute_Emlute" />
@@ -357,11 +368,11 @@
         <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF38232E" is_substat="false">
+    <stat_object color="#FF402640" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1028326d-497d-43b7-a889-64dd959db111" />
         <field name="Name" type="NameTableFieldDefinition" value="Lute_BlackMonoFlourish_GlowMaps_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PurpleMonoFlourish_Emlute;Shout_BlueMonoFlourish_Emlute;Shout_WhiteMonoFlourish_Emlute;Shout_RemoveInstrumentGlowMap_BlackLute_Emlute" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_PurpleMonoFlourish_Emlute;Shout_BlueMonoFlourish_Emlute;Shout_WhiteMonoFlourish_Emlute;Shout_GreenMonoFlourish_Emlute;Shout_RemoveInstrumentGlowMap_BlackLute_Emlute" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ApplyGlowMaps" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69a9f12bgba45g9a78g68e4gb2496828ce3a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h48fe047cg0805g261dgfa2dgda904cb62c93" version="1" />
@@ -369,7 +380,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="DontAbortPerforming;IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF38232E" is_substat="false">
+    <stat_object color="#FF402640" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d3fa5009-d5bd-4b0b-a220-712991f02cb5" />
         <field name="Name" type="NameTableFieldDefinition" value="BlueMonoFlourish_Emlute" />
@@ -381,19 +392,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_BLACKMONO_VFX_05,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF38232E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0c88b5c3-ad60-4616-9cad-4eb18a254f6a" />
-        <field name="Name" type="NameTableFieldDefinition" value="PurpleMonoFlourish_Emlute" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_VFX_CHANGE_HELPER_06,100,1)" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hde92c870g5142g93b4g4267g0bb59820575b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc066a731gafeege150geeb3g1ea7bf960a9c" version="1" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_BLACKMONO_VFX_06,100,-1)" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF38232E" is_substat="false">
+    <stat_object color="#FF402640" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="00085fb2-cf2a-4320-ba5a-1f8c7b728ba9" />
         <field name="Name" type="NameTableFieldDefinition" value="WhiteMonoFlourish_Emlute" />
@@ -405,7 +404,30 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_BLACKMONO_VFX_07,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF38232E" is_substat="false">
+    <stat_object color="#FF402640" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c88b5c3-ad60-4616-9cad-4eb18a254f6a" />
+        <field name="Name" type="NameTableFieldDefinition" value="PurpleMonoFlourish_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_VFX_CHANGE_HELPER_06,100,1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hde92c870g5142g93b4g4267g0bb59820575b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc066a731gafeege150geeb3g1ea7bf960a9c" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_BLACKMONO_VFX_06,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402640" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fd15b5e-4a34-43ec-9702-fe11cd268f50" />
+        <field name="Name" type="NameTableFieldDefinition" value="GreenMonoFlourish_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_VFX_CHANGE_HELPER_08,100,1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h37885654g10b7g66b1g5f3bg1174c987ad88" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7790249g1881gf8b9g2244g94a839df0f5f" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_LUTE_WHITEMUSIC_VFX_08,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402640" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6b46d2d5-a9e3-4b97-b564-85b615801966" />
         <field name="Name" type="NameTableFieldDefinition" value="RemoveInstrumentGlowMap_BlackLute_Emlute" />
@@ -436,6 +458,17 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0f5c871-173b-4202-b335-7bd7c7ba684f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Summon_Skelly_Band_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6a5ba2f5-ec8a-4f7b-9a4a-61f19265cb9f" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Summon_Skelly_Band_Emlute;Shout_Dismiss_Skellys_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Emlute_Summon_Skelly_Band" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9518f052g3596g5c3agb5acg6a8efaa3e9ce" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd800fb2fg9fe1gb986g0f92g742abc1a7efe" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8503475a-46ff-44b3-8f8e-68498edf88c3" />
         <field name="Name" type="NameTableFieldDefinition" value="Dismiss_Gnomes_Emlute" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Summon_Vicious_Rockery_Emlute" />
@@ -443,7 +476,7 @@
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="15" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="AoEConditions" type="StringTableFieldDefinition" value="HasPassive('Emlute_ViciousRockery',context.Target) and SummonOwner(context.Target,context.Source)" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_DismissGnomes" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="dd86aa43-8189-4d9f-9a5c-454b5fe4a197,,;,,;54ae8856-36b2-4f70-8bd3-c2a760f93fd5,,;,,;cc5b0caf-3ed1-4711-a50d-11dc3f1fdc6a,,;,,;1715b877-4512-472e-9bd0-fd568a112e90,,;,,;,," />
@@ -453,6 +486,17 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec9d93b8g649ag7791g9927g7c79cd8744f8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1b697b56g0ebeg022eg56a6g8920bee8e431" version="1" />
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2752a525-7e54-4567-b6b0-33d0cc34bc56" />
+        <field name="Name" type="NameTableFieldDefinition" value="Dismiss_Skellys_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8503475a-46ff-44b3-8f8e-68498edf88c3" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Summon_Skelly_Band_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_DismissRollingBones" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h282cb3acg0b11g57d7g2bb2gc19aa1eb5fe6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h41c031ecgbe24g130dgb9feg4f3dfd91b7f2" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

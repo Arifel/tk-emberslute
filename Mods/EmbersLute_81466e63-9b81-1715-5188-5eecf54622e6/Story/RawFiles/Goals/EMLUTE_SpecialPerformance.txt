@@ -1,14 +1,50 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-// Song, Sound Start Event, Sound Stop Event, Status, SongDuration (ms)
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0);
 KBSECTION
+PROC
+PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
+AND
+GetPosition(_Summon,_X,_Y,_Z)
+AND
+RealSum(_X,_OffsetX,_NewX)
+AND
+RealSum(_Y,_OffsetY,_NewY)
+AND
+RealSum(_Z,_OffsetZ,_NewZ)
+THEN
+PROC_TeleportToSafePosition(_Summon,_NewX,_NewY,_NewZ);
+DebugText(_Summon, "Debug: Repositioned the Bard");
+
+PROC
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
+AND
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+THEN
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
+DebugText(_Performer, "Debug: Playing Music");
+DebugText(_Performer, _StartEvent);
+MusicPlayOnCharacter(_Performer,_StartEvent);
+ObjectTimerCancel(_Performer,_Song);
+ObjectTimerLaunch(_Performer,_Song,_Duration);
+
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+THEN
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
+MusicPlayOnCharacter(_Performer,_StopEvent);
+
 IF
 MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
 DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
 THEN
+DebugText(_Performer, "Debug: Starting Performance");
+DebugText(_Performer, _Song);
 PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
 
 IF
@@ -30,23 +66,12 @@ DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
 RemoveStatus(_Performer,_Status);
 
-PROC
-PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
+IF
+EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
 AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+DB_RepositionSummon_EmbersLute(_Template,_OffsetX,_OffsetY,_OffsetZ)
 THEN
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-MusicPlayOnCharacter(_Performer,_StartEvent);
-ObjectTimerCancel(_Performer,_Song);
-ObjectTimerLaunch(_Performer,_Song,_Duration);
-
-PROC
-PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
-THEN
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-MusicPlayOnCharacter(_Performer,_StopEvent);
+PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
 EXITSECTION
 
 ENDEXITSECTION

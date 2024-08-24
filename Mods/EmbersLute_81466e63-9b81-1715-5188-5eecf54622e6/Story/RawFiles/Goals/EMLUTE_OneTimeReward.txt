@@ -12,8 +12,15 @@ LevelGameplayStarted(_,_)
 AND
 DB_Avatars(_Player)
 THEN
+DebugText(_Player, "Debug: Level GameplayStarted event");
 PROC_OneTimeReward_GiveReward(1,1,1,_Player);
 PROC_OneTimeReward_GiveReward(2,1,1,_Player);
+PROC_OneTimeReward_GiveReward(3,1,1,_Player);
+PROC_OneTimeReward_GiveReward(4,1,1,_Player);
+
+IF
+FlagSet(CAMP_GLO_State_InCamp_161b7223-039d-4ebe-986f-1dcd9a66733f, _Player, _)
+THEN
 PROC_OneTimeReward_GiveReward(3,1,1,_Player);
 PROC_OneTimeReward_GiveReward(4,1,1,_Player);
 

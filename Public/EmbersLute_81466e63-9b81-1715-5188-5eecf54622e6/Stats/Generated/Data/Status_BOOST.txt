@@ -445,7 +445,7 @@ data "StackId" "EMLUTE_COUNTERCHARM_AURA"
 data "AuraRadius" "9"
 data "AuraStatuses" "IF(Character() and not Enemy()):ApplyStatus(EMLUTE_COUNTERCHARM,100,-1)"
 data "TickType" "StartTurn"
-data "StatusPropertyFlags" "TickingWithSource;Performing"
+data "StatusPropertyFlags" "TickingWithSource;Performing;UnsheathInstrument;OverheadOnTurn"
 data "PerformEventName" "Bard_Perform_ThePower"
 
 new entry "EMLUTE_COUNTERCHARM_NOAURA"

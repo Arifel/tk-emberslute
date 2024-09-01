@@ -545,7 +545,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not Enemy()):ApplyStatus(EMLUTE_COUNTERCHARM,100,-1)" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource;Performing" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="TickingWithSource;Performing;UnsheathInstrument;OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePower" />
       </fields>
     </stat_object>

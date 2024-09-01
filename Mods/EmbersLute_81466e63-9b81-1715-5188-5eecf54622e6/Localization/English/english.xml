@@ -336,4 +336,11 @@
   <content contentuid="h109aaac0g977dg0efdgc4c0gebb61d345038" version="1">You have [1] bonus to Charisma, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
   <content contentuid="h25a761c7g91c2g49b9g8dc5gf45d532822f0" version="1">Improved Countercharm</content>
   <content contentuid="h19c9ce61g783eg595eg2a9bg97a2e8614816" version="1">You and any allies within [1] have a [2] bonus to Charisma, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
+  <content contentuid="h9bd19bf0g58d6gc7cag7d0cga27e02e54ff5" version="8">Musicical Portal</content>
+  <content contentuid="h8aeb6599g5cfdg59bcg02b6g63577304b417" version="1">Test Apply</content>
+  <content contentuid="h8ff6e637g68c9g922ag62deg6b5ea792b5ef" version="1">Bard: DANCE</content>
+  <content contentuid="hbdf69d3age20bgecfag5181g818541646b9e" version="1">Does someone look like they are not enjoying the music enough? Let's fix that: it's non-negotiable fun-time!</content>
+  <content contentuid="h69e40a76g3aadge01fg1d66g98d9ad48a024" version="1">Whenever 'Bard Dance' is performed nearby, the victim of this curse will be compelled to dance.</content>
+  <content contentuid="h6e2ca359g481agc76ag1591g23a55a0d44aa" version="2">Musicical Portal</content>
+  <content contentuid="h477ea4afg3d1cg166bgfd2dg5c383824dca8" version="4">Musicical Portal</content>
 </contentList>

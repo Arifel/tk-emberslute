@@ -220,7 +220,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
         <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="be1b3310-2e97-4d65-91e0-043e721f13a9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(69a84d24-b08c-48c1-897f-673fbe8e72bc,15,,,CounterCharmStack,EMLUTE_COUNTERCHARM_AURA,EMLUTE_AURA_SPARKS_INSTRUMENTS_VFX)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,15,,,'ImprovedCountercharm',,EMLUTE_AURA_SPARKS_INSTRUMENTS_VFX);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,15,,,'ImprovedCountercharm');GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,15,,,'ImprovedCountercharm')" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Character() and not Self()" />

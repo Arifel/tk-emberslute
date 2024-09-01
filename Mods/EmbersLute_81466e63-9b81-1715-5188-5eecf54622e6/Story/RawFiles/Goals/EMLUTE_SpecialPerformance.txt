@@ -1,8 +1,19 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
+// One custom perform of The Weeping Dawn, would love to add more but not many sound events that can be re-used
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
+
+// Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0);
+
+// Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
+// My theory is something to do with trying to start a main performer event before the character spawning is complete?
+// Issue seems to affect vanilla Countercharm as well as my custom variant, though I'm going to leave vanilla alone since
+// my "fix" is horrible (basically adds a delay before applying the aura status with music performance).
+DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Drum_ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,"EmbersLuteCountercharmDrum",3000,"EMLUTE_COUNTERCHARM_AURA");
+DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3500,"EMLUTE_COUNTERCHARM_NOAURA");
+DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_NOAURA");
 KBSECTION
 PROC
 PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
@@ -72,6 +83,22 @@ AND
 DB_RepositionSummon_EmbersLute(_Template,_OffsetX,_OffsetY,_OffsetZ)
 THEN
 PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
+
+IF
+EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
+AND
+DB_CountercharmFix_EmbersLute(_Template,_TimerName,_Duration,_)
+THEN
+DebugText(_Summon, "Debug: Starting timer");
+ObjectTimerCancel(_Summon,_TimerName);
+ObjectTimerLaunch(_Summon,_TimerName,_Duration);
+
+IF
+ObjectTimerFinished((CHARACTER)_Summon,_TimerName)
+AND
+DB_CountercharmFix_EmbersLute(_,_TimerName,_,_Status)
+THEN
+ApplyStatus(_Summon,_Status,-1.0);
 EXITSECTION
 
 ENDEXITSECTION

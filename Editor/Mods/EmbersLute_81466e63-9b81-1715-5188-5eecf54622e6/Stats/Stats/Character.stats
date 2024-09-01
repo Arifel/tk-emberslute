@@ -14,6 +14,7 @@
         <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating" enumeration_type_name="AttributeFlags" version="1" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="Invulnerable();CanShootThrough(true);SightRangeOverride(0);DetectDisturbancesBlock(true);BlockRegainHP(Undead;Construct;Living)" />
         <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -34,6 +35,7 @@
         <field name="Passives" type="StringTableFieldDefinition" value="Gnome_Cunning;Gnome_Speed;AttackOfOpportunity;DarknessRules;Darkvision;Emlute_Musical_Spirit;Emlute_Dismissable;Emlute_ViciousRockery;Emlute_Pacifist;Ethereal;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3" />
         <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating" enumeration_type_name="AttributeFlags" version="1" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="Invulnerable();CanShootThrough(true);SightRangeOverride(0);DetectDisturbancesBlock(true);BlockRegainHP(Undead;Construct;Living)" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="SimpleWeapons;MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -78,6 +80,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="03e5b329-b607-4b8b-94db-a12e163d23a5" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="Invulnerable();CanShootThrough(true);SightRangeOverride(0);DetectDisturbancesBlock(true);BlockRegainHP(Undead;Construct;Living);Advantage(Skill,Performance);Skill(Performance,5)" />
         <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_Join_WeepingDawn;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -85,7 +88,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5ff4ca61-0192-42ce-a2b2-5dedf17b9d05" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Music_Spirit_Countercharm" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="db3e9d9f-9f9b-4fbe-9aea-62a8dba023ef" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Shout_ImprovedCountercharm_Emlute, Target_UnarmedAttack);BlockRegainHP(Undead;Construct;Living)" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="BlockRegainHP(Undead;Construct;Living)" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -13284,6 +13284,7 @@ database DB_Achievements_Progress_Character([in](STRING)_, [in](INTEGER)_, [in](
 database DB_AmbushTrigger_CustomAmbushStatus([in](TRIGGER)_, [in](STRING)_)
 database DB_Camp_ForceEndTheDay_CampOverride([in](STRING)_)
 database DB_COL_ResonanceJoy_ToCheck([in](CHARACTER)_)
+database DB_CountercharmFix_EmbersLute([in](CHARACTERROOT)_, [in](STRING)_, [in](INTEGER)_, [in](STRING)_)
 database DB_DBDebug_2Param_GUID_GUID([in](GUIDSTRING)_, [in](GUIDSTRING)_)
 database DB_DefeatedStateFlag([in](GUIDSTRING)_, [in](FLAG)_)
 database DB_END_Courtyard_AllClearVB([in](INTEGER)_)

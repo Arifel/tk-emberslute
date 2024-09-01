@@ -47,26 +47,25 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="32eccc94-29b3-4821-8573-6a90f58f35d1" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_AugmentAuras" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d208db4ge704g2904g5617ge03fbff461ae" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79fc2cc0ga85bg7f35g26ddg76e5fcd04cdb" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="65492c35-78fb-4711-9214-f0d0f7b9b032" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_AugmentAuras_Whistling" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h80cc9c0bga4c5g257dg6fdfg1f608c9e536a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h36ac676dgea3ag2b47g2a91g810402486a4f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_WhistlingLute" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerformBaseGame()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_SPIRIT_MGMT_AURA_GNOMES',GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target))):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPIRIT_MGMT_AURA_GNOMES,100,-1);IF(HasStatus('PERFORM_POSITIVE_THEPOWER')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_THEPOWER_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_STARGAZING')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_STARGAZING_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_BARDDANCE')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_BARDDANCE_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_1')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_1_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_2')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_2_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_3')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_3_AURAONLY,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerformWithSprites_Summon()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_PERFORM_THEPOWER')):ApplyEquipmentStatus(MusicalInstrument,PERFORM_POSITIVE_THEPOWER,100,-1);IF(HasStatus('EMLUTE_PERFORM_STARGAZING')):ApplyEquipmentStatus(MusicalInstrument,PERFORM_POSITIVE_STARGAZING,100,-1);IF(HasStatus('EMLUTE_PERFORM_BARDDANCE')):ApplyEquipmentStatus(MusicalInstrument,PERFORM_POSITIVE_BARDDANCE,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_1')):ApplyEquipmentStatus(MusicalInstrument,PERFORM_POSITIVE_DOS2_1,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_2')):ApplyEquipmentStatus(MusicalInstrument,PERFORM_POSITIVE_DOS2_2,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_3')):ApplyEquipmentStatus(MusicalInstrument,PERFORM_POSITIVE_DOS2_3,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4f0669c8-360f-4040-ad56-d5ac38b0ba26" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_ClearAuras" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdea3459dgfe73gace1gd97fgac4edd4263be" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9720288cg3909g7616gcae9g11cd7d6da3e0" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5461a47d-e10e-4311-9afe-e6547ff3c00a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_ClearAugments" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerformBaseGame()" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_AURA,100,1);IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_MGMT_AURA,100,1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerform()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Emlute_IsPerformingAny()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_PERFORM,100,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">
@@ -417,6 +416,24 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8e7a549-9320-4f7c-85bf-1ce90cc03c11" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Musical_Spirit_BardDance_Curse" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_BARDDANCE')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_DANCE_CURSE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="62447dca-a9c9-4555-bfed-5ba5882699cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Musical_Spirit_SingForMe_Curse" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_DOS2_2')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGING_CURSE,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF38306B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="78a72601-ec51-4118-8c30-74b16e848819" />
@@ -436,7 +453,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9" version="5" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1E1E1E" is_substat="false">
+    <stat_object color="#FF262626" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSpritesSpellContainer" />
@@ -446,14 +463,14 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1E1E1E" is_substat="false">
+    <stat_object color="#FF262626" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="44c7b7e5-922c-4748-b5e1-4a787a07d649" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_SpellContainer" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1E1E1E" is_substat="false">
+    <stat_object color="#FF262626" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6bf1ffe2-4a91-4455-b3d7-201539c6775d" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_CombatSpellContainer" />
@@ -461,7 +478,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Combat_Emlute)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1E1E1E" is_substat="false">
+    <stat_object color="#FF262626" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="46e6ac02-4a03-4fc7-abcd-c523b474f799" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_InstrumentToggle_01_VFX" />
@@ -470,14 +487,14 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h485287ecgd837g975cg5cfdg73602e3d6fd8" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF262626" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="67759224-e209-4f6e-b3c0-7a2e2bafa8c9" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_RollingBones" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="92a0ca80-b9b1-4f81-97e7-96b516fd85ba" />
       </fields>
     </stat_object>
-    <stat_object color="#FF483D8B" is_substat="false">
+    <stat_object color="#FF262626" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="92a0ca80-b9b1-4f81-97e7-96b516fd85ba" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_LuteB_LightPurple_01_VFX" />
@@ -489,6 +506,30 @@
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LIGHT_VFX_CLEAR,100,1)" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="EmluteInstrumentLightVFX" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF262626" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f0669c8-360f-4040-ad56-d5ac38b0ba26" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_ClearAuras" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdea3459dgfe73gace1gd97fgac4edd4263be" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9720288cg3909g7616gcae9g11cd7d6da3e0" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerformBaseGame()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_AURA,100,1);IF(not Emlute_IsPerformingBaseGame()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_MGMT_AURA,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF262626" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32eccc94-29b3-4821-8573-6a90f58f35d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_AugmentAuras" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1d208db4ge704g2904g5617ge03fbff461ae" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h79fc2cc0ga85bg7f35g26ddg76e5fcd04cdb" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerformBaseGame()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_SPIRIT_MGMT_AURA_GNOMES',GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target))):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPIRIT_MGMT_AURA_GNOMES,100,-1);IF(HasStatus('PERFORM_POSITIVE_THEPOWER')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_THEPOWER_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_STARGAZING')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_STARGAZING_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_BARDDANCE')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_BARDDANCE_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_1')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_1_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_2')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_2_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_3')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_3_AURAONLY,100,-1)" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -10,13 +10,15 @@ DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e5
 DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Shout_Bard_Perform_DoS2_1_Ensemble_Emlute");
 DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Shout_Bard_Perform_DoS2_2_Ensemble_Emlute");
 DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Shout_Bard_Perform_DoS2_3_Ensemble_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Shout_Bard_Perform_DoS2_1_Augment_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Shout_Bard_Perform_DoS2_2_Augment_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Shout_Bard_Perform_DoS2_3_Augment_Emlute");
 
 DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95);
 DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f);
 DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b);
-
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1);
 KBSECTION
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // DLC SPELL TRIGGERS
 // Think I can re-use the same logic as the Gustav script here for the DLC spell triggers

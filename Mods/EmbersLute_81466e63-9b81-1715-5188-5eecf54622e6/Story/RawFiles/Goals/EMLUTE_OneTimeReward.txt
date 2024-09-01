@@ -5,6 +5,8 @@ DB_OneTimeRewards_EmbersLute(1,(ITEMROOT)EmbersLute_MusicalSpritesWhite_a2a12008
 DB_OneTimeRewards_EmbersLute(2,(ITEMROOT)EmbersLute_MusicalSpritesBlackMonochrome_888e0a01-2ed8-4392-be2f-cc2be009f021);
 DB_OneTimeRewards_EmbersLute(3,(ITEMROOT)EmbersLute_Ensemble_ViciousRockery_403e0f11-57dd-41db-b322-c3ca913331a3);
 DB_OneTimeRewards_EmbersLute(4,(ITEMROOT)EmbersLute_Ensemble_RollingBones_3a3efd76-db5d-4c34-a6cb-00a3879ac955);
+DB_OneTimeRewards_EmbersLute(5,(ITEMROOT)EmbersLute_WhistlingLute_13434016-05d6-49bf-8bac-fd629f062a72);
+
 KBSECTION
 //On loading or starting game, add the lutes to player inventory
 IF
@@ -13,16 +15,20 @@ AND
 DB_Avatars(_Player)
 THEN
 DebugText(_Player, "Debug: Level GameplayStarted event");
-PROC_OneTimeReward_GiveReward(1,1,1,_Player);
-PROC_OneTimeReward_GiveReward(2,1,1,_Player);
-PROC_OneTimeReward_GiveReward(3,1,1,_Player);
+PROC_OneTimeReward_GiveReward(5,1,1,_Player);
 PROC_OneTimeReward_GiveReward(4,1,1,_Player);
+PROC_OneTimeReward_GiveReward(3,1,1,_Player);
+PROC_OneTimeReward_GiveReward(2,1,1,_Player);
+PROC_OneTimeReward_GiveReward(1,1,1,_Player);
 
 IF
 FlagSet(CAMP_GLO_State_InCamp_161b7223-039d-4ebe-986f-1dcd9a66733f, _Player, _)
 THEN
-PROC_OneTimeReward_GiveReward(3,1,1,_Player);
+PROC_OneTimeReward_GiveReward(5,1,1,_Player);
 PROC_OneTimeReward_GiveReward(4,1,1,_Player);
+PROC_OneTimeReward_GiveReward(3,1,1,_Player);
+PROC_OneTimeReward_GiveReward(2,1,1,_Player);
+PROC_OneTimeReward_GiveReward(1,1,1,_Player);
 
 //Send to inventory
 PROC

@@ -118,5 +118,119 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6856cc8dgfb25gd941ga826g911c306ee0b1" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cffc4f52-68f0-4dd3-864b-b238ca88ecb4" />
+        <field name="Name" type="NameTableFieldDefinition" value="BardDance_BullyMode_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1da577c9-2fdc-4642-a4a5-f88e060cf222" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Enchantment" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Annoying_Spells_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(HasStatus('EMLUTE_SINGFORME_VICTIM',context.Target)):RemoveStatus(EMLUTE_SINGFORME_VICTIM)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Charisma, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_BARDDANCE_VICTIM,100,30)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Curse_BardDance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8ff1b766g22fdg02bfgf90cge8493f6096b3" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4cd3704cge915ga0degb0dcg812f03bf749b" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hb28b8c92g340fg6bbbg049fg8da69442102d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_BARDDANCE_VICTIM,100,30)" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Prepare" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Loop" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Cast" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Impact" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="850cd2f3-dde2-475d-b3a3-f35c47333523,,;,,;8bfc0edf-5baa-4344-a486-14032de5ab69,,;3935e00c-7d43-4243-a4ef-4c680530d593,,;ad775f69-0d9f-4215-bfc2-8e0ec7e32189,,;,,;6bfce8a0-80f1-47a8-97f4-34f4b8b6fe9e,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a68a64e5-9184-477a-838c-ba4bbb4505a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SingForMe_BullyMode_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cffc4f52-68f0-4dd3-864b-b238ca88ecb4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(HasStatus('EMLUTE_BARDDANCE_VICTIM',context.Target)):RemoveStatus(EMLUTE_BARDDANCE_VICTIM)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Charisma, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGFORME_VICTIM,100,30)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Curse_SingForMe" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9cf64b53gb8f5gb9cagfd5eg2d0c91f58c50" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11a5eca4g1446gfb0ag9693g326560a3f35c" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGFORME_VICTIM,100,30)" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c36885fe-cac8-4f6b-b806-9b82f2ce0550" />
+        <field name="Name" type="NameTableFieldDefinition" value="MildMockery_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff31b0b2-53f7-4147-adba-c3e63dbe62f9" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Charisma, SourceSpellDC())" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_VICIOUSMOCKERY_INSULT,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_MildMockery" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc8b74519ge033g9bdcg769bg0b69f5123c6c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb32b84e0g8cfeg6b3fga832g7e1b4e730e32" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc0b3acc8g1dd8g56c6gb696g843c9aea5e0d" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Charisma" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_VICIOUSMOCKERY_INSULT,100,1)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;IsHarmful;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="10f934ed-bdde-4db3-886e-a2b3d52b96c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ClownFace_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cffc4f52-68f0-4dd3-864b-b238ca88ecb4" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_FACEPAINT_APPLY,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_FacePaint" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd2bc92b3g8771g2a61g7491gda072a7b6eac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h39cbf08dg8b89ga412gc17fged4f585a8a9f" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha1939f68gc071gb1e6g79a2gec57ad7beaee" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WYR_FACEPAINT_CLOWN,100,20)" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="64c5cb99-1881-435c-9975-6facd79e79b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="RemovePerformanceCurse_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="12e1f07e-0c58-4f9e-b7cd-cbf6019d7140" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Annoying_Spells_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF('HasStatus('EMLUTE_SINGFORME_VICTIM')):RemoveStatus(EMLUTE_SINGFORME_VICTIM);TARGET:IF(HasStatus('EMLUTE_BARDDANCE_VICTIM',context.Target)):RemoveStatus(EMLUTE_BARDDANCE_VICTIM)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="8" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('EMLUTE_SINGFORME_VICTIM') or HasStatus('EMLUTE_BARDDANCE_VICTIM')" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h72b833f6g4feag0610ge297gd91ad8950574" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85d95060g802dgd7e5g3662gc0f8c85f8a91" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFDC143C" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
+        <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="be1b3310-2e97-4d65-91e0-043e721f13a9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(69a84d24-b08c-48c1-897f-673fbe8e72bc,15,,,CounterCharmStack,EMLUTE_COUNTERCHARM_AURA,EMLUTE_AURA_SPARKS_INSTRUMENTS_VFX)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Character() and not Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ImprovedCounterCharm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e0e3c22gb61eg0163gf738g2e0f652ef1a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23844e56g13a1gfa75g260ag56d6ad728926" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);+1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_COUNTERCHARM,100,15)" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

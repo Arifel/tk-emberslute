@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="Rulebook">
+        <node id="root">
+            <children>
+                <node id="Rule">
+                    <attribute id="ApplyVisual" type="bool" value="true"/>
+                    <attribute id="ChangeBodyType" type="bool" value="true"/>
+                    <attribute id="ChangeIcon" type="bool" value="true"/>
+                    <attribute id="ChangeRace" type="bool" value="true"/>
+                    <attribute id="FootstepsType" type="bool" value="true"/>
+                    <attribute id="IgnoreCustomLooks" type="bool" value="true"/>
+                    <attribute id="RemoveOldTags" type="bool" value="false"/>
+                    <attribute id="RetainDisplayName" type="bool" value="true"/>
+                    <attribute id="RuleName" type="LSString" value="EmluteDisguiseOgreKeepName"/>
+                    <attribute id="SpellsAdd" type="LSString" value="Target_Shove_Ogre;Target_Slam_Ogre"/>
+                    <attribute id="SpellsRemove" type="LSString" value="Target_Shove"/>
+                    <attribute id="UUID" type="guid" value="f0dbe368-cc9f-4905-bfcd-ec3e2832c5a6"/>
+                    <attribute id="UseShapeshiftIdentity" type="bool" value="true"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

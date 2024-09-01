@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="Outcomes">
+        <node id="root">
+            <children>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="ChoasCharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Blur"/>
+                    <attribute id="UUID" type="guid" value="1c945dd1-aeb9-432a-b29a-07f9204eaff1"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Enchant"/>
+                    <attribute id="UUID" type="guid" value="159a1b0d-a518-46e1-a6bc-bb9ce465d918"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Teleport"/>
+                    <attribute id="UUID" type="guid" value="86b842b7-190b-4f34-84ad-9a5d6747b68c"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_ProtectiveLights_Emlute"/>
+                    <attribute id="UUID" type="guid" value="b45be828-b630-4103-b576-8fa18c2a546b"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_MagicAllergy_Enlarge_Emlute"/>
+                    <attribute id="UUID" type="guid" value="d51c5f70-c80a-4330-9c20-5ab136f10342"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Shield"/>
+                    <attribute id="UUID" type="guid" value="d5edbaf6-5963-43c5-8650-91bd00f8b363"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_FacePaint_Emlute"/>
+                    <attribute id="UUID" type="guid" value="69cadac4-fe5e-4dc8-b91c-ee09fc0883c9"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_ExplodingPants_Emlute"/>
+                    <attribute id="UUID" type="guid" value="ad1e2a2a-7756-410f-94c4-a71830165475"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
+                    <attribute id="Spell" type="FixedString" value="Projectile_Fireworks_Box_A_Emlute"/>
+                    <attribute id="UUID" type="guid" value="61987dae-c17d-4e93-9b65-3d34c680b14d"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Fog"/>
+                    <attribute id="UUID" type="guid" value="8bea6562-2fb1-4608-a382-c9bb9a0b6a75"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Heal"/>
+                    <attribute id="UUID" type="guid" value="9f1040ad-3134-4a03-9054-6c9f39ce6652"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Burning"/>
+                    <attribute id="UUID" type="guid" value="5c86abe3-5b07-401c-ae96-a51241d27d4f"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Mephit"/>
+                    <attribute id="UUID" type="guid" value="7996ecf6-ca5e-48ab-8af5-dc3b4d6f1910"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ActionSurge"/>
+                    <attribute id="UUID" type="guid" value="91eb009d-477c-4323-ad4d-b25fd18e6476"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Telekinesis"/>
+                    <attribute id="UUID" type="guid" value="d9b2e191-e622-4350-9d36-c22dca5747b9"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_ResilientSphere"/>
+                    <attribute id="UUID" type="guid" value="1333f40a-9e73-4aa6-a3fc-44e686d21585"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Slow"/>
+                    <attribute id="UUID" type="guid" value="a7e20523-4c70-423f-96cc-eddebe439ed8"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_Entangle"/>
+                    <attribute id="UUID" type="guid" value="d50570fa-8b5b-4b3f-b98a-bd095001fd2b"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_CatsAndDogs"/>
+                    <attribute id="UUID" type="guid" value="55e94fda-5ef3-44a8-99b8-d4b53ac2a56c"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagic_TurnMagic"/>
+                    <attribute id="UUID" type="guid" value="c5d46e9e-583c-42e9-9ecd-44b265fb1bc0"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Emlute_DazzlingDance"/>
+                    <attribute id="Spell" type="FixedString" value="Projectile_DazzlingDistraction_2_Emlute"/>
+                    <attribute id="UUID" type="guid" value="f3778d80-475c-4c66-b22c-a043a228c317"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Emlute_DazzlingDance"/>
+                    <attribute id="Spell" type="FixedString" value="Projectile_DazzlingDistraction_3_Emlute"/>
+                    <attribute id="UUID" type="guid" value="f2900679-c25a-4c36-bb59-49c15ab8c2a0"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="Emlute_DazzlingDance"/>
+                    <attribute id="Spell" type="FixedString" value="Projectile_DazzlingDistraction_4_Emlute"/>
+                    <attribute id="UUID" type="guid" value="516dad29-ac2e-491b-9f3e-1cd2c9165c2f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

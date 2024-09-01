@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="4a20cc05-eed3-46b0-bd19-62b9954ffd5e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f0dbe368-cc9f-4905-bfcd-ec3e2832c5a6" />
+        <field name="RuleName" type="StringTableFieldDefinition" value="EmluteDisguiseOgreKeepName" />
+        <field name="FootstepsType" type="BoolTableFieldDefinition" value="True" />
+        <field name="RemoveOldTags" type="BoolTableFieldDefinition" value="False" />
+        <field name="ChangeRace" type="BoolTableFieldDefinition" value="True" />
+        <field name="ChangeBodyType" type="BoolTableFieldDefinition" value="True" />
+        <field name="UseShapeshiftIdentity" type="BoolTableFieldDefinition" value="True" />
+        <field name="ApplyVisual" type="BoolTableFieldDefinition" value="True" />
+        <field name="IgnoreCustomLooks" type="BoolTableFieldDefinition" value="True" />
+        <field name="RetainDisplayName" type="BoolTableFieldDefinition" value="True" />
+        <field name="ChangeIcon" type="BoolTableFieldDefinition" value="True" />
+        <field name="SpellsAdd" type="StringTableFieldDefinition" value="Target_Shove_Ogre;Target_Slam_Ogre" />
+        <field name="SpellsRemove" type="StringTableFieldDefinition" value="Target_Shove" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

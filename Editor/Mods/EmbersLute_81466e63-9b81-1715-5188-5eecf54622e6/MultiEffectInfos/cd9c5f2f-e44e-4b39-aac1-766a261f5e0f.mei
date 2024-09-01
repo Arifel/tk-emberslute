@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="cd9c5f2f-e44e-4b39-aac1-766a261f5e0f" OwnerUUID="f968d509-9e23-44fa-a18c-3abdbbaa12a6" Name="EMLUTE_LUTE_PurpleLuteSpirit_StatusEffect">
+  <EffectInfo UUID="6f3ecc57-107a-4a5d-a52d-8d7c8742e003" EffectResourceGuid="b7a68e20-8e19-e3cc-6e32-1b92299380a2" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

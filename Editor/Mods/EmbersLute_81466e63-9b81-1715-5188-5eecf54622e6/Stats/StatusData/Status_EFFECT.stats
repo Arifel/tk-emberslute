@@ -165,6 +165,14 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37a78b9a-e06d-44a9-96bb-668f18639d8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_SPARKS_INSTRUMENTS_VFX" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="573d24bb-98e8-4884-9492-a86d9f7246b5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2a4d8e30-c151-4aed-acad-dde85f6170dd" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SKELLY_FX_01" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -179,10 +187,12 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="fb63d6fe-e9b5-49d1-bab8-ec8b5013da6e" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF2E2E2E" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fff4d5c9-2b5a-478c-93c4-dd2b425fab7c" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ANNOYING_LUTE_VFX" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a754d6c0-b18a-4733-b08c-1272fbf0f813" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_MUSIC_BOX_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c25c29b9-be65-459f-8d92-2b809a4d4191" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -298,13 +308,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="447caf6e-e576-46e3-856d-7f6a2b31446c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_FLUTE_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a754d6c0-b18a-4733-b08c-1272fbf0f813" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_MUSIC_BOX_VFX" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
       </fields>
     </stat_object>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="cae7d663-416d-40ed-8639-8ed799afbae3">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1c945dd1-aeb9-432a-b29a-07f9204eaff1" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="ChoasCharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Blur" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="159a1b0d-a518-46e1-a6bc-bb9ce465d918" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Enchant" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="86b842b7-190b-4f34-84ad-9a5d6747b68c" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Teleport" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b45be828-b630-4103-b576-8fa18c2a546b" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagicBarbarian_ProtectiveLights_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d51c5f70-c80a-4330-9c20-5ab136f10342" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_MagicAllergy_Enlarge_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d5edbaf6-5963-43c5-8650-91bd00f8b363" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Shield" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="69cadac4-fe5e-4dc8-b91c-ee09fc0883c9" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_FacePaint_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ad1e2a2a-7756-410f-94c4-a71830165475" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_ExplodingPants_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="61987dae-c17d-4e93-9b65-3d34c680b14d" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_Fireworks_Box_A_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8bea6562-2fb1-4608-a382-c9bb9a0b6a75" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Fog" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9f1040ad-3134-4a03-9054-6c9f39ce6652" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Heal" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5c86abe3-5b07-401c-ae96-a51241d27d4f" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Burning" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7996ecf6-ca5e-48ab-8af5-dc3b4d6f1910" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Mephit" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+        <field name="UUID" type="IdTableFieldDefinition" value="91eb009d-477c-4323-ad4d-b25fd18e6476" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_ActionSurge" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_14" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d9b2e191-e622-4350-9d36-c22dca5747b9" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Telekinesis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_15" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1333f40a-9e73-4aa6-a3fc-44e686d21585" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_ResilientSphere" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_16" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a7e20523-4c70-423f-96cc-eddebe439ed8" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Slow" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_17" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d50570fa-8b5b-4b3f-b98a-bd095001fd2b" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_Entangle" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_18" />
+        <field name="UUID" type="IdTableFieldDefinition" value="55e94fda-5ef3-44a8-99b8-d4b53ac2a56c" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_CatsAndDogs" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_19" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c5d46e9e-583c-42e9-9ecd-44b265fb1bc0" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_TurnMagic" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_20" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f3778d80-475c-4c66-b22c-a043a228c317" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Emlute_DazzlingDance" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_DazzlingDistraction_2_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_21" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f2900679-c25a-4c36-bb59-49c15ab8c2a0" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Emlute_DazzlingDance" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_DazzlingDistraction_3_Emlute" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_22" />
+        <field name="UUID" type="IdTableFieldDefinition" value="516dad29-ac2e-491b-9f3e-1cd2c9165c2f" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Emlute_DazzlingDance" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_DazzlingDistraction_4_Emlute" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

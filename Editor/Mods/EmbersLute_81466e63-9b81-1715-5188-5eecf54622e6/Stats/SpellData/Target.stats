@@ -215,12 +215,12 @@
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
       </fields>
     </stat_object>
-    <stat_object color="#FFDC143C" is_substat="false">
+    <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
         <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="be1b3310-2e97-4d65-91e0-043e721f13a9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,15,,,'ImprovedCountercharm',,EMLUTE_AURA_SPARKS_INSTRUMENTS_VFX);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,15,,,'ImprovedCountercharm');GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,15,,,'ImprovedCountercharm')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,15,,,'ImprovedCountercharm',,EMLUTE_COUNTERCHARM_AURA);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,15,,,'ImprovedCountercharm',,EMLUTE_COUNTERCHARM_NOAURA);GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,15,,,'ImprovedCountercharm',,EMLUTE_COUNTERCHARM_NOAURA)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Character() and not Self()" />
@@ -230,6 +230,20 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);+1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_COUNTERCHARM,100,15)" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8B0000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08ddc04e-68bb-40cf-b889-fa6e639fa2b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Chaoscharm_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_AURA);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA);GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ChaosCharm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfda178e4g0506g018agb03eg990f02557f44" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb8f3391g4d41gbafagf991g4f34583d0e9e" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_CHAOSCHARM,100,4)" />
       </fields>
     </stat_object>
   </stat_objects>

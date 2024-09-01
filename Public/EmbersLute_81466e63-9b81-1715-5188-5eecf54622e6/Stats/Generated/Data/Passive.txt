@@ -317,6 +317,13 @@ using "Emlute_Join_ThePower"
 data "Conditions" "StatusId('EMLUTE_JOIN_DOS2_2')"
 data "StatsFunctors" "ApplyStatus(EMLUTE_SINGING_CURSE,100,-1)"
 
+new entry "Emlute_CounterCharm"
+type "PassiveData"
+data "Properties" "IsHidden"
+data "StatsFunctorContext" "OnStatusApplied"
+data "Conditions" "StatusId('EMLUTE_COUNTERCHARM_AURA') or StatusId('EMLUTE_COUNTERCHARM_NOAURA') or StatusId('EMLUTE_CHAOSCHARM_AURA') or StatusId('EMLUTE_CHAOSCHARM_NOAURA')"
+data "StatsFunctors" "ApplyStatus(EMLUTE_COUNTERCHARM_MUSIC,100,-1)"
+
 new entry "Emlute_Instrument_VFX"
 type "PassiveData"
 data "DisplayName" "h269cf71bg023dg05bcg87a1g4cc5edb07b7a;1"

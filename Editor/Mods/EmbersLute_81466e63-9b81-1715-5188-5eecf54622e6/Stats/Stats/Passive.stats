@@ -434,6 +434,16 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGING_CURSE,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fd9a55f-3aa8-43d2-8e0a-2e7aa4672e0c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_CounterCharm" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_COUNTERCHARM_AURA') or StatusId('EMLUTE_COUNTERCHARM_NOAURA') or StatusId('EMLUTE_CHAOSCHARM_AURA') or StatusId('EMLUTE_CHAOSCHARM_NOAURA')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_COUNTERCHARM_MUSIC,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF38306B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="78a72601-ec51-4118-8c30-74b16e848819" />

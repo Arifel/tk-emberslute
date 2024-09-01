@@ -333,7 +333,7 @@
   <content contentuid="h62f06847g8760g976bgf956g390d91644085" version="1">Improved Countercharm Aura</content>
   <content contentuid="h8e7ea1feg054ag15f4g35c1gecd028b17f59" version="1">You and any allies within [1] have a [2] bonus to Charisma, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
   <content contentuid="hf0c43bc2g800bgc266gb1cegcd058afeee30" version="1">Improved Countercharm</content>
-  <content contentuid="h109aaac0g977dg0efdgc4c0gebb61d345038" version="1">You have [1] bonus to Charisma, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
+  <content contentuid="h109aaac0g977dg0efdgc4c0gebb61d345038" version="2">You have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; and &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;. You also have a [1] bonus to Charisma rolls.</content>
   <content contentuid="h25a761c7g91c2g49b9g8dc5gf45d532822f0" version="1">Improved Countercharm</content>
   <content contentuid="h19c9ce61g783eg595eg2a9bg97a2e8614816" version="1">You and any allies within [1] have a [2] bonus to Charisma, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;.</content>
   <content contentuid="h9bd19bf0g58d6gc7cag7d0cga27e02e54ff5" version="8">Musicical Portal</content>
@@ -343,4 +343,17 @@
   <content contentuid="h69e40a76g3aadge01fg1d66g98d9ad48a024" version="1">Whenever 'Bard Dance' is performed nearby, the victim of this curse will be compelled to dance.</content>
   <content contentuid="h6e2ca359g481agc76ag1591g23a55a0d44aa" version="2">Musicical Portal</content>
   <content contentuid="h477ea4afg3d1cg166bgfd2dg5c383824dca8" version="4">Musicical Portal</content>
+  <content contentuid="h2de57bdegbb6eg55dfgc0e0ga5d7a27b5171" version="1">Countercharm - Chaos</content>
+  <content contentuid="h35a6ba72g9a59g36a4g34d9g7e0752321115" version="1">Need to turn the tide of a battle? The lute spirit proposes an aura of indiscriminate wild magic. It... &lt;i&gt;might&lt;/i&gt; help.</content>
+  <content contentuid="hfda178e4g0506g018agb03eg990f02557f44" version="1">Countercharm - Chaos</content>
+  <content contentuid="hcb8f3391g4d41gbafagf991g4f34583d0e9e" version="1">Need to turn the tide of a battle? The lute spirit proposes an aura of indiscriminate wild magic. It... &lt;i&gt;might&lt;/i&gt; help.</content>
+  <content contentuid="h6bcce02cg35e8ga596ga7d6g6f1dd41ef3e1" version="1">You and any allies within [1] have &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt; against being &lt;LSTag Type="Status" Tooltip="CHARMED"&gt;Charmed&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="FRIGHTENED"&gt;Frightened&lt;/LSTag&gt;. You also have a [2] bonus to Charisma rolls.</content>
+  <content contentuid="h13dad561g12bfgd988gb798g04ab7fb804f6" version="1">Aura of Musical Mayhem</content>
+  <content contentuid="hcab9db27g03aeg2e0bg6530g66fa54feff77" version="1">Any creature within this aura has a [1] chance to trigger wild magic each turn.</content>
+  <content contentuid="h4d4f4e63g4dd3gc339ga8e4gc8ec0d413d82" version="1">Chords of Chaos</content>
+  <content contentuid="hfac34e33g0e84g680fgd292gc6dc36cbedd5" version="1">Wild magic is stirred up by the dissonant chords of a nearby chaos charm.</content>
+  <content contentuid="hec1280f4gcfceg16cbge4d5g0ff49dc18c03" version="1">Face Painted!</content>
+  <content contentuid="hc9c8b68cg316ag803eg3c5dgee9d65d7c6be" version="1">A naughty musical sprite has painted your face!</content>
+  <content contentuid="hbc51a0d3gde69gb0adg76d4g056553af5a93" version="1">Handkerchief?</content>
+  <content contentuid="h87c938feg34c8g7bfdgd5f7g63e7601523c9" version="1">Pants?! Where did.. WHY ARE THEY TICKING?</content>
 </contentList>

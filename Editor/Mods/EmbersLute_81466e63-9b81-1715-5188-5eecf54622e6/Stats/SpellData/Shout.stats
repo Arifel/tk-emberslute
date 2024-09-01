@@ -631,5 +631,50 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04461bc7-2ea3-48b1-94fb-d2a58d6eee43" />
+        <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Container_Emlute" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Chaoscharm_Emlute;Target_Chaoscharm_Combat_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ChaosCharm" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2de57bdegbb6eg55dfgc0e0ga5d7a27b5171" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35a6ba72g9a59g36a4g34d9g7e0752321115" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c559a7f-f758-4fdd-bd25-75ac8dd21113" />
+        <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a596214-6478-417c-bfc9-34001c187e46" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(COUNTERCHARM_AURA,100,5)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COUNTERCHARM,100,5)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="74a38d65-aa5f-4fbd-8591-434256f235b2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Facepaint_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f0759cb9-2fd7-44f8-a929-4e15a967ef1e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(WYR_FACEPAINT_CLOWN,100,10)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_FacePaint" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec1280f4gcfceg16cbge4d5g0ff49dc18c03" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9c8b68cg316ag803eg3c5dgee9d65d7c6be" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WYR_FACEPAINT_CLOWN,100,10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1c33144e-dc2d-4cc3-8262-ae60e58f4155" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExplodingPants_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f0759cb9-2fd7-44f8-a929-4e15a967ef1e" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(37467ae2-15b7-4b3d-a1d7-84a07c7dad12,,EXPLOSIVE_MINE_ORTHON,,,,true)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbc51a0d3gde69gb0adg76d4g056553af5a93" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87c938feg34c8g7bfdgd5f7g63e7601523c9" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

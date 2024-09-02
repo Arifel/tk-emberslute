@@ -537,7 +537,7 @@
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
       </fields>
     </stat_object>
-    <stat_object color="#00FFFFFF" is_substat="false">
+    <stat_object color="#FF204F8A" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="805c92c1-5bea-47af-be66-873713fda639" />
         <field name="Name" type="NameTableFieldDefinition" value="Share_MusicalSpirits_Emlute" />
@@ -561,6 +561,19 @@
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4f9bbc65-1402-4f57-a5db-3c47d1564771" />
         <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF4C3F4C" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c559a7f-f758-4fdd-bd25-75ac8dd21113" />
+        <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a596214-6478-417c-bfc9-34001c187e46" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(COUNTERCHARM_AURA,100,5)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COUNTERCHARM,100,5)" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('EMLUTE_COUNTERCHARM_AURA',context.Source)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -618,7 +631,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h41c031ecgbe24g130dgb9feg4f3dfd91b7f2" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF511251" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f5c3fdf3-b59a-4dfa-898e-36850143f7de" />
         <field name="Name" type="NameTableFieldDefinition" value="Annoying_Spells_Container_Emlute" />
@@ -631,7 +644,34 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF511251" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="366f9bfe-b769-4401-a520-95dab7b5f80a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Share_MildMockery_Emlute" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Annoying_Spells_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AOE:ApplyStatus(EMLUTE_MILDMOCKERY_UNLOCKED,100,-1)" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="AoEConditions" type="StringTableFieldDefinition" value="Character() and Party() and not HasStatus('EMLUTE_MILDMOCKERY_UNLOCKED') and not HasPassive('Emlute_MildMockery')" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Share_MildMockery" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5246bd21g12a7g74a7gde83g969dd8ff4547" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h528c26b2g17b0g65fag1e99g84be790a560b" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_MILDMOCKERY_UNLOCKED,100,-1)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Paladin_HealingRadiance" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Paladin_HealingRadiance" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;eb4f3d5f-6815-4ad5-a5af-870942af0863,,;ba5068a2-ed31-4b9a-87cc-be28edb9ad25,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f719faf1-83e7-4407-a2f2-0880e26f9ca5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="a851aded-d542-482c-81ea-aa807d8b630f" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="1dcca477-79be-4e15-bb70-8680a6dc49e5" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF511251" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="04461bc7-2ea3-48b1-94fb-d2a58d6eee43" />
         <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Container_Emlute" />
@@ -643,16 +683,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6c559a7f-f758-4fdd-bd25-75ac8dd21113" />
-        <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4a596214-6478-417c-bfc9-34001c187e46" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(COUNTERCHARM_AURA,100,5)" />
-        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COUNTERCHARM,100,5)" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF2E0F07" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="74a38d65-aa5f-4fbd-8591-434256f235b2" />
         <field name="Name" type="NameTableFieldDefinition" value="Facepaint_Emlute" />
@@ -665,7 +696,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WYR_FACEPAINT_CLOWN,100,10)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF2E0F07" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c33144e-dc2d-4cc3-8262-ae60e58f4155" />
         <field name="Name" type="NameTableFieldDefinition" value="ExplodingPants_Emlute" />

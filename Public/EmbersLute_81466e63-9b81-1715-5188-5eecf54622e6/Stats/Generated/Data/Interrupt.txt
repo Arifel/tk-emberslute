@@ -17,6 +17,7 @@ using "Interrupt_Emlute_BardDance_Curse"
 data "DisplayName" "he96c5c39g992cg9672gd59cg135c5ed94cf5;1"
 data "Description" "hfa093ea0ge506g6b69gc11bg07a6b5467d91;1"
 data "Icon" "EmbersLute_Spell_Curse_SingForMe"
+data "InterruptContext" "OnStatusApplied"
 data "Conditions" "not HasStatus('EMLUTE_JOIN_DOS2_2',context.Observer) and not Tagged('EMLUTE_CURSED_APPLIED',context.Observer) and not Self(context.Observer,context.Target) and not Self(context.Observer,context.Source) and (HasStatus('PERFORM_POSITIVE_DOS2_2',context.Target)) and not DistanceToEntityGreaterThan(6, context.ObserverPosition, context.Target)"
 data "Properties" "ApplyStatus(OBSERVER_OBSERVER,EMLUTE_SINGING_CURSE,100,30)"
 

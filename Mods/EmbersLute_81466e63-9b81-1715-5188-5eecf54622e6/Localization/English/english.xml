@@ -78,15 +78,15 @@
   <content contentuid="hfa0ff3dcgf1e9g5197gec98gc37e663ec82c" version="2">Invisible Lute</content>
   <content contentuid="hbb754a04g74fagca3dg8bc0ga99f998f8b58" version="1">Musical Sprites</content>
   <content contentuid="h518838bbgb20cg01b5g4963g0e7f7fdd8247" version="2">Mysterious musical sprites dance around the performer whenever music is played on this instrument.</content>
-  <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="8">Lute of Musical Sprites</content>
-  <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="8">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="10">Lute of Musical Sprites (Gold Edges)</content>
+  <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="10">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="10">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="9">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="9">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="3">Musical Sprites Instruments</content>
-  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="3">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
-  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="2">Instrument Chest</content>
-  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="2">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
+  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="6">Musical Sprites Instruments</content>
+  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="6">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
+  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="5">Instrument Chest</content>
+  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="5">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
   <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="7">Lute of Musical Sprites (White)</content>
   <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="7">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
@@ -268,9 +268,9 @@
   <content contentuid="hb725bd91gfce1g9466gda06g05b0b5e38b94" version="1">Spider Lyre Visuals</content>
   <content contentuid="h80cc9c0bga4c5g257dg6fdfg1f608c9e536a" version="1">Whistling in Public</content>
   <content contentuid="h36ac676dgea3ag2b47g2a91g810402486a4f" version="1">This lute will whistle along to any music performed on this instrument, whether you like it or not.</content>
-  <content contentuid="h82d30a55g2dd0g4c1aga043gb895f4a6430b" version="8">Ember's Really Annoying Lute</content>
-  <content contentuid="h094d758cgb633g857ag465ag0cbe51628f8b" version="7">A chaotic lute that adds the whistling track whenever you perform music on it.</content>
-  <content contentuid="h751ee566gb5dbg4892g9d08g0c257c81d97d" version="8">Ember had many a frustrating argument with this lute, insisting the only creatures that should be ever allowed to whistle in public are birds. The lute was having none of it.</content>
+  <content contentuid="h82d30a55g2dd0g4c1aga043gb895f4a6430b" version="10">Ember's Really Annoying Lute</content>
+  <content contentuid="h094d758cgb633g857ag465ag0cbe51628f8b" version="9">A chaotic lute that adds the whistling track whenever you perform music on it.</content>
+  <content contentuid="h751ee566gb5dbg4892g9d08g0c257c81d97d" version="10">Ember had many a frustrating argument with this lute, insisting the only creatures that should be ever allowed to whistle in public are birds. The lute was having none of it.</content>
   <content contentuid="he1d7201dg1baeg455bg9cfdgb1565101d23b" version="6">The Qarma Lutra</content>
   <content contentuid="h577a2016ge3feg4266g882fg7052f5663c36" version="6">The divine art of crescendo mastery.</content>
   <content contentuid="h5bf97ea7gb823g4418ga6afg15078c331911" version="6">Musical Sprites Instruments</content>
@@ -366,4 +366,40 @@
   <content contentuid="hb0e48dbeg5788g30a9g7919g823a85a84021" version="1">Magical varnish has imbued this instrument with a mysterious connection to otherworldly, musical realms.</content>
   <content contentuid="h44d35f58gd3aagfa73g4c29g2ff2cf0838ce" version="1">Clearing Varnish</content>
   <content contentuid="h40f805f3g74f1gffbfg2c52gbc8a851334d1" version="1">Removing the instrument varnish effects.</content>
+  <content contentuid="hd399abacg74b7g4de5g9ba7g4476ab0512c1" version="11">Annoying Instruments</content>
+  <content contentuid="h53b5ccedg5b6bg466dg9d87ge0ed8fddf84d" version="11">Slightly off-key whistling can be heard as you approach this chest, shortly followed by a muffled giggle.</content>
+  <content contentuid="h13d110ebg59d5g4a79gb868g7e893b3f4700" version="10">Ensemble Instruments</content>
+  <content contentuid="h7cb3b632gaeb1g4a1fg9cbag397f7a125a2f" version="10">This chest holds strong bonds to the souls of long-forgotten musical ensembles.</content>
+  <content contentuid="h52698444g590dg4828gb95ag741178a4acc7" version="9">Haunted Instruments</content>
+  <content contentuid="h4adbac4ega444g4409g8961gf591bee41b36" version="8">Miscelleaneous</content>
+  <content contentuid="h666d822fg1ab1g43e8g9403ge0f24b97a440" version="8">Contains a few miscelleaneous bonus items.</content>
+  <content contentuid="h56c82aeeg4fd7g43dcga142gfa3e2530920b" version="7">Instrument Varnishes</content>
+  <content contentuid="hfc21e371gbcc1g413dg897bgae3297d399ac" version="7">Not to be mistaken for dyes. Varnishes let you temporarily grant the various abilities of Ember's instruments to other instruments of Faerûn.</content>
+  <content contentuid="h7e17cce8g1810g40a3g84b5g300967e1bfdf" version="3">You feel a sudden drop in temperature as you regard this chest.</content>
+  <content contentuid="h8fef0bb1gcd3bg4b8cg9d4fgcff09c815d71" version="6">Varnish |The Vicious Rockery|</content>
+  <content contentuid="haecb9bd3gd7cbg39f3ga4e5gc0b129a9ca43" version="5">The effects of this varnish will be removed when you unequip the instrument. Cannot be applied to another Spirit or Sprites instrument.</content>
+  <content contentuid="h3f977cb5gb430g40e1ga68fgd8643e342f56" version="6">Apply this varnish to your equipped instrument, and gain the ability to summon the souls of long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
+  <content contentuid="h68717b0dg2c65g408fgbaa5geb18eccc3bdf" version="5">Varnish |The Rolling Bones|</content>
+  <content contentuid="h8b1cee8dg4ebdg6ce7g0bc9ged8cd8de374d" version="4">The effects of this varnish will be removed when you unequip the instrument. Cannot be applied to another Spirit or Sprites instrument.</content>
+  <content contentuid="ha1210485g722fg4da3gbba6gff81944fae51" version="5">Apply this varnish to your equipped instrument, and gain the ability to summon a music ensemble of the undead. </content>
+  <content contentuid="h607634cbg0a25g4e89gbbafgbb1a1a15d654" version="5">Varnish |Musical Sprites|</content>
+  <content contentuid="hd3f754bfgc37bgc998g6fbegeae3d88d975f" version="3">The effects of this varnish will be removed when you unequip the instrument.</content>
+  <content contentuid="h8410be7bgd8b5g457cg8200gb558f542b94b" version="4">Apply this varnish to your equipped instrument, and musical sprites will appear when you perform music.</content>
+  <content contentuid="hc3abf254g70d2g4d52g8eaag46147e1132f5" version="3">Varnish |Musical Sprites|</content>
+  <content contentuid="h899cb795gcdf0g0734g2eb3ge94dfcaa6b68" version="2">The effects of this varnish will be removed when you unequip the instrument.</content>
+  <content contentuid="hbc6b9702g551eg4022g9219g0feeb6254bcf" version="3">Apply this varnish to your equipped instrument, and musical sprites will appear when you perform music.</content>
+  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="3">Violin of Musical Sprites (White)</content>
+  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="2">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
+  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="3">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
+  <content contentuid="h2478c860gbc4cg35d5ga13fga1d99c6567e3" version="1">Whenever 'Sing For Me' is performed nearby, the victim of this curse will be compelled to join the performance.</content>
+  <content contentuid="h5246bd21g12a7g74a7gde83g969dd8ff4547" version="1">Share Mild Mockery</content>
+  <content contentuid="h528c26b2g17b0g65fag1e99g84be790a560b" version="1">The lute spirit will grant the cantrip Mild Mockery to your current party. This'll be mean!</content>
+  <content contentuid="h9374f9cdg7cd3gcda3g546ag3629f4750b11" version="1">Summon Instrument Chest</content>
+  <content contentuid="h08de0474g0ce7g513eg6be8g8caf9493b3bf" version="1">Summon Ember's chest of instruments.</content>
+  <content contentuid="hf0e7657eg8432g40abg1752g48ad482e7bbb" version="1">Summon Temporary</content>
+  <content contentuid="hf4a15494g1fdfgf52ag0506g5c972fc8ca1c" version="1">Summon the instrument chest for 10 turns. It will then disappear, along with all contents inside it.</content>
+  <content contentuid="h3385356agbed8g9334gce11g49a4b94f6e65" version="1">Summon Permanent</content>
+  <content contentuid="h2b165177g5276g1455g7743g55b12ca4889a" version="1">Summon the instrument chest permanently. This can only be used in camp.</content>
+  <content contentuid="h6d65e3deg537dgfd32g6210ga1daff00a8b6" version="1">Dismiss Chest</content>
+  <content contentuid="h32b5ce03g807bg4705g3ec2g2d12eade79b9" version="1">Dismiss the instrument chest, along with all of the contents inside it.</content>
 </contentList>

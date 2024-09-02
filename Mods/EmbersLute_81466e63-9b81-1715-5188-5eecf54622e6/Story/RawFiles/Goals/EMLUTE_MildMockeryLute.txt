@@ -1,0 +1,31 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_MockingSpells_EmbersLute("Target_MildMockery_Emlute","PREVIEW");
+DB_MockingSpells_EmbersLute("Target_MildMockery_Emlute","CAST");
+KBSECTION
+
+//Mild Mockery Cast
+IF
+UsingSpellOnTarget((CHARACTER)_Player,(CHARACTER)_Target,_Spell,_,_,_)
+AND
+DB_MockingSpells_EmbersLute(_Spell,"CAST")
+AND
+DB_IsOrWasInParty(_Player)
+AND
+NOT DB_CantTalk_IgnoreCombat(_Player)
+THEN
+PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Cast_6dafdccd-091d-c0f4-4543-1199bdcb46d6,_Player,_Target);
+
+//Mild Mockery Preview
+IF
+StartedPreviewingSpell((CHARACTER)_Player,_Spell,_, _)
+AND
+DB_MockingSpells_EmbersLute(_Spell,"PREVIEW")
+AND
+DB_IsOrWasInParty(_Player)
+THEN
+PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Prepare_b523412d-1ea5-f3b0-ee9d-fa80cf72100a,_Player);
+EXITSECTION
+
+ENDEXITSECTION

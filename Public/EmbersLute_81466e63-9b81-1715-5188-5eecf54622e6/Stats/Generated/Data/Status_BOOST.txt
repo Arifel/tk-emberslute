@@ -797,6 +797,11 @@ data "Passives" "Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalCondu
 data "RemoveConditions" "not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_SPRITES', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))"
 data "OnApplyFunctors" "ApplyEquipmentStatus(MusicalInstrument,EMLUTE_VARNISH_INSTRUMENT_SPRITES,100,-1)"
 
+new entry "EMLUTE_CONVERT_TO_SPRITESMODE_SUMMON"
+type "StatusData"
+data "StatusType" "BOOST"
+using "EMLUTE_CONVERT_TO_SPRITESMODE"
+
 new entry "EMLUTE_VARNISH_INSTRUMENT_GNOME"
 type "StatusData"
 data "StatusType" "BOOST"

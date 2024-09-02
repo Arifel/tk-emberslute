@@ -27,6 +27,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Curse_SingForMe" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('EMLUTE_JOIN_DOS2_2',context.Observer) and not Tagged('EMLUTE_CURSED_APPLIED',context.Observer) and not Self(context.Observer,context.Target) and not Self(context.Observer,context.Source) and (HasStatus('PERFORM_POSITIVE_DOS2_2',context.Target)) and not DistanceToEntityGreaterThan(6, context.ObserverPosition, context.Target)" />
         <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,EMLUTE_SINGING_CURSE,100,30)" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

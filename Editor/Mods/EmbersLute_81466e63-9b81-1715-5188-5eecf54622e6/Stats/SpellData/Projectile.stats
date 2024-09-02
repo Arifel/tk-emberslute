@@ -9,5 +9,45 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;CanDualWield;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bceadb71-ae71-491a-8c31-9c13fd40e5fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Fireworks_Box_A_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7da32268-36cc-42c3-b6cf-3abc5c4117b6" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Item()): ApplyStatus(COLOR_SPRAY,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c62f669e-3a2f-46d1-9ead-c3f20f210e00" />
+        <field name="Name" type="NameTableFieldDefinition" value="Pants_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cca03385-5cbb-47c1-a2e4-30c93093785e" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Item()): ApplyStatus(COLOR_SPRAY,100,1)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="EMPTY" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COLOR_SPRAY,100,1)" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e413bb8-213e-4641-9657-301c0a58d593" />
+        <field name="Name" type="NameTableFieldDefinition" value="PantsExplosion_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="845dd288-4b4b-4583-8a84-114d6d467506" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(WYR_POTENTDRINK_NAUSEOUS_FUMES,100,2)" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WYR_POTENTDRINK_NAUSEOUS_FUMES,100,2)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -30,7 +30,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
         <field name="UUID" type="IdTableFieldDefinition" value="b45be828-b630-4103-b576-8fa18c2a546b" />
         <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
-        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagicBarbarian_ProtectiveLights_Emlute" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagicBarbarian_ProtectiveLights" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -38,7 +38,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
         <field name="UUID" type="IdTableFieldDefinition" value="d51c5f70-c80a-4330-9c20-5ab136f10342" />
         <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
-        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_MagicAllergy_Enlarge_Emlute" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_MagicAllergy_Enlarge" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

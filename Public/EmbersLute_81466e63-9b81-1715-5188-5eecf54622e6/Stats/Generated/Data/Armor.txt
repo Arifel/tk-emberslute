@@ -79,14 +79,6 @@ type "Armor"
 using "ARM_Instrument_Lute_B"
 data "RootTemplate" "d96d0941-673a-4511-9aab-d95b160f6ba6"
 
-new entry "_EMBERS_LUTE_TESTING"
-type "Armor"
-
-new entry "EMBERS_LUTE_VT_TEST"
-type "Armor"
-using "EMBERS_LUTE_MUSICALSPRITES_BLACK"
-data "RootTemplate" "35029eb1-100c-40f7-88a1-818ae58c9032"
-
 new entry "_EMBERS_LUTE_COMPATIBILITY"
 type "Armor"
 

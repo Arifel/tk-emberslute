@@ -21,12 +21,12 @@
                 </node>
                 <node id="Outcome">
                     <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
-                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_ProtectiveLights_Emlute"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_WildMagicBarbarian_ProtectiveLights"/>
                     <attribute id="UUID" type="guid" value="b45be828-b630-4103-b576-8fa18c2a546b"/>
                 </node>
                 <node id="Outcome">
                     <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
-                    <attribute id="Spell" type="FixedString" value="Shout_MagicAllergy_Enlarge_Emlute"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_MagicAllergy_Enlarge"/>
                     <attribute id="UUID" type="guid" value="d51c5f70-c80a-4330-9c20-5ab136f10342"/>
                 </node>
                 <node id="Outcome">

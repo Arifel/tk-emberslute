@@ -120,20 +120,6 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="cbe23470-8d98-4e30-8db2-460522b62115" />
-        <field name="Name" type="NameTableFieldDefinition" value="_EMBERS_LUTE_TESTING" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FFA0522D" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="93998b4e-4622-4760-b862-4d162378ebfc" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VT_TEST" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
-        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="35029eb1-100c-40f7-88a1-818ae58c9032" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF000000" is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dc3c91e3-bd64-4ffa-88f7-59903f314361" />
         <field name="Name" type="NameTableFieldDefinition" value="_EMBERS_LUTE_COMPATIBILITY" />
       </fields>

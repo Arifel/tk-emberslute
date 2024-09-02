@@ -1,11 +1,119 @@
-new entry "EMLUTE_CONT_MAIN"
+new entry "ARI_CONT_EMBERSLUTE"
 type "Object"
 using "_Container"
 data "RootTemplate" "f2ef5e3b-ae30-425a-98c0-7ec2e0186c10"
 data "Weight" "0.1"
 
-new entry "EMLUTE_CONT_MUSICALSPRITES"
+new entry "ARI_CONT_EMBERSLUTE_MUSICALSPRITES"
 type "Object"
-using "EMLUTE_CONT_MAIN"
+using "ARI_CONT_EMBERSLUTE"
 data "RootTemplate" "201c7bd7-baf7-40a6-b9a6-aee748999b15"
+
+new entry "ARI_CONT_EMBERSLUTE_ENSEMBLES"
+type "Object"
+using "ARI_CONT_EMBERSLUTE"
+
+new entry "ARI_CONT_EMBERSLUTE_VARNISHES"
+type "Object"
+using "ARI_CONT_EMBERSLUTE"
+
+new entry "ARI_CONT_EMBERSLUTE_MISC"
+type "Object"
+
+new entry "ARI_CONT_EMBERSLUTE_ANNOYING"
+type "Object"
+
+new entry "ARI_CONT_EMBERSLUTE_HAUNTED"
+type "Object"
+
+new entry "ARI_CONT_EMBERSLUTE_CELESTIAL"
+type "Object"
+
+new entry "EMBERS_LUTE_SUMMON_CHEST_SCROLL"
+type "Object"
+using "OBJ_Scroll_ArcaneLock"
+
+new entry "EMBERS_LUTE_QARMA_LUTRA_BOOK"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "c94d9fca-9238-4e5c-9647-c645185c2583"
+data "ObjectCategory" "BookEntertainment"
+
+new entry "EMBERS_LUTE_THANKYOU_NOTE"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "56f81ef4-fffa-437c-8495-2e74fcd9c84c"
+
+new entry "EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "59c847b9-3955-44f3-a94f-0e1315e38435"
+
+new entry "EMBERS_LUTE_BOOK_INFO_ENSEMBLES"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "8b9e1efe-9e9b-4beb-b00f-08685c7e3e57"
+
+new entry "EMBERS_LUTE_BOOK_INFO_VARNISHES"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "37864035-8ebf-4b48-b000-3a39097be8a5"
+
+new entry "EMBERS_LUTE_BOOK_INFO_ANNOYING"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "0aa1e5e4-ec06-499e-b3d2-b5b9ca84b976"
+
+new entry "EMBERS_LUTE_TEN_REASONS_BOOK"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "1ea5537f-8c16-4d3f-bce2-7d4a8fc46782"
+
+new entry "EMBERS_LUTE_PERCIVAL_DIARY_BOOK"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "80dcbfed-3b93-42f7-9188-5b3611f1bb2b"
+
+new entry "EMBERS_LUTE_PUDDLEPOP_MEAD"
+type "Object"
+using "_CONS_Alcohol_Rich"
+data "RootTemplate" "47c2b3ff-538d-4156-ac56-57880d6104aa"
+
+new entry "EMBERS_LUTE_PUDDLEPOP_MEAD_CURE"
+type "Object"
+using "OBJ_GenericPotionItem"
+data "RootTemplate" "8cf05aa9-5cb3-4510-a3ae-9bc009677b9f"
+
+new entry "EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE"
+type "Object"
+using "_Potion"
+
+new entry "EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE_BONES"
+type "Object"
+using "_Potion"
+
+new entry "EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE"
+type "Object"
+using "_Potion"
+
+new entry "EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE_SUMMON"
+type "Object"
+using "_Potion"
+
+new entry "_DEPRECATED"
+type "Object"
+
+new entry "EMBERS_LUTE_UNINSTALL_BOOK"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "56f81ef4-fffa-437c-8495-2e74fcd9c84c"
+
+new entry "EMBERS_LUTE_UNINSTALL_BOOK_CONCISE"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "56f81ef4-fffa-437c-8495-2e74fcd9c84c"
+
+new entry "EMBERS_LUTE_MUSICAL_SPIRITS_POTION"
+type "Object"
+using "_Potion"
 

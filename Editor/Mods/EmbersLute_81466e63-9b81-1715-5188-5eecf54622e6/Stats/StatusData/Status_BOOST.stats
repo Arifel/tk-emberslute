@@ -776,7 +776,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ed2f8ab6-29cb-4a74-bb3f-a007f000e0fd" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF00008B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b6d522ab-eded-4067-9764-e9cb87a1a868" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ANNOYING_LUTE_VFX" />
@@ -784,7 +784,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="cd9c5f2f-e44e-4b39-aac1-766a261f5e0f" />
       </fields>
     </stat_object>
-    <stat_object color="#FF7A187A" is_substat="false">
+    <stat_object color="#FF00008B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2bef1e4e-0600-44d4-b604-73a37c61a95e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ANNOYING_SPIRIT" />
@@ -920,6 +920,95 @@
         <field name="Passives" type="StringTableFieldDefinition" value="Emlute_Musical_Spirit;Emlute_Musical_Spirit_BardDance_Curse" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DANCE_CURSE')):RemoveStatus(EMLUTE_DANCE_CURSE)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Cursed" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b19ef36-81da-4064-a11a-8b77bf0bd805" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONVERT_TO_GNOMEMODE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h025f34e8g34f9gc1e6g795fgf9e59e01d92c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcdd31b3fg4750g956eg1aa2g341977d92e97" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ViciousRockery" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_INSTRUMENT_CONVERT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Gnomes;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LutesToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_LyresToggle" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_GNOME', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_VARNISH_INSTRUMENT_GNOMES,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="88dae4e2-16bc-4080-ad45-735631a9dd04" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONVERT_TO_GNOMEMODE_BONES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8b19ef36-81da-4064-a11a-8b77bf0bd805" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_RollingBones" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Skelly_Band_Emlute);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute);Tag(EMLUTE_LYRES_ON)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Bones;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_BONES', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_VARNISH_INSTRUMENT_BONES,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb243d3c-0925-4984-a3fc-51a530ede688" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONVERT_TO_SPRITESMODE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8b19ef36-81da-4064-a11a-8b77bf0bd805" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Emlute)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_SPRITES', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_VARNISH_INSTRUMENT_SPRITES,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7f0559a9-e833-4ac2-929f-12de8bfab277" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_GNOME" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8bb46b97g2adfg0e65g011ag149d53c576fb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb0e48dbeg5788g30a9g7919g823a85a84021" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ViciousRockery" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_INSTRUMENT_VARNISH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_GNOME_MODE);Tag(EMLUTE)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0cfaca94-bddf-4912-9e1c-f5ce5ce86f27" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_BONES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7f0559a9-e833-4ac2-929f-12de8bfab277" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_RollingBones" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff1ea0ca-23c0-4b65-ba44-950cadf4e3f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_SPRITES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7f0559a9-e833-4ac2-929f-12de8bfab277" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8511f4c9-2e44-42e3-b1e8-d888d584d725" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_COMBAT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff1ea0ca-23c0-4b65-ba44-950cadf4e3f4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Perform_Combat" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE_COMBAT_MODE);Tag(EMLUTE)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a316877e-9028-4d75-9bcd-5c53adda622a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_CLEAR" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h44d35f58gd3aagfa73g4c29g2ff2cf0838ce" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h40f805f3g74f1gffbfg2c52gbc8a851334d1" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_INSTRUMENT_VARNISH" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

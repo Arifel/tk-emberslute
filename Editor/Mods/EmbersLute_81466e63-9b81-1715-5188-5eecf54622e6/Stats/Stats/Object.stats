@@ -1,21 +1,204 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="e078e210-b9ba-48e5-afe3-c5eb91ba8545">
   <stat_objects>
-    <stat_object is_substat="false">
+    <stat_object color="#FF402040" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONT_MAIN" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="18cec264-22ab-44d0-a46f-f36fe4fe9e3a" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f2ef5e3b-ae30-425a-98c0-7ec2e0186c10" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF402040" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="20d813eb-78cb-4451-8051-5720143012ad" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONT_MUSICALSPRITES" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_MUSICALSPRITES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="201c7bd7-baf7-40a6-b9a6-aee748999b15" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a553092a-7caa-4bc2-8316-3b2f97736f89" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_ENSEMBLES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9eb29230-3de0-4f4a-b29e-a017966895c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_VARNISHES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bded8f47-590d-4376-9e34-52fc8d461c15" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_MISC" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ff11318-48ef-43b3-b831-86fcbf3911c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_ANNOYING" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="45cfea23-3587-449a-a758-bd1e51f7e581" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_HAUNTED" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF402040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="367b8c8c-5190-4ed4-bbc1-a47f58f3a689" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_CELESTIAL" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF663866" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0799d758-ee44-4d2f-990b-93628b04c599" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SUMMON_CHEST_SCROLL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b34ad76a-02bb-4a2e-b8f0-1a32913cfd0d" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad020336-ea24-4e5b-8dea-515f9339c7e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_QARMA_LUTRA_BOOK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="c94d9fca-9238-4e5c-9647-c645185c2583" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="BookEntertainment" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e490162b-c67a-48e5-b456-6a4139199dd7" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_THANKYOU_NOTE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="56f81ef4-fffa-437c-8495-2e74fcd9c84c" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb42e7c2-fb55-47fc-b836-f8e774154f6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="59c847b9-3955-44f3-a94f-0e1315e38435" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e47488b9-d55d-4697-a4e4-ec094509bb1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_ENSEMBLES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8b9e1efe-9e9b-4beb-b00f-08685c7e3e57" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="037c6904-1311-49bc-a51a-984cde59e097" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_VARNISHES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="37864035-8ebf-4b48-b000-3a39097be8a5" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6f17c648-7819-4401-b3a7-1d0b5690c7f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_ANNOYING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="0aa1e5e4-ec06-499e-b3d2-b5b9ca84b976" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6df46448-448b-459d-a829-aaef6deb8878" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_TEN_REASONS_BOOK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="1ea5537f-8c16-4d3f-bce2-7d4a8fc46782" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0D1040" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ed9a260-50a4-483a-ae60-9e39a1462104" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PERCIVAL_DIARY_BOOK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="80dcbfed-3b93-42f7-9188-5b3611f1bb2b" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06d80b3d-b6d1-4ae4-bf9b-b6b972996ab9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PUDDLEPOP_MEAD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1e5e740a-7580-45ff-a141-bd65619809c2" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="47c2b3ff-538d-4156-ac56-57880d6104aa" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fb826fe3-8bea-464a-a725-dff60712d562" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PUDDLEPOP_MEAD_CURE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fb3afb2c-692c-434b-9274-c34926197d9e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8cf05aa9-5cb3-4510-a3ae-9bc009677b9f" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF092B1D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c016a002-aa96-4d35-af98-cfaa2c6a8957" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF092B1D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9dd29c81-9e1e-46cf-9a57-18efb093d894" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE_BONES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF092B1D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78772a8f-e962-4e11-8cf7-ff7aea40db6b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF092B1D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f7304a9-536b-48cb-bd30-07ab3a23f031" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE_SUMMON" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecc43572-0591-4571-adb4-5c6044402511" />
+        <field name="Name" type="NameTableFieldDefinition" value="_DEPRECATED" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C1C1C" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f70ca8d9-28e5-4f00-b031-6576972ebf6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_UNINSTALL_BOOK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="56f81ef4-fffa-437c-8495-2e74fcd9c84c" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C1C1C" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="954b15aa-26b1-410d-a4f6-b47aaa175270" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_UNINSTALL_BOOK_CONCISE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="56f81ef4-fffa-437c-8495-2e74fcd9c84c" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C1C1C" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dcfcd4fb-1570-4daa-8214-ae8a4d5d5ec4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICAL_SPIRITS_POTION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
       </fields>
     </stat_object>
   </stat_objects>

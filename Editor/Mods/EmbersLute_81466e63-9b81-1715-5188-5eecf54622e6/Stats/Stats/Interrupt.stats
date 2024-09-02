@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4b056f0-eef0-44ac-94ee-0dbff4ef4304" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Emlute_BardDance_Curse" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h011a1e6eg8b14ge5b5ge9fcg2647120eaf47" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0bb25a43g4903gd076ge2b9g38001735b69d" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Curse_BardDance" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Nearby" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('EMLUTE_JOIN_BARDDANCE',context.Observer) and not Tagged('EMLUTE_CURSED_APPLIED',context.Observer) and not Self(context.Observer,context.Target) and not Self(context.Observer,context.Source) and (HasStatus('PERFORM_POSITIVE_BARDDANCE',context.Target)) and not DistanceToEntityGreaterThan(6, context.ObserverPosition, context.Target)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,EMLUTE_DANCE_CURSE,100,30)" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="484cdf88-b869-4c50-9283-a07dd60c63b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Emlute_SingForMe_Curse" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c4b056f0-eef0-44ac-94ee-0dbff4ef4304" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he96c5c39g992cg9672gd59cg135c5ed94cf5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa093ea0ge506g6b69gc11bg07a6b5467d91" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Curse_SingForMe" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasStatus('EMLUTE_JOIN_DOS2_2',context.Observer) and not Tagged('EMLUTE_CURSED_APPLIED',context.Observer) and not Self(context.Observer,context.Target) and not Self(context.Observer,context.Source) and (HasStatus('PERFORM_POSITIVE_DOS2_2',context.Target)) and not DistanceToEntityGreaterThan(6, context.ObserverPosition, context.Target)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="ApplyStatus(OBSERVER_OBSERVER,EMLUTE_SINGING_CURSE,100,30)" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

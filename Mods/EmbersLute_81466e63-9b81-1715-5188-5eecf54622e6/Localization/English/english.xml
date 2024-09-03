@@ -85,8 +85,8 @@
   <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="9">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="6">Musical Sprites Instruments</content>
   <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="6">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
-  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="5">Instrument Chest</content>
-  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="5">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
+  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="6">Instrument Chest</content>
+  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="6">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
   <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="7">Lute of Musical Sprites (White)</content>
   <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="7">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
@@ -341,7 +341,7 @@
   <content contentuid="h8ff6e637g68c9g922ag62deg6b5ea792b5ef" version="1">Bard: DANCE</content>
   <content contentuid="hbdf69d3age20bgecfag5181g818541646b9e" version="1">Does someone look like they are not enjoying the music enough? Let's fix that: it's non-negotiable fun-time!</content>
   <content contentuid="h69e40a76g3aadge01fg1d66g98d9ad48a024" version="1">Whenever 'Bard Dance' is performed nearby, the victim of this curse will be compelled to dance.</content>
-  <content contentuid="h6e2ca359g481agc76ag1591g23a55a0d44aa" version="2">Musicical Portal</content>
+  <content contentuid="h6e2ca359g481agc76ag1591g23a55a0d44aa" version="3">Musicical Portal</content>
   <content contentuid="h477ea4afg3d1cg166bgfd2dg5c383824dca8" version="4">Musicical Portal</content>
   <content contentuid="h2de57bdegbb6eg55dfgc0e0ga5d7a27b5171" version="1">Countercharm - Chaos</content>
   <content contentuid="h35a6ba72g9a59g36a4g34d9g7e0752321115" version="1">Need to turn the tide of a battle? The lute spirit proposes an aura of indiscriminate wild magic. It... &lt;i&gt;might&lt;/i&gt; help.</content>
@@ -397,9 +397,19 @@
   <content contentuid="h9374f9cdg7cd3gcda3g546ag3629f4750b11" version="1">Summon Instrument Chest</content>
   <content contentuid="h08de0474g0ce7g513eg6be8g8caf9493b3bf" version="1">Summon Ember's chest of instruments.</content>
   <content contentuid="hf0e7657eg8432g40abg1752g48ad482e7bbb" version="1">Summon Temporary</content>
-  <content contentuid="hf4a15494g1fdfgf52ag0506g5c972fc8ca1c" version="1">Summon the instrument chest for 10 turns. It will then disappear, along with all contents inside it.</content>
+  <content contentuid="hf4a15494g1fdfgf52ag0506g5c972fc8ca1c" version="2">Summon the instrument chest into your inventory for [1] turns. After [1] turns it will disappear, along with all contents inside it.</content>
   <content contentuid="h3385356agbed8g9334gce11g49a4b94f6e65" version="1">Summon Permanent</content>
   <content contentuid="h2b165177g5276g1455g7743g55b12ca4889a" version="1">Summon the instrument chest permanently. This can only be used in camp.</content>
   <content contentuid="h6d65e3deg537dgfd32g6210ga1daff00a8b6" version="1">Dismiss Chest</content>
   <content contentuid="h32b5ce03g807bg4705g3ec2g2d12eade79b9" version="1">Dismiss the instrument chest, along with all of the contents inside it.</content>
+  <content contentuid="he0b7286cgc92cg31bcgbfd1g554339e4954e" version="2">Scroll of Summon Instrument Chest</content>
+  <content contentuid="h846a9e2bg65ffg3107gb021gecb41913982e" version="2">Spells to summon a chest of instruments.</content>
+  <content contentuid="h956b0300g00f6g0aa7geb8dg85b845848716" version="1">Ember's Lute - Thank You!</content>
+  <content contentuid="ha28ed037gd4b6gc6cbgf5ecg80599a246ca0" version="1">A quick thank you, and a few tips to get you started.</content>
+  <content contentuid="h0f52bb73gd3degc0b8g4477g50a6c7983f3c" version="3">Lute of Musical Sprites (Alfira's Lute)</content>
+  <content contentuid="hc1a0e614ge9b8g8117gbbc7g0d3d2f3617ca" version="3">A variant of the Lute of Musical Sprites with the vanilla lute B visual. Differences are aesthetic only.</content>
+  <content contentuid="h41e51316g2a3dg2317g1fe5gb5fa7f619679" version="3">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="ha1cac233g8866gc4d2g1aafgb3c6d7e51c05" version="1">Summon Instrument Chest</content>
+  <content contentuid="hbc42e4d9g3d93g594bg6949gbc79bf97cd5f" version="2">Temporarily summon Ember's chest of instruments into your inventory for [1] turns. </content>
+  <content contentuid="h3b589fc0gd5b8gdd65g76c7g3696e6982694" version="1">Chest contents will disappear along with the chest.</content>
 </contentList>

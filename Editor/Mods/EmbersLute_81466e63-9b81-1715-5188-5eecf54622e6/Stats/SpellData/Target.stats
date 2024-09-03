@@ -229,7 +229,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ImprovedCounterCharm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ImprovedCounterCharm" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e0e3c22gb61eg0163gf738g2e0f652ef1a8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23844e56g13a1gfa75g260ag56d6ad728926" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);+1" />
@@ -251,14 +251,48 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_CHAOSCHARM,100,4)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF000080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b813d6d9-1637-4589-9daf-fa479ff2b717" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteChestScroll_Ground_Temporary" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SummonInInventory(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,10,1,false,false,false)" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_SummonInstrumentChest" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha1cac233g8866gc4d2g1aafgb3c6d7e51c05" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbc42e4d9g3d93g594bg6949gbc79bf97cd5f" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b589fc0gd5b8gdd65g76c7g3696e6982694" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Bard_SongOfRest_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Bard_SongOfRest_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Prepare" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Loop" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Cast" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" value="Instrument_Bard_SongOfRest_Impact" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="850cd2f3-dde2-475d-b3a3-f35c47333523,,;,,;8bfc0edf-5baa-4344-a486-14032de5ab69,,;3935e00c-7d43-4243-a4ef-4c680530d593,,;ad775f69-0d9f-4215-bfc2-8e0ec7e32189,,;,,;6bfce8a0-80f1-47a8-97f4-34f4b8b6fe9e,,;,,;,," />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="46e75e74-a09a-48e6-8706-d9b5ff846ae4" />
+        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="c20fcf83-26a4-460c-abeb-52bcbbae37a6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a4a57164-887f-4530-a7a6-28a22976ec84" />
+        <field name="Name" type="NameTableFieldDefinition" value="_FIX_THESE" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF2A4861" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6d1b71e3-1290-474e-b577-97229b909b70" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonEmuteChest_SpellContainer" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_SummonEmluteChest_10Turns;Target_SummonEmluteChest_Permanent;Target_DismissEmluteChest" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Chest_ICON" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_SummonInstrumentChest" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9374f9cdg7cd3gcda3g546ag3629f4750b11" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h08de0474g0ce7g513eg6be8g8caf9493b3bf" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF2A4861" is_substat="false">
@@ -266,13 +300,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="898d0c8c-e3bf-4a90-a41e-660292d52fcf" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteChest_10Turns" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonEmuteChest_SpellContainer" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,10,,,'EmluteChest')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SummonInInventory(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,10,1,false,false,false)" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="8" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Chest_ICON" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_SummonInstrumentChest" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0e7657eg8432g40abg1752g48ad482e7bbb" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf4a15494g1fdfgf52ag0506g5c972fc8ca1c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf4a15494g1fdfgf52ag0506g5c972fc8ca1c" version="2" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Bard_SongOfRest_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Bard_SongOfRest_L1to3" />
@@ -289,6 +323,7 @@
         <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="46e75e74-a09a-48e6-8706-d9b5ff846ae4" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="c20fcf83-26a4-460c-abeb-52bcbbae37a6" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="10" />
       </fields>
     </stat_object>
     <stat_object color="#FF2A4861" is_substat="false">
@@ -297,12 +332,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteChest_Permanent" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="898d0c8c-e3bf-4a90-a41e-660292d52fcf" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonEmuteChest_SpellContainer" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,Permanent,,,'EmluteChest')" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,Permanent,,,'EmluteInstrumentChest')" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="8" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('IN_CAMP')" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Chest_ICON" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_SummonInstrumentChest" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3385356agbed8g9334gce11g49a4b94f6e65" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2b165177g5276g1455g7743g55b12ca4889a" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
@@ -310,6 +344,7 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Bard_SongOfRest_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF2A4861" is_substat="false">
@@ -319,7 +354,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="898d0c8c-e3bf-4a90-a41e-660292d52fcf" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Target_SummonEmuteChest_SpellContainer" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="8" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_DISMISSABLE_CHEST')" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Item()" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_ArcaneLock_Dismiss" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6d65e3deg537dgfd32g6210ga1daff00a8b6" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h32b5ce03g807bg4705g3ec2g2d12eade79b9" version="1" />
@@ -328,6 +363,8 @@
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Bard_SongOfRest_L1to3" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
   </stat_objects>

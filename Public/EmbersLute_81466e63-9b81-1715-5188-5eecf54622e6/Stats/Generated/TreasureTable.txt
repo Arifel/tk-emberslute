@@ -8,6 +8,8 @@ object category "I_EMBERS_LUTE_MUSICALSPRITES_BLACK",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_WHITE",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Ensembles"
 new subtable "1,1"
@@ -23,7 +25,7 @@ new subtable "1,1"
 object category "I_EMBERS_LUTE_WHISTLING",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Varnishes"
 new subtable "1,1"
-object category "I_ARI_CONT_EMBERSLUTE_VARNISHES",1,0,0,0,0,0,0,0
+object category "I_EMBERS_LUTE_BOOK_INFO_VARNISHES",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -44,7 +46,7 @@ object category "I_ARI_CONT_EMBERSLUTE_ANNOYING",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE_VARNISHES",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_ARI_CONT_EMBERSLUTE_MISC",1,0,0,0,0,0,0,0
+object category "I_ARI_CONT_EMBERSLUTE_MISC",0,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_BLACK",0,0,0,0,0,0,0,0
 new subtable "1,1"

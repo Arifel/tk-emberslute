@@ -496,7 +496,7 @@ new entry "EMLUTE_COUNTERCHARM_MUSIC"
 type "StatusData"
 data "StatusType" "BOOST"
 data "StackId" "PERFORM"
-data "StatusPropertyFlags" "Performing;UnsheathInstrument;DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "StatusPropertyFlags" "Performing;DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "PerformEventName" "Bard_Perform_ThePower"
 
 new entry "EMLUTE_SPRITES_LIGHT_VFX_CLEAR"

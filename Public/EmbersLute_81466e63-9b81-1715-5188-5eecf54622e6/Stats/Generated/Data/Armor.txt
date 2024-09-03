@@ -15,6 +15,12 @@ data "RootTemplate" "a2a12008-23ae-4006-9d3e-4cb55c1c829e"
 data "Boosts" "Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Lute_WhiteSheetMusic_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)"
 data "PassivesOnEquip" "Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard"
 
+new entry "EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B"
+type "Armor"
+using "EMBERS_LUTE_MUSICALSPRITES_BLACK"
+data "RootTemplate" "a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9"
+data "Boosts" "Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)"
+
 new entry "EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE"
 type "Armor"
 using "_Instruments"

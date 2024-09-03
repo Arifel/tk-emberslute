@@ -34,6 +34,16 @@
     <stat_object is_substat="true">
       <fields>
         <field name="Using" type="BaseClassTableFieldDefinition" value="743f52e6-0481-452f-8b1d-ae2b9b024ff8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a23da79f-ff81-43ae-beb8-54f8cee40652" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_MusicalSprites_substat" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="743f52e6-0481-452f-8b1d-ae2b9b024ff8" />
         <field name="UUID" type="IdTableFieldDefinition" value="37c8dbd5-3a64-4817-920f-4bacb8df5a2f" />
         <field name="Name" type="NameTableFieldDefinition" value="743f52e6-0481-452f-8b1d-ae2b9b024ff8_substat_3" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
@@ -94,7 +104,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="68736aae-0150-43a1-8720-ebdd02a410ce" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_Varnishes" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
-        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_ARI_CONT_EMBERSLUTE_VARNISHES" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_BOOK_INFO_VARNISHES" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
@@ -184,7 +194,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5_substat_6" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_ARI_CONT_EMBERSLUTE_MISC" />
-        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
       </fields>
     </stat_object>
     <stat_object color="#00FFFFFF" is_substat="true">

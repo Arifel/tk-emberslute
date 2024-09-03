@@ -8,6 +8,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="18cec264-22ab-44d0-a46f-f36fe4fe9e3a" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f2ef5e3b-ae30-425a-98c0-7ec2e0186c10" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f6d80512-45e9-44f5-85f2-50235d660bb1" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
@@ -23,6 +24,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="a553092a-7caa-4bc2-8316-3b2f97736f89" />
         <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_ENSEMBLES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="2f9950f5-2044-4821-a026-0449a5143722" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
@@ -30,30 +32,39 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9eb29230-3de0-4f4a-b29e-a017966895c9" />
         <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_VARNISHES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="81fc28be-061a-4f08-8db7-a1f27022b43a" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bded8f47-590d-4376-9e34-52fc8d461c15" />
         <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_MISC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d0f807b4-0115-4e6c-9241-b16bc59480b0" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3ff11318-48ef-43b3-b831-86fcbf3911c1" />
         <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_ANNOYING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a7845aa9-fc93-43ad-a6af-f46c5b89f680" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="45cfea23-3587-449a-a758-bd1e51f7e581" />
         <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_HAUNTED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8983eb29-b220-4ab7-9cb9-e2f475308ecd" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="367b8c8c-5190-4ed4-bbc1-a47f58f3a689" />
         <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_CELESTIAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d0f807b4-0115-4e6c-9241-b16bc59480b0" />
       </fields>
     </stat_object>
     <stat_object color="#FF663866" is_substat="false">
@@ -149,6 +160,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c016a002-aa96-4d35-af98-cfaa2c6a8957" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ee1aab68-61b2-483a-9328-1584f733e86e" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -156,6 +168,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="9dd29c81-9e1e-46cf-9a57-18efb093d894" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE_BONES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8747a182-9f0b-401d-b233-70a3506961cd" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -163,6 +176,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="78772a8f-e962-4e11-8cf7-ff7aea40db6b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="3f2ee3cd-e68f-44ea-beac-51f6c39dc20a" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -170,6 +184,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0f7304a9-536b-48cb-bd30-07ab3a23f031" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE_SUMMON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f9636581-66ff-4f88-9b50-f1c5e9e3d6cd" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -199,6 +214,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="dcfcd4fb-1570-4daa-8214-ae8a4d5d5ec4" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICAL_SPIRITS_POTION" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d47006e9-8a51-453d-b200-9e0d42e9bbab" />
       </fields>
     </stat_object>
   </stat_objects>

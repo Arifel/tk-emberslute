@@ -676,7 +676,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="04461bc7-2ea3-48b1-94fb-d2a58d6eee43" />
         <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Container_Emlute" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Chaoscharm_Emlute;Target_Chaoscharm_Combat_Emlute" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ChaosCharm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Chaoscharm" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2de57bdegbb6eg55dfgc0e0ga5d7a27b5171" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h35a6ba72g9a59g36a4g34d9g7e0752321115" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />

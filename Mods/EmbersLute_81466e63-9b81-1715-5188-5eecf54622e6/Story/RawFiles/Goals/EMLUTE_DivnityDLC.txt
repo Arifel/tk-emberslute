@@ -51,17 +51,16 @@ DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
 AND
 IsTagged(_Instrument, _Tag, 1)
 THEN
+ApplyStatus(_Instrument,"EMLUTE_VARNISH_INSTRUMENT_CLEAR",1.0);
 PROC_DLC_RemoveDivinitySongs_EmbersLute(_Tag, _Character);
 
-// A player uses an instrument varnish which adds a custom music spell container
+// Instrument varnish has been used
 IF
-TemplateUseFinished(_Player,_ItemRoot,_Item,_Success)
+TagSet((CHARACTER)_Player,_VarnishTag)
 AND
 DB_Players(_Player)
 AND 
 DB_DLC_DivinitySongPack_VarnishTags_EmbersLute(_VarnishTag)
-AND
-IsTagged(_Item, _VarnishTag, 1)
 AND
 QRY_CharacterHasSongDLC(_Player)
 AND
@@ -71,6 +70,7 @@ DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_InstrumentTag)
 AND
 IsTagged(_Instrument, _InstrumentTag, 1)
 THEN
+DebugText(_Player, "Debug: Adding DLC songs");
 PROC_DLC_AddDivinitySongs_EmbersLute(_InstrumentTag, _Player);
 
 // A character is added to DB_Players

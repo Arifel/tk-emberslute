@@ -931,7 +931,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ViciousRockery" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_INSTRUMENT_CONVERT" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute)" />
         <field name="Passives" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Gnomes;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LutesToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_LyresToggle" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_GNOME', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
@@ -944,7 +944,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONVERT_TO_GNOMEMODE_BONES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b19ef36-81da-4064-a11a-8b77bf0bd805" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_RollingBones" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Skelly_Band_Emlute);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute);Tag(EMLUTE_LYRES_ON)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Skelly_Band_Emlute);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);" />
         <field name="Passives" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Bones;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_BONES', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_VARNISH_INSTRUMENT_BONES,100,-1)" />
@@ -956,7 +956,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CONVERT_TO_SPRITESMODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8b19ef36-81da-4064-a11a-8b77bf0bd805" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);UnlockSpell(Shout_Bard_Perform_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);UnlockSpell(Shout_Bard_Perform_Emlute)" />
         <field name="Passives" type="StringTableFieldDefinition" value="Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasInstrumentEquipped(context.Source) or (not HasStatus('EMLUTE_VARNISH_INSTRUMENT_SPRITES', GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target)))" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_VARNISH_INSTRUMENT_SPRITES,100,-1)" />

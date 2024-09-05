@@ -136,7 +136,7 @@ data "SpellFlags" "ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcen
 data "Requirements" "Combat"
 data "RequirementConditions" ""
 
-new entry "Shout_Bard_Perform_DoS3_3_Combat_Emlute"
+new entry "Shout_Bard_Perform_DoS2_3_Combat_Emlute"
 type "SpellData"
 data "SpellType" "Shout"
 using "Shout_Bard_Perform_DoS2_3_Emlute"

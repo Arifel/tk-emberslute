@@ -61,6 +61,7 @@ database DB_Disturbance_PerformWhenAvailable_Incapacitated([in](GUIDSTRING)_, [i
 database DB_GOB_ChickenChase_GreaseBottles([in](TRIGGER)_, [in](CHARACTER)_)
 database DB_LOW_SorcerousSundries_CheckNSCagingStatuses([in](GUIDSTRING)_, [in](STRING)_)
 database DB_MOO_Assault_PATCH_TeleportedJaheriaBackToMoonrise([in](INTEGER)_)
+database DB_SpiritInstruments_EmbersLute([in](TAG)_)
 database DB_TadpolePowers_UnlockedByDefault([in](CHARACTER)_)
 database DB_WYR_DapperDrow_HireFlag([in](FLAG)_, [in](CHARACTER)_)
 call PROC_CameraShakeAroundObject([in](GUIDSTRING)_, [in](INTEGER)_, [in](REAL)_, [in](EFFECTRESOURCE)_)

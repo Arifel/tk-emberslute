@@ -170,7 +170,7 @@
     <stat_object color="#FF4169E1" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8446b720-4389-424a-b04b-42eb230e2811" />
-        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS3_3_Combat_Emlute" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_3_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d01b2df4-38e6-4476-9b9e-69cc6ed20cb7" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />

@@ -72,6 +72,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0799d758-ee44-4d2f-990b-93628b04c599" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SUMMON_CHEST_SCROLL" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b34ad76a-02bb-4a2e-b8f0-1a32913cfd0d" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9a39c161-b094-4ffd-a88d-9412d43f873e" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -88,7 +89,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e490162b-c67a-48e5-b456-6a4139199dd7" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_THANKYOU_NOTE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
-        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="56f81ef4-fffa-437c-8495-2e74fcd9c84c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="be081cf0-2809-4c9a-9fc0-959c0a6c64ad" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">

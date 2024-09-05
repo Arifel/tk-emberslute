@@ -52,6 +52,7 @@ AND
 IsTagged(_Instrument, _Tag, 1)
 THEN
 ApplyStatus(_Instrument,"EMLUTE_VARNISH_INSTRUMENT_CLEAR",1.0);
+UseSpell(_Character,"Shout_Dismiss_All_MusicalSpirits",_Character);
 PROC_DLC_RemoveDivinitySongs_EmbersLute(_Tag, _Character);
 
 // Instrument varnish has been used

@@ -185,7 +185,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Ensemble_Emlute" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_ThePower_Ensemble_Emlute;Shout_Bard_Perform_BardDance_Ensemble_Emlute;Shout_Bard_Perform_Stargazing_Ensemble_Emlute;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Lute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithEnsembles" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73bdb72cg50beg9c34gf5a6g4e0c3803c381" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2a74394fg7755gf5ecg09abgb94bc4a9e43f" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -265,6 +265,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="d33b449f-954a-41b8-b216-15d6397aa389" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16dbc78eg6573g4b3ag8b62g768d8e09ffb0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf297870gf996gfe31g1dd9gde2a2e7606f9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithWhistling" />
       </fields>
     </stat_object>
     <stat_object color="#FF1F613C" is_substat="false">

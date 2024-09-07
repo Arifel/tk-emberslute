@@ -650,7 +650,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f5c3fdf3-b59a-4dfa-898e-36850143f7de" />
         <field name="Name" type="NameTableFieldDefinition" value="Annoying_Spells_Container_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BardDance_BullyMode_Emlute;Target_SingForMe_BullyMode_Emlute;Target_RemovePerformanceCurse_Emlute;Shout_Share_MildMockery_Emlute;Target_ClownFace_Emlute;Target_OgressTime_Emlute;Target_OgreTime_Emlute" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_BardDance_BullyMode_Emlute;Target_SingForMe_BullyMode_Emlute;Target_RemovePerformanceCurse_Emlute;Shout_Share_MildMockery_Emlute;Target_ClownFace_Emlute;Target_OgreTime_Emlute;Target_OgressTime_Emlute" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h169f43eeg8151g9cf4g830cg298f92fba88e" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9dab1c40g064agb2d7gdcb4g7ba6ae692068" version="1" />

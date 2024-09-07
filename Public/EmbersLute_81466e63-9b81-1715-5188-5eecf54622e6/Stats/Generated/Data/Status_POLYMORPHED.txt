@@ -1,4 +1,17 @@
-new entry "New_Stat_0"
+new entry "EMLUTE_POLYMORPH_MEATSOUNDSMIG"
 type "StatusData"
 data "StatusType" "POLYMORPHED"
+data "DisplayName" "h3d7f4a2fg4441gac4bge4cagfb63af6c2b93;1"
+data "Description" "hc964b017g859bg6f6bg05dbge2f4d3afd5b1;1"
+data "Icon" "EmbersLute_Spell_OgreMockery_2"
+data "TemplateID" "a984369d-0c92-4e73-b309-7a8f943bf097"
+data "Rules" "f0dbe368-cc9f-4905-bfcd-ec3e2832c5a6"
+
+new entry "EMLUTE_POLYMORPH_LUMP"
+type "StatusData"
+data "StatusType" "POLYMORPHED"
+using "EMLUTE_POLYMORPH_MEATSOUNDSMIG"
+data "DisplayName" "h0288d277ge76agd1edgdfa4g8c43ae7c6d83;1"
+data "Icon" "EmbersLute_Spell_OgreMockery_1"
+data "TemplateID" "a86aa3b5-18b7-40cf-8656-b3efc1469ce9"
 

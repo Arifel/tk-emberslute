@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
   <stat_objects>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_BLACK" />
@@ -14,7 +14,7 @@
         <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
       </fields>
     </stat_object>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="77c291cf-0d11-497a-86ad-88aa2b990dab" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_WHITE" />
@@ -24,7 +24,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Lute_WhiteSheetMusic_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ce785834-a430-4f7b-b938-0c85994bdf9e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B" />
@@ -33,7 +33,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_LUTES_ON);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4062bfa7-7dda-4d2d-aae4-79b0c63f02d6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE" />
@@ -44,7 +44,7 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="91296545-64fe-4f4f-adf5-5069f5bed91e" />
       </fields>
     </stat_object>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7b0902a7-1912-46bb-980b-1f53b94551ff" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VICIOUSROCKERY" />
@@ -57,7 +57,7 @@
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16e6dec4-3e49-47ab-a507-ddfe24cb1e56" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_ROLLINGBONES" />
@@ -70,7 +70,7 @@
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lyre" enumeration_type_name="InstrumentType" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF441347" is_substat="false">
+    <stat_object color="#FF360F38" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="95cf3bc4-7a96-46c0-b0f4-6ed10eae700c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLING" />
@@ -82,6 +82,14 @@
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="EMLUTE_ANNOYING_SPIRIT" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="13434016-05d6-49bf-8bac-fd629f062a72" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF360F38" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cffcd9df-ecf0-4dcb-bad9-5badaab5b6b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLING_DYEABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="95cf3bc4-7a96-46c0-b0f4-6ed10eae700c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f8bbaf8f-9f92-41ec-94b4-d53bcb7afec0" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -60,6 +60,11 @@ data "PassivesOnEquip" "Emlute_AugmentAuras_Whistling"
 data "StatusOnEquip" "EMLUTE_ANNOYING_SPIRIT"
 data "InstrumentType" "Lute"
 
+new entry "EMBERS_LUTE_WHISTLING_DYEABLE"
+type "Armor"
+using "EMBERS_LUTE_WHISTLING"
+data "RootTemplate" "f8bbaf8f-9f92-41ec-94b4-d53bcb7afec0"
+
 new entry "EMBERS_LUTE_PANTS_OF_PERFORMANCE"
 type "Armor"
 using "ARM_Underwear_Humans"

@@ -148,6 +148,7 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -165,6 +166,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGFORME_VICTIM,100,30)" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2478c860gbc4cg35d5ga13fga1d99c6567e3" version="1" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -218,9 +220,10 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h85d95060g802dgd7e5g3662gc0f8c85f8a91" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_POLYMORPH_MEATSOUNDSMIG,100,30)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
+    <stat_object color="#FF572323" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
         <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
@@ -237,7 +240,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
+    <stat_object color="#FF572323" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="08ddc04e-68bb-40cf-b889-fa6e639fa2b7" />
         <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Emlute" />
@@ -249,6 +252,16 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb8f3391g4d41gbafagf991g4f34583d0e9e" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_CHAOSCHARM,100,4)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF572323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96315c12-9686-4685-bdc6-195358a904c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Combat_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="08ddc04e-68bb-40cf-b889-fa6e639fa2b7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_AURA_COMBAT);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA);GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2a62d09gfd1agf2b9gac3ag355b0c3bcbd5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h266b8a4dg8c95gd272g15abg09f2f4f22f7f" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000080" is_substat="false">
@@ -277,6 +290,29 @@
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="c20fcf83-26a4-460c-abeb-52bcbbae37a6" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="10" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ef52e32-b908-4bd1-921e-23420f8e158a" />
+        <field name="Name" type="NameTableFieldDefinition" value="OgressTime_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cffc4f52-68f0-4dd3-864b-b238ca88ecb4" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_POLYMORPH_MEATSOUNDSMIG,100,30)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Dead()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_OgreMockery_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hee246026gccadg3f3agf3e6gdcf64bc7ff32" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d98c405g8fb5gfad5g8383gba60c8940f2a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c985033f-9117-4f24-864b-71c06da93758" />
+        <field name="Name" type="NameTableFieldDefinition" value="OgreTime_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6ef52e32-b908-4bd1-921e-23420f8e158a" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_POLYMORPH_LUMP,100,30)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_OgreMockery_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5e9bf56gd745g8ab6g4644g139101485b03" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

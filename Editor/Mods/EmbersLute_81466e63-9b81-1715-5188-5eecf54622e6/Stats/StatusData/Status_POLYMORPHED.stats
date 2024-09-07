@@ -4,7 +4,22 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8bed7965-0332-40b4-a2c0-70af4435ac69" />
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_MEATSOUNDSMIG" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3d7f4a2fg4441gac4bge4cagfb63af6c2b93" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc964b017g859bg6f6bg05dbge2f4d3afd5b1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_OgreMockery_2" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="a984369d-0c92-4e73-b309-7a8f943bf097" />
+        <field name="Rules" type="GuidObjectTableFieldDefinition" value="f0dbe368-cc9f-4905-bfcd-ec3e2832c5a6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8774582b-8cb2-4db1-8753-6c36b5e58b30" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_LUMP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bed7965-0332-40b4-a2c0-70af4435ac69" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0288d277ge76agd1edgdfa4g8c43ae7c6d83" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_OgreMockery_1" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="a86aa3b5-18b7-40cf-8656-b3efc1469ce9" />
       </fields>
     </stat_object>
   </stat_objects>

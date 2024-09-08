@@ -9,11 +9,11 @@
                     <children>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="GustavDev"/>
-                            <attribute id="MD5" type="LSString" value="80c567f5dfc758393d5917ccc05f39e6"/>
+                            <attribute id="MD5" type="LSString" value="96c19798a020e178251944be557fc464"/>
                             <attribute id="Name" type="LSString" value="GustavDev"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8"/>
-                            <attribute id="Version64" type="int64" value="145100393449719581"/>
+                            <attribute id="Version64" type="int64" value="145100393449790344"/>
                         </node>
                     </children>
                 </node>
@@ -21,10 +21,10 @@
                     <attribute id="Author" type="LSString" value="Ariefel"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="Adds instruments which enhance music performances with VFX and QoL features. Auto-join and complete music performances with companions, ensemble summons or instrument sprites. Use passives to toggle instruments in and out of silence."/>
-                    <attribute id="FileSize" type="uint64" value="114246207"/>
+                    <attribute id="FileSize" type="uint64" value="130163661"/>
                     <attribute id="Folder" type="LSString" value="EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="19eb8585ce814822220c698fbe3ed50b"/>
+                    <attribute id="MD5" type="LSString" value="e95a7676601393c471420291b3672386"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="Ember&apos;s Lute (A Music Performance Mod)"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -32,7 +32,7 @@
                     <attribute id="PublishHandle" type="uint64" value="4269486"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="17ed9aa5-40e7-4c49-ac10-a0feb1ffeaa9"/>
-                    <attribute id="Version64" type="int64" value="72057594037928020"/>
+                    <attribute id="Version64" type="int64" value="72057596185411669"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927717358569"/>

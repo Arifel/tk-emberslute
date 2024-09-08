@@ -116,6 +116,26 @@ type "Object"
 using "_Potion"
 data "RootTemplate" "f9636581-66ff-4f88-9b50-f1c5e9e3d6cd"
 
+new entry "EMBERS_LUTE_DYE_BLACKRED"
+type "Object"
+using "_Dye_VeryRare"
+data "RootTemplate" "17b4fe73-bbdc-4837-9db2-ad0df37761e4"
+
+new entry "EMBERS_LUTE_DYE_BLACKTEAL"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "6991eb7e-851b-47ae-b39f-fc7bcda0f925"
+
+new entry "EMBERS_LUTE_DYE_BLACKGOLD"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "7e9f6ae7-475b-436f-9ce4-e7a8a93f92c4"
+
+new entry "EMBERS_LUTE_DYE_WHITEBLACK"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "cc7752ad-a1a6-4bc8-be8c-b01c0cb7f461"
+
 new entry "_DEPRECATED"
 type "Object"
 

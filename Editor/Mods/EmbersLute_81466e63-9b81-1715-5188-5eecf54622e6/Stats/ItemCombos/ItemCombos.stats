@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="21465eb6-ebaf-4455-9f29-369759e000a9">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cfa90bcb-add5-4ce7-9292-8cd81fc19862" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKRED" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKRED" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="DyableArmor" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Dye" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKRED_1" />
+        <field name="DyeColorPresetResource" type="FixedStringTableFieldDefinition" value="963387ce-05e6-a6bf-25ac-814d4f62ffa8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="349c48e7-60b8-4225-a2ba-561b10c04318" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKTEAL" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKTEAL" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="DyableArmor" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Dye" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKTEAL_1" />
+        <field name="DyeColorPresetResource" type="FixedStringTableFieldDefinition" value="2bd0c9fa-d3cd-0afe-5289-d13316c2120e" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac081ffd-9d09-4d64-a750-b8bc8b1462b4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKGOLD" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKGOLD" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="DyableArmor" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Dye" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKGOLD_1" />
+        <field name="DyeColorPresetResource" type="FixedStringTableFieldDefinition" value="0328ff24-d72d-b373-c358-5b634f7aa312" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ede8c20-6d36-4823-b9a9-c633ba67c3ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_WHITEBLACK" />
+        <field name="Type 1" type="EnumerationTableFieldDefinition" value="Object" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_WHITEBLACK" />
+        <field name="Transform 1" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="Type 2" type="EnumerationTableFieldDefinition" value="Category" enumeration_type_name="IngredientType" version="1" />
+        <field name="Object 2" type="StringTableFieldDefinition" value="DyableArmor" />
+        <field name="Transform 2" type="EnumerationTableFieldDefinition" value="Dye" enumeration_type_name="IngredientTransformType" version="1" />
+        <field name="ResultAmount 1" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Result 1" type="StringTableFieldDefinition" value="EMBERS_LUTE_DYE_WHITEBLACK_1" />
+        <field name="DyeColorPresetResource" type="FixedStringTableFieldDefinition" value="553d7934-486e-2779-7867-87015a4688fe" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

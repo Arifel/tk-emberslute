@@ -90,6 +90,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLING_DYEABLE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="95cf3bc4-7a96-46c0-b0f4-6ed10eae700c" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f8bbaf8f-9f92-41ec-94b4-d53bcb7afec0" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

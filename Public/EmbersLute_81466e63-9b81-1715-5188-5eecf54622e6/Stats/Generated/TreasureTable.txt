@@ -25,6 +25,14 @@ new subtable "1,1"
 object category "I_EMBERS_LUTE_WHISTLING",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_WHISTLING_DYEABLE",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_DYE_BLACKRED",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_DYE_BLACKTEAL",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_DYE_BLACKGOLD",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_DYE_WHITEBLACK",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Varnishes"
 new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_INFO_VARNISHES",1,0,0,0,0,0,0,0

@@ -188,6 +188,38 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f9636581-66ff-4f88-9b50-f1c5e9e3d6cd" />
       </fields>
     </stat_object>
+    <stat_object color="#FF5E3110" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af263bad-517b-45f4-a03c-a228acea41aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKRED" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7180091c-71cf-48b2-ab20-5249ff004a58" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="17b4fe73-bbdc-4837-9db2-ad0df37761e4" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5E3110" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d58c517a-b2e5-4763-8be0-6672863e50c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKTEAL" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="af263bad-517b-45f4-a03c-a228acea41aa" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="6991eb7e-851b-47ae-b39f-fc7bcda0f925" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5E3110" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67b1d7c3-3595-488a-90f5-03587792ae91" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_BLACKGOLD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="af263bad-517b-45f4-a03c-a228acea41aa" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="7e9f6ae7-475b-436f-9ce4-e7a8a93f92c4" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5E3110" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6c1f4feb-48dd-4c0b-bfba-13d641ba2e67" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_DYE_WHITEBLACK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="af263bad-517b-45f4-a03c-a228acea41aa" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="cc7752ad-a1a6-4bc8-be8c-b01c0cb7f461" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ecc43572-0591-4571-adb4-5c6044402511" />

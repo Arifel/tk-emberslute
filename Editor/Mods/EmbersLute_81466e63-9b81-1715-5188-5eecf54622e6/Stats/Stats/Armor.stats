@@ -154,90 +154,103 @@
         <field name="Name" type="NameTableFieldDefinition" value="_EMBERS_LUTE_COMPATIBILITY" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6ede3470-a5f4-46df-bf1b-af9f8cc160f4" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_GOLD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
-        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="47e8de31-ffbd-476b-b219-7b48dff23a09" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ed531c66-9cd4-4d06-be2d-f449c50d501d" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_GNOMES_VER_1_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7b0902a7-1912-46bb-980b-1f53b94551ff" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e2c92e04-98cc-406e-aa13-2303ecfe8135" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BONES_VER_1_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="16e6dec4-3e49-47ab-a507-ddfe24cb1e56" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d5ae5c8c-5043-4e50-abd9-a955728619df" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLE_VER_1_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="95cf3bc4-7a96-46c0-b0f4-6ed10eae700c" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ccf95afa-0858-4808-a2cd-b94ddf1fc778" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLE_2K_VER_1_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="95cf3bc4-7a96-46c0-b0f4-6ed10eae700c" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b170738c-3e95-49d2-92e0-f8ab25ea3597" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_BLACKGRAIN" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="370ba5d1-d8a3-46b8-8710-9bfc82a3e51f" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_DARKPURPLEGRAIN" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6bba9950-07e2-4b31-bec2-b47251c0f192" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_REDSMOOTH" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="68f0a1ec-ff93-4cc2-8dd8-f9be8d803539" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PARTY_MODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="77c291cf-0d11-497a-86ad-88aa2b990dab" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3c6915a2-afe0-4541-8ba3-78e46c5d7100" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PARTY_MODE_VIOLIN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4062bfa7-7dda-4d2d-aae4-79b0c63f02d6" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f23f795f-10dc-4d75-984a-d8b7f3a1b26f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_VER_1_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4062bfa7-7dda-4d2d-aae4-79b0c63f02d6" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF212121" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="78b97d27-87bb-4189-8431-43a454b27386" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VER_1_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF212121" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94eef381-785b-4517-8864-599110869ca3" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MONOCHROME_VER_1_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="77c291cf-0d11-497a-86ad-88aa2b990dab" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c7948cdf-e72d-4902-8091-fb06a9b15bbb" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CLEANUP_FLUTE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2e47582b-2b78-4cae-8978-73884ae67d5e" />
       </fields>
     </stat_object>
-    <stat_object color="#FF1C1C1C" is_substat="false">
+    <stat_object color="#FF212121" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f23f795f-10dc-4d75-984a-d8b7f3a1b26f" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_VER_1_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="4062bfa7-7dda-4d2d-aae4-79b0c63f02d6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6bba9950-07e2-4b31-bec2-b47251c0f192" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_REDSMOOTH" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF212121" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="370ba5d1-d8a3-46b8-8710-9bfc82a3e51f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_DARKPURPLEGRAIN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF212121" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b170738c-3e95-49d2-92e0-f8ab25ea3597" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_BLACKGRAIN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
       </fields>
     </stat_object>
   </stat_objects>

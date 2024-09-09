@@ -106,7 +106,6 @@ type "Armor"
 new entry "EMBERS_LUTE_MUSICALSPRITES_GOLD"
 type "Armor"
 using "EMBERS_LUTE_MUSICALSPRITES_BLACK"
-data "RootTemplate" "47e8de31-ffbd-476b-b219-7b48dff23a09"
 data "PassivesOnEquip" "Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard"
 
 new entry "EMBERS_LUTE_GNOMES_VER_1_2"
@@ -125,18 +124,6 @@ new entry "EMBERS_LUTE_WHISTLE_2K_VER_1_2"
 type "Armor"
 using "EMBERS_LUTE_WHISTLING"
 
-new entry "EMBERS_LUTE_VIOLIN_BLACKGRAIN"
-type "Armor"
-using "ARM_Instrument_Violin"
-
-new entry "EMBERS_LUTE_VIOLIN_DARKPURPLEGRAIN"
-type "Armor"
-using "ARM_Instrument_Violin"
-
-new entry "EMBERS_LUTE_VIOLIN_REDSMOOTH"
-type "Armor"
-using "ARM_Instrument_Violin"
-
 new entry "EMBERS_LUTE_PARTY_MODE"
 type "Armor"
 using "EMBERS_LUTE_MUSICALSPRITES_WHITE"
@@ -145,11 +132,31 @@ new entry "EMBERS_LUTE_PARTY_MODE_VIOLIN"
 type "Armor"
 using "EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE"
 
+new entry "EMBERS_LUTE_VIOLIN_VER_1_2"
+type "Armor"
+using "EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE"
+
+new entry "EMBERS_LUTE_VER_1_2"
+type "Armor"
+using "EMBERS_LUTE_MUSICALSPRITES_BLACK"
+
+new entry "EMBERS_LUTE_MONOCHROME_VER_1_2"
+type "Armor"
+using "EMBERS_LUTE_MUSICALSPRITES_WHITE"
+
 new entry "EMBERS_LUTE_CLEANUP_FLUTE"
 type "Armor"
 using "ARM_Instrument_Flute"
 
-new entry "EMBERS_LUTE_VIOLIN_VER_1_2"
+new entry "EMBERS_LUTE_VIOLIN_REDSMOOTH"
 type "Armor"
-using "EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE"
+using "ARM_Instrument_Violin"
+
+new entry "EMBERS_LUTE_VIOLIN_DARKPURPLEGRAIN"
+type "Armor"
+using "ARM_Instrument_Violin"
+
+new entry "EMBERS_LUTE_VIOLIN_BLACKGRAIN"
+type "Armor"
+using "ARM_Instrument_Violin"
 

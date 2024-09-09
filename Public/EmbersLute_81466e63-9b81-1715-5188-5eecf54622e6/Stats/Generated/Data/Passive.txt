@@ -345,6 +345,14 @@ type "PassiveData"
 data "DisplayName" "hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9;5"
 data "Properties" "IsHidden"
 
+new entry "Emlute_Lute_Dancing_Spirits"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_Violin_Dancing_Spirits"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
 new entry "Emlute_MusicalSpritesSpellContainer"
 type "PassiveData"
 data "DisplayName" "hc3f75e90g834agd480g377egf96e108dbc4d;2"

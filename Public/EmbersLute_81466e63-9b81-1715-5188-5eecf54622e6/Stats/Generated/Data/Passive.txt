@@ -305,6 +305,13 @@ data "LoreDescription" "h8fff6529g8368gd17dg6e49gfe604fa72402;1"
 data "Icon" "Spell_Illusion_DisguiseSelf_Gnome_Female"
 data "Properties" "Highlighted"
 
+new entry "Emlute_SkellyBand"
+type "PassiveData"
+data "DisplayName" "hfe0cdac3g9f34gd592gdfcdg7b7a9843d4f1;1"
+data "Description" "h293f14eagacc7g76c2gc086g5a18ec72285f;1"
+data "Icon" "EmbersLute_Spell_RollingBones"
+data "Properties" "Highlighted"
+
 new entry "Emlute_Musical_Spirit_BardDance_Curse"
 type "PassiveData"
 using "Emlute_Join_ThePower"
@@ -336,6 +343,7 @@ data "ToggleGroup" "EmluteInstrumentVFX"
 new entry "_EMLUTE_LEGACY_PASSIVES"
 type "PassiveData"
 data "DisplayName" "hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9;5"
+data "Properties" "IsHidden"
 
 new entry "Emlute_MusicalSpritesSpellContainer"
 type "PassiveData"
@@ -353,26 +361,13 @@ type "PassiveData"
 using "Emlute_MusicalSpritesSpellContainer"
 data "Boosts" "UnlockSpell(Shout_Bard_Perform_Combat_Emlute)"
 
-new entry "Emlute_InstrumentToggle_01_VFX"
+new entry "Emlute_SpellContainer_Glow"
 type "PassiveData"
-using "Emlute_Instrument_VFX"
-data "DisplayName" "hc5c404dfga903g5b24ga364g8b4ea55fa869;1"
-data "Description" "h485287ecgd837g975cg5cfdg73602e3d6fd8;1"
+using "Emlute_MusicalSpritesSpellContainer"
 
-new entry "Emlute_LuteB_LightPurple_01_VFX"
+new entry "Emlute_Annoying_Spells_Container"
 type "PassiveData"
-data "DisplayName" "h2b5905eeg72d1g47c1gc6b4g7145ec457361;1"
-data "Description" "h4f8bdeebgd555g4de3g2e2fgb3e4bc0e3c67;2"
-data "Icon" "Spell_Evocation_Light"
-data "PriorityOrder" "5"
-data "Properties" "IsHidden;IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn"
-data "ToggleOnFunctors" "ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LUTE_B_LIGHT_VFX_01,100,-1)"
-data "ToggleOffFunctors" "ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LIGHT_VFX_CLEAR,100,1)"
-data "ToggleGroup" "EmluteInstrumentLightVFX"
-
-new entry "Emlute_RollingBones"
-type "PassiveData"
-using "Emlute_LuteB_LightPurple_01_VFX"
+using "_EMLUTE_LEGACY_PASSIVES"
 
 new entry "Emlute_ClearAuras"
 type "PassiveData"
@@ -391,4 +386,88 @@ data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnStatusApplied"
 data "Conditions" "Emlute_StatusIsPerformBaseGame()"
 data "StatsFunctors" "IF(not HasStatus('EMLUTE_SPIRIT_MGMT_AURA_GNOMES',GetItemInEquipmentSlot(EquipmentSlot.MusicalInstrument,context.Target))):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPIRIT_MGMT_AURA_GNOMES,100,-1);IF(HasStatus('PERFORM_POSITIVE_THEPOWER')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_THEPOWER_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_STARGAZING')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_STARGAZING_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_BARDDANCE')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_BARDDANCE_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_1')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_1_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_2')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_2_AURAONLY,100,-1);IF(HasStatus('PERFORM_POSITIVE_DOS2_3')):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_PERFORM_DOS2_3_AURAONLY,100,-1)"
+
+new entry "Emlute_AugmentAuras_Whistling_NoAura"
+type "PassiveData"
+using "Emlute_AugmentAuras_Whistling"
+data "Properties" "IsHidden"
+
+new entry "Emlute_MildMockery"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_LuteReact"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_SummonOnPerformDefaultOff"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_SummonOnPerformNoToggle"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_InstrumentToggle_01_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_LuteB_LightPurple_01_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+data "ToggleOnFunctors" "ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LUTE_B_LIGHT_VFX_01,100,-1)"
+data "ToggleOffFunctors" "ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_LIGHT_VFX_CLEAR,100,1)"
+data "ToggleGroup" "EmluteInstrumentLightVFX"
+
+new entry "Emlute_LuteB_SmokeOnly_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_LuteB_PurpleFlourish_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_LuteB_PurpleMusic_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_LuteB_PurpleFlourishLarge_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_LuteB_Mono_WhiteFlourishLarge_VFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_RollingBonesVFX"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_Pacifist_Portal"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_CombatSanctuary"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "_Emlute_FlameHands"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_GoldHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_GreenHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_PurpleHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_BlueHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
 

@@ -388,9 +388,9 @@
   <content contentuid="hc3abf254g70d2g4d52g8eaag46147e1132f5" version="7">Varnish |Musical Sprites|</content>
   <content contentuid="h899cb795gcdf0g0734g2eb3ge94dfcaa6b68" version="6">The effects of this varnish will be removed when you unequip the instrument.</content>
   <content contentuid="hbc6b9702g551eg4022g9219g0feeb6254bcf" version="7">Apply this varnish to your equipped instrument, and musical sprites will appear when you perform music.</content>
-  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="4">Violin of Musical Sprites (White)</content>
-  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="3">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
-  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="4">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
+  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="5">Violin of Musical Sprites (White)</content>
+  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="4">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
+  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="5">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
   <content contentuid="h2478c860gbc4cg35d5ga13fga1d99c6567e3" version="1">Whenever 'Sing For Me' is performed nearby, the victim of this curse will be compelled to join the performance.</content>
   <content contentuid="h5246bd21g12a7g74a7gde83g969dd8ff4547" version="1">Share Mild Mockery</content>
   <content contentuid="h528c26b2g17b0g65fag1e99g84be790a560b" version="1">The lute spirit will grant the cantrip Mild Mockery to your current party. This'll be mean!</content>
@@ -442,4 +442,6 @@
   <content contentuid="hf0f62fc7g1bedg1be2gd7d9gf0a1c0811377" version="3">A re-usable black and teal dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyable armor.</content>
   <content contentuid="h6173e98dga326g82d9g6e72g637f3b018471" version="2">A re-usable brown and gold dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyable armor.</content>
   <content contentuid="h06b98711g13e8gdb86gcb0dg01da8ea6867c" version="2">A re-usable white and black dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyable armor.</content>
+  <content contentuid="hfe0cdac3g9f34gd592gdfcdg7b7a9843d4f1" version="1">Rolling Bones</content>
+  <content contentuid="h293f14eagacc7g76c2gc086g5a18ec72285f" version="1">Proud member of The Rolling Bones.</content>
 </contentList>

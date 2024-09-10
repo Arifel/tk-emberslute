@@ -472,6 +472,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="_EMLUTE_LEGACY_PASSIVES" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9" version="5" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4f9a78fag2fcdg3103gbdccg5bd961711cd5" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF212121" is_substat="false">
@@ -692,6 +693,20 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="be210599-b08f-4f68-87b9-ec45b61706a9" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_BlueHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c2c684a-0897-4041-90be-389ab1cdba2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_EndlessSpring" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fccf34f2-240e-422c-8e04-12898d54fdf9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_AutoRejoin_WeepingDawn" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
       </fields>
     </stat_object>

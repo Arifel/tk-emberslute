@@ -343,6 +343,7 @@ data "ToggleGroup" "EmluteInstrumentVFX"
 new entry "_EMLUTE_LEGACY_PASSIVES"
 type "PassiveData"
 data "DisplayName" "hbd674d5bg5c8fgdfa2ge42eg6d468cf32fc9;5"
+data "Description" "h4f9a78fag2fcdg3103gbdccg5bd961711cd5;1"
 data "Properties" "IsHidden"
 
 new entry "Emlute_Lute_Dancing_Spirits"
@@ -476,6 +477,14 @@ type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
 
 new entry "Emlute_BlueHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_Join_EndlessSpring"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_AutoRejoin_WeepingDawn"
 type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
 

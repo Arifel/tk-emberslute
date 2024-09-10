@@ -256,7 +256,7 @@
   <content contentuid="hdcfb746cg82cag6fd0g5ec5gc3318b743a72" version="1">“’T is believ’d that this harp which I wake now for thee, Was a siren of old who sung under the sea.”</content>
   <content contentuid="hae3a98cfg5df1ge64cg3a11g7ccbe4f1cf3d" version="1">“Guitar is easy. All it takes is 5 fingers, 6 strings, and one asshole.”</content>
   <content contentuid="h47547397gc916g9682g26c2g683edeae144d" version="1">“You know how to whistle, don’t you, Steve? You just put your lips together and blow.”</content>
-  <content contentuid="h7d48d089g6f7bg12a2g0568g4824ae615304" version="1">Even though these statuses aren't used in this version, I think they need to be retained as empty headers at least, in case they are chilling out somewhere in someone's save game</content>
+  <content contentuid="h7d48d089g6f7bg12a2g0568g4824ae615304" version="2">DO NOT USE only added to support an upgrade path from version 1 of this mod</content>
   <content contentuid="he9ebad74g2c36g8e24g536eg2f4b3482bd8e" version="2">Purple Smoke</content>
   <content contentuid="h2184f51bgd397gd41ag9262gc28707a38b6d" version="1">Apply purple lighting with a smoke and sparkles effect.</content>
   <content contentuid="h70c98618g4e16gee20g0bfagd834033d93cb" version="2">Purple Smoke</content>
@@ -435,13 +435,16 @@
   <content contentuid="h266b8a4dg8c95gd272g15abg09f2f4f22f7f" version="1">Chaoscharm, with extra pain and violence. Don't use this outside of battle unless you want to start a fight.</content>
   <content contentuid="hccb7c8b8g9fc1g9d0agdd08g20307260c797" version="3">Ember's Really Annoying Lute (Dyeable)</content>
   <content contentuid="h106e02b7g888bgca6egcb5fg4846d8e78266" version="2">A dyeable variant of the Really Annoying Lute. Differences are aesthetic only.</content>
-  <content contentuid="hfe114c06gbff3g7c68g0e66g5000cf4122f2" version="2">Black and Red Dye</content>
-  <content contentuid="h02856b06g110eg3b82gc173g023b69bed9d1" version="4">Black and Teal Dye</content>
-  <content contentuid="h05564fd7gd2e0g933bg82b9g78b4f75779a1" version="3">White and Black Dye</content>
-  <content contentuid="h6e48cff1gcbc3g9d98gdf20ge9529445c59e" version="3">Brown and Gold Dye</content>
-  <content contentuid="hf0f62fc7g1bedg1be2gd7d9gf0a1c0811377" version="3">A re-usable black and teal dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyable armor.</content>
-  <content contentuid="h6173e98dga326g82d9g6e72g637f3b018471" version="2">A re-usable brown and gold dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyable armor.</content>
-  <content contentuid="h06b98711g13e8gdb86gcb0dg01da8ea6867c" version="2">A re-usable white and black dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyable armor.</content>
+  <content contentuid="hfe114c06gbff3g7c68g0e66g5000cf4122f2" version="3">Black and Red Dye</content>
+  <content contentuid="h02856b06g110eg3b82gc173g023b69bed9d1" version="5">Black and Teal Dye</content>
+  <content contentuid="h05564fd7gd2e0g933bg82b9g78b4f75779a1" version="4">White and Black Dye</content>
+  <content contentuid="h6e48cff1gcbc3g9d98gdf20ge9529445c59e" version="4">Brown and Gold Dye</content>
+  <content contentuid="hf0f62fc7g1bedg1be2gd7d9gf0a1c0811377" version="4">A re-usable black and teal dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
+  <content contentuid="h6173e98dga326g82d9g6e72g637f3b018471" version="3">A re-usable brown and gold dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
+  <content contentuid="h06b98711g13e8gdb86gcb0dg01da8ea6867c" version="3">A re-usable white and black dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
   <content contentuid="hfe0cdac3g9f34gd592gdfcdg7b7a9843d4f1" version="1">Rolling Bones</content>
   <content contentuid="h293f14eagacc7g76c2gc086g5a18ec72285f" version="1">Proud member of The Rolling Bones.</content>
+  <content contentuid="h2a902538gf3f4g75edgb724g8d1deb0524db" version="1">Legacy Status</content>
+  <content contentuid="h4f9a78fag2fcdg3103gbdccg5bd961711cd5" version="1">DO NOT USE for backwards compatibility only</content>
+  <content contentuid="hd08c35a6g33d9gebf9g839eg8c30b4b9753d" version="1">A re-usable red and black dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
 </contentList>

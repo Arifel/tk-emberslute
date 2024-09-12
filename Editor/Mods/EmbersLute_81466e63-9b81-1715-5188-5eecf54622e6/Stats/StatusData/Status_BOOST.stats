@@ -1034,22 +1034,36 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d52a3bf7-bc6f-4ee1-9d98-906926b89409" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_GNOME_DRUNK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3288a264-6a48-49c8-8308-5909f03ebfe1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1b45d207ga963gb6d2gfb77gb14d4ccf1c12" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05dcfcbfg580eg06f5g471cg7a1793fb9fe2" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(Ability,Dexterity);Proficiency(MusicalInstrument);Skill(Performance,5);Disadvantage(Ability,Charisma)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5b3c6b0d-6d3f-414d-b0f3-b693aed3e848" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DRINK_PUDDLEPOP_MEAD" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d52a3bf7-bc6f-4ee1-9d98-906926b89409" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3d96bd8fgd0d3g6befg6d2ag5e546ff481ef" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRINK" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF006400" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="01cd6185-2ea4-409c-a492-a9f762fe9d62" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_GNOME_CURE_DRUNK" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h576f6eebga90agcda7g6dddgf7c87bd3af36" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_GNOME_DRUNK')):RemoveStatus(EMLUTE_GNOME_DRUNK)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

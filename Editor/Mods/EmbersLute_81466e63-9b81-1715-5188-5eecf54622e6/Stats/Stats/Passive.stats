@@ -206,7 +206,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_DRUMS_ON)" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hf640173dgb467gc7e7gcb9eg0398df13cf3f" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">
@@ -219,7 +218,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_FLUTES_ON)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h7d518080g2a92gd01bg6935g8bd604b84cbe" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">
@@ -232,7 +230,6 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_VIOLINS_ON)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h8b9ecfeag2a85g2413g1538g134e66aaa020" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">
@@ -245,7 +242,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf92be1b8g0ae4g81b0g8367g4dbd200a5d19" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2be6ef8ag723bg751bg0f56g169712f96249" version="2" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hdcfb746cg82cag6fd0g5ec5gc3318b743a72" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">
@@ -258,7 +254,6 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h099a6b51g82f5gd1d4g14edga8f973a14b68" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7075b924gda9fgecbfg80f2g854bd0d116ff" version="2" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hae3a98cfg5df1ge64cg3a11g7ccbe4f1cf3d" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">
@@ -270,7 +265,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b221e78g830bg849bgaf1dga98e9e4fc49a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Voice" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_VOCALS_ON)" />
-        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h47547397gc916g9682g26c2g683edeae144d" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">

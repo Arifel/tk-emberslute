@@ -22,56 +22,5 @@
         <field name="TemplateID" type="StringTableFieldDefinition" value="a86aa3b5-18b7-40cf-8656-b3efc1469ce9" />
       </fields>
     </stat_object>
-    <stat_object color="#FF000000" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-        <field name="Name" type="NameTableFieldDefinition" value="_EMLUTE_DEPRECATED_POLY" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57de1ccbg8eefg0c00g12fdgf6584483edb9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9f136a35gfa28g3b33gbbc3g0a3d36e677ff" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF141414" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9aeae5c4-e9f3-43b2-9fe8-bb5be4250491" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_BAGPIPES" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF171717" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="16c2705a-0303-46c4-b8f2-23519c9b5ea8" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_HORN" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF171717" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c9343761-7d55-4ded-af75-40510a29d938" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_SAXOPHONE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF171717" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7b830555-1de3-4799-aa2b-fda497e7fcb3" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_SHAWM" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF171717" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a7090534-0d75-428d-a688-f643ea3c5785" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CLEAR_POLYMORPH" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF171717" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="785a3b66-e0df-41b7-890f-cecaa4752307" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_APPLY_POLYMORPH" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f0133fd7-22da-4915-80ca-bff1a75dacaf" />
-      </fields>
-    </stat_object>
   </stat_objects>
 </stats>

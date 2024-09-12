@@ -67,7 +67,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d94233c2-ec55-4524-875b-5e8334e928a2" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e2616ac0-2715-4e91-a8d4-a8e5a0826c0e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_GOLD_VFX" />
@@ -75,7 +75,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="49a9bac7-2bae-48ec-85e4-d85bfbfc3e51" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_PURPLE_VFX" />
@@ -83,7 +83,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0c5a3a14-c33e-4fd9-8811-1ff59f555382" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_GREEN_VFX" />
@@ -91,7 +91,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="812f5a79-7a64-4541-bf6d-7aee21279c78" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_BLUE_VFX" />

@@ -197,160 +197,238 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+        <field name="Name" type="NameTableFieldDefinition" value="_LEGACY_AND_COMPATIBILITY_EMLUTE_EFFECT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf132b4c3g793eg8677gb67cg7291290e4c5f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd30642a2g62e4g7516g547eg0d8c9ed9a97d" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9328a121-29fd-469d-811c-9ceb743190a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_01" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b317e9e8-578f-4879-bac6-ebd4f6fcf285" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ROLLING_BONES_LYRE_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="81625a7d-7148-49c1-9444-9be5380021fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_02" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e00e033-bff3-4f07-a91f-49c8d761cb5f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_03" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9e51ed0-ebe1-4c93-88ed-8d79ade08210" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_04" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13e5b567-2fd8-4650-b67a-20bd3251776a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_05" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ac37ae2c-75e8-43ab-b748-d5083c200831" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_06" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3a35e5c8-9766-4852-8061-7965c9976df5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_EMITTING_INSTRUMENTS_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fd6460dd-8ea9-4dc7-aaa1-04a8664cede9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VORTEX_INSTRUMENTS_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="817b686c-a849-4fc9-95e6-8ddde8694991" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_BLUE_MUSICBOX_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="67856cb9-ed1c-4060-848c-d4147b566e38" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_LUTE_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="badddb52-a8d5-470e-ad1f-ee9b6f9728d1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_DRUM_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5936e5fc-80c5-4f27-9eba-28cb8bc3a737" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_LYRE_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5bea141e-d5d9-4624-ac97-b0e3b43033d0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_VIOLIN_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="447caf6e-e576-46e3-856d-7f6a2b31446c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_FLUTE_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3632e4f-7569-4249-adde-49a30d09df2a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_MULTIAURA_8STATIC_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="311b5dfe-d53d-4ba9-a16f-ac9dbb9fa8cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_MULTIAURA_4GREEN_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc164b9e-4884-47b2-9b26-b74838d2e336" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_MULTIAURA_4GOLD_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5f1494f3-7040-4491-82b7-2c6ad8a190f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PURPLE_LUTE_GOLD_SWIRLS_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="16647253-2d13-485a-ba2c-a878cc4fe8ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PURPLE_VIOLIN_GOLD_SWIRLS_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e807258b-3c5f-4215-84a9-00ea84ff0c14" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_VFX_NONE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6388518a-d778-44bb-bd07-d58526f3a993" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e1dd5d3-d119-4f35-ace5-9bff5953108f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_MUSIC1_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b54994fd-ca65-4ef3-9f42-70f10a896807" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_MUSIC2_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2cfa4872-210b-4f2c-8ab1-aa7bf2b55d04" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_MUSIC4_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c7b6a02-4421-47e6-ac5d-a7ac516b9efd" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_MUSIC3_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8618964c-2cc2-4210-a16f-f0dc490b55a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SUBTLE_MUSIC2_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96508a14-00b7-411d-a5fc-140f8b770b9f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_MUSIC5_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed9f7e85-8037-4977-b396-c840db3ef67a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_MUSIC6_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f6490948-7ceb-430b-a16f-471b2040dc01" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SUBTLE_MUSIC1_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF141414" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5e8e5178-5dea-44d7-834d-a652fd8eca9b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_AURA_COD_VFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3dea74f5-6c66-4740-9c81-130ed425df4e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
         <field name="Name" type="NameTableFieldDefinition" value="_LEGACY_AND_COMPATIBILITY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc6d5f327g7033gccc1g483fgc0913d622a1e" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0abbf36fg42b8g8ab9g72f3gf582d90bb712" version="1" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="DarkGray" enumeration_type_name="FormatStringColor" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9328a121-29fd-469d-811c-9ceb743190a6" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_01" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4503a1c4gb9fcg6eedg1365g55e25ba9daae" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b317e9e8-578f-4879-bac6-ebd4f6fcf285" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ROLLING_BONES_LYRE_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="81625a7d-7148-49c1-9444-9be5380021fc" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_02" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1e00e033-bff3-4f07-a91f-49c8d761cb5f" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_03" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f9e51ed0-ebe1-4c93-88ed-8d79ade08210" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_04" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="13e5b567-2fd8-4650-b67a-20bd3251776a" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_05" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ac37ae2c-75e8-43ab-b748-d5083c200831" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTEB_VFX_06" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3a35e5c8-9766-4852-8061-7965c9976df5" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_EMITTING_INSTRUMENTS_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fd6460dd-8ea9-4dc7-aaa1-04a8664cede9" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VORTEX_INSTRUMENTS_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="817b686c-a849-4fc9-95e6-8ddde8694991" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_BLUE_MUSICBOX_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="67856cb9-ed1c-4060-848c-d4147b566e38" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_LUTE_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="badddb52-a8d5-470e-ad1f-ee9b6f9728d1" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_DRUM_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5936e5fc-80c5-4f27-9eba-28cb8bc3a737" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_LYRE_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5bea141e-d5d9-4624-ac97-b0e3b43033d0" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_VIOLIN_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="447caf6e-e576-46e3-856d-7f6a2b31446c" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_FLUTE_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="a3632e4f-7569-4249-adde-49a30d09df2a" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_MULTIAURA_8STATIC_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="311b5dfe-d53d-4ba9-a16f-ac9dbb9fa8cf" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_MULTIAURA_4GREEN_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="fc164b9e-4884-47b2-9b26-b74838d2e336" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_LUTE_MULTIAURA_4GOLD_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5f1494f3-7040-4491-82b7-2c6ad8a190f2" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PURPLE_LUTE_GOLD_SWIRLS_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="16647253-2d13-485a-ba2c-a878cc4fe8ae" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PURPLE_VIOLIN_GOLD_SWIRLS_VFX" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e807258b-3c5f-4215-84a9-00ea84ff0c14" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_VFX_NONE" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5a5d9f76-e7b4-4262-96db-5c2315726263" />
       </fields>
     </stat_object>
   </stat_objects>

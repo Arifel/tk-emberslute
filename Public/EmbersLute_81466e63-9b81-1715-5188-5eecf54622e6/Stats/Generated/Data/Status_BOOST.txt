@@ -853,6 +853,18 @@ data "StackId" "EMLUTE_INSTRUMENT_VARNISH"
 data "StackType" "Overwrite"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "EMLUTE_GNOME_DRUNK"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "EMLUTE_DRINK_PUDDLEPOP_MEAD"
+type "StatusData"
+data "StatusType" "BOOST"
+
+new entry "EMLUTE_GNOME_CURE_DRUNK"
+type "StatusData"
+data "StatusType" "BOOST"
+
 new entry "_LEGACY_AND_COMPATIBILITY_EMLUTE"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -1007,6 +1019,196 @@ data "StatusType" "BOOST"
 using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
 
 new entry "EMLUTE_NO_SONG_DLC_VIOLIN"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_ANNOY_COMPANION"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_SIT_PLEASE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_CLEAR_AUGMENT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_LUTEREACT"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_CACKLE_LAUGH"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_LUTEREACT_OVERHEAD"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_MANIC_LAUGH"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_VFXCHANGE_HELPER_03"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_VFXCHANGE_HELPER_01"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_VFXCHANGE_HELPER_05"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_VFXCHANGE_HELPER_04"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_VFXCHANGE_HELPER_06"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_VFXCHANGE_HELPER_02"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_CHAOSCHARM_COMBATMODE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_DANCE_CURSE_KARLACH"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_DANCE_CURSE_WYLL"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_ENDLESSSPRING"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_WELIVE_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_WELIVE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_DRINK_MUSICAL_SPIRIT_POTION"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_BARDDANCE_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_DOS2_1_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_STARGAZING_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_DOS2_2_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_THEPOWER_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_DOS2_3_NO_AURA"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_MUSICALSPRITES_SANCTUARY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_THEPOWER_DELAY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "_EMLUTE_PERFORM_DELAY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_BARDDANCE_DELAY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_DOS2_2_DELAY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_DOS2_1_DELAY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_SPIRIT_MGMT_AURA_SPAWNTEST"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_PERFORM_WEEPINGDAWN_DELAY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_JOIN_WELIVE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "EMLUTE_JOIN_THEPOWER_V2"
+type "StatusData"
+data "StatusType" "BOOST"
+using "_LEGACY_AND_COMPATIBILITY_EMLUTE"
+
+new entry "_LEGACY_AND_COMPATIBILITY"
 type "StatusData"
 data "StatusType" "BOOST"
 using "_LEGACY_AND_COMPATIBILITY_EMLUTE"

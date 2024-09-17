@@ -9,6 +9,7 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f2ef5e3b-ae30-425a-98c0-7ec2e0186c10" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f6d80512-45e9-44f5-85f2-50235d660bb1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF402040" is_substat="false">
@@ -73,6 +74,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SUMMON_CHEST_SCROLL" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b34ad76a-02bb-4a2e-b8f0-1a32913cfd0d" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9a39c161-b094-4ffd-a88d-9412d43f873e" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="94356ef2-bb14-4595-88cf-86f544ef12eb" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -82,6 +85,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="c94d9fca-9238-4e5c-9647-c645185c2583" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="BookEntertainment" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -90,6 +94,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_THANKYOU_NOTE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="be081cf0-2809-4c9a-9fc0-959c0a6c64ad" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -98,6 +103,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="59c847b9-3955-44f3-a94f-0e1315e38435" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -106,6 +112,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_ENSEMBLES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8b9e1efe-9e9b-4beb-b00f-08685c7e3e57" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -114,6 +121,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_VARNISHES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="37864035-8ebf-4b48-b000-3a39097be8a5" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -122,6 +130,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_ANNOYING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="0aa1e5e4-ec06-499e-b3d2-b5b9ca84b976" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -130,6 +139,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_TEN_REASONS_BOOK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="1ea5537f-8c16-4d3f-bce2-7d4a8fc46782" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0D1040" is_substat="false">
@@ -138,6 +148,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PERCIVAL_DIARY_BOOK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="80dcbfed-3b93-42f7-9188-5b3611f1bb2b" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -146,6 +157,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PUDDLEPOP_MEAD" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="1e5e740a-7580-45ff-a141-bd65619809c2" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="47c2b3ff-538d-4156-ac56-57880d6104aa" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d6378d27-882e-4b51-aee6-31e999ea1d81" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -154,6 +166,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PUDDLEPOP_MEAD_CURE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fb3afb2c-692c-434b-9274-c34926197d9e" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8cf05aa9-5cb3-4510-a3ae-9bc009677b9f" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="d6378d27-882e-4b51-aee6-31e999ea1d81" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -162,6 +175,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ee1aab68-61b2-483a-9328-1584f733e86e" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="7da97bda-6776-4796-8b0b-d3b96ff3c9fb" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -170,6 +185,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE_BONES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8747a182-9f0b-401d-b233-70a3506961cd" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="7da97bda-6776-4796-8b0b-d3b96ff3c9fb" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -178,6 +195,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="3f2ee3cd-e68f-44ea-beac-51f6c39dc20a" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="7da97bda-6776-4796-8b0b-d3b96ff3c9fb" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF092B1D" is_substat="false">
@@ -186,6 +205,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CONVERSION_POTION_SPRITESMODE_SUMMON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c50e9af1-981e-4245-87ff-68dcb94c3698" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f9636581-66ff-4f88-9b50-f1c5e9e3d6cd" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="7da97bda-6776-4796-8b0b-d3b96ff3c9fb" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF5E3110" is_substat="false">

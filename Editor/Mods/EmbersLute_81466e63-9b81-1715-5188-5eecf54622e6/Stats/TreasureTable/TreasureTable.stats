@@ -58,6 +58,7 @@
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_BOOK_INFO_ENSEMBLES" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">
@@ -87,6 +88,7 @@
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_BOOK_INFO_ANNOYING" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">
@@ -156,6 +158,7 @@
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_BOOK_INFO_VARNISHES" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">
@@ -195,6 +198,7 @@
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_PANTS_OF_PERFORMANCE" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF451947" is_substat="false">
@@ -244,7 +248,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5_substat_6" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_ARI_CONT_EMBERSLUTE_MISC" />
-        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="true">

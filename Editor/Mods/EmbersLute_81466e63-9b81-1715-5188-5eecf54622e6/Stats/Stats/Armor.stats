@@ -99,7 +99,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PANTS_OF_PERFORMANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="50e6ef29-e08e-495a-be55-c0e4b78db360" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9a859ca1-8f11-40be-80aa-39c3ebcaa10a" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,3);Proficiency(MusicalInstrument)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

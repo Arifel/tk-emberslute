@@ -722,5 +722,75 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
+    <stat_object color="#FF1C5134" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f3af16b-882f-4644-a414-175780bfe965" />
+        <field name="Name" type="NameTableFieldDefinition" value="FingerFlares_Container_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="958bb940-cf60-4c2e-94e1-a963e48a9b09" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_FingerFlares_Green_Emlute;Shout_FingerFlares_Blue_Emlute;Shout_FingerFlares_Purple_Emlute;Shout_FingerFlares_Gold_Emlute;Shout_RemoveFingerFlares_Emlute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc76fb491g34c3g25edg9badg270041f7a412" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb8ae1395g8cf4gfd8eg7640g36770d01a7ca" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C5134" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0495155-26ad-486b-b737-899c5e2c7b21" />
+        <field name="Name" type="NameTableFieldDefinition" value="FingerFlares_Green_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FingerFlares_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_GREEN_VFX,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h55c8ed27g4d45g1c74g5923gaddb44b34600" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h455220a0g4063g87efg9ddcg10c4faefa37d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_GREEN_VFX,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C5134" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af2351b5-68f7-4494-af7c-d6c504495994" />
+        <field name="Name" type="NameTableFieldDefinition" value="FingerFlares_Blue_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0495155-26ad-486b-b737-899c5e2c7b21" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FingerFlares_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_BLUE_VFX,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h509c4733gbb12gfe9dg5a2fg905d68f21524" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h126acbf5g3fd6gd1d1gbe23gbc602c3edfaa" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_BLUE_VFX,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C5134" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9ec5f6e6-8d24-4083-be52-654fa3f29ddc" />
+        <field name="Name" type="NameTableFieldDefinition" value="FingerFlares_Purple_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0495155-26ad-486b-b737-899c5e2c7b21" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FingerFlares_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_BLUE_VFX,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h53772ebcgb4a7g1a2ag91ccg79fa13e54d65" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h73a266bcgabd8g6886g4da9g1d603608ccf9" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_PURPLE_VFX,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1C5134" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1fece2b5-fdc5-45d6-967d-9be722bfddf8" />
+        <field name="Name" type="NameTableFieldDefinition" value="FingerFlares_Gold_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0495155-26ad-486b-b737-899c5e2c7b21" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FingerFlares_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_GOLD_VFX,100,-1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e141ba4g2e9egf97fg6a17g63f382b9c8a8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb4539aa8g4dc3g6f48gae92g91da9ab3d7d5" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_HAND_GOLD_VFX,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF1A5133" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ae3f001-88d4-4441-83dd-a96edd932295" />
+        <field name="Name" type="NameTableFieldDefinition" value="RemoveFingerFlares_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7c43219d-b9f3-4e86-bac8-fb2ba497d006" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_FingerFlares_Container_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(HasStatus('EMLUTE_HAND_GREEN_VFX')):RemoveStatus(EMLUTE_HAND_GREEN_VFX);IF(HasStatus('EMLUTE_HAND_BLUE_VFX')):RemoveStatus(EMLUTE_HAND_BLUE_VFX);IF(HasStatus('EMLUTE_HAND_PURPLE_VFX')):RemoveStatus(EMLUTE_HAND_PURPLE_VFX);IF(HasStatus('EMLUTE_HAND_GOLD_VFX')):RemoveStatus(EMLUTE_HAND_GOLD_VFX)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_RemoveGlowMap" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e4a9284gec9fg710bg38dag7613649d2596" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcff324c6gcae6g9ecegccffg2f1ec3664e41" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

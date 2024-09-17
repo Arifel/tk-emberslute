@@ -73,6 +73,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_GOLD_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6f8e3499-11c1-4c16-bbe9-26392d399d1b" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
@@ -81,6 +82,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_PURPLE_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="559b11d4-ffa7-4ddf-9cd3-df53af923bee" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
@@ -89,6 +91,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_GREEN_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6ad16325-8426-4610-86ef-3214a7f5afab" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
@@ -97,6 +100,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_BLUE_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="83114b3a-9660-4f9c-96cf-e65b6efc9b2f" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">

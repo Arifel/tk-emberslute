@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="6ad16325-8426-4610-86ef-3214a7f5afab" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_FLAIR_HandFX_Flare_GREEN">
+  <EffectInfo UUID="c285fcfd-0c1b-4dfd-91e8-72a0806dde28" EffectResourceGuid="2fe79c32-c866-68d6-c2a3-e59534de7f5e" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_R_HandFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

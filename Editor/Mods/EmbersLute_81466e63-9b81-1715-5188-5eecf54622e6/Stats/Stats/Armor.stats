@@ -12,6 +12,7 @@
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF360F38" is_substat="false">
@@ -42,6 +43,9 @@
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_DancingSprites;Emlute_ManagementAura;Emlute_MusicalConductor;Emlute_SummonOnPerform;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_SummonOnPerform_Vocal;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LutesToggle;Emlute_LyresToggle;Emlute_VocalsToggle;Emlute_SummonOnPerform_TieflingBard" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Violin" enumeration_type_name="InstrumentType" version="1" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="91296545-64fe-4f4f-adf5-5069f5bed91e" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
       </fields>
     </stat_object>
     <stat_object color="#FF360F38" is_substat="false">
@@ -55,6 +59,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Vicious_Rockery_Emlute);Tag(EMLUTE_LUTES_ON);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Gnomes;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LyresToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF360F38" is_substat="false">
@@ -68,6 +73,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);UnlockSpell(Shout_Summon_Skelly_Band_Emlute);UnlockSpell(Shout_Bard_Perform_Ensemble_Emlute);UnlockSpell(Shout_SpiderLyre_RollingBones_VFX_Emlute);Tag(EMLUTE_LYRES_ON);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura_Bones;Emlute_MusicalConductor;Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LutesToggle;Emlute_ViolinsToggle;Emlute_VocalsToggle;Emlute_HonoraryBard" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lyre" enumeration_type_name="InstrumentType" version="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF360F38" is_substat="false">
@@ -82,6 +88,7 @@
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="EMLUTE_ANNOYING_SPIRIT" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="13434016-05d6-49bf-8bac-fd629f062a72" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF360F38" is_substat="false">
@@ -100,7 +107,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="50e6ef29-e08e-495a-be55-c0e4b78db360" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9a859ca1-8f11-40be-80aa-39c3ebcaa10a" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip;Emlute_PurpleHand;Emlute_BlueHand;Emlute_GreenHand;Emlute_GoldHand" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
@@ -231,6 +239,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c7948cdf-e72d-4902-8091-fb06a9b15bbb" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_CLEANUP_FLUTE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2e47582b-2b78-4cae-8978-73884ae67d5e" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF212121" is_substat="false">
@@ -238,6 +247,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6bba9950-07e2-4b31-bec2-b47251c0f192" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_REDSMOOTH" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF212121" is_substat="false">
@@ -245,6 +255,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="370ba5d1-d8a3-46b8-8710-9bfc82a3e51f" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_DARKPURPLEGRAIN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF212121" is_substat="false">
@@ -252,6 +263,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b170738c-3e95-49d2-92e0-f8ab25ea3597" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VIOLIN_BLACKGRAIN" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Common" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

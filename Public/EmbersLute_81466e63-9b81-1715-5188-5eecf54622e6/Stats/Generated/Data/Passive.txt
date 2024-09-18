@@ -443,26 +443,6 @@ new entry "Emlute_CombatSanctuary"
 type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
 
-new entry "_Emlute_FlameHands"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
-new entry "Emlute_GoldHand"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
-new entry "Emlute_GreenHand"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
-new entry "Emlute_PurpleHand"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
-new entry "Emlute_BlueHand"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
 new entry "Emlute_Join_EndlessSpring"
 type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
@@ -523,18 +503,6 @@ new entry "Emlute_LuteB_Mono_WhiteMusicSheet_VFX"
 type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
 
-new entry "Emlute_PoP_Toggle_VFX_2"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
-new entry "Emlute_PoP_Toggle_VFX_1"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
-new entry "Emlute_PoP_Toggle_VFX_4"
-type "PassiveData"
-using "_EMLUTE_LEGACY_PASSIVES"
-
 new entry "Emlute_UnsummonSelf"
 type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
@@ -546,4 +514,40 @@ using "_EMLUTE_LEGACY_PASSIVES"
 new entry "Emlute_AutoRejoin_CombatSprites"
 type "PassiveData"
 using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_PoP_Toggle_VFX_1"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_PoP_Toggle_VFX_2"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_PoP_Toggle_VFX_4"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "_Emlute_FlameHands"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+
+new entry "Emlute_PurpleHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+data "Properties" "IsHidden"
+
+new entry "Emlute_GreenHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+data "Properties" "IsHidden"
+
+new entry "Emlute_GoldHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+data "Properties" "IsHidden"
+
+new entry "Emlute_BlueHand"
+type "PassiveData"
+using "_EMLUTE_LEGACY_PASSIVES"
+data "Properties" "IsHidden"
 

@@ -646,41 +646,6 @@
     </stat_object>
     <stat_object color="#FF121212" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="118b6e25-373c-46ed-a34c-bbbaf6ebe8c9" />
-        <field name="Name" type="NameTableFieldDefinition" value="_Emlute_FlameHands" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="869973d9-c31b-4567-80ff-44ae3dae3123" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_GoldHand" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="43393ad2-cfaf-431e-8007-1f96877e9eef" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_GreenHand" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6cd4e9a3-7283-4a5c-9759-9aa9be9e9d88" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PurpleHand" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="be210599-b08f-4f68-87b9-ec45b61706a9" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_BlueHand" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4c2c684a-0897-4041-90be-389ab1cdba2e" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_EndlessSpring" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
@@ -786,27 +751,6 @@
     </stat_object>
     <stat_object color="#FF121212" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="938d002f-23a7-4c3f-aaab-bae61e2b3f1f" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PoP_Toggle_VFX_2" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="beb90b9a-507f-49a9-86a3-ccef7f8ed765" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PoP_Toggle_VFX_1" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="bab2cd37-8eb9-4c73-a41c-24aadc561577" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PoP_Toggle_VFX_4" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF121212" is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="66a03a8e-49d8-439b-a8d7-d75fab2ff20c" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_UnsummonSelf" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
@@ -824,6 +768,66 @@
         <field name="UUID" type="IdTableFieldDefinition" value="41c50e8c-654c-4c1c-918e-3cae7a2bc8c0" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_AutoRejoin_CombatSprites" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="beb90b9a-507f-49a9-86a3-ccef7f8ed765" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PoP_Toggle_VFX_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="938d002f-23a7-4c3f-aaab-bae61e2b3f1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PoP_Toggle_VFX_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bab2cd37-8eb9-4c73-a41c-24aadc561577" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PoP_Toggle_VFX_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="118b6e25-373c-46ed-a34c-bbbaf6ebe8c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="_Emlute_FlameHands" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6cd4e9a3-7283-4a5c-9759-9aa9be9e9d88" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_PurpleHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43393ad2-cfaf-431e-8007-1f96877e9eef" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_GreenHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="869973d9-c31b-4567-80ff-44ae3dae3123" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_GoldHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF121212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="be210599-b08f-4f68-87b9-ec45b61706a9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_BlueHand" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

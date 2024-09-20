@@ -5,7 +5,20 @@ INITSECTION
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
+
+// Spawn the Vicious Rockery gnomes in ensemble formation
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Gnome_a37df723-3ce0-436d-9356-f2d60c395ed0,1.5,0.0,-1.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Gnome_4118f9af-a8db-4a17-a785-eec7faadb2df,-1.5,0.0,-1.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Gnome_36f2416e-abb4-49af-94a8-855b95927e3f,0.0,0.0,-2.5,0);
+// Spawn the Rolling Bones in ensemble formation
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Skelly_149fd908-e28c-4bb5-b158-774abc383f02,2.0,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0fc-cf88-4e7d-b110-ae3b205ad90d,-2.0,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,0.0,0.0,-2.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,0.0,0.0,2.0,0);
 
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
@@ -15,6 +28,7 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
+/* Teleports a character to a relative offset position */
 PROC
 PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
 AND
@@ -26,21 +40,36 @@ RealSum(_Y,_OffsetY,_NewY)
 AND
 RealSum(_Z,_OffsetZ,_NewZ)
 THEN
-PROC_TeleportToSafePosition(_Summon,_NewX,_NewY,_NewZ);
-DebugText(_Summon, "Debug: Repositioned the Bard");
+PROC_StopFollow(_Summon);
+PROC_TeleportToSafePosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
 
+IF
+Teleported((CHARACTER)_Summon,_,_,_,_,_,_,_,_)
+AND
+GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
+AND
+DB_RepositionSummon_EmbersLute(_SummonTemplate,_,_,_,1)
+AND
+CharacterGetOwner(_Summon,_Owner)
+THEN
+DebugText(_Owner, "Debug: I am the summon owner");
+DebugText(_Summon, "Debug: I am the summon");
+LookAtEntity(_Owner,_Summon);
+LookAtEntity(_Summon,_Owner);
+
+
+/* Starts music on the lead performer, caches active performance and begins a timer */
 PROC
 PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
 THEN
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-DebugText(_Performer, "Debug: Playing Music");
-DebugText(_Performer, _StartEvent);
 MusicPlayOnCharacter(_Performer,_StartEvent);
 ObjectTimerCancel(_Performer,_Song);
 ObjectTimerLaunch(_Performer,_Song,_Duration);
 
+/* Stops music on the lead performer and clears active performance cache */
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
 AND
@@ -54,8 +83,6 @@ MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
 DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
 THEN
-DebugText(_Performer, "Debug: Starting Performance");
-DebugText(_Performer, _Song);
 PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
 
 IF
@@ -77,14 +104,23 @@ DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
 RemoveStatus(_Performer,_Status);
 
+/* 
+ * Reposition a character on joining party (summon formation).
+ * Make them face the summon owner (lead performer).
+ */
 IF
-EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
+CharacterJoinedParty((CHARACTER)_Summon)
 AND
-DB_RepositionSummon_EmbersLute(_Template,_OffsetX,_OffsetY,_OffsetZ)
+GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
+AND
+DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
 THEN
 PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
 
-
+/* 
+ * "Fix" the music on Improved Countercharm summons by adding a short delay.
+ * Feels a bit hacky. Seems to work though. 
+ */
 IF
 EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
 AND
@@ -98,7 +134,7 @@ ObjectTimerFinished((CHARACTER)_Summon,_TimerName)
 AND
 DB_CountercharmFix_EmbersLute(_,_TimerName,_,_Status)
 THEN
-DebugText(_Summon, "Debug: Starting music");
+DebugText(_Summon, "Debug: Starting countercharm music");
 ApplyStatus(_Summon,_Status,-1.0);
 
 EXITSECTION

@@ -1,6 +1,6 @@
 
 
-### Compile("C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate 3 Playtest - Toolkit\Data\Mods\EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6\Story\story.div","r+")
+### Compile("C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3 - Toolkit\Data\Mods\EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6\Story\story.div","r+")
 DeleteAllData
 
 DIV events not referenced:
@@ -8,7 +8,6 @@ DIV events not referenced:
 StatusTagCleared( (GUIDSTRING)_, (TAG)_, (GUIDSTRING)_, (GUIDSTRING)_, (INTEGER)_ )
 EscortGroupLeaderChanged( (GUIDSTRING)_, (GUIDSTRING)_, (STRING)_ )
 MessageBoxChoiceClosed( (CHARACTER)_, (STRING)_, (STRING)_ )
-RestorePartyFinished(  )
 CriticalHitBy( (CHARACTER)_, (CHARACTER)_, (CHARACTER)_, (INTEGER)_ )
 ShortRestCapable( (CHARACTER)_, (INTEGER)_ )
 BackgroundGoalRewarded( (CHARACTER)_, (GUIDSTRING)_ )
@@ -208,7 +207,6 @@ IterateInventoryByTag( (GUIDSTRING)_, (STRING)_, (STRING)_, (STRING)_ )
 TriggerResetLighting( (TRIGGER)_ )
 ShowStoryElementUI( (CHARACTER)_, (INTEGER)_, (STRING)_ )
 SetVarFixedString( (GUIDSTRING)_, (STRING)_, (STRING)_ )
-ObjectSetTitleHidden( (GUIDSTRING)_, (INTEGER)_ )
 QuestUpdateMessageCounter( (STRING)_, (INTEGER)_ )
 MakeWar( (CHARACTER)_, (CHARACTER)_, (INTEGER)_ )
 AddCustomMaterialResourceOverride( (GUIDSTRING)_, (STRING)_, (STRING)_ )

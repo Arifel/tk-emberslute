@@ -1,7 +1,6 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-
 DB_OneTimeRewards_EmbersLute(100,(ITEMROOT)EmbersLute_MusicalSpritesBlackMonochrome_888e0a01-2ed8-4392-be2f-cc2be009f021);
 DB_OneTimeRewards_EmbersLute(99,(ITEMROOT)Emlute_Book_GettingStarted_be081cf0-2809-4c9a-9fc0-959c0a6c64ad);
 DB_OneTimeRewards_EmbersLute(98,(ITEMROOT)Emlute_SCROLL_SummonInstrumentChest_9a39c161-b094-4ffd-a88d-9412d43f873e);
@@ -14,13 +13,13 @@ AND
 DB_Avatars(_Player)
 THEN
 DebugText(_Player, "Debug: Level GameplayStarted event");
-PROC_OneTimeReward_GiveReward(100,1,1,_Player);
-PROC_OneTimeReward_GiveReward(99,1,1,_Player);
-PROC_OneTimeReward_GiveReward(98,1,1,_Player);
+PROC_OneTimeReward_GiveReward_EmbersLute(100,1,1,_Player);
+PROC_OneTimeReward_GiveReward_EmbersLute(99,1,1,_Player);
+PROC_OneTimeReward_GiveReward_EmbersLute(98,1,1,_Player);
 
 //Send to inventory
 PROC
-PROC_OneTimeReward_GiveReward((INTEGER)_RewardNo,(INTEGER)_Amount,(INTEGER)_Notification,(GUIDSTRING)_Player)
+PROC_OneTimeReward_GiveReward_EmbersLute((INTEGER)_RewardNo,(INTEGER)_Amount,(INTEGER)_Notification,(GUIDSTRING)_Player)
 AND
 NOT DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo)
 AND

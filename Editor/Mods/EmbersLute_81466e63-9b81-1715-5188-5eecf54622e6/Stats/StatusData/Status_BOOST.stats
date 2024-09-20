@@ -405,7 +405,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h63bf970cgf7f4g6459g6e3bg0f33cb8bd22a" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2eded194g2db4g2c50ga65cg579c1f8d3966" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Perform_Combat" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MusicFriendlyMainHandAttack_Emlute,Target_MainHandAttack);AttackSpellOverride(Emlute_Projectile_MusicFriendlyMainHandAttack,Projectile_MainHandAttack);AttackSpellOverride(Target_MusicFriendlyUnarmedAttack_Emlute,Target_UnarmedAttack);ActionResourceBlock(ReactionActionPoint);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(Movement)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AttackSpellOverride(Target_MusicFriendlyMainHandAttack_Emlute,Target_MainHandAttack);AttackSpellOverride(Projectile_MusicFriendlyMainHandAttack_Emlute,Projectile_MainHandAttack);AttackSpellOverride(Target_MusicFriendlyUnarmedAttack_Emlute,Target_UnarmedAttack);ActionResourceBlock(ReactionActionPoint);ActionResourceBlock(ActionPoint);ActionResourceBlock(BonusActionPoint);ActionResourceBlock(Movement)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>

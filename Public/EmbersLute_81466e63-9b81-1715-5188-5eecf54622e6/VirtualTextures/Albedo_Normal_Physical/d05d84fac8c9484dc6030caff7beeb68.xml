@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<StackedTexture>
-  <Layers>
-    <Layer type="Albedo" source="($DATA)\Public\($MOD)\Textures\VirtualTextures\Emlute_Lute_B_MusicalSprites_2048_white_BM" />
-    <Layer type="Normal" source="($DATA)\Public\($MOD)\Textures\VirtualTextures\Emlute_Lute_B_MusicalSprites_2048_whiteVT_NM" />
-    <Layer type="Physical" source="($DATA)\Public\($MOD)\Textures\VirtualTextures\Emlute_Lute_B_MusicalSprites_white_PM" />
-  </Layers>
-</StackedTexture>

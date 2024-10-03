@@ -9,11 +9,11 @@
                     <children>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="GustavDev"/>
-                            <attribute id="MD5" type="LSString" value="96c19798a020e178251944be557fc464"/>
+                            <attribute id="MD5" type="LSString" value="7c92c0121cfd5b3c981b0ec42a50f60c"/>
                             <attribute id="Name" type="LSString" value="GustavDev"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8"/>
-                            <attribute id="Version64" type="int64" value="145100393449790344"/>
+                            <attribute id="Version64" type="int64" value="145100779997005473"/>
                         </node>
                     </children>
                 </node>
@@ -21,7 +21,7 @@
                     <attribute id="Author" type="LSString" value="Ariefel"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="Adds instruments which enhance music performances with VFX and QoL features. Auto-join and complete music performances with companions, ensemble summons or instrument sprites. Use passives to toggle instruments in and out of silence."/>
-                    <attribute id="FileSize" type="uint64" value="93404547"/>
+                    <attribute id="FileSize" type="uint64" value="80004794"/>
                     <attribute id="Folder" type="LSString" value="EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
                     <attribute id="MD5" type="LSString" value="de45cadff7471c846410fb21fb6ddd55"/>
@@ -32,7 +32,7 @@
                     <attribute id="PublishHandle" type="uint64" value="4269486"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="17ed9aa5-40e7-4c49-ac10-a0feb1ffeaa9"/>
-                    <attribute id="Version64" type="int64" value="72057598332895253"/>
+                    <attribute id="Version64" type="int64" value="72057598332895255"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927717358569"/>

@@ -24,7 +24,7 @@
                     <attribute id="FileSize" type="uint64" value="83951011"/>
                     <attribute id="Folder" type="LSString" value="EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="fe26fbeb1d6a5a3679b20ea9cb1585dc"/>
+                    <attribute id="MD5" type="LSString" value="bc24b8a47dddcae46b32b9f883152f5d"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="Ember&apos;s Lute (A Music Performance Mod)"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -32,7 +32,7 @@
                     <attribute id="PublishHandle" type="uint64" value="4269486"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="17ed9aa5-40e7-4c49-ac10-a0feb1ffeaa9"/>
-                    <attribute id="Version64" type="int64" value="72057598332895258"/>
+                    <attribute id="Version64" type="int64" value="72057600480378881"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927717358569"/>

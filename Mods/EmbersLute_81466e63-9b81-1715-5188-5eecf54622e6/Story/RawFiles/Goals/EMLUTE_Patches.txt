@@ -3,10 +3,12 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// Summon repositioning was added in v2.0.2.21
+// Mark second column as 1 for patch required and applied (user update)
 IF
 SavegameLoaded()
 AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_RepositionSummon_Patch")
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",_)
 AND
 NOT DB_RepositionSummon_EmbersLute(_,_,_,_,_)
 THEN
@@ -21,27 +23,18 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0f
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,0.0,0.0,-2.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,0.0,0.0,2.0,0);
-DB_PatchApplied_Marker_EmbersLute("EML_RepositionSummon_Patch_Applied");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",1);
 
+// Summon repositioning was added in v2.0.2.21
+// Mark second column as 0 for patch not required and not applied (new user)
 IF
 SavegameLoaded()
 AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_VarnishTag_Patch_Applied")
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",_)
 AND
-NOT DB_DLC_DivinitySongPack_VarnishTags_EmbersLute(_)
+DB_RepositionSummon_EmbersLute(_,_,_,_,_)
 THEN
-DB_DLC_DivinitySongPack_VarnishTags_EmbersLute((TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883);
-DB_PatchApplied_Marker_EmbersLute("EML_VarnishTag_Patch_Applied");
-
-IF
-SavegameLoaded()
-AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_SpiritInstrument_Patch_Applied")
-AND
-NOT DB_SpiritInstruments_EmbersLute(_)
-THEN
-DB_SpiritInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_INSTRUMENT_e5c99a15-0e54-48bd-995d-4ea760278983);
-DB_PatchApplied_Marker_EmbersLute("EML_SpiritInstrument_Patch_Applied");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",0);
 EXITSECTION
 
 ENDEXITSECTION

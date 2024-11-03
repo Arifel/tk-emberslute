@@ -83,8 +83,8 @@
   <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="9">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="9">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="6">Musical Sprites Instruments</content>
-  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="6">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
+  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="7">Musical Sprites Instruments</content>
+  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="7">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
   <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="6">Instrument Chest</content>
   <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="6">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
   <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="8">Lute of Musical Sprites (White)</content>
@@ -366,16 +366,16 @@
   <content contentuid="hb0e48dbeg5788g30a9g7919g823a85a84021" version="1">Magical varnish has imbued this instrument with a mysterious connection to otherworldly, musical realms.</content>
   <content contentuid="h44d35f58gd3aagfa73g4c29g2ff2cf0838ce" version="1">Clearing Varnish</content>
   <content contentuid="h40f805f3g74f1gffbfg2c52gbc8a851334d1" version="1">Removing the instrument varnish effects.</content>
-  <content contentuid="hd399abacg74b7g4de5g9ba7g4476ab0512c1" version="11">Annoying Instruments</content>
-  <content contentuid="h53b5ccedg5b6bg466dg9d87ge0ed8fddf84d" version="11">Slightly off-key whistling can be heard as you approach this chest, shortly followed by a muffled giggle.</content>
-  <content contentuid="h13d110ebg59d5g4a79gb868g7e893b3f4700" version="10">Ensemble Instruments</content>
-  <content contentuid="h7cb3b632gaeb1g4a1fg9cbag397f7a125a2f" version="10">This chest holds strong bonds to the souls of long-forgotten musical ensembles.</content>
-  <content contentuid="h52698444g590dg4828gb95ag741178a4acc7" version="9">Haunted Instruments</content>
-  <content contentuid="h4adbac4ega444g4409g8961gf591bee41b36" version="8">Miscelleaneous</content>
-  <content contentuid="h666d822fg1ab1g43e8g9403ge0f24b97a440" version="8">Contains a few miscelleaneous bonus items.</content>
-  <content contentuid="h56c82aeeg4fd7g43dcga142gfa3e2530920b" version="7">Instrument Varnishes</content>
-  <content contentuid="hfc21e371gbcc1g413dg897bgae3297d399ac" version="7">Not to be mistaken for dyes. Varnishes let you temporarily grant the various abilities of Ember's instruments to other instruments of Faerûn.</content>
-  <content contentuid="h7e17cce8g1810g40a3g84b5g300967e1bfdf" version="3">You feel a sudden drop in temperature as you regard this chest.</content>
+  <content contentuid="hd399abacg74b7g4de5g9ba7g4476ab0512c1" version="13">Annoying Instruments</content>
+  <content contentuid="h53b5ccedg5b6bg466dg9d87ge0ed8fddf84d" version="13">Slightly off-key whistling can be heard as you approach this chest, shortly followed by a muffled giggle.</content>
+  <content contentuid="h13d110ebg59d5g4a79gb868g7e893b3f4700" version="12">Ensemble Instruments</content>
+  <content contentuid="h7cb3b632gaeb1g4a1fg9cbag397f7a125a2f" version="12">This chest holds strong bonds to the souls of long-forgotten musical ensembles.</content>
+  <content contentuid="h52698444g590dg4828gb95ag741178a4acc7" version="11">Haunted Instruments</content>
+  <content contentuid="h4adbac4ega444g4409g8961gf591bee41b36" version="10">Miscelleaneous</content>
+  <content contentuid="h666d822fg1ab1g43e8g9403ge0f24b97a440" version="10">Contains a few miscelleaneous bonus items.</content>
+  <content contentuid="h56c82aeeg4fd7g43dcga142gfa3e2530920b" version="9">Instrument Varnishes</content>
+  <content contentuid="hfc21e371gbcc1g413dg897bgae3297d399ac" version="9">Not to be mistaken for dyes. Varnishes let you temporarily grant the various abilities of Ember's instruments to other instruments of Faerûn.</content>
+  <content contentuid="h7e17cce8g1810g40a3g84b5g300967e1bfdf" version="5">You feel a sudden drop in temperature as you regard this chest.</content>
   <content contentuid="h8fef0bb1gcd3bg4b8cg9d4fgcff09c815d71" version="10">Varnish |The Vicious Rockery|</content>
   <content contentuid="haecb9bd3gd7cbg39f3ga4e5gc0b129a9ca43" version="9">The effects of this varnish will be removed when you unequip the instrument. Cannot be applied to another Spirit or Sprites instrument.</content>
   <content contentuid="h3f977cb5gb430g40e1ga68fgd8643e342f56" version="10">Apply this varnish to your equipped instrument, and gain the ability to summon the souls of long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
@@ -469,8 +469,8 @@
   <content contentuid="hb4539aa8g4dc3g6f48gae92g91da9ab3d7d5" version="1">Apply a gold visual effect to the right hand.</content>
   <content contentuid="hee4831b7g334ag9d05gafc6gdf6c907fed4a" version="1">Shake the Lute</content>
   <content contentuid="h6e14fdbfg3a41g01e4g2304ge7b0ec7e60ae" version="1">Wake the lute spirit.</content>
-  <content contentuid="h7c542192gae25g434ag99dcg1cfd0865c9a1" version="3">Lute</content>
-  <content contentuid="hae22dbe0gd1e4g4366gaa89gd780058f9443" version="2">Many a bard's first instrument, the lute is heard in taverns all across Faerûn.</content>
+  <content contentuid="h7c542192gae25g434ag99dcg1cfd0865c9a1" version="6">Lute</content>
+  <content contentuid="hae22dbe0gd1e4g4366gaa89gd780058f9443" version="5">Many a bard's first instrument, the lute is heard in taverns all across Faerûn.</content>
   <content contentuid="he36403bcg2b27g4ecbg98a3g522deaf4ccb1" version="2">Viol</content>
   <content contentuid="h8b9bb790gfa25g4bf1gb5aege61beba4a5c2" version="2">Strings of silk bound in copper lend the violin a distinctive range - mellow soft notes to harsh, discordant edges.</content>
   <content contentuid="h94b1e84dgcae5g4cb7ga545g0f176a8947a0" version="2">Lyre</content>

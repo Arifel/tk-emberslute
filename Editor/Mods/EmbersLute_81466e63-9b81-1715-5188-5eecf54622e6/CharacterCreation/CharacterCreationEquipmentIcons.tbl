@@ -6,7 +6,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
         <field name="UUID" type="IdTableFieldDefinition" value="315d2e63-35db-49c1-90ac-2f0205639152" />
         <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="888e0a01-2ed8-4392-be2f-cc2be009f021" />
-        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute" />
+        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -14,7 +14,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
         <field name="UUID" type="IdTableFieldDefinition" value="1ef587de-b835-4e13-9e45-340dc86471c9" />
         <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="a2a12008-23ae-4006-9d3e-4cb55c1c829e" />
-        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute" />
+        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -22,7 +22,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
         <field name="UUID" type="IdTableFieldDefinition" value="354a8a83-03aa-4787-b704-3ed2fc172fe0" />
         <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9" />
-        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute" />
+        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -38,7 +38,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
         <field name="UUID" type="IdTableFieldDefinition" value="9ba27c0c-c12b-4d31-bdb9-6b054edb782f" />
         <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="403e0f11-57dd-41db-b322-c3ca913331a3" />
-        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute" />
+        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -54,7 +54,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
         <field name="UUID" type="IdTableFieldDefinition" value="208be23b-98fc-4689-8e86-b872d0b7f27c" />
         <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="13434016-05d6-49bf-8bac-fd629f062a72" />
-        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute" />
+        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -62,7 +62,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
         <field name="UUID" type="IdTableFieldDefinition" value="85ae58e3-ff03-4892-a0e0-ca96dcb8ef72" />
         <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="f8bbaf8f-9f92-41ec-94b4-d53bcb7afec0" />
-        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute" />
+        <field name="IconGenerationTrigger" type="FixedStringTableFieldDefinition" value="Icon_Music_Lute2" />
       </fields>
     </stat_object>
   </stat_objects>

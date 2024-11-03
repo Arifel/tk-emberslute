@@ -129,7 +129,7 @@ data "StatsFunctors" "GROUND:Summon(74e07e49-2031-4180-9c9c-b8e0ff5d69b8,UntilLo
 new entry "Emlute_SummonOnPerform_TieflingBard"
 type "PassiveData"
 data "Icon" "Spell_Illusion_DisguiseSelf_Tiefling_Female"
-data "Properties" "IsHidden"
+data "Properties" "IsHidden;IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar"
 data "StatsFunctorContext" "OnStatusApplied"
 data "Conditions" "StatusId('EMLUTE_PERFORM_WEEPINGDAWN')"
 data "StatsFunctors" "GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_TIEFLING_BARD_SPIRIT')):Summon(43d08735-7bb2-48a4-a446-b8814d4409c6,UntilLongRest,,,'EmluteTieflingBardSpirit',,UNSUMMON_ABLE,EMLUTE_HAND_PURPLE_VFX)"

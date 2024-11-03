@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="IconUVList">
+        <node id="root">
+            <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Ensemble_RollingBones"/>
+                    <attribute id="U1" type="float" value="0.25195312"/>
+                    <attribute id="U2" type="float" value="0.49804688"/>
+                    <attribute id="V1" type="float" value="0.50390625"/>
+                    <attribute id="V2" type="float" value="0.99609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Ensemble_ViciousRockery"/>
+                    <attribute id="U1" type="float" value="0.001953125"/>
+                    <attribute id="U2" type="float" value="0.24804688"/>
+                    <attribute id="V1" type="float" value="0.50390625"/>
+                    <attribute id="V2" type="float" value="0.99609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_MusicalSpritesBlackMonochrome"/>
+                    <attribute id="U1" type="float" value="0.001953125"/>
+                    <attribute id="U2" type="float" value="0.24804688"/>
+                    <attribute id="V1" type="float" value="0.00390625"/>
+                    <attribute id="V2" type="float" value="0.49609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_MusicalSpritesVanillaB"/>
+                    <attribute id="U1" type="float" value="0.50195312"/>
+                    <attribute id="U2" type="float" value="0.74804688"/>
+                    <attribute id="V1" type="float" value="0.00390625"/>
+                    <attribute id="V2" type="float" value="0.49609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_MusicalSpritesWhite"/>
+                    <attribute id="U1" type="float" value="0.25195312"/>
+                    <attribute id="U2" type="float" value="0.49804688"/>
+                    <attribute id="V1" type="float" value="0.00390625"/>
+                    <attribute id="V2" type="float" value="0.49609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_MusicalSprites_Violin_White"/>
+                    <attribute id="U1" type="float" value="0.75195312"/>
+                    <attribute id="U2" type="float" value="0.99804688"/>
+                    <attribute id="V1" type="float" value="0.00390625"/>
+                    <attribute id="V2" type="float" value="0.49609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_WhistlingLute"/>
+                    <attribute id="U1" type="float" value="0.50195312"/>
+                    <attribute id="U2" type="float" value="0.74804688"/>
+                    <attribute id="V1" type="float" value="0.50390625"/>
+                    <attribute id="V2" type="float" value="0.99609375"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_WhistlingLute_Dyeable"/>
+                    <attribute id="U1" type="float" value="0.75195312"/>
+                    <attribute id="U2" type="float" value="0.99804688"/>
+                    <attribute id="V1" type="float" value="0.50390625"/>
+                    <attribute id="V2" type="float" value="0.99609375"/>
+                </node>
+            </children>
+        </node>
+    </region>
+    <region id="TextureAtlasInfo">
+        <node id="root">
+            <children>
+                <node id="TextureAtlasIconSize">
+                    <attribute id="Height" type="int32" value="64"/>
+                    <attribute id="Width" type="int32" value="64"/>
+                </node>
+                <node id="TextureAtlasPath">
+                    <attribute id="Path" type="string" value="Assets/Textures/Icons/New_EquipmentIcons.dds"/>
+                    <attribute id="UUID" type="FixedString" value="ecd719e5-ee73-8db2-dac3-fb67dbb6392f"/>
+                </node>
+                <node id="TextureAtlasTextureSize">
+                    <attribute id="Height" type="int32" value="128"/>
+                    <attribute id="Width" type="int32" value="256"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

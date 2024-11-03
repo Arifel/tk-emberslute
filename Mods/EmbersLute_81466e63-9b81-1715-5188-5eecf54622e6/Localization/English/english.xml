@@ -87,9 +87,9 @@
   <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="6">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
   <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="6">Instrument Chest</content>
   <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="6">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
-  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="7">Lute of Musical Sprites (White)</content>
-  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="7">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="7">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="8">Lute of Musical Sprites (White)</content>
+  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="8">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hb6cf612cgfa35g5e6bg3cc1gf32d239e655b" version="8">Lute of Musical Sprites (VT TEST)</content>
   <content contentuid="hc22b08b0g6fc3g7924gd3a6gb6f1df879da0" version="8">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="hba31e0dfg7022g3dc5gedb9gf51e7e56a9a1" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
@@ -406,9 +406,9 @@
   <content contentuid="h846a9e2bg65ffg3107gb021gecb41913982e" version="5">Spells to summon a chest of instruments.</content>
   <content contentuid="h956b0300g00f6g0aa7geb8dg85b845848716" version="1">Ember's Lute - Thank You!</content>
   <content contentuid="ha28ed037gd4b6gc6cbgf5ecg80599a246ca0" version="1">A quick thank you, and a few tips to get you started.</content>
-  <content contentuid="h0f52bb73gd3degc0b8g4477g50a6c7983f3c" version="3">Lute of Musical Sprites (Alfira's Lute)</content>
-  <content contentuid="hc1a0e614ge9b8g8117gbbc7g0d3d2f3617ca" version="3">A variant of the Lute of Musical Sprites with the vanilla lute B visual. Differences are aesthetic only.</content>
-  <content contentuid="h41e51316g2a3dg2317g1fe5gb5fa7f619679" version="3">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h0f52bb73gd3degc0b8g4477g50a6c7983f3c" version="4">Lute of Musical Sprites (Alfira's Lute)</content>
+  <content contentuid="hc1a0e614ge9b8g8117gbbc7g0d3d2f3617ca" version="4">A variant of the Lute of Musical Sprites with the vanilla lute B visual. Differences are aesthetic only.</content>
+  <content contentuid="h41e51316g2a3dg2317g1fe5gb5fa7f619679" version="4">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="ha1cac233g8866gc4d2g1aafgb3c6d7e51c05" version="1">Summon Instrument Chest</content>
   <content contentuid="hbc42e4d9g3d93g594bg6949gbc79bf97cd5f" version="3">Summon Ember's chest of instruments into your inventory for [1] turns. </content>
   <content contentuid="h3b589fc0gd5b8gdd65g76c7g3696e6982694" version="3">After [1] turns, any remaining chest contents will disappear along with the chest.</content>
@@ -433,8 +433,8 @@
   <content contentuid="he5e9bf56gd745g8ab6g4644g139101485b03" version="1">Oversized Mockery 1</content>
   <content contentuid="hb2a62d09gfd1agf2b9gac3ag355b0c3bcbd5" version="1">Countercharm - More Chaos</content>
   <content contentuid="h266b8a4dg8c95gd272g15abg09f2f4f22f7f" version="1">Chaoscharm, with extra pain and violence. Don't use this outside of battle unless you want to start a fight.</content>
-  <content contentuid="hccb7c8b8g9fc1g9d0agdd08g20307260c797" version="3">Ember's Really Annoying Lute (Dyeable)</content>
-  <content contentuid="h106e02b7g888bgca6egcb5fg4846d8e78266" version="2">A dyeable variant of the Really Annoying Lute. Differences are aesthetic only.</content>
+  <content contentuid="hccb7c8b8g9fc1g9d0agdd08g20307260c797" version="4">Ember's Really Annoying Lute (Dyeable)</content>
+  <content contentuid="h106e02b7g888bgca6egcb5fg4846d8e78266" version="3">A dyeable variant of the Really Annoying Lute. Differences are aesthetic only.</content>
   <content contentuid="hfe114c06gbff3g7c68g0e66g5000cf4122f2" version="4">Black and Red Dye</content>
   <content contentuid="h02856b06g110eg3b82gc173g023b69bed9d1" version="5">Black and Teal Dye</content>
   <content contentuid="h05564fd7gd2e0g933bg82b9g78b4f75779a1" version="4">White and Black Dye</content>
@@ -469,4 +469,10 @@
   <content contentuid="hb4539aa8g4dc3g6f48gae92g91da9ab3d7d5" version="1">Apply a gold visual effect to the right hand.</content>
   <content contentuid="hee4831b7g334ag9d05gafc6gdf6c907fed4a" version="1">Shake the Lute</content>
   <content contentuid="h6e14fdbfg3a41g01e4g2304ge7b0ec7e60ae" version="1">Wake the lute spirit.</content>
+  <content contentuid="h7c542192gae25g434ag99dcg1cfd0865c9a1" version="3">Lute</content>
+  <content contentuid="hae22dbe0gd1e4g4366gaa89gd780058f9443" version="2">Many a bard's first instrument, the lute is heard in taverns all across Faerûn.</content>
+  <content contentuid="he36403bcg2b27g4ecbg98a3g522deaf4ccb1" version="2">Viol</content>
+  <content contentuid="h8b9bb790gfa25g4bf1gb5aege61beba4a5c2" version="2">Strings of silk bound in copper lend the violin a distinctive range - mellow soft notes to harsh, discordant edges.</content>
+  <content contentuid="h94b1e84dgcae5g4cb7ga545g0f176a8947a0" version="2">Lyre</content>
+  <content contentuid="hb6ed4d6ag8929g43d1g90e4gc702b3837957" version="2">Devotees of the goddess Sune hold that the lyre's seven strings represent the seven different forms of love. </content>
 </contentList>

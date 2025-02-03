@@ -21,24 +21,7 @@ DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2f
 
 DB_DLC_DivinitySongPack_VarnishTags_EmbersLute((TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883);
 
-DB_SpiritInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_INSTRUMENT_e5c99a15-0e54-48bd-995d-4ea760278983);
-
 KBSECTION
-
-// It's easier to auto-dismiss summons on unequip here than trying to manipulate passives and statuses
-// Though in patch 7, don't need to worry as much about statuses on characters breaking Saves
-// So might move this at some point
-IF
-Unequipped(_Instrument, _Character)
-AND
-DB_Players(_Character)
-AND 
-DB_SpiritInstruments_EmbersLute(_Tag)
-AND
-IsTagged(_Instrument, _Tag, 1)
-THEN
-UseSpell(_Character,"Shout_Dismiss_All_MusicalSpirits",_Character);
-
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // DLC SPELL TRIGGERS
 // Think I can re-use the same logic as the Gustav script here for the DLC spell triggers
@@ -68,7 +51,6 @@ DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
 AND
 IsTagged(_Instrument, _Tag, 1)
 THEN
-ApplyStatus(_Instrument,"EMLUTE_VARNISH_INSTRUMENT_CLEAR",1.0);
 PROC_DLC_RemoveDivinitySongs_EmbersLute(_Tag, _Character);
 
 // Instrument varnish has been used

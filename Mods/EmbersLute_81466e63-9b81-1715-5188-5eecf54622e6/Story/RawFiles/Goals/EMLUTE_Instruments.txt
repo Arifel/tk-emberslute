@@ -1,0 +1,64 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Every time I resort to timers, a thousand kittens cry. Forgive me.
+DB_ManagedInstrumentStatuses_EmbersLute("EMLUTE_INSTRUMENT_TOGGLES",3000);
+KBSECTION
+// Any player equips an Ember's Lute mod instrument.
+// Hack hack hack, working around some patch 8 changes that break the things.
+IF
+Equipped(_Instrument, _Character)
+AND
+DB_Players(_Character)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+ApplyStatus(_Character,"EMLUTE_INSTRUMENT_TOGGLES",-1.0);
+
+// Any player unequips an Ember's Lute mod instrument.
+// Clear up custom instrument and character statuses.
+IF
+Unequipped(_Instrument, _Character)
+AND
+DB_Players(_Character)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+UseSpell(_Character,"Shout_Dismiss_All_MusicalSpirits",_Character);
+ApplyStatus(_Instrument,"EMLUTE_VARNISH_INSTRUMENT_CLEAR",1.0);
+ObjectTimerCancel(_Character,"EMLUTE_INSTRUMENT_TOGGLES");
+ObjectTimerLaunch(_Character,"EMLUTE_INSTRUMENT_TOGGLES",3000);
+
+// Only clear status if player does not have custom instrument equipped.
+IF
+ObjectTimerFinished((CHARACTER)_Character,_TimerName)
+AND
+DB_ManagedInstrumentStatuses_EmbersLute(_TimerName,_Duration)
+AND
+NOT QRY_HasEmbersLuteInstrumentEquipped((CHARACTER)_Character)
+THEN
+RemoveStatus(_Character,_TimerName);
+
+QRY
+QRY_HasEmbersLuteInstrumentEquipped((CHARACTER)_Character)
+AND
+DB_Players(_Character)
+AND
+GetEquippedItem(_Character,"MusicalInstrument",_Instrument)
+AND
+DB_DLC_DivinitySongPack_InstrumentTags_EmbersLute(_Tag)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+DB_NOOP(1);
+
+
+
+
+EXITSECTION
+
+ENDEXITSECTION

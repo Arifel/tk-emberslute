@@ -1077,6 +1077,32 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_GNOME_DRUNK')):RemoveStatus(EMLUTE_GNOME_DRUNK)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFBA55D3" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e04a3ce-3421-45ea-ba60-277bd57800ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_TOGGLES" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3618ea78g8a95gd896g00fdg4fc3501bda96" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2b6233c6gcfb8g8c30g5fa2gf7948fcd6888" version="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LyresToggle;Emlute_VocalsToggle;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFBA55D3" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="972f838b-f552-4989-accd-0b44241a1854" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_TOGGLES_VIOLIN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4e04a3ce-3421-45ea-ba60-277bd57800ec" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_LutesToggle;Emlute_LyresToggle;Emlute_VocalsToggle;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFBA55D3" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fbe6ad7-a441-4426-bda8-5ab44b14407b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_TOGGLES_LYRE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4e04a3ce-3421-45ea-ba60-277bd57800ec" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_DrumsToggle;Emlute_FlutesToggle;Emlute_ViolinsToggle;Emlute_LutesToggle;Emlute_VocalsToggle;" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b89de9e3-a035-4e61-aad5-c94523e0fbdd" />

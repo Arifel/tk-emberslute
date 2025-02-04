@@ -477,6 +477,12 @@
   <content contentuid="hb6ed4d6ag8929g43d1g90e4gc702b3837957" version="2">Devotees of the goddess Sune hold that the lyre's seven strings represent the seven different forms of love. </content>
   <content contentuid="h1da5ad67gb64bg0e61g31d8g22fd48254f21" version="1">Tiefling Spirit</content>
   <content contentuid="h775efe02gff44g429bg4511g169f353dca24" version="1">If enabled, a tiefling spirit will appear when the Weeping Dawn is performed. </content>
-  <content contentuid="h3618ea78g8a95gd896g00fdg4fc3501bda96" version="1">|Hidden| Hidden</content>
+  <content contentuid="h3618ea78g8a95gd896g00fdg4fc3501bda96" version="2">|Hidden| Lute Toggles</content>
   <content contentuid="h2b6233c6gcfb8g8c30g5fa2gf7948fcd6888" version="1">Hidden technical status to add toggle passives</content>
+  <content contentuid="ha6135113gc69eg5139gc540g036444db9fc3" version="1">|Hidden| Violin Toggles</content>
+  <content contentuid="ha17ec0c2gd7d1gd8d0g431fgd9d0a1498f73" version="1">|Hidden| Lyre Toggles</content>
+  <content contentuid="hb1ac8633ge095g5547g5c07gf29b9837adf1" version="1">|Hidden| Drum Toggles</content>
+  <content contentuid="hcf9d4edagb715g3122g327dg0f83c418ae82" version="1">|Hidden| Flute Toggles</content>
+  <content contentuid="hee6ca76fg0fa1gaa6cgaae1ga6cb28f5e49a" version="1">|Hidden| Sprite Toggles</content>
+  <content contentuid="h2e5cbc3eg44cegf1e8g46b6ge4412e7c4826" version="1">Hidden technical status to add toggle passives</content>
 </contentList>

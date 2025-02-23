@@ -61,6 +61,12 @@ using "OBJ_Book"
 data "RootTemplate" "be081cf0-2809-4c9a-9fc0-959c0a6c64ad"
 data "Rarity" "VeryRare"
 
+new entry "EMBERS_LUTE_BOOK_FAQ"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "18388866-5e68-4c7c-adaf-3e96581a01e5"
+data "Rarity" "VeryRare"
+
 new entry "EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES"
 type "Object"
 using "OBJ_Book"

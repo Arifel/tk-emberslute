@@ -78,7 +78,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ad020336-ea24-4e5b-8dea-515f9339c7e6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_QARMA_LUTRA_BOOK" />
@@ -88,7 +88,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e490162b-c67a-48e5-b456-6a4139199dd7" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_THANKYOU_NOTE" />
@@ -97,7 +97,16 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ab0d943-602a-4088-af58-912753ebedec" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_FAQ" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="18388866-5e68-4c7c-adaf-3e96581a01e5" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fb42e7c2-fb55-47fc-b836-f8e774154f6e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES" />
@@ -106,7 +115,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e47488b9-d55d-4697-a4e4-ec094509bb1f" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_ENSEMBLES" />
@@ -115,7 +124,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="037c6904-1311-49bc-a51a-984cde59e097" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_VARNISHES" />
@@ -124,7 +133,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6f17c648-7819-4401-b3a7-1d0b5690c7f4" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_BOOK_INFO_ANNOYING" />
@@ -133,7 +142,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6df46448-448b-459d-a829-aaef6deb8878" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_TEN_REASONS_BOOK" />
@@ -142,7 +151,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF0D1040" is_substat="false">
+    <stat_object color="#FF191970" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9ed9a260-50a4-483a-ae60-9e39a1462104" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PERCIVAL_DIARY_BOOK" />

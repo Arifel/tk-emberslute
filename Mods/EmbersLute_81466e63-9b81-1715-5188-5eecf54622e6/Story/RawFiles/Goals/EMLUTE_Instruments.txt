@@ -10,29 +10,30 @@ INITSECTION
 // This event firing mess then results in Passive toggles that are just flat broken on the toolbar. Lovely.
 
 // So, to avoid this, we apply the Passives directly on the equip event, and make use of timers when unequipping (to avoid event collisions).
-// THIS ENTIRE GOAL exists to revert the toolbar icon behaviour in patch 8 for the mod instruments - whyyy Larian whyy :'(
+// 90% of this goal exists to revert the toolbar icon behaviour in patch 8 for the mod instruments - whyyy Larian whyy :'(
 
 // Every time I resort to timers, a thousand kittens cry. Forgive me.
 DB_RemovePassiveTimer_EmbersLute("MusicalConductor","Emlute_RemoveConductorPassiveToggles",2300);
-DB_RemovePassiveTimer_EmbersLute("SpriteSummoning","Emlute_RemoveSpriteSummoningPassiveToggles",2100);
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
+DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_Spirits",2200);
 
 // These instrument modes have custom summoning spells
+// This table is used to auto call a summon dismiss spell whenever they are unequipped
 DB_SummoningInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95);
 DB_SummoningInstruments_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b);
 
 // These instrument modes grant the Musical Conductor passive
+// This table is used to auto add and remove the passive toggles for playing instrument types
 DB_ConductorInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95);
 DB_ConductorInstruments_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b);
 
-// These instrument modes summon sprites
-DB_SpriteSummoningInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95);
-
-// Mapping instrument sprite summoning passive toggles to enable by instrument mode equipped
-DB_SpriteSummonModePassives_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform",1);
-DB_SpriteSummonModePassives_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_TieflingBard",1);
-DB_SpriteSummonModePassives_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Vocal",1);
+// Mapping config passive toggles to enable by instrument tag
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform",2100);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform_TieflingBard",2200);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform_Vocal",2300);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GIVE_CELESTIAL_VFX_TOGGLES_418186f8-3991-4b48-8b86-29fd5ec9403b,"Emlute_TimerGroup_CelestialConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GIVE_CELESTIAL_VFX_TOGGLES_418186f8-3991-4b48-8b86-29fd5ec9403b,"Emlute_TimerGroup_CelestialConfig","Emlute_CelestialLyre_UseHaloVFX",2500);
 
 // Mapping instrument root template to which VFX passive toggle to grant
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_MusicalSpritesWhite_a2a12008-23ae-4006-9d3e-4cb55c1c829e,"Emlute_DancingSprites",1);
@@ -48,9 +49,16 @@ DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Lyre_Spi
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_DarkGreen_99a65bcb-5b8f-40d5-a604-6492dab8830b,"Emlute_Violin_Undead_Spirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_DarkRed_790ffa29-0367-450b-82e6-0070b35870b9,"Emlute_Violin_Undead_Spirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_White_eefac5b2-98ea-4ba7-8680-1a86eb2eeee8,"Emlute_Violin_Undead_Spirits",1);
+// Celestial instrument VFX mapping
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Fallen_44d103de-4517-4021-abbd-e1c0779ce401,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Flute_d8cd81c6-3153-4b36-9233-55db22ae7850,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Flute_Wood_Dyeable_3f5f8a60-d7ef-41c6-936b-aef92558a747,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Lute_B_b00b9bf6-ee8c-41d3-83a5-8d477e9d93ed,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Lute_B_Dyeable_44473e91-b33f-490f-b42f-6f9531c00e7c,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_White_aadbd886-5450-4cf9-958b-4929248330f7,"Emlute_CelestialLyre_Spirits",1);
 
 // Mapping instrument conductor passive toggles to enable by instrument type equipped.
-// Could lose this tbh, in the end I decided to keep it simple and give all toggles to all instrument types.
+// Could lose all this tbh, in the end I decided to keep it simple and give all toggles to all instrument types.
 DB_ConductorPassives_EmbersLute((TAG)MUSIC_VFX_LUTE_3a9a899b-4177-4763-b329-2598528beca5,"Emlute_ViolinsToggle",1);
 DB_ConductorPassives_EmbersLute((TAG)MUSIC_VFX_LUTE_3a9a899b-4177-4763-b329-2598528beca5,"Emlute_LyresToggle",1);
 DB_ConductorPassives_EmbersLute((TAG)MUSIC_VFX_LUTE_3a9a899b-4177-4763-b329-2598528beca5,"Emlute_DrumsToggle",1);
@@ -95,18 +103,18 @@ IsTagged(_Instrument, _Tag, 1)
 THEN
 PROC_Emlute_AddRemoveConductorPassives(_Character, _Instrument);
 
-// Any player equips any Ember's Lute mod instrument which summons musical sprites.
-// Add and Remove the sprite summoning passive toggles.
+// Any player equips any Ember's Lute mod instrument with toggle-able passives.
+// Add and Remove the passive toggles by instrument tag.
 IF
 Equipped(_Instrument, _Character)
 AND
 DB_Players(_Character)
 AND
-DB_SpriteSummoningInstruments_EmbersLute(_Tag)
+DB_InstrumentTagToPassiveToggle_EmbersLute(_Tag, _TimerGroup, _PassiveToggle, _Duration)
 AND
 IsTagged(_Instrument, _Tag, 1)
 THEN
-PROC_Emlute_AddRemoveSpriteSummoningPassives(_Character, _Instrument);
+PROC_Emlute_AddPassive(_Character, _PassiveToggle);
 
 // Any player equips any Ember's Lute mod instrument with custom VFX.
 // Add the sprite VFX passive toggles.
@@ -144,7 +152,7 @@ THEN
 UseSpell(_Character,"Shout_Dismiss_All_MusicalSpirits",_Character);
 
 // Any player unequips an Ember's Lute mod instrument which grants Musical Conductor.
-// Wait 3 seconds, then clear up any passive toggles no longer required.
+// Wait, then clear up any passive toggles no longer required.
 IF
 Unequipped(_Instrument, _Character)
 AND
@@ -156,8 +164,46 @@ IsTagged(_Instrument, _Tag, 1)
 AND
 DB_RemovePassiveTimer_EmbersLute("MusicalConductor",_TimerName,_TimerDuration)
 THEN
+// THROW TIMER
 ObjectTimerCancel(_Character,_TimerName);
 ObjectTimerLaunch(_Character,_TimerName,_TimerDuration);
+// CATCH TIMER
+// Remove all the conductor passives no longer required.
+// But abort if player still has MusicalConductor passive.
+IF
+ObjectTimerFinished((CHARACTER)_Character, _TimerName)
+AND
+DB_RemovePassiveTimer_EmbersLute("MusicalConductor",_TimerName, _TimerDuration)
+AND
+HasPassive(_Character, "Emlute_MusicalConductor",0)
+THEN
+PROC_Emlute_RemoveAllConductorPassives(_Character);
+
+// Any player unequips an Ember's Lute mod instrument tagged for passive toggles.
+// Clear up passive toggles no longer required.
+IF
+Unequipped(_Instrument, _Character)
+AND
+DB_Players(_Character)
+AND
+DB_InstrumentTagToPassiveToggle_EmbersLute(_Tag, _TimerGroup, _PassiveToggle, _Duration)
+AND
+IsTagged(_Instrument, _Tag, 1)
+THEN
+// THROW TIMER
+ObjectTimerCancel(_Character,_TimerGroup);
+ObjectTimerLaunch(_Character,_TimerGroup,_Duration);
+// CATCH TIMER
+// Only remove toggle if no longer needed.
+// This handles the instrument hot-swap cases.
+IF
+ObjectTimerFinished((CHARACTER)_Character, _TimerName)
+AND
+DB_InstrumentTagToPassiveToggle_EmbersLute(_Tag, _TimerName, _PassiveToggle, _TimerDuration)
+AND
+NOT QRY_IsEmbersLuteTaggedInstrumentEquipped(_Character, _Tag)
+THEN
+PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
 
 // Any player unequips any Ember's Lute mod instrument with custom VFX.
 // Remove the sprite VFX passive toggles after a short delay.
@@ -172,48 +218,10 @@ DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)_RootTemplate,_Passive
 AND
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX",_Passive,_TimerDuration)
 THEN
+// THROW TIMER
 ObjectTimerCancel(_Character,_Passive);
 ObjectTimerLaunch(_Character,_Passive,_TimerDuration);
-
-// Remove all the conductor passives no longer required.
-// But abort if player still has MusicalConductor passive.
-IF
-ObjectTimerFinished((CHARACTER)_Character, _TimerName)
-AND
-DB_RemovePassiveTimer_EmbersLute("MusicalConductor",_TimerName, _TimerDuration)
-AND
-HasPassive(_Character, "Emlute_MusicalConductor",0)
-THEN
-PROC_Emlute_RemoveAllConductorPassives(_Character);
-
-// Any player unequips an Ember's Lute mod instrument which summons sprites.
-// Wait 3 seconds, then clear up any passive toggles no longer required.
-IF
-Unequipped(_Instrument, _Character)
-AND
-DB_Players(_Character)
-AND
-DB_SpriteSummoningInstruments_EmbersLute(_Tag)
-AND
-IsTagged(_Instrument, _Tag, 1)
-AND
-DB_RemovePassiveTimer_EmbersLute("SpriteSummoning",_TimerName,_TimerDuration)
-THEN
-ObjectTimerCancel(_Character,_TimerName);
-ObjectTimerLaunch(_Character,_TimerName,_TimerDuration);
-
-// Remove all the conductor passives no longer required.
-// But abort if player still has a sprite summoning instrument equipped.
-IF
-ObjectTimerFinished((CHARACTER)_Character, _TimerName)
-AND
-DB_RemovePassiveTimer_EmbersLute("SpriteSummoning",_TimerName, _TimerDuration)
-AND
-NOT QRY_IsEmbersLuteSpriteSummoningInstrumentEquipped(_Character)
-THEN
-PROC_Emlute_RemoveAllSpriteSummoningPassives(_Character);
-
-
+// CATCH TIMER
 // Remove all the VFX passives no longer required.
 // But only if the player doesn't have an instrument equipped with same VFX passive.
 IF
@@ -221,21 +229,16 @@ ObjectTimerFinished((CHARACTER)_Character, _TimerName)
 AND
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX",_TimerName, _TimerDuration)
 AND
-NOT QRY_IsEmbersLuteVFXInstrumentEquipped(_Character,_TimerName)
+NOT QRY_IsEmbersLuteInstrumentWithPassiveEquipped(_Character,_TimerName)
 THEN
 PROC_Emlute_RemovePassive(_Character,_TimerName);
+
+
 
 PROC
 PROC_Emlute_RemoveAllConductorPassives((CHARACTER)_Character)
 AND
 DB_ConductorPassives_EmbersLute(_InstrumentTypeTag, _Passive, _Any)
-THEN
-PROC_Emlute_RemovePassive(_Character, _Passive);
-
-PROC
-PROC_Emlute_RemoveAllSpriteSummoningPassives((CHARACTER)_Character)
-AND
-DB_SpriteSummonModePassives_EmbersLute(_InstrumentTypeTag, _Passive, _Any)
 THEN
 PROC_Emlute_RemovePassive(_Character, _Passive);
 
@@ -252,15 +255,6 @@ PROC
 PROC_Emlute_AddRemoveConductorPassives((CHARACTER)_Character, (ITEM)_Instrument)
 AND
 DB_ConductorPassives_EmbersLute(_InstrumentTypeTag, _Passive, 1)
-AND
-IsTagged(_Instrument, _InstrumentTypeTag,1)
-THEN
-PROC_Emlute_AddPassive(_Character, _Passive);
-
-PROC
-PROC_Emlute_AddRemoveSpriteSummoningPassives((CHARACTER)_Character, (ITEM)_Instrument)
-AND
-DB_SpriteSummonModePassives_EmbersLute(_InstrumentTypeTag, _Passive, 1)
 AND
 IsTagged(_Instrument, _InstrumentTypeTag,1)
 THEN
@@ -299,24 +293,22 @@ THEN
 DB_NOOP(1);
 
 QRY
-QRY_IsEmbersLuteSpriteSummoningInstrumentEquipped((CHARACTER)_Character)
+QRY_IsEmbersLuteTaggedInstrumentEquipped((CHARACTER)_Character,(TAG)_Tag)
 AND
 GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
-AND
-DB_SpriteSummoningInstruments_EmbersLute(_Tag)
 AND
 IsTagged(_Instrument,_Tag,1)
 THEN
 DB_NOOP(1);
 
 QRY
-QRY_IsEmbersLuteVFXInstrumentEquipped((CHARACTER)_Character,(STRING)_VFXPassiveName)
+QRY_IsEmbersLuteInstrumentWithPassiveEquipped((CHARACTER)_Character,(STRING)_PassiveName)
 AND
 GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
 AND
 GetTemplate(_Instrument,_Template)
 AND
-DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)_Template,_VFXPassiveName,1)
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)_Template,_PassiveName,1)
 THEN
 DB_NOOP(1);
 

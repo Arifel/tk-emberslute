@@ -16,6 +16,7 @@ INITSECTION
 DB_RemovePassiveTimer_EmbersLute("MusicalConductor","Emlute_RemoveConductorPassiveToggles",2300);
 DB_RemovePassiveTimer_EmbersLute("SpriteSummoning","Emlute_RemoveSpriteSummoningPassiveToggles",2100);
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
+DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
 
 // These instrument modes have custom summoning spells
 DB_SummoningInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95);
@@ -33,13 +34,23 @@ DB_SpriteSummonModePassives_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-480
 DB_SpriteSummonModePassives_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_TieflingBard",1);
 DB_SpriteSummonModePassives_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Vocal",1);
 
-// Mapping instrument root template to VFX passive toggle
+// Mapping instrument root template to which VFX passive toggle to grant
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_MusicalSpritesWhite_a2a12008-23ae-4006-9d3e-4cb55c1c829e,"Emlute_DancingSprites",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_MusicalSpritesVanillaB_a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9,"Emlute_DancingSprites",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_MusicalSpritesBlackMonochrome_888e0a01-2ed8-4392-be2f-cc2be009f021,"Emlute_DancingSprites",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_MusicalSprites_Violin_White_91296545-64fe-4f4f-adf5-5069f5bed91e,"Emlute_DancingSprites",1);
+// Haunted instrument VFX mapping
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Flute_Black_fa1ce4ee-ba62-4f6b-a4d7-2f283fb4d33e,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Flute_Silver_aeb41122-d6d6-413b-899e-b0b9fc551a23,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Lute_029e42a9-73ce-4902-9172-cb85f74759d4,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Lute_Bloodied_0b58abc6-634c-4118-bba7-b614127884c3,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Lyre_Spider_Mono_21aa99cf-db8c-4b51-bf07-50f26024987f,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_DarkGreen_99a65bcb-5b8f-40d5-a604-6492dab8830b,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_DarkRed_790ffa29-0367-450b-82e6-0070b35870b9,"Emlute_Violin_Undead_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_White_eefac5b2-98ea-4ba7-8680-1a86eb2eeee8,"Emlute_Violin_Undead_Spirits",1);
 
-// Mapping instrument conductor passive toggles to enable by instrument type equipped
+// Mapping instrument conductor passive toggles to enable by instrument type equipped.
+// Could lose this tbh, in the end I decided to keep it simple and give all toggles to all instrument types.
 DB_ConductorPassives_EmbersLute((TAG)MUSIC_VFX_LUTE_3a9a899b-4177-4763-b329-2598528beca5,"Emlute_ViolinsToggle",1);
 DB_ConductorPassives_EmbersLute((TAG)MUSIC_VFX_LUTE_3a9a899b-4177-4763-b329-2598528beca5,"Emlute_LyresToggle",1);
 DB_ConductorPassives_EmbersLute((TAG)MUSIC_VFX_LUTE_3a9a899b-4177-4763-b329-2598528beca5,"Emlute_DrumsToggle",1);

@@ -17,6 +17,7 @@ DB_RemovePassiveTimer_EmbersLute("MusicalConductor","Emlute_RemoveConductorPassi
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
 DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_Spirits",2200);
+DB_RemovePassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_FallenSpirits",2200);
 
 // These instrument modes have custom summoning spells
 // This table is used to auto call a summon dismiss spell whenever they are unequipped
@@ -50,9 +51,9 @@ DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_D
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_DarkRed_790ffa29-0367-450b-82e6-0070b35870b9,"Emlute_Violin_Undead_Spirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)Emlute_Undead_Violin_White_eefac5b2-98ea-4ba7-8680-1a86eb2eeee8,"Emlute_Violin_Undead_Spirits",1);
 // Celestial instrument VFX mapping
-DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Fallen_44d103de-4517-4021-abbd-e1c0779ce401,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Fallen_44d103de-4517-4021-abbd-e1c0779ce401,"Emlute_CelestialLyre_FallenSpirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Flute_d8cd81c6-3153-4b36-9233-55db22ae7850,"Emlute_CelestialLyre_Spirits",1);
-DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Flute_Wood_Dyeable_3f5f8a60-d7ef-41c6-936b-aef92558a747,"Emlute_CelestialLyre_Spirits",1);
+DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Flute_Wood_Dyeable_3f5f8a60-d7ef-41c6-936b-aef92558a747,"Emlute_CelestialLyre_FallenSpirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Lute_B_b00b9bf6-ee8c-41d3-83a5-8d477e9d93ed,"Emlute_CelestialLyre_Spirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_Lute_B_Dyeable_44473e91-b33f-490f-b42f-6f9531c00e7c,"Emlute_CelestialLyre_Spirits",1);
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_CelestialLyre_White_aadbd886-5450-4cf9-958b-4929248330f7,"Emlute_CelestialLyre_Spirits",1);

@@ -49,9 +49,9 @@ data "StatsFunctors" "IF(not Emlute_IsPerformingAny()):ApplyEquipmentStatus(Musi
 
 new entry "Emlute_EnchantedInstrument"
 type "PassiveData"
-data "DisplayName" "h8fd0ed0ege16egf781g7586g02bc179abc38;2"
-data "Description" "h6b9e2237g5020g03c0g709dg4a7af40dc954;2"
-data "LoreDescription" "hbcb57a98gdf3bg0d33g27c9g70556ec30bfd;3"
+data "DisplayName" "h8fd0ed0ege16egf781g7586g02bc179abc38;3"
+data "Description" "h6b9e2237g5020g03c0g709dg4a7af40dc954;3"
+data "LoreDescription" "hbcb57a98gdf3bg0d33g27c9g70556ec30bfd;4"
 data "Icon" "EmbersLute_Spell_PerformWithSprites"
 data "Properties" "Highlighted"
 data "Boosts" "Proficiency(MusicalInstrument);Advantage(Skill,Performance);ActionResource(BardicInspiration, 1, 0);"

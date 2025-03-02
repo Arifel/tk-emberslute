@@ -213,7 +213,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RemovePerformanceCurse_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="12e1f07e-0c58-4f9e-b7cd-cbf6019d7140" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Annoying_Spells_Container_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF('HasStatus('EMLUTE_SINGFORME_VICTIM')):RemoveStatus(EMLUTE_SINGFORME_VICTIM);TARGET:IF(HasStatus('EMLUTE_BARDDANCE_VICTIM',context.Target)):RemoveStatus(EMLUTE_BARDDANCE_VICTIM)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(HasStatus('EMLUTE_SINGFORME_VICTIM')):RemoveStatus(EMLUTE_SINGFORME_VICTIM);TARGET:IF(HasStatus('EMLUTE_BARDDANCE_VICTIM',context.Target)):RemoveStatus(EMLUTE_BARDDANCE_VICTIM);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="8" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="HasStatus('EMLUTE_SINGFORME_VICTIM') or HasStatus('EMLUTE_BARDDANCE_VICTIM')" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h72b833f6g4feag0610ge297gd91ad8950574" version="1" />

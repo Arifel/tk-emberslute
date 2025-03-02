@@ -68,6 +68,18 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not Emlute_IsPerformingAny()):ApplyEquipmentStatus(MusicalInstrument,EMLUTE_CLEAR_PERFORM,100,1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a0c3472a-c2ec-43b6-af5b-468c0e02b9ff" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_EnchantedInstrument" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8fd0ed0ege16egf781g7586g02bc179abc38" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6b9e2237g5020g03c0g709dg4a7af40dc954" version="2" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hbcb57a98gdf3bg0d33g27c9g70556ec30bfd" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);ActionResource(BardicInspiration, 1, 0);" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a4c04fb0-1c23-4104-92cf-3761c21d16bf" />

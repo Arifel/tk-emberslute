@@ -35,6 +35,22 @@ AND
 DB_RepositionSummon_EmbersLute(_,_,_,_,_)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",0);
+
+// Changes to how Passive toggles are applied in v2.1, requires instruments to be re-equipped
+// The first time player updates and loads, we'll auto unequip their instrument to force this
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",_)
+AND
+DB_Players(_Character)
+AND
+GetEquippedItem(_Character,"MusicalInstrument",_Instrument)
+AND
+IsTagged(_Instrument, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+Unequip(_Character,_Instrument);
+DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",1);
 EXITSECTION
 
 ENDEXITSECTION

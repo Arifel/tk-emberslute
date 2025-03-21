@@ -3,6 +3,9 @@ SubGoalCombiner SGC_AND
 INITSECTION
 // One custom perform of The Weeping Dawn, would love to add more but not many sound events that can be re-used
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
+DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3);
+
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
@@ -28,20 +31,52 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
-/* Teleports a character to a relative offset position */
-PROC
-PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
+
+
+/*****************************************************************************
+ * Catch the special music performances and trigger the music events.
+ * Timers are used to automatically stop the performance at the end 
+ * of the song. Unlike the standard music performances, we won't loop.
+ *****************************************************************************/
+IF
+MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
-GetPosition(_Summon,_X,_Y,_Z)
-AND
-RealSum(_X,_OffsetX,_NewX)
-AND
-RealSum(_Y,_OffsetY,_NewY)
-AND
-RealSum(_Z,_OffsetZ,_NewZ)
+DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
 THEN
-PROC_StopFollow(_Summon);
-PROC_TeleportToSafePosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
+PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
+
+IF
+StatusRemoved((CHARACTER)_Performer,_Status,_,_)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
+THEN
+ObjectTimerCancel(_Performer,_Song);
+PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName,_HelperItem)
+AND
+DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
+THEN
+RemoveStatus(_Performer,_Status);
+
+
+/*****************************************************************************
+ * Reposition a character on joining party (summon formation).
+ * Make them face the summon owner (lead performer).
+ *****************************************************************************/
+IF
+CharacterJoinedParty((CHARACTER)_Summon)
+AND
+GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
+AND
+DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
+THEN
+PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
 
 IF
 Teleported((CHARACTER)_Summon,_,_,_,_,_,_,_,_)
@@ -58,69 +93,10 @@ LookAtEntity(_Owner,_Summon);
 LookAtEntity(_Summon,_Owner);
 
 
-/* Starts music on the lead performer, caches active performance and begins a timer */
-PROC
-PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
-AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
-THEN
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-MusicPlayOnCharacter(_Performer,_StartEvent);
-ObjectTimerCancel(_Performer,_Song);
-ObjectTimerLaunch(_Performer,_Song,_Duration);
-
-/* Stops music on the lead performer and clears active performance cache */
-PROC
-PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
-THEN
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-MusicPlayOnCharacter(_Performer,_StopEvent);
-
-IF
-MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
-AND
-DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
-THEN
-PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
-
-IF
-StatusRemoved((CHARACTER)_Performer,_Status,_,_)
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
-AND
-DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
-THEN
-ObjectTimerCancel(_Performer,_Song);
-PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
-
-IF
-ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName)
-AND
-DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
-THEN
-RemoveStatus(_Performer,_Status);
-
-/* 
- * Reposition a character on joining party (summon formation).
- * Make them face the summon owner (lead performer).
- */
-IF
-CharacterJoinedParty((CHARACTER)_Summon)
-AND
-GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
-AND
-DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
-THEN
-PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
-
-/* 
+/*****************************************************************************
  * "Fix" the music on Improved Countercharm summons by adding a short delay.
  * Feels a bit hacky. Seems to work though. 
- */
+ *****************************************************************************/
 IF
 EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
 AND
@@ -137,6 +113,54 @@ THEN
 DebugText(_Summon, "Debug: Starting countercharm music");
 ApplyStatus(_Summon,_Status,-1.0);
 
+
+
+/*****************************************************************************
+ * PROCS and QUERIES
+ *****************************************************************************/
+// Starts music on the lead performer, caches active performance and begins a timer
+PROC
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
+AND
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+AND
+DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
+AND
+DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource)
+AND
+CreateAtObject(_HelperTemplate,_Performer,0,0,"",0,_HelperItem)
+THEN
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+//ToInventory(_HelperItem,_Performer);
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+//MusicPlayOnCharacter(_Performer,_StartEvent);
+ObjectTimerCancel(_Performer,_Song);
+ObjectTimerLaunch(_Performer,_Song,_Duration);
+
+/* Stops music on the lead performer and clears active performance cache */
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+THEN
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+RequestDelete(_HelperItem);
+//MusicPlayOnCharacter(_Performer,_StopEvent);
+
+/* Teleports a character to a relative offset position */
+PROC
+PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
+AND
+GetPosition(_Summon,_X,_Y,_Z)
+AND
+RealSum(_X,_OffsetX,_NewX)
+AND
+RealSum(_Y,_OffsetY,_NewY)
+AND
+RealSum(_Z,_OffsetZ,_NewZ)
+THEN
+PROC_StopFollow(_Summon);
+PROC_TeleportToSafePosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
 EXITSECTION
 
 ENDEXITSECTION

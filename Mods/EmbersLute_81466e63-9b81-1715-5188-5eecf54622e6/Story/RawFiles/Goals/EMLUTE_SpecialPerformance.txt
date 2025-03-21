@@ -5,7 +5,7 @@ INITSECTION
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",169500);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_HARPYSONG",169500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_ENDLESSSPRING",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_GuitarExplore","Set_02_Explo_Guitar","","EMLUTE_PERFORM_GUITAREXPLORE",169500);
 
 // Attach music resources to a temporary helper item
@@ -153,14 +153,22 @@ PlaySoundResource(_HelperItem,_MusicSoundResource);
 // Stops music on the lead performer and clears active performance cache
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicOffResource)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 THEN
+DebugText(_Performer,"Stopping performance");
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
 PlaySoundResource(_HelperItem,_MusicOffResource);
+ObjectTimerCancel(_HelperItem,"Emlute_DeleteHelperItem");
+ObjectTimerLaunch(_HelperItem,"Emlute_DeleteHelperItem",1000);
+
+IF
+ObjectTimerFinished((ITEM)_HelperItem,"Emlute_DeleteHelperItem")
+THEN
 RequestDelete(_HelperItem);
+PROC_RestoreMusicState();
 
 // Stops music on the lead performer and clears active performance cache
 PROC
@@ -172,6 +180,13 @@ NOT DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_)
 THEN
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
 RequestDelete(_HelperItem);
+
+PROC
+PROC_RestoreMusicState()
+AND 
+DB_Audio_CurrentMusicState(_RestoreMusic)
+THEN
+MusicPlayGeneral(_RestoreMusic);
 
 // Teleports a character to a relative offset position
 PROC

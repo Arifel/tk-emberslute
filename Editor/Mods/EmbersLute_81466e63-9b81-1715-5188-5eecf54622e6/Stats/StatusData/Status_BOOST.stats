@@ -88,7 +88,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing4" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing2" enumeration_type_name="StatusAnimationType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -100,7 +100,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa24e99eg0725g75f9gd427g030caa79270d" version="2" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_HARPYSONG);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_HarpySong" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing9" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing2" enumeration_type_name="StatusAnimationType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -110,7 +110,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="506d6c87-994f-4da4-8646-6bac0763c2e0" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing8" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
       </fields>
@@ -122,7 +122,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf6901a41gda35gffddg83fdg3b721713d988" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4312512fg6381g243cg927agd73f3d0cb027" version="1" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing7" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_ENDLESSSPRING);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_EndlessSpring" />
       </fields>
@@ -132,6 +132,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="f6a41c63-2633-47ec-91af-5fff89c85396" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a4da8293-8e10-4077-8113-470e80026c2f" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing2" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />

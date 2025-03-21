@@ -50,7 +50,7 @@ new entry "Emlute_TieflingBard_Spirit"
 type "Character"
 using "_Emlute_Music_Spirit_Base"
 data "DefaultBoosts" "Invulnerable();CanShootThrough(true);SightRangeOverride(0);DetectDisturbancesBlock(true);BlockRegainHP(Undead;Construct;Living);Advantage(Skill,Performance);Skill(Performance,5)"
-data "Passives" "AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_Join_WeepingDawn;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3"
+data "Passives" "AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_Join_WeepingDawn;Emlute_Join_EndlessSpring;Emlute_Join_HarpySong;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3"
 data "Proficiency Group" "MusicalInstrument"
 
 new entry "Emlute_Music_Spirit_Countercharm"

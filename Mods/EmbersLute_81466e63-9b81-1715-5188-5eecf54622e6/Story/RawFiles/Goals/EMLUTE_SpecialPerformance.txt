@@ -4,12 +4,25 @@ INITSECTION
 // One custom perform of The Weeping Dawn, would love to add more but not many sound events that can be re-used
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",169500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",169500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_HARPYSONG",169500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_GuitarExplore","Set_02_Explo_Guitar","","EMLUTE_PERFORM_GUITAREXPLORE",169500);
 
 // Attach music resources to a temporary helper item
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_065e0cda-6a6b-42e1-a1a7-ccd1ca1b793e);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_Close_Enter_ed771ea8-11c4-470b-80fb-231291e4f74f);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Endless_Spring_5d8656f7-b4c5-4c2a-88f2-f3a5528b5691);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_GuitarExplore",(GUIDSTRING)Set_02_Explo_Guitar_f76275af-704a-a804-b9a4-b4057217dd09);
+
+// These don't stop playing after the item is destroyed - need to be flagged off
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_GuitarExplore",(GUIDSTRING)Set_02_Explo_Guitar_f76275af-704a-a804-b9a4-b4057217dd09);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
@@ -35,7 +48,6 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
-
 // Catch the special music performances and trigger the music events.
 // Timers are used to automatically stop the performance at the end 
 // of the song. Unlike the standard music performances, we won't loop.
@@ -143,6 +155,20 @@ PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
 AND
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+AND 
+DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicOffResource)
+THEN
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+PlaySoundResource(_HelperItem,_MusicOffResource);
+RequestDelete(_HelperItem);
+
+// Stops music on the lead performer and clears active performance cache
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+AND 
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_)
 THEN
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
 RequestDelete(_HelperItem);

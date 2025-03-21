@@ -254,6 +254,12 @@ data "StatsFunctorContext" "OnStatusApplied"
 data "Conditions" "StatusId('EMLUTE_JOIN_WEEPINGDAWN')"
 data "StatsFunctors" "ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA,100,-1);ApplyStatus(EMLUTE_MUSICAURA_VFX_03,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)"
 
+new entry "Emlute_Join_HarpySong"
+type "PassiveData"
+using "Emlute_Join_WeepingDawn"
+data "Conditions" "StatusId('EMLUTE_JOIN_HARPYSONG');"
+data "StatsFunctors" "ApplyStatus(EMLUTE_PERFORM_HARPYSONG_NO_AURA,100,-1);ApplyStatus(EMLUTE_MUSICAURA_VFX_03,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)"
+
 new entry "Emlute_Musical_Spirit"
 type "PassiveData"
 data "DisplayName" "h04af4db2g10acg2737ga5c1g1128312fc82e;1"

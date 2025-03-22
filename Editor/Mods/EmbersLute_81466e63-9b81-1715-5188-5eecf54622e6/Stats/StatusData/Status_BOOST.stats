@@ -88,7 +88,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing2" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -100,7 +100,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa24e99eg0725g75f9gd427g030caa79270d" version="2" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_HARPYSONG);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_HarpySong" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing2" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -111,8 +111,10 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Performing" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -137,6 +139,48 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c453a62-418f-4820-895a-3b0faaa0c1ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_WATERQUEEN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcbc30feag66f3g9992g8fafgc474c18c3bab" version="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_WATERQUEEN);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_WaterQueen" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h60db620bg9620gb2b9g7571g893a9c479019" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6b76fd69-7320-46e2-bc85-eaa994897c9e" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_WATERQUEEN_NO_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5c453a62-418f-4820-895a-3b0faaa0c1ee" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF3D2B3D" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="61903115-daf6-4259-b5a8-7085b3ede32b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_THEPOWERVOCALS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9739e0dcg6622gce5dg49bdg3cc16ae24333" version="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_THEPOWERVOCALS);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
+        <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePowerVocals" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF3B2A3B" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee859137-5997-42b2-968e-619489654ca1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61903115-daf6-4259-b5a8-7085b3ede32b" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -389,7 +433,21 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5ff0c3ac-921e-40ad-bac5-5f35d3f82b2a" />
       </fields>
     </stat_object>
-    <stat_object color="#FF301296" is_substat="false">
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="19048e3c-4def-4a80-b65f-8fadc9eff6d6" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_JOIN_WATERQUEEN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ff0c3ac-921e-40ad-bac5-5f35d3f82b2a" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c8115eb-d56e-4a95-aa88-ef4693d547e4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_JOIN_THEPOWERVOCALS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5ff0c3ac-921e-40ad-bac5-5f35d3f82b2a" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF110782" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fd59de27-8396-424b-b7df-b3ef1dc12eed" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_MGMT_AURA" />
@@ -404,7 +462,7 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip;OnMove" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF252961" is_substat="false">
+    <stat_object color="#FF110782" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="944dcaf1-be76-4a22-a5f2-5cb595f82e5a" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_MGMT_AURA_GNOMES" />
@@ -414,7 +472,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="fd3431c3-cac1-4839-989b-73f313420e81" />
       </fields>
     </stat_object>
-    <stat_object color="#FF301296" is_substat="false">
+    <stat_object color="#FF110782" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6c2f10ba-7ffc-4f30-a5b2-404c58e8e4c3" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_MGMT_AURA_BONES" />
@@ -422,7 +480,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8fb2f30-cd2f-4796-b672-7d48b98c4d79" />
       </fields>
     </stat_object>
-    <stat_object color="#FF301296" is_substat="false">
+    <stat_object color="#FF110782" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cb444b2b-c8c8-4d94-8199-8ced8dc3f7e1" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_MGMT_AURA_WHISTLING" />
@@ -430,7 +488,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="573d24bb-98e8-4884-9492-a86d9f7246b5" />
       </fields>
     </stat_object>
-    <stat_object color="#FF301296" is_substat="false">
+    <stat_object color="#FF110782" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e3a5ba2f-ca83-404f-8607-d2ad2e40f007" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CLEAR_MGMT_AURA" />

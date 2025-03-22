@@ -67,6 +67,14 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d94233c2-ec55-4524-875b-5e8334e928a2" />
       </fields>
     </stat_object>
+    <stat_object color="#FF20B2AA" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5141f44-e91b-403a-ac84-349848ca257a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_LEGEND_INVIS_VFX" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="447124d9-d7ed-4eae-b6b2-7550ed3d9b29" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e2616ac0-2715-4e91-a8d4-a8e5a0826c0e" />
@@ -159,7 +167,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="fc870e09-c951-47c0-9575-d91820405a98" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF800080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cf193cfb-b2fe-4bf9-834c-770c67464172" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_VORTEX_INSTRUMENTS_VFX" />
@@ -167,7 +175,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF800080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="37a78b9a-e06d-44a9-96bb-668f18639d8e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_SPARKS_INSTRUMENTS_VFX" />
@@ -175,7 +183,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="573d24bb-98e8-4884-9492-a86d9f7246b5" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2a4d8e30-c151-4aed-acad-dde85f6170dd" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SKELLY_FX_01" />
@@ -183,7 +191,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="cae5cc8d-fead-4d64-bae2-dcf098034abc" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="97437cb7-13a1-4d99-8f49-2f227df7eeb6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SKELLY_FX_02" />
@@ -191,7 +199,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="fb63d6fe-e9b5-49d1-bab8-ec8b5013da6e" />
       </fields>
     </stat_object>
-    <stat_object color="#FF2E2E2E" is_substat="false">
+    <stat_object color="#FF4682B4" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a754d6c0-b18a-4733-b08c-1272fbf0f813" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_COUNTERCHARM_MUSIC_BOX_VFX" />

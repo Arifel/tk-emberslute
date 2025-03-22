@@ -77,6 +77,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" color="#FFFF00FF" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_WEEPINGDAWN);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_WeepingDawn" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bf2305e8-94e7-403e-af95-7d9c1723a289" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -89,6 +90,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9fa87229-224d-4ff4-b289-f6d85630c0a6" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -115,6 +117,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="907f97c7-2ce5-41cb-b9d2-b5e94df03508" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -127,6 +130,7 @@
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_ENDLESSSPRING);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_EndlessSpring" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="215146a0-5e7d-4ad5-8a15-70f8701dc3da" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -139,6 +143,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ffa9dbc9-d6ec-4024-b943-a2b9579d4b97" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -161,6 +166,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
       </fields>
     </stat_object>
     <stat_object color="#FF3D2B3D" is_substat="false">

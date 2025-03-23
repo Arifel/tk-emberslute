@@ -48,12 +48,6 @@ data "StatusType" "EFFECT"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "StatusEffect" "d94233c2-ec55-4524-875b-5e8334e928a2"
 
-new entry "EMLUTE_AURA_LEGEND_INVIS_VFX"
-type "StatusData"
-data "StatusType" "EFFECT"
-data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "StatusEffect" "447124d9-d7ed-4eae-b6b2-7550ed3d9b29"
-
 new entry "EMLUTE_HAND_GOLD_VFX"
 type "StatusData"
 data "StatusType" "EFFECT"

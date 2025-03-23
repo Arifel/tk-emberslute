@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="447124d9-d7ed-4eae-b6b2-7550ed3d9b29" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_AURA_Legend_Invis_StatusEffect">
-  <EffectInfo UUID="3c782e03-4c20-4431-ab40-822b5a056696" EffectResourceGuid="9b7462e8-8440-9ba9-91e7-a200d92a4f2c" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
-</MultiEffectInfos>

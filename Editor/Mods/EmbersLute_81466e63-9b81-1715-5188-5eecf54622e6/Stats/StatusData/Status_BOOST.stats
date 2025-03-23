@@ -166,7 +166,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bf2305e8-94e7-403e-af95-7d9c1723a289" />
       </fields>
     </stat_object>
     <stat_object color="#FF3D2B3D" is_substat="false">

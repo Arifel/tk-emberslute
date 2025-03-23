@@ -136,7 +136,7 @@ using "EMLUTE_PERFORM_WATERQUEEN"
 data "StackId" "EMLUTE_PERFORM_SPRITES"
 data "AuraRadius" ""
 data "AuraStatuses" ""
-data "StatusEffect" "f10931fe-06d2-4867-bd1b-b79c9c665530"
+data "StatusEffect" "bf2305e8-94e7-403e-af95-7d9c1723a289"
 
 new entry "EMLUTE_PERFORM_THEPOWERVOCALS"
 type "StatusData"

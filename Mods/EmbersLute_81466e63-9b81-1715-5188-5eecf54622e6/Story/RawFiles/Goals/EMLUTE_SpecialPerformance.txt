@@ -27,6 +27,8 @@ DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Ent
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
 
+DB_SpecialPerformance_SummonTemplate_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,"Alfira");
+
 // Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
 // Spawn the Vicious Rockery gnomes in ensemble formation
@@ -81,6 +83,15 @@ DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
 RemoveStatus(_Performer,_Status);
 
+IF
+StatusApplied((CHARACTER)_TieflingBard,"EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA",_,_)
+AND
+GetTemplate(_TieflingBard,(CHARACTERROOT)_TieflingBardTemplate)
+AND
+DB_SpecialPerformance_SummonTemplate_EmbersLute(_TieflingBardTemplate,"Alfira")
+THEN
+DebugText(_TieflingBard,"Playing Weeping Dawn anim");
+PlayAnimation(_TieflingBard,DFLT_SCENE_DEN_TieflingBard_Bard_Bard_SongSequence_1981a2b8-a541-148d-d915-89452d4bc108,"");
 
 // Reposition a character on joining party (summon formation).
 // Make them face the summon owner (lead performer).

@@ -25,19 +25,22 @@ DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Mus
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047);
 
 // Some music events need to be steered through a sequence to get back to the music game state
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64);
+//DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_FuneralOver_77ec8c3f-75df-48e7-8011-132b7473584b);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c);
 
 // Don't use this one - entering music event for the credits menu disables all the voice, and I dunno how to put it back!!
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
-
-DB_SpecialPerformance_SummonTemplate_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,"Alfira");
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,2.0,0.5,0.5,1);
 // Spawn the Vicious Rockery gnomes in ensemble formation
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);
@@ -50,6 +53,8 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0f
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,0.0,0.0,-2.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,0.0,0.0,2.0,0);
+// Spawn the Umberleee singers to the right and left side
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075,-2.0,0.0,0.0,0);
 
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
@@ -90,22 +95,10 @@ DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
 RemoveStatus(_Performer,_Status);
 
-IF
-StatusApplied((CHARACTER)_TieflingBard,"EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA",_,_)
-AND
-GetTemplate(_TieflingBard,(CHARACTERROOT)_TieflingBardTemplate)
-AND
-DB_SpecialPerformance_SummonTemplate_EmbersLute(_TieflingBardTemplate,"Alfira")
-THEN
-DebugText(_TieflingBard,"Playing Weeping Dawn anim");
-PlayAnimation(_TieflingBard,DFLT_SCENE_DEN_TieflingBard_Bard_Bard_SongSequence_1981a2b8-a541-148d-d915-89452d4bc108,"");
-
 // Reposition a character on joining party (summon formation).
 // Make them face the summon owner (lead performer).
 IF
-CharacterJoinedParty((CHARACTER)_Summon)
-AND
-GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
+EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_SummonTemplate, _)
 AND
 DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
 THEN
@@ -140,8 +133,6 @@ THEN
 DebugText(_Summon, "Debug: Starting countercharm music");
 ApplyStatus(_Summon,_Status,-1.0);
 
-
-
 // PROCS and QUERIES
 // Starts music on the lead performer, caches active performance and begins a timer
 PROC
@@ -151,18 +142,18 @@ NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 AND
 DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
 AND
-CreateAtObject(_HelperTemplate,_Performer,0,0,"",0,_HelperItem)
+CreateAtObject(_HelperTemplate,_Performer,0,0,"",0,(ITEM)_HelperItem)
 THEN
-DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem);
 ObjectTimerCancel(_Performer,_Song);
 ObjectTimerLaunch(_Performer,_Song,_Duration);
-PROC_PlayMusicOnItem(_Song,_HelperItem);
+PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem);
 
 PROC
-PROC_PlayMusicOnItem((STRING)_Song,(ITEM)_HelperItem)
+PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource)
 THEN
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem);
 PlaySoundResource(_HelperItem,_MusicSoundResource);
 
 // Stops music on the lead performer and clears active performance cache
@@ -171,7 +162,6 @@ PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRI
 AND
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 THEN
-PROC_DebugMusicState(_Performer);
 PROC_StopMusicOnItem(_Song,_HelperItem);
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
 ObjectTimerCancel(_HelperItem,"Emlute_DeleteHelperItem");
@@ -188,13 +178,6 @@ IF
 ObjectTimerFinished((ITEM)_HelperItem,"Emlute_DeleteHelperItem")
 THEN
 RequestDelete(_HelperItem);
-
-PROC
-PROC_RestoreMusicState()
-AND 
-DB_Audio_CurrentMusicState(_RestoreMusic)
-THEN
-MusicPlayGeneral(_RestoreMusic);
 
 PROC
 PROC_DebugMusicState((CHARACTER)_Performer)

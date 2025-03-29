@@ -208,7 +208,7 @@
   <content contentuid="h25291922g749eg4e90gb28bg01a513b0a4ef" version="1">Dismissing sprites and musical spirit summons.</content>
   <content contentuid="h58128bbeg9c18g8aa7g24ffg85a858aa94a2" version="1">Curtain Call</content>
   <content contentuid="haeaedeb2gbb28g5c6dgdce6g8ae0135dc155" version="1">Dismissing musical sprites.</content>
-  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="5">Spirit of a Tragic Tiefling Bard</content>
+  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="6">Spirit of a Tragic Tiefling Bard</content>
   <content contentuid="h31850c2aga592g1894ga37eg89582b18352f" version="1">Melody Gearfiddle</content>
   <content contentuid="hc9266932g15ebgb66bg984eg52431a2179ee" version="1">Summon Melody Gearfiddle. Her rivals called her Queen Bow, because she wielded it like a rapier when crossed.</content>
   <content contentuid="he5c3fcc5g9177g365agcdcag493dfdaefdb8" version="1">Percival Stonegroove</content>
@@ -507,4 +507,8 @@
   <content contentuid="h60db620bg9620gb2b9g7571g893a9c479019" version="1">Singing a hymn of reverence.</content>
   <content contentuid="h535a168bgdb7fg7c8ega59dgddd1a3500012" version="1">Perform 'Raphael's Final Act'</content>
   <content contentuid="hbcbb54d8gd125gf117g784bge1c37bbd6af9" version="1">Performing 'Raphael's Final Act'</content>
+  <content contentuid="h502c12b3gba01g4f9bg2e43g3fb3c16b7338" version="6">Singer</content>
+  <content contentuid="hddbef208ge72dge604g46dag7d3d89cc7bef" version="1">Stop Performance</content>
+  <content contentuid="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="1">Stop the current performance</content>
+  <content contentuid="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1">Perform 'The Power'</content>
 </contentList>

@@ -73,6 +73,16 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ff4ca61-0192-42ce-a2b2-5dedf17b9d05" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Music_Spirit_Countercharm" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db3e9d9f-9f9b-4fbe-9aea-62a8dba023ef" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="BlockRegainHP(Undead;Construct;Living);AttackSpellOverride(Shout_ImprovedCountercharm_Emlute,Target_UnarmedAttack)" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_CounterCharm" />
+        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF542F54" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3080c435-d063-4743-b47e-94220fba84ed" />
@@ -85,12 +95,9 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5ff4ca61-0192-42ce-a2b2-5dedf17b9d05" />
-        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Music_Spirit_Countercharm" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="db3e9d9f-9f9b-4fbe-9aea-62a8dba023ef" />
-        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="BlockRegainHP(Undead;Construct;Living);AttackSpellOverride(Shout_ImprovedCountercharm_Emlute,Target_UnarmedAttack)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_CounterCharm" />
-        <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="37a3d60f-d15c-42fa-9b3d-92599ccfe984" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_UmberleeSinger_Spirit_01" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3080c435-d063-4743-b47e-94220fba84ed" />
       </fields>
     </stat_object>
   </stat_objects>

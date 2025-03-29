@@ -84,13 +84,37 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f8fca48-9f8c-4793-bd7b-88f713cdc70d" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Custom_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_FinalAct_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Stop_Emlute;Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcc964f7gfff3g25b2ge124g1e7db6015f5c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8dac814gdc75g0d76gaf53g0b63cef665e7" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ade0e715-88ad-424b-b481-eec6b2042984" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stop_Emlute" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Custom_Emlute" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hddbef208ge72dge604g46dag7d3d89cc7bef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -103,7 +127,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e6f6028gba8ega408gb8ecgb5b051ed82b8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2d45343g932dgecefgb33bg72062277cfb4" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -132,7 +156,15 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WATERQUEEN,100,-1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa4c2432gcde1gc46cg4a07g8b8b77b67655" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5dd30d96-0251-4374-b5d2-aa6d0c863267" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_ThePowerVocals_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">

@@ -89,7 +89,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_TieflingBard_Spirit" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="03e5b329-b607-4b8b-94db-a12e163d23a5" />
         <field name="DefaultBoosts" type="StringTableFieldDefinition" value="Invulnerable();CanShootThrough(true);SightRangeOverride(0);DetectDisturbancesBlock(true);BlockRegainHP(Undead;Construct;Living);Advantage(Skill,Performance);Skill(Performance,5)" />
-        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_Join_WeepingDawn;Emlute_Join_EndlessSpring;Emlute_Join_HarpySong;Emlute_Join_WaterQueen;Emlute_Join_FinalAct;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_Join_WeepingDawn;Emlute_Join_EndlessSpring;Emlute_Join_HarpySong;Emlute_Join_WaterQueen;Emlute_Join_ThePowerVocals;Emlute_Join_FinalAct;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3" />
         <field name="Proficiency Group" type="EnumerationListTableFieldDefinition" value="MusicalInstrument" enumeration_type_name="ProficiencyGroupFlags" version="1" />
       </fields>
     </stat_object>
@@ -98,6 +98,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="37a3d60f-d15c-42fa-9b3d-92599ccfe984" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_UmberleeSinger_Spirit_01" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="3080c435-d063-4743-b47e-94220fba84ed" />
+        <field name="Passives" type="StringTableFieldDefinition" value="AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_TransientSingle_Spirit;Emlute_Join_WeepingDawn;Emlute_Join_EndlessSpring;Emlute_Join_HarpySong;Emlute_Join_WaterQueen;Emlute_Join_ThePowerVocals;Emlute_Join_FinalAct;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3" />
       </fields>
     </stat_object>
   </stat_objects>

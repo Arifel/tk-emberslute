@@ -87,10 +87,34 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Tiefling_Female" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_PERFORM_WEEPINGDAWN') or StatusId('EMLUTE_PERFORM_WATERQUEEN');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_PERFORM_WEEPINGDAWN');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_TIEFLING_BARD_SPIRIT')):Summon(43d08735-7bb2-48a4-a446-b8814d4409c6,UntilLongRest,,,'EmluteTieflingBardSpirit',,UNSUMMON_ABLE,EMLUTE_HAND_PURPLE_VFX)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1da5ad67gb64bg0e61g31d8g22fd48254f21" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h775efe02gff44g429bg4511g169f353dca24" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd97cc95-ec46-4ff7-b9a7-8667c596ca28" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_SummonOnPerform_WaveServants" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a7cdbf1-8016-4e90-92ea-365158b97196" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56f08a40g9878ga1a1g3203g4214241a6663" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf176cf07gfb4dg585agf498g3e16ff2626a2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Human_Female" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_PERFORM_WATERQUEEN');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_WAVESERVANT_01')):Summon(133d8908-55e5-4c3a-9aba-fe104d32f075,UntilLongRest,,,'EmluteWaveservant01',,UNSUMMON_ABLE,EMLUTE_WAVESERVANT_APPEAR_VFX);GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_WAVESERVANT_02')):Summon(a687484a-5201-4db6-bc14-175254ebab7e,UntilLongRest,,,'EmluteWaveservant02',,UNSUMMON_ABLE,EMLUTE_WAVESERVANT_APPEAR_VFX)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02cadada-49c0-4daf-b5a4-fe97e1a47cc5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_SummonOnPerform_Cambions" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a7cdbf1-8016-4e90-92ea-365158b97196" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd756eac4gead6g331fg2d50gb56bc91237a5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he9ef9ce8g565bgfe5bgc530gba2a3dae8a13" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_PERFORM_FINALACT');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_CAMBION_01')):Summon(661e1f04-10a5-44e3-9fb8-0479bd976fa1,UntilLongRest,,,'FemaleCambion',,UNSUMMON_ABLE,EMLUTE_HAND_PURPLE_VFX);GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_CAMBION_02')):Summon(1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,UntilLongRest,,,'MaleCambion',,UNSUMMON_ABLE,EMLUTE_HAND_PURPLE_VFX)" />
       </fields>
     </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">
@@ -392,7 +416,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF215487" is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ce79f1ad-c8af-43ee-83fe-e06cfff9bacb" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Musical_Spirit" />
@@ -402,7 +426,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF215487" is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="83757454-e884-437b-bad7-3d63217ce5c5" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Transient_Spirit" />
@@ -411,9 +435,23 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_KEEP_ALIVE')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_KEEP_ALIVE')):ApplyStatus(UNSUMMON_ACTIVE,100,-1);Unsummon();SwitchDeathType(None);Kill()" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4bf03d60gfb2bgbcafg8d36gca1bab7559e2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd58e0c9fg3513g26f0g5a50g3ba335170bf3" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF215487" is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8006e296-2ccf-440b-a484-4657c8663f26" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_TransientSingle_Spirit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7db52af9geb10ga034g05e0g3bcedcdc0453" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hddfbbe5ag2cbfgc0edgfd5fg656715c5363c" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerform()" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(UNSUMMON_ACTIVE,100,-1);Unsummon()" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2c42f417-4008-455f-838a-39748bddbbc5" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Dismissable" />
@@ -425,7 +463,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(UNSUMMON_ACTIVE,100,-1);Unsummon()" />
       </fields>
     </stat_object>
-    <stat_object color="#FF215487" is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f635c45e-a78a-4314-840b-896ef760ecf4" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Musical_Spirit_Portal" />
@@ -435,7 +473,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF215487" is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e0dc9b27-a4b1-4b0b-a9d9-5fe08a516fe2" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_HonoraryBard" />
@@ -446,7 +484,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(BARD)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF215487" is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b10ecc3a-3cf0-4ffe-ba46-f74bb5c8d69f" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Pacifist" />

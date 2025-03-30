@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="b868b654-b56e-4874-8c82-3d17ee4cb3d5" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_Overlay_Frozen_01">
+  <EffectInfo UUID="8e471bc1-91d5-496c-ad50-bc99a8116131" EffectResourceGuid="ff02dd85-7dc8-5ef3-eaa0-89d0be2e5d1b" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

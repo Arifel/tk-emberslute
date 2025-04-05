@@ -19,8 +19,14 @@ DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverl
 DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
 DB_ScriptedVFX_EmbersLute("FinalAct","Lead01","Emlute_FinalActL01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
 KBSECTION
-// We're going to lazily hard code some of this for the Final Act performance
-// Might improve it later if I ever add more scripted VFX performances
+// While it is quite possible to use the VFX editor to create long-running
+// effects for the duration of a song, if you remove the FX part way through
+// the FX will still continue until it has completed all the phases. This isn't 
+// great as we don't really want characters wondering around exploding in flames
+// after the performance has ended.
+
+// We're going to lazily hard code some of this for the Final Act performance.
+// Might improve it later if I ever add more scripted VFX performances.
 
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)

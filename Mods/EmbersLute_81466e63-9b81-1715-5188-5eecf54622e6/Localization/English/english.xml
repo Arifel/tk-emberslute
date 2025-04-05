@@ -513,13 +513,13 @@
   <content contentuid="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1">Perform 'The Power'</content>
   <content contentuid="h56f08a40g9878ga1a1g3203g4214241a6663" version="1">Wave Servants</content>
   <content contentuid="hf176cf07gfb4dg585agf498g3e16ff2626a2" version="1">If enabled, wave servants will appear when the funeral hymn is performed.</content>
-  <content contentuid="h1d36267ag63bbg460fg0d64gb04ce919c56d" version="4">Singer</content>
+  <content contentuid="h1d36267ag63bbg460fg0d64gb04ce919c56d" version="5">Singer</content>
   <content contentuid="h7db52af9geb10ga034g05e0g3bcedcdc0453" version="2">Transient Performer</content>
   <content contentuid="hddfbbe5ag2cbfgc0edgfd5fg656715c5363c" version="2">This entity will vanish once the performance is ended.</content>
   <content contentuid="h4bf03d60gfb2bgbcafg8d36gca1bab7559e2" version="1">Transient Performer</content>
   <content contentuid="hd58e0c9fg3513g26f0g5a50g3ba335170bf3" version="1">This entity will vanish once the performer leaves the area.</content>
-  <content contentuid="h13dec50fg89e0gf861g4cebgf300b132ca92" version="6">Cambion</content>
-  <content contentuid="hec5a41efg9900g0c2bgf49cg818bd09cf614" version="7">A Theatrical Cambion</content>
+  <content contentuid="h13dec50fg89e0gf861g4cebgf300b132ca92" version="7">A Performative Cambion</content>
+  <content contentuid="hec5a41efg9900g0c2bgf49cg818bd09cf614" version="8">A Theatrical Cambion</content>
   <content contentuid="hd756eac4gead6g331fg2d50gb56bc91237a5" version="1">Cambions</content>
   <content contentuid="he9ef9ce8g565bgfe5bgc530gba2a3dae8a13" version="1">If enabled, a pair of cambions will appear when the Final Act is performed.</content>
   <content contentuid="h5a2c88begb65bg8810g698bgd4ddca7cd682" version="1">Test</content>

@@ -1,0 +1,139 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// 282.5
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100,51000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,51600,15200);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,66070,34700);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,100040,16360);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,115790,9100);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,124500,30270);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_04",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,130000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,100,24800);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,24900,50900);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,76520,24810);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100890,29110);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,129240,24860);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,130000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Lead01","Emlute_FinalActL01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+KBSECTION
+// We're going to lazily hard code some of this for the Final Act performance
+// Might improve it later if I ever add more scripted VFX performances
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,1)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
+THEN
+// Play the effects for a supporting performer, male vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,1)
+AND
+IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,0)
+THEN
+// Play the effects for a supporting performer, female vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter02");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
+AND
+IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,0)
+THEN
+// Play the effects for a supporting performer, non-binary (default to male vocals)
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
+THEN
+// Play the effects for the lead performer
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Lead01");
+
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
+THEN
+PROC_CleanUpEffectTimers_EmbersLute("FinalAct",_Performer);
+PROC_CleanUpEffects_EmbersLute("FinalAct",_Performer);
+
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+THEN
+PROC_CleanUpEffectTimers_EmbersLute("FinalAct",_Performer);
+PROC_CleanUpEffects_EmbersLute("FinalAct",_Performer);
+
+PROC
+PROC_PlayFinalAct_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_Role)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+THEN
+ObjectTimerLaunch(_Performer,_FXEvent,_Start);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+NOT QRY_HasActiveEffect_EmbersLute(_Performer,_FXEvent)
+THEN
+PROC_StartScriptedFX_EmbersLute(_Performer,_FXEvent);
+
+PROC
+PROC_StartScriptedFX_EmbersLute((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+Concatenate("Starting FX: ",_FXEvent,_DebugMsg)
+AND
+Concatenate(_FXEvent,"_STOP",_StopTimer)
+AND
+PlayLoopEffect(_Performer,_Effect,"Dummy_Root",1.0,_FXHandle)
+THEN
+DebugText(_Performer,_DebugMsg);
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
+ObjectTimerLaunch(_Performer,_StopTimer,_Stop);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,(STRING)_StopTimer)
+AND
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer)
+THEN
+StopLoopEffect(_FXHandle);
+NOT DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
+
+QRY
+QRY_HasActiveEffect_EmbersLute((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_,_)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_CleanUpEffectTimers_EmbersLute((STRING)_Song,(CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+Concatenate(_FXEvent,"_STOP",_StopTimer)
+THEN
+ObjectTimerCancel(_Performer,_FXEvent);
+ObjectTimerCancel(_Performer,_StopTimer);
+
+PROC
+PROC_CleanUpEffects_EmbersLute((STRING)_Song,(CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer)
+THEN
+StopLoopEffect(_FXHandle);
+NOT DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
+
+EXITSECTION
+
+ENDEXITSECTION

@@ -81,9 +81,20 @@ function Emlute_StatusSHOULDInterruptPerform()
     return Emlute_StatusIsPerform() | StatusId('EMLUTE_SILENCED_SPIRIT')
 end
 
+function Emlute_EventBreaksPerformance()
+	return ((not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform()))
+end
+
 -- Actions which I think should end an in-combat performance (force concentration break)
 function Emlute_EventBreaksInCombatPerformance()
 	return (IsStatusEvent(StatusEvent.OnSpellCast) | IsStatusEvent(StatusEvent.OnEquip) | IsStatusEvent(StatusEvent.OnUnequip) | IsStatusEvent(StatusEvent.OnCombatEnded))
+end
+
+function Emlute_EventBreaksPerformanceCanMove(entity)
+	local entity = entity or context.Source
+	local removeStatus = ((not IsStatusEvent(StatusEvent.OnMove)) and Emlute_EventBreaksPerformance())  
+	local removeRange = (IsStatusEvent(StatusEvent.OnMove) and (not HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE',entity)))
+	return (removeStatus or removeRange)
 end
 
 function Emlute_IsPerformingBaseGame(entity)

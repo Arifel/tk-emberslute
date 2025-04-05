@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="bad85e04-bc52-42f8-b340-27162fa4b157" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_MUSICAURA_StatusEffect_FinalAct_Female_01">
-  <EffectInfo UUID="998226ba-8725-4ed6-b3aa-4050df09d94e" EffectResourceGuid="b2576615-4e8a-a711-21ae-0d58b45eacda" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
-</MultiEffectInfos>

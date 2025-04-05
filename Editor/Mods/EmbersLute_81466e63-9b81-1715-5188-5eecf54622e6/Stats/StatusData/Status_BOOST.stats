@@ -212,12 +212,12 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not Combat() and ((not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform()))) or (Combat() and Emlute_EventBreaksInCombatPerformance())" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF3D2B3D" is_substat="false">
+    <stat_object color="#FFFF00FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="61903115-daf6-4259-b5a8-7085b3ede32b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_THEPOWERVOCALS" />
@@ -225,9 +225,10 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9739e0dcg6622gce5dg49bdg3cc16ae24333" version="1" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_THEPOWERVOCALS);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePowerVocals" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6a1b03d1-c08f-4270-876c-b57a18bb4eaa" />
       </fields>
     </stat_object>
-    <stat_object color="#FF3B2A3B" is_substat="false">
+    <stat_object color="#FFFF00FF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ee859137-5997-42b2-968e-619489654ca1" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA" />
@@ -236,6 +237,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">

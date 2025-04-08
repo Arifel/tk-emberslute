@@ -1,3 +1,9 @@
+new entry "EMLUTE_PERFORM_POSITIVE"
+type "StatusData"
+data "StatusType" "BOOST"
+using "PERFORM_POSITIVE"
+data "RemoveConditions" "(not Combat() and (((not IsStatusEvent(StatusEvent.OnMove)) and Emlute_EventBreaksPerformance()) or (IsStatusEvent(StatusEvent.OnMove) and (not HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE',context.Source))))) or (Combat() and Emlute_EventBreaksInCombatPerformance())"
+
 new entry "EMLUTE_PERFORM_THEPOWER"
 type "StatusData"
 data "StatusType" "BOOST"
@@ -569,7 +575,7 @@ data "StatusType" "BOOST"
 data "DisplayName" "h6428f250g5e50gb064gc1c0gcc951052932d;1"
 data "Description" "hf91e1944g09b1gce6ag0e81g3c4220db0cc5;1"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "OnRemoveFunctors" "IF(Emlute_IsPerforming()):ApplyStatus(PERFORM_POSITIVE,100,-1)"
+data "OnRemoveFunctors" "IF(Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE,100,-1)"
 
 new entry "EMLUTE_IN_LEGEND_AURA"
 type "StatusData"

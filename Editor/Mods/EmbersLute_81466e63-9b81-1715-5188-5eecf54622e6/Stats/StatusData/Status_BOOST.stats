@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
   <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="92fa5938-9eed-4df7-ada5-2e1b5ed446ba" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4a325cf8-bc81-4f35-b92f-0edbbdfac054" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not Combat() and (((not IsStatusEvent(StatusEvent.OnMove)) and Emlute_EventBreaksPerformance()) or (IsStatusEvent(StatusEvent.OnMove) and (not HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE',context.Source))))) or (Combat() and Emlute_EventBreaksInCombatPerformance())" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="775cb6f2-1d40-4fbf-acf9-f9b0dd418b5c" />
@@ -686,14 +694,14 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6f3530d9-fde5-4527-a435-f33f39fd7296" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REACTIONS_DELAY" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6428f250g5e50gb064gc1c0gcc951052932d" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf91e1944g09b1gce6ag0e81g3c4220db0cc5" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(Emlute_IsPerforming()):ApplyStatus(PERFORM_POSITIVE,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -123,7 +123,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_WeepingDawn_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="865ed572-4e59-4777-b099-ad0c5033387d" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Custom_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e6f6028gba8ega408gb8ecgb5b051ed82b8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he2d45343g932dgecefgb33bg72062277cfb4" version="1" />
@@ -135,7 +135,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="770fe025-b836-4f41-9674-fda503bba963" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_HarpySong_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_HARPYSONG,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_HARPYSONG,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h746d0d83g3ce6g65b0g7e3dg1f69a13b1714" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9aa8b556gcf61ga086g39adgf98117449801" version="1" />
       </fields>
@@ -145,7 +145,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="4dfa2fd0-956b-482e-adfb-6fefe270d2b9" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_EndlessSpring_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_ENDLESSSPRING,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_ENDLESSSPRING,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ed320eeg09a3gc20cgcae8g28dfe827f8ea" version="1" />
       </fields>
     </stat_object>
@@ -154,16 +154,16 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8b3eb0b8-5c2b-49aa-bdaa-b0531ad745f9" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_WaterQueen_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WATERQUEEN,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WATERQUEEN,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa4c2432gcde1gc46cg4a07g8b8b77b67655" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFC71585" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5dd30d96-0251-4374-b5d2-aa6d0c863267" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_ThePowerVocals_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1" />
       </fields>
     </stat_object>
@@ -172,7 +172,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1b41c163-46c7-4417-bd2e-9080be3a3bf0" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_FinalAct_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_FINALACT,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_FINALACT,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h535a168bgdb7fg7c8ega59dgddd1a3500012" version="1" />
       </fields>
     </stat_object>

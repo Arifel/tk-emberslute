@@ -30,14 +30,20 @@ DB_ConductorInstruments_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-96
 DB_ConductorInstruments_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b);
 
 // Mapping config passive toggles to enable by instrument tag
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform",2100);
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform_TieflingBard",2200);
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform_Vocal",2300);
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform_WaveServants",2400);
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_TimerGroup_SummonOnPerform","Emlute_SummonOnPerform_Cambions",2500);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SpiritMode_SummonOnPerform","Emlute_SummonOnPerform",2100);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SpiritMode_SummonOnPerform_TieflingBard","Emlute_SummonOnPerform_TieflingBard",2200);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SpiritMode_SummonOnPerform_Vocal","Emlute_SummonOnPerform_Vocal",2300);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SpiritMode_SummonOnPerform_WaveServants","Emlute_SummonOnPerform_WaveServants",2400);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SpiritMode_SummonOnPerform_Cambions","Emlute_SummonOnPerform_Cambions",2500);
+//DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_GnomeMode_SummonOnPerform_TieflingBard","Emlute_SummonOnPerform_TieflingBard",2200);
+//DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_GnomeMode_SummonOnPerform_WaveServants","Emlute_SummonOnPerform_WaveServants",2400);
+//DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_GnomeMode_SummonOnPerform_Cambions","Emlute_SummonOnPerform_Cambions",2500);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_WhistleMode_SummonOnPerform_TieflingBard","Emlute_SummonOnPerform_TieflingBard",2200);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_WhistleMode_SummonOnPerform_WaveServants","Emlute_SummonOnPerform_WaveServants",2400);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_WhistleMode_SummonOnPerform_Cambions","Emlute_SummonOnPerform_Cambions",2500);
 
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GIVE_CELESTIAL_VFX_TOGGLES_418186f8-3991-4b48-8b86-29fd5ec9403b,"Emlute_TimerGroup_CelestialConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
-DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GIVE_CELESTIAL_VFX_TOGGLES_418186f8-3991-4b48-8b86-29fd5ec9403b,"Emlute_TimerGroup_CelestialConfig","Emlute_CelestialLyre_UseHaloVFX",2500);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GIVE_CELESTIAL_VFX_TOGGLES_418186f8-3991-4b48-8b86-29fd5ec9403b,"Emlute_CelestialConfig_Wings","Emlute_CelestialLyre_UseWingsVFX",2400);
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)EMLUTE_GIVE_CELESTIAL_VFX_TOGGLES_418186f8-3991-4b48-8b86-29fd5ec9403b,"Emlute_CelestialConfig_Halo","Emlute_CelestialLyre_UseHaloVFX",2500);
 
 // Mapping instrument root template to which VFX passive toggle to grant
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)EmbersLute_MusicalSpritesWhite_a2a12008-23ae-4006-9d3e-4cb55c1c829e,"Emlute_DancingSprites",1);
@@ -205,7 +211,7 @@ ObjectTimerFinished((CHARACTER)_Character, _TimerName)
 AND
 DB_InstrumentTagToPassiveToggle_EmbersLute(_Tag, _TimerName, _PassiveToggle, _TimerDuration)
 AND
-NOT QRY_IsEmbersLuteTaggedInstrumentEquipped(_Character, _Tag)
+NOT QRY_IsEmbersLuteInstrumentWithPassiveEquipped_ByTag(_Character,_PassiveToggle)
 THEN
 PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
 
@@ -313,6 +319,17 @@ AND
 GetTemplate(_Instrument,_Template)
 AND
 DB_InstrumentTemplateToPassiveToggle_EmbersLute((ITEMROOT)_Template,_PassiveName,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsEmbersLuteInstrumentWithPassiveEquipped_ByTag((CHARACTER)_Character,(STRING)_PassiveName)
+AND
+GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
+AND
+DB_InstrumentTagToPassiveToggle_EmbersLute((TAG)_Tag,_,_PassiveName,_)
+AND
+IsTagged(_Instrument,_Tag,1)
 THEN
 DB_NOOP(1);
 

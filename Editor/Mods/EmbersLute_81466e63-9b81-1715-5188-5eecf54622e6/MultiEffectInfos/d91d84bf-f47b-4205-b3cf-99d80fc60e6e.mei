@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="d91d84bf-f47b-4205-b3cf-99d80fc60e6e" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_Overlay_Purple_Shine_01">
+  <EffectInfo UUID="08fe8efa-8050-42a2-b4ec-b42826a152a0" EffectResourceGuid="4c8fc9e2-c6c3-a56f-d325-5d95284c9d79" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

@@ -8,7 +8,7 @@
       <data id="7952f15a-d9cf-4d0a-80b3-18d4df6718b9" duration="0.1" playcount="-1" definitionid="2d6a16c1-4632-4f7f-8097-4717dc65d7bd" />
     </object>
     <object class="" classid="00000000-0000-0000-0000-000000000000" assembly="">
-      <data id="b8e04c1b-4574-4d17-a277-af7dae8d76b4" duration="0.17" playcount="1" definitionid="fc8e9f77-827a-433f-a58d-ad1007605399" />
+      <data id="b8e04c1b-4574-4d17-a277-af7dae8d76b4" duration="0.97" playcount="1" definitionid="fc8e9f77-827a-433f-a58d-ad1007605399" />
     </object>
   </phases>
   <colors />
@@ -18,7 +18,7 @@
         <id value="1" />
       </ids>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="BoundingSphere" start="0.005774276" end="0.7429569" instancename="5a28a8e2-8847-4e01-a810-c1a852a91830">
+        <component class="BoundingSphere" start="0.005634047" end="1.542598" instancename="5a28a8e2-8847-4e01-a810-c1a852a91830">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -27,7 +27,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.005774276,0.7429569" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.005634047,1.542598" />
               </data>
             </property>
             <property id="c1115291-39d1-43a2-8259-31c2ef4dbd93">
@@ -59,7 +59,7 @@
         <id value="4" />
       </ids>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="OverlayMaterial" start="0" end="0.7429569" instancename="c608ad07-f64e-44ad-bd0a-d932515ffae3">
+        <component class="OverlayMaterial" start="1.332339E-08" end="1.541471" instancename="c608ad07-f64e-44ad-bd0a-d932515ffae3">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -68,7 +68,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,0.7429569" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1.332339E-08,1.541471" />
               </data>
             </property>
             <property id="c4298659-2875-4dca-bd1c-6eb147c17032">
@@ -138,8 +138,8 @@
                       <keyframes>
                         <keyframe time="0" value="0" />
                         <keyframe time="0.02790417" value="1" />
-                        <keyframe time="0.9703532" value="1" />
-                        <keyframe time="1" value="0" />
+                        <keyframe time="0.3666032" value="1" />
+                        <keyframe time="1" value="0.5032258" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -321,7 +321,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="Billboard" start="0" end="0.7429569" instancename="e6b9fde4-ca72-42da-934b-1834d8ee464d">
+        <component class="Billboard" start="1.332339E-08" end="1.543725" instancename="e6b9fde4-ca72-42da-934b-1834d8ee464d">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -330,7 +330,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,0.7429569" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1.332339E-08,1.543725" />
               </data>
             </property>
             <property id="743865b1-2100-483e-97d7-dcde81dc5069">

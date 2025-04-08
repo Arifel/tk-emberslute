@@ -3,14 +3,14 @@ SubGoalCombiner SGC_AND
 INITSECTION
 // Attach music resources to a temporary helper item
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
-// A bit of jank to define a range that allows a small amount of player movement during a performance
-//DB_SpecialPerformance_PerformRange_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_SpecialPerformance_Helper_24400c5b-8d53-48f0-b6f1-b4c451fff4ac);
+// A bit of jank to define a focal point for the performers to look at during a performance
+DB_SpecialPerformance_Focus_EmbersLute((ITEMROOT)Emlute_Ring_Focus_Helper_0cf647ea-ec6b-497c-afed-6bdd6a85f522);
 
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",129900);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",195600);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_ENDLESSSPRING",282500);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",282500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",274000);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
 
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3);
@@ -55,8 +55,8 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d8
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075,-2.0,0.0,0.0,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e,2.0,0.0,0.0,1);
 // Spawn the Cambions to the right and left side
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-2.5,0.0,0.0,1);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,2.5,0.0,0.0,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-2.5,0.0,-1.5,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,2.5,0.0,-1.5,1);
 
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
@@ -81,7 +81,7 @@ PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
 IF
 StatusRemoved((CHARACTER)_Performer,_Status,_,_)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
 AND
 DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
 THEN
@@ -91,7 +91,7 @@ PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
 IF
 ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName,_HelperItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName,_HelperItem,_FocusItem)
 AND
 DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
@@ -118,8 +118,10 @@ AND
 DB_RepositionSummon_EmbersLute(_SummonTemplate,_,_,_,1)
 AND
 CharacterGetOwner(_Summon,_Owner)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Owner,_TimerName,_HelperItem,_FocusItem)
 THEN
-LookAtEntity(_Summon,_Owner);
+LookAtEntity(_Summon,_FocusItem);
 
 // "Fix" the music on Improved Countercharm summons by adding a short delay.
 // Feels a bit hacky. Seems to work though. 
@@ -141,40 +143,48 @@ ApplyStatus(_Summon,_Status,-1.0);
 
 // PROCS and QUERIES
 // Starts music on the lead performer, caches active performance and begins a timer
+// Also throws a couple of helper items onto the ground
 PROC
 PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
 AND
 DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
+AND
+DB_SpecialPerformance_Focus_EmbersLute(_FocusTemplate)
 AND
 CreateAtObject(_HelperTemplate,_Performer,0,0,"",1,(ITEM)_HelperItem)
 AND
 GetPosition(_Performer,_X,_Y,_Z)
 AND
 RealSum(_Z,-0.5,_OffsetZ)
+AND
+RealSum(_Z,-9.0,_FocusZ)
+AND
+CreateAt(_FocusTemplate,_X,_Y,_FocusZ,0,0,"",(ITEM)_FocusItem)
 THEN
 TeleportToPosition(_HelperItem,_X,_Y,_OffsetZ,"",0,0,0,0,1);
 ObjectTimerCancel(_Performer,_Song);
 ObjectTimerLaunch(_Performer,_Song,_Duration);
-PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem);
+PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem,_FocusItem);
 
 PROC
-PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
+PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource)
 THEN
-DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem);
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem);
 PlaySoundResource(_HelperItem,_MusicSoundResource);
 
 // Stops music on the lead performer and clears active performance cache
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
 THEN
 PROC_StopMusicOnItem(_Song,_HelperItem);
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
+RequestDelete(_FocusItem);
 ObjectTimerCancel(_HelperItem,"Emlute_DeleteHelperItem");
 ObjectTimerLaunch(_HelperItem,"Emlute_DeleteHelperItem",1000);
 IF

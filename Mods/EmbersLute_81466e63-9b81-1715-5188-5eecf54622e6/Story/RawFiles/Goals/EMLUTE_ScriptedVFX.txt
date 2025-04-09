@@ -15,7 +15,7 @@ DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverl
 DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,76520,24810);
 DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100890,32610);
 DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,133240,20860);
-DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,130000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,96500);
 DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
 DB_ScriptedVFX_EmbersLute("FinalAct","Lead01","Emlute_FinalActL01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
 DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_04",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,251000,23000);

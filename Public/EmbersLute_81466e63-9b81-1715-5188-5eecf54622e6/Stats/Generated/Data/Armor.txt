@@ -19,7 +19,7 @@ new entry "EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B"
 type "Armor"
 using "EMBERS_LUTE_MUSICALSPRITES_BLACK"
 data "RootTemplate" "a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9"
-data "Boosts" "UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)"
+data "Boosts" "UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Instrument_Generic_FX_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)"
 
 new entry "EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_A"
 type "Armor"

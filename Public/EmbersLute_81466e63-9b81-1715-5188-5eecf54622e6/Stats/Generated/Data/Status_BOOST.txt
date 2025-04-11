@@ -832,6 +832,13 @@ data "DisplayName" "hd678a989g2473g8e79ga2bcga2ce1c6fc849;1"
 data "Description" "h404e4e2dgcc60g162ag645eg13711b0f1725;1"
 data "StatusEffect" "ed2f8ab6-29cb-4a74-bb3f-a007f000e0fd"
 
+new entry "EMLUTE_INSTRUMENT_FX_01_GREENBLACK"
+type "StatusData"
+data "StatusType" "BOOST"
+using "EMLUTE_SPRITES_LUTE_WHITEMUSIC_VFX_01"
+data "DisplayName" "h7dbb6b6bgd386gdb0bg0cb3gb4af67b20255;1"
+data "StatusEffect" "fd5b63f3-ae74-4916-bb13-10074f5dd90c"
+
 new entry "EMLUTE_ANNOYING_LUTE_VFX"
 type "StatusData"
 data "StatusType" "BOOST"

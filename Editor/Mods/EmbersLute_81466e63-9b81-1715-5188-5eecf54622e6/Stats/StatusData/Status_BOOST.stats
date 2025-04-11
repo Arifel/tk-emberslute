@@ -1009,6 +1009,15 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ed2f8ab6-29cb-4a74-bb3f-a007f000e0fd" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42ae36f8-f782-439b-ac2e-57556c329b4c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_01_GREENBLACK" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="481fe9ec-5931-48a8-bfcc-d530853cf7b7" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dbb6b6bgd386gdb0bg0cb3gb4af67b20255" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="fd5b63f3-ae74-4916-bb13-10074f5dd90c" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF00008B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b6d522ab-eded-4067-9764-e9cb87a1a868" />

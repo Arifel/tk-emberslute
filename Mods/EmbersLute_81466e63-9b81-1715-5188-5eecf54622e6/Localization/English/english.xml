@@ -528,9 +528,14 @@
   <content contentuid="hd6fa340age6eeg1995g1719g545f9cd26e21" version="1">If you can see this it is a bug.</content>
   <content contentuid="h2a9e83b0g63dbg7a95ged85gb47ff185f324" version="1">|HIDDEN| Hidden</content>
   <content contentuid="h5d0fc44dg26bcg48c3g125egb2e9abe6af61" version="1">If you can see this it is a bug.</content>
-  <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="8">Channelling Legendary Performance</content>
-  <content contentuid="h83e49317gdb1bgbe93g919cg51fff35b1311" version="1">Channelling Legendary Performance</content>
+  <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="9">Channelling Legendary Performance</content>
+  <content contentuid="h83e49317gdb1bgbe93g919cg51fff35b1311" version="2">Channelling Legendary Performance</content>
   <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="3">Lute of Musical Sprites (Dyeable)</content>
   <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="3">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
   <content contentuid="h97278cdeg4b64g18c2g445fg5af667162109" version="3">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h7dbb6b6bgd386gdb0bg0cb3gb4af67b20255" version="1">Dark Green Visual</content>
+  <content contentuid="h29b0970agc7bbgd8b9g34f8gf5a579cc3767" version="1">Instrument FX</content>
+  <content contentuid="hbac33624gd334gc351ge358g650927d12022" version="1">Apply a visual to the equipped instrument.</content>
+  <content contentuid="h0bef3321gcd94g6236ga21eg71de3c34bc96" version="1">Clear Effects</content>
+  <content contentuid="h088d33f3g1888g566dg2086ga72db2b0eee5" version="1">Clear any visual effects from the equipped instrument.</content>
 </contentList>

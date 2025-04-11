@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <save>
-	<version major="4" minor="8" revision="0" build="10" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<version major="4" minor="7" revision="1" build="3" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
 	<region id="VisualBank">
 		<node id="VisualBank">
 			<children>
 				<node id="Resource">
-					<attribute id="ID" type="FixedString" value="ab0a41aa-2605-49c7-bfad-3ffb4c616a09" />
-					<attribute id="Name" type="LSString" value="EmbersLute_Guitar_Lute_A_Small" />
-					<attribute id="SourceFile" type="LSString" value="Generated/Public/EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6/EmbersLute_Lute_A_Smol2_Ref.GR2" />
+					<attribute id="ID" type="FixedString" value="a3b494f9-5359-52ee-4bca-4244a38d04e9" />
+					<attribute id="Name" type="LSString" value="EmbersLute_Lute_B_Annoying_Dyeable" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6/EmbersLute_Lute_A_Strings_Ref.GR2" />
 					<attribute id="Slot" type="FixedString" value="Unassigned" />
 					<attribute id="RemapperSlotId" type="FixedString" value="" />
 					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
 					<attribute id="AttachBone" type="FixedString" value="" />
-					<attribute id="Template" type="FixedString" value="Generated/Public/EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6/EmbersLute_Lute_A_Smol2_Ref.Dummy_TOOL_GEN_Music_Guitar_Lute_A_REF.0" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6/EmbersLute_Lute_A_Strings_Ref.Dummy_TOOL_GEN_Music_Guitar_Lute_B_REF.0" />
 					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
 					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
 					<attribute id="SkeletonResource" type="FixedString" value="" />
@@ -23,13 +23,13 @@
 					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
 					<attribute id="MaterialType" type="uint8" value="0" />
 					<attribute id="HairType" type="uint8" value="0" />
-					<attribute id="BoundsMin" type="fvec3" value="-0.20144269 -0.20161936 -0.60469586" />
-					<attribute id="BoundsMax" type="fvec3" value="0.20295942 0.21611133 0.8499097" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.2144358 -0.2144359 -0.6306182" />
+					<attribute id="BoundsMax" type="fvec3" value="0.2144358 0.2144358 0.8766328" />
 					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
 					<children>
 						<node id="Objects">
-							<attribute id="ObjectID" type="FixedString" value="EmbersLute_Lute_A_Smol_Ref.MUSIC_GEN_Guitar_Lute_A_REF_Mesh.0" />
-							<attribute id="MaterialID" type="FixedString" value="a475fd40-fe91-ccd2-03c0-d4fdb9a9fa68" />
+							<attribute id="ObjectID" type="FixedString" value="EmbersLute_Lute_A_Strings_Ref.MUSIC_GEN_Guitar_Lute_B_REF_Mesh.0" />
+							<attribute id="MaterialID" type="FixedString" value="054d48f2-4fd5-d372-157a-eeff4a3d8c16" />
 							<attribute id="LOD" type="uint8" value="0" />
 						</node>
 						<node id="AnimationWaterfall">

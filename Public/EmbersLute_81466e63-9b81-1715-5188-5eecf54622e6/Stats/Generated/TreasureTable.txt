@@ -10,6 +10,8 @@ object category "I_EMBERS_LUTE_MUSICALSPRITES_WHITE",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_A",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Ensembles"
 CanMerge 1

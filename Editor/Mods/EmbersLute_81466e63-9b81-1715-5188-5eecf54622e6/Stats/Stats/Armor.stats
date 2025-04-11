@@ -30,7 +30,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa511bfa-913f-4467-b3b0-06c6f2b3148f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_A" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce785834-a430-4f7b-b938-0c85994bdf9e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a1f03ba7-4ed4-4749-9443-6d4599fc0f3b" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
     <stat_object color="#FF360F38" is_substat="false">

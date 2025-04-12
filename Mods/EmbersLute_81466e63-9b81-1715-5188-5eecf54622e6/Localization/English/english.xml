@@ -406,9 +406,9 @@
   <content contentuid="h846a9e2bg65ffg3107gb021gecb41913982e" version="5">Spells to summon a chest of instruments.</content>
   <content contentuid="h956b0300g00f6g0aa7geb8dg85b845848716" version="1">Ember's Lute - Thank You!</content>
   <content contentuid="ha28ed037gd4b6gc6cbgf5ecg80599a246ca0" version="1">A quick thank you, and a few tips to get you started.</content>
-  <content contentuid="h0f52bb73gd3degc0b8g4477g50a6c7983f3c" version="4">Lute of Musical Sprites (Alfira's Lute)</content>
-  <content contentuid="hc1a0e614ge9b8g8117gbbc7g0d3d2f3617ca" version="4">A variant of the Lute of Musical Sprites with the vanilla lute B visual. Differences are aesthetic only.</content>
-  <content contentuid="h41e51316g2a3dg2317g1fe5gb5fa7f619679" version="4">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h0f52bb73gd3degc0b8g4477g50a6c7983f3c" version="5">Lute of Musical Sprites (Alfira's Lute)</content>
+  <content contentuid="hc1a0e614ge9b8g8117gbbc7g0d3d2f3617ca" version="5">A variant of the Lute of Musical Sprites with the vanilla lute B visual. Differences are aesthetic only.</content>
+  <content contentuid="h41e51316g2a3dg2317g1fe5gb5fa7f619679" version="5">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="ha1cac233g8866gc4d2g1aafgb3c6d7e51c05" version="1">Summon Instrument Chest</content>
   <content contentuid="hbc42e4d9g3d93g594bg6949gbc79bf97cd5f" version="3">Summon Ember's chest of instruments into your inventory for [1] turns. </content>
   <content contentuid="h3b589fc0gd5b8gdd65g76c7g3696e6982694" version="3">After [1] turns, any remaining chest contents will disappear along with the chest.</content>
@@ -530,9 +530,9 @@
   <content contentuid="h5d0fc44dg26bcg48c3g125egb2e9abe6af61" version="1">If you can see this it is a bug.</content>
   <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="9">Channelling Legendary Performance</content>
   <content contentuid="h83e49317gdb1bgbe93g919cg51fff35b1311" version="2">Channelling Legendary Performance</content>
-  <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="3">Lute of Musical Sprites (Dyeable)</content>
-  <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="3">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
-  <content contentuid="h97278cdeg4b64g18c2g445fg5af667162109" version="3">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="4">Lute of Musical Sprites (Dyeable)</content>
+  <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="4">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
+  <content contentuid="h97278cdeg4b64g18c2g445fg5af667162109" version="4">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="h7dbb6b6bgd386gdb0bg0cb3gb4af67b20255" version="1">Dark Green Visual</content>
   <content contentuid="h29b0970agc7bbgd8b9g34f8gf5a579cc3767" version="1">Instrument FX</content>
   <content contentuid="hbac33624gd334gc351ge358g650927d12022" version="1">Apply a visual to the equipped instrument.</content>

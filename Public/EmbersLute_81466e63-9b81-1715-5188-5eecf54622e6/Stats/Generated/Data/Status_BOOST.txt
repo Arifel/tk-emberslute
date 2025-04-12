@@ -844,7 +844,7 @@ type "StatusData"
 data "StatusType" "BOOST"
 using "EMLUTE_VARNISH_INSTRUMENT_GNOME"
 data "Icon" "EmbersLute_Spell_PerformWithSprites"
-data "Boosts" "Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE)"
+data "Boosts" "Tag(EMLUTE_VFX_SPRITES);Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE);"
 
 new entry "EMLUTE_VARNISH_INSTRUMENT_COMBAT"
 type "StatusData"

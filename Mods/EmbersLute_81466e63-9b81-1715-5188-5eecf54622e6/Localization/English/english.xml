@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="15">Lute of Musical Sprites (Black)</content>
+  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="16">Lute of Musical Sprites (Black)</content>
   <content contentuid="hcc751221g7408g56e7gf2d8g79f22adae505" version="1">Musical Maestro</content>
   <content contentuid="h3ff672ccg53d4gec6bg0d4fg0dec3f5eb2ae" version="1">Emitting an aura of instruction to nearby musical sprites and spirits.</content>
   <content contentuid="h42b4d5a9gba63g5347ga182g2e0ed376f363" version="1">|HIDDEN| Hidden</content>
@@ -81,15 +81,15 @@
   <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="11">Lute of Musical Sprites (Gold Edges)</content>
   <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="11">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="9">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="9">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="10">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="10">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="7">Musical Sprites Instruments</content>
   <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="7">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
   <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="7">Instrument Chest</content>
   <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="7">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
-  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="8">Lute of Musical Sprites (White)</content>
-  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="8">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="9">Lute of Musical Sprites (White)</content>
+  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="9">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="9">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hb6cf612cgfa35g5e6bg3cc1gf32d239e655b" version="8">Lute of Musical Sprites (VT TEST)</content>
   <content contentuid="hc22b08b0g6fc3g7924gd3a6gb6f1df879da0" version="8">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="hba31e0dfg7022g3dc5gedb9gf51e7e56a9a1" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
@@ -388,9 +388,9 @@
   <content contentuid="hc3abf254g70d2g4d52g8eaag46147e1132f5" version="7">Varnish |Musical Sprites|</content>
   <content contentuid="h899cb795gcdf0g0734g2eb3ge94dfcaa6b68" version="6">The effects of this varnish will be removed when you unequip the instrument.</content>
   <content contentuid="hbc6b9702g551eg4022g9219g0feeb6254bcf" version="7">Apply this varnish to your equipped instrument, and musical sprites will appear when you perform music.</content>
-  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="9">Violin of Musical Sprites (White)</content>
-  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="8">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
-  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="9">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
+  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="10">Violin of Musical Sprites (White)</content>
+  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="9">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
+  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="10">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
   <content contentuid="h2478c860gbc4cg35d5ga13fga1d99c6567e3" version="1">Whenever 'Sing For Me' is performed nearby, the victim of this curse will be compelled to join the performance.</content>
   <content contentuid="h5246bd21g12a7g74a7gde83g969dd8ff4547" version="1">Share Mild Mockery</content>
   <content contentuid="h528c26b2g17b0g65fag1e99g84be790a560b" version="1">The lute spirit will grant the cantrip Mild Mockery to your current party. This'll be mean!</content>

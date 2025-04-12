@@ -1022,7 +1022,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_SPRITES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7f0559a9-e833-4ac2-929f-12de8bfab277" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_VFX_SPRITES);Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1E4235" is_substat="false">

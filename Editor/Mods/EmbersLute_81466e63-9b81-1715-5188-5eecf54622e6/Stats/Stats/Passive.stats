@@ -78,6 +78,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Advantage(Skill,Performance);ActionResource(BardicInspiration, 1, 0);" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">
@@ -181,6 +182,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8f71ba7gb88agfeceg7cbcg989d20d0ddef" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hfe2cf332g8877gf310g74f7geb0b38235a61" version="2" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hac6a79d6g5bffg87ccga9e7g2198b6ce3610" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object color="#FFB61EBF" is_substat="false">
@@ -194,6 +196,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="GROUND:IF(not HasAllyWithinRange('',9,'EMLUTE_TIEFLING_BARD_SPIRIT')):Summon(43d08735-7bb2-48a4-a446-b8814d4409c6,UntilLongRest,,,'EmluteTieflingBardSpirit',,UNSUMMON_ABLE,EMLUTE_HAND_PURPLE_VFX)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1da5ad67gb64bg0e61g31d8g22fd48254f21" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h775efe02gff44g429bg4511g169f353dca24" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="5" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">

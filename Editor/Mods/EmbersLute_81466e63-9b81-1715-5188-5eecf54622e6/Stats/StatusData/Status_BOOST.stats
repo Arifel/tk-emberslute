@@ -1257,7 +1257,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_VARNISH_INSTRUMENT_COMBAT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ff1ea0ca-23c0-4b65-ba44-950cadf4e3f4" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Perform_Combat" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE_COMBAT_MODE);Tag(EMLUTE)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_VFX_SPRITES);Tag(EMLUTE_SPIRIT_INSTRUMENT);Tag(EMLUTE_SPIRIT_MODE);Tag(EMLUTE_COMBAT_MODE);Tag(EMLUTE);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1E4235" is_substat="false">

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="b0a55319-d450-4430-acb5-2807ca155106" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_ApplyEffect_PerformPositive">
+  <EffectInfo UUID="8da66a9e-2ad6-47ff-9170-350b4468c3cb" EffectResourceGuid="75227732-f49b-53ba-71d5-678c15c1316f" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_BodyFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

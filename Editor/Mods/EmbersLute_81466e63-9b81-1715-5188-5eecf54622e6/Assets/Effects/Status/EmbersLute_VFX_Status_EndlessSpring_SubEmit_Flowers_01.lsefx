@@ -5776,8 +5776,8 @@
                     </rampchannel>
                     <rampchannel type="Spline" id="60cb774b-d823-46c9-a1fc-16c793215279" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="2.580643" />
-                        <keyframe time="1" value="2.580643" />
+                        <keyframe time="0" value="0" />
+                        <keyframe time="1" value="0" />
                       </keyframes>
                     </rampchannel>
                     <rampchannel type="Spline" id="c052b4e6-5b06-47dd-a67f-08c1c710cb5f" selected="False">

@@ -368,7 +368,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_WeepingDawn" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_WEEPINGDAWN')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -377,7 +377,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_HarpySong" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_HARPYSONG');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_HARPYSONG_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_HARPYSONG_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -386,7 +386,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_EndlessSpring" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_ENDLESSSPRING');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -395,7 +395,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_WaterQueen" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_WATERQUEEN');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WATERQUEEN_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WATERQUEEN_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -404,7 +404,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_FinalAct" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_FINALACT');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_FINALACT_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_FINALACT_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -413,7 +413,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_ThePowerVocals" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_THEPOWERVOCALS');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000080" is_substat="false">

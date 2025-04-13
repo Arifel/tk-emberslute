@@ -591,7 +591,7 @@ data "DisplayName" "h66bf518eg7a75g21a8g8ed3g9d22f0f1fdb0;1"
 data "Description" "h7c224ed9g4b42gc0e6gb6e6geec2847decba;1"
 data "Icon" "Action_Bard_GrantBardicInspiration"
 data "Boosts" "Proficiency(MusicalInstrument);Skill(Performance,2)"
-data "Passives" "Emlute_Musical_Spirit;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3"
+data "Passives" "Emlute_Musical_Spirit;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3;Emlute_Join_WeepingDawn;Emlute_Join_HarpySong;Emlute_Join_EndlessSpring;Emlute_Join_WaterQueen;Emlute_Join_FinalAct;Emlute_Join_ThePowerVocals;"
 
 new entry "EMLUTE_PORTAL_CCMODE"
 type "StatusData"

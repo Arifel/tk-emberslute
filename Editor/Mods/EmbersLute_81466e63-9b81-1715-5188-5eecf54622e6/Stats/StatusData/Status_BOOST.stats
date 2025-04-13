@@ -7,6 +7,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4a325cf8-bc81-4f35-b92f-0edbbdfac054" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not Combat() and (((not IsStatusEvent(StatusEvent.OnMove)) and Emlute_EventBreaksPerformance()) or (IsStatusEvent(StatusEvent.OnMove) and (not HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE',context.Source))))) or (Combat() and Emlute_EventBreaksInCombatPerformance())" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="64cac8bb-445e-4e2c-9b4d-7932d0025ff9" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -89,7 +90,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h44ed2f5cg3991ge7f0g326egfca8c7845e7f" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbc2373f8g7784g6757gd364ga191e4146e4b" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" color="#FFFF00FF" value="TARGET:IF((Tagged('EMLUTE_TIEFLING_BARD_SPIRIT')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_WEEPINGDAWN);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" color="#FFFF00FF" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit') or Tagged('BARD')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_WEEPINGDAWN);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_WeepingDawn" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bf2305e8-94e7-403e-af95-7d9c1723a289" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
@@ -713,7 +714,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7ef73832-c21c-4774-90b8-beded3cff0db" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_MUSICAL_SPIRIT_TEMPORARY" />

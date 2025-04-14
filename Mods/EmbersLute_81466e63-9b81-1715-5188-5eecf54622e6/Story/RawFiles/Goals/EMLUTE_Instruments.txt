@@ -55,6 +55,8 @@ DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_FallenSpirits",
 DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform",2300);
 DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Vocal",2310);
 DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_TieflingBard",2320);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Cambions",2330);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_WaveServants",2340);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
 KBSECTION
@@ -118,6 +120,101 @@ AND
 IsTagged(_Instrument, _Tag, 1)
 THEN
 PROC_Emlute_AddPassive(_Character, _PassiveToggle);
+
+///////////////////////////////////////////////////////////////////
+// Master configuration management for Ember's Lute music mods.
+// Spell container is added and removed on game enter and exit.
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Avatars(_Player)
+AND
+HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute",0)
+THEN
+AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
+///////////////////////////////////////////////////////////////////
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressMusicVFX",_,_,_)
+THEN
+DebugText(_Caster, "Disabling custom music VFX");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_MUSIC_VFX_OFF_cbd8c300-6187-4013-986c-4a50f066496a);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableMusicVFX",_,_,_)
+THEN
+DebugText(_Caster, "Enabling custom music VFX");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_MUSIC_VFX_OFF_cbd8c300-6187-4013-986c-4a50f066496a);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressSprites_All",_,_,_)
+THEN
+DebugText(_Caster, "Disabling automatic sprite summoning");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_OFF_24b6dd71-78cf-4769-bd59-e5d3a7ddd10e);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableSprites_All",_,_,_)
+THEN
+DebugText(_Caster, "Enabling automatic sprite summoning");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_OFF_24b6dd71-78cf-4769-bd59-e5d3a7ddd10e);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressSprites_Vocal",_,_,_)
+THEN
+DebugText(_Caster, "Disabling automatic whistle sprite summoning");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_VOCAL_ON_d20368a4-4c7b-49c5-8c8f-78fddfdd8a20);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableSprites_Vocal",_,_,_)
+THEN
+DebugText(_Caster, "Enabling automatic whistle sprite summoning");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_VOCAL_ON_d20368a4-4c7b-49c5-8c8f-78fddfdd8a20);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_TieflingBard",_,_,_)
+THEN
+DebugText(_Caster, "Disabling automatic summoning of tiefling bard");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_01b06454-64c0-4fd1-9f6e-94d9f3d3332f);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableSummon_TieflingBard",_,_,_)
+THEN
+DebugText(_Caster, "Enabling automatic summoning of tiefling bard");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_01b06454-64c0-4fd1-9f6e-94d9f3d3332f);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_Cambions",_,_,_)
+THEN
+DebugText(_Caster, "Disabling automatic summoning of cambions");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableSummon_Cambions",_,_,_)
+THEN
+DebugText(_Caster, "Enabling automatic summoning of cambions");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_WaveServant",_,_,_)
+THEN
+DebugText(_Caster, "Disabling automatic summoning of wave servant");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableSummon_WaveServant",_,_,_)
+THEN
+DebugText(_Caster, "Enabling automatic summoning of wave servant");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b);
+UseSpell(_Caster,"Shout_Dismiss_All_MusicalSpirits",_Caster);
+
+//
+// End config manager
+///////////////////////////////////////////////////////////////////
+
 
 PROC
 PROC_Emlute_RemovePassiveToggle((CHARACTER)_Character, (ITEM)_Instrument, (STRING)_PassiveToggle)

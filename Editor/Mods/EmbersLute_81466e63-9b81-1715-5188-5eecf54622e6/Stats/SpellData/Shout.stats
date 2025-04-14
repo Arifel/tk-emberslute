@@ -93,30 +93,6 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ade0e715-88ad-424b-b481-eec6b2042984" />
-        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stop_Emlute" />
-        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Custom_Emlute" />
-        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hddbef208ge72dge604g46dag7d3d89cc7bef" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="1" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="TargetSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
-        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
-      </fields>
-    </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
@@ -174,6 +150,30 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_FINALACT,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h535a168bgdb7fg7c8ega59dgddd1a3500012" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ade0e715-88ad-424b-b481-eec6b2042984" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stop_Emlute" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Custom_Emlute" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self();" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hddbef208ge72dge604g46dag7d3d89cc7bef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="InstrumentComponentPrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="InstrumentComponentLoopingSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="InstrumentComponentCastSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="InstrumentComponentImpactSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="03496c4a-49e0-4132-b585-3e5ecd1ad8e5,,;,,;bcc3b0d9-f04f-4448-aab0-e0ad641167cc,,;bf924cc6-8b39-4c3b-b1c0-eda264cf6150,,;a9682ef9-5d9e-4ac0-8144-2c7fe6eb868c,,;,,;32fb4d91-7fde-4b05-9144-ea87b9a4284a,,;,,;,," />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -657,6 +657,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_SPRITES_INSTRUMENT_VFX_CLEAR,100,1);ApplyEquipmentStatus(MusicalInstrument,EMLUTE_FLOATING_SPIRIT_VFX_CLEAR,100,1)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0bef3321gcd94g6236ga21eg71de3c34bc96" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h088d33f3g1888g566dg2086ga72db2b0eee5" version="1" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF35043D" is_substat="false">
@@ -817,6 +818,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DismissSummon" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h48c7dce6g954aga0bfg21f1g10eea9ea818b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9e2294cfg2633g6a33g7ec9g281543745289" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AOE:ApplyStatus(UNSUMMON_ACTIVE,100,-1);AOE:Unsummon();IF(HasStatus('EMLUTE_SPIRIT_MGMT_AURA')):RemoveStatus(EMLUTE_SPIRIT_MGMT_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF511251" is_substat="false">
@@ -963,6 +965,177 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_RemoveGlowMap" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e4a9284gec9fg710bg38dag7613649d2596" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcff324c6gcae6g9ecegccffg2f1ec3664e41" version="1" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="ConfigManager_Cont_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="958bb940-cf60-4c2e-94e1-a963e48a9b09" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Config_EnableMusicVFX;Shout_Config_SuppressMusicVFX;Shout_Config_EnableSprites_All;Shout_Config_SuppressSprites_All;Shout_Config_EnableSprites_Vocal;Shout_Config_SuppressSprites_Vocal;Shout_Config_EnableMusicVFX;Shout_Config_SuppressMusicVFX;Shout_Config_EnableSummon_TieflingBard;Shout_Config_SuppressSummon_TieflingBard;Shout_Config_EnableSummon_Cambions;Shout_Config_SuppressSummon_Cambions;Shout_Config_EnableSummon_WaveServant;Shout_Config_SuppressSummon_WaveServant;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc70fd49bg8b13geabdg8b8agc81effe4eac0" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72105f66g5341g572fg9ce2gac8cf863069b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressMusicVFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d0495155-26ad-486b-b737-899c5e2c7b21" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9aa944e8g0a3ag1683g0d9dg6857527ea24a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8181c028g73b8g9077g69e2gd7713fdbf657" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IgnoreSilence" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_MUSIC_VFX_OFF');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3aee1889-b6bc-4f9b-8d87-562f9e90b57b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSprites_All" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h02479751gb68cgfa2fg3dd9g9078a28a3a60" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea2dda04g8303g8008g1229g2b076d666835" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h72b680a7ga96cg4fa1g5feag65c814a34568" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_SpriteSummoning" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SPRITES_OFF');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="03c011fa-69c2-47e3-ae9e-26c20e787f16" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSprites_Vocal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4ae208degdaa5g748dg6796ge7dda04a2537" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf773fbaag17a7g3bf2g213cg5665387ab280" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h30a50572gaec8gbb56g2208g027c78ad410f" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_SpriteSummoningVocals" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SPRITES_VOCAL_ON');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b04c794-1dec-4b19-9b15-544a31e29bda" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_TieflingBard" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Tiefling_Female" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdac87f91g5db6g2dd6gdaf8gd042a9c03419" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca9d8ee3gf76bg4a5eg4d80g0b516f19d452" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="86961017-3d62-4eb0-b887-edbb67fc2dd9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_Cambions" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Tiefling_Male" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc10aeadfg4947gd744gcb8dgd0372db25e87" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8db4fdeg9f43g0180gbd39gdc56b30539b1" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF');" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b11ce87c-4955-4995-bfe4-029b0b74e4c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_WaveServant" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Human_Female" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42e87855gc850gb91bg8b90g58a40c88a908" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc77418bfg9561g4799gcc1eg19cbde572c9d" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8154e5d-0e45-42b5-b4b8-aa410d0ce99d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableMusicVFX" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he89a3d8dg6246gc951g6d61gf6aa9ad91f47" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0caf697cgbec6g6030gbf10gb2e0e6352d74" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_MUSIC_VFX_OFF');" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ff192099-2075-4e79-9f83-b51292137c1e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSprites_All" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6782bb48g24b5g9f65gd49egadffae0c63d6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6419fae4g8b60g4d9cg3934g49244f6afaf3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_SpriteSummoning" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h68148027ga1dcgc2fegcea4g0f3ec344b138" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SPRITES_OFF');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="398492df-81fb-4e64-af73-0ee0e2fc9a78" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSprites_Vocal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_SpriteSummoningVocals" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64a9abc6g2addg62c4gcb92g5391e863d2b4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e7eda0fgce03gd0c9g191egc503bbda6a44" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he149a56dg193fga615g17deg8a2264d38142" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SPRITES_VOCAL_ON') and not Tagged('EMLUTE_CONFIG_SPRITES_OFF');" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ca18449-568d-429a-82e4-00e2e9bc0c17" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_TieflingBard" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Tiefling_Female" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h20193ebfgd77bg4bc4g5d7cgc9ee8382ff48" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde7decedg1b38g5e89g00d4gd8843591b27f" version="2" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF')" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ad1b132-bd96-4823-9a86-10ed64ed1523" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_Cambions" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Tiefling_Male" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he084c866g9234g95b8ge27bg1e97684de8c1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h139d865egc44ag422dgd306g89356c1d5f73" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF');" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF242323" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="126cc254-203f-4fb5-9eee-82a71a3324df" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_WaveServant" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_DisguiseSelf_Human_Female" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h419d5e9dg36bcg56b9gf141gd2a8b14547ed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he088d50bge35egb44fg4ba9g044528c6d527" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
       </fields>
     </stat_object>
   </stat_objects>

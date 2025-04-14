@@ -538,4 +538,34 @@
   <content contentuid="hbac33624gd334gc351ge358g650927d12022" version="1">Apply a visual to the equipped instrument.</content>
   <content contentuid="h0bef3321gcd94g6236ga21eg71de3c34bc96" version="1">Clear Effects</content>
   <content contentuid="h088d33f3g1888g566dg2086ga72db2b0eee5" version="1">Clear any visual effects from the equipped instrument.</content>
+  <content contentuid="h9aa944e8g0a3ag1683g0d9dg6857527ea24a" version="1">Disable Music VFX</content>
+  <content contentuid="h8181c028g73b8g9077g69e2gd7713fdbf657" version="1">All custom visual effects for musical performances will be suppressed.</content>
+  <content contentuid="h02479751gb68cgfa2fg3dd9g9078a28a3a60" version="1">Disable Sprite Summoning</content>
+  <content contentuid="hea2dda04g8303g8008g1229g2b076d666835" version="1">Performances on Musical Sprites instruments will stop automatically summoning instrument sprite helpers to complete songs.</content>
+  <content contentuid="h72b680a7ga96cg4fa1g5feag65c814a34568" version="1">Instrument toggles to conduct party members in and out of performances are not affected by this setting.</content>
+  <content contentuid="h4ae208degdaa5g748dg6796ge7dda04a2537" version="1">Disable Whistling Sprite</content>
+  <content contentuid="hf773fbaag17a7g3bf2g213cg5665387ab280" version="1">Performances on Musical Sprites instruments will not summon whistling sprites to complete songs.</content>
+  <content contentuid="h30a50572gaec8gbb56g2208g027c78ad410f" version="2">This setting does not affect the Annoying Lute whistling.</content>
+  <content contentuid="hc70fd49bg8b13geabdg8b8agc81effe4eac0" version="1">Config Manager</content>
+  <content contentuid="h72105f66g5341g572fg9ce2gac8cf863069b" version="1">Adjust preferences for Ember's Lute music mods.</content>
+  <content contentuid="h6782bb48g24b5g9f65gd49egadffae0c63d6" version="1">Enable Sprite Summoning</content>
+  <content contentuid="h6419fae4g8b60g4d9cg3934g49244f6afaf3" version="1">Performances on Musical Sprites instruments will summon instrument sprite helpers to complete songs.</content>
+  <content contentuid="h64a9abc6g2addg62c4gcb92g5391e863d2b4" version="1">Enable Whistling Sprite</content>
+  <content contentuid="h1e7eda0fgce03gd0c9g191egc503bbda6a44" version="2">Enable to add whistling to the sprite types auto summoned by Musical Sprites instruments.</content>
+  <content contentuid="he149a56dg193fga615g17deg8a2264d38142" version="1">This setting does not affect the Annoying Lute whistling.</content>
+  <content contentuid="h68148027ga1dcgc2fegcea4g0f3ec344b138" version="1">Instrument toggles to conduct party members in and out of performances are not affected by this setting.</content>
+  <content contentuid="hdac87f91g5db6g2dd6gdaf8gd042a9c03419" version="1">Disable Tiefling Bard</content>
+  <content contentuid="hca9d8ee3gf76bg4a5eg4d80g0b516f19d452" version="1">Do not auto summon a tiefling bard for musical performances.</content>
+  <content contentuid="h20193ebfgd77bg4bc4g5d7cgc9ee8382ff48" version="1">Enable Tiefling Bard</content>
+  <content contentuid="hde7decedg1b38g5e89g00d4gd8843591b27f" version="2">Enable to auto summon a tiefling bard for musical performances of The Weeping Dawn and The Power.</content>
+  <content contentuid="he89a3d8dg6246gc951g6d61gf6aa9ad91f47" version="1">Enable Music VFX</content>
+  <content contentuid="h0caf697cgbec6g6030gbf10gb2e0e6352d74" version="1">Enable the custom visual effects for musical performances.</content>
+  <content contentuid="hc10aeadfg4947gd744gcb8dgd0372db25e87" version="1">Disable Cambions</content>
+  <content contentuid="he8db4fdeg9f43g0180gbd39gdc56b30539b1" version="1">Do not auto summon cambions for performances of the Final Act.</content>
+  <content contentuid="h42e87855gc850gb91bg8b90g58a40c88a908" version="1">Disable Waveservant</content>
+  <content contentuid="hc77418bfg9561g4799gcc1eg19cbde572c9d" version="1">Do not auto summon waveservants for performances of the Umberlee Hymn.</content>
+  <content contentuid="he084c866g9234g95b8ge27bg1e97684de8c1" version="1">Enable Cambions</content>
+  <content contentuid="h139d865egc44ag422dgd306g89356c1d5f73" version="1">Enable to auto summon a cambions for musical performances of The Final Act.</content>
+  <content contentuid="h419d5e9dg36bcg56b9gf141gd2a8b14547ed" version="1">Enable Waveservant</content>
+  <content contentuid="he088d50bge35egb44fg4ba9g044528c6d527" version="1">Enable to summon wave servants for performances of Umberlee's Hymn.</content>
 </contentList>

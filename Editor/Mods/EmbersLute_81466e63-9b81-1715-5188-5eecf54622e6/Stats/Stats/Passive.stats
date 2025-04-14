@@ -245,7 +245,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_DrumsToggle" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc5e95c27g1620g7bd8g703fg706cce751286" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7a98a23dgec8bgb90fg7f14ga586eedea107" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Drum" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_ToggleDrum" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_DRUMS_ON)" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="150" />
@@ -257,7 +257,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_FlutesToggle" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81a69cd1ga18egfdb2g52b3g50bc735ad028" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0fb443aag13faga7e5ga607gcfae29296176" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Flute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_ToggleFlute" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_FLUTES_ON)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
@@ -269,7 +269,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_ViolinsToggle" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9191d535g39deg07b1gae71g8ae8215d9d95" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1e2dbafag0c42gc954g2ad2ga23dc4d814ae" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Violin" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_ToggleViolin" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_VIOLINS_ON)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
@@ -279,7 +279,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d3375a8c-bcb5-41cb-9a95-62759c268f6c" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_LyresToggle" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Lyre" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_ToggleLyre" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_LYRES_ON)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
@@ -291,7 +291,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d8109b6b-5966-4516-ba06-7d6cee9a6eb8" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_LutesToggle" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Lute" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_ToggleLute" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_LUTES_ON)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
@@ -306,7 +306,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="15081ff9-f20c-4dd9-b825-3b29fe1dcd9e" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb1491831gf18eg5f2cge6b9g4741e6512b12" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b221e78g830bg849bgaf1dga98e9e4fc49a" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Perform_Voice" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_ToggleVoice" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_VOCALS_ON)" />
       </fields>
     </stat_object>

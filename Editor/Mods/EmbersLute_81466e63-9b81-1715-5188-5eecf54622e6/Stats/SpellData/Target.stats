@@ -232,7 +232,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="CanStand('') and not Character() and not Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Countercharm_Improved" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ImprovedCounterCharm" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1e0e3c22gb61eg0163gf738g2e0f652ef1a8" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h23844e56g13a1gfa75g260ag56d6ad728926" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9);+1" />
@@ -247,7 +247,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Chaoscharm_Container_Emlute" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_AURA);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA);GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Chaoscharm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Chaoscharm" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfda178e4g0506g018agb03eg990f02557f44" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcb8f3391g4d41gbafagf991g4f34583d0e9e" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -262,6 +262,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(913c7b82-cd4c-4bd4-b354-69fde9692684,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_AURA_COMBAT);GROUND:Summon(f0f9422a-41cf-46bb-9ade-af9aa92fa652,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA);GROUND:Summon(ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,3,,,'ImprovedCountercharm',,EMLUTE_CHAOSCHARM_NOAURA)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2a62d09gfd1agf2b9gac3ag355b0c3bcbd5" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h266b8a4dg8c95gd272g15abg09f2f4f22f7f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Chaoscharm_Combat" />
       </fields>
     </stat_object>
     <stat_object color="#FF000080" is_substat="false">

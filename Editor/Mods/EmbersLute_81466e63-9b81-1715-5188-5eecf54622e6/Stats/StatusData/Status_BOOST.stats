@@ -125,6 +125,7 @@
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_HarpySong" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6fefc8f9-31bd-46d7-bfaf-1f834ecfa46a" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_HarpySong" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -154,6 +155,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit') or Tagged('BARD')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_ENDLESSSPRING);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_EndlessSpring" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a6814be1-8954-47d5-97ad-c89210f3c89d" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -183,6 +185,7 @@
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Performing" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9097cd53-551e-470e-a5f4-2938c9510bc0" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_UmberleeHymn" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -211,6 +214,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit') or Tagged('BARD')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_FINALACT);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_FinalAct" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c5017809-0087-43d3-aefc-e0d55e029849" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_FinalAct" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -785,7 +789,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4d4f4e63g4dd3gc339ga8e4gc8ec0d413d82" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfac34e33g0e84g680fgd292gc6dc36cbedd5" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ImprovedCounterCharm" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ChaosCharm" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_CHAOSCHARM" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(12,,Chaoscharm_SafeMode)" />
@@ -797,6 +801,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CHAOSCHARM_COMBAT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b56f2534-b873-4d31-b20e-a1c1e632a51b" />
         <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(12,,Chaoscharm,Chaoscharm_SafeMode)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Chaoscharm_Combat" />
       </fields>
     </stat_object>
     <stat_object color="#FF4F0E57" is_substat="false">
@@ -814,6 +819,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="5" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not HasPassive('Emlute_CounterCharm') and not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_CHAOSCHARM)" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ChaosCharm" />
       </fields>
     </stat_object>
     <stat_object color="#FF4F0E57" is_substat="false">
@@ -833,6 +839,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_CHAOSCHARM_AURA_COMBAT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9adfef83-c397-4d17-be09-324fe2064580" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Character() and not HasPassive('Emlute_CounterCharm') and not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_CHAOSCHARM_COMBAT)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_Chaoscharm_Combat" />
       </fields>
     </stat_object>
     <stat_object color="#FF008080" is_substat="false">

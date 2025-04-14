@@ -99,6 +99,16 @@ DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_TieflingBard",
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
 DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",1);
+
+// Mark second column as 0 for patch not required and not applied (new user)
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",_)
+AND
+DB_TagToPassiveMap_EmbersLute(_,_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",0);
 EXITSECTION
 
 ENDEXITSECTION

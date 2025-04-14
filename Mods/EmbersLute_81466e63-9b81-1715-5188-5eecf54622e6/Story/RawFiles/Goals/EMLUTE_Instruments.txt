@@ -35,6 +35,8 @@ DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_HAUNTED_4fa397b1-21b1-458d-acd3-13
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseWingsVFX");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseHaloVFX");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_Spirits");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseWingsVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseHaloVFX");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_FallenSpirits");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_TieflingBard");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_WaveServants");

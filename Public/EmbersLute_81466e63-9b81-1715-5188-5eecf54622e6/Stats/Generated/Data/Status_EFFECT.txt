@@ -46,7 +46,7 @@ new entry "EMLUTE_AURA_CIRCLE"
 type "StatusData"
 data "StatusType" "EFFECT"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "StatusEffect" "d94233c2-ec55-4524-875b-5e8334e928a2"
+data "StatusEffect" "90b9b65c-8b2c-410e-9e69-8038234640b4"
 
 new entry "EMLUTE_AURA_CIRCLE_SMALL"
 type "StatusData"

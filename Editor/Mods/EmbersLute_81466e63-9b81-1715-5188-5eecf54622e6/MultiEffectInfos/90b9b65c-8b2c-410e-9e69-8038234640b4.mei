@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="90b9b65c-8b2c-410e-9e69-8038234640b4" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_UI_KeepAliveRange_StatusEffect">
+  <EffectInfo UUID="8112c101-7b2a-4b09-9f4b-6ae2140b040a" EffectResourceGuid="8262f10a-ec89-12fd-2ce1-65c0e4ba5e30" DetachSource="false" DetachTarget="true" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

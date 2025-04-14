@@ -64,7 +64,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="8448a7bd-ffe6-414e-afa1-79403f6ab95c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_AURA_CIRCLE" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="d94233c2-ec55-4524-875b-5e8334e928a2" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="90b9b65c-8b2c-410e-9e69-8038234640b4" />
       </fields>
     </stat_object>
     <stat_object color="#FF20B2AA" is_substat="false">

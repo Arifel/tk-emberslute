@@ -825,6 +825,16 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AOE:ApplyStatus(UNSUMMON_ACTIVE,100,-1);AOE:Unsummon();IF(HasStatus('EMLUTE_SPIRIT_MGMT_AURA')):RemoveStatus(EMLUTE_SPIRIT_MGMT_AURA);" />
       </fields>
     </stat_object>
+    <stat_object color="#FFB22222" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7799b94f-4001-4736-b2c6-00b4945072a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Update_Preferences_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b550b69a-0279-4e9c-a011-5069431f2955" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5de5c394gff0ag1039gf8a3g5bcc55d71e37" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75cfb451g1e29ga3f5g0903ge68095ea4134" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF511251" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f5c3fdf3-b59a-4dfa-898e-36850143f7de" />

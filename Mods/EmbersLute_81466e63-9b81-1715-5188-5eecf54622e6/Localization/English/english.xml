@@ -568,4 +568,6 @@
   <content contentuid="h139d865egc44ag422dgd306g89356c1d5f73" version="1">Enable to auto summon a cambions for musical performances of The Final Act.</content>
   <content contentuid="h419d5e9dg36bcg56b9gf141gd2a8b14547ed" version="1">Enable Waveservant</content>
   <content contentuid="he088d50bge35egb44fg4ba9g044528c6d527" version="1">Enable to summon wave servants for performances of Umberlee's Hymn.</content>
+  <content contentuid="h5de5c394gff0ag1039gf8a3g5bcc55d71e37" version="1">Updating Preferences</content>
+  <content contentuid="h75cfb451g1e29ga3f5g0903ge68095ea4134" version="1">Update preferences, then reset all musical spirits, sprites and summons.</content>
 </contentList>

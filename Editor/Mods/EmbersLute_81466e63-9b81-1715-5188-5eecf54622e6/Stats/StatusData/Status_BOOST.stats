@@ -530,7 +530,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPIRIT_MGMT_AURA" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcc751221g7408g56e7gf2d8g79f22adae505" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ff672ccg53d4gec6bg0d4fg0dec3f5eb2ae" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_BardicInspiration_Ability" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_MusicalConductor" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_MGMT_AURA" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
@@ -603,7 +603,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_KEEP_ALIVE" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h42b4d5a9gba63g5347ga182g2e0ed376f363" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac6523f0g1765gce4ag8353g041f0e525188" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_BardicInspiration_Ability" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_MusicalConductor" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
@@ -613,7 +613,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SILENCED_SPIRIT" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2ececa62g5220gfef7g070fgcbce9d3b8266" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4d3bef61gd94ag9b9eg6e63g86156504c7d2" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_BardicInspiration_Ability" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_MusicalConductor" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>

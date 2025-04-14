@@ -36,7 +36,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalConductor" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h639544f5gc899g83a3gbe6fg7ab66fd3885b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h59c40e85g303dg41acg1cafg1e1d048057c4" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_BardicInspiration_Ability" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_MusicalConductor" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Share_MusicalSpirits_Emlute)" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="82" />

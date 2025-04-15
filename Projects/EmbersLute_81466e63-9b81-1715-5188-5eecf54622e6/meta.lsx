@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="1"/>
+    <version major="4" minor="8" revision="0" build="10"/>
     <region id="MetaData">
         <node id="root">
             <attribute id="GameProject" type="LSString" value=""/>
             <attribute id="Module" type="LSString" value="17ed9aa5-40e7-4c49-ac10-a0feb1ffeaa9"/>
             <attribute id="Name" type="LSString" value="EmbersLute"/>
             <attribute id="UUID" type="LSString" value="6f632feb-2054-f026-6374-e833e3f13d6b"/>
+            <attribute id="UpdatedDependencies" type="bool" value="true"/>
             <children>
                 <node id="Categories"/>
             </children>

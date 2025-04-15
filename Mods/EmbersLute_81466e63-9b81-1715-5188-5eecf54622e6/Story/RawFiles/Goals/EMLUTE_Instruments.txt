@@ -8,9 +8,7 @@ INITSECTION
 // Unfortunately, using Statuses instead of the Equipment is horrible to manage passive toggles. StatusOnEquip is a disaster.
 // It's fine, until the player quick-swaps instruments, and then all the status add and remove events trip over each other.
 // This event firing mess then results in Passive toggles that are just flat broken on the toolbar. Lovely.
-
 // So, to avoid this, we apply the Passives directly on the equip event, and make use of timers when unequipping (to avoid event collisions).
-// 90% of this goal exists to revert the toolbar icon behaviour in patch 8 for the mod instruments - whyyy Larian whyy :'(
 
 // Mapping config passive toggles to enable by instrument tag
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_ViolinsToggle");
@@ -62,7 +60,6 @@ DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_WaveServants",
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
 KBSECTION
-
 ///////////////////////////////////////////////////////////////////
 // Master configuration management for Ember's Lute music mods.
 // Spell container is added and removed on game enter and exit.
@@ -79,9 +76,9 @@ HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 0)
 THEN
 AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
 //
-// Also add and remove on equip / unequip
+// Also added on equip
 IF
-Equipped(_Instrument, _Character)
+Equipped(_Instrument, _Player)
 AND
 DB_Avatars(_Player)
 AND
@@ -90,8 +87,10 @@ AND
 HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 0)
 THEN
 AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
+//
+// And remove on unequip (with delay to only remove if necessary)
 IF
-Unequipped(_Instrument, _Character)
+Unequipped(_Instrument, _Player)
 AND
 DB_Avatars(_Player)
 AND
@@ -99,13 +98,42 @@ QRY_IsEmbersLuteInstrument(_Instrument)
 AND
 HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1)
 THEN
+ObjectTimerCancel(_Player,"EmbersLute_ConfigSpellRemoveDelay");
+ObjectTimerLaunch(_Player,"EmbersLute_ConfigSpellRemoveDelay",1500);
+IF
+ObjectTimerFinished((CHARACTER)_Player, "EmbersLute_ConfigSpellRemoveDelay")
+AND
+GetEquippedItem(_Player, "MusicalInstrument", _Instrument)
+AND
+NOT QRY_IsEmbersLuteInstrument(_Instrument)
+AND
+HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1)
+THEN
 RemoveSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1);
+//
+// Also add for varnish tag set
+IF
+TagSet((CHARACTER)_Player,(TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883)
+AND
+HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 0)
+THEN
+AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
+//
+// And remove (with delay)for varnish tag clear
+IF
+TagCleared((CHARACTER)_Player,(TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883)
+AND
+HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1)
+THEN
+ObjectTimerCancel(_Player,"EmbersLute_ConfigSpellRemoveDelay");
+ObjectTimerLaunch(_Player,"EmbersLute_ConfigSpellRemoveDelay",1500);
+
 
 ///////////////////////////////////////////////////////////////////
 // We only ever config manage with code tags on the player character.
-// Unlike stauses, tags don't crash the game if not found. Also means
-// we don't have to manage a config clean up process, which makes this
-// simpler.
+// Unlike stauses, tags don't crash the game if not found. Which means
+// we don't have to worry about managing a config clean up process.
+//
 // Boilerplate lessss goooo. I can rewrite this smarter. But will I.
 IF
 UsingSpell(_Caster,"Shout_Config_SuppressMusicVFX",_,_,_)

@@ -519,7 +519,7 @@
             </property>
             <property id="c4298659-2875-4dca-bd1c-6eb147c17032">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_OverlayMaterial_AlphaBlend_Unlit_Emissive_SceneColor_Fresnel_DepthBlend_WPO_OrthonInvisibility_01 &lt;f14852c3-7a60-70a1-ae43-f41f97780457&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_OverlayMaterial_AlphaBlend_Unlit_Emissive_AlphaErosion_ScreenSpaceUV_GradientMap_TargetHeight_Panning_Control_PhantasmalKiller_01 &lt;73eec581-10e6-e0e2-8d2f-3c9db0b52186&gt;" />
               </data>
             </property>
             <property id="73f523ee-4c6e-4e3d-9dd8-fc09a6501860">

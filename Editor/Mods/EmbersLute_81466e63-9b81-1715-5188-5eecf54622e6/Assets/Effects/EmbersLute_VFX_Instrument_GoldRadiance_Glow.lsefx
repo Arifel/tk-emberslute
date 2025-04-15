@@ -519,7 +519,7 @@
             </property>
             <property id="c4298659-2875-4dca-bd1c-6eb147c17032">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_OverlayMaterial_AlphaBlend_Emissive_Unlit_SphereMask_GradientMap_MultiTexture_Panning_01_Radiance_Weapon_01 &lt;d3e28de7-619b-20c4-a1eb-281dafcf3605&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_OverlayMaterial_AlphaBlend_Emissive_Unlit_SphereMask_GradientMap_MultiTexture_Panning_Bard_Instrument_04 &lt;d945fb9e-9c08-0987-0030-cee1c00685da&gt;" />
               </data>
             </property>
             <property id="73f523ee-4c6e-4e3d-9dd8-fc09a6501860">
@@ -755,7 +755,7 @@
             </property>
             <property id="5769801c-6150-42a3-91da-878c6e87c60d">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0" />
               </data>
             </property>
             <property id="9adad167-0d5f-41cb-959b-458867905b3f">

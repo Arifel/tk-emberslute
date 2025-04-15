@@ -568,7 +568,7 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="2acf47b9-3924-46f3-a7a1-b1a6cbace32a">
                       <keyframes>
-                        <keyframe time="0" value="-8366080" />
+                        <keyframe time="0" value="-11968902" />
                         <keyframe time="1" value="-4574963" />
                       </keyframes>
                     </rampchannel>

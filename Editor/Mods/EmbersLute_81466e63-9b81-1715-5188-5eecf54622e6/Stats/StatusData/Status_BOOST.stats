@@ -1024,6 +1024,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="481fe9ec-5931-48a8-bfcc-d530853cf7b7" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7dbb6b6bgd386gdb0bg0cb3gb4af67b20255" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="e7174206-bd91-4cfc-8ff6-8c0c3635cf7a" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h242a10beg8df8g83e1gfc72ged973c83044b" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
@@ -1032,6 +1033,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_02_REDBRANDING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="42ae36f8-f782-439b-ac2e-57556c329b4c" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c1b23b24-4c3a-4667-b6ab-9d5f5bf52a66" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h37e857d3g1510g9dcdg9113g01f6b56357b2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h57c07b5bg8317gde54g84edgd4b99c88300c" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
@@ -1040,22 +1043,28 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_03_GOLDRADIANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ddd16290-0660-48d5-9304-9674bfdce6df" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="0274c5d8-5582-4b45-b724-d627c848d42f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3083842bg6b97g9584gf3f7ge6f217e342e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8063db21gfd93g671eg1f59g2cf5f1087097" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b0f9357a-14bf-4aba-ad70-bb6e9e94457c" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_04_GOLDSHIMMER" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_04_WHITESHIMMER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ddd16290-0660-48d5-9304-9674bfdce6df" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="bf882274-2f26-4203-a0d3-950a100bb998" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb268d87ege33cg0872g56edge378b60bc8e1" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hadc41d5ag71eeg4b47gb88egd4d032b4f72e" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="96801ce4-f76f-476d-8d23-3b87a661fd8b" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_05_GLOWSTRINGS" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_05_PINKPULSE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ddd16290-0660-48d5-9304-9674bfdce6df" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f46f7d16-4029-4dd6-8dfa-447f3a639171" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf9c3203gd52eg2c32g4d03gd44ddd34e5cd" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34c6725cg4ba2g826fg45dfgd8ca03d94322" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FF00008B" is_substat="false">

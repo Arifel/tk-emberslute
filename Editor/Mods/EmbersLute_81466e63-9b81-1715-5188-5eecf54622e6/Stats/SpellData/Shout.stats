@@ -626,7 +626,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="767976fc-f3dc-4fe6-9504-5169d06f3778" />
         <field name="Name" type="NameTableFieldDefinition" value="Instrument_Generic_FX_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_InstrumentFX_SummonLuteSpirit_Emlute;Shout_InstrumentFX_GreenBlack_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_InstrumentFX_SummonLuteSpirit_Emlute;Shout_InstrumentFX_GreenBlack_Emlute;Shout_InstrumentFX_GoldRadiance_Emlute;Shout_InstrumentFX_PinkPulse_Emlute;Shout_InstrumentFX_WhiteShimmer_Emlute;Shout_InstrumentFX_RedBranding_Emlute;Shout_RemoveInstrumentFX_Emlute;" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ApplyGlowMaps" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h29b0970agc7bbgd8b9g34f8gf5a579cc3767" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbac33624gd334gc351ge358g650927d12022" version="1" />
@@ -651,6 +651,53 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="daee1fb9-5804-476c-b82a-8297b4a0bd59" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Instrument_Generic_FX_Emlute" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_INSTRUMENT_FX_01_GREENBLACK,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf0a2ebd5g8eecgfbf5g194ag6a66bbe43b67" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3d46ec95g9a11g3aebg3359gcd16d1dec15d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_01_GREENBLACK,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8640e21c-b56b-4ba5-8967-8b943c39ea0f" />
+        <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_GoldRadiance_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50f261ff-d878-4ced-8f85-f7f84765b779" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_INSTRUMENT_FX_03_GOLDRADIANCE,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h450b2d90gd373g0408g6f9egbf6a258b29a2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7276efbag8e3bg08ecg96b4g8787e88119f0" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_03_GOLDRADIANCE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e4e94aa-6e3e-420e-8b16-20b1b3b2ab60" />
+        <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_PinkPulse_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50f261ff-d878-4ced-8f85-f7f84765b779" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_INSTRUMENT_FX_05_PINKPULSE,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9fce13d6gc99egb497ge0e4g4e0ff4e6c99f" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcd878bd7g2c1cg66c7gc263g81bd1263ac00" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_05_PINKPULSE,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b047cebc-b3d1-4c03-b782-cd5cf602426b" />
+        <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_WhiteShimmer_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50f261ff-d878-4ced-8f85-f7f84765b779" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_INSTRUMENT_FX_04_WHITESHIMMER,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0bea3505g3164g6711g7de1g0554521e8150" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87da7dc3g8814g35ccg4093gb777f0bb6251" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_04_WHITESHIMMER,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a744c6a-fcb7-4f49-b53e-9938a2ae43d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_RedBranding_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50f261ff-d878-4ced-8f85-f7f84765b779" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument,EMLUTE_INSTRUMENT_FX_02_REDBRANDING,100,-1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9d31e2efg5202g77e9g4ee0ge4df3cfd6c00" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h393a4870g00c0g9dbagc0deg86acf1c06ae8" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_02_REDBRANDING,100,-1)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -662,6 +709,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0bef3321gcd94g6236ga21eg71de3c34bc96" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h088d33f3g1888g566dg2086ga72db2b0eee5" version="1" />
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Instrument_Generic_FX_Emlute" />
       </fields>
     </stat_object>
     <stat_object color="#FF35043D" is_substat="false">

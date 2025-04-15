@@ -570,4 +570,23 @@
   <content contentuid="he088d50bge35egb44fg4ba9g044528c6d527" version="1">Enable to summon wave servants for performances of Umberlee's Hymn.</content>
   <content contentuid="h5de5c394gff0ag1039gf8a3g5bcc55d71e37" version="1">Updating Preferences</content>
   <content contentuid="h75cfb451g1e29ga3f5g0903ge68095ea4134" version="1">Update preferences, then reset all musical spirits, sprites and summons.</content>
+  <content contentuid="hf0a2ebd5g8eecgfbf5g194ag6a66bbe43b67" version="1">Dark Green Glow</content>
+  <content contentuid="h3d46ec95g9a11g3aebg3359gcd16d1dec15d" version="1">Apply a dark green visual to the equipped instrument.</content>
+  <content contentuid="h450b2d90gd373g0408g6f9egbf6a258b29a2" version="1">Gold Radiant Glow</content>
+  <content contentuid="h7276efbag8e3bg08ecg96b4g8787e88119f0" version="1">Apply a radiant gold visual to the equipped instrument.</content>
+  <content contentuid="h9fce13d6gc99egb497ge0e4g4e0ff4e6c99f" version="2">Pink Pulse</content>
+  <content contentuid="hcd878bd7g2c1cg66c7gc263g81bd1263ac00" version="2">Apply a pulsing pink shimmer to the equipped instrument.</content>
+  <content contentuid="h0bea3505g3164g6711g7de1g0554521e8150" version="2">White Shimmer</content>
+  <content contentuid="h87da7dc3g8814g35ccg4093gb777f0bb6251" version="2">Apply a white shimmer visual to the equipped instrument.</content>
+  <content contentuid="h9d31e2efg5202g77e9g4ee0ge4df3cfd6c00" version="1">Red Glow</content>
+  <content contentuid="h393a4870g00c0g9dbagc0deg86acf1c06ae8" version="1">Apply a red glowing visual to the equipped instrument.</content>
+  <content contentuid="h242a10beg8df8g83e1gfc72ged973c83044b" version="1">A glowing green visual is applied to this instrument.</content>
+  <content contentuid="h37e857d3g1510g9dcdg9113g01f6b56357b2" version="1">Dark Red Visual</content>
+  <content contentuid="h57c07b5bg8317gde54g84edgd4b99c88300c" version="1">A glowing red visual is applied to this instrument.</content>
+  <content contentuid="h3083842bg6b97g9584gf3f7ge6f217e342e4" version="1">Gold Radiant Visual</content>
+  <content contentuid="h8063db21gfd93g671eg1f59g2cf5f1087097" version="1">A glowing golden visual is applied to this instrument.</content>
+  <content contentuid="hb268d87ege33cg0872g56edge378b60bc8e1" version="2">White Shimmer Visual</content>
+  <content contentuid="hadc41d5ag71eeg4b47gb88egd4d032b4f72e" version="2">A shimmering white visual is applied to this instrument.</content>
+  <content contentuid="haf9c3203gd52eg2c32g4d03gd44ddd34e5cd" version="2">Pink Pusling Visual</content>
+  <content contentuid="h34c6725cg4ba2g826fg45dfgd8ca03d94322" version="2">A pulsing pink shimmer is applied to this instrument.</content>
 </contentList>

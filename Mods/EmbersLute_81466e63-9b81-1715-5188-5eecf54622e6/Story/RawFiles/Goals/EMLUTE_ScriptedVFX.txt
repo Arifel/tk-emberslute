@@ -83,7 +83,7 @@ PROC_PlayFinalAct_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_Role)
 AND
 DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
 THEN
-ObjectTimerLaunch(_Performer,_FXEvent,_Start);
+RealtimeObjectTimerLaunch(_Performer,_FXEvent,_Start);
 
 IF
 ObjectTimerFinished((CHARACTER)_Performer,(STRING)_FXEvent)
@@ -105,7 +105,7 @@ PlayLoopEffect(_Performer,_Effect,"Dummy_Root",1.0,_FXHandle)
 THEN
 DebugText(_Performer,_DebugMsg);
 DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
-ObjectTimerLaunch(_Performer,_StopTimer,_Stop);
+RealtimeObjectTimerLaunch(_Performer,_StopTimer,_Stop);
 
 IF
 ObjectTimerFinished((CHARACTER)_Performer,(STRING)_StopTimer)
@@ -129,8 +129,8 @@ DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
 AND
 Concatenate(_FXEvent,"_STOP",_StopTimer)
 THEN
-ObjectTimerCancel(_Performer,_FXEvent);
-ObjectTimerCancel(_Performer,_StopTimer);
+RealtimeObjectTimerCancel(_Performer,_FXEvent);
+RealtimeObjectTimerCancel(_Performer,_StopTimer);
 
 PROC
 PROC_CleanUpEffects_EmbersLute((STRING)_Song,(CHARACTER)_Performer)

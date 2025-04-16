@@ -28,7 +28,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Pants_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="cca03385-5cbb-47c1-a2e4-30c93093785e" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not Item()): ApplyStatus(COLOR_SPRAY,100,1)" />
-        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="EMPTY" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(COLOR_SPRAY,100,1)" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -47,6 +47,41 @@
         <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WYR_POTENTDRINK_NAUSEOUS_FUMES,100,2)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af889d74-b17e-4f32-916c-968cf0d6b0d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_1_Emlute" />
+        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="2" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="f5d9ebda-56f7-4158-81ce-cd78dc18bf79" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="abebc9ba-031f-49a2-b54e-7db48bbbb8bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_2_Emlute" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();ApplyStatus(BLINDED,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9c35aa24-ea4f-4e86-bb90-80cf01720929" />
+        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_3_Emlute" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();ApplyStatus(IRRESISTIBLE_DANCE,100,2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="60b2afba-adcf-4789-8344-489f517987c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_4_Emlute" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();ApplyStatus(SLEEP,100,2);" />
       </fields>
     </stat_object>
   </stat_objects>

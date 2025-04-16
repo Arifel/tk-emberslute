@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="16">Lute of Musical Sprites (Black)</content>
+  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="17">Lute of Musical Sprites (Black)</content>
   <content contentuid="hcc751221g7408g56e7gf2d8g79f22adae505" version="1">Musical Maestro</content>
   <content contentuid="h3ff672ccg53d4gec6bg0d4fg0dec3f5eb2ae" version="1">Emitting an aura of instruction to nearby musical sprites and spirits.</content>
   <content contentuid="h42b4d5a9gba63g5347ga182g2e0ed376f363" version="1">|HIDDEN| Hidden</content>
@@ -81,8 +81,8 @@
   <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="11">Lute of Musical Sprites (Gold Edges)</content>
   <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="11">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="10">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="10">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="11">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="7">Musical Sprites Instruments</content>
   <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="7">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
   <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="7">Instrument Chest</content>
@@ -593,4 +593,25 @@
   <content contentuid="h64c1fdaage1b2g96e3g1890g404fb0d0787a" version="1">Ember's Lute mod items have been removed from player inventories and the Camp Chest.&lt;br&gt;&lt;br&gt;If you are a Windows player, you may now take a long rest, save the game, and then unsubscribe to remove the music mods from your save campaign. </content>
   <content contentuid="h47e76425g11c7g1d31gdcbag7491fcfb9833" version="1">Remove Mod Items</content>
   <content contentuid="he5a3eab6ga479ge6a6g6172gb36b24cdc591" version="1">Clear out all mod items from player inventories, including the Camp Chest. This is a pre-requisite step for removing mods mid-campaign.</content>
+  <content contentuid="h955f366ag56b4g2a31g69fcgb93f562950ec" version="1">Dazzling Dance</content>
+  <content contentuid="h4fc48f5bg36edg3bf1gb1b8g1a4832d837a0" version="1">Sprite Swarm 1</content>
+  <content contentuid="h606dc753ga30agcc5fg926dg6e31c28ef900" version="1">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by 40%, and possibly takes [1] every turn.</content>
+  <content contentuid="hd72c9c45g62fbg752dg1900g6d5d51e02f08" version="1">Sprites Protection</content>
+  <content contentuid="h878de251g8dc8gce9dg7b9cg97ffaca0e170" version="1">Musical sprites are maintaining a sanctuary over the lead musical performer. While playing music in-combat, the perfomer cannot be targetted directly, though they may still take area damage.</content>
+  <content contentuid="h16f3bc14g3e91g9e78gf827g95d6a4a3ebba" version="1">Sprite Swarm 2</content>
+  <content contentuid="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="1">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is halved, possibly takes [1] every turn, and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution&lt;/LSTag&gt;&lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;else &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; is broken.</content>
+  <content contentuid="h52cc55d6g1173g70a6g8cf6g31cf34c9d611" version="1">Sprite Swarm 3</content>
+  <content contentuid="h74dab9d0g9b5cg45a1gb31eg4c61b8bb2150" version="1">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is reduced by 75%, possibly takes [1] every turn, and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; else has a random chance to either become &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;blinded&lt;LSTag&gt;, &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;fall asleep&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="IRRESISTIBLE_DANCE"&gt;dance&lt;/LSTag&gt; for two turns.</content>
+  <content contentuid="hf7ba4cadg33bdg3a66g2d36g583edd90ed94" version="1">Musical Vigour 1</content>
+  <content contentuid="he1d9b837g35e7gee75g8a17g23aff1a9bff6" version="1">Vibrant, powerful melodies wrap the body in protective lights that resist psychic damage. &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by 1.</content>
+  <content contentuid="h62ba6f5dg4f43geff1g6851g2f7718e1fe51" version="1">Musical Vigour 2</content>
+  <content contentuid="h469c4ad8g2640g9506g14f1g4257593b8dcc" version="1">Vibrant, powerful melodies wrap the body in protective lights that nullify psychic damage. &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by 1.</content>
+  <content contentuid="h9492e2a2gd2ddg1d6bgfd5fg1c7dc38f3a2c" version="1">Musical Vigour 3</content>
+  <content contentuid="h0af4532cg6912gfc4dga54bg3d37774d3ba7" version="1">Vibrant, powerful melodies wrap the body in protective lights that reflect psychic damage. &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by 1.</content>
+  <content contentuid="ha020db3dgd028gf4d2g9a8fg13a0303785c4" version="1">Dazzling Dances 1</content>
+  <content contentuid="h7023f455g8945ge4b5g0855ge1037fcff03f" version="1">Nearby enemies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_DEBUFF_1"&gt;Sprite Swarm&lt;/LSTag&gt;. Nearby allies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_ALLYBONUS_1"&gt;Musical Vigour&lt;/LSTag&gt;.</content>
+  <content contentuid="h44995a87gdfe4ga674ga43dg7d157d928c6d" version="1">Dazzling Dances 2</content>
+  <content contentuid="h652118d2gd13dg2fbeg1c16g3e8f6bdfc6db" version="1">Nearby enemies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_DEBUFF_2"&gt;Sprite Swarm&lt;/LSTag&gt;. Nearby allies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_ALLYBONUS_2"&gt;Musical Vigour&lt;/LSTag&gt;.</content>
+  <content contentuid="h6146c296g34beg6a02gac95gbdc481ef528a" version="1">Dazzling Dances 3</content>
+  <content contentuid="h8bb2e71aga30cgceb3g4e0bg86930218f023" version="1">Nearby enemies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_DEBUFF_3"&gt;Sprite Swarm&lt;/LSTag&gt;. Nearby allies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_ALLYBONUS_3"&gt;Musical Vigour&lt;/LSTag&gt;.</content>
 </contentList>

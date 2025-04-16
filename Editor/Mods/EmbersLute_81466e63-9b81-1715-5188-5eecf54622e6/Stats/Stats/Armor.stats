@@ -7,8 +7,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_BLACK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="888e0a01-2ed8-4392-be2f-cc2be009f021" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Bard_Perform_Combat_Emlute);UnlockSpell(Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_MusicalSprites_DazzlingDance;Emlute_MusicalSprites_DazzlingDance_Start;" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />

@@ -44,6 +44,28 @@
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h961fc30fg6b1eg97e0g6419gb9d238ab4796" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="945fcdc4-d9b8-4811-8042-caf2fb8a1197" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSprites_DazzlingDance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h955f366ag56b4g2a31g69fcgb93f562950ec" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="83" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnRound" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_IsPerforming();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(SELF,EMLUTE_DAZZLINGDANCE_3,100,-1);IF(HasStatus('EMLUTE_DAZZLINGDANCE_1',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source)):ApplyStatus(SELF,EMLUTE_DAZZLINGDANCE_2,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b5ffbd72-10ce-480b-942e-ab8b621cf97c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSprites_DazzlingDance_Start" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(EMLUTE_DAZZLINGDANCE_1,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF12375C" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bce0ae60-cba4-42d8-8602-5ab20eee8c13" />

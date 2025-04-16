@@ -175,6 +175,13 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e,1.5,0.0,0.0,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-1.5,0.0,-1.5,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,1.5,0.0,-1.5,1);
+// Instrument mapping
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_WaveServants");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_TieflingBard");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_WaveServants");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_Cambions");
+// Done, mark as patch applied
 DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_MoreMusic",1);
 
 // Mark second column as 0 for patch not required and not applied (new user)

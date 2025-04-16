@@ -1035,7 +1035,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
         <field name="Name" type="NameTableFieldDefinition" value="ConfigManager_Cont_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="958bb940-cf60-4c2e-94e1-a963e48a9b09" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Config_EnableMusicVFX;Shout_Config_SuppressMusicVFX;Shout_Config_EnableSprites_All;Shout_Config_SuppressSprites_All;Shout_Config_EnableSprites_Vocal;Shout_Config_SuppressSprites_Vocal;Shout_Config_EnableMusicVFX;Shout_Config_SuppressMusicVFX;Shout_Config_EnableSummon_TieflingBard;Shout_Config_SuppressSummon_TieflingBard;Shout_Config_EnableSummon_Cambions;Shout_Config_SuppressSummon_Cambions;Shout_Config_EnableSummon_WaveServant;Shout_Config_SuppressSummon_WaveServant;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Config_EnableMusicVFX;Shout_Config_SuppressMusicVFX;Shout_Config_EnableSprites_All;Shout_Config_SuppressSprites_All;Shout_Config_EnableSprites_Vocal;Shout_Config_SuppressSprites_Vocal;Shout_Config_EnableMusicVFX;Shout_Config_SuppressMusicVFX;Shout_Config_EnableSummon_TieflingBard;Shout_Config_SuppressSummon_TieflingBard;Shout_Config_EnableSummon_Cambions;Shout_Config_SuppressSummon_Cambions;Shout_Config_EnableSummon_WaveServant;Shout_Config_SuppressSummon_WaveServant;Shout_CleanUp_Emlute;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc70fd49bg8b13geabdg8b8agc81effe4eac0" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h72105f66g5341g572fg9ce2gac8cf863069b" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
@@ -1199,6 +1199,16 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h419d5e9dg36bcg56b9gf141gd2a8b14547ed" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he088d50bge35egb44fg4ba9g044528c6d527" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d606461-ce5a-402e-b635-5b84224e37b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="CleanUp_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_ConfigManager_Cont_Emlute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h47e76425g11c7g1d31gdcbag7491fcfb9833" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he5a3eab6ga479ge6a6g6172gb36b24cdc591" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

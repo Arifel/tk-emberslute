@@ -54,6 +54,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnRound" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_IsPerforming();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(SELF,EMLUTE_DAZZLINGDANCE_3,100,-1);IF(HasStatus('EMLUTE_DAZZLINGDANCE_1',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source)):ApplyStatus(SELF,EMLUTE_DAZZLINGDANCE_2,100,-1)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h040b8d8fg7657g638dg9229g5513f793f413" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

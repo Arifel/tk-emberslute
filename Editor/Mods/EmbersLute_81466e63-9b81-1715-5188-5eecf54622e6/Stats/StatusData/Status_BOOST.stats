@@ -645,7 +645,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570202" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0fc8e453-65bc-4680-a97a-c77c2bdb5b5b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_MUSIC_COMBAT_OVERRIDE" />
@@ -656,7 +656,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570202" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="67c49a63-9f47-41b1-a58f-809d6560f00b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPRITE_SANCTUARY" />
@@ -668,7 +668,7 @@
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570202" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9a326244-76ae-4982-b86a-26d846a66624" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_MUSICALSPRITES_SANCTUARY" />
@@ -680,13 +680,13 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;IsInvulnerable" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF540505" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9e28b7db-a20b-4cc9-a713-c89618eaf7b9" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_DEBUFF_1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4fc48f5bg36edg3bf1gb1b8g1a4832d837a0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h606dc753ga30agcc5fg926dg6e31c28ef900" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+1,Piercing,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Blinded" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Blinded" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -694,38 +694,40 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="IsAttack() and HasDamageEffectFlag(DamageFlags.Hit)" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,13)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+1,Piercing,Magical)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,12)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Helpable_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570A0A" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de6e1124-aa05-4b5e-9e02-f9b90ba5084c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_DEBUFF_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9e28b7db-a20b-4cc9-a713-c89618eaf7b9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16f3bc14g3e91g9e78gf827g95d6a4a3ebba" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+2,Piercing,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Stroll)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="CreateExplosion(Projectile_DazzlingDistraction_1_Emlute)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+2,Piercing,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,12)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570A0A" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2ebf0dae-260d-4051-a9f6-d715bd1bb8e4" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_DEBUFF_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9e28b7db-a20b-4cc9-a713-c89618eaf7b9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h52cc55d6g1173g70a6g8cf6g31cf34c9d611" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h74dab9d0g9b5cg45a1gb31eg4c61b8bb2150" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+3,Piercing,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceMultiplier(Movement,25,0);MovementSpeedLimit(Walk)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,Emlute_DazzlingDance)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+3,Piercing,Magical)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,15)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570A0A" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="841d6d54-52c4-4655-b2ed-46ffd28f022b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_ALLYBONUS_1" />
@@ -734,7 +736,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);AC(1);Resistance(Psychic,Resistant)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570A0A" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="03227de7-ebc8-47a4-af20-da9b6f2492a3" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_ALLYBONUS_2" />
@@ -744,7 +746,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);AC(1);Resistance(Psychic,Immune)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF570A0A" is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="297768e0-7bad-4128-9d93-ec6a4931f20e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_ALLYBONUS_3" />
@@ -754,7 +756,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);AC(1);RedirectDamage(1,,Psychic,true)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2da3b6cb-6371-4a5a-bfdf-767e2823cc25" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_1" />
@@ -769,7 +771,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(not Self() and Ally()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_1);TARGET:IF(Enemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5d2080c1-4014-485d-8627-c6b8a6d95f6d" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_2" />
@@ -782,7 +784,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_2" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF471212" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="60b88cb1-c7da-46e0-a9a3-0f917cb912b1" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_3" />
@@ -793,6 +795,18 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DAZZLINGDANCE_2')):RemoveStatus(EMLUTE_DAZZLINGDANCE_2);BreakConcentration()" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_3" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="RollDieAgainstDC(DiceType.d20,8)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_DAZZLINGDANCE_USESPELL,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF471212" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="14185b33-af3a-443f-9a86-323c1b5b5297" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPRITES_DAZZLINGDANCE_USESPELL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0d43376g1ae3gc270g7a1ag73472a899d1b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4464361g5287gf91bgb4d1g923c542f491c" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(SELF,Projectile_PantsExplosion_Emlute,true,true,true)" />
       </fields>
     </stat_object>
     <stat_object color="#FF03140A" is_substat="false">

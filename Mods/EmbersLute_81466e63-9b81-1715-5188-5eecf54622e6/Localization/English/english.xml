@@ -614,4 +614,7 @@
   <content contentuid="h652118d2gd13dg2fbeg1c16g3e8f6bdfc6db" version="1">Nearby enemies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_DEBUFF_2"&gt;Sprite Swarm&lt;/LSTag&gt;. Nearby allies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_ALLYBONUS_2"&gt;Musical Vigour&lt;/LSTag&gt;.</content>
   <content contentuid="h6146c296g34beg6a02gac95gbdc481ef528a" version="1">Dazzling Dances 3</content>
   <content contentuid="h8bb2e71aga30cgceb3g4e0bg86930218f023" version="1">Nearby enemies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_DEBUFF_3"&gt;Sprite Swarm&lt;/LSTag&gt;. Nearby allies receive &lt;LSTag Type="Status" Tooltip="EMLUTE_DAZZLINGDANCE_ALLYBONUS_3"&gt;Musical Vigour&lt;/LSTag&gt;.</content>
+  <content contentuid="h040b8d8fg7657g638dg9229g5513f793f413" version="1">Needs a better name.</content>
+  <content contentuid="he0d43376g1ae3gc270g7a1ag73472a899d1b" version="1">Neon Hangover</content>
+  <content contentuid="hd4464361g5287gf91bgb4d1g923c542f491c" version="1">When did the world become so BRIGHT?</content>
 </contentList>

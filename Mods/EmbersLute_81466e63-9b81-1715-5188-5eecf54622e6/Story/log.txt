@@ -1,6 +1,6 @@
 
 
-### Compile("C:\Program Files (x86)\Steam\steamapps\common\Baldur's Gate 3 Playtest\Data\Mods\EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6\Story\story.div","r+")
+### Compile("C:\Program Files (x86)\Steam\steamapps\common\Baldurs Gate 3\Data\Mods\EmbersLute_81466e63-9b81-1715-5188-5eecf54622e6\Story\story.div","r+")
 DeleteAllData
 
 DIV events not referenced:
@@ -207,7 +207,6 @@ SetStoryShortRestEnabled( (CHARACTER)_ )
 ClearDialogTag( (GUIDSTRING)_, (TAG)_ )
 ActOver(  )
 SetShortRestAvailable( (INTEGER)_ )
-IterateInventoryByTag( (GUIDSTRING)_, (STRING)_, (STRING)_, (STRING)_ )
 TriggerResetLighting( (TRIGGER)_ )
 ShowStoryElementUI( (CHARACTER)_, (INTEGER)_, (STRING)_ )
 SetVarFixedString( (GUIDSTRING)_, (STRING)_, (STRING)_ )

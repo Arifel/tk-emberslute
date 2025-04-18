@@ -1,26 +1,50 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-//(TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086
+
 KBSECTION
 IF
 CastedSpell((CHARACTER)_Caster,"Shout_CleanUp_Emlute",_,_,_)
 AND
 DB_Players(_Player)
 THEN
-IterateInventoryByTag(_Player,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_SearchDone");
+PROC_UnequipCustom_EmbersLute();
+TimerLaunch("DeleteItem_EmbersLute",2500);
 
 IF
-CastedSpell((CHARACTER)_Caster,"Shout_CleanUp_Emlute",_,_,_)
-AND
-DB_Camp_UserCampChest(_UserID,_Chest)
+TimerFinished("DeleteItem_EmbersLute")
 THEN
-IterateInventoryByTag(_Chest,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_SearchDone");
+PROC_CleanUpCustom_EmbersLute();
 
 IF
 EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItem")
 THEN
 RequestDelete(_Item);
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_Players(_Player)
+THEN
+IterateInventoryByTag(_Player,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_SearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_Camp_UserCampChest(_UserID,_Chest)
+THEN
+IterateInventoryByTag(_Chest,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_SearchDone");
+
+PROC
+PROC_UnequipCustom_EmbersLute()
+AND
+DB_Players(_Player)
+AND
+GetEquippedItem(_Player, _Slot, _Equipped)
+AND
+IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+Unequip(_Player,_Equipped);
 EXITSECTION
 
 ENDEXITSECTION

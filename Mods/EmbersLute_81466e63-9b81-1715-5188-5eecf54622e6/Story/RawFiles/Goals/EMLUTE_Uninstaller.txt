@@ -40,11 +40,14 @@ PROC_UnequipCustom_EmbersLute()
 AND
 DB_Players(_Player)
 AND
+DB_EquippedItemSlots(_Slot)
+AND
 GetEquippedItem(_Player, _Slot, _Equipped)
 AND
 IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
 THEN
 Unequip(_Player,_Equipped);
+
 EXITSECTION
 
 ENDEXITSECTION

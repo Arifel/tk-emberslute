@@ -622,7 +622,7 @@
         <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="767976fc-f3dc-4fe6-9504-5169d06f3778" />
         <field name="Name" type="NameTableFieldDefinition" value="Instrument_Generic_FX_Emlute" />
@@ -635,7 +635,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="958bb940-cf60-4c2e-94e1-a963e48a9b09" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e4153e9e-9084-47df-8f7c-f331f2827b1e" />
         <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_SummonLuteSpirit_Emlute" />
@@ -644,7 +644,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_ANNOYING_SPIRIT,100,1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="50f261ff-d878-4ced-8f85-f7f84765b779" />
         <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_GreenBlack_Emlute" />
@@ -656,7 +656,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_01_GREENBLACK,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8640e21c-b56b-4ba5-8967-8b943c39ea0f" />
         <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_GoldRadiance_Emlute" />
@@ -667,7 +667,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_03_GOLDRADIANCE,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1e4e94aa-6e3e-420e-8b16-20b1b3b2ab60" />
         <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_PinkPulse_Emlute" />
@@ -678,7 +678,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_05_PINKPULSE,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b047cebc-b3d1-4c03-b782-cd5cf602426b" />
         <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_WhiteShimmer_Emlute" />
@@ -689,7 +689,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_04_WHITESHIMMER,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6a744c6a-fcb7-4f49-b53e-9938a2ae43d5" />
         <field name="Name" type="NameTableFieldDefinition" value="InstrumentFX_RedBranding_Emlute" />
@@ -700,7 +700,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_INSTRUMENT_FX_02_REDBRANDING,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF356370" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1ed91cdf-1e63-4e42-aca0-5c12fa76c750" />
         <field name="Name" type="NameTableFieldDefinition" value="RemoveInstrumentFX_Emlute" />
@@ -777,7 +777,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF4C3F4C" is_substat="false">
+    <stat_object color="#FFD633CF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6c559a7f-f758-4fdd-bd25-75ac8dd21113" />
         <field name="Name" type="NameTableFieldDefinition" value="ImprovedCountercharm_Emlute" />
@@ -873,17 +873,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AOE:ApplyStatus(UNSUMMON_ACTIVE,100,-1);AOE:Unsummon();IF(HasStatus('EMLUTE_SPIRIT_MGMT_AURA')):RemoveStatus(EMLUTE_SPIRIT_MGMT_AURA);" />
       </fields>
     </stat_object>
-    <stat_object color="#FFB22222" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="7799b94f-4001-4736-b2c6-00b4945072a5" />
-        <field name="Name" type="NameTableFieldDefinition" value="Update_Preferences_Emlute" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b550b69a-0279-4e9c-a011-5069431f2955" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5de5c394gff0ag1039gf8a3g5bcc55d71e37" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75cfb451g1e29ga3f5g0903ge68095ea4134" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF511251" is_substat="false">
+    <stat_object color="#FF451D47" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f5c3fdf3-b59a-4dfa-898e-36850143f7de" />
         <field name="Name" type="NameTableFieldDefinition" value="Annoying_Spells_Container_Emlute" />
@@ -896,7 +886,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF511251" is_substat="false">
+    <stat_object color="#FF451D47" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="366f9bfe-b769-4401-a520-95dab7b5f80a" />
         <field name="Name" type="NameTableFieldDefinition" value="Share_MildMockery_Emlute" />
@@ -923,7 +913,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF511251" is_substat="false">
+    <stat_object color="#FF451D47" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="04461bc7-2ea3-48b1-94fb-d2a58d6eee43" />
         <field name="Name" type="NameTableFieldDefinition" value="Chaoscharm_Container_Emlute" />
@@ -935,7 +925,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF2E0F07" is_substat="false">
+    <stat_object color="#FF451D47" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="74a38d65-aa5f-4fbd-8591-434256f235b2" />
         <field name="Name" type="NameTableFieldDefinition" value="Facepaint_Emlute" />
@@ -948,7 +938,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(WYR_FACEPAINT_CLOWN,100,10)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF2E0F07" is_substat="false">
+    <stat_object color="#FF451D47" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c33144e-dc2d-4cc3-8262-ae60e58f4155" />
         <field name="Name" type="NameTableFieldDefinition" value="ExplodingPants_Emlute" />
@@ -1030,7 +1020,17 @@
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7799b94f-4001-4736-b2c6-00b4945072a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Update_Preferences_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b550b69a-0279-4e9c-a011-5069431f2955" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5de5c394gff0ag1039gf8a3g5bcc55d71e37" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75cfb451g1e29ga3f5g0903ge68095ea4134" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
         <field name="Name" type="NameTableFieldDefinition" value="ConfigManager_Cont_Emlute" />
@@ -1041,7 +1041,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressMusicVFX" />
@@ -1059,7 +1059,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3aee1889-b6bc-4f9b-8d87-562f9e90b57b" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSprites_All" />
@@ -1073,7 +1073,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="03c011fa-69c2-47e3-ae9e-26c20e787f16" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSprites_Vocal" />
@@ -1087,7 +1087,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3b04c794-1dec-4b19-9b15-544a31e29bda" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_TieflingBard" />
@@ -1100,7 +1100,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="86961017-3d62-4eb0-b887-edbb67fc2dd9" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_Cambions" />
@@ -1112,7 +1112,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b11ce87c-4955-4995-bfe4-029b0b74e4c1" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_WaveServant" />
@@ -1124,7 +1124,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b8154e5d-0e45-42b5-b4b8-aa410d0ce99d" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableMusicVFX" />
@@ -1136,7 +1136,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_MUSIC_VFX_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ff192099-2075-4e79-9f83-b51292137c1e" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSprites_All" />
@@ -1150,7 +1150,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="398492df-81fb-4e64-af73-0ee0e2fc9a78" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSprites_Vocal" />
@@ -1164,7 +1164,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ca18449-568d-429a-82e4-00e2e9bc0c17" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_TieflingBard" />
@@ -1177,7 +1177,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ad1b132-bd96-4823-9a86-10ed64ed1523" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_Cambions" />
@@ -1189,7 +1189,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF242323" is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="126cc254-203f-4fb5-9eee-82a71a3324df" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_WaveServant" />
@@ -1201,7 +1201,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF140D33" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2d606461-ce5a-402e-b635-5b84224e37b8" />
         <field name="Name" type="NameTableFieldDefinition" value="CleanUp_Emlute" />

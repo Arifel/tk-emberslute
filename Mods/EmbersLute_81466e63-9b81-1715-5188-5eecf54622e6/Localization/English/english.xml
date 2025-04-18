@@ -599,9 +599,9 @@
   <content contentuid="hd72c9c45g62fbg752dg1900g6d5d51e02f08" version="1">Sprites Protection</content>
   <content contentuid="h878de251g8dc8gce9dg7b9cg97ffaca0e170" version="1">Musical sprites are maintaining a sanctuary over the lead musical performer. While playing music in-combat, the perfomer cannot be targetted directly, though they may still take area damage.</content>
   <content contentuid="h16f3bc14g3e91g9e78gf827g95d6a4a3ebba" version="1">Sprite Swarm 2</content>
-  <content contentuid="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="1">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is halved, possibly takes [1] every turn, and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution&lt;/LSTag&gt;&lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;else &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; is broken.</content>
+  <content contentuid="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="2">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is halved, and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution &lt;/LSTag&gt;&lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt;else &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; is broken.</content>
   <content contentuid="h52cc55d6g1173g70a6g8cf6g31cf34c9d611" version="1">Sprite Swarm 3</content>
-  <content contentuid="h74dab9d0g9b5cg45a1gb31eg4c61b8bb2150" version="1">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is reduced by 75%, possibly takes [1] every turn, and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; else has a random chance to either become &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;blinded&lt;LSTag&gt;, &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;fall asleep&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="IRRESISTIBLE_DANCE"&gt;dance&lt;/LSTag&gt; for two turns.</content>
+  <content contentuid="h74dab9d0g9b5cg45a1gb31eg4c61b8bb2150" version="2">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is reduced by [1], and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution &lt;/LSTag&gt;&lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; else has a random chance to either become &lt;LSTag Type="Status" Tooltip="BLINDED"&gt;blinded&lt;LSTag&gt;, &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;fall asleep&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="IRRESISTIBLE_DANCE"&gt;dance&lt;/LSTag&gt; for [2] turns.</content>
   <content contentuid="hf7ba4cadg33bdg3a66g2d36g583edd90ed94" version="1">Musical Vigour 1</content>
   <content contentuid="he1d9b837g35e7gee75g8a17g23aff1a9bff6" version="1">Vibrant, powerful melodies wrap the body in protective lights that resist psychic damage. &lt;LSTag Tooltip="ArmourClass"&gt;Armour Class&lt;/LSTag&gt; is increased by 1.</content>
   <content contentuid="h62ba6f5dg4f43geff1g6851g2f7718e1fe51" version="1">Musical Vigour 2</content>
@@ -617,4 +617,10 @@
   <content contentuid="h040b8d8fg7657g638dg9229g5513f793f413" version="1">Needs a better name.</content>
   <content contentuid="he0d43376g1ae3gc270g7a1ag73472a899d1b" version="1">Neon Hangover</content>
   <content contentuid="hd4464361g5287gf91bgb4d1g923c542f491c" version="1">When did the world become so BRIGHT?</content>
+  <content contentuid="hfea246d3g18d3g4e5bg1cd7ge4de1e099f7d" version="1">Neon Hangover</content>
+  <content contentuid="h1043e2d0g654dga58dg8685g0a9489a1b794" version="1">Everyone in the area makes a Constitution saving throw, or falls asleep for 2 turns.</content>
+  <content contentuid="hd31e3bf6g3f5dg1548g15efgf91eaf828607" version="1">Sprite Blindness</content>
+  <content contentuid="h59b9dd9cg6e55g4d96g3361g1b2cf13f6b1a" version="1">Coerced to Dance</content>
+  <content contentuid="hd5de5c5dg3807gd6fag123fg883363356ec1" version="1">Sprite Sleep</content>
+  <content contentuid="h5e020815g2075g5d79gdba3gb974d40cb304" version="1">Sprite Distraction</content>
 </contentList>

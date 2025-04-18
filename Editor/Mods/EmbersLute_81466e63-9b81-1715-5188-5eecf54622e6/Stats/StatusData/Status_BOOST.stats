@@ -686,7 +686,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_DEBUFF_1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4fc48f5bg36edg3bf1gb1b8g1a4832d837a0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h606dc753ga30agcc5fg926dg6e31c28ef900" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(max(1,Cause.CharismaModifier),Piercing)" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Blinded" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Blinded" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
@@ -695,8 +695,10 @@
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnAttacked" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,12)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(max(1,Cause.CharismaModifier),Piercing)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Helpable_Condition" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="38edf085-8ed3-4380-92b0-a5ed03be0a7e" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
       </fields>
     </stat_object>
     <stat_object color="#FF471212" is_substat="false">
@@ -705,12 +707,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_DEBUFF_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9e28b7db-a20b-4cc9-a713-c89618eaf7b9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h16f3bc14g3e91g9e78gf827g95d6a4a3ebba" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="DealDamage(max(1,Cause.CharismaModifier),Piercing)" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceMultiplier(Movement,50,0);MovementSpeedLimit(Stroll)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="CreateExplosion(Projectile_DazzlingDistraction_1_Emlute)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,12)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="DealDamage(max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="SavingThrow(Ability.Dexterity,12)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_DAZZLINGDANCE_DEBUFF_3')):CreateExplosion(Projectile_DazzlingDistraction_1_Emlute)" />
       </fields>
     </stat_object>
     <stat_object color="#FF471212" is_substat="false">
@@ -719,12 +722,13 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_DEBUFF_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9e28b7db-a20b-4cc9-a713-c89618eaf7b9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h52cc55d6g1173g70a6g8cf6g31cf34c9d611" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h74dab9d0g9b5cg45a1gb31eg4c61b8bb2150" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h74dab9d0g9b5cg45a1gb31eg4c61b8bb2150" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="75%;2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ActionResourceMultiplier(Movement,25,0);MovementSpeedLimit(Walk)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(1,,Emlute_DazzlingDance)" />
-        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="DealDamage(1d4+max(1,Cause.CharismaModifier),Piercing)" />
-        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="SavingThrow(Ability.Dexterity,15)" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="DealDamage(max(1,Cause.CharismaModifier),Piercing)" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="SavingThrow(Ability.Dexterity,15)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="TriggerRandomCast(20,,Emlute_DazzlingDance)" />
       </fields>
     </stat_object>
     <stat_object color="#FF471212" is_substat="false">
@@ -734,6 +738,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf7ba4cadg33bdg3a66g2d36g583edd90ed94" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he1d9b837g35e7gee75g8a17g23aff1a9bff6" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);AC(1);Resistance(Psychic,Resistant)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="b0a55319-d450-4430-acb5-2807ca155106" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a522953e-74e1-447e-88c8-323d549c801f" />
       </fields>
     </stat_object>
     <stat_object color="#FF471212" is_substat="false">
@@ -744,6 +750,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h62ba6f5dg4f43geff1g6851g2f7718e1fe51" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h469c4ad8g2640g9506g14f1g4257593b8dcc" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);AC(1);Resistance(Psychic,Immune)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF471212" is_substat="false">
@@ -754,6 +761,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9492e2a2gd2ddg1d6bgfd5fg1c7dc38f3a2c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0af4532cg6912gfc4dga54bg3d37774d3ba7" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="GameplayLight(9,false,0.1);AC(1);RedirectDamage(1,,Psychic,true)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF471212" is_substat="false">
@@ -806,7 +814,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPRITES_DAZZLINGDANCE_USESPELL" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0d43376g1ae3gc270g7a1ag73472a899d1b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4464361g5287gf91bgb4d1g923c542f491c" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(SELF,Projectile_PantsExplosion_Emlute,true,true,true)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="UseSpell(SELF,DazzlingHangover_Emlute,true,true,true)" />
       </fields>
     </stat_object>
     <stat_object color="#FF03140A" is_substat="false">

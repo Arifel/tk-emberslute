@@ -28,7 +28,7 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
-/* Teleports a character to a relative offset position */
+
 PROC
 PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
 AND
@@ -57,8 +57,6 @@ DebugText(_Summon, "Debug: I am the summon");
 LookAtEntity(_Owner,_Summon);
 LookAtEntity(_Summon,_Owner);
 
-
-/* Starts music on the lead performer, caches active performance and begins a timer */
 PROC
 PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
@@ -69,7 +67,6 @@ MusicPlayOnCharacter(_Performer,_StartEvent);
 ObjectTimerCancel(_Performer,_Song);
 ObjectTimerLaunch(_Performer,_Song,_Duration);
 
-/* Stops music on the lead performer and clears active performance cache */
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
 AND
@@ -104,10 +101,6 @@ DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
 RemoveStatus(_Performer,_Status);
 
-/* 
- * Reposition a character on joining party (summon formation).
- * Make them face the summon owner (lead performer).
- */
 IF
 CharacterJoinedParty((CHARACTER)_Summon)
 AND
@@ -117,10 +110,6 @@ DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
 THEN
 PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
 
-/* 
- * "Fix" the music on Improved Countercharm summons by adding a short delay.
- * Feels a bit hacky. Seems to work though. 
- */
 IF
 EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
 AND

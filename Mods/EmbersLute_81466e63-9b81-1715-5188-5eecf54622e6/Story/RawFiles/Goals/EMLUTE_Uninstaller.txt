@@ -1,20 +1,50 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-
+DB_IterateDeleteCounter_EmbersLute(0);
 KBSECTION
+// Rather than manage a track of all Passives and Statuses in 
+// this uninstaller, we rely on the Ember's Lute mechanics which
+// will automatically clean up the player character of custom
+// statuses, spells and passives when they unequip a custom item.
+
+// We loop through all player characters, find any custom items and unequip.
+// The timer procs every half a second to check when all custom items have been unequipped.
+// Once nothing is found, it then deletes all the items with the custom mod tag.
+
+// n.b. this won't work on items scattered across the realm, or clear out vendors.
+// We'll recommend the player takes a long rest to clean up, before attempting to uninstall.
+
 IF
 CastedSpell((CHARACTER)_Caster,"Shout_CleanUp_Emlute",_,_,_)
 AND
 DB_Players(_Player)
 THEN
 PROC_UnequipCustom_EmbersLute();
-TimerLaunch("DeleteItem_EmbersLute",2500);
+TimerLaunch("DeleteItem_EmbersLute",500);
 
+// No more equipped items found, so safe to delete now
 IF
 TimerFinished("DeleteItem_EmbersLute")
+AND
+NOT QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
 THEN
 PROC_CleanUpCustom_EmbersLute();
+
+// Put a failsafe in for max 10 wait loops
+IF
+TimerFinished("DeleteItem_EmbersLute")
+AND
+DB_IterateDeleteCounter_EmbersLute(_Count)
+AND
+_Count < 10
+AND
+QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
+AND
+IntegerSum(_Count,1,_CountIncrement)
+THEN
+DB_IterateDeleteCounter_EmbersLute(_CountIncrement);
+TimerLaunch("DeleteItem_EmbersLute",500);
 
 IF
 EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItem")
@@ -47,6 +77,20 @@ AND
 IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
 THEN
 Unequip(_Player,_Equipped);
+
+QRY
+QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
+AND
+DB_Players(_Player)
+AND
+DB_EquippedItemSlots(_Slot)
+AND
+GetEquippedItem(_Player, _Slot, _Equipped)
+AND
+IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+DB_NOOP(1);
+
 
 EXITSECTION
 

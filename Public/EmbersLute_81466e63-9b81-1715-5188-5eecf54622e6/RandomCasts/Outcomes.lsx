@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="3"/>
+    <version major="4" minor="8" revision="0" build="10"/>
     <region id="Outcomes">
         <node id="root">
             <children>
@@ -103,21 +103,6 @@
                     <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>
                     <attribute id="Spell" type="FixedString" value="Shout_WildMagic_TurnMagic"/>
                     <attribute id="UUID" type="guid" value="c5d46e9e-583c-42e9-9ecd-44b265fb1bc0"/>
-                </node>
-                <node id="Outcome">
-                    <attribute id="GroupName" type="FixedString" value="Emlute_DazzlingDance"/>
-                    <attribute id="Spell" type="FixedString" value="Projectile_DazzlingDistraction_2_Emlute"/>
-                    <attribute id="UUID" type="guid" value="f3778d80-475c-4c66-b22c-a043a228c317"/>
-                </node>
-                <node id="Outcome">
-                    <attribute id="GroupName" type="FixedString" value="Emlute_DazzlingDance"/>
-                    <attribute id="Spell" type="FixedString" value="Projectile_DazzlingDistraction_3_Emlute"/>
-                    <attribute id="UUID" type="guid" value="f2900679-c25a-4c36-bb59-49c15ab8c2a0"/>
-                </node>
-                <node id="Outcome">
-                    <attribute id="GroupName" type="FixedString" value="Emlute_DazzlingDance"/>
-                    <attribute id="Spell" type="FixedString" value="Projectile_DazzlingDistraction_4_Emlute"/>
-                    <attribute id="UUID" type="guid" value="516dad29-ac2e-491b-9f3e-1cd2c9165c2f"/>
                 </node>
             </children>
         </node>

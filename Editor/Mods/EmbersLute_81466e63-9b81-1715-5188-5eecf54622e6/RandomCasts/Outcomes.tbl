@@ -161,29 +161,5 @@
         <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_WildMagic_TurnMagic" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_20" />
-        <field name="UUID" type="IdTableFieldDefinition" value="f3778d80-475c-4c66-b22c-a043a228c317" />
-        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Emlute_DazzlingDance" />
-        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_DazzlingDistraction_2_Emlute" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_21" />
-        <field name="UUID" type="IdTableFieldDefinition" value="f2900679-c25a-4c36-bb59-49c15ab8c2a0" />
-        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Emlute_DazzlingDance" />
-        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_DazzlingDistraction_3_Emlute" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_22" />
-        <field name="UUID" type="IdTableFieldDefinition" value="516dad29-ac2e-491b-9f3e-1cd2c9165c2f" />
-        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Emlute_DazzlingDance" />
-        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_DazzlingDistraction_4_Emlute" />
-      </fields>
-    </stat_object>
   </stat_objects>
 </stats>

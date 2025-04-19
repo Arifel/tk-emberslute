@@ -73,36 +73,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="abebc9ba-031f-49a2-b54e-7db48bbbb8bb" />
-        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_2_Emlute" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();ApplyStatus(BLINDED,100,2);" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="af889d74-b17e-4f32-916c-968cf0d6b0d9" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd31e3bf6g3f5dg1548g15efgf91eaf828607" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="9c35aa24-ea4f-4e86-bb90-80cf01720929" />
-        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_3_Emlute" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();ApplyStatus(IRRESISTIBLE_DANCE,100,2);" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="af889d74-b17e-4f32-916c-968cf0d6b0d9" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h59b9dd9cg6e55g4d96g3361g1b2cf13f6b1a" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="60b2afba-adcf-4789-8344-489f517987c6" />
-        <field name="Name" type="NameTableFieldDefinition" value="DazzlingDistraction_4_Emlute" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution,CalculateSpellDC(context.PreferredCastingAbility,GetSummoner(context.Source)))" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="BreakConcentration();ApplyStatus(SLEEP,100,2);" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="af889d74-b17e-4f32-916c-968cf0d6b0d9" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5de5c5dg3807gd6fag123fg883363356ec1" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2061137a-954b-405c-b671-ef1d0ac5dcc8" />
         <field name="Name" type="NameTableFieldDefinition" value="DazzlingHangover_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7e413bb8-213e-4641-9657-301c0a58d593" />

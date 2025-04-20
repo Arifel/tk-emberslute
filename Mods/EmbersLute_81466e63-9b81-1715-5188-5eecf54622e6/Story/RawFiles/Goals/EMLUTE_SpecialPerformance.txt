@@ -65,10 +65,15 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
+// Reset the performing state on save game load
+IF
+SavegameLoaded()
+THEN
+PROC_ResetActivePerformanceState_EmbersLute();
+
 // Catch the special music performances and trigger the music events.
 // Timers are used to automatically stop the performance at the end 
 // of the song. Unlike the standard music performances, we won't loop.
-
 IF
 MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
@@ -221,6 +226,15 @@ RealSum(_Z,_OffsetZ,_NewZ)
 THEN
 PROC_StopFollow(_Summon);
 TeleportToPosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
+
+PROC
+PROC_ResetActivePerformanceState_EmbersLute()
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
+THEN
+RequestDelete(_HelperItem);
+RequestDelete(_FocusItem);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
 EXITSECTION
 
 ENDEXITSECTION

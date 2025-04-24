@@ -214,6 +214,40 @@ DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_MoreMusicFix",0);
 
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_ScriptedFXFix",_)
+AND
+NOT DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_01","Emlute_FinalActS01_DarkOverlay_01_STOP")
+THEN
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_01","Emlute_FinalActS01_DarkOverlay_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_01","Emlute_FinalActS01_Spotlight_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_02","Emlute_FinalActS01_DarkOverlay_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_02","Emlute_FinalActS01_Spotlight_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_03","Emlute_FinalActS01_DarkOverlay_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_03","Emlute_FinalActS01_Spotlight_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_04","Emlute_FinalActS01_DarkOverlay_04_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Ascend_01","Emlute_FinalActS01_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_01","Emlute_FinalActS02_Spotlight_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_01","Emlute_FinalActS02_DarkOverlay_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_02","Emlute_FinalActS02_Spotlight_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_02","Emlute_FinalActS02_DarkOverlay_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_03","Emlute_FinalActS02_Spotlight_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_03","Emlute_FinalActS02_DarkOverlay_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Ascend_01","Emlute_FinalActS02_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActL01_Ascend_01","Emlute_FinalActL01_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_FinalActS02_Spotlight_04_STOP");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_ScriptedFXFix",1);
+
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_ScriptedFXFix",_)
+AND
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_01","Emlute_FinalActS01_DarkOverlay_01_STOP")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_ScriptedFXFix",0);
 EXITSECTION
 
 ENDEXITSECTION

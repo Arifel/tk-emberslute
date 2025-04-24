@@ -5,7 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c34f252f-e5ae-4d04-980e-5089fb962337" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_ThePower_Emlute;Shout_Bard_Perform_BardDance_Emlute;Shout_Bard_Perform_Stargazing_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_ThePower_Emlute;Shout_Bard_Perform_BardDance_Emlute;Shout_Bard_Perform_Stargazing_Emlute;Shout_Bard_Perform_WeepingDawn_Sprites_Emlute;" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4c8ef786g598dg8581g3dd2g755d7db6af2d" version="1" />
@@ -78,6 +78,19 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="(not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat())" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_HighSeas" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="72002c47-13c8-4472-89bb-d4486321ef09" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_WeepingDawn_Sprites_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="865ed572-4e59-4777-b099-ad0c5033387d" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71d7acf7g8eb3gfc5fg4088g91a379695d00" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e675250g9729gd6cag1a71g2f3544cff4c2" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="(not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat())" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">

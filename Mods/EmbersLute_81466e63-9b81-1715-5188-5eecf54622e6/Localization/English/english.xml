@@ -630,4 +630,6 @@
   <content contentuid="h54987e15g4608g0445gf9c3ge9dde5750bdc" version="1">Triggers a random chance to either &lt;LSTag Type="Status" Tooltip="SLEEP"&gt;Sleep&lt;/LSTag&gt; or &lt;LSTag Type="Status" Tooltip="IRRESISTIBLE_DANCE"&gt;Dance&lt;/LSTag&gt; for [1] turns.</content>
   <content contentuid="hea4c7e4ag92cfga469g59e6gd240d6db8c7c" version="1">This instrument can be taken into combat.</content>
   <content contentuid="h54b4565cgb296gf865g511fgb38d569c25d9" version="1">There is a continuous chorus of chimes and tinkling, almost like laughter.</content>
+  <content contentuid="h71d7acf7g8eb3gfc5fg4088g91a379695d00" version="1">Perform 'The Weeping Dawn'</content>
+  <content contentuid="h0e675250g9729gd6cag1a71g2f3544cff4c2" version="1">Join the spirit of a tragic tiefling bard and play a heartfelt tribute to lost friends.</content>
 </contentList>

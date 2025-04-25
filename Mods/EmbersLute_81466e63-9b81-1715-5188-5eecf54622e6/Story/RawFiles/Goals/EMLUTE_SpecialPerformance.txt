@@ -151,6 +151,8 @@ ApplyStatus(_Summon,_Status,-1.0);
 PROC
 PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,0)
+AND
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
 AND
 DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
@@ -184,6 +186,8 @@ PlaySoundResource(_HelperItem,_MusicSoundResource);
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
 AND
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,0)
+AND
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
 THEN
 PROC_StopMusicOnItem(_Song,_HelperItem);
@@ -202,6 +206,41 @@ AND
 DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource)
 THEN
 PlaySoundResource(_HelperItem,_MusicSoundResource);
+
+// Legacy implementation, only applies to one song
+IF
+CastSpell((CHARACTER)_Caster,"Shout_Bard_Perform_WeepingDawn_Sprites_Emlute",_,_,_)
+THEN
+SetTag(_Caster,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
+
+// Legacy implementation, only applies to one song
+PROC
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
+AND
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
+AND
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
+THEN
+ObjectTimerCancel(_Performer,_Song);
+ObjectTimerLaunch(_Performer,_Song,_Duration);
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
+PROC_MusicPlayGeneral(_Start);
+
+// Legacy implementation, only applies to one song
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,_Song,(STRING)_StopEvent)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
+THEN
+PROC_MusicPlayGeneral(_Stop);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
+ClearTag(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
 
 PROC
 PROC_DebugMusicState((CHARACTER)_Performer)

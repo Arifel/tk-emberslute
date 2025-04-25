@@ -103,13 +103,10 @@ ObjectTimerLaunch(_Player,"EmbersLute_ConfigSpellRemoveDelay",1500);
 IF
 ObjectTimerFinished((CHARACTER)_Player, "EmbersLute_ConfigSpellRemoveDelay")
 AND
-GetEquippedItem(_Player, "MusicalInstrument", _Instrument)
-AND
-NOT QRY_IsEmbersLuteInstrument(_Instrument)
-AND
-HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1)
+NOT QRY_HasEmbersLuteInstrument(_Player)
 THEN
 RemoveSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1);
+
 //
 // Also add for varnish tag set
 IF
@@ -118,15 +115,6 @@ AND
 HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 0)
 THEN
 AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
-//
-// And remove (with delay)for varnish tag clear
-IF
-TagCleared((CHARACTER)_Player,(TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883)
-AND
-HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1)
-THEN
-ObjectTimerCancel(_Player,"EmbersLute_ConfigSpellRemoveDelay");
-ObjectTimerLaunch(_Player,"EmbersLute_ConfigSpellRemoveDelay",1500);
 
 
 ///////////////////////////////////////////////////////////////////

@@ -83,6 +83,7 @@ IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
 THEN
 // Play the effects for the lead performer
+DB_Active_ScriptedVFX_EmbersLute(_Performer,"FinalAct");
 PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Lead01");
 
 IF
@@ -90,6 +91,7 @@ StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
 THEN
 PROC_CleanUpEffectTimers_EmbersLute("FinalAct",_Performer);
 PROC_CleanUpEffects_EmbersLute("FinalAct",_Performer);
+NOT DB_Active_ScriptedVFX_EmbersLute(_Performer,"FinalAct");
 
 IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
@@ -106,6 +108,8 @@ ObjectTimerLaunch(_Performer,_FXEvent,_Start);
 
 IF
 ObjectTimerFinished((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+DB_Active_ScriptedVFX_EmbersLute(_Performer,_)
 AND 
 QRY_IsScriptedFXEvent_EmbersLute(_FXEvent)
 AND
@@ -130,6 +134,8 @@ ObjectTimerLaunch(_Performer,_StopTimer,_Stop);
 
 IF
 ObjectTimerFinished((CHARACTER)_Performer,(STRING)_StopTimer)
+AND
+DB_Active_ScriptedVFX_EmbersLute(_Performer,_)
 AND
 QRY_IsScriptedStopFXEvent_EmbersLute(_StopTimer)
 AND

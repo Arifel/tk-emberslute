@@ -284,6 +284,10 @@ ObjectTimerLaunch(_Character,_PassiveToggle,_Delay);
 IF
 ObjectTimerFinished((CHARACTER)_Character, _PassiveToggle)
 AND
+DB_Players(_Character)
+AND
+DB_PassiveTimer_EmbersLute(_,_PassiveToggle,_)
+AND
 NOT QRY_HasEmbersLuteInstrument(_Character)
 THEN
 PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
@@ -291,6 +295,10 @@ PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
 // This handles the instrument hot-swap cases.
 IF
 ObjectTimerFinished((CHARACTER)_Character, _PassiveToggle)
+AND
+DB_Players(_Character)
+AND
+DB_PassiveTimer_EmbersLute(_,_PassiveToggle,_)
 AND
 GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
 AND

@@ -316,6 +316,53 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5e9bf56gd745g8ab6g4644g139101485b03" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF7A1111" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_Wine" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h40a624cdgdf9fgb35bg2e88g6177ca91b5e4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7309bf1cga4b8g98b5gb5dag5774a33c78d3" version="2" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;a3737a16-67d5-4aa0-bec3-f7cef39c113d,,;,,;,,;,,;,,;,,;,," />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7A1111" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="373d4394-262c-4be5-ac29-d172192e32fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_Poppy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2e302d4gb3fcg7400g53f4g996e1cb8009d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5a49695gaaa5gb2a4g43c0g14a02184adae" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7A1111" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5ff6f6e8-cca1-4094-91f5-975e5d870851" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_Coin" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1bdd875ege759g9f63g02d7gdff7f8db9fc8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7a42b8fbgb977g34f6g2eb3gaec010c329ef" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7A1111" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="745bf1de-a212-4a1e-b00a-49442bac5f48" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_Coins" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5ff7576cg0a45g7858g9b68g90bab5d1fbee" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h33dd7069g1536g6013g95e5g8f3bbe3750dd" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7A1111" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cb5c1269-4656-4902-98cb-1643537f54cb" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_MeatThing" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77765382gf2d9g1743gdcd3g8601c318a785" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5f4d5076gb7d8g1eefg3ac0g219dfe9514ae" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a4a57164-887f-4530-a7a6-28a22976ec84" />

@@ -182,7 +182,7 @@ end
 
 function Emlute_IsNPCBard(entity)
 	local entity = entity or context.Source
-	return (Tagged('BARD',entity) and (not HasPassive('Emlute_Musical_Spirit',entity)) and HasInstrumentEquipped(entity) and (not Party(entity)))
+	return (Tagged('BARD',entity) & ~HasStatus('EMLUTE_MUSICAL_SPIRIT_TEMPORARY',entity))
 end
 
 function Emlute_MusicalLegendsEnabled(entity)

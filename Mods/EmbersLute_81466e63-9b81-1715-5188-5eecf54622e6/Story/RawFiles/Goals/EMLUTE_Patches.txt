@@ -113,22 +113,23 @@ DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",0);
 IF
 SavegameLoaded()
 AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions01",_)
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions01_fix",_)
 AND
-NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good","OnStatusApply")
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good","OnStatusApply")
 THEN
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good","OnStatusApply");
-DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions01",1);
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good","OnStatusApply");
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions01_fix",1);
 
 IF
 SavegameLoaded()
 AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions02",_)
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions02_fix",_)
 AND
-NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC", "OnMainPerformerStart")
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
 THEN
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC", "OnMainPerformerStart");
-DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions02",1);
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions02_fix",1);
 
 IF
 SavegameLoaded()

@@ -106,5 +106,61 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab3052f7-c5de-4229-a25f-1f442b36acc8" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossRuby_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(b085e96d-e199-467f-b6a8-5d9d44e3cb21);" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h677fa9abge82fgbb54ga356g5da57132e53d" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57a469c6-4ddc-40b9-8eda-8285b3c1a9ee" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossOnyx_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(6cbbe9f6-c346-4d6c-b1f1-4cbe6aaf99ef);" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h034c40b0g345agdf4fg263bg7b79f4e27b28" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e3b266ec-53de-4d30-be5c-dda85f48b704" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossShabbyPants_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(e1797af7-5459-4db2-99da-5703fa203edb);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7056274g4aecgc7d2g26bbgdb10488301c6" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dca8d9de-2dd6-4f5d-a217-6ac0e231ace8" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossFancyPants_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(6afe0665-ef74-44bb-916a-fb00a267b4b9);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h564c2ad7g85a2gce86g3ba5g2be9dab2acc7" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="10781e2b-8cf8-4529-9767-3a7a7703bd4e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossFlower_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(16c583b8-4729-4603-aeee-d224bf645653,5);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="854a1ada-4e2d-4e45-864c-78d4fda7af89" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossFlowerAlt_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(63a68096-e30e-4bae-a404-be97fe420e48,5);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e7dd7d6g58fag59c2g6708g8cce75aa4807" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

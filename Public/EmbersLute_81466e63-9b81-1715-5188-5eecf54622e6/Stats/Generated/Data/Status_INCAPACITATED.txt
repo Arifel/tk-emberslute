@@ -1,0 +1,10 @@
+new entry "EMLUTE_REACTIONS_FAINT"
+type "StatusData"
+data "StatusType" "INCAPACITATED"
+using "SLEEP"
+data "DisplayName" "hb4f2ebdeg0263gd064gfb0cg01c30a3591e3;1"
+data "Description" "haeecd54cgc265gc06fg633dg76756788c6bd;1"
+data "Boosts" "AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);CriticalHit(AttackTarget,Success,Always,3);DetectDisturbancesBlock(true);Advantage(AttackTarget);SightRangeOverride(0);Attribute(Grounded);"
+data "StatusPropertyFlags" "OverheadOnTurn"
+data "StatusGroups" "SG_Unconscious;SG_Condition"
+

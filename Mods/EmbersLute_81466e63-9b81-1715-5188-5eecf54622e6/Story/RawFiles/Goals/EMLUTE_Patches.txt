@@ -3,6 +3,8 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// Version 2 mod patches
+//REGION
 // Summon repositioning was added in v2.0.2.21
 // Mark second column as 1 for patch required and applied (user update)
 IF
@@ -109,7 +111,49 @@ AND
 DB_TagToPassiveMap_EmbersLute(_,_)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",0);
+//END_REGION
 
+// Version 3 mod patches final (post-release)
+//REGION
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
+AND
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply")
+THEN
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply");
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",1);
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
+AND
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",0);
+
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",_)
+AND
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
+THEN
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart");
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",1);
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",_)
+AND
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",0);
+//END_REGION
+
+// Version 3 mod patches (dev)
+//REGION
 IF
 SavegameLoaded()
 AND 
@@ -197,11 +241,11 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-1.5,0.0,-1.5,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,1.5,0.0,-1.5,1);
 // Additional instrument mapping
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_WaveServants");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions");
+//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_WaveServants");
+//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_TieflingBard");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_WaveServants");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_Cambions");
+//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_WaveServants");
+//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_Cambions");
 // Done, mark as patch applied
 DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_MoreMusicFix",1);
 
@@ -249,6 +293,28 @@ AND
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_01","Emlute_FinalActS01_DarkOverlay_01_STOP")
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_ScriptedFXFix",0);
+
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate",_)
+AND
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions")
+THEN
+NOT DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_WaveServants");
+NOT DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions");
+NOT DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_WaveServants");
+NOT DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_Cambions");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate",_)
+AND
+NOT DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate",0);
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

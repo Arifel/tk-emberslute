@@ -42,6 +42,10 @@ DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FIN
 DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_FinalAct",(CHARACTERROOT)EMLUTE_Helper_PositionFinder_0305c5b9-e08e-44d4-987c-894d24983d3d,"ProjectileStrike_PositionFinder_4_Emlute");
 DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,"EMLUTE_PERFORM_FINALACT_NO_AURA");
 DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,"EMLUTE_PERFORM_FINALACT_NO_AURA");
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_WATERQUEEN");
+DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_WaterQueen",(CHARACTERROOT)EMLUTE_Helper_PositionFinder_0305c5b9-e08e-44d4-987c-894d24983d3d,"ProjectileStrike_PositionFinder_4_Emlute");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
 KBSECTION
 // Position finder for spawns
 //REGION
@@ -69,11 +73,16 @@ UseSpell(_HelperItem,_Spell,_Performer);
 ObjectTimerLaunch(_Performer,"ScriptedVFX_SpawnHelpers_EmbersLute",1000);
 
 QRY
-QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,(STRING)_Song)
-AND
-_Song == "Bard_Perform_FinalAct"
+QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,"Bard_Perform_FinalAct")
 AND
 IsTagged(_Performer,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63,0)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,"Bard_Perform_WaterQueen")
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b,0)
 THEN
 DB_NOOP(1);
 
@@ -311,7 +320,6 @@ AND
 DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
 THEN
 NOT DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status);
-
 //END_REGION
 
 // While it is quite possible to use the VFX editor to create long-running

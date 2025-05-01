@@ -38,8 +38,282 @@ DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Ascend_01","Emlute_FinalAct
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActL01_Ascend_01","Emlute_FinalActL01_Ascend_01_STOP");
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_FinalActS02_Spotlight_04_STOP");
 
-
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FINALACT");
+DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_FinalAct",(CHARACTERROOT)EMLUTE_Helper_PositionFinder_0305c5b9-e08e-44d4-987c-894d24983d3d,"ProjectileStrike_PositionFinder_4_Emlute");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,"EMLUTE_PERFORM_FINALACT_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,"EMLUTE_PERFORM_FINALACT_NO_AURA");
 KBSECTION
+// Position finder for spawns
+//REGION
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_Players(_Player)
+THEN
+PROC_ScriptedVFX_Reset_EmbersLute(_Player);
+PROC_ScriptedVFX_SpawnReset_EmbersLute(_Player);
+PROC_ScriptedVFX_HelperReset_EmbersLute(_Player);
+
+IF
+EnteredLevel((ITEM)_HelperItem,(ITEMROOT)_Template, _)
+AND
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem)
+AND
+QRY_ScriptedVFX_SongSummonEnabled(_Performer,_Song)
+AND
+DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_,_Spell)
+THEN
+PROC_ScriptedVFX_Reset_EmbersLute(_Performer);
+PROC_ScriptedVFX_SpawnReset_EmbersLute(_Performer);
+UseSpell(_HelperItem,_Spell,_Performer);
+ObjectTimerLaunch(_Performer,"ScriptedVFX_SpawnHelpers_EmbersLute",1000);
+
+QRY
+QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,(STRING)_Song)
+AND
+_Song == "Bard_Perform_FinalAct"
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63,0)
+THEN
+DB_NOOP(1);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"ScriptedVFX_SpawnHelpers_EmbersLute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+THEN
+// Works best when kept dumb, so we are just testing all the permutations
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,1);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,2);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,3);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,4);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,5);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,1);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,2);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,3);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,4);
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,5);
+ObjectTimerLaunch(_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute",1000);
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+THEN
+PROC_ScriptedVFX_MopUp_EmbersLute(_Performer,_Song);
+
+IF
+EnteredLevel((CHARACTER)_PositionFinder,(CHARACTERROOT)_Template, _)
+AND
+DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell)
+AND
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem)
+AND
+QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count)
+THEN
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_Count,0);
+
+QRY
+QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
+AND
+NOT QRY_AtLeastOne_EmbersLute((CHARACTER)_Performer)
+THEN
+DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute((CHARACTER)_Performer,1);
+
+QRY
+QRY_AtLeastOne_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count)
+AND
+IntegerSum(_Count,1,_CountSum)
+THEN
+NOT DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count);
+DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_CountSum);
+
+IF
+StatusApplied((CHARACTER)_PositionFinder,"SNEAKING",_,_)
+AND
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0)
+AND
+CanSee(_Performer,_PositionFinder,0)
+AND
+IntegerToString(_PositionNum,_CountStr)
+AND
+Concatenate("Cannot see: ", _CountStr, _DebugMsg)
+THEN
+DebugText(_Performer,_DebugMsg);
+NOT DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0);
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,1);
+
+IF
+StatusApplied((CHARACTER)_PositionFinder,"SNEAKING",_,_)
+AND
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0)
+AND
+CanSee(_Performer,_PositionFinder,1)
+AND
+IntegerToString(_PositionNum,_CountStr)
+AND
+Concatenate("Not needed, destroy: ", _CountStr, _DebugMsg)
+THEN
+DebugText(_Performer,_DebugMsg);
+Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+SetOnStage(_PositionFinder,0);
+SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
+
+PROC
+PROC_ScriptedVFX_PlaceSpawns_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_SpawnNum,(INTEGER)_PosNum)
+AND
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(_SpawnNum,_Song,_CharTemplate,_Status)
+AND
+NOT QRY_SpawnIsPlaced_EmbersLute(_Performer,_Song,_CharTemplate)
+AND
+QRY_PositionIsBehindPerformer_EmbersLute(_Performer,_Song,_PosNum)
+AND
+NOT QRY_PositionOccupied_EmbersLute(_Performer,_Song,_PosNum)
+AND
+QRY_CreateSpawnAtPosition_EmbersLute(_PosNum,_CharTemplate,_Performer,_Song,_Status)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CreateSpawnAtPosition_EmbersLute((INTEGER)_PositionNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
+AND
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,1)
+AND
+IntegerToString(_PositionNum,_PosStr)
+AND
+Concatenate("Mapping template to position ", _PosStr, _DebugMsg)
+AND
+CreateAtObject(_CharTemplate,_Performer,0,1,"SongSpawnFinishEvent_EmbersLute",1,_Spawn)
+AND
+GetPosition(_PositionFinder,_X,_Y,_Z)
+THEN
+DebugText(_Performer,_DebugMsg);
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status);
+TeleportToPosition(_Spawn,_X,_Y,_Z,"TeleportSpawnToPosition_EmbersLute",0,0,0,0,1);
+
+PROC
+PROC_ScriptedVFX_MopUp_EmbersLute((CHARACTER)_Performer,(STRING)_Song)
+AND
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,1)
+AND
+NOT QRY_PositionOccupied_EmbersLute(_Performer,_Song,_PositionNum)
+AND
+IntegerToString(_PositionNum,_CountStr)
+AND
+Concatenate("Not needed, destroy: ", _CountStr, _DebugMsg)
+THEN
+DebugText(_Performer,_DebugMsg);
+Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+SetOnStage(_PositionFinder,0);
+SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
+
+QRY
+QRY_SpawnIsPlaced_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(CHARACTERROOT)_CharTemplate)
+AND
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_PositionOccupied_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_PositionNum)
+AND
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_PositionIsBehindPerformer_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_PositionNum)
+AND
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,1)
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((CHARACTER)_Spawn,"SongSpawnFinishEvent_EmbersLute")
+AND
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
+AND
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
+THEN
+LookAtEntity(_Spawn,_Performer);
+Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+SetOnStage(_PositionFinder,0);
+SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
+
+IF
+StatusRemoved((CHARACTER)_Spawn,(STRING)_Status,_,_)
+AND
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
+AND
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
+THEN
+Die(_Spawn,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+SetOnStage(_Spawn,0);
+SetTag(_Spawn, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
+ObjectTimerLaunch(_Spawn,"DragOffStageAndKillSpawn_EmbersLute",500);
+
+IF
+ObjectTimerFinished((CHARACTER)_Spawn,"DragOffStageAndKillSpawn_EmbersLute")
+AND
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
+AND
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
+THEN
+Die(_Spawn,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+NOT DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+NOT DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status);
+
+IF
+StatusRemoved((CHARACTER)_Performer,(STRING)_Status,_,_)
+AND
+DB_ScriptedVFX_SongStatus_EmbersLute(_Song,_Status)
+THEN
+PROC_ScriptedVFX_Reset_EmbersLute(_Performer);
+PROC_ScriptedVFX_HelperReset_EmbersLute(_Performer);
+
+PROC
+PROC_ScriptedVFX_Reset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count)
+THEN
+NOT DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count);
+
+PROC
+PROC_ScriptedVFX_HelperReset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_CountSum,_IsBehind)
+THEN
+Die(_PositionFinder,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+NOT DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_CountSum,_IsBehind);
+
+PROC
+PROC_ScriptedVFX_SpawnReset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
+THEN
+Die(_Spawn,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+NOT DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+
+PROC
+PROC_ScriptedVFX_SpawnReset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
+THEN
+NOT DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status);
+
+//END_REGION
+
 // While it is quite possible to use the VFX editor to create long-running
 // effects for the duration of a song, if you remove the FX part way through
 // the FX will still continue until it has completed all the phases. This isn't 
@@ -48,6 +322,13 @@ KBSECTION
 
 // We're going to lazily hard code some of this for the Final Act performance.
 // Might improve it later if I ever add more scripted VFX performances.
+//REGION
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
+THEN
+// Play the effects for the lead performer
+DB_ScriptedVFX_ActiveSongLead_EmbersLute(_Performer,"FinalAct");
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Lead01");
 
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
@@ -80,18 +361,11 @@ THEN
 PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
 
 IF
-StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
-THEN
-// Play the effects for the lead performer
-DB_Active_ScriptedVFX_EmbersLute(_Performer,"FinalAct");
-PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Lead01");
-
-IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
 THEN
 PROC_CleanUpEffectTimers_EmbersLute("FinalAct",_Performer);
 PROC_CleanUpEffects_EmbersLute("FinalAct",_Performer);
-NOT DB_Active_ScriptedVFX_EmbersLute(_Performer,"FinalAct");
+NOT DB_ScriptedVFX_ActiveSongLead_EmbersLute(_Performer,"Bard_Perform_FinalAct");
 
 IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
@@ -109,11 +383,9 @@ ObjectTimerLaunch(_Performer,_FXEvent,_Start);
 IF
 ObjectTimerFinished((CHARACTER)_Performer,(STRING)_FXEvent)
 AND
-DB_Active_ScriptedVFX_EmbersLute(_Performer,_)
-AND 
-QRY_IsScriptedFXEvent_EmbersLute(_FXEvent)
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
 AND
-NOT QRY_HasActiveEffect_EmbersLute(_Performer,_FXEvent)
+DB_ScriptedVFX_ActiveSongLead_EmbersLute(_,_Song)
 THEN
 PROC_StartScriptedFX_EmbersLute(_Performer,_FXEvent);
 
@@ -135,9 +407,9 @@ ObjectTimerLaunch(_Performer,_StopTimer,_Stop);
 IF
 ObjectTimerFinished((CHARACTER)_Performer,(STRING)_StopTimer)
 AND
-DB_Active_ScriptedVFX_EmbersLute(_Performer,_)
+DB_ScriptedVFX_StopFX_EmbersLute(_FXEvent,_StopTimer)
 AND
-QRY_IsScriptedStopFXEvent_EmbersLute(_StopTimer)
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
 AND
 DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer)
 THEN
@@ -184,6 +456,7 @@ AND
 DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_,_)
 THEN
 DB_NOOP(1);
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

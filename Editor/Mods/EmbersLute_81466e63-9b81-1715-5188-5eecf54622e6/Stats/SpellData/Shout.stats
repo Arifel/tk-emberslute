@@ -767,7 +767,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Share_MusicalSpirits_Emlute" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_AURA_VORTEX_INSTRUMENTS_VFX,100,1);ApplyStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY,100,-1)" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="20" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Party() and not HasStatus('EMLUTE_MUSICAL_SPIRIT_TEMPORARY')" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Party() and not HasStatus('EMLUTE_MUSICAL_SPIRIT_TEMPORARY') and not HasPassive('Emlute_Musical_Spirit_Portal') and not Self();" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ShareMusicalSpirits" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h14f280fbgc270g7b04g63d8ga279cd2097fc" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h88072179g8a79g6a0bgf3aag76f47c6c96fa" version="1" />

@@ -28,7 +28,7 @@
   <content contentuid="hd247fae5g8610g6536gbe24g9d5d357260f1" version="1">Sprite-Summoning Enabled</content>
   <content contentuid="hf815332ag9d8dg1857g4667gfc57ea732531" version="3">Invisible Drum</content>
   <content contentuid="hec9bf578gf114g2667gf4beg3d10d754ff45" version="3">Invisible drum used by musical sprites</content>
-  <content contentuid="h095ddae4gbd97g1e01gc61dg9b46c830d9ae" version="5">A Thunder of Drums</content>
+  <content contentuid="h095ddae4gbd97g1e01gc61dg9b46c830d9ae" version="6">A Thunder of Drums</content>
   <content contentuid="hc3f75e90g834agd480g377egf96e108dbc4d" version="2">|Hidden| Perform with Sprites</content>
   <content contentuid="h81faf5b5gf9d6g4c3egc30ag659545e826c1" version="2">Perform music with instrument sprites.</content>
   <content contentuid="h4c8ef786g598dg8581g3dd2g755d7db6af2d" version="1">Perform with Sprites</content>
@@ -518,8 +518,8 @@
   <content contentuid="hddfbbe5ag2cbfgc0edgfd5fg656715c5363c" version="2">This entity will vanish once the performance is ended.</content>
   <content contentuid="h4bf03d60gfb2bgbcafg8d36gca1bab7559e2" version="1">Transient Performer</content>
   <content contentuid="hd58e0c9fg3513g26f0g5a50g3ba335170bf3" version="1">This entity will vanish once the performer leaves the area.</content>
-  <content contentuid="h13dec50fg89e0gf861g4cebgf300b132ca92" version="7">A Performative Cambion</content>
-  <content contentuid="hec5a41efg9900g0c2bgf49cg818bd09cf614" version="8">A Theatrical Cambion</content>
+  <content contentuid="h13dec50fg89e0gf861g4cebgf300b132ca92" version="10">A Dramatic Cambion</content>
+  <content contentuid="hec5a41efg9900g0c2bgf49cg818bd09cf614" version="10">A Theatrical Cambion</content>
   <content contentuid="hd756eac4gead6g331fg2d50gb56bc91237a5" version="1">Cambions</content>
   <content contentuid="he9ef9ce8g565bgfe5bgc530gba2a3dae8a13" version="1">If enabled, a pair of cambions will appear when the Final Act is performed.</content>
   <content contentuid="h5a2c88begb65bg8810g698bgd4ddca7cd682" version="1">Test</content>
@@ -528,7 +528,7 @@
   <content contentuid="hd6fa340age6eeg1995g1719g545f9cd26e21" version="1">If you can see this it is a bug.</content>
   <content contentuid="h2a9e83b0g63dbg7a95ged85gb47ff185f324" version="1">|HIDDEN| Hidden</content>
   <content contentuid="h5d0fc44dg26bcg48c3g125egb2e9abe6af61" version="1">If you can see this it is a bug.</content>
-  <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="9">Channelling Legendary Performance</content>
+  <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="10">Musical Sprites</content>
   <content contentuid="h83e49317gdb1bgbe93g919cg51fff35b1311" version="3">Channelling Legendary Performance</content>
   <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="4">Lute of Musical Sprites (Dyeable)</content>
   <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="4">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
@@ -669,4 +669,20 @@
   <content contentuid="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="1">The excitement is palpable and the coin purses are loosening.</content>
   <content contentuid="h070ec377g460cg0632g1dacgf6820d2329a8" version="1">Dangerous Performance!</content>
   <content contentuid="h58f2862eg5496gb164gfd7eg49ba35a7960c" version="1">This crowd is really quite riled up. A responsible performer might stop about now.</content>
+  <content contentuid="h4ddec9a4gb4eegeb8dg739aga375340e0428" version="2">Cute White Flower</content>
+  <content contentuid="hf6f84b9ag9ca7ga8a3gfe36g54ccaf08b5b7" version="2">Thrown by an admirer</content>
+  <content contentuid="h3ee91fb9g03f5ge192ge9a9gfe112d9b7bb1" version="2">Cute Pink Flower</content>
+  <content contentuid="ha463eae2g6927g47fcg0b6dge2aee2ce6c76" version="2">Thrown by an admirer.</content>
+  <content contentuid="hab9c4a13g90a7gdaebgd314ga73a26ed75ff" version="1">Cute Blue Flower</content>
+  <content contentuid="h29dab63eg8433gc234g0562g300cd70df441" version="1">Thrown by an admirer.</content>
+  <content contentuid="h071139feg1462ge056g8680g4b7b5eea0f9f" version="1">Well Worn Underwear</content>
+  <content contentuid="ha2c34f4agbaafgd080g0a6eg7205823a2caf" version="1">Worn recently.</content>
+  <content contentuid="h8a573613g8e9bg6450g9785gbfb59ad48acb" version="2">Well Worn Underwear</content>
+  <content contentuid="h206ea9edg4624gbee5g26bbg4ec8be8d98bc" version="2">Worn recently.</content>
+  <content contentuid="h0200120fg627ag9559g9399gfefd04fa7403" version="1">Throw Fish</content>
+  <content contentuid="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="1">Throw Meat</content>
+  <content contentuid="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1">Throw Meat</content>
+  <content contentuid="h8cf1e6a7g3333g48c8ga47fg80b8b45516d0" version="3">Channelling Legendary Performance</content>
+  <content contentuid="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="1">Position Finder</content>
+  <content contentuid="he9897de5g7226g1393g8f79g6ca6166e7f7c" version="6">Stage Helper</content>
 </contentList>

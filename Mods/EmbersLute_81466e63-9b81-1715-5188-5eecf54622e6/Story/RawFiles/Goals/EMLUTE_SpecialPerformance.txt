@@ -54,8 +54,8 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d8
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075,-1.5,0.0,0.0,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e,1.5,0.0,0.0,1);
 // Spawn the Cambions to the right and left side
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-1.5,0.0,-1.5,1);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,1.5,0.0,-1.5,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-1.5,0.0,-1.5,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,1.5,0.0,-1.5,0);
 
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
@@ -126,24 +126,6 @@ AND
 DB_ActiveSpecialPerformance_EmbersLute(_Owner,_TimerName,_HelperItem,_FocusItem)
 THEN
 LookAtEntity(_Summon,_FocusItem);
-
-// "Fix" the music on Improved Countercharm summons by adding a short delay.
-// Feels a bit hacky. Seems to work though. 
-IF
-EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
-AND
-DB_CountercharmFix_EmbersLute(_Template,_TimerName,_Duration,_)
-THEN
-ObjectTimerCancel(_Summon,_TimerName);
-ObjectTimerLaunch(_Summon,_TimerName,_Duration);
-
-IF
-ObjectTimerFinished((CHARACTER)_Summon,_TimerName)
-AND
-DB_CountercharmFix_EmbersLute(_,_TimerName,_,_Status)
-THEN
-DebugText(_Summon, "Debug: Starting countercharm music");
-ApplyStatus(_Summon,_Status,-1.0);
 
 // PROCS and QUERIES
 // Starts music on the lead performer, caches active performance and begins a timer
@@ -274,6 +256,57 @@ THEN
 RequestDelete(_HelperItem);
 RequestDelete(_FocusItem);
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
+
+// A sort of workaround for a couple of music events that require
+// the game to be in a certain state. BG3 auto corrects the music
+// state if the player switches control, and so the music stops.
+// Don't have a nice solution to this, so until then, we can at least
+// align the animations by stopping the performance, so the performer 
+// doesn't continue to play silence.
+//REGION
+IF
+GainedControl((CHARACTER)_Target)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+AND
+QRY_SongRequiresControl(_Song)
+AND
+_Target != _Performer
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_,_,_Status,_)
+THEN
+RemoveStatus(_Performer,_Status);
+
+QRY
+QRY_SongRequiresControl("Bard_Perform_FinalAct")
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_SongRequiresControl("Bard_Perform_ThePowerVocals")
+THEN
+DB_NOOP(1);
+//END_REGION
+
+// Fix the music on Improved Countercharm summons by adding a short delay.
+// Feels a bit hacky. Seems to work though. 
+//REGION
+IF
+EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
+AND
+DB_CountercharmFix_EmbersLute(_Template,_TimerName,_Duration,_)
+THEN
+ObjectTimerCancel(_Summon,_TimerName);
+ObjectTimerLaunch(_Summon,_TimerName,_Duration);
+
+IF
+ObjectTimerFinished((CHARACTER)_Summon,_TimerName)
+AND
+DB_CountercharmFix_EmbersLute(_,_TimerName,_,_Status)
+THEN
+DebugText(_Summon, "Debug: Starting countercharm music");
+ApplyStatus(_Summon,_Status,-1.0);
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

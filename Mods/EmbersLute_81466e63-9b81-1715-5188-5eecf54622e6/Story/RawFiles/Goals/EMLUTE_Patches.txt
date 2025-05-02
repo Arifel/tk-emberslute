@@ -150,6 +150,31 @@ AND
 DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",0);
+
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_ScriptedVFX_Spawns",_)
+AND
+NOT DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FINALACT")
+THEN
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FINALACT");
+DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_FinalAct",(CHARACTERROOT)EMLUTE_Helper_PositionFinder_0305c5b9-e08e-44d4-987c-894d24983d3d,"ProjectileStrike_PositionFinder_4_Emlute");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,"EMLUTE_PERFORM_FINALACT_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,"EMLUTE_PERFORM_FINALACT_NO_AURA");
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_WATERQUEEN");
+DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_WaterQueen",(CHARACTERROOT)EMLUTE_Helper_PositionFinder_0305c5b9-e08e-44d4-987c-894d24983d3d,"ProjectileStrike_PositionFinder_4_Emlute");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_ScriptedVFX_Spawns",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_ScriptedVFX_Spawns",_)
+AND
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FINALACT")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_ScriptedVFX_Spawns",0);
 //END_REGION
 
 // Version 3 mod patches (dev)
@@ -314,6 +339,49 @@ AND
 NOT DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions")
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate",0);
+
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_Cambions",_)
+AND
+DB_Players(_Character)
+AND
+HasPassive(_Character,"Emlute_SummonOnPerform_Cambions",1)
+THEN
+RemovePassive(_Character,"Emlute_SummonOnPerform_Cambions");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_Cambions",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_Cambions",_)
+AND
+DB_Players(_Character)
+AND
+HasPassive(_Character,"Emlute_SummonOnPerform_Cambions",0)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_Cambions",0);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_WaveServants",_)
+AND
+DB_Players(_Character)
+AND
+HasPassive(_Character,"Emlute_SummonOnPerform_WaveServants",1)
+THEN
+RemovePassive(_Character,"Emlute_SummonOnPerform_WaveServants");
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_WaveServants",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_WaveServants",_)
+AND
+DB_Players(_Character)
+AND
+HasPassive(_Character,"Emlute_SummonOnPerform_WaveServants",0)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_PassiveUpdate_WaveServants",0);
 //END_REGION
 EXITSECTION
 

@@ -265,7 +265,7 @@ using "EMLUTE_PERFORM_WEEPINGDAWN"
 data "DisplayName" "hbcbb54d8gd125gf117g784bge1c37bbd6af9;1"
 data "Icon" "EmbersLute_Action_Song_FinalAct"
 data "AuraStatuses" "TARGET:IF((HasPassive('Emlute_Musical_Spirit') or Tagged('BARD')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_FINALACT);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)"
-data "Boosts" "HorizontalFOVOverride(250);"
+data "Boosts" "HorizontalFOVOverride(220);"
 data "StatusEffect" "c5017809-0087-43d3-aefc-e0d55e029849"
 data "PerformEventName" "Bard_Perform_FinalAct"
 

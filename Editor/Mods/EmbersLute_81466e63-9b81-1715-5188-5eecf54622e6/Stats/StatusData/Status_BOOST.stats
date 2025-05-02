@@ -317,7 +317,7 @@
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_FinalAct" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c5017809-0087-43d3-aefc-e0d55e029849" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_FinalAct" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="HorizontalFOVOverride(250);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="HorizontalFOVOverride(220);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">

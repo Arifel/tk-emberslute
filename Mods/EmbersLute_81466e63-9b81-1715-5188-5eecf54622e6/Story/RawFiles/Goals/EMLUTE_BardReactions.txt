@@ -65,6 +65,8 @@ DB_BardReactionsInCamp_1_Looping_Emlute(1,(TAG)REALLY_SHADOWHEART_642d2aee-e3df-
 DB_BardReactionsInCamp_1_Looping_Emlute(0,(TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Minthara_LookAround_01_e957120e-e00d-4a47-8c7b-f58e12f83f7f,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
 DB_BardReactionsInCamp_1_Looping_Emlute(1,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Start_53a8a375-7270-4e3d-ad9c-5a319c10085f,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Loop_63221d04-2ae3-4d7e-a626-a86c0c717222,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_End_c0c4f4d0-b7df-4500-8313-77b30a1a7b2a);
 DB_BardReactionsInCamp_1_Looping_Emlute(1,(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)CUST_ArmsCrossed_01_Start_dafd0bbc-012a-403c-aabe-4963aca9cf25,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71,(ANIMATION)CUST_ArmsCrossed_01_End_ae43ea68-fc1b-456a-88ce-0e1d504e1d40);
+DB_BardReactionsInCamp_1_Looping_Cycle_Emlute(0,(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)IDLE_Neutral_Peace_01_Transit_b7a713aa-bc44-44e7-be65-01689599801a,(ANIMATION)IDLE_Neutral_Peace_01_Loop_1413563b-0acc-4312-8a60-0f960c8ee46e,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Astarion_DustSelf_01_9b8f3897-bb74-4a83-ac5e-d95bd0b0e9f4,(ANIMATION)CUST_EPI_Astarion_CombHair_01_b9a9cc36-4159-441e-bc9c-a85b3ae09873,(ANIMATION)IDLE_Still_Peace_01_07e81afc-95c4-452b-ac68-5cbb74710cca,(ANIMATION)IDLE_Still_Peace_02_5cff24c4-99d7-4205-9187-21eada3d1614);
+
 // Escalating reactions
 DB_BardReactionsInCamp_2_Looping_Fallback_Emlute(1,(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Dance_01_Start_b86cc985-88df-4e21-ac0f-1b63329338e7,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)CUST_EPI_Karlach_Dance_01_End_40bac793-0d03-4418-a7ba-db2972790f1a);
 DB_BardReactionsInCamp_2_Looping_Emlute(1,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb);
@@ -75,6 +77,8 @@ DB_BardReactionsInCamp_2_Looping_Emlute(0,(TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-
 DB_BardReactionsInCamp_2_Looping_Emlute(0,(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Astarion_KnifeTricks_01_3946137b-d703-492b-a916-09912d3bf867,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
 DB_BardReactionsInCamp_2_Looping_Emlute(1,(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)CUST_ArmsCrossed_01_Start_dafd0bbc-012a-403c-aabe-4963aca9cf25,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71,(ANIMATION)CUST_ArmsCrossed_01_End_ae43ea68-fc1b-456a-88ce-0e1d504e1d40);
 DB_BardReactionsInCamp_2_Looping_Emlute(0,(TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Jaheira_FlutePlaying_01_b6673e38-04d2-47df-ae4a-a70ad2861d22,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_2_Looping_CycleEmlute(0,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000),(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752,(ANIMATION)PM_Waving_01_2220f9e4-8731-4a56-b6bc-53dd9d4378bc);
+//DB_BardReactionsInCamp_2_Looping_CycleEmlute(0,(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000),(ANIMATION)CUST_EPI_Astarion_KnifeTricks_01_3946137b-d703-492b-a916-09912d3bf867,(ANIMATION)CUST_EPI_Astarion_CombHair_01_b9a9cc36-4159-441e-bc9c-a85b3ae09873,(ANIMATION)CUST_EPI_Astarion_DustSelf_01_9b8f3897-bb74-4a83-ac5e-d95bd0b0e9f4,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71);
 
 // Items that should disappear after 5 turns, they're just for the visual effect
 DB_BardReactionItems_Temporary_Emlute((ITEMROOT)EmbersLute_PerformanceReward_Flower_A_Blue_391318dc-3ba0-4ce7-91f3-5ba6953cb177);
@@ -281,6 +285,15 @@ THEN
 PROC_DoFlourishInCampNPC_Escalation_1_EmbersLute(_Performer);
 
 IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_,_)
+AND
+GetStatusCurrentLifetime(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
+AND
+_Charges > 70.0
+THEN
+PROC_DoFlourishInCampNPC_Escalation_1_Cycle_EmbersLute(_Performer);
+
+IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY",_,_)
 AND
 IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
@@ -369,6 +382,37 @@ IntegerSum(1000,_RND,_Delay)
 THEN
 DB_BardReactionAnimsInCamp_Cooldown_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",_NPC,_Start,_Loop,_Stop);
 ObjectTimerLaunch(_NPC,"BardReaction_GoodToGreatTransition_StopAnim_EmbersLute",_Delay);
+
+PROC
+PROC_DoFlourishInCampNPC_Escalation_1_Cycle_EmbersLute((CHARACTER)_Performer)
+AND
+DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
+AND
+HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT",1)
+AND
+NOT DB_BardReactionAnimsInCamp_Cooldown_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT_Cycle",_NPC,_,_,_)
+AND
+DB_BardReactionsInCamp_1_Looping_Cycle_Emlute(_,_Tag,_Start,_Stop,_L1,_L2,_L3,_L4,_L5)
+AND
+IsTagged(_NPC,_Tag,1)
+AND
+Random(9000,_RND)
+AND
+IntegerSum(1000,_RND,_Delay)
+THEN
+ObjectTimerLaunch(_NPC,"BardReaction_DoCycle_1_StopAnim_EmbersLute",_Delay);
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_DoCycle_1_StopAnim_EmbersLute")
+THEN
+StopAnimation(_NPC,0);
+ObjectTimerLaunch(_NPC,"BardReaction_DoCycle_1_EmbersLute",3000);
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_DoCycle_1_EmbersLute")
+AND
+DB_BardReactionsInCamp_1_Looping_Cycle_Emlute(_,_Tag,_Start,_Loop,_Stop,_L1,_L2,_L3,_L4)
+THEN
+DB_BardReactionAnimsInCamp_Cooldown_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT_Cycle",_NPC,_Start,_Loop,_Stop);
+PlayLoopingAnimation(_NPC,_Start,_Loop,_Stop,_L1,_L2,_L3,_L4);
 
 PROC
 PROC_DoFlourishInCampNPC_Escalation_2_EmbersLute((CHARACTER)_Performer)

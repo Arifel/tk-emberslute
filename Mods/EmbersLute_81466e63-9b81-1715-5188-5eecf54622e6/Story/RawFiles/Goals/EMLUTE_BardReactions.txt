@@ -405,11 +405,11 @@ DB_BardReactionsInCamp_IsChargedAnimation_Emlute(_NPC,_Start,_Loop,_Stop)
 THEN
 PlayAnimation(_NPC,_Loop,"BardReaction_LoopChargedAnim_Emlute");
 IF
-EntityEvent((CHARACTER)_NPC,"BardReaction_StartChargedAnim_Emlute")
+EntityEvent((CHARACTER)_NPC,"BardReaction_LoopChargedAnim_Emlute")
 AND
 DB_BardReactionsInCamp_IsChargedAnimation_Emlute(_NPC,_Start,_Loop,_Stop)
 THEN
-PlayAnimation(_NPC,_Stop,"BardReaction_StopChargedAnim_Emlute");
+PlayAnimation(_NPC,_Stop,"BardReaction_StopChargedAnim_NotUsed_Emlute");
 NOT DB_BardReactionsInCamp_IsChargedAnimation_Emlute(_NPC,_Start,_Loop,_Stop);
 
 PROC

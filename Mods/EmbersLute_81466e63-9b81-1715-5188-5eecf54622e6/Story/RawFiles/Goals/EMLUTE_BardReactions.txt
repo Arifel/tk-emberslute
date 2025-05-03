@@ -2,7 +2,13 @@ Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
 // Collecting anims like a crazy magpie, behold my collection
+// I think I'd rather do this with Anubis, but that doesn't merge, so....
 
+// All other tags will leave to the vanilla reactions to manage
+//DB_BardReactions_SupportedTags_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
+
+// Bard reactions out in the world i.e. busking mode
+//REGION
 // A set of safeish anims that should work for most humanoids
 DB_BardReactionsByDC_Emlute(1,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8);
 DB_BardReactionsByDC_Emlute(2,(ANIMATION)CUST_Pondering_01_c2a68c82-1b0b-4d0c-8f1a-c9f14984a5fb);
@@ -45,41 +51,6 @@ DB_BardReactionsOverrideByTag_Emlute((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6c
 DB_BardReactionsOverrideByTag_Emlute((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,17,(ANIMATION)PM_Talking_01_72f9bdd5-717e-4f72-bfb6-434f84213f76);
 DB_BardReactionsOverrideByTag_Emlute((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,18,(ANIMATION)CUST_Pondering_01_c2a68c82-1b0b-4d0c-8f1a-c9f14984a5fb);
 
-// Custom looping behaviour when performing in camp with companions
-//DB_BardReactionsInCamp_Looping_Fallback_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,(ANIMATION)CINE_Ground_Idle_01_IN_29efb65a-7c04-4744-a029-bc650a93a39f,(ANIMATION)CINE_Ground_Idle_01_LOOP_fbbfe750-7531-4389-ac82-7409022e4588,(ANIMATION)CINE_Ground_Idle_01_OUT_d9a02fe6-b3d2-4820-a89e-113870dbe227);
-//DB_BardReactionsInCamp_Looping_Fallback_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
-//DB_BardReactionsInCamp_Looping_Fallback_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,(ANIMATION)CUST_EPI_Karlach_Dance_01_Start_b86cc985-88df-4e21-ac0f-1b63329338e7,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)CUST_EPI_Karlach_Dance_01_End_40bac793-0d03-4418-a7ba-db2972790f1a);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)CUST_EPI_SpawnAstarion_SittingDown_01_Start_d1b722de-ff6e-46ab-ba2d-22f7ec794ba6,(ANIMATION)CUST_EPI_SpawnAstarion_SittingDown_01_Loop_7dced1aa-b12d-49ba-9963-be6c8b8e8e1b,(ANIMATION)CUST_EPI_SpawnAstarion_SittingDown_01_End_58191e05-9274-4f0b-bb60-0b0fde37b48c);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_StargazingSit_01_Start_7387d2a8-b99a-496f-bee3-1e65c15bab24,(ANIMATION)CUST_EPI_Karlach_StargazingSit_01_Loop_43384cb6-9fab-4c91-ac9b-5ecde0e8d61c,(ANIMATION)CUST_EPI_Karlach_StargazingSit_01_End_1caf9b7a-4acb-4017-af36-4a4ebdd80a35);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_SittingOnFloorDrink_01_Start_7d3c036e-16aa-4f01-80b8-d4e0ccf34892,(ANIMATION)CUST_EPI_AvernusWyll_SittingOnFloorDrink_01_Loop_40d59dd0-1364-46c2-ba02-e0b4f52bad98,(ANIMATION)CUST_EPI_AvernusWyll_SittingOnFloorDrink_01_End_59e2574a-75dd-4476-9512-bcaa3ecc68fa);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_Start_9aa14cf9-1094-4465-8ade-af335216dec8,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_Loop_91e6773d-cfa2-4fe9-90c0-938acb314e2d,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_End_f9948253-64d5-4b02-863a-01eff0812e5e);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0,(ANIMATION)CUST_Praying_01_Start_e5488b36-2aa0-40be-b6e3-2165a9d38f02,(ANIMATION)CUST_Praying_01_Loop_b45ab827-aebd-49ed-9ac7-07a1489a5490,(ANIMATION)CUST_Praying_01_End_a1c0b0da-ea50-48a0-aba8-d2986c8b2737);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Minthara_Bored_01_8fdbac5c-f4a9-4d25-b7ea-bbbae6147753,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_MINSC_aeb694fc-83fb-452d-819a-b97ba442dc42,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GOOD",(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Laezel_ListeningToMusic_01_5c426fd3-76ec-4165-ab9b-f2582c046743,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5,(ANIMATION)CUST_EPI_Halsin_Dance_01_Start_d8d4df38-794e-45ca-b950-4cb89da83d3d,(ANIMATION)CUST_EPI_Halsin_Dance_01_Loop_e0bbddb0-4e03-4f74-8fd4-dc172026de66,(ANIMATION)CUST_EPI_Halsin_Dance_01_End_bcbbdc90-da72-4f41-a4cf-3cec3564e355);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Jamming_01_Start_1367c13c-107d-41ff-89b5-f67308a3a5c5,(ANIMATION)CUST_EPI_Karlach_Jamming_01_Loop_3c70c66b-1d9a-4d4d-a2bb-9f1cd31d1727,(ANIMATION)CUST_EPI_Karlach_Jamming_01_End_79a73ef9-662e-42f7-8077-65f5a6554c53);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)CUST_EPI_Gale_Drinking_01_Start_b97491aa-c5f5-42ce-aec0-78043892ce39,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6,(ANIMATION)CUST_EPI_Gale_Drinking_01_End_8814dff3-7b1f-4252-8f40-76e8e6a09698);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_MINSC_aeb694fc-83fb-452d-819a-b97ba442dc42,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Minsc_FlexingMuscle_01_6d1732cd-761d-4cab-973c-17e03ba4ee2f,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0,(ANIMATION)CUST_EPI_Shadowheart_Dance_01_Start_9dc6faf8-95d3-45dc-bdde-5eb514a180c6,(ANIMATION)CUST_EPI_Shadowheart_Dance_01_Loop_2a82690c-f334-4f0d-964f-0161f9efd9e6,(ANIMATION)CUST_EPI_Shadowheart_Dance_01_End_2a9a295a-6f54-481b-8c4d-79f59735d40b);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Minthara_LookAround_01_e957120e-e00d-4a47-8c7b-f58e12f83f7f,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Start_53a8a375-7270-4e3d-ad9c-5a319c10085f,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Loop_63221d04-2ae3-4d7e-a626-a86c0c717222,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_End_c0c4f4d0-b7df-4500-8313-77b30a1a7b2a);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)CUST_ArmsCrossed_01_Start_dafd0bbc-012a-403c-aabe-4963aca9cf25,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71,(ANIMATION)CUST_ArmsCrossed_01_End_ae43ea68-fc1b-456a-88ce-0e1d504e1d40);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Dance_01_Start_b86cc985-88df-4e21-ac0f-1b63329338e7,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)CUST_EPI_Karlach_Dance_01_End_40bac793-0d03-4418-a7ba-db2972790f1a);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_MINSC_aeb694fc-83fb-452d-819a-b97ba442dc42,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_Minthara_BotheredbySun_01_4f4b0dba-d426-4a05-a7af-0ef614dfd091,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_08_8927afd2-2bd7-48b5-9182-0f355afea0c4,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Astarion_KnifeTricks_01_3946137b-d703-492b-a916-09912d3bf867,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)CUST_ArmsCrossed_01_Start_dafd0bbc-012a-403c-aabe-4963aca9cf25,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71,(ANIMATION)CUST_ArmsCrossed_01_End_ae43ea68-fc1b-456a-88ce-0e1d504e1d40);
-DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Jaheira_FlutePlaying_01_b6673e38-04d2-47df-ae4a-a70ad2861d22,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
-// Cycle 3 idle anims by performance level
-DB_BardReactionsInCamp_IdleCycle_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)CUST_EPI_Astarion_DustSelf_01_9b8f3897-bb74-4a83-ac5e-d95bd0b0e9f4,(ANIMATION)CUST_EPI_Astarion_CombHair_01_b9a9cc36-4159-441e-bc9c-a85b3ae09873,(ANIMATION)CUST_Bored_02_7892cb3b-2935-4aa3-b65c-64d9664cbe75);
-
-//DB_BardReactionsInCamp_2_Looping_CycleEmlute(0,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000),(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752,(ANIMATION)PM_Waving_01_2220f9e4-8731-4a56-b6bc-53dd9d4378bc);
-//DB_BardReactionsInCamp_2_Looping_CycleEmlute(0,(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000),(ANIMATION)CUST_EPI_Astarion_KnifeTricks_01_3946137b-d703-492b-a916-09912d3bf867,(ANIMATION)CUST_EPI_Astarion_CombHair_01_b9a9cc36-4159-441e-bc9c-a85b3ae09873,(ANIMATION)CUST_EPI_Astarion_DustSelf_01_9b8f3897-bb74-4a83-ac5e-d95bd0b0e9f4,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71);
-
 // Items that should disappear after 5 turns, they're just for the visual effect
 DB_BardReactionItems_Temporary_Emlute((ITEMROOT)EmbersLute_PerformanceReward_Flower_A_Blue_391318dc-3ba0-4ce7-91f3-5ba6953cb177);
 DB_BardReactionItems_Temporary_Emlute((ITEMROOT)EmbersLute_PerformanceReward_Flower_A_Pink_a7b38f24-557d-4c2c-ac45-85560e42eee8);
@@ -105,10 +76,51 @@ DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-7
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,2,"Projectile_TossMeat2_Emlute");
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,6,"Projectile_TossMeat3_Emlute");
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,7,"Projectile_TossMeat1_Emlute");
-KBSECTION
+//END_REGION
 
-// Here we are overloading vanilla so it handles our custom disturbance too.
-// Want to re-use the flourishes, so hook onto the same timer event thrown.
+// Bard reactions while in camp i.e. sit and chill mode
+//REGION
+// Custom looping behaviour when performing in camp with companions
+DB_BardReactionsInCamp_Emlute((TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)CUST_EPI_SpawnAstarion_SittingDown_01_Start_d1b722de-ff6e-46ab-ba2d-22f7ec794ba6,(ANIMATION)CUST_EPI_SpawnAstarion_SittingDown_01_Loop_7dced1aa-b12d-49ba-9963-be6c8b8e8e1b,(ANIMATION)CUST_EPI_SpawnAstarion_SittingDown_01_End_58191e05-9274-4f0b-bb60-0b0fde37b48c);
+DB_BardReactionsInCamp_Emlute((TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_StargazingSit_01_Start_7387d2a8-b99a-496f-bee3-1e65c15bab24,(ANIMATION)CUST_EPI_Karlach_StargazingSit_01_Loop_43384cb6-9fab-4c91-ac9b-5ecde0e8d61c,(ANIMATION)CUST_EPI_Karlach_StargazingSit_01_End_1caf9b7a-4acb-4017-af36-4a4ebdd80a35);
+DB_BardReactionsInCamp_Emlute((TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_SittingOnFloorDrink_01_Start_7d3c036e-16aa-4f01-80b8-d4e0ccf34892,(ANIMATION)CUST_EPI_AvernusWyll_SittingOnFloorDrink_01_Loop_40d59dd0-1364-46c2-ba02-e0b4f52bad98,(ANIMATION)CUST_EPI_AvernusWyll_SittingOnFloorDrink_01_End_59e2574a-75dd-4476-9512-bcaa3ecc68fa);
+DB_BardReactionsInCamp_Emlute((TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_Start_9aa14cf9-1094-4465-8ade-af335216dec8,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_Loop_91e6773d-cfa2-4fe9-90c0-938acb314e2d,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_End_f9948253-64d5-4b02-863a-01eff0812e5e);
+DB_BardReactionsInCamp_Emlute((TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0,(ANIMATION)CUST_Praying_01_Start_e5488b36-2aa0-40be-b6e3-2165a9d38f02,(ANIMATION)CUST_Praying_01_Loop_b45ab827-aebd-49ed-9ac7-07a1489a5490,(ANIMATION)CUST_Praying_01_End_a1c0b0da-ea50-48a0-aba8-d2986c8b2737);
+DB_BardReactionsInCamp_Fallback_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,(ANIMATION)CINE_Ground_Idle_01_IN_29efb65a-7c04-4744-a029-bc650a93a39f,(ANIMATION)CINE_Ground_Idle_01_LOOP_fbbfe750-7531-4389-ac82-7409022e4588,(ANIMATION)CINE_Ground_Idle_01_OUT_d9a02fe6-b3d2-4820-a89e-113870dbe227);
+
+//DB_BardReactionsInCamp_Charges_Emlute(10,99,(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Dance_01_Start_b86cc985-88df-4e21-ac0f-1b63329338e7,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)CUST_EPI_Karlach_Dance_01_End_40bac793-0d03-4418-a7ba-db2972790f1a);
+//DB_BardReactionsInCamp_Charges_Emlute(5,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb);
+
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5,(ANIMATION)CUST_EPI_Halsin_Dance_01_Start_d8d4df38-794e-45ca-b950-4cb89da83d3d,(ANIMATION)CUST_EPI_Halsin_Dance_01_Loop_e0bbddb0-4e03-4f74-8fd4-dc172026de66,(ANIMATION)CUST_EPI_Halsin_Dance_01_End_bcbbdc90-da72-4f41-a4cf-3cec3564e355);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Jamming_01_Start_1367c13c-107d-41ff-89b5-f67308a3a5c5,(ANIMATION)CUST_EPI_Karlach_Jamming_01_Loop_3c70c66b-1d9a-4d4d-a2bb-9f1cd31d1727,(ANIMATION)CUST_EPI_Karlach_Jamming_01_End_79a73ef9-662e-42f7-8077-65f5a6554c53);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)CUST_EPI_Gale_Drinking_01_Start_b97491aa-c5f5-42ce-aec0-78043892ce39,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6,(ANIMATION)CUST_EPI_Gale_Drinking_01_End_8814dff3-7b1f-4252-8f40-76e8e6a09698);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_MINSC_aeb694fc-83fb-452d-819a-b97ba442dc42,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Minsc_FlexingMuscle_01_6d1732cd-761d-4cab-973c-17e03ba4ee2f,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0,(ANIMATION)CUST_EPI_Shadowheart_Dance_01_Start_9dc6faf8-95d3-45dc-bdde-5eb514a180c6,(ANIMATION)CUST_EPI_Shadowheart_Dance_01_Loop_2a82690c-f334-4f0d-964f-0161f9efd9e6,(ANIMATION)CUST_EPI_Shadowheart_Dance_01_End_2a9a295a-6f54-481b-8c4d-79f59735d40b);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Minthara_LookAround_01_e957120e-e00d-4a47-8c7b-f58e12f83f7f,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Start_53a8a375-7270-4e3d-ad9c-5a319c10085f,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Loop_63221d04-2ae3-4d7e-a626-a86c0c717222,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_End_c0c4f4d0-b7df-4500-8313-77b30a1a7b2a);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Dance_01_Start_b86cc985-88df-4e21-ac0f-1b63329338e7,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)CUST_EPI_Karlach_Dance_01_End_40bac793-0d03-4418-a7ba-db2972790f1a);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_MINSC_aeb694fc-83fb-452d-819a-b97ba442dc42,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_Minthara_BotheredbySun_01_4f4b0dba-d426-4a05-a7af-0ef614dfd091,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_08_8927afd2-2bd7-48b5-9182-0f355afea0c4,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Astarion_KnifeTricks_01_3946137b-d703-492b-a916-09912d3bf867,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Laezel_ListeningToMusic_01_5c426fd3-76ec-4165-ab9b-f2582c046743,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+//DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Jaheira_FlutePlaying_01_b6673e38-04d2-47df-ae4a-a70ad2861d22,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+// Cycle 3 idle anims by performance level
+//DB_BardReactionsInCamp_IdleCycle_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)CUST_EPI_Astarion_DustSelf_01_9b8f3897-bb74-4a83-ac5e-d95bd0b0e9f4,(ANIMATION)CUST_EPI_Astarion_KnifeTricks_01_3946137b-d703-492b-a916-09912d3bf867,(ANIMATION)CUST_Bored_02_7892cb3b-2935-4aa3-b65c-64d9664cbe75);
+//DB_BardReactionsInCamp_IdleCycle_Emlute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)PM_Dancing_06_7b8f8a70-f127-4f64-ae6e-5d6aa1500451,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6);
+
+//END_REGION
+KBSECTION
+// Here we are hooking into vanilla so it handles our custom reactions too.
+// Might be some jerky anim transitional behaviour as a consequence, since the 
+// anims in here will collide with the reactions anims in BaseCrimeActions.ann
+// For the most part, the intended behaviour is the anims in this script will replace
+// the default listening to music anims triggered by the anubis node.
+// (Don't want to add whole new custom crime reactions just yet, maybe in future).
 //REGION 
 IF
 OnCrimeInvestigatorSwitchedState(_ID,_NPC,_,"Confronting")
@@ -119,7 +131,7 @@ NOT DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_)
 THEN
 PROC_CRIME_MusicalPerformance_Good_LaunchTimer(_Performer);
 
-// Vanilla overload for our custom disturbance.
+// Vanilla hook for our custom disturbance.
 IF
 OnCrimeInvestigatorSwitchedState(_ID,_NPC,_,"Confronting")
 AND
@@ -130,7 +142,7 @@ THEN
 DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC);
 PROC_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs");
 
-// Vanilla overload for our custom disturbance.
+// Vanilla hook for our custom disturbance.
 // DC based on number of reacting NPCs
 IF
 ObjectTimerFinished(_Performer,"CRIME_MusicalPeformance_Good")
@@ -149,7 +161,7 @@ QRY_OnlyOnce("CRIME_MusicalPerformance_DC")
 THEN
 RequestPassiveRoll((CHARACTER)_Performer,_Performer,"SkillCheck","Performance",_DC,0,"CRIME_MusicalPerformance_PerformanceCheck");
 
-// Vanilla overload for our custom disturbance.
+// Vanilla hook for our custom disturbance.
 PROC
 PROC_CRIME_Finished((INTEGER)_ID)
 AND
@@ -162,17 +174,6 @@ PROC_ObjectCountHelperReset(_Performer,"CRIME_MusicalPerformance_NPCs");
 
 // Depending on whether the performer is in camp or not, trigger the reactions.
 //REGION
-IF
-ObjectTimerFinished((CHARACTER)_Performer,"CRIME_MusicalPeformance_Good")
-AND
-DB_Players(_Performer)
-AND
-HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
-AND
-DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
-THEN
-DB_NOOP(1);
-
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_,_)
 AND
@@ -188,8 +189,15 @@ GetStatusCurrentLifetime(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
 _Charges > 0.0
 THEN
-PROC_CacheCooldownState_EmbersLute(_Charges);
+PROC_BardReactionAnims_CooldownTracker_Emlute(_Charges);
 PROC_DoFlourishNPC_EmbersLute(_Performer);
+
+// Not sure that entity events always fire on anims?
+// Remove suspect NPCs still in cooldown after 2 ticks
+PROC
+PROC_BardReactionAnims_CooldownTracker_Emlute((REAL)_CurrentCharges)
+THEN
+PROC_CacheCooldownState_EmbersLute(_CurrentCharges);
 PROC_PurgeCooldown_EmbersLute();
 
 IF
@@ -205,15 +213,9 @@ DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_E
 AND
 GetStatusCurrentLifetime(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
-// Wait at least one turn, for camp members to find their position around performer
-_Charges > 6.0
+_Charges > 0.0
 THEN
 PROC_DoFlourishInCampNPC_EmbersLute(_Performer);
-
-IF
-StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",_,_)
-THEN
-PROC_ResetCooldown_EmbersLute();
 //END_REGION
 
 // Escalating custom performance statuses.
@@ -282,154 +284,73 @@ PROC_DoFlourishInCampNPC_EmbersLute((CHARACTER)_Performer)
 AND
 DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
 AND
+NOT DB_BardReactionAnimsInCamp_PerformerToCrowd(_Performer,_NPC)
+AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD",1)
+AND
+GetDistanceTo(_Performer,_NPC,_Distance)
+AND
+_Distance < 4.1
 THEN
-PROC_AnimationTransition_EmbersLute(_NPC,"EMLUTE_PERFORM_POSITIVE_GOOD",500,9000);
-
-IF
-StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT",_,_)
-AND
-IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
-AND
-DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
-THEN
-PROC_AnimationTransition_EmbersLute(_NPC,"EMLUTE_PERFORM_POSITIVE_GREAT",500,9000);
-
-IF
-StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY",_,_)
-AND
-IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
-AND
-DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
-THEN
-PROC_AnimationTransition_EmbersLute(_NPC,"EMLUTE_PERFORM_POSITIVE_LEGENDARY",500,9000);
+DB_BardReactionAnimsInCamp_PerformerToCrowd(_Performer,_NPC);
+PROC_AnimationTransition_EmbersLute(_NPC,500,4000);
 
 PROC
-PROC_AnimationTransition_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus,(INTEGER)_Min,(INTEGER)_Max)
+PROC_AnimationTransition_EmbersLute((CHARACTER)_NPC,(INTEGER)_Min,(INTEGER)_Max)
+THEN
+//PlayAnimation(_NPC,(ANIMATION)IDLE_Still_Peace_01_07e81afc-95c4-452b-ac68-5cbb74710cca); // force into idle pose first, to prevent teleporting into sitting position
+//PROC_AnimationTransition_Delay_EmbersLute(_NPC,_Min,_Max);
+PlayAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb,"BardReaction_Transition_MusicListeningEnd_Emlute");
+
+IF
+EntityEvent((CHARACTER)_NPC,"BardReaction_Transition_MusicListeningEnd_Emlute")
+THEN
+PROC_PlayBardReactionAnimation_EmbersLute(_NPC);
+
+PROC
+PROC_AnimationTransition_Delay_EmbersLute((CHARACTER)_NPC,(INTEGER)_Min,(INTEGER)_Max)
 AND
 Random(_Max,_RND)
 AND
 IntegerSum(_Min,_RND,_Delay)
 THEN
-DB_BardReactionAnimsInCamp_Cooldown_Emlute(_PerformanceStatus,_NPC);
 ObjectTimerLaunch(_NPC,"BardReaction_Transition_StopAnim_EmbersLute",_Delay);
 IF
 ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_Transition_StopAnim_EmbersLute")
 THEN
 StopAnimation(_NPC,0);
-ObjectTimerLaunch(_NPC,"BardReaction_Transition_StartAnim_EmbersLute",2000);
+ObjectTimerLaunch(_NPC,"BardReaction_Transition_StartAnim_EmbersLute",800);
 IF
 ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_Transition_StartAnim_EmbersLute")
+THEN
+PROC_PlayBardReactionAnimation_EmbersLute(_NPC);
+
+// Standard looping anims
+PROC
+PROC_PlayBardReactionAnimation_EmbersLute((CHARACTER)_NPC)
 AND
-DB_BardReactionAnimsInCamp_Cooldown_Emlute(_PerformanceStatus,_NPC)
-AND
-DB_BardReactionsInCamp_Looping_Emlute(_PerformanceStatus,_Tag,_Start,_Loop,_Stop)
+DB_BardReactionsInCamp_Emlute(_Tag,_Start,_Loop,_Stop)
 AND
 IsTagged(_NPC,_Tag,1)
 THEN
+DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC);
 PROC_PlayLoopingAnimation(_NPC,_Start,_Loop,_Stop);
 
+// Fallback anims for humanoid tag
 PROC
-PROC_IdleAnimationCycle_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus)
+PROC_PlayBardReactionAnimation_EmbersLute((CHARACTER)_NPC)
 AND
-QRY_IdleAnimationCycle_Reset_EmbersLute(_NPC)
+NOT QRY_HasBardReactionAnyCampTag_EmbersLute(_NPC)
 AND
-Random(3,_RND)
-AND
-QRY_GetNextAnimCycle_EmbersLute(_NPC,_PerformanceStatus,_RND)
-AND
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next)
+DB_BardReactionsInCamp_Fallback_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,_Start,_Loop,_Stop)
 THEN
-PROC_AnimationTransition_IdleCycle_EmbersLute(_NPC,_PerformanceStatus,1000,6000,_Next);
+DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC);
+PROC_PlayLoopingAnimation(_NPC,_Start,_Loop,_Stop);
 
 QRY
-QRY_IdleAnimationCycle_Reset_EmbersLute((CHARACTER)_NPC)
+QRY_HasBardReactionAnyCampTag_EmbersLute((CHARACTER)_NPC)
 AND
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next)
-THEN
-NOT DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next);
-
-QRY
-QRY_IdleAnimationCycle_Reset_EmbersLute((CHARACTER)_NPC)
-AND
-DB_BardReactionAnimsInCamp_Cooldown_Emlute(_PerformanceStatus,_NPC)
-THEN
-NOT DB_BardReactionAnimsInCamp_Cooldown_Emlute(_PerformanceStatus,_NPC);
-
-PROC
-PROC_AnimationTransition_IdleCycle_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus,(INTEGER)_Min,(INTEGER)_Max,(ANIMATION)_Next)
-AND
-Random(_Max,_RND)
-AND
-IntegerSum(_Min,_RND,_Delay)
-THEN
-DB_BardReactionAnimsInCamp_Cooldown_Emlute(_PerformanceStatus,_NPC);
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next);
-ObjectTimerLaunch(_NPC,"BardReaction_TransitionCycle_StopAnim_EmbersLute",_Delay);
-IF
-ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_TransitionCycle_StopAnim_EmbersLute")
-THEN
-StopAnimation(_NPC,0);
-ObjectTimerLaunch(_NPC,"BardReaction_TransitionCycle_StartAnim_EmbersLute",2000);
-IF
-ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_TransitionCycle_StartAnim_EmbersLute")
-AND
-DB_BardReactionAnimsInCamp_Cooldown_Emlute(_PerformanceStatus,_NPC)
-AND
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next)
-THEN
-PlayAnimation(_NPC,_Next,"BardReaction_TransitionCycle_Next_EmbersLute");
-
-IF
-EntityEvent((CHARACTER)_NPC,"BardReaction_TransitionCycle_Next_EmbersLute")
-AND
-DB_BardReactionsInCamp_IdleCycle_Emlute(_PerformanceStatus,_Tag,_A1,_A2,_A3)
-AND
-Random(3,_RND)
-AND
-QRY_GetNextAnimCycle_EmbersLute(_NPC,_PerformanceStatus,_RND)
-AND
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next)
-THEN
-PROC_AnimationTransition_IdleCycle_EmbersLute(_NPC,_PerformanceStatus,1000,6000,_Next);
-
-QRY
-QRY_GetNextAnimCycle_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus,(INTEGER)_RND)
-AND
-DB_BardReactionsInCamp_IdleCycle_Emlute(_PerformanceStatus,_Tag,_A1,_A2,_A3)
-AND
-IsTagged(_NPC,_Tag,1)
-AND
-_RND == 1
-THEN
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_A1);
-
-QRY
-QRY_GetNextAnimCycle_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus,(INTEGER)_RND)
-AND
-DB_BardReactionsInCamp_IdleCycle_Emlute(_PerformanceStatus,_Tag,_A1,_A2,_A3)
-AND
-IsTagged(_NPC,_Tag,1)
-AND
-_RND == 2
-THEN
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_A2);
-
-QRY
-QRY_GetNextAnimCycle_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus,(INTEGER)_RND)
-AND
-DB_BardReactionsInCamp_IdleCycle_Emlute(_PerformanceStatus,_Tag,_A1,_A2,_A3)
-AND
-IsTagged(_NPC,_Tag,1)
-AND
-_RND == 3
-THEN
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_A3);
-
-QRY
-QRY_HasBardReactionAnyCampTag_EmbersLute((CHARACTER)_NPC,(STRING)_PerformanceStatus)
-AND
-DB_BardReactionsInCamp_Looping_Emlute(_PerformanceStatus,_Tag,_,_,_)
+DB_BardReactionsInCamp_Emlute(_Tag,_,_,_)
 AND
 IsTagged(_NPC,_Tag,1)
 THEN
@@ -714,8 +635,54 @@ THEN
 RequestDelete(_Item);
 //END_REGION
 
-// Mop-up
+// Mop-up and helpers
 //REGION
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",_,_)
+THEN
+PROC_ResetCooldown_EmbersLute();
+
+// Do a flush of everything on game load as a failsafe
+IF
+LevelGameplayStarted(_,_)
+THEN
+PROC_ResetCooldown_EmbersLute();
+
+PROC
+PROC_ResetCooldown_EmbersLute()
+AND
+DB_BardReactionAnims_CooldownCache_Emlute(_Charges,_NPC)
+THEN
+NOT DB_BardReactionAnims_CooldownCache_Emlute(_Charges,_NPC);
+
+PROC
+PROC_ResetCooldown_EmbersLute()
+AND
+DB_BardReactionAnims_Cooldown_Emlute(_NPC)
+THEN
+StopAnimation(_NPC,0);
+ObjectTimerCancel(_NPC,"DoFlourishOnCrowdNPC_EmbersLute");
+ObjectTimerCancel(_NPC,"ReactionAnimCooldownTimer_EmbersLute");
+NOT DB_BardReactionAnims_Cooldown_Emlute(_NPC);
+
+PROC
+PROC_ResetCooldown_EmbersLute()
+AND
+DB_BardReactionAnimsInCamp_PerformerToCrowd(_Performer,_NPC)
+THEN
+PROC_ClearCampAnims_NPC_EmbersLute(_NPC);
+NOT DB_BardReactionAnimsInCamp_PerformerToCrowd(_Performer,_NPC);
+
+PROC
+PROC_ClearCampAnims_NPC_EmbersLute((CHARACTER)_NPC)
+AND
+DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC)
+THEN
+StopAnimation(_NPC,0);
+ObjectTimerCancel(_NPC,"BardReaction_Transition_StopAnim_EmbersLute");
+ObjectTimerCancel(_NPC,"BardReaction_Transition_StartAnim_EmbersLute");
+NOT DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC);
+
 PROC
 PROC_CacheCooldownState_EmbersLute((REAL)_Charges)
 AND
@@ -738,39 +705,6 @@ THEN
 NOT DB_BardReactionAnims_Cooldown_Emlute(_NPC);
 NOT DB_BardReactionAnims_CooldownCache_Emlute(_Charge1,_NPC);
 NOT DB_BardReactionAnims_CooldownCache_Emlute(_Charge2,_NPC);
-
-PROC
-PROC_ResetCooldown_EmbersLute()
-AND
-DB_BardReactionAnims_CooldownCache_Emlute(_Charges,_NPC)
-THEN
-NOT DB_BardReactionAnims_CooldownCache_Emlute(_Charges,_NPC);
-
-PROC
-PROC_ResetCooldown_EmbersLute()
-AND
-DB_BardReactionAnims_Cooldown_Emlute(_NPC)
-THEN
-StopAnimation(_NPC,0);
-ObjectTimerCancel(_NPC,"DoFlourishOnCrowdNPC_EmbersLute");
-ObjectTimerCancel(_NPC,"ReactionAnimCooldownTimer_EmbersLute");
-NOT DB_BardReactionAnims_Cooldown_Emlute(_NPC);
-
-PROC
-PROC_ResetCooldown_EmbersLute()
-AND
-DB_BardReactionAnimsInCamp_Cooldown_Emlute(_Status,_NPC)
-THEN
-StopAnimation(_NPC,0);
-//ObjectTimerCancel(_NPC,"BardReaction_GoodToGreatTransition_StopAnim_EmbersLute");
-NOT DB_BardReactionAnimsInCamp_Cooldown_Emlute(_Status,_NPC);
-
-PROC
-PROC_ResetCooldown_EmbersLute()
-AND
-DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next)
-THEN
-NOT DB_BardReactionAnimsInCamp_CycleNext_Emlute(_PerformanceStatus,_NPC,_Next);
 //END_REGION
 EXITSECTION
 

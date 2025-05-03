@@ -13,7 +13,7 @@
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="Height" type="IntegerTableFieldDefinition" value="1" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="fece8fd5-09bc-48e6-b05e-416b687efd01" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="2f8023d3-c51d-4a2d-922b-4954ea410d72" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="1" />
         <field name="Distribution" type="EnumerationTableFieldDefinition" value="Edge" enumeration_type_name="ProjectileDistribution" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />

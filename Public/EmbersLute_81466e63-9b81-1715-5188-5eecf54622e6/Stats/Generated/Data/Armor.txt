@@ -87,6 +87,16 @@ data "Rarity" "Rare"
 data "Boosts" "Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute)"
 data "PassivesOnEquip" "Light_BonusCantrip;Emlute_PurpleHand;Emlute_BlueHand;Emlute_GreenHand;Emlute_GoldHand"
 
+new entry "EMBERS_LUTE_REWARD_SPIN_SLIPPERS"
+type "Armor"
+using "ARM_Boots_Leather_B"
+data "RootTemplate" "e2e85c50-c4fb-4207-954a-5fbdf4402737"
+data "ValueUUID" "a57433fc-8be8-4efb-ac6b-a625b3bdcd18"
+data "ValueScale" "5"
+data "Rarity" "Legendary"
+data "Boosts" "Skill(Performance,2);Advantage(SavingThrow,Dexterity);"
+data "PassivesOnEquip" "Emlute_Reward_Spin_Slippers;"
+
 new entry "_EMBERS_LUTE_HELPERS"
 type "Armor"
 

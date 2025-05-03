@@ -70,6 +70,8 @@ object category "I_EMBERS_LUTE_THANKYOU_NOTE",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_FAQ",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_BLACK",0,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_WHITE",0,0,0,0,0,0,0,0

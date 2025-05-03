@@ -583,6 +583,22 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGING_CURSE,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d11c61c-273a-4f35-b0ea-b6c3b9222b9c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Spin_Slippers" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9dccbf0cg660fgc78egc79bgd1793cacbe69" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c5a065bg2416gc670g07f9g87f7b62e877c" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="8047cf29-2c79-4f12-a4bf-d965a023be63" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EMLUTE_REWARD_SPIN_SLIPPERS,100,-1);ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ade277fa-4980-4544-9dda-dc4c6431fd6c" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TrainingInWarAndSong" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not HasAnyStatus({'EMLUTE_REWARD_SPIN_SLIPPERS'},{},{},context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EMLUTE_REWARD_SPIN_SLIPPERS,100,-1);ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />

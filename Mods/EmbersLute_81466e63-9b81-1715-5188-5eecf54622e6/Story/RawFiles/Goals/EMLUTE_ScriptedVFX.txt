@@ -174,8 +174,8 @@ AND
 Concatenate("Not needed, destroy: ", _CountStr, _DebugMsg)
 THEN
 DebugText(_Performer,_DebugMsg);
-Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetOnStage(_PositionFinder,0);
+Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
 
 PROC
@@ -223,8 +223,8 @@ AND
 Concatenate("Not needed, destroy: ", _CountStr, _DebugMsg)
 THEN
 DebugText(_Performer,_DebugMsg);
-Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetOnStage(_PositionFinder,0);
+Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
 
 QRY
@@ -256,8 +256,8 @@ AND
 DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
 THEN
 LookAtEntity(_Spawn,_Performer);
-Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetOnStage(_PositionFinder,0);
+Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
 
 IF

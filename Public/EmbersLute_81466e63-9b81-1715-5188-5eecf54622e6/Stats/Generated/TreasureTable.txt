@@ -71,14 +71,6 @@ new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_FAQ",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_MUSICALSPRITES_BLACK",0,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_MUSICALSPRITES_WHITE",0,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_VICIOUSROCKERY",0,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_ROLLINGBONES",0,0,0,0,0,0,0,0
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
 new subtable "1,1"

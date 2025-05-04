@@ -87,10 +87,12 @@ DB_BardReactionsInCamp_Emlute((TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888
 DB_BardReactionsInCamp_Emlute((TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_Start_9aa14cf9-1094-4465-8ade-af335216dec8,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_Loop_91e6773d-cfa2-4fe9-90c0-938acb314e2d,(ANIMATION)CUST_Jaheira_RelaxedSitting_01_End_f9948253-64d5-4b02-863a-01eff0812e5e);
 DB_BardReactionsInCamp_Emlute((TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0,(ANIMATION)CUST_Praying_01_Start_e5488b36-2aa0-40be-b6e3-2165a9d38f02,(ANIMATION)CUST_Praying_01_Loop_b45ab827-aebd-49ed-9ac7-07a1489a5490,(ANIMATION)CUST_Praying_01_End_a1c0b0da-ea50-48a0-aba8-d2986c8b2737);
 DB_BardReactionsInCamp_Fallback_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,(ANIMATION)CINE_Ground_Idle_01_IN_29efb65a-7c04-4744-a029-bc650a93a39f,(ANIMATION)CINE_Ground_Idle_01_LOOP_fbbfe750-7531-4389-ac82-7409022e4588,(ANIMATION)CINE_Ground_Idle_01_OUT_d9a02fe6-b3d2-4820-a89e-113870dbe227);
+// Getting into it
+DB_BardReactionsInCamp_Charges_Emlute(10,99,(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+DB_BardReactionsInCamp_Charges_Emlute(5,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
+DB_BardReactionsInCamp_Charges_Emlute(7,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
 
-DB_BardReactionsInCamp_Charges_Emlute(10,99,(TAG)REALLY_KARLACH_1a2f70d6-8ead-4eb5-a824-79ee1971764a,(ANIMATION)CUST_EPI_Karlach_Dance_01_Start_b86cc985-88df-4e21-ac0f-1b63329338e7,(ANIMATION)CUST_EPI_Karlach_Dance_01_Loop_0939135a-a08c-4025-9bcd-1d53b2758474,(ANIMATION)CUST_EPI_Karlach_Dance_01_End_40bac793-0d03-4418-a7ba-db2972790f1a);
-DB_BardReactionsInCamp_Charges_Emlute(5,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb);
-
+// Just keeping all this here for reference
 //DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
 //DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
 //DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5,(ANIMATION)CUST_EPI_Halsin_Dance_01_Start_d8d4df38-794e-45ca-b950-4cb89da83d3d,(ANIMATION)CUST_EPI_Halsin_Dance_01_Loop_e0bbddb0-4e03-4f74-8fd4-dc172026de66,(ANIMATION)CUST_EPI_Halsin_Dance_01_End_bcbbdc90-da72-4f41-a4cf-3cec3564e355);
@@ -296,19 +298,6 @@ DB_BardReactionAnimsInCamp_PerformerToCrowd(_Performer,_NPC);
 PROC_AnimationTransitionInCamp_EmbersLute(_NPC,500,4000);
 
 PROC
-PROC_DoFlourishInCampNPC_EmbersLute((CHARACTER)_Performer)
-AND
-DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
-AND
-HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD",1)
-AND
-GetDistanceTo(_Performer,_NPC,_Distance)
-AND
-_Distance < 4.1
-THEN
-PROC_DoChargedBardReactionInCamp_EmbersLute(_Performer,_NPC);
-
-PROC
 PROC_AnimationTransitionInCamp_EmbersLute((CHARACTER)_NPC,(INTEGER)_Min,(INTEGER)_Max)
 THEN
 PlayAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb,"BardReaction_Transition_MusicListeningEnd_Emlute");
@@ -351,6 +340,19 @@ DB_NOOP(1);
 
 // Special camp reactions requiring a number of showmanship charges as pre-requisite to play
 //REGION
+PROC
+PROC_DoFlourishInCampNPC_EmbersLute((CHARACTER)_Performer)
+AND
+DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
+AND
+HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
+AND
+GetDistanceTo(_Performer,_NPC,_Distance)
+AND
+_Distance < 4.1
+THEN
+PROC_DoChargedBardReactionInCamp_EmbersLute(_Performer,_NPC);
+
 PROC
 PROC_DoChargedBardReactionInCamp_EmbersLute((CHARACTER)_Performer,(CHARACTER)_NPC)
 AND
@@ -405,6 +407,7 @@ EntityEvent((CHARACTER)_NPC,"BardReaction_LoopAnimEnded_Emlute")
 AND
 DB_BardReactionsInCamp_IsChargedAnimation_Emlute(_NPC,_Start,_Loop,_Stop)
 THEN
+NOT DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC);
 NOT DB_BardReactionsInCamp_IsChargedAnimation_Emlute(_NPC,_Start,_Loop,_Stop);
 
 PROC
@@ -412,10 +415,9 @@ PROC_AnimationTransitionFromSitting_EmbersLute((CHARACTER)_NPC)
 AND
 DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC)
 THEN
-NOT DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC);
 StopAnimation(_NPC,0);
 ObjectTimerCancel(_NPC,"BardReaction_TransitionFromSitting_EmbersLute");
-ObjectTimerLaunch(_NPC,"BardReaction_TransitionFromSitting_EmbersLute",2000);
+ObjectTimerLaunch(_NPC,"BardReaction_TransitionFromSitting_EmbersLute",2500);
 IF
 ObjectTimerFinished((CHARACTER)_NPC,"BardReaction_TransitionFromSitting_EmbersLute")
 THEN

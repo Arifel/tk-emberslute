@@ -97,7 +97,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="303b70e9-921f-4b70-b219-3e30a1fb17fb" />
-        <field name="Name" type="NameTableFieldDefinition" value="MusicalPerformance_Good_BardNPC_Emute" />
+        <field name="Name" type="NameTableFieldDefinition" value="MusicalPerformance_Good_BardNPC_Emlute" />
         <field name="TensionWeight" type="IntegerTableFieldDefinition" value="6" />
         <field name="Lifetime" type="FloatTableFieldDefinition" value="10000" />
         <field name="DetectionRange" type="FloatTableFieldDefinition" value="8" />
@@ -115,8 +115,8 @@
         <field name="TargetDialogueFlags" type="EnumerationListTableFieldDefinition" value="Incl_Summon;Incl_Wildshape;Incl_OtherCannotTalk" enumeration_type_name="DisturbanceDialogueCapability" version="1" />
         <field name="Priority" type="IntegerTableFieldDefinition" value="50" />
         <field name="InvestigationKind" type="EnumerationTableFieldDefinition" value="InvestigateCriminalReact" enumeration_type_name="DisturbanceInvestigationKind" version="1" />
-        <field name="PrimarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_OsirisBardPerformWellReaction" />
-        <field name="SecondarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_OsirisBardPerformWellReaction" />
+        <field name="PrimarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_OsirisBardPerformWellReaction_EmbersLute" />
+        <field name="SecondarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_OsirisBardPerformWellReaction_EmbersLute" />
       </fields>
     </stat_object>
   </stat_objects>

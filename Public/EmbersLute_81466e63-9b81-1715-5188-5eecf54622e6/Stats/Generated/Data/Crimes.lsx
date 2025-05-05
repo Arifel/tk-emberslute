@@ -199,7 +199,7 @@
                     <attribute id="Continuous" type="uint8" value="1"/>
                     <attribute id="ContinuousDelayTimer" type="float" value="1"/>
                     <attribute id="CreatesCrimescene" type="uint8" value="0"/>
-                    <attribute id="CrimeType" type="LSString" value="MusicalPerformance_Good_BardNPC_Emute"/>
+                    <attribute id="CrimeType" type="LSString" value="MusicalPerformance_Good_BardNPC_Emlute"/>
                     <attribute id="DetectionRange" type="float" value="8"/>
                     <attribute id="Lifetime" type="float" value="10000"/>
                     <attribute id="MaxInvestigators" type="int32" value="10"/>
@@ -208,10 +208,10 @@
                     <children>
                         <node id="CrimeAction">
                             <attribute id="InvestigationKind" type="uint8" value="9"/>
-                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisBardPerformWellReaction"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisBardPerformWellReaction_EmbersLute"/>
                             <attribute id="Priority" type="int32" value="50"/>
                             <attribute id="ReactionCategory_Tag" type="FixedString" value="BARD"/>
-                            <attribute id="SecondarySensibleAction" type="FixedString" value="CRIME_OsirisBardPerformWellReaction"/>
+                            <attribute id="SecondarySensibleAction" type="FixedString" value="CRIME_OsirisBardPerformWellReaction_EmbersLute"/>
                             <attribute id="Tension" type="uint8" value="0"/>
                             <children>
                                 <node id="TargetDialogueFlags">

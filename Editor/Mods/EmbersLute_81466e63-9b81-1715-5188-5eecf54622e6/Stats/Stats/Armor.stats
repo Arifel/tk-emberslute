@@ -187,6 +187,18 @@
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Charismatic_Defence" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06df1112-0b83-4acf-8383-f9f0e48acdcc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SHORT_GLOVES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56cee01a-05e1-47fb-86db-619ed5ac90be" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="acf4ebae-5d0d-4f4a-bc4e-4b98de380a42" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="240eb257-ef20-4877-89bd-6956b4b7c41a" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(SleightOfHand,2);AC(1)" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="StuddedLeather" enumeration_type_name="ArmorType" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fc2eb1a1-4840-48b2-adba-9c28bfa63528" />

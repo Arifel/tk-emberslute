@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a1fa1d2f-c335-4902-898c-4228c3c07d52">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc6f8b13-764e-4981-bc92-2024495ef944" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_CHARISMATIC_STING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="35a5c463-1b12-4750-bc6d-6a9c08fed322" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ff3c6664-e161-41dc-8aea-112e16a344d3" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" value="WeaponProperty(Magical);WeaponEnchantment(1);" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_MeleeCaster_Passive;" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

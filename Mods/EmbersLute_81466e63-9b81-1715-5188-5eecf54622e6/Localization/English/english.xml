@@ -692,9 +692,9 @@
   <content contentuid="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1">Use the combat animations for the Spellblade wizard subclass when enabled.</content>
   <content contentuid="h3e6a204dgfec4g47a9g1c64g3114103a4398" version="3">Simple Bard Shoes</content>
   <content contentuid="h3469e125g7652gfc84g511ag514aa08859af" version="3">These shoes were a gift from an admiring fan, inspired by the music you performed.</content>
-  <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="4">Encore Spin Slippers</content>
-  <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="3">Enables the Bladesinger subclass combat animations, if you have a finesse weapon equipped.</content>
-  <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="3">It is said these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
+  <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="5">Encore Spin Slippers</content>
+  <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="4">Enables the Bladesinger subclass combat animations if you have a finesse weapon equipped.</content>
+  <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="4">These boots were donated by an appreciative audience member following a musical performance. They claimed these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
   <content contentuid="h57e450a2g0d4bg8552g0520g86ab76d25a5d" version="1">Gifting a Pair of Boots</content>
   <content contentuid="h5178e91dg6e4bg1044g7404g3dfeb6a40882" version="1">A pair of boots has been placed inside your pack.</content>
   <content contentuid="h7754fffdg0606geb52g16d7g83fe72a54d05" version="1">Gifting a Pair of Shoes</content>
@@ -703,9 +703,9 @@
   <content contentuid="h3f1f8d0ag0fcag73e4g2267gf98590f57525" version="1">Adding insult to injury.</content>
   <content contentuid="h265cbcebg17ceg2133gb8ebgc5218cb4786b" version="1">Critical Mockery</content>
   <content contentuid="h05c571ddg2acag9ad1g834cg44e332bb409e" version="1">Adding insult to injury.</content>
-  <content contentuid="hdc7960beg461cg8401g3c00g76b103f066f0" version="1">Underwear of Unknown Origin</content>
-  <content contentuid="h57e9b966gcf6agf5ebg6adag3356ec2ec041" version="1">Ring of Critical Mockery</content>
-  <content contentuid="h6cae8babg2214ge16eg476fg87c5bf31e738" version="1">A ring that inspires the wearer to add insult to injury.</content>
+  <content contentuid="hdc7960beg461cg8401g3c00g76b103f066f0" version="3">Risky Underwear of Unknown Origin</content>
+  <content contentuid="h57e9b966gcf6agf5ebg6adag3356ec2ec041" version="2">Ring of Critical Mockery</content>
+  <content contentuid="h6cae8babg2214ge16eg476fg87c5bf31e738" version="2">A ring that inspires the wearer to add insult to injury. It was left to you as a gift of appreciation for your musical performances.</content>
   <content contentuid="hd1827aedg3ac6g5f8ag650dgbe539c085de1" version="1">Gifting a Ring</content>
   <content contentuid="h47d759b4g00b1g0115g8822g1ba8dc89ef1e" version="1">Slipping a ring into your pocket.</content>
   <content contentuid="h1091201fgbf17g71ccg63a3gf46ba6db28dc" version="1">Gifting a Garment</content>
@@ -718,12 +718,14 @@
   <content contentuid="h63826570gf8f8g7755g3deegf1329bd867ab" version="3">Gloves of Persuasive Defence</content>
   <content contentuid="hff22d265g9f20g4ff8g123ag62cef5fb0e10" version="3">Once per combat, you can use a reaction to parry a melee attack, reducing the damage by the sum of your charisma and dexterity modifiers.</content>
   <content contentuid="h7d56b995g4d01g0dc1g4ce1ga72c9e9c819b" version="3">Gloves gifted to you by an admirer of your musical performance. There's a small note tucked inside the cuff.&lt;br&gt;&lt;br&gt;"You seem like the sort who attracts trouble. I'd love for you to survive long enough to perform again, so take these gloves with my blessing. May they help you graciously smile your way out of a tight spot or two. Or failing that, may they help you deflect the stabby end of the problem away from your good self."</content>
-  <content contentuid="haa68c543g2ed4gf5cdg2bb1g84f1531c94e4" version="1">Unwanted Masterwork Gauntlets</content>
-  <content contentuid="h16b09302g0e4ag7da0g3503g85ad81c39297" version="1">These gauntlets spark with unfinished, yet still potent devillish magic - indicative of a cancelled blacksmith's commission. </content>
-  <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="2">Ring of Dexterous Jumping</content>
-  <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="2">This ornate ring was a gift from an admirer. </content>
-  <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="1">Rupturing Blade</content>
-  <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="1">The point of the rapier is capable of splitting into heated barbs, should the wielder decide to prick themselves to activate them - sacrifice for reward. </content>
+  <content contentuid="haa68c543g2ed4gf5cdg2bb1g84f1531c94e4" version="2">Fingerless Gauntlets</content>
+  <content contentuid="h16b09302g0e4ag7da0g3503g85ad81c39297" version="2">A gift of appreciation for your musical performances. These gauntlets offer moderate protection while keeping the fingers free for strumming a loot (or rifling through pockets).</content>
+  <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="3">Ring of Dexterous Jumping</content>
+  <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="3">This ornate ring was a gift from an admirer of your musical performances.</content>
+  <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="3">Demoraliser</content>
+  <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="3">The point of the rapier is capable of splitting into heated barbs, should the wielder decide to prick themselves to activate them - sacrifice for reward. </content>
   <content contentuid="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1">Dexterous Jump</content>
   <content contentuid="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1">Use your dexterity modifier to jump.</content>
+  <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="2">Grants immunity to fear, at the cost of your dignity.</content>
+  <content contentuid="h1db21cf5g1a39g54b2g3f26g8a261dd7622e" version="2">A "gift" from a fan, found carefully folded and tucked inside your backpack following a musical performance. It smells mostly like leather, and looks clean enough... but nevertheless, it would take levels of bravery found only in true heroes of Faerûn, to don underwear of unknown origins.</content>
 </contentList>

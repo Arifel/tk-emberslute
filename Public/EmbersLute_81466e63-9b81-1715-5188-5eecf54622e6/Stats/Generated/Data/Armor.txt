@@ -136,6 +136,15 @@ data "Rarity" "VeryRare"
 data "Boosts" "Skill(Persuasion,2);Skill(Deception,2)"
 data "PassivesOnEquip" "Emlute_Reward_Charismatic_Defence"
 
+new entry "EMBERS_LUTE_REWARD_SHORT_GLOVES"
+type "Armor"
+using "WYR_Circus_ThiefGloves"
+data "RootTemplate" "acf4ebae-5d0d-4f4a-bc4e-4b98de380a42"
+data "ValueUUID" "240eb257-ef20-4877-89bd-6956b4b7c41a"
+data "Rarity" "Rare"
+data "Boosts" "Skill(SleightOfHand,2);AC(1)"
+data "ArmorType" "StuddedLeather"
+
 new entry "_EMBERS_LUTE_HELPERS"
 type "Armor"
 

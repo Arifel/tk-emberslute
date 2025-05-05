@@ -135,24 +135,6 @@ DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",0);
 
 IF
 SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",_)
-AND
-NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
-THEN
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart");
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",1);
-IF
-SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",_)
-AND
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
-THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions_Bards",0);
-
-IF
-SavegameLoaded()
 AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_ScriptedVFX_Spawns",_)
 AND
@@ -177,7 +159,7 @@ THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_ScriptedVFX_Spawns",0);
 //END_REGION
 
-// Version 3 mod patches (dev)
+// Version 3 mod patches (in dev fixes to be removed)
 //REGION
 IF
 SavegameLoaded()
@@ -194,10 +176,9 @@ IF
 SavegameLoaded()
 AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions02_fix",_)
-AND
-NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart")
 THEN
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart");
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_BardNPC","OnMainPerformerStart");
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE", "MusicalPerformance_Good_BardNPC_Emute", "OnMainPerformerStart");
 DB_PatchApplied_Marker_EmbersLute("EML_v2_3_0_n_CrowdReactions02_fix",1);
 
 IF

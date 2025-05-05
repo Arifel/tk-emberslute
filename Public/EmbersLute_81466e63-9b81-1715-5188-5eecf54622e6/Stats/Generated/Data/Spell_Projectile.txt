@@ -174,3 +174,11 @@ using "Projectile_TossMeat1_Emlute"
 data "SpellProperties" "GROUND:Spawn(d36be5aa-6ee3-4be7-9203-fe7f446b21de);"
 data "DisplayName" "h34b55e2ag96c8g311bg0293g7c3bf2eea399;1"
 
+new entry "Projectile_DexterousJump"
+type "SpellData"
+data "SpellType" "Projectile"
+using "Projectile_Jump"
+data "AddRangeFromAbility" "Dexterity,1"
+data "DisplayName" "hf9e084d7gefe1g4092g75f3gc0a8f319ab70;1"
+data "Description" "hf03fd80cgd49bg2e66ge20egd6eadd5e1fba;1"
+

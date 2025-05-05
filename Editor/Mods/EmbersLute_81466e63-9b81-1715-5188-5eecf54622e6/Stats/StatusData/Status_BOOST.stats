@@ -71,7 +71,7 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE_STACK" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_PERFORM_POSITIVE_STACK_COOLDOWN') and Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK_COOLDOWN,100,3)" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_PERFORM_POSITIVE_STACK_COOLDOWN') and Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK_COOLDOWN,100,4)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;TickingWithSource;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_PERFORM_POSITIVE_CHARGE)" />
       </fields>
@@ -1701,6 +1701,27 @@
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TrainingInWarAndSong" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(BladesongAttackCheck(),ModifyTooltipDescription());" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8df55ebd-4964-4bbe-88ce-8b241a49ae38" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_CRITICAL_MOCKERY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="284b6378-f083-4004-868f-7c9ab4a3aff3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h940e37aagfcdcg098dg9346g5bb06f116b98" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f1f8d0ag0fcag73e4g2267gf98590f57525" version="1" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, 14)" />
+        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d8, Psychic,Magical)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e542ecff-d939-40f3-b575-e3fccd00e3b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_PARRY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5da3bdf4-0fd8-4760-bcc0-c1e045114ecf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageReduction(All, Flat, CharismaModifier+DexterityModifier);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ReactionActionPoint,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

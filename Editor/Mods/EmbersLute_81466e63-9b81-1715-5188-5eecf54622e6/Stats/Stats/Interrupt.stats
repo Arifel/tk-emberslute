@@ -30,5 +30,19 @@
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30ae12ae-a977-4840-a128-5a811a45c038" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Emlute_Parry" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="493ec5bb-f3c5-49a3-b25c-d6bda949c4f9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1193c397g8878g456cgcd5cgaf8040016bdd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc880278fgff26g8416gdd16g871a0abf8238" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(CharismaModifier+DexterityModifier));ApplyStatus(OBSERVER_OBSERVER,PARRIED_GITHYANKI,100,1);RemoveStatus(OBSERVER_OBSERVER, PARRY_GITHYANKI);" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="WieldingFinesseWeapon();" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

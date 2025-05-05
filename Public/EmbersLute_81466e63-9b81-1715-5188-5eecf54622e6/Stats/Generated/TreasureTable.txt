@@ -54,6 +54,14 @@ object category "I_EMBERS_LUTE_PANTS_OF_PERFORMANCE",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content"
 CanMerge 1
 new subtable "1,1"
+object category "I_EMBERS_LUTE_BOOK_FAQ",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_THANKYOU_NOTE",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SUMMON_CHEST_SCROLL",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE_MUSICALSPRITES",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE_ENSEMBLES",1,0,0,0,0,0,0,0
@@ -63,14 +71,6 @@ new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE_VARNISHES",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE_MISC",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_SUMMON_CHEST_SCROLL",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_THANKYOU_NOTE",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_BOOK_FAQ",1,0,0,0,0,0,0,0
-new subtable "1,1"
-object category "I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS",1,0,0,0,0,0,0,0
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
 new subtable "1,1"

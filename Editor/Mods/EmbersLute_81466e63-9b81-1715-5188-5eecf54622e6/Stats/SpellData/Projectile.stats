@@ -213,5 +213,15 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2e62506-5735-4832-bcc4-81050908fb23" />
+        <field name="Name" type="NameTableFieldDefinition" value="DexterousJump" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d6d9e619-ddd0-4a06-a3ac-f789a88126ea" />
+        <field name="AddRangeFromAbility" type="StringTableFieldDefinition" value="Dexterity,1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

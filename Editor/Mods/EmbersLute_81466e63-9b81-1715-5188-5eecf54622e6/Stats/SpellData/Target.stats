@@ -363,6 +363,42 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5f4d5076gb7d8g1eefg3ac0g219dfe9514ae" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ba56a88-f54d-4454-afaf-c569b7bbc610" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_DancerBoots_Unique" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h57e450a2g0d4bg8552g0520g86ab76d25a5d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5178e91dg6e4bg1044g7404g3dfeb6a40882" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42511f3b-c9e8-47ad-b967-b93714497c48" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_BardShoes_Unique" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7754fffdg0606geb52g16d7g83fe72a54d05" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hed894aebg0403ga849g44a2g229a921cd249" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1658c66-7ad5-4de1-be97-51bbf4e3ab4f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_CriticalRing_Unique" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd1827aedg3ac6g5f8ag650dgbe539c085de1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h47d759b4g00b1g0115g8822g1ba8dc89ef1e" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="046651c6-2006-4d46-8909-34b053da0e7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ReversePickPocket_BraveUnderwear_Unique" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="94da661f-25e3-440b-b9c1-439f9f28420f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1091201fgbf17g71ccg63a3gf46ba6db28dc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d100e53gc5a3gc282gf515gf6ac4385c5df" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a4a57164-887f-4530-a7a6-28a22976ec84" />

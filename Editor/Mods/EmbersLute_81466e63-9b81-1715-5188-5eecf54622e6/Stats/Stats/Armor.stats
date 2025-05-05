@@ -109,7 +109,7 @@
         <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF4169E1" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ffd912c7-3455-4342-81d5-003f3b977edb" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PANTS_OF_PERFORMANCE" />
@@ -120,7 +120,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFF8C00" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38e9dc1d-8bd4-4c44-8491-cfb4e91f026e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SPIN_SLIPPERS" />
@@ -129,8 +129,62 @@
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="a57433fc-8be8-4efb-ac6b-a625b3bdcd18" />
         <field name="ValueScale" type="FloatTableFieldDefinition" value="5" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,2);Advantage(SavingThrow,Dexterity);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,2);Advantage(SavingThrow,Dexterity);Proficiency(Rapiers)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Spin_Slippers;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e59e688-a82d-4c42-9feb-cadf60a1242f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_BARD_SHOES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24257734-f17c-4881-8e0e-6a277911fa9c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="7d29f16c-79dc-4e44-9ce2-b9e5055f05a9" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_Restore_BardicInspiration);ActionResource(BardicInspiration,1, 0);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e62c8bc0-ff7d-4302-9597-4a2d36d88f4f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_UNKNOWN_UNDERWEAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78cb2b2e-a4d1-4cfc-b116-de4419c7a1d2" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="6f987732-15d7-4798-8a77-b51fc182e19f" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Constitution)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Frightened_Immunity_Passive;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fbab9a3f-d217-4d51-b55f-ce2c8cee7e2c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_CRITICAL_MOCKERY_RING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d026524e-2c0f-45cd-b91c-c89d9321f64c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="81663c50-4997-47a3-884e-404b85b49fcd" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Critical_Mockery;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f72e4c0f-314b-46dc-8a8f-ee2c529696b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_DEXTEROUS_JUMP_RING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1fd5d49b-3311-49da-8694-4131ca3fe5e1" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="695cf59a-415b-4a90-894b-0725db1fdf66" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_DexterousJump)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a801b19-2ba3-4234-9561-93ee28bea9a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_PARRY_GLOVES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4b9e958f-c776-4d99-917b-ab294af83443" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="85671d18-e1e7-4478-9478-33b54f29e6a3" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Persuasion,2);Skill(Deception,2)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Charismatic_Defence" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

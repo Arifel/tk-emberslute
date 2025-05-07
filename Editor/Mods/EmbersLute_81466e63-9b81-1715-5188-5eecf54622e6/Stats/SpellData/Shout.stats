@@ -790,6 +790,53 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF0000CD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="db4a2ef9-33f7-46cc-af4d-536e28329951" />
+        <field name="Name" type="NameTableFieldDefinition" value="BardicInspiration_Party_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="805c92c1-5bea-47af-be66-873713fda639" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BOON_2,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not HasStatus('EMLUTE_PERFORM_BOON_2') and not HasPassive('Emlute_Musical_Spirit_Portal');" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha1bcd403g54d8g4daag14d7gcb06858aca6e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h584c38b2g9cedgb770gf739g4f1cc61c1695" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" handle="h370414a6g97dagd520g6720g890440fc0525" version="2" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BOON_2,100,-1)" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="9" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000CD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1685c07-ce2f-45b6-8328-6c86b5180678" />
+        <field name="Name" type="NameTableFieldDefinition" value="Crystalskin_Party_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db4a2ef9-33f7-46cc-af4d-536e28329951" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6c6d7908gd054gc777gd4e2g754ac94df1f1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hced326d6gd638gec57g6cd7g1fe73b7aec7d" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="ha4f091f3g5550gc1b5g9eefgf8da8f6691b2" version="1" />
+        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" handle="hc5fc9197gbce7g915cg36e4g7ed45b4d3681" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BOON_1,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not HasStatus('EMLUTE_PERFORM_BOON_1') and not HasPassive('Emlute_Musical_Spirit_Portal');" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000CD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="07c32cef-0f7f-4891-88be-c4a27e44f0f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="PerformanceExhaustion_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="db4a2ef9-33f7-46cc-af4d-536e28329951" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h244e1634gaeb9g282egfcbfg21f8c816e28f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7ad81cb9ge472g6c96ge6aege108148e68d7" version="2" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hea8338d6gb53bg6a0ag1d6eg3df9aaebc956" version="1" />
+        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_CURSE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_CURSE,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not HasStatus('EMLUTE_PERFORM_CURSE') and not HasPassive('Emlute_Musical_Spirit_Portal');" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFD633CF" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6c559a7f-f758-4fdd-bd25-75ac8dd21113" />

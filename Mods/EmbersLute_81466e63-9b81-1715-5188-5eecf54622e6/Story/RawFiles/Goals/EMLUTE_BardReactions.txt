@@ -35,7 +35,7 @@ DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-7674572
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,3,(ANIMATION)CUST_Drinking_01_fab141d9-e068-4f2e-ba44-699b6d9b3636);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,4,(ANIMATION)CUST_Cheering_01_Loop01_fa6ce4d0-492b-4789-b592-9c02937873b8);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,5,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752);
-DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,6,(ANIMATION)CUST_Dancing_01_6e23855c-4845-4301-bcf8-9c04f5a782c1);
+DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,6,(ANIMATION)PM_Dancing_04_5994a828-467a-4973-b81b-4edb66218ce3);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,7,(ANIMATION)CUST_Cheering_01_Loop01_fa6ce4d0-492b-4789-b592-9c02937873b8);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,8,(ANIMATION)PM_Dancing_02_20874647-6f70-442b-8993-da52e31012e2);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,9,(ANIMATION)CUST_Cheering_01_Loop01_fa6ce4d0-492b-4789-b592-9c02937873b8);
@@ -43,8 +43,10 @@ DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-7674572
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,11,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,12,(ANIMATION)CUST_Cheering_01_Loop01_fa6ce4d0-492b-4789-b592-9c02937873b8);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,13,(ANIMATION)CUST_Dancing_01_6e23855c-4845-4301-bcf8-9c04f5a782c1);
-DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,14,(ANIMATION)PM_Dancing_02_20874647-6f70-442b-8993-da52e31012e2);
+DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,14,(ANIMATION)PM_Dancing_04_5994a828-467a-4973-b81b-4edb66218ce3);
 DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,15,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752);
+DB_BardReactionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,17,(ANIMATION)CUST_Urinating_01_Loop_d7b689ac-2183-4c62-a481-eb5db76ac243);
+
 // Dancing elf silly
 DB_BardReactionsOverrideByTag_Emlute((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,13,(ANIMATION)PM_Waving_01_2220f9e4-8731-4a56-b6bc-53dd9d4378bc);
 DB_BardReactionsOverrideByTag_Emlute((TAG)REALLY_ELF_772b1dc6-14be-417f-afa3-c6cf364f45b4,16,(ANIMATION)CUST_Pondering_01_c2a68c82-1b0b-4d0c-8f1a-c9f14984a5fb);
@@ -71,6 +73,9 @@ DB_BardReactionsInCamp_Charges_Emlute(3,5,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698
 DB_BardReactionsInCamp_Charges_Emlute(1,7,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,15000);
 DB_BardReactionsInCamp_Charges_Emlute(2,7,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,27500);
 DB_BardReactionsInCamp_Charges_Emlute(3,7,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,27500);
+DB_BardReactionsInCamp_Charges_Emlute(1,2,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,(ANIMATION)CUST_Urinating_01_Start_c9c60dd9-d17e-47b7-b1a0-bd59b4c1a237,(ANIMATION)CUST_Urinating_01_Loop_d7b689ac-2183-4c62-a481-eb5db76ac243,(ANIMATION)CUST_Urinating_01_End_5a33450b-f01d-4c11-8f27-d1b2a9f5e6eb,10200);
+DB_BardReactionsInCamp_Charges_Emlute(2,2,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,15900);
+DB_BardReactionsInCamp_Charges_Emlute(3,2,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_04_5994a828-467a-4973-b81b-4edb66218ce3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,12700);
 
 // Just keeping all this here for reference
 //DB_BardReactionsInCamp_Looping_Emlute("EMLUTE_PERFORM_POSITIVE_GREAT",(TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000);
@@ -121,11 +126,12 @@ DB_BardReactionActions_Emlute(12,"Projectile_TossFlowerAlt2_Emlute","Target_Reve
 DB_BardReactionActions_Emlute(13,"Projectile_TossShabbyPants2_Emlute","",0);
 // Goblins should chuck meat and food as a reward
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,1,"Projectile_TossMeat1_Emlute");
-DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,2,"Projectile_TossMeat2_Emlute");
-DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,6,"Projectile_TossMeat3_Emlute");
+DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,3,"Projectile_TossMeat2_Emlute");
+DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,12,"Projectile_TossMeat3_Emlute");
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,7,"Projectile_TossMeat1_Emlute");
 //END_REGION
 
+// Bard unique rewards for busking mode
 //REGION
 DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,9,25);
 DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,4,10);
@@ -256,6 +262,10 @@ HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
 DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
 AND
+DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+AND
+_NPCCount > 3
+AND
 GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
 _Charges > 9
@@ -279,6 +289,10 @@ HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
 DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
 AND
+DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+AND
+_NPCCount > 6
+AND
 GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
 _Charges > 19
@@ -301,6 +315,10 @@ AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
 DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
+AND
+DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+AND
+_NPCCount > 6
 AND
 GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
@@ -594,7 +612,7 @@ DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
 AND
 GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
-_Charges <= 8
+_Charges <= 3
 THEN
 NOT DB_BardReactionAnims_Cooldown_Emlute(_NPC);
 
@@ -605,9 +623,9 @@ DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
 AND
 GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
-_Charges > 8
+_Charges > 3
 AND
-IntegerSum(10,_Charges,_Probability)
+IntegerSum(3,_Charges,_Probability)
 AND
 Random(100,_RND)
 THEN
@@ -884,7 +902,29 @@ QRY_SelectUniqueReward_EmbersLute(_Performer)
 AND
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
 THEN
+PROC_ApplyPerformanceBuff_EmbersLute(_Performer,_Status);
 PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
+
+PROC
+PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_GREAT")
+AND
+GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
+THEN
+UseSpell(_Performer,"Shout_BardicInspiration_Party_Emlute",_Performer);
+
+PROC
+PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_LEGENDARY")
+AND
+GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
+THEN
+UseSpell(_Instrument,"Shout_Crystalskin_Party_Emlute",_Performer);
+
+PROC
+PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_DANGEROUS")
+AND
+GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
+THEN
+UseSpell(_Instrument,"Shout_PerformanceExhaustion_Emlute",_Performer);
 
 QRY
 QRY_CalcUniquePerformanceRewardBase_EmbersLute((CHARACTER)_Performer,(STRING)_Status,(INTEGER)_NPCCount)
@@ -898,14 +938,18 @@ DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base);
 QRY
 QRY_SelectUniqueReward_EmbersLute((CHARACTER)_Performer)
 AND
-Random(7,_RND)
+Random(6,_RND)
 AND
-NOT DB_PerformanceRewardUnique_Given_EmbersLute(_RND)
+IntegerSum(1,_RND,_RndInc)
+AND
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_RndInc)
 THEN
-DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_RND);
+DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_RndInc);
 
 PROC
 PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
+AND
+DB_Players(_Performer)
 AND
 NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
 AND
@@ -920,7 +964,21 @@ AND
 _Roll < _Base
 THEN
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
+DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
+ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"EMLUTE_PerformanceGiftTimer")
+THEN
+OpenMessageBox(_Performer, "EMLUTE_PerformanceGift");
+
+IF
+MessageBoxClosed((CHARACTER)_Performer, "EMLUTE_PerformanceGift")
+AND
+DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index)
+THEN
 TemplateAddTo(_ItemRoot,_Performer,1,1);
+NOT DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
 //END_REGION
 EXITSECTION
 

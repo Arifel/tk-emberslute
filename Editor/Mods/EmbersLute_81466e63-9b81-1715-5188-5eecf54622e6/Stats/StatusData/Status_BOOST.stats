@@ -39,8 +39,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE_GREAT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f15d11e8-f85c-4f04-a54e-cdaea59fbf70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h11b57c31g1a77g1b85g6383g34db00133ad2" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h240e77d7g591fg234cg4d30g1a73007bf1f6" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h240e77d7g591fg234cg4d30g1a73007bf1f6" version="2" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="4;10" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">
@@ -49,8 +50,9 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE_LEGENDARY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f15d11e8-f85c-4f04-a54e-cdaea59fbf70" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea46e979gdb78g9578gf611gebe08665b1bc" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="2" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Gold" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="7:20" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">
@@ -100,6 +102,42 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Additive" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;FreezeDuration" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="e1fcf982-434a-40b9-9bb7-e00695208cb3" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2E8B57" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4f74047d-4c1e-4163-bf2b-d2723387ae6e" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_BOON_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7e915ad-536d-422c-beea-36029a729a71" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hda18fb58g8d3egd3a5g2415g3a092f1b6aff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h704f39f6ge688g1b94g7dafg8759fabf4fcc" version="2" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="48e664b0-1b0a-4767-bcfe-f22b4f0aa551" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="29d548ee-cf3e-465c-b12d-004240ce0546" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2E8B57" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7591a27d-d849-4803-8a81-9201987fab14" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_BOON_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4669bac0-d44d-48ea-95cd-7b8fde0db7c4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf5beb527g6172g9908gdf4ag31c608d579ea" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heb27aa32gb2c1gd1d2g3a45g68b618835a6a" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="48e664b0-1b0a-4767-bcfe-f22b4f0aa551" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2E8B57" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c9269540-084a-4a72-b9ac-7690b0c5c647" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_CURSE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="abc23010-c3a8-42f9-9202-0f6a13e61c7c" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8a9d26f8ga290g7908g7d62g98cb51d624b0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Drunk" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_PERFORM_BOON_1')):RemoveStatus(EMLUTE_PERFORM_BOON_1);IF(HasStatus('EMLUTE_PERFORM_BOON_2')):RemoveStatus(EMLUTE_PERFORM_BOON_2)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="c3d87811-3ea9-4e40-925f-fb8a6f29fefa" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
       </fields>
     </stat_object>
     <stat_object color="#FF140D35" is_substat="false">
@@ -836,7 +874,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h576f6eebga90agcda7g6dddgf7c87bd3af36" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_Intent_Healing" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_GNOME_DRUNK')):RemoveStatus(EMLUTE_GNOME_DRUNK)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_GNOME_DRUNK')):RemoveStatus(EMLUTE_GNOME_DRUNK);IF(HasStatus('EMLUTE_PERFORM_CURSE')):RemoveStatus(EMLUTE_PERFORM_CURSE)" />
       </fields>
     </stat_object>
     <stat_object color="#FF611515" is_substat="false">

@@ -589,8 +589,8 @@
   <content contentuid="hadc41d5ag71eeg4b47gb88egd4d032b4f72e" version="2">A shimmering white visual is applied to this instrument.</content>
   <content contentuid="haf9c3203gd52eg2c32g4d03gd44ddd34e5cd" version="2">Pink Pusling Visual</content>
   <content contentuid="h34c6725cg4ba2g826fg45dfgd8ca03d94322" version="2">A pulsing pink shimmer is applied to this instrument.</content>
-  <content contentuid="hbf6f1420gb4c5g4a2dg5ebeg9a53872b8cd4" version="2">Choosing 'Yes' will search for and delete ALL custom items from the Ember's Lute mod AND any of its add ons (e.g. Haunted or Celestial instruments).&lt;br&gt;&lt;br&gt;Please note this operation is not able to locate and delete any custom items that have been lost or dropped in the world.&lt;br&gt;&lt;br&gt;Would you like to continue? </content>
-  <content contentuid="h64c1fdaage1b2g96e3g1890g404fb0d0787a" version="1">Ember's Lute mod items have been removed from player inventories and the Camp Chest.&lt;br&gt;&lt;br&gt;If you are a Windows player, you may now take a long rest, save the game, and then unsubscribe to remove the music mods from your save campaign. </content>
+  <content contentuid="hbf6f1420gb4c5g4a2dg5ebeg9a53872b8cd4" version="3">Choosing 'Yes' will search for and delete ALL custom items from the Ember's Lute mod AND any of its add ons (e.g. Haunted or Celestial instruments).&lt;br&gt;&lt;br&gt;Please note this operation is not able to locate and delete any custom items that have been lost or dropped in the world.&lt;br&gt;&lt;br&gt;Would you like to continue? </content>
+  <content contentuid="h64c1fdaage1b2g96e3g1890g404fb0d0787a" version="2">Ember's Lute mod items have been removed from player inventories and the Camp Chest.&lt;br&gt;&lt;br&gt;If you are a Windows player, you may now take a long rest, save the game, and then unsubscribe to remove the music mods from your save campaign. </content>
   <content contentuid="h47e76425g11c7g1d31gdcbag7491fcfb9833" version="1">Remove Mod Items</content>
   <content contentuid="he5a3eab6ga479ge6a6g6172gb36b24cdc591" version="1">Clear out all mod items from player inventories, including the Camp Chest. This is a pre-requisite step for removing mods mid-campaign.</content>
   <content contentuid="h955f366ag56b4g2a31g69fcgb93f562950ec" version="2">Dance of the Sprites</content>
@@ -662,11 +662,11 @@
   <content contentuid="h7a42b8fbgb977g34f6g2eb3gaec010c329ef" version="1">Sliding a cold, single coin into your pocket.</content>
   <content contentuid="hddc6dfdbg3dedg6659gdf02g8f19e163fce6" version="1">gdfg</content>
   <content contentuid="h11b57c31g1a77g1b85g6383g34db00133ad2" version="1">Great Performance</content>
-  <content contentuid="h240e77d7g591fg234cg4d30g1a73007bf1f6" version="1">Things are starting to get lively.</content>
+  <content contentuid="h240e77d7g591fg234cg4d30g1a73007bf1f6" version="2">You have drawn a crowd of at least [1] admirers, and have at least [2] charges of &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_POSITIVE_CHARGE"&gt;Showmanship&lt;/LSTag&gt; - things are starting to get lively.</content>
   <content contentuid="h153908f5gc554g92b0g091agb72af10eca6c" version="1">Good Performance</content>
   <content contentuid="h75e09e44g7508g9a32gafe1gdda25f31c12c" version="1">Drawing a crowd of appreciative onlookers.</content>
   <content contentuid="hea46e979gdb78g9578gf611gebe08665b1bc" version="1">Legendary Performance</content>
-  <content contentuid="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="1">The excitement is palpable and the coin purses are loosening.</content>
+  <content contentuid="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="2">You have drawn a crowd of at least [1] admirers, and have at least [2] charges of &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_POSITIVE_CHARGE"&gt;Showmanship&lt;/LSTag&gt; - the excitement is palpable and the coin purses are loosening.</content>
   <content contentuid="h070ec377g460cg0632g1dacgf6820d2329a8" version="1">Dangerous Performance!</content>
   <content contentuid="h58f2862eg5496gb164gfd7eg49ba35a7960c" version="1">This crowd is really quite riled up. A responsible performer might stop about now.</content>
   <content contentuid="h4ddec9a4gb4eegeb8dg739aga375340e0428" version="2">Cute White Flower</content>
@@ -728,4 +728,20 @@
   <content contentuid="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1">Use your dexterity modifier to jump.</content>
   <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="2">Grants immunity to fear, at the cost of your dignity.</content>
   <content contentuid="h1db21cf5g1a39g54b2g3f26g8a261dd7622e" version="2">A "gift" from a fan, found carefully folded and tucked inside your backpack following a musical performance. It smells mostly like leather, and looks clean enough... but nevertheless, it would take levels of bravery found only in true heroes of Faerûn, to don underwear of unknown origins.</content>
+  <content contentuid="hda18fb58g8d3egd3a5g2415g3a092f1b6aff" version="1">Legendary Performance: Crystal Skin</content>
+  <content contentuid="h704f39f6ge688g1b94g7dafg8759fabf4fcc" version="2">Musical sprites have blessed your party with &lt;LSTag Type="Status" Tooltip="CRYSTALSKIN"&gt;Crystal Skin&lt;/LSTag&gt; until the end of the day.</content>
+  <content contentuid="hf5beb527g6172g9908gdf4ag31c608d579ea" version="1">Great Performance: Bardic Inspiration</content>
+  <content contentuid="heb27aa32gb2c1gd1d2g3a45g68b618835a6a" version="1">Musical sprites have inspired your party.</content>
+  <content contentuid="ha1bcd403g54d8g4daag14d7gcb06858aca6e" version="1">Great Performance: Bardic Inspiration</content>
+  <content contentuid="h370414a6g97dagd520g6720g890440fc0525" version="2">Instrument sprites grant &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; to your nearby party.</content>
+  <content contentuid="h8a9d26f8ga290g7908g7d62g98cb51d624b0" version="1">Performance Exhaustion</content>
+  <content contentuid="h584c38b2g9cedgb770gf739g4f1cc61c1695" version="2">Musical sprites have granted &lt;LSTag Type="Status" Tooltip="BARDIC_INSPIRATION"&gt;Bardic Inspiration&lt;/LSTag&gt; to everyone within a distance of [1].</content>
+  <content contentuid="h6c6d7908gd054gc777gd4e2g754ac94df1f1" version="1">Legendary Performance: Crystal Skin</content>
+  <content contentuid="hced326d6gd638gec57g6cd7g1fe73b7aec7d" version="2">Musical sprites have blessed everyone within [1] with &lt;LSTag Type="Status" Tooltip="CRYSTALSKIN"&gt;Crystal Skin&lt;/LSTag&gt; until the end of the day.</content>
+  <content contentuid="ha4f091f3g5550gc1b5g9eefgf8da8f6691b2" version="1">Effects will wear off after a long rest.</content>
+  <content contentuid="hc5fc9197gbce7g915cg36e4g7ed45b4d3681" version="1">Instrument sprites grant &lt;LSTag Type="Status" Tooltip="CRYSTALSKIN"&gt;Crystal Skin&lt;/LSTag&gt; to your nearby party.</content>
+  <content contentuid="h244e1634gaeb9g282egfcbfg21f8c816e28f" version="1">Performance Exhaustion</content>
+  <content contentuid="h7ad81cb9ge472g6c96ge6aege108148e68d7" version="2">Everyone within [1] has &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_CURSE"&gt;Performance Exhaustion&lt;/LSTag&gt; until resting.</content>
+  <content contentuid="hea8338d6gb53bg6a0ag1d6eg3df9aaebc956" version="1">Effects will wear off after a long rest.</content>
+  <content contentuid="h0010a36egdf0fgf037gb520gb8ef606f5658" version="1">At the end of your performance, you notice that someone has left you a gift tucked inside your backpack!</content>
 </contentList>

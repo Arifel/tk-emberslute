@@ -86,9 +86,10 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE_STACK_COOLDOWN" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value=" SkillCheck(Skill.Performance,max(10,GetStatusDuration('EMLUTE_PERFORM_POSITIVE_CHARGE', context.Target)))" />
+        <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="SkillCheck(Skill.Performance,math.max(10,GetStatusDuration('EMLUTE_PERFORM_POSITIVE_CHARGE')))" />
         <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE_CHARGE,100,1)" />
         <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="SetStatusDuration(SELF,EMLUTE_PERFORM_POSITIVE_CHARGE,-1,Add)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_PERFORM_POSITIVE_CHARGE')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_CHARGE,100,Skill.Performance)" />
       </fields>
     </stat_object>
     <stat_object color="#FF006400" is_substat="false">

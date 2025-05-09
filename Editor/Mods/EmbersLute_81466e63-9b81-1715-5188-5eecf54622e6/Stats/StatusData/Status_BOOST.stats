@@ -113,9 +113,9 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h704f39f6ge688g1b94g7dafg8759fabf4fcc" version="3" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="48e664b0-1b0a-4767-bcfe-f22b4f0aa551" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BolsteringMagic_Boost" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RALLY,100,-1)" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71e6c39b-11cf-4a8e-9d35-6bdb8a44af03" />
       </fields>
     </stat_object>
     <stat_object color="#FF2E8B57" is_substat="false">
@@ -129,8 +129,10 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_GrantBardicInspiration" />
         <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_BardicInspiration_MO" />
         <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_BardicInspiration_MO_Stop" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BOLSTERING_MAGIC,100,-1)" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f10931fe-06d2-4867-bd1b-b79c9c665530" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3991b5d7-47c8-419c-8039-598fffe460b8" />
+        <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
+        <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF2E8B57" is_substat="false">

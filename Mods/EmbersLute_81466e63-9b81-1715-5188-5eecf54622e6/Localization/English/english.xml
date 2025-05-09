@@ -733,13 +733,13 @@
   <content contentuid="hf5beb527g6172g9908gdf4ag31c608d579ea" version="2">Great Performance: Rally</content>
   <content contentuid="heb27aa32gb2c1gd1d2g3a45g68b618835a6a" version="2">Musical sprites have inspired you.</content>
   <content contentuid="ha1bcd403g54d8g4daag14d7gcb06858aca6e" version="2">Great Performance: Rally</content>
-  <content contentuid="h370414a6g97dagd520g6720g890440fc0525" version="3">Instrument sprites grant &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rally&lt;/LSTag&gt; to nearby characters.</content>
+  <content contentuid="h370414a6g97dagd520g6720g890440fc0525" version="4">Instrument sprites grant &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rally&lt;/LSTag&gt; to nearby party members.</content>
   <content contentuid="h8a9d26f8ga290g7908g7d62g98cb51d624b0" version="1">Performance Exhaustion</content>
-  <content contentuid="h584c38b2g9cedgb770gf739g4f1cc61c1695" version="3">Musical sprites have granted &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rally&lt;/LSTag&gt; to everyone within a distance of [1].</content>
+  <content contentuid="h584c38b2g9cedgb770gf739g4f1cc61c1695" version="4">Musical sprites have granted &lt;LSTag Type="Status" Tooltip="RALLY"&gt;Rally&lt;/LSTag&gt; to all members of your party within a distance of [1].</content>
   <content contentuid="h6c6d7908gd054gc777gd4e2g754ac94df1f1" version="2">Legendary Performance: Bolstering Magic</content>
-  <content contentuid="hced326d6gd638gec57g6cd7g1fe73b7aec7d" version="3">Musical sprites have blessed everyone within [1] with &lt;LSTag Type="Status" Tooltip="BOLSTERING_MAGIC"&gt;Bolstering Magic&lt;/LSTag&gt; until the end of the day.</content>
+  <content contentuid="hced326d6gd638gec57g6cd7g1fe73b7aec7d" version="4">Musical sprites have blessed all members of your party within [1] with &lt;LSTag Type="Status" Tooltip="BOLSTERING_MAGIC"&gt;Bolstering Magic&lt;/LSTag&gt; until the end of the day.</content>
   <content contentuid="ha4f091f3g5550gc1b5g9eefgf8da8f6691b2" version="1">Effects will wear off after a long rest.</content>
-  <content contentuid="hc5fc9197gbce7g915cg36e4g7ed45b4d3681" version="2">Instrument sprites grant &lt;LSTag Type="Status" Tooltip="BOLSTERING_MAGIC"&gt;Bolstering Magic&lt;/LSTag&gt;to nearby characters.</content>
+  <content contentuid="hc5fc9197gbce7g915cg36e4g7ed45b4d3681" version="3">Instrument sprites grant &lt;LSTag Type="Status" Tooltip="BOLSTERING_MAGIC"&gt;Bolstering Magic&lt;/LSTag&gt;to nearby party members.</content>
   <content contentuid="h244e1634gaeb9g282egfcbfg21f8c816e28f" version="1">Performance Exhaustion</content>
   <content contentuid="h7ad81cb9ge472g6c96ge6aege108148e68d7" version="3">You have &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_CURSE"&gt;Performance Exhaustion&lt;/LSTag&gt; until resting.</content>
   <content contentuid="hea8338d6gb53bg6a0ag1d6eg3df9aaebc956" version="1">Effects will wear off after a long rest.</content>

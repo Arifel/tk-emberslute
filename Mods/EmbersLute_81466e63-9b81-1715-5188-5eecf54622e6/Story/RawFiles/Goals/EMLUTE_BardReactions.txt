@@ -973,6 +973,14 @@ DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
 THEN
 PROC_ApplyPerformanceBuff_EmbersLute(_Performer,_Status);
 PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
+ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",500);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+THEN
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
 
 PROC
 PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_GREAT")

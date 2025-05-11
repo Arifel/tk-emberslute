@@ -589,8 +589,8 @@
   <content contentuid="hadc41d5ag71eeg4b47gb88egd4d032b4f72e" version="2">A shimmering white visual is applied to this instrument.</content>
   <content contentuid="haf9c3203gd52eg2c32g4d03gd44ddd34e5cd" version="2">Pink Pusling Visual</content>
   <content contentuid="h34c6725cg4ba2g826fg45dfgd8ca03d94322" version="2">A pulsing pink shimmer is applied to this instrument.</content>
-  <content contentuid="hbf6f1420gb4c5g4a2dg5ebeg9a53872b8cd4" version="3">Choosing 'Yes' will search for and delete ALL custom items from the Ember's Lute mod AND any of its add ons (e.g. Haunted or Celestial instruments).&lt;br&gt;&lt;br&gt;Please note this operation is not able to locate and delete any custom items that have been lost or dropped in the world.&lt;br&gt;&lt;br&gt;Would you like to continue? </content>
-  <content contentuid="h64c1fdaage1b2g96e3g1890g404fb0d0787a" version="2">Ember's Lute mod items have been removed from player inventories and the Camp Chest.&lt;br&gt;&lt;br&gt;If you are a Windows player, you may now take a long rest, save the game, and then unsubscribe to remove the music mods from your save campaign. </content>
+  <content contentuid="hbf6f1420gb4c5g4a2dg5ebeg9a53872b8cd4" version="10">This operation will ERASE all custom items from the Ember's Lute mod AND any of its add ons (e.g. Haunted or Celestial instruments) across your party inventories and the Camp Chest.&lt;br&gt;&lt;br&gt;You may wish to do this if you are playing on Windows and need to remove the Ember's Lute mod and its dependencies from your current campaign. &lt;br&gt;&lt;br&gt;It is not possible to remove mods mid-campaign on console.&lt;br&gt;&lt;br&gt;Would you like to continue? </content>
+  <content contentuid="h64c1fdaage1b2g96e3g1890g404fb0d0787a" version="9">Ember's Lute mod items have been erased from party inventories and the Camp Chest.&lt;br&gt;&lt;br&gt;If you wish to remove the Ember's Lute mods from your current campaign, then you should now take a Long Rest and then Save your game again.&lt;br&gt;&lt;br&gt;Finally, Quit to Main Menu, then Disable and Unsubscribe from this mod via the BG3 Mod Manager.</content>
   <content contentuid="h47e76425g11c7g1d31gdcbag7491fcfb9833" version="1">Remove Mod Items</content>
   <content contentuid="he5a3eab6ga479ge6a6g6172gb36b24cdc591" version="1">Clear out all mod items from player inventories, including the Camp Chest. This is a pre-requisite step for removing mods mid-campaign.</content>
   <content contentuid="h955f366ag56b4g2a31g69fcgb93f562950ec" version="2">Dance of the Sprites</content>
@@ -669,16 +669,16 @@
   <content contentuid="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="2">You have drawn a crowd of at least [1] admirers, and have at least [2] charges of &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_POSITIVE_CHARGE"&gt;Showmanship&lt;/LSTag&gt; - the excitement is palpable and the coin purses are loosening.</content>
   <content contentuid="h070ec377g460cg0632g1dacgf6820d2329a8" version="1">Dangerous Performance!</content>
   <content contentuid="h58f2862eg5496gb164gfd7eg49ba35a7960c" version="1">This crowd is really quite riled up. A responsible performer might stop about now.</content>
-  <content contentuid="h4ddec9a4gb4eegeb8dg739aga375340e0428" version="2">Cute White Flower</content>
-  <content contentuid="hf6f84b9ag9ca7ga8a3gfe36g54ccaf08b5b7" version="2">Thrown by an admirer</content>
+  <content contentuid="h4ddec9a4gb4eegeb8dg739aga375340e0428" version="3">Cute White Flower</content>
+  <content contentuid="hf6f84b9ag9ca7ga8a3gfe36g54ccaf08b5b7" version="3">Thrown by an admirer</content>
   <content contentuid="h3ee91fb9g03f5ge192ge9a9gfe112d9b7bb1" version="2">Cute Pink Flower</content>
   <content contentuid="ha463eae2g6927g47fcg0b6dge2aee2ce6c76" version="2">Thrown by an admirer.</content>
   <content contentuid="hab9c4a13g90a7gdaebgd314ga73a26ed75ff" version="1">Cute Blue Flower</content>
   <content contentuid="h29dab63eg8433gc234g0562g300cd70df441" version="1">Thrown by an admirer.</content>
-  <content contentuid="h071139feg1462ge056g8680g4b7b5eea0f9f" version="1">Well Worn Underwear</content>
-  <content contentuid="ha2c34f4agbaafgd080g0a6eg7205823a2caf" version="1">Worn recently.</content>
-  <content contentuid="h8a573613g8e9bg6450g9785gbfb59ad48acb" version="2">Well Worn Underwear</content>
-  <content contentuid="h206ea9edg4624gbee5g26bbg4ec8be8d98bc" version="2">Worn recently.</content>
+  <content contentuid="h071139feg1462ge056g8680g4b7b5eea0f9f" version="2">Well Worn Underwear</content>
+  <content contentuid="ha2c34f4agbaafgd080g0a6eg7205823a2caf" version="2">Worn recently.</content>
+  <content contentuid="h8a573613g8e9bg6450g9785gbfb59ad48acb" version="3">Well Worn Underwear</content>
+  <content contentuid="h206ea9edg4624gbee5g26bbg4ec8be8d98bc" version="3">Worn recently.</content>
   <content contentuid="h0200120fg627ag9559g9399gfefd04fa7403" version="1">Throw Fish</content>
   <content contentuid="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="1">Throw Meat</content>
   <content contentuid="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1">Throw Meat</content>
@@ -690,8 +690,8 @@
   <content contentuid="h9dccbf0cg660fgc78egc79bgd1793cacbe69" version="1">Dancer's Grace</content>
   <content contentuid="h6c5a065bg2416gc670g07f9g87f7b62e877c" version="1">You strike with the grace and precision of a master dancer.</content>
   <content contentuid="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1">Use the combat animations for the Spellblade wizard subclass when enabled.</content>
-  <content contentuid="h3e6a204dgfec4g47a9g1c64g3114103a4398" version="3">Simple Bard Shoes</content>
-  <content contentuid="h3469e125g7652gfc84g511ag514aa08859af" version="3">These shoes were a gift from an admiring fan, inspired by the music you performed.</content>
+  <content contentuid="h3e6a204dgfec4g47a9g1c64g3114103a4398" version="4">Simple Bard Shoes</content>
+  <content contentuid="h3469e125g7652gfc84g511ag514aa08859af" version="4">These shoes were a gift from an admiring fan, inspired by the music you performed.</content>
   <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="5">Encore Spin Slippers</content>
   <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="4">Enables the Bladesinger subclass combat animations if you have a finesse weapon equipped.</content>
   <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="4">These boots were donated by an appreciative audience member following a musical performance. They claimed these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
@@ -703,9 +703,9 @@
   <content contentuid="h3f1f8d0ag0fcag73e4g2267gf98590f57525" version="1">Adding insult to injury.</content>
   <content contentuid="h265cbcebg17ceg2133gb8ebgc5218cb4786b" version="1">Critical Mockery</content>
   <content contentuid="h05c571ddg2acag9ad1g834cg44e332bb409e" version="1">Adding insult to injury.</content>
-  <content contentuid="hdc7960beg461cg8401g3c00g76b103f066f0" version="4">Risky Underwear of Unknown Origin</content>
-  <content contentuid="h57e9b966gcf6agf5ebg6adag3356ec2ec041" version="2">Ring of Critical Mockery</content>
-  <content contentuid="h6cae8babg2214ge16eg476fg87c5bf31e738" version="2">A ring that inspires the wearer to add insult to injury. It was left to you as a gift of appreciation for your musical performances.</content>
+  <content contentuid="hdc7960beg461cg8401g3c00g76b103f066f0" version="5">Risky Underwear of Unknown Origin</content>
+  <content contentuid="h57e9b966gcf6agf5ebg6adag3356ec2ec041" version="3">Ring of Critical Mockery</content>
+  <content contentuid="h6cae8babg2214ge16eg476fg87c5bf31e738" version="3">A ring that inspires the wearer to add insult to injury. It was left to you as a gift of appreciation for your musical performances.</content>
   <content contentuid="hd1827aedg3ac6g5f8ag650dgbe539c085de1" version="1">Gifting a Ring</content>
   <content contentuid="h47d759b4g00b1g0115g8822g1ba8dc89ef1e" version="1">Slipping a ring into your pocket.</content>
   <content contentuid="h1091201fgbf17g71ccg63a3gf46ba6db28dc" version="1">Gifting a Garment</content>
@@ -715,19 +715,19 @@
   <content contentuid="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="1">Damage reduction is the sum of the Charisma and Dexterity modifiers.</content>
   <content contentuid="h1193c397g8878g456cgcd5cgaf8040016bdd" version="1">Defensive Finesse</content>
   <content contentuid="hc880278fgff26g8416gdd16g871a0abf8238" version="1">You must be wielding a finesse weapon, see the attacker, and you can't be Incapacitated or Restrained.</content>
-  <content contentuid="h63826570gf8f8g7755g3deegf1329bd867ab" version="3">Gloves of Persuasive Defence</content>
-  <content contentuid="hff22d265g9f20g4ff8g123ag62cef5fb0e10" version="3">Once per combat, you can use a reaction to parry a melee attack, reducing the damage by the sum of your charisma and dexterity modifiers.</content>
-  <content contentuid="h7d56b995g4d01g0dc1g4ce1ga72c9e9c819b" version="3">Gloves gifted to you by an admirer of your musical performance. There's a small note tucked inside the cuff.&lt;br&gt;&lt;br&gt;"You seem like the sort who attracts trouble. I'd love for you to survive long enough to perform again, so take these gloves with my blessing. May they help you graciously smile your way out of a tight spot or two. Or failing that, may they help you deflect the stabby end of the problem away from your good self."</content>
-  <content contentuid="haa68c543g2ed4gf5cdg2bb1g84f1531c94e4" version="2">Fingerless Gauntlets</content>
-  <content contentuid="h16b09302g0e4ag7da0g3503g85ad81c39297" version="2">A gift of appreciation for your musical performances. These gauntlets offer moderate protection while keeping the fingers free for strumming a loot (or rifling through pockets).</content>
-  <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="3">Ring of Dexterous Jumping</content>
-  <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="3">This ornate ring was a gift from an admirer of your musical performances.</content>
-  <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="3">Demoraliser</content>
-  <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="3">The point of the rapier is capable of splitting into heated barbs, should the wielder decide to prick themselves to activate them - sacrifice for reward. </content>
+  <content contentuid="h63826570gf8f8g7755g3deegf1329bd867ab" version="4">Gloves of Persuasive Defence</content>
+  <content contentuid="hff22d265g9f20g4ff8g123ag62cef5fb0e10" version="4">Once per combat, you can use a reaction to parry a melee attack, reducing the damage by the sum of your charisma and dexterity modifiers.</content>
+  <content contentuid="h7d56b995g4d01g0dc1g4ce1ga72c9e9c819b" version="4">Gloves gifted to you by an admirer of your musical performance. There's a small note tucked inside the cuff.&lt;br&gt;&lt;br&gt;"You seem like the sort who attracts trouble. I'd love for you to survive long enough to perform again, so take these gloves with my blessing. May they help you graciously smile your way out of a tight spot or two. Or failing that, may they help you deflect the stabby end of the problem away from your good self."</content>
+  <content contentuid="haa68c543g2ed4gf5cdg2bb1g84f1531c94e4" version="3">Fingerless Gauntlets</content>
+  <content contentuid="h16b09302g0e4ag7da0g3503g85ad81c39297" version="3">A gift of appreciation for your musical performances. These gauntlets offer moderate protection while keeping the fingers free for strumming a loot (or rifling through pockets).</content>
+  <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="4">Ring of Dexterous Jumping</content>
+  <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="4">This ornate ring was a gift from an admirer of your musical performances.</content>
+  <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="4">Demoraliser</content>
+  <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="4">The point of the rapier is capable of splitting into heated barbs, should the wielder decide to prick themselves to activate them - sacrifice for reward. </content>
   <content contentuid="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1">Dexterous Jump</content>
   <content contentuid="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1">Use your dexterity modifier to jump.</content>
-  <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="3">Grants immunity to fear, at the cost of your dignity.</content>
-  <content contentuid="h1db21cf5g1a39g54b2g3f26g8a261dd7622e" version="3">A "gift" from a fan, found carefully folded and tucked inside your backpack following a musical performance. It smells mostly like leather, and looks clean enough... but nevertheless, it would take levels of bravery found only in true heroes of Faerûn, to don underwear of unknown origins.</content>
+  <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="4">Grants immunity to fear, at the cost of your dignity.</content>
+  <content contentuid="h1db21cf5g1a39g54b2g3f26g8a261dd7622e" version="4">A "gift" from a fan, found carefully folded and tucked inside your backpack following a musical performance. It smells mostly like leather, and looks clean enough... but nevertheless, it would take levels of bravery found only in true heroes of Faerûn, to don underwear of unknown origins.</content>
   <content contentuid="hda18fb58g8d3egd3a5g2415g3a092f1b6aff" version="2">Legendary Performance: Bolstering Magic</content>
   <content contentuid="h704f39f6ge688g1b94g7dafg8759fabf4fcc" version="3">Musical sprites are blessing you with &lt;LSTag Type="Status" Tooltip="BOLSTERING_MAGIC"&gt;Bolstering Magic&lt;/LSTag&gt; until the end of the day.</content>
   <content contentuid="hf5beb527g6172g9908gdf4ag31c608d579ea" version="2">Great Performance: Rally</content>
@@ -743,5 +743,12 @@
   <content contentuid="h244e1634gaeb9g282egfcbfg21f8c816e28f" version="1">Performance Exhaustion</content>
   <content contentuid="h7ad81cb9ge472g6c96ge6aege108148e68d7" version="3">You have &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_CURSE"&gt;Performance Exhaustion&lt;/LSTag&gt; until resting.</content>
   <content contentuid="hea8338d6gb53bg6a0ag1d6eg3df9aaebc956" version="1">Effects will wear off after a long rest.</content>
-  <content contentuid="h0010a36egdf0fgf037gb520gb8ef606f5658" version="1">At the end of your performance, you notice that someone has left you a gift tucked inside your backpack!</content>
+  <content contentuid="h0010a36egdf0fgf037gb520gb8ef606f5658" version="8">At the end of your performance, you notice that someone has left you a gift tucked inside your backpack!</content>
+  <content contentuid="hcaa3bee7gaee7gb83cgdbacgc8daed00854d" version="1">Anim 1</content>
+  <content contentuid="h29ba92cfgbcf5ga253g4f84g55b70ef000dc" version="1">Anim 2</content>
+  <content contentuid="h3bc0175fg1c6fgad71g4b60g5ecfe2390df4" version="1">Anim 3</content>
+  <content contentuid="h6912de4dgd8fbga79cgcd1ag629566274e61" version="2">It is strongly recommended that you backup your game by creating a Save restore point before proceeding with this item clean up.&lt;br&gt;&lt;br&gt;Please also note this operation is not able to locate and delete any custom items from the Ember's Lute mods that have been lost or dropped in the world.&lt;br&gt;&lt;br&gt;Would you like to continue?</content>
+  <content contentuid="he8ca1c23g5373gf396g7c59g25fcafdace54" version="2">Please note: this item cleanup can only HELP with removal of the Ember's Lute mods mid-campaign, and cannot guarantee mod removal will be possible.&lt;br&gt;&lt;br&gt; However, if you have been careful to keep track of custom mod items, and followed the instructions, then you should be able to Save and Load with the mods disabled.&lt;br&gt;&lt;br&gt;Choosing "Yes" will delete all Ember's Lute mod items in your party inventories. This operation is not reversible.&lt;br&gt;&lt;br&gt;Continue?</content>
+  <content contentuid="h7aaa0b70g4953g7c24g29d5g88d8cb31806d" version="1">When re-loading the Save, you will still see a warning from BG3 that a required mod is missing, but choose continue anyway. If successful, you will be able to load your Save.&lt;br&gt;&lt;br&gt; If not, you will land back at the BG3 Main Menu and will need to re-enable the mods to continue again.</content>
+  <content contentuid="he2566417gd9aagb76egce90g4d2fb6e066d5" version="1">When re-loading the Save, you will still see a warning from BG3 that a required mod is missing, but choose continue anyway. If successful, you will be able to load your Save.&lt;br&gt;&lt;br&gt; If not, you will land back at the BG3 Main Menu and will need to re-enable the mods to continue again.</content>
 </contentList>

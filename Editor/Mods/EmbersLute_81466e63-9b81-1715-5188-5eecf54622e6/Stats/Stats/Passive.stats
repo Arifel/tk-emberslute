@@ -345,7 +345,7 @@
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_THEPOWER')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWER_SPRITES,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWER_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -354,7 +354,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_BardDance" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_BARDDANCE')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BARDDANCE_SPRITES,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BARDDANCE_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_2,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -363,7 +363,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_Stargazing" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_STARGAZING')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_STARGAZING_SPRITES,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_STARGAZING_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_3,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -372,7 +372,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_DoS2_1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_DOS2_1')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_1_SPRITES,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_1_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -381,7 +381,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_DoS2_2" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_DOS2_2')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -390,7 +390,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_DoS2_3" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a7cecff4-3aad-4d11-8da2-91c2409cd5b0" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_DOS2_3')" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3_SPRITES,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">

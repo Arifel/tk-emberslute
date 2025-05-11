@@ -1729,7 +1729,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8db9fc65-d2bf-4fbc-98b4-a02cc9363bd8" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_SPIN_SLIPPERS" />
@@ -1742,7 +1742,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8df55ebd-4964-4bbe-88ce-8b241a49ae38" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_CRITICAL_MOCKERY" />
@@ -1753,7 +1753,7 @@
         <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d8, Psychic,Magical)" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e542ecff-d939-40f3-b575-e3fccd00e3b8" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_PARRY" />
@@ -1761,6 +1761,13 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageReduction(All, Flat, CharismaModifier+DexterityModifier);" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ReactionActionPoint,1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ec1d0e3e-815d-454c-b016-0a94d7592c19" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_MOCK_CLUMSY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="284b6378-f083-4004-868f-7c9ab4a3aff3" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

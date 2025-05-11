@@ -126,11 +126,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SPIN_SLIPPERS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b6c999d1-2fa0-4c64-a13d-568c44735d07" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="e2e85c50-c4fb-4207-954a-5fbdf4402737" />
-        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="a57433fc-8be8-4efb-ac6b-a625b3bdcd18" />
-        <field name="ValueScale" type="FloatTableFieldDefinition" value="5" />
-        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,2);Advantage(SavingThrow,Dexterity);Proficiency(Rapiers)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Spin_Slippers;" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="adfdafe5-f4da-4c64-a1e6-a33d626437d2" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,2);Advantage(SavingThrow,Dexterity);AC(1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">

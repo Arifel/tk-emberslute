@@ -1472,6 +1472,11 @@ data "DescriptionParams" "CharismaModifier+DexterityModifier"
 data "Boosts" "IF(IsMeleeAttack()):DamageReduction(All, Flat, CharismaModifier+DexterityModifier);"
 data "OnRemoveFunctors" "IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ReactionActionPoint,1)"
 
+new entry "EMLUTE_REWARD_MOCK_CLUMSY"
+type "StatusData"
+data "StatusType" "BOOST"
+using "MAG_SMITE_THE_GRACELSS_DAMAGE"
+
 new entry "_LEGACY_AND_COMPATIBILITY_EMLUTE"
 type "StatusData"
 data "StatusType" "BOOST"

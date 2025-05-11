@@ -583,7 +583,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SINGING_CURSE,100,-1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FFDAA520" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6d11c61c-273a-4f35-b0ea-b6c3b9222b9c" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Spin_Slippers" />
@@ -592,14 +592,15 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="8047cf29-2c79-4f12-a4bf-d965a023be63" />
-        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EMLUTE_REWARD_SPIN_SLIPPERS,100,-1);ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ade277fa-4980-4544-9dda-dc4c6431fd6c" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TrainingInWarAndSong" />
         <field name="Conditions" type="StringTableFieldDefinition" value="not HasAnyStatus({'EMLUTE_REWARD_SPIN_SLIPPERS'},{},{},context.Source);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EMLUTE_REWARD_SPIN_SLIPPERS,100,-1);ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_REWARD_SPIN_SLIPPERS)" />
       </fields>
     </stat_object>
-    <stat_object color="#FFDAA520" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d8713385-ddde-4764-a623-65eba80b0db5" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Critical_Mockery" />
@@ -613,7 +614,7 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_CRITICAL_MOCKERY, 100, 1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FFDAA520" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5fc1e01a-5fd5-49f5-bab4-dd7f5c8de7bb" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Charismatic_Defence" />
@@ -627,7 +628,16 @@
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemove;OnStatusRemoved;OnTurn;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Emlute_Parry);" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_PARRY,100,-1)" />
-        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_REWARD_PARRY,100,-1)" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_REWARD_PARRY)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="234ef97c-ae84-46a3-9a1e-75605191a63b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Mock_Clumsy" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da08db31-c57f-422d-a260-0b4727440c6f" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4, Psychic)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SWAP, EMLUTE_REWARD_MOCK_CLUMSY, 100, 0)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

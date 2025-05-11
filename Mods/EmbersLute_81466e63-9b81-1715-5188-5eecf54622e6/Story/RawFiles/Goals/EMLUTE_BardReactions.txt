@@ -221,12 +221,12 @@ DB_BardReactionActionsOverrideByTag_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-7
 
 // Bard unique rewards for busking mode
 //REGION
-DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,9,25);
-DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,4,10);
-DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,3,30);
-DB_PerformanceRewardUnique_EmbersLute(4,(ITEMROOT)EmbersLute_PerformanceReward_CriticalMockeryRing_81663c50-4997-47a3-884e-404b85b49fcd,10,40);
-DB_PerformanceRewardUnique_EmbersLute(5,(ITEMROOT)EmbersLute_PerformanceReward_DexterousJumping_695cf59a-415b-4a90-894b-0725db1fdf66,5,25);
-DB_PerformanceRewardUnique_EmbersLute(6,(ITEMROOT)EmbersLute_PerformanceReward_DancersBoots_e2e85c50-c4fb-4207-954a-5fbdf4402737,3,50);
+DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,1,10);
+DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,1,10);
+DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,1,10);
+DB_PerformanceRewardUnique_EmbersLute(4,(ITEMROOT)EmbersLute_PerformanceReward_CriticalMockeryRing_81663c50-4997-47a3-884e-404b85b49fcd,1,10);
+DB_PerformanceRewardUnique_EmbersLute(5,(ITEMROOT)EmbersLute_PerformanceReward_DexterousJumping_695cf59a-415b-4a90-894b-0725db1fdf66,1,10);
+DB_PerformanceRewardUnique_EmbersLute(6,(ITEMROOT)EmbersLute_PerformanceReward_DancersBoots_e2e85c50-c4fb-4207-954a-5fbdf4402737,1,10);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",5);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GREAT",10);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",15);
@@ -1056,6 +1056,15 @@ DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index)
 THEN
 TemplateAddTo(_ItemRoot,_Performer,1,1);
 NOT DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
+
+IF
+StatusApplied((CHARACTER)_Victim,"EMLUTE_REWARD_CRITICAL_MOCKERY",(CHARACTER)_Causee,_)
+AND
+DB_IsOrWasInParty(_Causee)
+AND
+NOT DB_CantTalk_IgnoreCombat(_Causee)
+THEN
+PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Cast_6dafdccd-091d-c0f4-4543-1199bdcb46d6,_Causee,_Victim);
 //END_REGION
 EXITSECTION
 

@@ -9,6 +9,7 @@ data "RemoveEvents" "OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceReques
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 data "OnApplyFunctors" "IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1)"
 data "OnRemoveFunctors" "RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK)"
+data "Sheathing" ""
 
 new entry "EMLUTE_PERFORM_POSITIVE_GOOD"
 type "StatusData"

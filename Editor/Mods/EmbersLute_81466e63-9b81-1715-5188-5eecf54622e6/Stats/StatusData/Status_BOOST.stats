@@ -13,6 +13,7 @@
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK)" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">
@@ -1636,7 +1637,7 @@
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="cfd09a0b-efce-4c15-b7e9-fa6f35074510" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="21ea0b72-409b-4dd1-a546-9e3efb0d1f1f" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TrainingInWarAndSong" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="UnlockSpellVariant(BladesongAttackCheck(),ModifyTooltipDescription());" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Emlute_HasBladeSingerRapierEquipped()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip" enumeration_type_name="StatusEvent" version="1" />

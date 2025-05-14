@@ -102,9 +102,10 @@ DB_NOOP(1);
 IF
 ObjectTimerFinished((CHARACTER)_Performer,"ScriptedVFX_SpawnHelpers_EmbersLute")
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 THEN
 // Works best when kept dumb, so we are just testing all the permutations
+DebugText(_Performer,"Placing spawns...");
 PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,1);
 PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,2);
 PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,3);
@@ -115,11 +116,11 @@ PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,2);
 PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,3);
 PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,4);
 PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,5);
-ObjectTimerLaunch(_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute",1000);
+ObjectTimerLaunch(_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute",2000);
 IF
 ObjectTimerFinished((CHARACTER)_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute")
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 THEN
 PROC_ScriptedVFX_MopUp_EmbersLute(_Performer,_Song);
 

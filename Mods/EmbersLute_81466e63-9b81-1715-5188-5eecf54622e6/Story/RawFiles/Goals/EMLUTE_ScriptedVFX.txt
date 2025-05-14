@@ -349,6 +349,7 @@ DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder)
 AND
 IsDead(_PositionFinder,0)
 THEN
+SetOnStage(_PositionFinder,0);
 Die(_PositionFinder,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 //END_REGION
 

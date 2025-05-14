@@ -5,6 +5,6 @@ data "RootTemplate" "ff3c6664-e161-41dc-8aea-112e16a344d3"
 data "ValueUUID" "d24c441f-7ebe-4229-8522-cf34c257ff20"
 data "Rarity" "Legendary"
 data "DefaultBoosts" "WeaponProperty(Magical);WeaponEnchantment(2);"
-data "PassivesOnEquip" "MAG_MeleeCaster_Passive;Emlute_Reward_Spin_Slippers;Emlute_Reward_Mock_Clumsy;"
+data "PassivesOnEquip" "MAG_MeleeCaster_Passive;Emlute_Reward_Mock_Clumsy;Emlute_Reward_Spin_Slippers;"
 data "Unique" "0"
 

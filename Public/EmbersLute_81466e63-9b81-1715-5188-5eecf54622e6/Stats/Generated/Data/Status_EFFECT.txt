@@ -178,6 +178,13 @@ data "StatusType" "EFFECT"
 using "COUNTERCHARM_MUSIC_BOX_VFX"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
+new entry "EMLUTE_REWARD_MOCK_CLUMSY_VFX"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "MAG_RADIANT_RADIANT_BLAST_TECHNICAL"
+data "ApplyEffect" "4442e4ef-947f-4601-ad6f-4cc8181201c7"
+data "StatusEffect" "bf2305e8-94e7-403e-af95-7d9c1723a289"
+
 new entry "_LEGACY_AND_COMPATIBILITY_EMLUTE_EFFECT"
 type "StatusData"
 data "StatusType" "EFFECT"

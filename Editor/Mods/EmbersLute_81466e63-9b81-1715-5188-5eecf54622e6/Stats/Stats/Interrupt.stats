@@ -38,10 +38,11 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1193c397g8878g456cgcd5cgaf8040016bdd" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc880278fgff26g8416gdd16g871a0abf8238" version="1" />
-        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(CharismaModifier+DexterityModifier));ApplyStatus(OBSERVER_OBSERVER,PARRIED_GITHYANKI,100,1);RemoveStatus(OBSERVER_OBSERVER, PARRY_GITHYANKI);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(CharismaModifier+DexterityModifier));UseSpell(SWAP,Projectile_ParryMissiles_Emlute,true,true,true,c4598bdb-fc07-40dd-a62c-90cc138bd76f);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="WieldingFinesseWeapon();" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

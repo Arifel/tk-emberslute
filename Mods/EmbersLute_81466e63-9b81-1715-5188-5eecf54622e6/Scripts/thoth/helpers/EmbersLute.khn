@@ -190,3 +190,10 @@ function Emlute_MusicalLegendsEnabled(entity)
 	local legendEnabled = HasStatus('EMLUTE_MUSICAL_LEGENDS',entity)
 	return ConditionResult(legendEnabled.Result, {ConditionError("MusicalLegendsScriptExtenderMissing")})
 end
+
+function Emlute_HasBladeSingerRapierEquipped(entity)
+	local entity = entity or context.Target
+	local weapon = GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand,entity)
+	local bladeSongWeapon = (weapon.IsValid & Tagged('EMLUTE_BLADESONG_RAPIER',weapon))	
+	return ConditionResult(bladeSongWeapon.Result, {ConditionError("EmluteRapierNotEquipped")})
+end

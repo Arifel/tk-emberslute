@@ -3,8 +3,6 @@ SubGoalCombiner SGC_AND
 INITSECTION
 // Attach music resources to a temporary helper item
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
-// A bit of jank to define a focal point for the performers to look at during a performance
-DB_SpecialPerformance_Focus_EmbersLute((ITEMROOT)Emlute_Ring_Focus_Helper_0cf647ea-ec6b-497c-afed-6bdd6a85f522);
 
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",129900);
@@ -66,14 +64,24 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_L
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
 // Reset the performing state on save game load
+//REGION
 IF
 SavegameLoaded()
 THEN
 PROC_ResetActivePerformanceState_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+
+IF
+LongRestStarted()
+THEN
+PROC_ResetActivePerformanceState_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+//END_REGION
 
 // Catch the special music performances and trigger the music events.
 // Timers are used to automatically stop the performance at the end 
 // of the song. Unlike the standard music performances, we won't loop.
+//REGION
 IF
 MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
@@ -85,7 +93,7 @@ PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
 IF
 StatusRemoved((CHARACTER)_Performer,_Status,_,_)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND
 DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
 THEN
@@ -95,7 +103,7 @@ PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
 IF
 ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName,_HelperItem,_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName,_HelperItem)
 AND
 DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
 THEN
@@ -123,9 +131,9 @@ DB_RepositionSummon_EmbersLute(_SummonTemplate,_,_,_,1)
 AND
 CharacterGetOwner(_Summon,_Owner)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Owner,_TimerName,_HelperItem,_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Owner,_TimerName,_HelperItem)
 THEN
-LookAtEntity(_Summon,_FocusItem);
+LookAtEntity(_Summon,_Owner);
 
 // PROCS and QUERIES
 // Starts music on the lead performer, caches active performance and begins a timer
@@ -139,29 +147,24 @@ NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
 AND
 DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
 AND
-DB_SpecialPerformance_Focus_EmbersLute(_FocusTemplate)
-AND
 CreateAtObject(_HelperTemplate,_Performer,0,0,"",1,(ITEM)_HelperItem)
 AND
 GetPosition(_Performer,_X,_Y,_Z)
 AND
 RealSum(_Z,-0.5,_OffsetZ)
-AND
-RealSum(_Z,-9.0,_FocusZ)
-AND
-CreateAt(_FocusTemplate,_X,_Y,_FocusZ,0,0,"",(ITEM)_FocusItem)
 THEN
 TeleportToPosition(_HelperItem,_X,_Y,_OffsetZ,"",0,0,0,0,1);
 ObjectTimerCancel(_Performer,_Song);
 ObjectTimerLaunch(_Performer,_Song,_Duration);
-PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem,_FocusItem);
+PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem);
+DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem);
 
 PROC
-PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem)
+PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource)
 THEN
-DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem);
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem);
 PlaySoundResource(_HelperItem,_MusicSoundResource);
 
 // Stops music on the lead performer and clears active performance cache
@@ -170,11 +173,10 @@ PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRI
 AND
 IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,0)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 THEN
 PROC_StopMusicOnItem(_Song,_HelperItem);
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
-RequestDelete(_FocusItem);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
 ObjectTimerCancel(_HelperItem,"Emlute_DeleteHelperItem");
 ObjectTimerLaunch(_HelperItem,"Emlute_DeleteHelperItem",1000);
 IF
@@ -188,41 +190,6 @@ AND
 DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource)
 THEN
 PlaySoundResource(_HelperItem,_MusicSoundResource);
-
-// Legacy implementation, only applies to one song
-IF
-CastSpell((CHARACTER)_Caster,"Shout_Bard_Perform_WeepingDawn_Sprites_Emlute",_,_,_)
-THEN
-SetTag(_Caster,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
-
-// Legacy implementation, only applies to one song
-PROC
-PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
-AND
-IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
-AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
-AND
-DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
-THEN
-ObjectTimerCancel(_Performer,_Song);
-ObjectTimerLaunch(_Performer,_Song,_Duration);
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
-PROC_MusicPlayGeneral(_Start);
-
-// Legacy implementation, only applies to one song
-PROC
-PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,_Song,(STRING)_StopEvent)
-AND
-IsTagged(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
-AND
-DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
-THEN
-PROC_MusicPlayGeneral(_Stop);
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
-ClearTag(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
 
 PROC
 PROC_DebugMusicState((CHARACTER)_Performer)
@@ -251,11 +218,59 @@ TeleportToPosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
 PROC
 PROC_ResetActivePerformanceState_EmbersLute()
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 THEN
+PROC_StopMusicOnItem(_Song,_HelperItem);
 RequestDelete(_HelperItem);
-RequestDelete(_FocusItem);
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem,_FocusItem);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+
+PROC
+PROC_CleanUpFailsafe_EmbersLute()
+AND
+DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem)
+AND
+IsDestroyed(_HelperItem,0)
+THEN
+PROC_StopMusicOnItem(_Song,_HelperItem);
+RequestDelete(_HelperItem);
+//END_REGION
+
+// Legacy implementation, only applies to one song
+//REGION
+IF
+CastSpell((CHARACTER)_Caster,"Shout_Bard_Perform_WeepingDawn_Sprites_Emlute",_,_,_)
+THEN
+SetTag(_Caster,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
+
+// Legacy implementation, only applies to one song
+PROC
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
+AND
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
+AND
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
+THEN
+ObjectTimerCancel(_Performer,_Song);
+ObjectTimerLaunch(_Performer,_Song,_Duration);
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
+PROC_MusicPlayGeneral(_Start);
+
+// Legacy implementation, only applies to one song
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,_Song,(STRING)_StopEvent)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
+THEN
+PROC_MusicPlayGeneral(_Stop);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+ClearTag(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
+//END_REGION
 
 // A sort of workaround for a couple of music events that require
 // the game to be in a certain state. BG3 auto corrects the music

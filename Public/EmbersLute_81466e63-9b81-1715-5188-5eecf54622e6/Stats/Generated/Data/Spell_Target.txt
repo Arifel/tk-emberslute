@@ -279,7 +279,7 @@ data "SpellType" "Target"
 data "TargetRadius" "3"
 data "DisplayName" "h40a624cdgdf9fgb35bg2e88g6177ca91b5e4;1"
 data "Description" "h7309bf1cga4b8g98b5gb5dag5774a33c78d3;2"
-data "SpellAnimation" ",,;,,;a3737a16-67d5-4aa0-bec3-f7cef39c113d,,;,,;,,;,,;,,;,,;,,"
+data "SpellAnimation" ",,;,,;db6bd6e4-9205-4560-8d22-6db59932d566,,;,,;,,;,,;,,;,,;,,"
 data "HitAnimationType" "None"
 
 new entry "Target_ReversePickPocket_Poppy"

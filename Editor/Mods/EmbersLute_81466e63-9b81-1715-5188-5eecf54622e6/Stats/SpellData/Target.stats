@@ -323,7 +323,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h40a624cdgdf9fgb35bg2e88g6177ca91b5e4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7309bf1cga4b8g98b5gb5dag5774a33c78d3" version="2" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;a3737a16-67d5-4aa0-bec3-f7cef39c113d,,;,,;,,;,,;,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;db6bd6e4-9205-4560-8d22-6db59932d566,,;,,;,,;,,;,,;,,;,," />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
       </fields>
     </stat_object>

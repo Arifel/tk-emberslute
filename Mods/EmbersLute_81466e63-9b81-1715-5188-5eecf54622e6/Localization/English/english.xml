@@ -530,9 +530,9 @@
   <content contentuid="h5d0fc44dg26bcg48c3g125egb2e9abe6af61" version="1">If you can see this it is a bug.</content>
   <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="10">Musical Sprites</content>
   <content contentuid="h83e49317gdb1bgbe93g919cg51fff35b1311" version="3">Channelling Legendary Performance</content>
-  <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="4">Lute of Musical Sprites (Dyeable)</content>
-  <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="4">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
-  <content contentuid="h97278cdeg4b64g18c2g445fg5af667162109" version="4">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="5">Lute of Musical Sprites (Dyeable)</content>
+  <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="5">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
+  <content contentuid="h97278cdeg4b64g18c2g445fg5af667162109" version="5">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="h7dbb6b6bgd386gdb0bg0cb3gb4af67b20255" version="1">Dark Green Visual</content>
   <content contentuid="h29b0970agc7bbgd8b9g34f8gf5a579cc3767" version="1">Instrument FX</content>
   <content contentuid="hbac33624gd334gc351ge358g650927d12022" version="1">Apply a visual to the equipped instrument.</content>
@@ -642,7 +642,7 @@
   <content contentuid="haeecd54cgc265gc06fg633dg76756788c6bd" version="1">This individual has become overwhelmed with excitement.</content>
   <content contentuid="h677fa9abge82fgbb54ga356g5da57132e53d" version="1">Toss a Ruby</content>
   <content contentuid="h034c40b0g345agdf4fg263bg7b79f4e27b28" version="1">Toss an Onyx</content>
-  <content contentuid="hb7056274g4aecgc7d2g26bbgdb10488301c6" version="1">Throw Well Worn Underwear</content>
+  <content contentuid="hb7056274g4aecgc7d2g26bbgdb10488301c6" version="2">Throw Tattered Underwear</content>
   <content contentuid="h564c2ad7g85a2gce86g3ba5g2be9dab2acc7" version="1">Throw Fancy Underwear</content>
   <content contentuid="hfad9cfc2g89d4g712ag5160g4e3c669446ea" version="1">Excited Dancing</content>
   <content contentuid="h762a32b5g4f7agf73fge719gbc1ab6f93f08" version="1">Happy Dancing</content>
@@ -688,13 +688,13 @@
   <content contentuid="hd2fea03ega2c2g26a6g3164g424530e6e853" version="1">Dancer's Grace</content>
   <content contentuid="h59bfc650gc40aga314gb38ege0c7c424989c" version="1">You strike with the grace and precision of a master dancer.</content>
   <content contentuid="h9dccbf0cg660fgc78egc79bgd1793cacbe69" version="1">Dancer's Grace</content>
-  <content contentuid="h6c5a065bg2416gc670g07f9g87f7b62e877c" version="1">You strike with the grace and precision of a master dancer.</content>
+  <content contentuid="h6c5a065bg2416gc670g07f9g87f7b62e877c" version="2">Use the combat animations for the Spellblade wizard subclass when enabled.</content>
   <content contentuid="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1">Use the combat animations for the Spellblade wizard subclass when enabled.</content>
   <content contentuid="h3e6a204dgfec4g47a9g1c64g3114103a4398" version="4">Simple Bard Shoes</content>
   <content contentuid="h3469e125g7652gfc84g511ag514aa08859af" version="4">These shoes were a gift from an admiring fan, inspired by the music you performed.</content>
-  <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="5">Encore Spin Slippers</content>
-  <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="4">Enables the Bladesinger subclass combat animations if you have a finesse weapon equipped.</content>
-  <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="4">These boots were donated by an appreciative audience member following a musical performance. They claimed these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
+  <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="6">Spin Slippers</content>
+  <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="5" />
+  <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="5">These boots were donated by an appreciative audience member following a musical performance. They claimed these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
   <content contentuid="h57e450a2g0d4bg8552g0520g86ab76d25a5d" version="1">Gifting a Pair of Boots</content>
   <content contentuid="h5178e91dg6e4bg1044g7404g3dfeb6a40882" version="1">A pair of boots has been placed inside your pack.</content>
   <content contentuid="h7754fffdg0606geb52g16d7g83fe72a54d05" version="1">Gifting a Pair of Shoes</content>
@@ -722,8 +722,8 @@
   <content contentuid="h16b09302g0e4ag7da0g3503g85ad81c39297" version="3">A gift of appreciation for your musical performances. These gauntlets offer moderate protection while keeping the fingers free for strumming a loot (or rifling through pockets).</content>
   <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="4">Ring of Dexterous Jumping</content>
   <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="4">This ornate ring was a gift from an admirer of your musical performances.</content>
-  <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="5">Demoraliser</content>
-  <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="5">This rapier harms the psyche of any humanoid who misses the wielder in a melee or ranged attack.</content>
+  <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="7">Demoraliser</content>
+  <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="7">This rapier harms the psyche of any humanoid who misses the wielder in a melee or ranged attack.</content>
   <content contentuid="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1">Dexterous Jump</content>
   <content contentuid="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1">Use your dexterity modifier to jump.</content>
   <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="4">Grants immunity to fear, at the cost of your dignity.</content>
@@ -751,4 +751,20 @@
   <content contentuid="he8ca1c23g5373gf396g7c59g25fcafdace54" version="5">CAVEAT&lt;br&gt;&lt;br&gt;This item clean up is not able to locate and erase any custom items from the Ember's Lute mods that have been lost or dropped in the world. It will only work on custom items kept in party inventories or in the Camp Chest.&lt;br&gt;&lt;br&gt;CONTINUE?&lt;br&gt;&lt;br&gt;Choosing "Yes" will delete all Ember's Lute mod items in your party inventories and the Camp Chest, and from any traders you have interacted with. This operation is not reversible.&lt;br&gt;&lt;br&gt;Continue?</content>
   <content contentuid="h7aaa0b70g4953g7c24g29d5g88d8cb31806d" version="1">When re-loading the Save, you will still see a warning from BG3 that a required mod is missing, but choose continue anyway. If successful, you will be able to load your Save.&lt;br&gt;&lt;br&gt; If not, you will land back at the BG3 Main Menu and will need to re-enable the mods to continue again.</content>
   <content contentuid="he2566417gd9aagb76egce90g4d2fb6e066d5" version="4">PLEASE NOTE&lt;br&gt;&lt;br&gt;When re-loading the Save, you will still see a warning from BG3 that a required mod is missing, but choose continue anyway. If successful, you will be able to load your Save.&lt;br&gt;&lt;br&gt; If not, you will land back at the BG3 Main Menu and will need to re-enable the mods to continue again.&lt;br&gt;&lt;br&gt;IF IT DOES NOT WORK&lt;br&gt;&lt;br&gt;It means your campaign has items or statuses woven deeper into Faerûn than this clean-up tool can reach.&lt;br&gt;&lt;br&gt;For a more thorough mod uninstaller, seek out Volitio's BG3 Mod Uninstaller on https://www.nexusmods.com. This is an excellent and highly recommended tool with very high success rates for mod removal.</content>
+  <content contentuid="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="1">Throw Bottle</content>
+  <content contentuid="he06242f8gc9b5gc76fgc1aeg39c1c03b6b5e" version="1">Enable Showmanship</content>
+  <content contentuid="h061146eega0edg0027g8262gbc0614398764" version="1">Enable Showmanship charges, for custom music performance crowd reactions.</content>
+  <content contentuid="h415be63bgf76fgddbbgbf22g3a3c63301f00" version="1">Disable Showmanship</content>
+  <content contentuid="h80d2159dg7a73g2d7bg1f92gfdcf447a883a" version="1">Music performance crowd reactions will default to vanilla game behaviour.</content>
+  <content contentuid="h66674567g0770gac7dgd974gddd8c13c1096" version="1">Demoralise</content>
+  <content contentuid="h71f3fdfagb202g267eg81d5g945ccf13f07f" version="1">Inflict [1] to anyone missing their attack against the wielder of this weapon.</content>
+  <content contentuid="hc7666249gf132gae0agf01dg1393b6e33365" version="1">You strike with the grace and precision of a master dancer.</content>
+  <content contentuid="hdbdb9e6egbe5cgb21fg2b47gcd4edb3bf0e5" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="h5c77708dg6480g3620g3742gd6bebcbd1a1a" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="h50b17609g7e41g9832g7faeg21719ef80a5b" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="h98828027g0da4g787ag0237gcfaadf75984a" version="1">Demoralise</content>
+  <content contentuid="he967cac7g56fbgfc4dgd9a4gd7391a0a32f5" version="1">Deliver a sharp counter attack to those that miss their target.</content>
+  <content contentuid="h17e73a0ag6d20gcddcgb405g039c4dd132df" version="1">Parry Missiles</content>
+  <content contentuid="h4fb40cc8g5c53g6e8dgd471g68caac6f393b" version="1">Use your reflexes to swat a missile out of the way with a finesse weapon equipped in your main hand.</content>
+  <content contentuid="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="1">Use your reflexes and a finesse weapon to swat a missile out of harm's way.</content>
 </contentList>

@@ -124,81 +124,94 @@ AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
 //
 // Boilerplate lessss goooo. I can rewrite this smarter. But will I.
 IF
-UsingSpell(_Caster,"Shout_Config_SuppressMusicVFX",_,_,_)
+UsingSpell(_Caster,"Shout_Config_SuppressMusicVFX_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling custom music VFX");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_MUSIC_VFX_OFF_cbd8c300-6187-4013-986c-4a50f066496a);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 IF
-UsingSpell(_Caster,"Shout_Config_EnableMusicVFX",_,_,_)
+UsingSpell(_Caster,"Shout_Config_EnableMusicVFX_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling custom music VFX");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_MUSIC_VFX_OFF_cbd8c300-6187-4013-986c-4a50f066496a);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF
-UsingSpell(_Caster,"Shout_Config_SuppressSprites_All",_,_,_)
+UsingSpell(_Caster,"Shout_Config_SuppressSprites_All_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling automatic sprite summoning");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_OFF_24b6dd71-78cf-4769-bd59-e5d3a7ddd10e);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 IF
-UsingSpell(_Caster,"Shout_Config_EnableSprites_All",_,_,_)
+UsingSpell(_Caster,"Shout_Config_EnableSprites_All_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling automatic sprite summoning");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_OFF_24b6dd71-78cf-4769-bd59-e5d3a7ddd10e);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF
-UsingSpell(_Caster,"Shout_Config_SuppressSprites_Vocal",_,_,_)
+UsingSpell(_Caster,"Shout_Config_SuppressSprites_Vocal_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling automatic whistle sprite summoning");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_VOCAL_ON_d20368a4-4c7b-49c5-8c8f-78fddfdd8a20);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 IF
-UsingSpell(_Caster,"Shout_Config_EnableSprites_Vocal",_,_,_)
+UsingSpell(_Caster,"Shout_Config_EnableSprites_Vocal_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling automatic whistle sprite summoning");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_SPRITES_VOCAL_ON_d20368a4-4c7b-49c5-8c8f-78fddfdd8a20);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF
-UsingSpell(_Caster,"Shout_Config_SuppressSummon_TieflingBard",_,_,_)
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_TieflingBard_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling automatic summoning of tiefling bard");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_01b06454-64c0-4fd1-9f6e-94d9f3d3332f);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 IF
-UsingSpell(_Caster,"Shout_Config_EnableSummon_TieflingBard",_,_,_)
+UsingSpell(_Caster,"Shout_Config_EnableSummon_TieflingBard_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling automatic summoning of tiefling bard");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_01b06454-64c0-4fd1-9f6e-94d9f3d3332f);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF
-UsingSpell(_Caster,"Shout_Config_SuppressSummon_Cambions",_,_,_)
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_Cambions_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling automatic summoning of cambions");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 IF
-UsingSpell(_Caster,"Shout_Config_EnableSummon_Cambions",_,_,_)
+UsingSpell(_Caster,"Shout_Config_EnableSummon_Cambions_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling automatic summoning of cambions");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF
-UsingSpell(_Caster,"Shout_Config_SuppressSummon_WaveServant",_,_,_)
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_WaveServant_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling automatic summoning of wave servant");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 IF
-UsingSpell(_Caster,"Shout_Config_EnableSummon_WaveServant",_,_,_)
+UsingSpell(_Caster,"Shout_Config_EnableSummon_WaveServant_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling automatic summoning of wave servant");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressShowmanship_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Disabling custom music reactions");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SHOWMANSHIP_OFF_6e6eeab3-e23a-4989-a75b-972ec4ebc475);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableShowmanship_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Enabling custom music reactions");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SHOWMANSHIP_OFF_6e6eeab3-e23a-4989-a75b-972ec4ebc475);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 //

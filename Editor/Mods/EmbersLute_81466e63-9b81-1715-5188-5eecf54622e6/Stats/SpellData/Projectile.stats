@@ -106,7 +106,7 @@
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="9" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ab3052f7-c5de-4229-a25f-1f442b36acc8" />
         <field name="Name" type="NameTableFieldDefinition" value="TossRuby_Emlute" />
@@ -116,7 +116,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h677fa9abge82fgbb54ga356g5da57132e53d" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="57a469c6-4ddc-40b9-8eda-8285b3c1a9ee" />
         <field name="Name" type="NameTableFieldDefinition" value="TossOnyx_Emlute" />
@@ -126,7 +126,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h034c40b0g345agdf4fg263bg7b79f4e27b28" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="dca8d9de-2dd6-4f5d-a217-6ac0e231ace8" />
         <field name="Name" type="NameTableFieldDefinition" value="TossFancyPants_Emlute" />
@@ -135,7 +135,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h564c2ad7g85a2gce86g3ba5g2be9dab2acc7" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="10781e2b-8cf8-4529-9767-3a7a7703bd4e" />
         <field name="Name" type="NameTableFieldDefinition" value="TossFlower_Emlute" />
@@ -144,7 +144,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="854a1ada-4e2d-4e45-864c-78d4fda7af89" />
         <field name="Name" type="NameTableFieldDefinition" value="TossFlowerAlt1_Emlute" />
@@ -153,7 +153,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e7dd7d6g58fag59c2g6708g8cce75aa4807" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6009f7e8-80cd-41ed-a05b-215baf08e5e3" />
         <field name="Name" type="NameTableFieldDefinition" value="TossFlowerAlt2_Emlute" />
@@ -161,7 +161,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(a7b38f24-557d-4c2c-ac45-85560e42eee8);" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0217819c-fb95-423f-8b3a-39ef42b7f335" />
         <field name="Name" type="NameTableFieldDefinition" value="TossFlowerAlt3_Emlute" />
@@ -169,16 +169,16 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(f8879681-aee4-46e8-a8fb-cfbc24a6d586);" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e3b266ec-53de-4d30-be5c-dda85f48b704" />
         <field name="Name" type="NameTableFieldDefinition" value="TossShabbyPants1_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(0ec52ef6-4459-4f6d-99ec-87295bea5b2d);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7056274g4aecgc7d2g26bbgdb10488301c6" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7056274g4aecgc7d2g26bbgdb10488301c6" version="2" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3e2c978b-303e-43f2-bcfa-f34d8d734696" />
         <field name="Name" type="NameTableFieldDefinition" value="TossShabbyPants2_Emlute" />
@@ -186,7 +186,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(e6957ccd-e070-4f3a-96b4-aa4b3723d4ba);" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="121d9b5f-4f47-49aa-be5c-5c29b7a03eb6" />
         <field name="Name" type="NameTableFieldDefinition" value="TossMeat1_Emlute" />
@@ -195,7 +195,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0200120fg627ag9559g9399gfefd04fa7403" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="73623c0a-dac9-444c-9109-3d9ceac9ce00" />
         <field name="Name" type="NameTableFieldDefinition" value="TossMeat2_Emlute" />
@@ -204,13 +204,23 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a0df8d08-dc51-428e-b9b0-debf348db5d0" />
         <field name="Name" type="NameTableFieldDefinition" value="TossMeat3_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="121d9b5f-4f47-49aa-be5c-5c29b7a03eb6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(d36be5aa-6ee3-4be7-9203-fe7f446b21de);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="838050e1-bb16-46ef-8486-c6b95f1f473e" />
+        <field name="Name" type="NameTableFieldDefinition" value="TossDrink_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0417b180-51ac-4aad-af90-5aacffadc811" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(1,,Alcohol);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -221,6 +231,22 @@
         <field name="AddRangeFromAbility" type="StringTableFieldDefinition" value="Dexterity,1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5c88e9c-1560-494a-afc9-0978ab6904ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="ParryMissiles_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="326314ee-216e-44fc-89dc-991e31d870d5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(1,Psychic);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Parry" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h17e73a0ag6d20gcddcgb405g039c4dd132df" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4fb40cc8g5c53g6e8dgd471g68caac6f393b" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

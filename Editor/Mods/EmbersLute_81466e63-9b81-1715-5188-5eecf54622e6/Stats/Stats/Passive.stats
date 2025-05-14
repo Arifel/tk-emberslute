@@ -588,16 +588,19 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6d11c61c-273a-4f35-b0ea-b6c3b9222b9c" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Spin_Slippers" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9dccbf0cg660fgc78egc79bgd1793cacbe69" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c5a065bg2416gc670g07f9g87f7b62e877c" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultAddToHotbar;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c5a065bg2416gc670g07f9g87f7b62e877c" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="8047cf29-2c79-4f12-a4bf-d965a023be63" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ade277fa-4980-4544-9dda-dc4c6431fd6c" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TrainingInWarAndSong" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="not HasAnyStatus({'EMLUTE_REWARD_SPIN_SLIPPERS'},{},{},context.Source);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="not HasAnyStatus({'EMLUTE_REWARD_SPIN_SLIPPERS'},{},{},context.Source);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_REWARD_SPIN_SLIPPERS)" />
+        <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hc7666249gf132gae0agf01dg1393b6e33365" version="1" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('Bladesong_Weapon',context.Source);" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -638,6 +641,10 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="da08db31-c57f-422d-a260-0b4727440c6f" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4, Psychic)" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SWAP, EMLUTE_REWARD_MOCK_CLUMSY, 100, 0)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66674567g0770gac7dgd974gddd8c13c1096" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h71f3fdfagb202g267eg81d5g945ccf13f07f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

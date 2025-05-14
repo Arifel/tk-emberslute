@@ -47,7 +47,7 @@ DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_WaterQueen",(CHARACTE
 DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
 DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
 KBSECTION
-// Position finder for spawns
+// Reset and cleaning up on level load and unload
 //REGION
 IF
 LevelGameplayStarted(_,_)
@@ -59,9 +59,22 @@ PROC_ScriptedVFX_SpawnReset_EmbersLute(_Player);
 PROC_ScriptedVFX_HelperReset_EmbersLute(_Player);
 
 IF
+SavegameLoaded()
+THEN
+PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
+
+IF
+LongRestStarted()
+THEN
+PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
+//END_REGION
+
+// Position finder for spawns
+//REGION
+IF
 EnteredLevel((ITEM)_HelperItem,(ITEMROOT)_Template, _)
 AND
-DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
 AND
 QRY_ScriptedVFX_SongSummonEnabled(_Performer,_Song)
 AND
@@ -115,13 +128,20 @@ EnteredLevel((CHARACTER)_PositionFinder,(CHARACTERROOT)_Template, _)
 AND
 DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell)
 AND
-DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem,(ITEM)_FocusItem)
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
 AND
 QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
 AND
 DB_ScriptedVFX_BehindPerfomer_Count_EmbersLute(_Performer,_Count)
 THEN
 DB_ScriptedVFX_BehindPerfomer_EmbersLute(_Performer,_Song,_PositionFinder,_Count,0);
+
+IF
+EnteredLevel((CHARACTER)_PositionFinder,(CHARACTERROOT)_Template, _)
+AND
+DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell)
+THEN
+DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder);
 
 QRY
 QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
@@ -320,6 +340,15 @@ AND
 DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status)
 THEN
 NOT DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_PositionFinder,_Status);
+
+PROC
+PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute()
+AND
+DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder)
+AND
+IsDead(_PositionFinder,0)
+THEN
+Die(_PositionFinder,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 //END_REGION
 
 // While it is quite possible to use the VFX editor to create long-running

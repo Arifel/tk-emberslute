@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="3"/>
+    <version major="4" minor="8" revision="0" build="10"/>
     <region id="IconUVList">
         <node id="root">
             <children>
@@ -66,6 +66,13 @@
                     <attribute id="U2" type="float" value="0.12402344"/>
                     <attribute id="V1" type="float" value="0.0009765625"/>
                     <attribute id="V2" type="float" value="0.12402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Lute01_VanillaA_ICON"/>
+                    <attribute id="U1" type="float" value="0.50097656"/>
+                    <attribute id="U2" type="float" value="0.62402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="EmbersLute_Lute01_VanillaB_ICON"/>

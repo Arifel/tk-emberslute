@@ -248,6 +248,15 @@ IsDestroyed(_HelperItem,0)
 THEN
 PROC_StopMusicOnItem(_Song,_HelperItem);
 RequestDelete(_HelperItem);
+
+PROC
+PROC_CleanUpFailsafe_EmbersLute()
+AND
+DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem)
+AND
+IsDestroyed(_HelperItem,1)
+THEN
+NOT DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem);
 //END_REGION
 
 // Legacy implementation, only applies to one song

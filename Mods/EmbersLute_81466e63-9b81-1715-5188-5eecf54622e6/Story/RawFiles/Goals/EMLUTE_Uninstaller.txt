@@ -89,6 +89,8 @@ PROC_RemoveCustomPassives_EmbersLute();
 PROC_RemoveCustomStatuses_EmbersLute();
 PROC_CleanUpVanillaTables_EmbersLute();
 PROC_CleanUpCustom_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
 OpenMessageBox(_Player,"EMLUTE_CompletedUninstall");
 NOT DB_ItemCleanUp_EmbersLute(_Player);
 

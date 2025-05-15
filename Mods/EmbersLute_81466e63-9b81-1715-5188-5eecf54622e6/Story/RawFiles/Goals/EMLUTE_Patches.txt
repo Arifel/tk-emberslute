@@ -14,6 +14,17 @@ TimerFinished("RecreateBardReactions_EmbersLute")
 THEN
 PROC_RecreateBardReactionFacts_EmbersLute();
 
+IF
+SavegameLoaded()
+THEN
+PROC_ResetScriptedVFXFacts_EmbersLute();
+TimerLaunch("RecreateScriptedVFX_EmbersLute",1000);
+
+IF
+TimerFinished("RecreateScriptedVFX_EmbersLute")
+THEN
+PROC_RecreateScriptedVFXFacts_EmbersLute();
+
 // Reset the bard reactions (helpers)
 //REGION
 PROC
@@ -221,6 +232,64 @@ DB_BardReactionActions_Emlute(10,"Projectile_TossFlowerAlt2_Emlute","",0);
 DB_BardReactionActions_Emlute(11,"Projectile_TossFlowerAlt1_Emlute","",0);
 DB_BardReactionActions_Emlute(12,"Projectile_TossFlowerAlt2_Emlute","Target_ReversePickPocket_MeatThing",1);
 DB_BardReactionActions_Emlute(13,"Projectile_TossOnyx_Emlute","Target_ReversePickPocket_Coin",1);
+//END_REGION
+
+// Reset the scripted VFX
+//REGION
+PROC
+PROC_ResetScriptedVFXFacts_EmbersLute()
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_Event,_Effect,_Start,_Duration)
+THEN
+NOT DB_ScriptedVFX_EmbersLute(_Song,_Role,_Event,_Effect,_Start,_Duration);
+
+PROC
+PROC_ResetScriptedVFXFacts_EmbersLute()
+AND
+DB_ScriptedVFX_StopFX_EmbersLute(_Event,_StopEvent)
+THEN
+NOT DB_ScriptedVFX_StopFX_EmbersLute(_Event,_StopEvent);
+//END_REGION
+
+// Recreate scripted VFX
+//REGION
+PROC
+PROC_RecreateScriptedVFXFacts_EmbersLute()
+THEN
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100,51000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,51600,14600);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,66070,34700);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,100040,15860);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,115790,9100);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,124500,30270);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_04",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,130000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,100,24800);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,24900,50900);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,76520,24810);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100890,32610);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,133240,20860);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,96500);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Lead01","Emlute_FinalActL01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_04",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,251000,23000);
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_01","Emlute_FinalActS01_DarkOverlay_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_01","Emlute_FinalActS01_Spotlight_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_02","Emlute_FinalActS01_DarkOverlay_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_02","Emlute_FinalActS01_Spotlight_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_03","Emlute_FinalActS01_DarkOverlay_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_03","Emlute_FinalActS01_Spotlight_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_04","Emlute_FinalActS01_DarkOverlay_04_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Ascend_01","Emlute_FinalActS01_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_01","Emlute_FinalActS02_Spotlight_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_01","Emlute_FinalActS02_DarkOverlay_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_02","Emlute_FinalActS02_Spotlight_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_02","Emlute_FinalActS02_DarkOverlay_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_03","Emlute_FinalActS02_Spotlight_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_03","Emlute_FinalActS02_DarkOverlay_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Ascend_01","Emlute_FinalActS02_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActL01_Ascend_01","Emlute_FinalActL01_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_FinalActS02_Spotlight_04_STOP");
 //END_REGION
 
 // Version 2 mod patches

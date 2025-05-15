@@ -1113,12 +1113,12 @@
                         <keyframe time="0.5334021" value="0.03225803" is_control_point="True" />
                         <keyframe time="0.677468" value="0.07741936" />
                         <keyframe time="0.8215339" value="0.1225806" is_control_point="True" />
-                        <keyframe time="0.8096535" value="0.5806451" is_control_point="True" />
-                        <keyframe time="0.8360656" value="0.5806451" />
-                        <keyframe time="0.8690656" value="0.5806451" is_control_point="True" />
-                        <keyframe time="0.9123551" value="0.5806453" is_control_point="True" />
-                        <keyframe time="0.9380692" value="0.5806453" />
-                        <keyframe time="0.9637833" value="0.5806453" is_control_point="True" />
+                        <keyframe time="0.8009955" value="0.9612902" is_control_point="True" />
+                        <keyframe time="0.8274076" value="0.9612902" />
+                        <keyframe time="0.8604076" value="0.9612902" is_control_point="True" />
+                        <keyframe time="0.9036971" value="0.9612905" is_control_point="True" />
+                        <keyframe time="0.9294112" value="0.9612905" />
+                        <keyframe time="0.9551253" value="0.9612905" is_control_point="True" />
                         <keyframe time="0.9515166" value="0.06451616" is_control_point="True" />
                         <keyframe time="1" value="0.116129" />
                       </keyframes>

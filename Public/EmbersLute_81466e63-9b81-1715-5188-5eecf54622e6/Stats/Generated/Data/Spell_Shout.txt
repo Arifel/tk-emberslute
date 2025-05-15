@@ -113,7 +113,7 @@ data "SpellProperties" "ApplyStatus(EMLUTE_PERFORM_ENDLESSSPRING,100,-1);ApplySt
 data "Icon" "EmbersLute_Action_Song_EndlessSpring"
 data "DisplayName" "h0ed320eeg09a3gc20cgcae8g28dfe827f8ea;1"
 data "ExtraDescription" "hdbdb9e6egbe5cgb21fg2b47gcd4edb3bf0e5;1"
-data "RequirementConditions" "Tagged('IN_CAMP') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
+data "RequirementConditions" "Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
 
 new entry "Shout_Bard_Perform_WaterQueen_Emlute"
 type "SpellData"
@@ -130,7 +130,7 @@ using "Shout_Bard_Perform_WeepingDawn_Emlute"
 data "SpellProperties" "ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);"
 data "DisplayName" "h19d92486g6ef9gb424gaaccgdc642a282dd1;1"
 data "ExtraDescription" "h5c77708dg6480g3620g3742gd6bebcbd1a1a;1"
-data "RequirementConditions" "Tagged('IN_CAMP') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
+data "RequirementConditions" "Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
 
 new entry "Shout_Bard_Perform_FinalAct_Emlute"
 type "SpellData"
@@ -140,7 +140,7 @@ data "SpellProperties" "ApplyStatus(EMLUTE_PERFORM_FINALACT,100,-1);ApplyStatus(
 data "Icon" "EmbersLute_Action_Song_FinalAct"
 data "DisplayName" "h535a168bgdb7fg7c8ega59dgddd1a3500012;1"
 data "ExtraDescription" "h50b17609g7e41g9832g7faeg21719ef80a5b;1"
-data "RequirementConditions" "Tagged('IN_CAMP') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
+data "RequirementConditions" "Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
 
 new entry "Shout_Bard_Perform_Stop_Emlute"
 type "SpellData"

@@ -618,7 +618,7 @@
             </property>
             <property id="53761578-c43d-4ffe-bb6b-edb38894fd4d">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="EmbersLute_Guitar_Lute_A_Small &lt;ab0a41aa-2605-49c7-bfad-3ffb4c616a09&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="EmbersLute_Violin_A &lt;95b4907a-9dde-4e65-a936-e285bb47a04c&gt;" />
               </data>
             </property>
             <property id="4a1f3684-04a1-41a3-b394-65b11bdd9686">
@@ -964,7 +964,7 @@
             </property>
             <property id="726ea55f-d0f9-4176-9a22-c5539199a83a">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,0.15,0.19" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,0.02,0.19" />
               </data>
             </property>
             <property id="5f042807-09d5-4841-846e-2b13f7a3d80d">
@@ -2488,7 +2488,7 @@
             </property>
             <property id="726ea55f-d0f9-4176-9a22-c5539199a83a">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,0.15,-0.3" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,0.02,-0.2" />
               </data>
             </property>
             <property id="5f042807-09d5-4841-846e-2b13f7a3d80d">
@@ -3304,12 +3304,12 @@
                       <keyframes>
                         <keyframe time="0" value="0.2" />
                         <keyframe time="0" value="0.2" is_control_point="True" />
-                        <keyframe time="0.04905452" value="0.6000021" is_control_point="True" />
-                        <keyframe time="0.2821933" value="0.6" />
-                        <keyframe time="0.5153321" value="0.6000021" is_control_point="True" />
-                        <keyframe time="0.6396094" value="0.6" is_control_point="True" />
-                        <keyframe time="0.6726094" value="0.6" />
-                        <keyframe time="0.7056094" value="0.6" is_control_point="True" />
+                        <keyframe time="0.04905452" value="0.400002" is_control_point="True" />
+                        <keyframe time="0.2821933" value="0.4" />
+                        <keyframe time="0.5153321" value="0.400002" is_control_point="True" />
+                        <keyframe time="0.6396094" value="0.4" is_control_point="True" />
+                        <keyframe time="0.6726094" value="0.4" />
+                        <keyframe time="0.7056094" value="0.4" is_control_point="True" />
                         <keyframe time="0.7944139" value="0.2" is_control_point="True" />
                         <keyframe time="1" value="0.2" />
                       </keyframes>

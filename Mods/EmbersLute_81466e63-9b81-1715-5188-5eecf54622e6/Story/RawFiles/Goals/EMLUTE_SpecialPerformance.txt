@@ -4,8 +4,10 @@ INITSECTION
 // Attach music resources to a temporary helper item
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
 
+DB_SpecialPerformance_SafeZones_EmbersLute((TRIGGER)S_LOW_Elfsong_Rooftop_AlfiraPerformingArea_5dc4f36a-c1fc-4f97-8231-ca0fd7c46e1f);
+
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",129900);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",130500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",195600);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_ENDLESSSPRING",282500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",274000);
@@ -63,6 +65,56 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
+// Safe performing areas tracker
+//REGION
+IF
+EnteredTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
+AND
+DB_Avatars(_PartyCharacter)
+AND
+DB_SpecialPerformance_SafeZones_EmbersLute(_Trigger)
+THEN
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+LeftTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
+AND
+DB_Avatars(_PartyCharacter)
+AND
+IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
+AND
+DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
+AND
+IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,0)
+THEN
+ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+TagSet((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
+AND
+DB_Avatars(_PartyCharacter)
+THEN
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+TagCleared((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
+AND
+DB_Avatars(_PartyCharacter)
+AND
+DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
+AND
+IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,0)
+THEN
+ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+LevelGameplayStarted(_,1)
+AND
+DB_Avatars(_PartyCharacter)
+THEN
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+//END_REGION
+
 // Reset the performing state on save game load
 // Cleaning up, DB hygiene etc.
 //REGION
@@ -170,7 +222,7 @@ RealSum(_Z,-0.5,_OffsetZ)
 THEN
 TeleportToPosition(_HelperItem,_X,_Y,_OffsetZ,"",0,0,0,0,1);
 ObjectTimerCancel(_Performer,_Song);
-ObjectTimerLaunch(_Performer,_Song,_Duration);
+RealtimeObjectTimerLaunch(_Performer,_Song,_Duration);
 PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem);
 DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem);
 
@@ -277,7 +329,7 @@ AND
 DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
 THEN
 ObjectTimerCancel(_Performer,_Song);
-ObjectTimerLaunch(_Performer,_Song,_Duration);
+RealtimeObjectTimerLaunch(_Performer,_Song,_Duration);
 DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
 PROC_MusicPlayGeneral(_Start);
 

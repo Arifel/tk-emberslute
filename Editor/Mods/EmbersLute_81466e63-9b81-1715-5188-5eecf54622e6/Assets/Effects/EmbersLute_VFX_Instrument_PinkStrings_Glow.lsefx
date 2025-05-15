@@ -504,7 +504,7 @@
       <ids>
         <id value="5" />
       </ids>
-      <track name="Track" muted="False" locked="False" mutestateoverride="Unmuted">
+      <track name="Track" muted="False" locked="False" mutestateoverride="None">
         <component class="OverlayMaterial" start="0" end="1" instancename="c6c574a2-9681-414d-b814-33cf161a1037">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">

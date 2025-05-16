@@ -247,7 +247,12 @@ DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LE
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",25);
 //END_REGION
 
-
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_JOIN_THEPOWER");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_BardDance","EMLUTE_JOIN_BARDDANCE");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_Stargazing","EMLUTE_JOIN_STARGAZING");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_MainTheme","EMLUTE_JOIN_DOS2_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_JOIN_DOS2_2");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_JOIN_DOS2_3");
 KBSECTION
 // Here we are hooking into vanilla so it handles our custom reactions too.
 // Might be some jerky anim transitional behaviour as a consequence, since the 
@@ -1079,6 +1084,67 @@ AND
 NOT DB_CantTalk_IgnoreCombat(_Causee)
 THEN
 PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Cast_6dafdccd-091d-c0f4-4543-1199bdcb46d6,_Causee,_Victim);
+//END_REGION
+
+// NPC bard reactions to performing on Ember's Lute
+//REGION 
+IF
+MainPerformerStarted(_Performer,_Song)
+AND
+DB_Players(_Performer)
+AND
+DB_CRIME_MusicalPerformance(_ID,_Performer,_DisturbanceName)
+AND
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE",_DisturbanceName,"OnStatusApply")
+AND
+QRY_BardReactions_SongToJoinStatus_EmbersLute(_Song)
+AND
+CrimeGetNewID(_CrimeID)
+THEN
+PROC_CharacterRegisterCrime(_Performer,"MusicalPerformance_Good_BardNPC_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,_CrimeID);
+
+IF
+CharacterOnCrimeSensibleActionNotification(_Bard,_,_CrimeID,"CRIME_OsirisBardPerformWellReaction_EmbersLute",_Dialog,_Criminal1,_Criminal2,_Criminal3,_Criminal4,_)
+AND
+NOT DB_CantAct(_Bard)
+AND
+NOT HasActiveStatus(_Bard,"SILENCED",1)
+AND
+NOT DB_CRIME_BardNPCPerformingWithPlayers(_Bard,_,_)
+THEN
+PROC_BardReactions_BardJoins_EmbersLute(_Bard,_Criminal1,_CrimeID);
+
+IF
+CharacterOnCrimeSensibleActionNotification(_Bard,_,_CrimeID,"CRIME_OsirisBardPerformWellReaction_EmbersLute",_Dialog,_Criminal1,_Criminal2,_Criminal3,_Criminal4,_)
+AND
+NOT DB_CRIME_BardNPCPerformingWithPlayers(_Bard,_,_CrimeID)
+THEN
+CrimeConfrontationDone(_CrimeID,_Bard);
+
+PROC
+PROC_BardReactions_BardJoins_EmbersLute((CHARACTER)_Bard,(CHARACTER)_Criminal,(INTEGER)_CrimeID)
+AND
+DB_CRIME_MusicalPerformanceSpell(_CrimeID,_SpellInfix)
+AND
+DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus)
+THEN
+DB_CRIME_BardNPCPerformingWithPlayers(_Bard,_Criminal,_CrimeID);
+EndRepose(_Bard);
+ApplyStatus(_Bard,_JoinStatus,-1.0);
+
+QRY
+QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)
+AND
+DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus)
+THEN
+NOT DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus);
+
+QRY
+QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)
+AND
+DB_BardReactions_SongToStatusMapping_Emlute(_Song,_JoinStatus)
+THEN
+DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus);
 //END_REGION
 EXITSECTION
 

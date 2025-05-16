@@ -231,6 +231,31 @@
         <field name="AddRangeFromAbility" type="StringTableFieldDefinition" value="Dexterity,1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0.8" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="4.5" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="rules:861d0046-1858-401e-b97b-28f7b3e3e89a,d5e54f29-f80f-4105-96b2-23b5af9321c7,bac38aab-dfa7-4a5a-9c2a-552b0b626ee3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_DexterousJump" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Generic_Prepare_Jump" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Generic_GeneralAction_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Jump" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="ProjectileTerrainOffset" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;Movement:3" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="b6bebde2-ecff-4df6-9d24-cd9fabb9fe79,,;,,;f49c1788-7819-481f-9b83-2344d708e682,,;8ee67630-f1c7-441d-aaf6-fa4633c890da,,;f8fe2e89-2313-48f7-963c-0907b6306fd1,,;,,;5abe3725-c152-42de-98c8-0dbf872e1ff2,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Utility" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsJump;AddFallDamageOnLand;HasHighGroundRangeExtension;IgnoreVisionBlock;Stealth;Invisible;CannotTargetCharacter;CannotTargetItems" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" value="Jump" enumeration_type_name="SpellActionType" version="1" />
+        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_Jump" enumeration_type_name="SpellCategoryFlags" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Action" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="SpellJumpType" type="EnumerationTableFieldDefinition" value="Jump" enumeration_type_name="SpellJumpType" version="1" />
+        <field name="MinJumpDistance" type="FloatTableFieldDefinition" value="2" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Immobile" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="095b53a6-b1f1-4f4f-84ab-88c2f90d85b0" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e20c5e32-203b-4dae-9049-f0289a60c31d" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Small" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

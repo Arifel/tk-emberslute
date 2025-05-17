@@ -113,6 +113,34 @@ AND
 DB_Avatars(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+LevelGameplayStarted(_,0)
+AND
+DB_Avatars(_PartyCharacter)
+AND
+QRY_IsInPerformanceSafeZone_EmbersLute(_PartyCharacter)
+THEN
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+QRY
+QRY_IsInPerformanceSafeZone_EmbersLute((CHARACTER)_PartyCharacter)
+AND
+DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
+AND
+IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsInPerformanceSafeZone_EmbersLute((CHARACTER)_PartyCharacter)
+AND
+DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
+AND
+IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
+THEN
+DB_NOOP(1);
+
 //END_REGION
 
 // Reset the performing state on save game load
@@ -164,6 +192,7 @@ DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND
 DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
 THEN
+DebugText(_Performer,"Removing performing status");
 ObjectTimerCancel(_Performer,_Song);
 PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
 
@@ -210,7 +239,7 @@ PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STR
 AND
 IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,0)
 AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 AND
 DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
 AND
@@ -324,13 +353,13 @@ PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STR
 AND
 IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
 AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 AND
 DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
 THEN
 ObjectTimerCancel(_Performer,_Song);
 RealtimeObjectTimerLaunch(_Performer,_Song,_Duration);
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
 PROC_MusicPlayGeneral(_Start);
 
 // Legacy implementation, only applies to one song
@@ -358,9 +387,9 @@ ClearTag(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae5
 IF
 GainedControl((CHARACTER)_Target)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_,_)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 AND
-QRY_SongRequiresControl(_Song)
+QRY_SongRequiresControl_EmbersLute(_Song)
 AND
 _Target != _Performer
 AND
@@ -369,12 +398,12 @@ THEN
 RemoveStatus(_Performer,_Status);
 
 QRY
-QRY_SongRequiresControl("Bard_Perform_FinalAct")
+QRY_SongRequiresControl_EmbersLute("Bard_Perform_FinalAct")
 THEN
 DB_NOOP(1);
 
 QRY
-QRY_SongRequiresControl("Bard_Perform_ThePowerVocals")
+QRY_SongRequiresControl_EmbersLute("Bard_Perform_ThePowerVocals")
 THEN
 DB_NOOP(1);
 //END_REGION

@@ -82,6 +82,13 @@ AND
 DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_Probability)
 THEN
 NOT DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_Probability);
+
+PROC
+PROC_ResetBardReactionFacts_EmbersLute()
+AND
+DB_BardReactions_SongToStatusMapping_Emlute(_Song,_Status,_AnimStatus)
+THEN
+NOT DB_BardReactions_SongToStatusMapping_Emlute(_Song,_Status,_AnimStatus);
 //END_REGION
 
 // Recreate bard reactions (helpers)
@@ -232,6 +239,14 @@ DB_BardReactionActions_Emlute(10,"Projectile_TossFlowerAlt2_Emlute","",0);
 DB_BardReactionActions_Emlute(11,"Projectile_TossFlowerAlt1_Emlute","",0);
 DB_BardReactionActions_Emlute(12,"Projectile_TossFlowerAlt2_Emlute","Target_ReversePickPocket_MeatThing",1);
 DB_BardReactionActions_Emlute(13,"Projectile_TossOnyx_Emlute","Target_ReversePickPocket_Coin",1);
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_PERFORM_THEPOWER_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_BardDance","EMLUTE_PERFORM_BARDDANCE_SPRITES","EMLUTE_PERFORM_ADD_ANIM_2");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_Stargazing","EMLUTE_PERFORM_STARGAZING_SPRITES","EMLUTE_PERFORM_ADD_ANIM_3");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_MainTheme","EMLUTE_PERFORM_DOS2_1_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_PERFORM_DOS2_2_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_PERFORM_DOS2_3_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeepingDawn","EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 //END_REGION
 
 // Reset the scripted VFX

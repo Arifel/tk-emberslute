@@ -247,12 +247,14 @@ DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LE
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",25);
 //END_REGION
 
-DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_JOIN_THEPOWER");
-DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_BardDance","EMLUTE_JOIN_BARDDANCE");
-DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_Stargazing","EMLUTE_JOIN_STARGAZING");
-DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_MainTheme","EMLUTE_JOIN_DOS2_1");
-DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_JOIN_DOS2_2");
-DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_JOIN_DOS2_3");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_PERFORM_THEPOWER_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_BardDance","EMLUTE_PERFORM_BARDDANCE_SPRITES","EMLUTE_PERFORM_ADD_ANIM_2");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_Stargazing","EMLUTE_PERFORM_STARGAZING_SPRITES","EMLUTE_PERFORM_ADD_ANIM_3");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_MainTheme","EMLUTE_PERFORM_DOS2_1_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_PERFORM_DOS2_2_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_PERFORM_DOS2_3_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeepingDawn","EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 KBSECTION
 // Here we are hooking into vanilla so it handles our custom reactions too.
 // Might be some jerky anim transitional behaviour as a consequence, since the 
@@ -309,6 +311,7 @@ THEN
 ObjectTimerCancel(_Performer,"CRIME_MusicalPeformance_Good");
 ObjectTimerCancel(_Performer,"EMLUTE_BardReactions_Flourish_Tick");
 PROC_ObjectCountHelperReset(_Performer,"CRIME_MusicalPerformance_NPCs");
+PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
 //END_REGION
 
 // Depending on whether the performer is in camp or not, trigger the reactions.
@@ -900,6 +903,15 @@ IF
 LevelGameplayStarted(_,_)
 THEN
 PROC_ResetCooldown_EmbersLute();
+PROC_ClearPerformingNPCBards();
+
+PROC
+PROC_ClearPerformingNPCBards()
+AND
+DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID)
+THEN
+RemoveStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD");
+NOT DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID);
 
 PROC
 PROC_ResetCooldown_EmbersLute()
@@ -1089,15 +1101,23 @@ PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery
 // NPC bard reactions to performing on Ember's Lute
 //REGION 
 IF
-MainPerformerStarted(_Performer,_Song)
+MainPerformerStarted((CHARACTER)_Performer,_Song)
 AND
 DB_Players(_Performer)
+AND
+QRY_HasEmbersLuteInstrument(_Performer)
+AND
+QRY_BardReactions_SongToJoinStatus_EmbersLute(_Song)
+THEN
+ObjectTimerCancel(_Performer,"BardReactionDelay_EmbersLute");
+ObjectTimerLaunch(_Performer,"BardReactionDelay_EmbersLute",1000);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"BardReactionDelay_EmbersLute")
 AND
 DB_CRIME_MusicalPerformance(_ID,_Performer,_DisturbanceName)
 AND
 DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE",_DisturbanceName,"OnStatusApply")
-AND
-QRY_BardReactions_SongToJoinStatus_EmbersLute(_Song)
 AND
 CrimeGetNewID(_CrimeID)
 THEN
@@ -1124,27 +1144,36 @@ CrimeConfrontationDone(_CrimeID,_Bard);
 PROC
 PROC_BardReactions_BardJoins_EmbersLute((CHARACTER)_Bard,(CHARACTER)_Criminal,(INTEGER)_CrimeID)
 AND
-DB_CRIME_MusicalPerformanceSpell(_CrimeID,_SpellInfix)
-AND
-DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus)
+DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus,_AnimStatus)
 THEN
 DB_CRIME_BardNPCPerformingWithPlayers(_Bard,_Criminal,_CrimeID);
+DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Criminal,_CrimeID);
 EndRepose(_Bard);
+ApplyStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD",-1.0);
 ApplyStatus(_Bard,_JoinStatus,-1.0);
+ApplyStatus(_Bard,_AnimStatus,-1.0);
+
+PROC
+PROC_BardReactions_EndPerformance_EmbersLute((CHARACTER)_Performer)
+AND
+DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID)
+THEN
+RemoveStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD");
+NOT DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID);
 
 QRY
 QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)
 AND
-DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus)
+DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus,_PrevAnimStatus)
 THEN
-NOT DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus);
+NOT DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus,_PrevAnimStatus);
 
 QRY
 QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)
 AND
-DB_BardReactions_SongToStatusMapping_Emlute(_Song,_JoinStatus)
+DB_BardReactions_SongToStatusMapping_Emlute(_Song,_JoinStatus,_AnimStatus)
 THEN
-DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus);
+DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus,_AnimStatus);
 //END_REGION
 EXITSECTION
 

@@ -70,7 +70,7 @@ KBSECTION
 IF
 EnteredTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
 AND
-DB_Avatars(_PartyCharacter)
+DB_PartOfTheTeam(_PartyCharacter)
 AND
 DB_SpecialPerformance_SafeZones_EmbersLute(_Trigger)
 THEN
@@ -79,7 +79,7 @@ SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e83
 IF
 LeftTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
 AND
-DB_Avatars(_PartyCharacter)
+DB_PartOfTheTeam(_PartyCharacter)
 AND
 IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
 AND
@@ -92,14 +92,14 @@ ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e
 IF
 TagSet((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
 AND
-DB_Avatars(_PartyCharacter)
+DB_PartOfTheTeam(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
 TagCleared((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
 AND
-DB_Avatars(_PartyCharacter)
+DB_PartOfTheTeam(_PartyCharacter)
 AND
 DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
 AND
@@ -110,14 +110,14 @@ ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e
 IF
 LevelGameplayStarted(_,1)
 AND
-DB_Avatars(_PartyCharacter)
+DB_PartOfTheTeam(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
 LevelGameplayStarted(_,0)
 AND
-DB_Avatars(_PartyCharacter)
+DB_PartOfTheTeam(_PartyCharacter)
 AND
 QRY_IsInPerformanceSafeZone_EmbersLute(_PartyCharacter)
 THEN
@@ -134,8 +134,6 @@ DB_NOOP(1);
 
 QRY
 QRY_IsInPerformanceSafeZone_EmbersLute((CHARACTER)_PartyCharacter)
-AND
-DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
 AND
 IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
 THEN

@@ -311,7 +311,6 @@ THEN
 ObjectTimerCancel(_Performer,"CRIME_MusicalPeformance_Good");
 ObjectTimerCancel(_Performer,"EMLUTE_BardReactions_Flourish_Tick");
 PROC_ObjectCountHelperReset(_Performer,"CRIME_MusicalPerformance_NPCs");
-PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
 //END_REGION
 
 // Depending on whether the performer is in camp or not, trigger the reactions.
@@ -1140,6 +1139,11 @@ AND
 NOT DB_CRIME_BardNPCPerformingWithPlayers(_Bard,_,_CrimeID)
 THEN
 CrimeConfrontationDone(_CrimeID,_Bard);
+
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE",_,_)
+THEN
+PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
 
 PROC
 PROC_BardReactions_BardJoins_EmbersLute((CHARACTER)_Bard,(CHARACTER)_Criminal,(INTEGER)_CrimeID)

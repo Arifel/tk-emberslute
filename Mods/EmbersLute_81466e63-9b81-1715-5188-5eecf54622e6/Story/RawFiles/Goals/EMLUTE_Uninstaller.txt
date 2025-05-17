@@ -163,7 +163,7 @@ DB_NOOP(1);
 PROC
 PROC_CleanUpCustom_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 THEN
 IterateInventoryByTag(_Player,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_PlayerSearchDone");
 
@@ -184,7 +184,7 @@ IterateInventoryByTag(_Trader,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EML
 PROC
 PROC_UnequipCustom_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 DB_EquippedItemSlots(_Slot)
 AND
@@ -199,7 +199,7 @@ Unequip(_Player,_Equipped);
 PROC
 PROC_UnequipCustom_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 GetEquippedItem(_Player, "MusicalInstrument", _Equipped)
 AND
@@ -211,7 +211,7 @@ Unequip(_Player,_Equipped);
 QRY
 QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 DB_EquippedItemSlots(_Slot)
 AND
@@ -224,7 +224,7 @@ DB_NOOP(1);
 QRY
 QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 GetEquippedItem(_Player, "MusicalInstrument", _Equipped)
 AND
@@ -235,7 +235,7 @@ DB_NOOP(1);
 PROC
 PROC_RemoveCustomPassives_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 DB_TagToPassiveMap_EmbersLute(_,_Passive)
 AND
@@ -246,7 +246,7 @@ RemovePassive(_Player,_Passive);
 PROC
 PROC_RemoveCustomStatuses_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 DB_StatusCleanUp_EmbersLute(_Status)
 AND
@@ -257,7 +257,7 @@ RemoveStatus(_Player,_Status);
 PROC
 PROC_RemoveCustomSpells_EmbersLute()
 AND
-DB_Players(_Player)
+DB_PartOfTheTeam(_Player)
 AND
 DB_SpellCleanUp_EmbersLute(_Spell)
 AND

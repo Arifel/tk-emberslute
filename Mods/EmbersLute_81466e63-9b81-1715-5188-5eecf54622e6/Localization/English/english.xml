@@ -631,7 +631,7 @@
   <content contentuid="hea4c7e4ag92cfga469g59e6gd240d6db8c7c" version="1">This instrument can be taken into combat.</content>
   <content contentuid="h54b4565cgb296gf865g511fgb38d569c25d9" version="1">There is a continuous chorus of chimes and tinkling, almost like laughter.</content>
   <content contentuid="h71d7acf7g8eb3gfc5fg4088g91a379695d00" version="1">Perform 'The Weeping Dawn'</content>
-  <content contentuid="h0e675250g9729gd6cag1a71g2f3544cff4c2" version="1">Join the spirit of a tragic tiefling bard and play a heartfelt tribute to lost friends.</content>
+  <content contentuid="h0e675250g9729gd6cag1a71g2f3544cff4c2" version="2">(Legacy) Join the spirit of a tragic tiefling bard and play a heartfelt tribute to lost friends.</content>
   <content contentuid="h26c882f7ge05bg7bc8g0a13g69d1f321c7a9" version="1">Showmanship</content>
   <content contentuid="h1c927935gfbe2g3f81ge578g456863e82e25" version="1">Increase your performance showmanship and earn larger tips. </content>
   <content contentuid="h5d73ab10g7690gff24gb200g72f57c0b978a" version="1">Showmanship</content>
@@ -831,4 +831,8 @@ Come, come to me...&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, per
 &lt;br&gt;All the love I cannot repay
 &lt;br&gt;Rest and know that I will pray&lt;br&gt;
 Farewell, my dear old friend&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Ilona Ivanova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync. It's harmless, but may appear strange!</content>
+  <content contentuid="h211f2fa0ga446g48ebg54dag37b8437111dc" version="1">Perform an uplifting melody of renewal and hope.</content>
+  <content contentuid="h183faa14g3ee0g6bcag79e8g8d9db3f14c3f" version="1">Sing an ethereal tribute to the capricious Bitch Queen of the seas.</content>
+  <content contentuid="hd360da97g2e7fg4cffge707g127663f971ef" version="1">Join the spirit of a tragic tiefling bard in a song of reflection and resilience.</content>
+  <content contentuid="ha65ac812g1d11ge180gdeadgff2cdafd287c" version="1">Join a pair of theatrical cambions in an infernal performance - and mind the flames.</content>
 </contentList>

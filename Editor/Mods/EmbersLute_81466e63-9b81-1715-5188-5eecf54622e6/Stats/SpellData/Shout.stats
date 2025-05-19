@@ -80,7 +80,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_HighSeas" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF000080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="72002c47-13c8-4472-89bb-d4486321ef09" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_WeepingDawn_Sprites_Emlute" />
@@ -89,7 +89,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h71d7acf7g8eb3gfc5fg4088g91a379695d00" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e675250g9729gd6cag1a71g2f3544cff4c2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e675250g9729gd6cag1a71g2f3544cff4c2" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="(not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat())" />
       </fields>
     </stat_object>
@@ -140,6 +140,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdbdb9e6egbe5cgb21fg2b47gcd4edb3bf0e5" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h211f2fa0ga446g48ebg54dag37b8437111dc" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -150,6 +151,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WATERQUEEN,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa4c2432gcde1gc46cg4a07g8b8b77b67655" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_UmberleeHymn" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h183faa14g3ee0g6bcag79e8g8d9db3f14c3f" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -161,6 +163,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h5c77708dg6480g3620g3742gd6bebcbd1a1a" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd360da97g2e7fg4cffge707g127663f971ef" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -173,6 +176,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_FinalAct" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h50b17609g7e41g9832g7faeg21719ef80a5b" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha65ac812g1d11ge180gdeadgff2cdafd287c" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA1106B" is_substat="false">

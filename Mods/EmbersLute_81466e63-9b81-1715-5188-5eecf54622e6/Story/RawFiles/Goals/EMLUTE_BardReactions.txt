@@ -235,12 +235,14 @@ DB_BardReactionActionsOverrideByTag_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30
 
 // Bard unique rewards for busking mode
 //REGION
-DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,1,10);
-DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,1,10);
-DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,1,10);
-DB_PerformanceRewardUnique_EmbersLute(4,(ITEMROOT)EmbersLute_PerformanceReward_CriticalMockeryRing_81663c50-4997-47a3-884e-404b85b49fcd,1,10);
-DB_PerformanceRewardUnique_EmbersLute(5,(ITEMROOT)EmbersLute_PerformanceReward_DexterousJumping_695cf59a-415b-4a90-894b-0725db1fdf66,1,10);
-DB_PerformanceRewardUnique_EmbersLute(6,(ITEMROOT)EmbersLute_PerformanceReward_DancersBoots_e2e85c50-c4fb-4207-954a-5fbdf4402737,1,10);
+DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,8,250);
+DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,5,45);
+DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,3,30);
+DB_PerformanceRewardUnique_EmbersLute(4,(ITEMROOT)EmbersLute_PerformanceReward_CriticalMockeryRing_81663c50-4997-47a3-884e-404b85b49fcd,10,150);
+DB_PerformanceRewardUnique_EmbersLute(5,(ITEMROOT)EmbersLute_PerformanceReward_DexterousJumping_695cf59a-415b-4a90-894b-0725db1fdf66,7,125);
+DB_PerformanceRewardUnique_EmbersLute(6,(ITEMROOT)EmbersLute_PerformanceReward_DancersBoots_e2e85c50-c4fb-4207-954a-5fbdf4402737,6,75);
+DB_PerformanceRewardUnique_EmbersLute(7,(ITEMROOT)EmbersLute_PerformanceReward_ParryingGloves_85671d18-e1e7-4478-9478-33b54f29e6a3,9,100);
+DB_PerformanceRewardUnique_EmbersLute(8,(ITEMROOT)EmbersLute_PerformanceReward_ProficiencyGloves_acf4ebae-5d0d-4f4a-bc4e-4b98de380a42,3,50);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",5);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GREAT",10);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",15);
@@ -1045,7 +1047,7 @@ DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base);
 QRY
 QRY_SelectUniqueReward_EmbersLute((CHARACTER)_Performer)
 AND
-Random(6,_RND)
+Random(8,_RND)
 AND
 IntegerSum(1,_RND,_RndInc)
 AND
@@ -1058,6 +1060,8 @@ PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_I
 AND
 DB_Players(_Performer)
 AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59,0)
+AND
 NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
 AND
 DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_DC)
@@ -1069,6 +1073,21 @@ AND
 Random(_DC,_Roll)
 AND
 _Roll < _Base
+THEN
+DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
+DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
+ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
+
+PROC
+PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
+AND
+DB_Players(_Performer)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59,1)
+AND
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+AND
+DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_DC)
 THEN
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);

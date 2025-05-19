@@ -202,6 +202,19 @@ ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b2
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF
+UsingSpell(_Caster,"Shout_Config_SuppressSummon_Harpy_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Disabling automatic summoning of harpy");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_HARPY_OFF_7c485af5-d4b9-4708-8620-4d75efccb8fb);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableSummon_Harpy_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Enabling automatic summoning of harpy");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SUMMON_HARPY_OFF_7c485af5-d4b9-4708-8620-4d75efccb8fb);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+
+IF
 UsingSpell(_Caster,"Shout_Config_SuppressShowmanship_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Disabling custom music reactions");
@@ -212,6 +225,19 @@ UsingSpell(_Caster,"Shout_Config_EnableShowmanship_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling custom music reactions");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SHOWMANSHIP_OFF_6e6eeab3-e23a-4989-a75b-972ec4ebc475);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressEasyRewardMode_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Disabling easy performance rewards");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableEasyRewardMode_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Enabling easy performance rewards");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 //

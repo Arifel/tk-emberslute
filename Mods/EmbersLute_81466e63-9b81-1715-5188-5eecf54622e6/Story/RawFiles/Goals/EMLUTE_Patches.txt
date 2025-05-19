@@ -264,6 +264,27 @@ AND
 DB_ScriptedVFX_StopFX_EmbersLute(_Event,_StopEvent)
 THEN
 NOT DB_ScriptedVFX_StopFX_EmbersLute(_Event,_StopEvent);
+
+PROC
+PROC_ResetScriptedVFXFacts_EmbersLute()
+AND
+DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell)
+THEN
+NOT DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell);
+
+PROC
+PROC_ResetScriptedVFXFacts_EmbersLute()
+AND
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(_Index,_Song,_Template,_Status)
+THEN
+NOT DB_ScriptedVFX_SongSpawnMapping_EmbersLute(_Index,_Song,_Template,_Status);
+
+PROC
+PROC_ResetScriptedVFXFacts_EmbersLute()
+AND
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute(_Template,_Status)
+THEN
+NOT DB_ScriptedVFX_TemplatePolymorph_EmbersLute(_Template,_Status);
 //END_REGION
 
 // Recreate scripted VFX
@@ -305,6 +326,18 @@ DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_03","Emlute_Fin
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Ascend_01","Emlute_FinalActS02_Ascend_01_STOP");
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActL01_Ascend_01","Emlute_FinalActL01_Ascend_01_STOP");
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_FinalActS02_Spotlight_04_STOP");
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FINALACT");
+DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_FinalAct",(CHARACTERROOT)Humans_InvisibleHelper_d5589336-4ca7-4ef7-9f6d-ebfea51001fe,"ProjectileStrike_PositionFinder_5_Emlute");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,"EMLUTE_PERFORM_FINALACT_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,"EMLUTE_PERFORM_FINALACT_NO_AURA");
+DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_WATERQUEEN");
+DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_InvisibleHelper_d5589336-4ca7-4ef7-9f6d-ebfea51001fe,"ProjectileStrike_PositionFinder_5_Emlute");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,"EMLUTE_POLYMORPH_CAMBION_FEMALE");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,"EMLUTE_POLYMORPH_CAMBION_MALE");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,"EMLUTE_POLYMORPH_WAVESERVANT_01");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,"EMLUTE_POLYMORPH_WAVESERVANT_02");
 //END_REGION
 
 // Version 2 mod patches

@@ -507,19 +507,19 @@
   <content contentuid="h60db620bg9620gb2b9g7571g893a9c479019" version="1">Singing a hymn of reverence.</content>
   <content contentuid="h535a168bgdb7fg7c8ega59dgddd1a3500012" version="1">Perform 'Raphael's Final Act'</content>
   <content contentuid="hbcbb54d8gd125gf117g784bge1c37bbd6af9" version="1">Performing 'Raphael's Final Act'</content>
-  <content contentuid="h502c12b3gba01g4f9bg2e43g3fb3c16b7338" version="14">Singer</content>
+  <content contentuid="h502c12b3gba01g4f9bg2e43g3fb3c16b7338" version="19">Waveservant</content>
   <content contentuid="hddbef208ge72dge604g46dag7d3d89cc7bef" version="1">Stop Performance</content>
   <content contentuid="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="1">Stop the current performance</content>
   <content contentuid="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1">Perform 'The Power'</content>
   <content contentuid="h56f08a40g9878ga1a1g3203g4214241a6663" version="1">Wave Servants</content>
   <content contentuid="hf176cf07gfb4dg585agf498g3e16ff2626a2" version="1">If enabled, wave servants will appear when the funeral hymn is performed.</content>
-  <content contentuid="h1d36267ag63bbg460fg0d64gb04ce919c56d" version="6">Singer</content>
+  <content contentuid="h1d36267ag63bbg460fg0d64gb04ce919c56d" version="10">Waveservant</content>
   <content contentuid="h7db52af9geb10ga034g05e0g3bcedcdc0453" version="2">Transient Performer</content>
   <content contentuid="hddfbbe5ag2cbfgc0edgfd5fg656715c5363c" version="2">This entity will vanish once the performance is ended.</content>
   <content contentuid="h4bf03d60gfb2bgbcafg8d36gca1bab7559e2" version="1">Transient Performer</content>
   <content contentuid="hd58e0c9fg3513g26f0g5a50g3ba335170bf3" version="1">This entity will vanish once the performer leaves the area.</content>
-  <content contentuid="h13dec50fg89e0gf861g4cebgf300b132ca92" version="11">A Dramatic Cambion</content>
-  <content contentuid="hec5a41efg9900g0c2bgf49cg818bd09cf614" version="11">A Theatrical Cambion</content>
+  <content contentuid="h13dec50fg89e0gf861g4cebgf300b132ca92" version="16">A Dramatic Cambion</content>
+  <content contentuid="hec5a41efg9900g0c2bgf49cg818bd09cf614" version="15">A Theatrical Cambion</content>
   <content contentuid="hd756eac4gead6g331fg2d50gb56bc91237a5" version="1">Cambions</content>
   <content contentuid="he9ef9ce8g565bgfe5bgc530gba2a3dae8a13" version="1">If enabled, a pair of cambions will appear when the Final Act is performed.</content>
   <content contentuid="h5a2c88begb65bg8810g698bgd4ddca7cd682" version="1">Test</content>
@@ -528,7 +528,7 @@
   <content contentuid="hd6fa340age6eeg1995g1719g545f9cd26e21" version="1">If you can see this it is a bug.</content>
   <content contentuid="h2a9e83b0g63dbg7a95ged85gb47ff185f324" version="1">|HIDDEN| Hidden</content>
   <content contentuid="h5d0fc44dg26bcg48c3g125egb2e9abe6af61" version="1">If you can see this it is a bug.</content>
-  <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="11">Musical Sprites</content>
+  <content contentuid="hc29e77b6g2857ga807g0198gaf39114b250b" version="15">Musical Sprites</content>
   <content contentuid="h83e49317gdb1bgbe93g919cg51fff35b1311" version="3">Channelling Legendary Performance</content>
   <content contentuid="h41b255ebg3e37g609dg8ee6gcbd6358b585a" version="5">Lute of Musical Sprites (Dyeable)</content>
   <content contentuid="h58a5e037gf897gd7cag1a76gd56cb27e6cee" version="5">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
@@ -683,7 +683,7 @@
   <content contentuid="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="1">Throw Meat</content>
   <content contentuid="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1">Throw Meat</content>
   <content contentuid="h8cf1e6a7g3333g48c8ga47fg80b8b45516d0" version="5">Channelling Legendary Performance</content>
-  <content contentuid="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="1">Position Finder</content>
+  <content contentuid="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="2">Stage Setup</content>
   <content contentuid="he9897de5g7226g1393g8f79g6ca6166e7f7c" version="8">Stage Helper</content>
   <content contentuid="hd2fea03ega2c2g26a6g3164g424530e6e853" version="1">Dancer's Grace</content>
   <content contentuid="h59bfc650gc40aga314gb38ege0c7c424989c" version="1">You strike with the grace and precision of a master dancer.</content>
@@ -767,4 +767,34 @@
   <content contentuid="h17e73a0ag6d20gcddcgb405g039c4dd132df" version="1">Parry Missiles</content>
   <content contentuid="h4fb40cc8g5c53g6e8dgd471g68caac6f393b" version="1">Use your reflexes to swat a missile out of the way with a finesse weapon equipped in your main hand.</content>
   <content contentuid="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="1">Use your reflexes and a finesse weapon to swat a missile out of harm's way.</content>
+  <content contentuid="h054e05c6g9041g27a1gcedeg4f3f79efc42b" version="1">Stage Setup</content>
+  <content contentuid="he07ada99ge3d3g006bg29cbgcd3e027d186b" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="hb4ee9175geb22ga7beg213ag0e442681d55d" version="1">If you can see this it is a bug.</content>
+  <content contentuid="h7cafa3ddg046fgf4f6g9f48gfb7e556c4756" version="1">Cambion</content>
+  <content contentuid="hca24c98cg3a5ege428gb359g82d2fc8f80fd" version="1">Cambion</content>
+  <content contentuid="hcb353ab2g9e1fgbfa2g3515g228c13a69028" version="1">Waveservant</content>
+  <content contentuid="h9e8237e8gb9fcg1843g488cg6da6c40acafe" version="1">Waveservant</content>
+  <content contentuid="h951db116g5b63gd31fga042g7c3276d96d17" version="1">TEST</content>
+  <content contentuid="ha4b63b99gf17ag6d31g36c3g70755efb0b2b" version="1">Can See</content>
+  <content contentuid="h053fb85fgbfe3g13dcg7527gdc4557e2bbf8" version="1">Performer can see</content>
+  <content contentuid="hbf613b25g7cbbgc8ccgf710g92cd77d589ca" version="1">Cannot See</content>
+  <content contentuid="h0e4d4c45g6893g77d3g5104gceaaf34638c2" version="1">Performer cannot see</content>
+  <content contentuid="h0f3d1d7cg9ccagc4e1g8ec1g032b0ce9fa20" version="1">Calling Performers</content>
+  <content contentuid="h0b0072cag6139ga773g65dcg5148f8889da1" version="1">A temporary shroud of darkness to aid in the summoning of performers.</content>
+  <content contentuid="h5f195c7eg371ag2807ga9e5g1da057d6b0b0" version="1">Preparing the stage for performers to join.</content>
+  <content contentuid="h633bf7a8g9a0dge9a8gc367g0a28f1073c6e" version="1">Preparing the stage for performers to join.</content>
+  <content contentuid="h1c9591c8g1136gf664g0e62gfc9a044672c4" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="h3b8c75a5ge2cbg5af7g7f30gc843d4793160" version="1">If you can see this it is a bug.</content>
+  <content contentuid="h6c4d9681g8cf4ge9adg0b49gc2f5072cf060" version="1">Calling Performers</content>
+  <content contentuid="h7f41527dgcd8dg4f01g9ebcg54885cb78037" version="1">A temporary shroud of darkness to aid in the summoning of performers.</content>
+  <content contentuid="hf76626eage81ag97dbgc947gaed663ef1263" version="1">Disable Harpy</content>
+  <content contentuid="hd66a8241g0c8cgc467gd92dgffdfc94c7d0d" version="1">Do not automatically summon a harpy for performances of the Luring Song.</content>
+  <content contentuid="he71d402dgc541g3df3g8a05g22efe44c1bd2" version="1">Enable Harpy</content>
+  <content contentuid="h9286c23eg0b6egf380g3c7bg7ab2b09a8513" version="1">Enable to automatically summon a harpy for performances of the Luring Song.</content>
+  <content contentuid="hc7977a29g099bgef3dgd81fg2fb8d553ff89" version="1">Disable Easy Rewards</content>
+  <content contentuid="h19332509g428bg0bc5gea8bga558f997e6e9" version="1">Restore the restrictions and requirements of receiving special rewards for musical performances.</content>
+  <content contentuid="hc70b55f5g2ef4g0e4eg58b3ge717774a3764" version="1">Performance rewards will be locked behind player level and with lower chance rates.</content>
+  <content contentuid="h2a773dc2gca0agfb0fg5e52g26452f6236a7" version="1">Enable Easy Rewards</content>
+  <content contentuid="h97e06f5ege329g6532g4c25g843d4b707680" version="1">Remove the restrictions and requirements of receiving special rewards for musical performances.</content>
+  <content contentuid="hcc55a20ag5b9eg2d12g9729g30590771325b" version="1">Performance rewards will no longer be locked behind player level, and awarding a musical performance is guaranteed.</content>
 </contentList>

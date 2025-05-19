@@ -87,7 +87,7 @@ THEN
 PROC_RemoveCustomSpells_EmbersLute();
 PROC_RemoveCustomPassives_EmbersLute();
 PROC_RemoveCustomStatuses_EmbersLute();
-PROC_CleanUpVanillaTables_EmbersLute();
+//PROC_CleanUpVanillaTables_EmbersLute();
 PROC_CleanUpCustom_EmbersLute();
 PROC_ClearPerformingNPCBards();
 PROC_CleanUpFailsafe_EmbersLute();

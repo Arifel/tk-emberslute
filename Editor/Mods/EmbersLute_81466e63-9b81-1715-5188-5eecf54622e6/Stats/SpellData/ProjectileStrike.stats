@@ -4,8 +4,8 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1558c4af-e88a-4db6-97a8-f16aaa3b8772" />
-        <field name="Name" type="NameTableFieldDefinition" value="PositionFinder_4_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(0305c5b9-e08e-44d4-987c-894d24983d3d);" />
+        <field name="Name" type="NameTableFieldDefinition" value="PositionFinder_5_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(d5589336-4ca7-4ef7-9f6d-ebfea51001fe,,SNEAKING_LIGHTLY_OBSCURED,,,,true);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="StrikeCount" type="IntegerTableFieldDefinition" value="5" />
@@ -14,9 +14,11 @@
         <field name="Angle" type="IntegerTableFieldDefinition" value="0" />
         <field name="Height" type="IntegerTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="2f8023d3-c51d-4a2d-922b-4954ea410d72" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="2" />
         <field name="Distribution" type="EnumerationTableFieldDefinition" value="Edge" enumeration_type_name="ProjectileDistribution" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Status_Showmanship" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h633bf7a8g9a0dge9a8gc367g0a28f1073c6e" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="b25e092b-5372-4008-b900-a2f52b6b903b">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8701984c-e8bf-469a-b5a1-805dea0a69f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="SNEAKING_OBSCURED_EMLUTE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1f5ba2bd-25d9-44c1-ac25-e62f17f57dcd" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="MovementSpeedLimit(Walk);Tag(VFX_SNEAKING);Invisibility()" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -103,6 +103,37 @@ using "OBJ_Book"
 data "RootTemplate" "80dcbfed-3b93-42f7-9188-5b3611f1bb2b"
 data "Rarity" "VeryRare"
 
+new entry "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+type "Object"
+using "OBJ_Book"
+data "RootTemplate" "f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e"
+data "Rarity" "Legendary"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_THEPOWER"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "cb98a71d-27b5-4cdb-aa67-e13a2f59a84e"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_FINALACT"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "d93f4771-b8f1-428f-9b1e-6b22e11ebb6e"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_ENDLESSSPRING"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_WATERHYMN"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "5a2b4919-8e68-43d5-b8b7-5f95ff80ce05"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_HARPYSONG"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "8bb696b2-1c96-4cc9-aac8-9890404bd297"
+
 new entry "EMBERS_LUTE_PUDDLEPOP_MEAD"
 type "Object"
 using "_CONS_Alcohol_Rich"

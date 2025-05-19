@@ -160,6 +160,55 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53465c81-7b81-4e6b-827c-bf3d27940527" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="de4fca29-94de-4404-b23e-be9775941fba" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0d7d7904-7332-4ba3-ab47-46fab3dbc59b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SHEETMUSIC_THEPOWER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53465c81-7b81-4e6b-827c-bf3d27940527" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="cb98a71d-27b5-4cdb-aa67-e13a2f59a84e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e70da964-8d6b-4b37-b068-d76e90b75a24" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SHEETMUSIC_FINALACT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53465c81-7b81-4e6b-827c-bf3d27940527" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d93f4771-b8f1-428f-9b1e-6b22e11ebb6e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cec6f56a-bdf6-43f4-8936-5b69ea52d82e" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SHEETMUSIC_ENDLESSSPRING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53465c81-7b81-4e6b-827c-bf3d27940527" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a6ace7d-acaf-4e53-9b1a-091815af5f12" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SHEETMUSIC_WATERHYMN" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53465c81-7b81-4e6b-827c-bf3d27940527" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="5a2b4919-8e68-43d5-b8b7-5f95ff80ce05" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27efef0d-3292-454c-9a9d-ef8fadfc31d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_SHEETMUSIC_HARPYSONG" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="53465c81-7b81-4e6b-827c-bf3d27940527" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="8bb696b2-1c96-4cc9-aac8-9890404bd297" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="06d80b3d-b6d1-4ae4-bf9b-b6b972996ab9" />

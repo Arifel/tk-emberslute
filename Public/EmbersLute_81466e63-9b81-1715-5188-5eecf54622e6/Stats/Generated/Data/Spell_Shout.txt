@@ -77,7 +77,7 @@ data "RequirementConditions" "(not Emlute_HasEmluteCombatModeInstrumentEquipped(
 new entry "Shout_Bard_Perform_Custom_Emlute"
 type "SpellData"
 data "SpellType" "Shout"
-data "ContainerSpells" "Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;Shout_Bard_Perform_Stop_Emlute;"
+data "ContainerSpells" "Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;Shout_Bard_Perform_Stop_Emlute;"
 data "Icon" "EmbersLute_Action_Song_WeepingDawn"
 data "DisplayName" "hfcc964f7gfff3g25b2ge124g1e7db6015f5c;1"
 data "Description" "hc8dac814gdc75g0d76gaf53g0b63cef665e7;1"

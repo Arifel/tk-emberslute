@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="10"/>
+    <version major="4" minor="8" revision="0" build="100"/>
     <region id="Crime">
         <node id="root">
             <children>
@@ -165,6 +165,15 @@
                                 </node>
                                 <node id="Tag">
                                     <attribute id="TagUUID" type="guid" value="d93434bd-6b71-4789-b128-ee24156057cc"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="4e4ec992-e703-4618-894b-ad165ca7644a"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="28fd4948-6fe3-4237-91e2-6e592b8a7b45"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="2070a6c0-dcfc-43c4-bed5-7ee7de2b1a09"/>
                                 </node>
                             </children>
                         </node>

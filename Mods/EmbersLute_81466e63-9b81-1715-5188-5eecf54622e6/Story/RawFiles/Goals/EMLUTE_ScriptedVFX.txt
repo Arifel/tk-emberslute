@@ -158,7 +158,7 @@ AND
 CreateAtObject((CHARACTERROOT)Helpers_InvisibleCaster_13865a62-6608-4322-be88-b94d0ae25240,_Performer,1,0,"SpawnFOVHelper_EmbersLute",1,(CHARACTER)_Spawn)
 THEN
 ApplyStatus(_Spawn,"EMLUTE_LEGEND_FOV_HELPER",-1.0);
-UseSpell(_Spawn,"Shout_Temporary_ShortSight_Emlute",_Performer);
+UseSpell(_Spawn,"Shout_RingOfDarkness_Emlute",_Performer);
 DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,(CHARACTER)_Spawn);
 
 IF
@@ -277,9 +277,25 @@ THEN
 DB_NOOP(1);
 
 QRY
-QRY_CreateSpawnAtPosition_EmbersLute((INTEGER)_PositionNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
+QRY_CreateSpawnAtPosition_EmbersLute((INTEGER)_PosNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
 AND
-DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z)
+DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PosNum,_X,_Y,_Z)
+AND
+QRY_CreateSpawnAtPositionXYZ_EmbersLute(_X,_Y,_Z,_PosNum,_CharTemplate,_Performer,_Song,_Status)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CreateSpawnAtPosition_EmbersLute((INTEGER)_PosNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
+AND
+DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PosNum,_X,_Y,_Z)
+AND
+QRY_CreateSpawnAtPositionXYZ_EmbersLute(_X,_Y,_Z,_PosNum,_CharTemplate,_Performer,_Song,_Status)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CreateSpawnAtPositionXYZ_EmbersLute((REAL)_X,(REAL)_Y,(REAL)_Z,(INTEGER)_PositionNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
 AND
 IntegerToString(_PositionNum,_PosStr)
 AND

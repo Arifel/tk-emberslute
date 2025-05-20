@@ -15,7 +15,7 @@
         <field name="CreatesCrimescene" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
         <field name="MergeConditions" type="EnumerationTableFieldDefinition" value="Never" enumeration_type_name="DisturbanceMergeConditions" version="1" />
         <field name="MaxInvestigators" type="IntegerTableFieldDefinition" value="10" />
-        <field name="ExcludedTags" type="GuidObjectListTableFieldDefinition" value="33c625aa-6982-4c27-904f-e47029a9b140;1d156657-b014-48fa-b34c-327763480627;90101158-141e-4896-8e60-f8db03f6dde3;d93434bd-6b71-4789-b128-ee24156057cc" />
+        <field name="ExcludedTags" type="GuidObjectListTableFieldDefinition" value="33c625aa-6982-4c27-904f-e47029a9b140;1d156657-b014-48fa-b34c-327763480627;90101158-141e-4896-8e60-f8db03f6dde3;d93434bd-6b71-4789-b128-ee24156057cc;4e4ec992-e703-4618-894b-ad165ca7644a;28fd4948-6fe3-4237-91e2-6e592b8a7b45;2070a6c0-dcfc-43c4-bed5-7ee7de2b1a09" />
         <field name="Properties" type="GuidObjectListTableFieldDefinition" value="db918cfb-a484-437c-93bb-8bc36fe98a9c;3b15b00d-6562-45c6-b3b1-67c4872f682b;e305c93f-eaf2-4b73-ae0a-0be56a1b0549;8a7650eb-da48-4597-89a5-76b2c0cddb78;58adcbdb-1bdf-4702-b0f0-f0f596d75b0e;22851ef8-a2af-4f10-a3dd-d3e7e81d7ae6" />
         <field name="ReactionCategory_Tag" type="FixedStringTableFieldDefinition" value="KID" />
         <field name="Tension" type="EnumerationTableFieldDefinition" value="any" enumeration_type_name="Tension" version="1" />

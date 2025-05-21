@@ -57,6 +57,13 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0,-1.5,0.0,-1.5,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1,1.5,0.0,-1.5,0);
 
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_EndlessSpring_07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31,(TAG)EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING_4446abbf-0de2-48d8-a9b3-10e4c0e6b26f);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheFinalAct_d93f4771-b8f1-428f-9b1e-6b22e11ebb6e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_FINALACT_315aebf9-89b5-425a-832c-756ae56ace9c);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_FuneralHymn_5a2b4919-8e68-43d5-b8b7-5f95ff80ce05,(TAG)EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN_55489adb-9201-4051-880a-fef868054c0f);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheLuringSong_8bb696b2-1c96-4cc9-aac8-9890404bd297,(TAG)EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_dbb33529-eb79-433f-9623-eca24c7dc944);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_THEPOWER_c1d07c95-781b-404c-9049-1ff77c7fd14c);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheWeepingDawn_f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN_652c61e4-a7db-47fe-9bab-f242c674fbca);
+
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
 // Issue seems to affect vanilla Countercharm as well as my custom variant, though I'm going to leave vanilla alone since
@@ -113,6 +120,13 @@ AND
 DB_PartOfTheTeam(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+LevelGameplayStarted(_,0)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+THEN
+ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
 LevelGameplayStarted(_,0)
@@ -410,6 +424,20 @@ QRY
 QRY_SongRequiresControl_EmbersLute("Bard_Perform_ThePowerVocals")
 THEN
 DB_NOOP(1);
+//END_REGION
+
+// Learning music from reading musicsheets
+//REGION
+IF
+GameBookInterfaceClosed((ITEM)_SheetMusic, (CHARACTER)_Player)
+AND
+GetTemplate(_SheetMusic,(ITEMROOT)_Template)
+AND
+DB_SheetMusicToSpellTag_EmbersLute(_Template,_Tag)
+AND
+IsTagged(_Player,_Tag,0)
+THEN
+SetTag(_Player,_Tag);
 //END_REGION
 
 // Fix the music on Improved Countercharm summons by adding a short delay.

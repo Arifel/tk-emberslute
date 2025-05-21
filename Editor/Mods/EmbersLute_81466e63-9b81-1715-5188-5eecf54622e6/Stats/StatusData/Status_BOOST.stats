@@ -1381,6 +1381,16 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34c6725cg4ba2g826fg45dfgd8ca03d94322" version="2" />
       </fields>
     </stat_object>
+    <stat_object color="#FF800000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="02a4df06-2c26-4bb9-9686-99c1b9b1b188" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_INSTRUMENT_FX_06_WHITERADIANCE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ddd16290-0660-48d5-9304-9674bfdce6df" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6cdd5d56g447fg0fbag01eegd1562ac15f67" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0df07a1cg00e9gddc5gc9a3gf4b7cc6c2f89" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="1ef17597-6d51-44f0-b06c-c1cbe3b511c0" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF00008B" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b6d522ab-eded-4067-9764-e9cb87a1a868" />

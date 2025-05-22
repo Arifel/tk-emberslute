@@ -128,7 +128,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h746d0d83g3ce6g65b0g7e3dg1f69a13b1714" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9aa8b556gcf61ga086g39adgf98117449801" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_HarpySong" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG') and not Tagged('EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -153,6 +153,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haa4c2432gcde1gc46cg4a07g8b8b77b67655" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_UmberleeHymn" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h183faa14g3ee0g6bcag79e8g8d9db3f14c3f" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN') and not Tagged('EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">

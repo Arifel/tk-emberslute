@@ -104,7 +104,7 @@ data "SpellProperties" "ApplyStatus(EMLUTE_PERFORM_HARPYSONG,100,-1);ApplyStatus
 data "Icon" "EmbersLute_Action_Song_HarpySong"
 data "DisplayName" "h746d0d83g3ce6g65b0g7e3dg1f69a13b1714;1"
 data "Description" "h9aa8b556gcf61ga086g39adgf98117449801;1"
-data "RequirementConditions" "Tagged('EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
+data "RequirementConditions" "Tagged('EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG') and not Tagged('EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
 
 new entry "Shout_Bard_Perform_EndlessSpring_Emlute"
 type "SpellData"
@@ -125,6 +125,7 @@ data "SpellProperties" "ApplyStatus(EMLUTE_PERFORM_WATERQUEEN,100,-1);ApplyStatu
 data "Icon" "EmbersLute_Action_Song_UmberleeHymn"
 data "DisplayName" "haa4c2432gcde1gc46cg4a07g8b8b77b67655;1"
 data "Description" "h183faa14g3ee0g6bcag79e8g8d9db3f14c3f;1"
+data "RequirementConditions" "Tagged('EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN') and not Tagged('EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))"
 
 new entry "Shout_Bard_Perform_ThePowerVocals_Emlute"
 type "SpellData"

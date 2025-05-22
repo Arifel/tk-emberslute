@@ -5,6 +5,11 @@ INITSECTION
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
 
 DB_SpecialPerformance_SafeZones_EmbersLute((TRIGGER)S_LOW_Elfsong_Rooftop_AlfiraPerformingArea_5dc4f36a-c1fc-4f97-8231-ca0fd7c46e1f);
+DB_SpecialPerformance_SongExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_c7b8f391-bedf-43e9-bc11-c03d06a3ed9e,(TRIGGER)Music_PSV_SE_DEN_Harpy_Music_28ddcb9e-db31-49f7-9f21-bc13ebaab70a);
+DB_SpecialPerformance_SongExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_c7b8f391-bedf-43e9-bc11-c03d06a3ed9e,(TRIGGER)MusicVolumeTrigger_WLD_Grove_Harpy_Close_7c0c28da-381c-4556-b5fe-f86d31b38d32);
+DB_SpecialPerformance_SongExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_c7b8f391-bedf-43e9-bc11-c03d06a3ed9e,(TRIGGER)MusicVolumeTrigger_WLD_Grove_Harpy_Far_e1df9c72-8fd7-41b9-96d1-cd96c2e6feef);
+DB_SpecialPerformance_SongExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_46f86873-8b05-49b1-a0b8-d140000cdff2,(TRIGGER)SE_CTY_WaterQueensHouse_Music_000_32ce0f7a-f752-4197-a51c-e6d701b02e07);
+DB_SpecialPerformance_SongExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_46f86873-8b05-49b1-a0b8-d140000cdff2,(TRIGGER)MusicVolumeTrigger_CTY_WQH_Funeral_e157dd42-1802-4333-945a-e27e869d04d6);
 
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",130500);
@@ -72,7 +77,7 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
-// Safe performing areas tracker
+// Safe and excluded performing areas tracker
 //REGION
 IF
 TeleportToFromCamp((CHARACTER)_PartyCharacter)
@@ -84,6 +89,17 @@ AND
 IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,0)
 THEN
 ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+TeleportToFromCamp((CHARACTER)_PartyCharacter)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+AND
+DB_SpecialPerformance_SongExcludeZones_EmbersLute(_Tag,_Trigger)
+AND
+IsTagged(_PartyCharacter,_Tag,1)
+THEN
+ClearTag(_PartyCharacter,_Tag);
 
 IF
 LeftTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
@@ -99,11 +115,23 @@ THEN
 ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
+LeftTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+AND
+DB_SpecialPerformance_SongExcludeZones_EmbersLute(_Tag,_Trigger)
+AND
+IsTagged(_PartyCharacter,_Tag,1)
+THEN
+ClearTag(_PartyCharacter,_Tag);
+
+IF
 TeleportedToCamp((CHARACTER)_PartyCharacter)
 AND
 DB_PartOfTheTeam(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+ClearTag(_PartyCharacter,(TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_c7b8f391-bedf-43e9-bc11-c03d06a3ed9e);
 
 IF
 EnteredTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
@@ -115,11 +143,21 @@ THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
+EnteredTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+AND
+DB_SpecialPerformance_SongExcludeZones_EmbersLute(_Tag,_Trigger)
+THEN
+SetTag(_PartyCharacter,_Tag);
+
+IF
 LevelGameplayStarted(_,1)
 AND
 DB_PartOfTheTeam(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+ClearTag(_PartyCharacter,(TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_c7b8f391-bedf-43e9-bc11-c03d06a3ed9e);
 
 IF
 LevelGameplayStarted(_,0)
@@ -136,6 +174,19 @@ AND
 QRY_IsInPerformanceSafeZone_EmbersLute(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+LevelGameplayStarted(_,0)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+AND
+DB_SpecialPerformance_SongExcludeZones_EmbersLute(_Tag,_Trigger)
+AND
+IsInTrigger(_PartyCharacter,_Trigger,1)
+AND
+IsTagged(_PartyCharacter,_Tag,0)
+THEN
+SetTag(_PartyCharacter,_Tag);
 
 QRY
 QRY_IsInPerformanceSafeZone_EmbersLute((CHARACTER)_PartyCharacter)

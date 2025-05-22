@@ -5,12 +5,6 @@
         <node id="root">
             <children>
                 <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_False"/>
-                    <attribute id="UUID" type="guid" value="65a05a58-6e9e-4556-8e03-49b18c171ead"/>
-                </node>
-                <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h1ecfab1cg41e1g48aaga306gfa53294c1dc3" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Hidden" type="bool" value="true"/>
@@ -32,17 +26,23 @@
                     <attribute id="UUID" type="guid" value="5d559560-a314-459b-8104-b458136f46a8"/>
                 </node>
                 <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h100a0f1fg9a35gebc8gd360g273f2f26ed5a" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING_False"/>
-                    <attribute id="UUID" type="guid" value="e7dbe997-834f-46a4-b691-3ec4c08daf9a"/>
-                </node>
-                <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h64105175gf4eeg4db2gd981ge539b39fcc69" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Hidden" type="bool" value="true"/>
                     <attribute id="Identifier" type="FixedString" value="EmluteRapierNotEquipped"/>
                     <attribute id="UUID" type="guid" value="2d1552fe-18a1-40a5-bda5-54ae4356f81a"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_False"/>
+                    <attribute id="UUID" type="guid" value="65a05a58-6e9e-4556-8e03-49b18c171ead"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h100a0f1fg9a35gebc8gd360g273f2f26ed5a" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING_False"/>
+                    <attribute id="UUID" type="guid" value="e7dbe997-834f-46a4-b691-3ec4c08daf9a"/>
                 </node>
                 <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h1aa49ea9gc8c2gd1e6g8233g5538df29c642" version="1"/>
@@ -81,16 +81,34 @@
                     <attribute id="UUID" type="guid" value="dabcdf7e-be55-4507-a6e4-900179b2f2e0"/>
                 </node>
                 <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h0b7c7681ge3c5g9c7cg4078ga9292cba10e0" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_MUSIC_VFX_OFF_True"/>
+                    <attribute id="UUID" type="guid" value="ce97d815-c076-4d25-8d42-75c7db2f643e"/>
+                </node>
+                <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="hdf93c311g2cfcg40e7g3e14g5cc98eb793e9" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SPRITES_OFF_False"/>
                     <attribute id="UUID" type="guid" value="5227cd30-a55a-4224-8413-bb38f4a05a56"/>
                 </node>
                 <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h757481dbgaf73ga736g9bc3g522ef7d69fb2" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SPRITES_OFF_True"/>
+                    <attribute id="UUID" type="guid" value="f71f66bf-cd69-40c2-b815-cd98e8a49a9c"/>
+                </node>
+                <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h76bdff2agb086g4f84g989age5184248d213" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SPRITES_VOCAL_ON_True"/>
                     <attribute id="UUID" type="guid" value="3c12a6d5-ebde-4249-b815-1064acf99848"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h26e5be5fgdfc2gd83dgc719g673c17a16f53" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SPRITES_VOCAL_ON_False"/>
+                    <attribute id="UUID" type="guid" value="7a580a88-0f5e-4ddf-b665-507a1891bdef"/>
                 </node>
                 <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h770081d9g049eg94a9g0b0dg13172cc7639e" version="1"/>
@@ -109,24 +127,6 @@
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_True"/>
                     <attribute id="UUID" type="guid" value="1908bf78-5a28-40b5-98b2-08c7fa2a4c4a"/>
-                </node>
-                <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h26e5be5fgdfc2gd83dgc719g673c17a16f53" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SPRITES_VOCAL_ON_False"/>
-                    <attribute id="UUID" type="guid" value="7a580a88-0f5e-4ddf-b665-507a1891bdef"/>
-                </node>
-                <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h757481dbgaf73ga736g9bc3g522ef7d69fb2" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SPRITES_OFF_True"/>
-                    <attribute id="UUID" type="guid" value="f71f66bf-cd69-40c2-b815-cd98e8a49a9c"/>
-                </node>
-                <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h0b7c7681ge3c5g9c7cg4078ga9292cba10e0" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_MUSIC_VFX_OFF_True"/>
-                    <attribute id="UUID" type="guid" value="ce97d815-c076-4d25-8d42-75c7db2f643e"/>
                 </node>
                 <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h747db769g18e5gd732g6d63g9fb41325555f" version="1"/>
@@ -187,6 +187,12 @@
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_True"/>
                     <attribute id="UUID" type="guid" value="dc699eec-54b7-43ae-9725-78d78e1a993d"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h1af40472g8147g7dd4gc3f6g35bfc6bdb114" version="2"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_True"/>
+                    <attribute id="UUID" type="guid" value="8f354ef3-4c2e-46b6-9e22-82b1b0267bde"/>
                 </node>
             </children>
         </node>

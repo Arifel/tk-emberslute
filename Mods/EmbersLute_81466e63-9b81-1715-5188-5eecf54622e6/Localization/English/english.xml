@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <contentList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="17">Lute of Musical Sprites (Black)</content>
+  <content contentuid="h57f1c7f8gdc38gacc0g3971ge65f411cc057" version="18">Lute of Musical Sprites (Black)</content>
   <content contentuid="hcc751221g7408g56e7gf2d8g79f22adae505" version="1">Musical Maestro</content>
   <content contentuid="h3ff672ccg53d4gec6bg0d4fg0dec3f5eb2ae" version="1">Emitting an aura of instruction to nearby musical sprites and spirits.</content>
   <content contentuid="h42b4d5a9gba63g5347ga182g2e0ed376f363" version="1">|HIDDEN| Hidden</content>
@@ -81,15 +81,15 @@
   <content contentuid="h4f9bdb67gc817g1d3bg2d2bg7f431ee702dc" version="11">Lute of Musical Sprites (Gold Edges)</content>
   <content contentuid="h1eac9f0bgd160g0b80g75b9g4c08328c757e" version="11">Perform with musical sprites. Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="11">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="12">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="12">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="7">Musical Sprites Instruments</content>
   <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="7">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
   <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="7">Instrument Chest</content>
   <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="7">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
-  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="10">Lute of Musical Sprites (White)</content>
-  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="10">Check your Passives to toggle instruments while you are performing.</content>
-  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="10">Tiny, dancing lights run back and forth across the surface of this lute.</content>
+  <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="11">Lute of Musical Sprites (White)</content>
+  <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="11">Check your Passives to toggle instruments while you are performing.</content>
+  <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="hb6cf612cgfa35g5e6bg3cc1gf32d239e655b" version="8">Lute of Musical Sprites (VT TEST)</content>
   <content contentuid="hc22b08b0g6fc3g7924gd3a6gb6f1df879da0" version="8">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="hba31e0dfg7022g3dc5gedb9gf51e7e56a9a1" version="8">Tiny, dancing lights run back and forth across the surface of this lute.</content>
@@ -388,9 +388,9 @@
   <content contentuid="hc3abf254g70d2g4d52g8eaag46147e1132f5" version="8">Varnish |Musical Sprites|</content>
   <content contentuid="h899cb795gcdf0g0734g2eb3ge94dfcaa6b68" version="7">The effects of this varnish will be removed when you unequip the instrument.</content>
   <content contentuid="hbc6b9702g551eg4022g9219g0feeb6254bcf" version="8">Apply this varnish to your equipped instrument, and musical sprites will appear when you perform music.</content>
-  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="11">Violin of Musical Sprites (White)</content>
-  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="10">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
-  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="11">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
+  <content contentuid="h90ae95a0g3238g4afbg97a6gadb31e8265d0" version="12">Violin of Musical Sprites (White)</content>
+  <content contentuid="h53b8a14bg3e5cgd66bg573cg7593712c7742" version="11">This is a violin alternative to the Lute of Musical Sprites. Differences are visual only.</content>
+  <content contentuid="h6e2ecd3bg28e7g4016g87b0gcf4fa9f93e0a" version="12">This violin has a soft sheen to it, despite the rough edges and patchy varnishing.</content>
   <content contentuid="h2478c860gbc4cg35d5ga13fga1d99c6567e3" version="1">Whenever 'Sing For Me' is performed nearby, the victim of this curse will be compelled to join the performance.</content>
   <content contentuid="h5246bd21g12a7g74a7gde83g969dd8ff4547" version="1">Share Mild Mockery</content>
   <content contentuid="h528c26b2g17b0g65fag1e99g84be790a560b" version="1">The lute spirit will grant the cantrip Mild Mockery to your current party. This'll be mean!</content>
@@ -797,21 +797,21 @@
   <content contentuid="h2a773dc2gca0agfb0fg5e52g26452f6236a7" version="1">Enable Easy Rewards</content>
   <content contentuid="h97e06f5ege329g6532g4c25g843d4b707680" version="1">Remove the restrictions and requirements of receiving special rewards for musical performances.</content>
   <content contentuid="hcc55a20ag5b9eg2d12g9729g30590771325b" version="1">Performance rewards will no longer be locked behind player level, and awarding a musical performance is guaranteed.</content>
-  <content contentuid="h984a7285g034agf27cg03ffg708f37ce0b4c" version="7">Music and Lyrics: 'The Luring Song'</content>
-  <content contentuid="h201376efga824gf126g6fb7g8a43f47277ee" version="6">This appears to be sheet music of the harpy's luring song. The bones of whomever stopped to write this down are likely also somewhere in their nest now.</content>
-  <content contentuid="hc90d4215g14bdg5a3dg4da2g9b05866bd34c" version="5">Music and Lyrics: 'Endless Spring'</content>
-  <content contentuid="h9df0be09g9f85gf6fdgc60ag547700b60bee" version="5">Read to learn how to perform the Endless Spring on one of Ember's instruments.</content>
-  <content contentuid="h8fc4171dgf1d5g6734g1ad2g4824b9a39d3a" version="5">Sheet music for the Endless Spring.</content>
-  <content contentuid="hc715b154g639dg967agb88bga1e254125605" version="4">Read to learn how to perform the Luring Song on one of Ember's instruments.</content>
-  <content contentuid="h2cb36f9eg4bbeg8ea5g5560gbad6a6e2b2be" version="3">Music and Lyrics: 'The Power'</content>
-  <content contentuid="he8148937gf713g2d0eg2fc9gc25f3e8cc0e8" version="3">Sheet music for The Power.</content>
-  <content contentuid="h31e83004g2b33g54f4g19c7g20b749d95fa8" version="3">Music and Lyrics: 'The Final Act'</content>
-  <content contentuid="h019de7fag3ee6g845ag0292g9b80088638bf" version="3">Read to learn how to perform The Final Act on one of Ember's instruments.</content>
-  <content contentuid="h8c2f505bg1cb9g999ag2eb6g822512ac5849" version="3">Somehow this sheet music has endured the infernal heat of the Nine Hells.</content>
-  <content contentuid="hebf91c6dg0eddg0ea5g843cg9f31073c9944" version="3">Music and Lyrics: 'The Water Queen's Hymn'</content>
-  <content contentuid="haa0cc495gdd5bgaf0dg1c69g594e243406dd" version="3">It drips with water continuosly, yet the sheet music remains quite readable and the parchment seems no weaker for its permanently drenched state.</content>
-  <content contentuid="h83700f27g4884g67bag9d21g5f502d4441bb" version="5">Music and Lyrics: 'The Weeping Dawn'</content>
-  <content contentuid="h1bd6c521gcf2ega662g571dg4d115aaf61bb" version="5">Music composed by Alfira the bard, in tribute to her teacher, Lihala.</content>
+  <content contentuid="h984a7285g034agf27cg03ffg708f37ce0b4c" version="8">Music and Lyrics: 'The Luring Song'</content>
+  <content contentuid="h201376efga824gf126g6fb7g8a43f47277ee" version="7">This appears to be sheet music of the harpy's luring song. The bones of whomever stopped to write this down are likely also somewhere in their nest now.</content>
+  <content contentuid="hc90d4215g14bdg5a3dg4da2g9b05866bd34c" version="6">Music and Lyrics: 'Endless Spring'</content>
+  <content contentuid="h9df0be09g9f85gf6fdgc60ag547700b60bee" version="6">Read to learn how to perform the Endless Spring on one of Ember's instruments.</content>
+  <content contentuid="h8fc4171dgf1d5g6734g1ad2g4824b9a39d3a" version="6">Sheet music for the Endless Spring.</content>
+  <content contentuid="hc715b154g639dg967agb88bga1e254125605" version="5">Read to learn how to perform the Luring Song on one of Ember's instruments.</content>
+  <content contentuid="h2cb36f9eg4bbeg8ea5g5560gbad6a6e2b2be" version="4">Music and Lyrics: 'The Power'</content>
+  <content contentuid="he8148937gf713g2d0eg2fc9gc25f3e8cc0e8" version="4">Sheet music for The Power.</content>
+  <content contentuid="h31e83004g2b33g54f4g19c7g20b749d95fa8" version="4">Music and Lyrics: 'The Final Act'</content>
+  <content contentuid="h019de7fag3ee6g845ag0292g9b80088638bf" version="4">Read to learn how to perform The Final Act on one of Ember's instruments.</content>
+  <content contentuid="h8c2f505bg1cb9g999ag2eb6g822512ac5849" version="4">Somehow this sheet music has endured the infernal heat of the Nine Hells.</content>
+  <content contentuid="hebf91c6dg0eddg0ea5g843cg9f31073c9944" version="4">Music and Lyrics: 'The Water Queen's Hymn'</content>
+  <content contentuid="haa0cc495gdd5bgaf0dg1c69g594e243406dd" version="4">It drips with water continuosly, yet the sheet music remains quite readable and the parchment seems no weaker for its permanently drenched state.</content>
+  <content contentuid="h83700f27g4884g67bag9d21g5f502d4441bb" version="6">Music and Lyrics: 'The Weeping Dawn'</content>
+  <content contentuid="h1bd6c521gcf2ega662g571dg4d115aaf61bb" version="6">Music composed by Alfira the bard, in tribute to her teacher, Lihala.</content>
   <content contentuid="hf69c1901g860eg8b42gab2eg6a1c8b2d526c" version="4">Hell, Hell, Hell has its laws&lt;br&gt;Hell, Hell, effects and the cause&lt;br&gt;Curtain falls, but hold your applause&lt;br&gt;Squirm, squirm, for now down here come the claws&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Andrew Winscott and Mariya Anastasova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;[This song can only be performed in camp and other designated performing zones, such as the roof of the Elfsong tavern.]&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;&lt;br&gt;Switching character control during the performance of this song will cause BG3 to stop the music.This is a mechanic of the game's music state management and not a mod bug. There is not anything I can do about it, unless I find an alternative way to play the track that can be supported by console.&lt;br&gt;&lt;br&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync upon leaving Photomode. It's harmless, but might look strange!&lt;br&gt;</content>
   <content contentuid="h20d4ee7cgc111gb0b9g9fb3g026ea9c97480" version="4">Moonlight burning the flower&lt;br&gt;Hold tight, don't fight the power&lt;br&gt;Firelight burning the tower&lt;br&gt;Hold tight, don't fight, don't fight, don't lose the power&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Ilona Ivanova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;[This song can only be performed in camp and other designated performing zones, such as the roof of the Elfsong tavern.]&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;&lt;br&gt;Switching character control during the performance of this song will cause BG3 to stop the music.This is a mechanic of the game's music state management and not a mod bug.&lt;br&gt;&lt;br&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync. Music may also continue on to play additional tracks in the credits roll. It's harmless, but may appear strange!</content>
   <content contentuid="h0642510fg1ad4g0083g04e4g3f5e549b18fe" version="4">Come, sweet child&lt;br&gt;Leave your pain, your past behind&lt;br&gt;Come, come to me&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Maryna Anastasova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync. It's harmless, but may appear strange!</content>
@@ -822,7 +822,7 @@
   <content contentuid="h183faa14g3ee0g6bcag79e8g8d9db3f14c3f" version="1">Sing an ethereal tribute to the capricious Bitch Queen of the seas.</content>
   <content contentuid="hd360da97g2e7fg4cffge707g127663f971ef" version="1">Join the spirit of a tragic tiefling bard in a song of reflection and resilience.</content>
   <content contentuid="ha65ac812g1d11ge180gdeadgff2cdafd287c" version="1">Join a pair of theatrical cambions in an infernal performance - and mind the flames.</content>
-  <content contentuid="hcf2f287agfce6g2529g1177g5dfd147dd16a" version="1">Read to learn how to perform The Weeping Dawn on one of Ember's instruments.</content>
+  <content contentuid="hcf2f287agfce6g2529g1177g5dfd147dd16a" version="2">Read to learn how to perform The Weeping Dawn on one of Ember's instruments.</content>
   <content contentuid="h6cdd5d56g447fg0fbag01eegd1562ac15f67" version="1">White Radiant Visual</content>
   <content contentuid="h0df07a1cg00e9gddc5gc9a3gf4b7cc6c2f89" version="1">A glowing white visual is applied to this instrument.</content>
   <content contentuid="ha7635767g2193g2ad2ga22age578ea3e4551" version="4">Prismatic Flute</content>
@@ -856,4 +856,8 @@
   <content contentuid="h5be38cd8g2c8cg1d05ga423g1913d79d950d" version="1">Easy performance rewards is already enabled.</content>
   <content contentuid="h626da4c7g9175gf9feg2cf4gec94f580d06b" version="1">Easy performance rewards are already disabled.</content>
   <content contentuid="h2889872agb885g0164gbb69gd786f26368e5" version="1">Best not to perform a luring song near a harpy's nest...</content>
+  <content contentuid="h1af40472g8147g7dd4gc3f6g35bfc6bdb114" version="2">Wise to put some distance between yourself and the Bitch Queen's temple first...</content>
+  <content contentuid="hd0ea5ec5gefedg61a1g1733g929c31c54761" version="3">Combat Lute of Musical Sprites</content>
+  <content contentuid="h7a64ab6bge1bfg713bgdc41g4c27c67fc7af" version="3">This lute is dyeable.</content>
+  <content contentuid="hba61d984g67f7gf76agbaceg730fd83f34a2" version="3">Tiny, dancing lights run back and forth across the surface of this lute.</content>
 </contentList>

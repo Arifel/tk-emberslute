@@ -274,10 +274,12 @@ DB_PerformanceRewardUnique_EmbersLute(8,(ITEMROOT)EmbersLute_PerformanceReward_P
 DB_PerformanceRewardUnique_EmbersLute(9,(ITEMROOT)EmbersLute_MusicalSprites_PrismaticFlute_e2c1b4ed-e244-4422-8823-76c2a6f5ef2f,5,50);
 DB_PerformanceRewardUnique_EmbersLute(10,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,3,150);
 DB_PerformanceRewardUnique_EmbersLute(11,(ITEMROOT)EmbersLute_MusicalSpritesCombat_1e7b4319-e589-4643-89e6-cd14c74cb386,6,30);
+DB_PerformanceRewardUnique_EmbersLute(12,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,10,75);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",5);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GREAT",10);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",15);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",25);
+DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(12,(FLAG)TG_LOW_RaphaelDefeated_ae4475b6-f303-4187-844b-903bd40d616f);
 //END_REGION
 
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_PERFORM_THEPOWER_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
@@ -1088,13 +1090,42 @@ DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base);
 QRY
 QRY_SelectUniqueReward_EmbersLute((CHARACTER)_Performer)
 AND
-Random(11,_RND)
+Random(12,_RND)
 AND
 IntegerSum(1,_RND,_RndInc)
 AND
 NOT DB_PerformanceRewardUnique_Given_EmbersLute(_RndInc)
+AND
+QRY_RewardConditionIsMet_EmbersLute(_RndInc)
 THEN
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_RndInc);
+
+QRY
+QRY_RewardConditionIsMet_EmbersLute((INTEGER)_SelectedReward)
+AND
+QRY_HasRewardCondition_EmbersLute(_SelectedReward)
+AND
+DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_SelectedReward,_Flag)
+AND
+DB_Avatars(_Player)
+AND
+GetFlag(_Flag,_Player,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_RewardConditionIsMet_EmbersLute((INTEGER)_SelectedReward)
+AND
+NOT QRY_HasRewardCondition_EmbersLute(_SelectedReward)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_HasRewardCondition_EmbersLute((INTEGER)_SelectedReward)
+AND
+DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_SelectedReward,_Flag)
+THEN
+DB_NOOP(1);
 
 PROC
 PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)

@@ -67,6 +67,13 @@ AND
 DB_BardReactions_SongToStatusMapping_Emlute(_Song,_Status,_AnimStatus)
 THEN
 NOT DB_BardReactions_SongToStatusMapping_Emlute(_Song,_Status,_AnimStatus);
+
+PROC
+PROC_ResetBardReactionFacts_EmbersLute()
+AND
+DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_Index,_Flag)
+THEN
+NOT DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_Index,_Flag);
 //END_REGION
 
 // Recreate bard reactions (helpers)
@@ -224,6 +231,8 @@ DB_PerformanceRewardUnique_EmbersLute(8,(ITEMROOT)EmbersLute_PerformanceReward_P
 DB_PerformanceRewardUnique_EmbersLute(9,(ITEMROOT)EmbersLute_MusicalSprites_PrismaticFlute_e2c1b4ed-e244-4422-8823-76c2a6f5ef2f,5,50);
 DB_PerformanceRewardUnique_EmbersLute(10,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,3,150);
 DB_PerformanceRewardUnique_EmbersLute(11,(ITEMROOT)EmbersLute_MusicalSpritesCombat_1e7b4319-e589-4643-89e6-cd14c74cb386,6,30);
+DB_PerformanceRewardUnique_EmbersLute(12,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,10,75);
+DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(12,(FLAG)TG_LOW_RaphaelDefeated_ae4475b6-f303-4187-844b-903bd40d616f);
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,1,"Projectile_TossDrink_Emlute");
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,3,"Projectile_TossDrink_Emlute");
 DB_BardReactionActionsOverrideByTag_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,12,"Projectile_TossDrink_Emlute");

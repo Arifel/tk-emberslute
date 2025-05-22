@@ -58,7 +58,7 @@ object category "I_EMBERS_LUTE_BOOK_FAQ",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_THANKYOU_NOTE",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_EMBERS_LUTE_MUSICALSPRITES_FLUTE_PRISMATIC",1,0,0,0,0,0,0,0
+object category "I_EMBERS_LUTE_MUSICALSPRITES_COMBAT",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SUMMON_CHEST_SCROLL",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -87,7 +87,35 @@ new treasuretable "LOW_MusicTrader"
 CanMerge 1
 new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_HARPYSONG",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_ENDLESSSPRING",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_THEPOWER",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN",1,0,0,0,0,0,0,0
 new treasuretable "DEN_Harpy_Nest"
 CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_HARPYSONG",1,0,0,0,0,0,0,0
+new treasuretable "DEN_BardChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN",1,0,0,0,0,0,0,0
+new treasuretable "MOO_MimicReward"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_ENDLESSSPRING",1,0,0,0,0,0,0,0
+new treasuretable "LOW_WQH_AllandraChest"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_WATERHYMN",1,0,0,0,0,0,0,0
+new treasuretable "HAG_AbandonedCamp_Backpack_Bard"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_THEPOWER",1,0,0,0,0,0,0,0
+new treasuretable "LOW_Legendary_HoH_Treasure"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_FINALACT",1,0,0,0,0,0,0,0

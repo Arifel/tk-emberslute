@@ -75,13 +75,15 @@ KBSECTION
 // Safe performing areas tracker
 //REGION
 IF
-EnteredTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
+TeleportToFromCamp((CHARACTER)_PartyCharacter)
 AND
 DB_PartOfTheTeam(_PartyCharacter)
 AND
-DB_SpecialPerformance_SafeZones_EmbersLute(_Trigger)
+DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
+AND
+IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,0)
 THEN
-SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
 LeftTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
@@ -97,22 +99,20 @@ THEN
 ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
-TagSet((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
+TeleportedToCamp((CHARACTER)_PartyCharacter)
 AND
 DB_PartOfTheTeam(_PartyCharacter)
 THEN
 SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
-TagCleared((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
+EnteredTrigger((CHARACTER)_PartyCharacter,(TRIGGER)_Trigger)
 AND
 DB_PartOfTheTeam(_PartyCharacter)
 AND
-DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
-AND
-IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,0)
+DB_SpecialPerformance_SafeZones_EmbersLute(_Trigger)
 THEN
-ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 IF
 LevelGameplayStarted(_,1)
@@ -152,7 +152,6 @@ AND
 IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
 THEN
 DB_NOOP(1);
-
 //END_REGION
 
 // Reset the performing state on save game load

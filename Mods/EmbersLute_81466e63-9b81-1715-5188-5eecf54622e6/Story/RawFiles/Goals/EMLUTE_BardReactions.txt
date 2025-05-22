@@ -1024,6 +1024,7 @@ AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
 THEN
 PROC_ApplyPerformanceBuff_EmbersLute(_Performer,_Status);
+ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",500);
 
 PROC
 PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
@@ -1043,7 +1044,6 @@ AND
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
 THEN
 PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
-ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",500);
 
 IF
 ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")

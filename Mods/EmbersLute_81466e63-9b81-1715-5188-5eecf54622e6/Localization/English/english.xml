@@ -826,4 +826,33 @@
   <content contentuid="h6cdd5d56g447fg0fbag01eegd1562ac15f67" version="1">White Radiant Visual</content>
   <content contentuid="h0df07a1cg00e9gddc5gc9a3gf4b7cc6c2f89" version="1">A glowing white visual is applied to this instrument.</content>
   <content contentuid="ha7635767g2193g2ad2ga22age578ea3e4551" version="4">Prismatic Flute</content>
+  <content contentuid="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="h1ecfab1cg41e1g48aaga306gfa53294c1dc3" version="1">An Ember's Lute instrument is not equipped.</content>
+  <content contentuid="h70691659g4c53ga4c6g159bgc64431671701" version="1">An Ember's Lute Musical Sprites instrument is not equipped.</content>
+  <content contentuid="h90c138f4g6e29g2281gd9f3gfff30f60efef" version="1">An Ember's Lute combat enabled instrument is not equipped.</content>
+  <content contentuid="h100a0f1fg9a35gebc8gd360g273f2f26ed5a" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="h64105175gf4eeg4db2gd981ge539b39fcc69" version="1">The Demoraliser is not equipped.</content>
+  <content contentuid="h1aa49ea9gc8c2gd1e6g8233g5538df29c642" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="h0eb3da38g147fga889g8cafg095c91f438b5" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="hf1271694g5dc4g6a56g4988ga0dff982d064" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="h77c6fbecgea99gb971gb39ag14294548565c" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="he06f3cfcgdbbcge8f9gfde8gcc04bbac6c92" version="2">This song can only be performed in camp or other performance friendly zones.</content>
+  <content contentuid="hb2b5894ag0a74gea60g6654g2e66048e7e0a" version="1">Music VFX is already enabled.</content>
+  <content contentuid="hdf93c311g2cfcg40e7g3e14g5cc98eb793e9" version="1">Sprite summoning is already enabled.</content>
+  <content contentuid="h76bdff2agb086g4f84g989age5184248d213" version="1">Vocal sprites are already enabled.</content>
+  <content contentuid="h770081d9g049eg94a9g0b0dg13172cc7639e" version="1">The tiefling bard spirit is already disabled.</content>
+  <content contentuid="hc34c5321g8a39g5436gf7bbg1b3d7ce4227c" version="1">The tiefling bard spirit is already enabled.</content>
+  <content contentuid="h26e5be5fgdfc2gd83dgc719g673c17a16f53" version="1">Vocal sprites are already disabled.</content>
+  <content contentuid="h757481dbgaf73ga736g9bc3g522ef7d69fb2" version="1">Sprite summoning is disabled.</content>
+  <content contentuid="h0b7c7681ge3c5g9c7cg4078ga9292cba10e0" version="1">Music VFX is already disabled.</content>
+  <content contentuid="heb08a604gb1f7g4234g0328g80b04d7cc3da" version="1">The cambions are already disabled.</content>
+  <content contentuid="h747db769g18e5gd732g6d63g9fb41325555f" version="1">The cambions are already enabled.</content>
+  <content contentuid="h3336ee63gdf0cg7f35gdf40g4cebe51faee9" version="1">The waveservants are already disabled.</content>
+  <content contentuid="h413512deg17dcgd902gcc52gf4491c8afde4" version="1">The waveservants are already enabled.</content>
+  <content contentuid="h2e256746gf89cg17b9g7052gfd064b39c036" version="1">The harpy is already disabled.</content>
+  <content contentuid="h0d646af1gf246g6c48g01e7gcb68bfec4424" version="1">The harpy is already enabled.</content>
+  <content contentuid="h65070f7ag7542g8df3g40c6g4bc5ee18b4ab" version="1">Showmanship is disabled.</content>
+  <content contentuid="h7f1a45e5g6602g9444ge887g42712c19a0db" version="1">Showmanship is already enabled.</content>
+  <content contentuid="h5be38cd8g2c8cg1d05ga423g1913d79d950d" version="1">Easy performance rewards is already enabled.</content>
+  <content contentuid="h626da4c7g9175gf9feg2cf4gec94f580d06b" version="1">Easy performance rewards are already disabled.</content>
 </contentList>

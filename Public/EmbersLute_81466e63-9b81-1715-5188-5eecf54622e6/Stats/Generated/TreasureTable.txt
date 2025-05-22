@@ -87,3 +87,7 @@ new treasuretable "LOW_MusicTrader"
 CanMerge 1
 new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE",1,0,0,0,0,0,0,0
+new treasuretable "DEN_Harpy_Nest"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_HARPYSONG",1,0,0,0,0,0,0,0

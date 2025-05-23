@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="100"/>
+    <version major="4" minor="8" revision="0" build="200"/>
     <region id="IconUVList">
         <node id="root">
             <children>
@@ -8,6 +8,13 @@
                     <attribute id="MapKey" type="FixedString" value="EmbersLuteUndeadViolin_Chest_Haunted_ICON"/>
                     <attribute id="U1" type="float" value="0.37597656"/>
                     <attribute id="U2" type="float" value="0.49902344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Book_ICON"/>
+                    <attribute id="U1" type="float" value="0.75097656"/>
+                    <attribute id="U2" type="float" value="0.87402344"/>
                     <attribute id="V1" type="float" value="0.25097656"/>
                     <attribute id="V2" type="float" value="0.37402344"/>
                 </node>
@@ -50,6 +57,13 @@
                     <attribute id="MapKey" type="FixedString" value="EmbersLute_Chest_Whistling_ICON"/>
                     <attribute id="U1" type="float" value="0.25097656"/>
                     <attribute id="U2" type="float" value="0.37402344"/>
+                    <attribute id="V1" type="float" value="0.25097656"/>
+                    <attribute id="V2" type="float" value="0.37402344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Lute01_Combat_ICON"/>
+                    <attribute id="U1" type="float" value="0.87597656"/>
+                    <attribute id="U2" type="float" value="0.99902344"/>
                     <attribute id="V1" type="float" value="0.25097656"/>
                     <attribute id="V2" type="float" value="0.37402344"/>
                 </node>
@@ -129,6 +143,13 @@
                     <attribute id="U2" type="float" value="0.24902344"/>
                     <attribute id="V1" type="float" value="0.12597656"/>
                     <attribute id="V2" type="float" value="0.24902344"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_PrismaticFlute_01_Sprites_ICON"/>
+                    <attribute id="U1" type="float" value="0.0009765625"/>
+                    <attribute id="U2" type="float" value="0.12402344"/>
+                    <attribute id="V1" type="float" value="0.37597656"/>
+                    <attribute id="V2" type="float" value="0.49902344"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="EmbersLute_Scroll_SheetMusic01"/>

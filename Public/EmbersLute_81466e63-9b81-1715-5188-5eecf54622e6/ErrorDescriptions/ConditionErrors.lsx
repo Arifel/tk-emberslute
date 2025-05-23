@@ -33,6 +33,12 @@
                     <attribute id="UUID" type="guid" value="2d1552fe-18a1-40a5-bda5-54ae4356f81a"/>
                 </node>
                 <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha7665824g32bag9dbdgf9b8g77a474a1f933" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="EmluteActivePerformance"/>
+                    <attribute id="UUID" type="guid" value="b2706cbb-50f5-4c64-b50e-da591776399e"/>
+                </node>
+                <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_False"/>
@@ -183,7 +189,7 @@
                     <attribute id="UUID" type="guid" value="5392e60e-2bf9-4401-b1ba-b7b724bd59e5"/>
                 </node>
                 <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="h2889872agb885g0164gbb69gd786f26368e5" version="1"/>
+                    <attribute id="DisplayName" type="TranslatedString" handle="h2889872agb885g0164gbb69gd786f26368e5" version="2"/>
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_True"/>
                     <attribute id="UUID" type="guid" value="dc699eec-54b7-43ae-9725-78d78e1a993d"/>
@@ -193,12 +199,6 @@
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_True"/>
                     <attribute id="UUID" type="guid" value="8f354ef3-4c2e-46b6-9e22-82b1b0267bde"/>
-                </node>
-                <node id="ConditionErrors">
-                    <attribute id="DisplayName" type="TranslatedString" handle="ha7665824g32bag9dbdgf9b8g77a474a1f933" version="1"/>
-                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
-                    <attribute id="Identifier" type="FixedString" value="EmluteActivePerformance"/>
-                    <attribute id="UUID" type="guid" value="b2706cbb-50f5-4c64-b50e-da591776399e"/>
                 </node>
             </children>
         </node>

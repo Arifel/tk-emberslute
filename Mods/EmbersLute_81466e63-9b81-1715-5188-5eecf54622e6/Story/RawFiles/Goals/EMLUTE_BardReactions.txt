@@ -466,6 +466,16 @@ NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POS
 NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT");
 NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY");
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_DANGEROUS");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD",_,_)
+AND
+DB_Players(_Performer)
+THEN
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD");
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT");
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY");
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_DANGEROUS");
 //END_REGION
 
 // Custom performance reactions in camp for NPCs.

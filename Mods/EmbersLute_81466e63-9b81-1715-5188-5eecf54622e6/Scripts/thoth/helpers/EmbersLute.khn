@@ -197,3 +197,9 @@ function Emlute_HasBladeSingerRapierEquipped(entity)
 	local bladeSongWeapon = (weapon.IsValid & Tagged('EMLUTE_BLADESONG_RAPIER',weapon))	
 	return ConditionResult(bladeSongWeapon.Result, {ConditionError("EmluteRapierNotEquipped")})
 end
+
+function Emlute_IsNotPerforming_CE(entity)
+	local entity = entity or context.Source
+	local notPerforming = ~Emlute_IsPerforming(entity);
+	return ConditionResult(notPerforming.Result, {ConditionError("EmluteActivePerformance")})
+end

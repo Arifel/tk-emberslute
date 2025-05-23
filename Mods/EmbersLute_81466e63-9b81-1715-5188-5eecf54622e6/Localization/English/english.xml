@@ -508,8 +508,8 @@
   <content contentuid="h535a168bgdb7fg7c8ega59dgddd1a3500012" version="1">Perform 'Raphael's Final Act'</content>
   <content contentuid="hbcbb54d8gd125gf117g784bge1c37bbd6af9" version="1">Performing 'Raphael's Final Act'</content>
   <content contentuid="h502c12b3gba01g4f9bg2e43g3fb3c16b7338" version="19">Waveservant</content>
-  <content contentuid="hddbef208ge72dge604g46dag7d3d89cc7bef" version="1">Stop Performance</content>
-  <content contentuid="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="1">Stop the current performance</content>
+  <content contentuid="hddbef208ge72dge604g46dag7d3d89cc7bef" version="2">End Performance</content>
+  <content contentuid="h18d7ef50g5071g5118g119fg53ecfb2364c5" version="2">End the active performance.</content>
   <content contentuid="h19d92486g6ef9gb424gaaccgdc642a282dd1" version="1">Perform 'The Power'</content>
   <content contentuid="h56f08a40g9878ga1a1g3203g4214241a6663" version="1">Wave Servants</content>
   <content contentuid="hf176cf07gfb4dg585agf498g3e16ff2626a2" version="1">If enabled, wave servants will appear when the funeral hymn is performed.</content>
@@ -863,4 +863,6 @@
   <content contentuid="h15c1b422gd836gaa68gba46gd9ccc82a9ea5" version="1">Learning Music</content>
   <content contentuid="hc60a1773gab99g3190g16cbga4906ace28b2" version="1">PLACEHOLDER</content>
   <content contentuid="h5bac3e35g3a3agd05eg8b0bg3512f5e4a3a3" version="1">You have learned how to perform a new song!</content>
+  <content contentuid="ha7665824g32bag9dbdgf9b8g77a474a1f933" version="1">A performance is already active!</content>
+  <content contentuid="h0d93f834g9cebg8b84g1441g3b71055e28bd" version="1">Ending the performance will not disperse crowds until you move.</content>
 </contentList>

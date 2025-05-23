@@ -194,6 +194,12 @@
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_True"/>
                     <attribute id="UUID" type="guid" value="8f354ef3-4c2e-46b6-9e22-82b1b0267bde"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha7665824g32bag9dbdgf9b8g77a474a1f933" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="EmluteActivePerformance"/>
+                    <attribute id="UUID" type="guid" value="b2706cbb-50f5-4c64-b50e-da591776399e"/>
+                </node>
             </children>
         </node>
     </region>

@@ -488,6 +488,7 @@ AND
 IsTagged(_Player,_Tag,0)
 THEN
 SetTag(_Player,_Tag);
+OpenMessageBox(_Player,"EMLUTE_Song_Learned");
 //END_REGION
 
 // Fix the music on Improved Countercharm summons by adding a short delay.

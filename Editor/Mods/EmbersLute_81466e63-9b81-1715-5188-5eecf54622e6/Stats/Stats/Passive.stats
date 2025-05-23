@@ -594,8 +594,8 @@
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ade277fa-4980-4544-9dda-dc4c6431fd6c" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_TrainingInWarAndSong" />
-        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="not HasAnyStatus({'EMLUTE_REWARD_SPIN_SLIPPERS'},{},{},context.Source);" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="ApplyStatus(EMLUTE_REWARD_SPIN_SLIPPERS,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_REWARD_SPIN_SLIPPERS)" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="hc7666249gf132gae0agf01dg1393b6e33365" version="1" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasPassive('Bladesong_Weapon',context.Source);" />
@@ -612,9 +612,10 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8, Psychic)" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h05c571ddg2acag9ad1g834cg44e332bb409e" version="1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Persuasion,1);" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and IsCritical();" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ReduceCriticalAttackThreshold(1);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsCritical();" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_CRITICAL_MOCKERY, 100, 1)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">

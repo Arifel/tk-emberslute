@@ -254,7 +254,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="ed165a80-7d02-4a02-8645-d3b7d979300a" />
         <field name="Name" type="NameTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5_substat_10" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
-        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_HARPYSONG" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_CRITICAL_MOCKERY_RING" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
         <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
       </fields>

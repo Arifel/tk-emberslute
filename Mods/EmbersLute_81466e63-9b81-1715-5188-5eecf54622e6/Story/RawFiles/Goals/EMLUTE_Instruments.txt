@@ -20,8 +20,6 @@ DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37b
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Vocal");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_TieflingBard");
-//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_WaveServants");
-//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Cambions");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_ViolinsToggle");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LyresToggle");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_DrumsToggle");
@@ -37,8 +35,6 @@ DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseHaloVFX");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_FallenSpirits");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_TieflingBard");
-//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_WaveServants");
-//DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_Cambions");
 
 // Every time I resort to timers, a thousand kittens cry
 // Basically we delay passive removal by a couple of seconds, and then only remove if they're still not required
@@ -63,6 +59,7 @@ KBSECTION
 ///////////////////////////////////////////////////////////////////
 // Master configuration management for Ember's Lute music mods.
 // Spell container is added and removed on game enter and exit.
+//REGION
 IF
 LevelGameplayStarted(_,_)
 AND
@@ -115,7 +112,7 @@ AND
 HasSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 0)
 THEN
 AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
-
+//END_REGION
 
 ///////////////////////////////////////////////////////////////////
 // We only ever config manage with code tags on the player character.
@@ -123,6 +120,7 @@ AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
 // we don't have to worry about managing a config clean up process.
 //
 // Boilerplate lessss goooo. I can rewrite this smarter. But will I.
+//REGION
 IF
 UsingSpell(_Caster,"Shout_Config_SuppressMusicVFX_Emlute",_,_,_)
 THEN
@@ -240,6 +238,17 @@ DebugText(_Caster, "Enabling easy performance rewards");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
+IF
+UsingSpell((CHARACTER)_Caster,"Shout_Config_CopyPreferences_Emlute",_,_,_)
+THEN
+OpenMessageBoxYesNo(_Caster,"EMLUTE_ConfirmPreferences");
+
+IF
+MessageBoxYesNoClosed((CHARACTER)_Player,"EMLUTE_ConfirmPreferences",1)
+THEN
+PROC_CopyPreferencesToPlayers_EmbersLute(_Player);
+UseSpell(_Player,"Shout_Update_Preferences_Emlute",_Player);
+//END_REGION
 //
 // End config manager
 ///////////////////////////////////////////////////////////////////
@@ -248,6 +257,7 @@ UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 // Instrument passive management events.
 // Player equips a mod instrument.
 // Add any passive toggles required by the instrument.
+//REGION
 IF
 Equipped(_Instrument, _Character)
 AND
@@ -344,10 +354,47 @@ AND
 NOT QRY_InstrumentHasPassiveToggle(_Instrument,_PassiveToggle)
 THEN
 PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
-
+//END_REGION
 //
 // End instrument passive management events
 ///////////////////////////////////////////////////////////////////
+
+// Helpers
+//REGION
+PROC
+PROC_CopyPreferencesToPlayers_EmbersLute((CHARACTER)_SourceCharacter)
+THEN
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_MUSIC_VFX_OFF_cbd8c300-6187-4013-986c-4a50f066496a);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SPRITES_OFF_24b6dd71-78cf-4769-bd59-e5d3a7ddd10e);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SHOWMANSHIP_OFF_6e6eeab3-e23a-4989-a75b-972ec4ebc475);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SPRITES_VOCAL_ON_d20368a4-4c7b-49c5-8c8f-78fddfdd8a20);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SUMMON_HARPY_OFF_7c485af5-d4b9-4708-8620-4d75efccb8fb);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_01b06454-64c0-4fd1-9f6e-94d9f3d3332f);
+PROC_CopyTagToPlayers_EmbersLute(_SourceCharacter,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b);
+
+PROC
+PROC_CopyTagToPlayers_EmbersLute((CHARACTER)_SourceCharacter,(TAG)_Tag)
+AND
+IsTagged(_SourceCharacter,_Tag,1)
+AND
+DB_PartOfTheTeam(_Player)
+AND
+IsTagged(_Player,_Tag,0)
+THEN
+SetTag(_Player,_Tag);
+
+PROC
+PROC_CopyTagToPlayers_EmbersLute((CHARACTER)_SourceCharacter,(TAG)_Tag)
+AND
+IsTagged(_SourceCharacter,_Tag,0)
+AND
+DB_PartOfTheTeam(_Player)
+AND
+IsTagged(_Player,_Tag,1)
+THEN
+ClearTag(_Player,_Tag);
 
 PROC
 PROC_Emlute_AddPassive((CHARACTER)_Character, (STRING)_Passive)
@@ -392,6 +439,7 @@ AND
 IsTagged(_Instrument, _Tag, 1)
 THEN
 DB_NOOP(1);
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

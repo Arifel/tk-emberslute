@@ -97,7 +97,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f8fca48-9f8c-4793-bd7b-88f713cdc70d" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Custom_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;Shout_Bard_Perform_Stop_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;Shout_Bard_Perform_Help_Emlute;Shout_Bard_Perform_Stop_Emlute;" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcc964f7gfff3g25b2ge124g1e7db6015f5c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8dac814gdc75g0d76gaf53g0b63cef665e7" version="1" />
@@ -179,6 +179,19 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h50b17609g7e41g9832g7faeg21719ef80a5b" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_SHEETMUSIC_LEARNT_FINALACT') and Tagged('EMLUTE_SAFE_PERFORM_ZONE') and not Emlute_IsPerforming() and ((not Emlute_HasEmluteCombatModeInstrumentEquipped()) or (not Combat()))" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha65ac812g1d11ge180gdeadgff2cdafd287c" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a18ff671-3529-4e03-80b4-a1284b897740" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Help_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_KnowledgeOfTheAges" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15c1b422gd836gaa68gba46gd9ccc82a9ea5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc60a1773gab99g3190g16cbga4906ace28b2" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFA1106B" is_substat="false">

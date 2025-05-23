@@ -275,7 +275,7 @@ DB_PerformanceRewardUnique_EmbersLute(9,(ITEMROOT)EmbersLute_MusicalSprites_Pris
 DB_PerformanceRewardUnique_EmbersLute(10,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,3,150);
 DB_PerformanceRewardUnique_EmbersLute(11,(ITEMROOT)EmbersLute_MusicalSpritesCombat_1e7b4319-e589-4643-89e6-cd14c74cb386,6,30);
 DB_PerformanceRewardUnique_EmbersLute(12,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,10,75);
-DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",5);
+DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",-5);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GREAT",10);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",15);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",25);

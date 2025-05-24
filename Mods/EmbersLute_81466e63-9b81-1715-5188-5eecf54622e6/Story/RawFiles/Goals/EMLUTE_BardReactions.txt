@@ -6,6 +6,8 @@ INITSECTION
 
 // All other tags will leave to the vanilla reactions to manage
 DB_BardReactions_SupportedTags_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
+DB_BardReactions_ExcludeTags_Emlute((TAG)KID_ee978587-6c68-4186-9bfc-3b3cc719a835);
+DB_BardReactions_ExcludeTags_Emlute((TAG)MYCONID_480f5568-7c49-45e4-9543-7c06e43bdf52);
 
 // Bard reactions out in the world i.e. busking mode
 //REGION
@@ -99,7 +101,6 @@ DB_BardReactions_Charges_Emlute(2,11,99,(TAG)DWARF_486a2562-31ae-437b-bf63-30393
 DB_BardReactions_Charges_Emlute(3,11,99,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_Drinking_01_fab141d9-e068-4f2e-ba44-699b6d9b3636,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,54800);
 DB_BardReactions_Charges_Emlute(4,11,99,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,31000);
 DB_BardReactions_Charges_Emlute(5,11,99,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_04_5994a828-467a-4973-b81b-4edb66218ce3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,12700);
-
 //END_REGION
 
 // commented out
@@ -1019,6 +1020,17 @@ QRY
 QRY_HasSupportedBardReactionsTag_EmbersLute((CHARACTER)_NPC)
 AND
 DB_BardReactions_SupportedTags_Emlute(_Tag)
+AND
+IsTagged(_NPC,_Tag,1)
+AND
+NOT QRY_HasExcludedBardReactionsTag_EmbersLute(_NPC)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_HasExcludedBardReactionsTag_EmbersLute((CHARACTER)_NPC)
+AND
+DB_BardReactions_ExcludeTags_Emlute(_Tag)
 AND
 IsTagged(_NPC,_Tag,1)
 THEN

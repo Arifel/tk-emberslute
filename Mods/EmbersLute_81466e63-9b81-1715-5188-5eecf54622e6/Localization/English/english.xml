@@ -803,15 +803,15 @@
   <content contentuid="h9df0be09g9f85gf6fdgc60ag547700b60bee" version="6">Read to learn how to perform the Endless Spring on one of Ember's instruments.</content>
   <content contentuid="h8fc4171dgf1d5g6734g1ad2g4824b9a39d3a" version="6">Sheet music for the Endless Spring.</content>
   <content contentuid="hc715b154g639dg967agb88bga1e254125605" version="5">Read to learn how to perform the Luring Song on one of Ember's instruments.</content>
-  <content contentuid="h2cb36f9eg4bbeg8ea5g5560gbad6a6e2b2be" version="4">Music and Lyrics: 'The Power'</content>
-  <content contentuid="he8148937gf713g2d0eg2fc9gc25f3e8cc0e8" version="4">Sheet music for The Power.</content>
+  <content contentuid="h2cb36f9eg4bbeg8ea5g5560gbad6a6e2b2be" version="6">Music and Lyrics: 'The Power'</content>
+  <content contentuid="he8148937gf713g2d0eg2fc9gc25f3e8cc0e8" version="6">Sheet music for The Power.</content>
   <content contentuid="h31e83004g2b33g54f4g19c7g20b749d95fa8" version="4">Music and Lyrics: 'The Final Act'</content>
   <content contentuid="h019de7fag3ee6g845ag0292g9b80088638bf" version="4">Read to learn how to perform The Final Act on one of Ember's instruments.</content>
   <content contentuid="h8c2f505bg1cb9g999ag2eb6g822512ac5849" version="4">Somehow this sheet music has endured the infernal heat of the Nine Hells.</content>
-  <content contentuid="hebf91c6dg0eddg0ea5g843cg9f31073c9944" version="4">Music and Lyrics: 'The Water Queen's Hymn'</content>
-  <content contentuid="haa0cc495gdd5bgaf0dg1c69g594e243406dd" version="4">It drips with water continuosly, yet the sheet music remains quite readable and the parchment seems no weaker for its permanently drenched state.</content>
-  <content contentuid="h83700f27g4884g67bag9d21g5f502d4441bb" version="6">Music and Lyrics: 'The Weeping Dawn'</content>
-  <content contentuid="h1bd6c521gcf2ega662g571dg4d115aaf61bb" version="6">Music composed by Alfira the bard, in tribute to her teacher, Lihala.</content>
+  <content contentuid="hebf91c6dg0eddg0ea5g843cg9f31073c9944" version="5">Music and Lyrics: 'The Water Queen's Hymn'</content>
+  <content contentuid="haa0cc495gdd5bgaf0dg1c69g594e243406dd" version="5">It drips with water continuosly, yet the sheet music remains quite readable and the parchment seems no weaker for its permanently drenched state.</content>
+  <content contentuid="h83700f27g4884g67bag9d21g5f502d4441bb" version="7">Music and Lyrics: 'The Weeping Dawn'</content>
+  <content contentuid="h1bd6c521gcf2ega662g571dg4d115aaf61bb" version="7">Music composed by Alfira the bard, in tribute to her teacher, Lihala.</content>
   <content contentuid="hf69c1901g860eg8b42gab2eg6a1c8b2d526c" version="7">Hell, Hell, Hell has its laws&lt;br&gt;Hell, Hell, effects and the cause&lt;br&gt;Curtain falls, but hold your applause&lt;br&gt;Squirm, squirm, for now down here come the claws&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Andrew Winscott and Mariya Anastasova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;[This song can only be performed in camp and other designated performing zones, such as the roof of the Elfsong tavern.]&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;&lt;br&gt;Switching character control during the performance of this song will cause BG3 to stop the music.This is a mechanic of the game's music state management and not a mod bug. There is not anything I can do about it, unless I find an alternative way to play the track that can be supported by console.&lt;br&gt;&lt;br&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync upon leaving Photomode. It's harmless, but might look strange!&lt;br&gt;</content>
   <content contentuid="h20d4ee7cgc111gb0b9g9fb3g026ea9c97480" version="7">Moonlight burning the flower&lt;br&gt;Hold tight, don't fight the power&lt;br&gt;Firelight burning the tower&lt;br&gt;Hold tight, don't fight, don't fight, don't lose the power&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Ilona Ivanova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;[This song can only be performed in camp and other designated performing zones, such as the roof of the Elfsong tavern.]&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;&lt;br&gt;Switching character control during the performance of this song will cause BG3 to stop the music.This is a mechanic of the game's music state management and not a mod bug.&lt;br&gt;&lt;br&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync. Music may also continue on to play additional tracks in the credits roll. It's harmless, but may appear strange!</content>
   <content contentuid="h0642510fg1ad4g0083g04e4g3f5e549b18fe" version="7">Come, sweet child&lt;br&gt;Leave your pain, your past behind&lt;br&gt;Come, come to me&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Maryna Anastasova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;[This song can only be performed in camp and other designated performing zones, such as the roof of the Elfsong tavern.]&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;&lt;br&gt;&lt;br&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync. It's harmless, but may appear strange!</content>
@@ -822,7 +822,7 @@
   <content contentuid="h183faa14g3ee0g6bcag79e8g8d9db3f14c3f" version="1">Sing an ethereal tribute to the capricious Bitch Queen of the seas.</content>
   <content contentuid="hd360da97g2e7fg4cffge707g127663f971ef" version="1">Join the spirit of a tragic tiefling bard in a song of reflection and resilience.</content>
   <content contentuid="ha65ac812g1d11ge180gdeadgff2cdafd287c" version="1">Join a pair of theatrical cambions in an infernal performance - and mind the flames.</content>
-  <content contentuid="hcf2f287agfce6g2529g1177g5dfd147dd16a" version="2">Read to learn how to perform The Weeping Dawn on one of Ember's instruments.</content>
+  <content contentuid="hcf2f287agfce6g2529g1177g5dfd147dd16a" version="3">Read to learn how to perform The Weeping Dawn on one of Ember's instruments.</content>
   <content contentuid="h6cdd5d56g447fg0fbag01eegd1562ac15f67" version="1">White Radiant Visual</content>
   <content contentuid="h0df07a1cg00e9gddc5gc9a3gf4b7cc6c2f89" version="1">A glowing white visual is applied to this instrument.</content>
   <content contentuid="ha7635767g2193g2ad2ga22age578ea3e4551" version="5">Prismatic Flute</content>
@@ -884,4 +884,6 @@
   <content contentuid="h3a9e2110g5737gc7edg7f2fgad4093131a7e" version="2">Once per day, a musical performance with at least [1] &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_POSITIVE_CHARGE"&gt;Showmanship&lt;/LSTag&gt; charges will buff your party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
   <content contentuid="hfe52a04dg28d2g9df8g11f8gb1bc59754bc9" version="1">Swift Winds</content>
   <content contentuid="h27965174g4d7fg7cc5g81a4g240022a5a9f9" version="1">Boosting the party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
+  <content contentuid="hfb3f70b0gdea4g58abge19eg29a3de0649c3" version="2">Read to learn how to perform The Power on one of Ember's instruments.</content>
+  <content contentuid="h3bdd17dag6611g457cg2bf4g28ebedda834a" version="1">Read to learn how to perform the  Water Queen's Hymn on one of Ember's instruments.</content>
 </contentList>

@@ -188,6 +188,18 @@
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_EASYREWARDS_ON_False"/>
                     <attribute id="UUID" type="guid" value="5392e60e-2bf9-4401-b1ba-b7b724bd59e5"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he9a86068gc132g31bbgee88gb8b2d4810c7b" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SAFEZONES_OFF_True"/>
+                    <attribute id="UUID" type="guid" value="8bcaa68a-5b7b-4f24-be99-1545c7ffc201"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="haaf8485dgf717g4a30g0d73ged5b8d839f2f" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SAFEZONES_OFF_False"/>
+                    <attribute id="UUID" type="guid" value="4b10b970-de43-471d-8623-e12f2c5ec1e9"/>
+                </node>
             </children>
         </node>
     </region>

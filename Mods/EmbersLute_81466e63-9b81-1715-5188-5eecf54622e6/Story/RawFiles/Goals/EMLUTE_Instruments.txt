@@ -248,14 +248,21 @@ MessageBoxYesNoClosed((CHARACTER)_Player,"EMLUTE_ConfirmDisableSafezones",1)
 THEN
 DebugText(_Player, "Disabling performance safe zones");
 SetTag(_Player,(TAG)EMLUTE_CONFIG_SAFEZONES_OFF_89f917c6-350e-4f43-81bd-f192cf1ae18c);
+SetTag(_Player,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 UseSpell(_Player,"Shout_Update_Preferences_Emlute",_Player);
 
 IF
-UsingSpell(_Caster,"Shout_Config_EnableSafeZones_Emlute",_,_,_)
+UsingSpell((CHARACTER)_Caster,"Shout_Config_EnableSafeZones_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling performance safe zones");
 ClearTag(_Caster,(TAG)EMLUTE_CONFIG_SAFEZONES_OFF_89f917c6-350e-4f43-81bd-f192cf1ae18c);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+ObjectTimerLaunch(_Caster,"SetSafeZoneTimer_EmbersLute",600);
+
+IF
+ObjectTimerFinished((CHARACTER)_Player,"SetSafeZoneTimer_EmbersLute")
+THEN
+PROC_SetSafeZoneStatus_EmbersLute(_Player);
 
 IF
 UsingSpell((CHARACTER)_Caster,"Shout_Config_CopyPreferences_Emlute",_,_,_)

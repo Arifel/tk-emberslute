@@ -1153,7 +1153,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75cfb451g1e29ga3f5g0903ge68095ea4134" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
         <field name="Name" type="NameTableFieldDefinition" value="ConfigManager_Cont_Emlute" />
@@ -1164,7 +1164,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressMusicVFX_Emlute" />
@@ -1182,7 +1182,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3aee1889-b6bc-4f9b-8d87-562f9e90b57b" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSprites_All_Emlute" />
@@ -1196,7 +1196,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="03c011fa-69c2-47e3-ae9e-26c20e787f16" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSprites_Vocal_Emlute" />
@@ -1210,7 +1210,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3b04c794-1dec-4b19-9b15-544a31e29bda" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_TieflingBard_Emlute" />
@@ -1223,7 +1223,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="86961017-3d62-4eb0-b887-edbb67fc2dd9" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_Cambions_Emlute" />
@@ -1235,7 +1235,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b11ce87c-4955-4995-bfe4-029b0b74e4c1" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_WaveServant_Emlute" />
@@ -1247,7 +1247,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc8fcfb4-63d6-4fde-96db-192aae8abe12" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSummon_Harpy_Emlute" />
@@ -1258,7 +1258,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SUMMON_HARPY_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c1558e56-3fa4-4ffd-8623-038ec49735b5" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressShowmanship_Emlute" />
@@ -1269,7 +1269,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="95d56ba0-bb22-4f16-84a3-b8e1d25d5219" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressEasyRewardMode_Emlute" />
@@ -1281,19 +1281,19 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_EASYREWARDS_ON') and not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF');" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8cf73680-c35a-4441-8191-f8373a0c7edd" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_SuppressSafeZones_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_HeroesFeast" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Safezones_Disable" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha2b4e735gf16dgd48fg4f0eg2eb4a0966c54" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30eda552g33ecg79afgaa8bgc3a92932cf5d" version="1" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcf8f8883g01c2g843cgf5eag0e85b97cdb5b" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SAFEZONES_OFF');" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SAFEZONES_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b8154e5d-0e45-42b5-b4b8-aa410d0ce99d" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableMusicVFX_Emlute" />
@@ -1305,7 +1305,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_MUSIC_VFX_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ff192099-2075-4e79-9f83-b51292137c1e" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSprites_All_Emlute" />
@@ -1319,7 +1319,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="398492df-81fb-4e64-af73-0ee0e2fc9a78" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSprites_Vocal_Emlute" />
@@ -1333,7 +1333,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ca18449-568d-429a-82e4-00e2e9bc0c17" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_TieflingBard_Emlute" />
@@ -1346,7 +1346,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="5ad1b132-bd96-4823-9a86-10ed64ed1523" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_Cambions_Emlute" />
@@ -1358,7 +1358,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="126cc254-203f-4fb5-9eee-82a71a3324df" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_WaveServant_Emlute" />
@@ -1370,7 +1370,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1322eb70-4b9b-4e7a-b742-9b784eb35c3a" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSummon_Harpy_Emlute" />
@@ -1381,7 +1381,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SUMMON_HARPY_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="de8e67af-a3c2-4906-be40-a99a397c0f91" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableShowmanship_Emlute" />
@@ -1392,7 +1392,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bc5bb7e0-fbb0-4ff3-91c5-2e484758ba96" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableEasyRewardMode_Emlute" />
@@ -1400,22 +1400,22 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_EasyRewards_Enable" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a773dc2gca0agfb0fg5e52g26452f6236a7" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h97e06f5ege329g6532g4c25g843d4b707680" version="1" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcc55a20ag5b9eg2d12g9729g30590771325b" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hcc55a20ag5b9eg2d12g9729g30590771325b" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_EASYREWARDS_ON') and not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF');" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c26cec82-49ef-430a-a702-f7aecbf12b95" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSafeZzones_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_HeroesFeast" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Safezones_Enable" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h897dd12ag02c6gbcbcg5d90g512b38048b46" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2726bdcbg6fd1gdf2dge742ga19f790f4762" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not Tagged('EMLUTE_CONFIG_SAFEZONES_OFF');" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Tagged('EMLUTE_CONFIG_SAFEZONES_OFF');" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16436c82-2d69-4aec-b3b0-201959e85a8e" />
         <field name="Name" type="NameTableFieldDefinition" value="Config_CopyPreferences_Emlute" />
@@ -1427,7 +1427,7 @@
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF17173B" is_substat="false">
+    <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2d606461-ce5a-402e-b635-5b84224e37b8" />
         <field name="Name" type="NameTableFieldDefinition" value="CleanUp_Emlute" />

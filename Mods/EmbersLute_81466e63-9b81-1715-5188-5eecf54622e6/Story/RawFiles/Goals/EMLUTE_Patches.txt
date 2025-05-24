@@ -403,20 +403,6 @@ NOT DB_SpecialPerformance_SafeZones_EmbersLute(_Trigger);
 PROC
 PROC_ResetSpecialPerformanceFacts_EmbersLute()
 AND
-DB_SpecialPerformance_ExcludeZones_EmbersLute(_Tag,_Trigger)
-THEN
-NOT DB_SpecialPerformance_ExcludeZones_EmbersLute(_Tag,_Trigger);
-
-PROC
-PROC_ResetSpecialPerformanceFacts_EmbersLute()
-AND
-DB_SpecialPerformance_TransitionZones_EmbersLute(_Trigger)
-THEN
-NOT DB_SpecialPerformance_TransitionZones_EmbersLute(_Trigger);
-
-PROC
-PROC_ResetSpecialPerformanceFacts_EmbersLute()
-AND
 DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
 THEN
 NOT DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration);
@@ -456,11 +442,6 @@ PROC
 PROC_RecreateSpecialPerformanceFacts_EmbersLute()
 THEN
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
-DB_SpecialPerformance_TransitionZones_EmbersLute((TRIGGER)S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211);
-DB_SpecialPerformance_TransitionZones_EmbersLute((TRIGGER)S_LOW_Elfsong_Rooftop_AlfiraPerformingArea_5dc4f36a-c1fc-4f97-8231-ca0fd7c46e1f);
-DB_SpecialPerformance_ExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_HARPY_c7b8f391-bedf-43e9-bc11-c03d06a3ed9e,(TRIGGER)S_DEN_RangerDen_SUB_50062397-bf9c-4765-9cbc-e40b5148f211);
-DB_SpecialPerformance_ExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_46f86873-8b05-49b1-a0b8-d140000cdff2,(TRIGGER)SE_CTY_WaterQueensHouse_Music_000_32ce0f7a-f752-4197-a51c-e6d701b02e07);
-DB_SpecialPerformance_ExcludeZones_EmbersLute((TAG)EMLUTE_PERFORM_ZONE_EXCLUDE_FUNERALHYMN_46f86873-8b05-49b1-a0b8-d140000cdff2,(TRIGGER)MusicVolumeTrigger_CTY_WQH_Funeral_e157dd42-1802-4333-945a-e27e869d04d6);
 DB_SpecialPerformance_SafeZones_EmbersLute((TRIGGER)S_LOW_Elfsong_Rooftop_AlfiraPerformingArea_5dc4f36a-c1fc-4f97-8231-ca0fd7c46e1f);DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",130500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",195600);

@@ -226,6 +226,16 @@
         <field name="ArmorType" type="EnumerationTableFieldDefinition" value="StuddedLeather" enumeration_type_name="ArmorType" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FFE39C19" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91cbf427-97a5-4099-8820-7417ec1e108b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SWIFT_WINGS_RING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d026524e-2c0f-45cd-b91c-c89d9321f64c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="b7d913e6-e77c-4779-a25e-a4d74f72ec96" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fc2eb1a1-4840-48b2-adba-9c28bfa63528" />

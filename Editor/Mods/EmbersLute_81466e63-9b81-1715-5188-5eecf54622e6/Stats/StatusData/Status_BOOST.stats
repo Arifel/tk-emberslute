@@ -1038,7 +1038,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_DismissSummon" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="30" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(HasPassive('Emlute_Dismissable',context.Target) and SummonOwner(context.Target,context.Source)):ApplyStatus(EMLUTE_DISMISS_SPIRIT,100,1)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF191970" is_substat="false">
@@ -1714,6 +1714,21 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_CuttingWords" />
         <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, 14)" />
         <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d4, Psychic,Magical);ApplyStatus(EMLUTE_REWARD_MOCK_CLUMSY_VFX, 100, 0)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="560f37c7-1e35-47e2-a1e1-78bc93e9896d" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SWIFT_WINDS_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="91e29808-1422-4c31-afbd-517a37957d26" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe52a04dg28d2g9df8g11f8gb1bc59754bc9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27965174g4d7fg7cc5g81a4g240022a5a9f9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="SoundStart" type="StringTableFieldDefinition" value="Spell_Status_CounterCharmAura_Enter" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="15" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Party()):ApplyStatus(LONGSTRIDER,100,-1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

@@ -27,6 +27,7 @@ DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LutesToggle");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_VocalsToggle");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_SPRITES_a0c53732-1d76-4222-b93c-35ea3bdcda8d,"Emlute_DancingSprites");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_DARKSPRITES_2c23d854-9dc3-4b11-b044-e8bc5b54af0c,"Emlute_DarkSprites");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_HAUNTED_4fa397b1-21b1-458d-acd3-1391e79fa23a,"Emlute_Violin_Undead_Spirits");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseWingsVFX");
 DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseHaloVFX");
@@ -45,6 +46,7 @@ DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_DrumsToggle",2130);
 DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_FlutesToggle",2140);
 DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LutesToggle",2150);
 DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_DarkSprites",2200);
 DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
 DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_Spirits",2200);
 DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_FallenSpirits",2200);

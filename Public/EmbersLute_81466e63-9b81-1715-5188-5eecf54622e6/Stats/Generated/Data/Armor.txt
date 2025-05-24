@@ -101,6 +101,11 @@ using "EMBERS_LUTE_WHISTLING"
 data "RootTemplate" "f8bbaf8f-9f92-41ec-94b4-d53bcb7afec0"
 data "ComboCategory" "DyableArmor"
 
+new entry "EMBERS_LUTE_MUSICALSPRITES_LYSANDRA"
+type "Armor"
+using "EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_A"
+data "PassivesOnEquip" "Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Lyre;"
+
 new entry "EMBERS_LUTE_PANTS_OF_PERFORMANCE"
 type "Armor"
 using "ARM_Underwear_Humans"

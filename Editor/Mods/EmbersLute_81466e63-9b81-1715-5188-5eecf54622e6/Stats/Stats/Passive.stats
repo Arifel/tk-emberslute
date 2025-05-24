@@ -70,6 +70,15 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(EMLUTE_DAZZLINGDANCE_1,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF4A104A" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a58d31cb-6be8-4527-906f-1ae501b6a6ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_DarkSprites" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a7c742ca-7f31-4288-9039-ca6c844eb9a5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd8f34a38gf27cg3552g82f6gb871c8f79335" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_PERFORM_THEPOWER')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_01,100,-1);IF(HasStatus('EMLUTE_PERFORM_BARDDANCE')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_02,100,-1);IF(HasStatus('EMLUTE_PERFORM_STARGAZING')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_03,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_1')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_04,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_2')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_05,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_3')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_06,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF12375C" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="bce0ae60-cba4-42d8-8602-5ab20eee8c13" />

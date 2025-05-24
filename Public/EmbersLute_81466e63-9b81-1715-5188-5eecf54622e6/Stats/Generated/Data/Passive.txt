@@ -52,6 +52,12 @@ data "StatsFunctorContext" "OnStatusApplied"
 data "Conditions" "StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE');"
 data "StatsFunctors" "IF(not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(EMLUTE_DAZZLINGDANCE_1,100,-1)"
 
+new entry "Emlute_DarkSprites"
+type "PassiveData"
+using "Emlute_DancingSprites"
+data "DisplayName" "hd8f34a38gf27cg3552g82f6gb871c8f79335;1"
+data "StatsFunctors" "IF(HasStatus('EMLUTE_PERFORM_THEPOWER')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_01,100,-1);IF(HasStatus('EMLUTE_PERFORM_BARDDANCE')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_02,100,-1);IF(HasStatus('EMLUTE_PERFORM_STARGAZING')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_03,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_1')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_04,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_2')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_05,100,-1);IF(HasStatus('EMLUTE_PERFORM_DOS2_3')):ApplyStatus(SELF,EMLUTE_DARKMUSICAURA_VFX_06,100,-1)"
+
 new entry "Emlute_ManagementAura"
 type "PassiveData"
 data "DisplayName" "h48a1b931g2cd3g7211gc881g4077e6a6441e;1"

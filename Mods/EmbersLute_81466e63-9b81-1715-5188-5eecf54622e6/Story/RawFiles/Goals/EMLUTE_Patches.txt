@@ -514,6 +514,73 @@ DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheWeepingDawn_f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN_652c61e4-a7db-47fe-9bab-f242c674fbca);
 //END_REGION
 
+// Reset the instrument facts
+//REGION
+PROC
+PROC_ResetInstrumentFacts_EmbersLute()
+AND
+DB_TagToPassiveMap_EmbersLute(_Tag,_Passive)
+THEN
+NOT DB_TagToPassiveMap_EmbersLute(_Tag,_Passive);
+
+PROC
+PROC_ResetInstrumentFacts_EmbersLute()
+AND
+DB_PassiveTimer_EmbersLute(_Type,_Passive,_Duration)
+THEN
+NOT DB_PassiveTimer_EmbersLute(_Type,_Passive,_Duration);
+//END_REGION
+
+// Recreate the instrument facts
+//REGION
+PROC
+PROC_RecreateInstrumentFacts_EmbersLute()
+THEN
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_ViolinsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_LyresToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_DrumsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_FlutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_LutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_VocalsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Vocal");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_TieflingBard");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_ViolinsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LyresToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_DrumsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_FlutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_VocalsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_SPRITES_a0c53732-1d76-4222-b93c-35ea3bdcda8d,"Emlute_DancingSprites");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_DARKSPRITES_2c23d854-9dc3-4b11-b044-e8bc5b54af0c,"Emlute_DarkSprites");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_HAUNTED_4fa397b1-21b1-458d-acd3-1391e79fa23a,"Emlute_Violin_Undead_Spirits");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseWingsVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseHaloVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_Spirits");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseWingsVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseHaloVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_FallenSpirits");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_WHISTLE_MODE_dfc2ff38-3082-41d0-bf6b-a57f86a705c1,"Emlute_SummonOnPerform_TieflingBard");
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_VocalsToggle",2100);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_ViolinsToggle",2110);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LyresToggle",2120);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_DrumsToggle",2130);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_FlutesToggle",2140);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LutesToggle",2150);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_DarkSprites",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_Spirits",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_FallenSpirits",2200);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform",2300);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Vocal",2310);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_TieflingBard",2320);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Cambions",2330);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_WaveServants",2340);
+DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
+DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
+//END_REGION
+
 // Version 2 mod patches
 //REGION
 // Summon repositioning was added in v2.0.2.21
@@ -658,6 +725,17 @@ IF
 TimerFinished("RecreateSpecialPerformance_EmbersLute")
 THEN
 PROC_RecreateSpecialPerformanceFacts_EmbersLute();
+
+IF
+SavegameLoaded()
+THEN
+PROC_ResetInstrumentFacts_EmbersLute();
+TimerLaunch("RecreateInstrument_EmbersLute",1000);
+
+IF
+TimerFinished("RecreateInstrument_EmbersLute")
+THEN
+PROC_RecreateInstrumentFacts_EmbersLute();
 
 IF
 SavegameLoaded()

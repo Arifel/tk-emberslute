@@ -14575,8 +14575,8 @@
                       <keyframes>
                         <keyframe time="0" value="0" />
                         <keyframe time="0.01421801" value="0.25" />
-                        <keyframe time="0.5293667" value="0.9483871" />
-                        <keyframe time="1" value="0.9483871" />
+                        <keyframe time="0.5253984" value="0.9806452" />
+                        <keyframe time="1" value="0.9806452" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>

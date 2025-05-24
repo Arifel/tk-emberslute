@@ -955,10 +955,11 @@ PROC_ResetCooldown_EmbersLute();
 
 // Do a flush of everything on game load as a failsafe
 IF
-LevelGameplayStarted(_,_)
+SavegameLoaded()
 THEN
 PROC_ResetCooldown_EmbersLute();
 PROC_ClearPerformingNPCBards();
+PROC_SetupUniqueRewardsRemaining_EmbersLute();
 
 PROC
 PROC_ClearPerformingNPCBards()
@@ -1006,6 +1007,31 @@ AND
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Index)
 THEN
 NOT DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Index);
+
+PROC
+PROC_SetupUniqueRewardsRemaining_EmbersLute()
+AND
+DB_PerformanceRewardUnique_EmbersLute(_Index,_,_,_)
+THEN
+NOT DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index);
+
+PROC
+PROC_SetupUniqueRewardsRemaining_EmbersLute()
+AND
+DB_PerformanceRewardUnique_EmbersLute(_Index,_,_,_)
+AND
+NOT QRY_RewardIndexGiven_EmbersLute(_Index)
+AND
+QRY_RewardConditionIsMet_EmbersLute(_Index)
+THEN
+DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index);
+
+QRY
+QRY_RewardIndexGiven_EmbersLute((INTEGER)_Index)
+AND
+DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+THEN
+DB_NOOP(1);
 
 PROC
 PROC_ClearCampAnims_NPC_EmbersLute((CHARACTER)_NPC)
@@ -1064,32 +1090,6 @@ PROC_ApplyPerformanceBuff_EmbersLute(_Performer,_Status);
 ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",500);
 
 PROC
-PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
-AND
-DB_Players(_Performer)
-AND
-IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
-AND
-DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
-AND
-QRY_CalcUniquePerformanceRewardBase_EmbersLute(_Performer,_Status,_NPCCount)
-AND
-DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base)
-AND
-QRY_SelectUniqueReward_EmbersLute(_Performer)
-AND
-DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
-THEN
-PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
-
-IF
-ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
-AND
-DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
-THEN
-NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
-
-PROC
 PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_GREAT")
 AND
 GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
@@ -1110,6 +1110,32 @@ GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
 THEN
 UseSpell(_Instrument,"Shout_PerformanceExhaustion_Emlute",_Performer);
 
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+THEN
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
+
+PROC
+PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
+AND
+DB_Players(_Performer)
+AND
+IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+AND
+QRY_CalcUniquePerformanceRewardBase_EmbersLute(_Performer,_Status,_NPCCount)
+AND
+DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base)
+AND
+QRY_SelectUniqueReward_EmbersLute(_Performer)
+AND
+DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
+THEN
+PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
+
 QRY
 QRY_CalcUniquePerformanceRewardBase_EmbersLute((CHARACTER)_Performer,(STRING)_Status,(INTEGER)_NPCCount)
 AND
@@ -1122,15 +1148,26 @@ DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base);
 QRY
 QRY_SelectUniqueReward_EmbersLute((CHARACTER)_Performer)
 AND
-Random(18,_RND)
+QRY_GetRandom("DB_PerformanceRewardUnique_Remaining_EmbersLute",1,"DB_PerformanceRewardUnique_Selected_EmbersLute")
+//AND
+//Random(18,_RND)
+//AND
+//IntegerSum(1,_RND,_RndInc)
+//AND
+//NOT DB_PerformanceRewardUnique_Given_EmbersLute(_RndInc)
 AND
-IntegerSum(1,_RND,_RndInc)
-AND
-NOT DB_PerformanceRewardUnique_Given_EmbersLute(_RndInc)
-AND
-QRY_RewardConditionIsMet_EmbersLute(_RndInc)
+DB_PerformanceRewardUnique_Selected_EmbersLute((INTEGER)_Index)
+//AND
+//QRY_RewardConditionIsMet_EmbersLute(_Index)
 THEN
-DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_RndInc);
+DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Index);
+NOT DB_PerformanceRewardUnique_Selected_EmbersLute(_Index);
+
+// Shhh story editor, it's ok
+IF
+DB_PerformanceRewardUnique_Remaining_EmbersLute(_)
+THEN
+DB_NOOP(1);
 
 QRY
 QRY_RewardConditionIsMet_EmbersLute((INTEGER)_SelectedReward)
@@ -1181,6 +1218,7 @@ _Roll < _Base
 THEN
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
+NOT DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index);
 ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
 
 PROC
@@ -1196,6 +1234,7 @@ DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_DC)
 THEN
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
+NOT DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index);
 ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
 
 IF

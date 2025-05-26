@@ -637,7 +637,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source) and WieldingFinesseWeapon();" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source) and WieldingFinesseWeaponInSpecificHand(context.Source, false);" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemove;OnStatusRemoved;OnTurn;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Emlute_Parry);" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_PARRY,100,-1)" />

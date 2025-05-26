@@ -952,6 +952,15 @@ IF
 EnteredCombat((CHARACTER)_Performer,_)
 AND
 DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+THEN
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
+
+IF
+EnteredCombat((CHARACTER)_Performer,_)
+AND
+DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
 THEN
 PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
 PROC_CRIME_StopForAllCriminals(_BardJoinsCrimeID);

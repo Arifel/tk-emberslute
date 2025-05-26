@@ -642,6 +642,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Emlute_Parry);" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_REWARD_PARRY,100,-1)" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_REWARD_PARRY)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;Highlighted;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -684,9 +685,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0bfe75ac-ac52-4b8d-bcbf-52e50988715f" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSpritesSpellContainer" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute)" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc3f75e90g834agd480g377egf96e108dbc4d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_PerformWithSprites" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="63f5bf8f-ac08-4148-80b0-b3a87eff0a9f" />
       </fields>
     </stat_object>
     <stat_object color="#FF38306B" is_substat="false">

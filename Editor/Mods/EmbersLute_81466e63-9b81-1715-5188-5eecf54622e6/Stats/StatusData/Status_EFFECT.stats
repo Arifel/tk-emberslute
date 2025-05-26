@@ -155,7 +155,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38376d3a-b5ed-4dd7-a9be-ad3f3c61c8c8" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_06" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="ed9f7e85-8037-4977-b396-c840db3ef67a" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7118c724-b1fd-46c2-af44-d8759179993f" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9097cd53-551e-470e-a5f4-2938c9510bc0" />
       </fields>
     </stat_object>

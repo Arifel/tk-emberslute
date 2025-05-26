@@ -596,8 +596,8 @@
   <content contentuid="h955f366ag56b4g2a31g69fcgb93f562950ec" version="2">Dance of the Sprites</content>
   <content contentuid="h4fc48f5bg36edg3bf1gb1b8g1a4832d837a0" version="1">Sprite Swarm 1</content>
   <content contentuid="h606dc753ga30agcc5fg926dg6e31c28ef900" version="1">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed"&gt;Movement speed&lt;/LSTag&gt; is reduced by 40%, and possibly takes [1] every turn.</content>
-  <content contentuid="hd72c9c45g62fbg752dg1900g6d5d51e02f08" version="1">Sprites Protection</content>
-  <content contentuid="h878de251g8dc8gce9dg7b9cg97ffaca0e170" version="2">Musical sprites are maintaining a sanctuary over the lead musical performer, for up to [1] turns. While playing music in-combat, the perfomer cannot be targetted directly, though they may still take area damage.</content>
+  <content contentuid="hd72c9c45g62fbg752dg1900g6d5d51e02f08" version="2">Sprites Focus</content>
+  <content contentuid="h878de251g8dc8gce9dg7b9cg97ffaca0e170" version="3">While &lt;LSTag Tooltip="Concentration"&gt;concentrating&lt;/LSTag&gt; on a musical performance, sprites add your&lt;LSTag Tooltip="SpellcastingAbilityModifier"&gt;Spellcasting Ability Modifier&lt;/LSTag&gt; to your &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.</content>
   <content contentuid="h16f3bc14g3e91g9e78gf827g95d6a4a3ebba" version="1">Sprite Swarm 2</content>
   <content contentuid="h0b9669eage24dgf28fg1cc9ge1ed6f095f12" version="3">Harassed by a distracting swarm of musical sprites. &lt;LSTag Tooltip="MovementSpeed&gt;Movement speed&lt;/LSTag&gt; is halved, and must make a &lt;LSTag Tooltip="Abilities"&gt;Constitution&lt;/LSTag&gt; &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throw&lt;/LSTag&gt; else &lt;LSTag Tooltip="Concentration"&gt;Concentration&lt;/LSTag&gt; is broken.</content>
   <content contentuid="h52cc55d6g1173g70a6g8cf6g31cf34c9d611" version="1">Sprite Swarm 3</content>

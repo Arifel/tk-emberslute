@@ -4,6 +4,9 @@ INITSECTION
 // Collecting anims like a crazy magpie, behold my collection
 // I think I'd rather do this with Anubis, but that doesn't merge, so....
 
+DB_BardReactions_CrimeTypes_Emlute("MusicalPerformance_Good_Emlute");
+DB_BardReactions_CrimeTypes_Emlute("MusicalPerformance_Good_BardNPC_Emlute");
+
 // All other tags will leave to the vanilla reactions to manage
 DB_BardReactions_SupportedTags_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
 DB_BardReactions_ExcludeTags_Emlute((TAG)KID_ee978587-6c68-4186-9bfc-3b3cc719a835);
@@ -943,8 +946,26 @@ THEN
 RequestDelete(_Item);
 //END_REGION
 
-// Mop-up and helpers
+// Performance ended, mop-up and helpers
 //REGION
+IF
+EnteredCombat((CHARACTER)_Performer,_)
+AND
+DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
+THEN
+PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
+PROC_CRIME_StopForAllCriminals(_BardJoinsCrimeID);
+NOT DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID);
+
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE",_,_)
+AND
+DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
+THEN
+PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
+PROC_CRIME_StopForAllCriminals(_BardJoinsCrimeID);
+NOT DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID);
+
 IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",_,_)
 AND
@@ -960,6 +981,7 @@ THEN
 PROC_ResetCooldown_EmbersLute();
 PROC_ClearPerformingNPCBards();
 PROC_SetupUniqueRewardsRemaining_EmbersLute();
+PROC_FixStuckCrimes_EmbersLute();
 
 PROC
 PROC_ClearPerformingNPCBards()
@@ -978,6 +1000,17 @@ StopAnimation(_NPC,0);
 ObjectTimerCancel(_NPC,"DoFlourishOnCrowdNPC_EmbersLute");
 ObjectTimerCancel(_NPC,"BardReaction_Busking_LoopOnceTimer_Emlute");
 NOT DB_BardReactions_ChargedAnimationIsPlaying_Emlute(_NPC);
+
+PROC
+PROC_FixStuckCrimes_EmbersLute()
+AND
+DB_InternScene_ContinuousDisturbance(_CrimeID)
+AND
+CrimeGetType(_CrimeID,_CrimeType)
+AND
+DB_BardReactions_CrimeTypes_Emlute(_CrimeType)
+THEN
+PROC_CRIME_StopForAllCriminals(_CrimeID);
 
 PROC
 PROC_ResetCooldown_EmbersLute()
@@ -1283,6 +1316,7 @@ DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE",_DisturbanceName,"O
 AND
 CrimeGetNewID(_CrimeID)
 THEN
+DB_CRIME_BardNPCPerforming_Emlute(_Performer,_ID,_CrimeID);
 PROC_CharacterRegisterCrime(_Performer,"MusicalPerformance_Good_BardNPC_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,_CrimeID);
 
 IF
@@ -1302,11 +1336,6 @@ AND
 NOT DB_CRIME_BardNPCPerformingWithPlayers(_Bard,_,_CrimeID)
 THEN
 CrimeConfrontationDone(_CrimeID,_Bard);
-
-IF
-StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE",_,_)
-THEN
-PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
 
 PROC
 PROC_BardReactions_BardJoins_EmbersLute((CHARACTER)_Bard,(CHARACTER)_Criminal,(INTEGER)_CrimeID)

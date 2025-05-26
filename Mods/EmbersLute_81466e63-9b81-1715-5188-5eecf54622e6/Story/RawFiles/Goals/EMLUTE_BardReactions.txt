@@ -1152,19 +1152,16 @@ GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
 THEN
 UseSpell(_Instrument,"Shout_PerformanceExhaustion_Emlute",_Performer);
 
-IF
-ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
-AND
-DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
-THEN
-NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
-
 PROC
 PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
 AND
 DB_Players(_Performer)
 AND
 IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
+AND
+GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
+AND
+_Charges >= 3
 AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
 AND
@@ -1177,6 +1174,13 @@ AND
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
 THEN
 PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+THEN
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
 
 QRY
 QRY_CalcUniquePerformanceRewardBase_EmbersLute((CHARACTER)_Performer,(STRING)_Status,(INTEGER)_NPCCount)

@@ -88,9 +88,8 @@
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="SkillCheck(Skill.Performance,math.max(10,GetStatusDuration('EMLUTE_PERFORM_POSITIVE_CHARGE')))" />
-        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE_CHARGE,100,1)" />
-        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="SetStatusDuration(SELF,EMLUTE_PERFORM_POSITIVE_CHARGE,-1,Add)" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_PERFORM_POSITIVE_CHARGE')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_CHARGE,100,Skill.Performance)" />
+        <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="IF(Emlute_IsPerforming()):ApplyStatus(EMLUTE_PERFORM_POSITIVE_CHARGE,100,1);" />
+        <field name="OnApplyFail" type="FunctorsTableFieldDefinition" value="SetStatusDuration(SELF,EMLUTE_PERFORM_POSITIVE_CHARGE,-1,Add);" />
       </fields>
     </stat_object>
     <stat_object color="#FF006400" is_substat="false">
@@ -1686,6 +1685,17 @@
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e542ecff-d939-40f3-b575-e3fccd00e3b8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_PARRY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5da3bdf4-0fd8-4760-bcc0-c1e045114ecf" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageReduction(All, Flat, CharismaModifier+DexterityModifier);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ReactionActionPoint,1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8df55ebd-4964-4bbe-88ce-8b241a49ae38" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_CRITICAL_MOCKERY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="284b6378-f083-4004-868f-7c9ab4a3aff3" />
@@ -1693,16 +1703,6 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3f1f8d0ag0fcag73e4g2267gf98590f57525" version="1" />
         <field name="OnApplyRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Wisdom, 14)" />
         <field name="OnApplySuccess" type="FunctorsTableFieldDefinition" value="DealDamage(1d8, Psychic,Magical)" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FFFFA500" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e542ecff-d939-40f3-b575-e3fccd00e3b8" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_REWARD_PARRY" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="5da3bdf4-0fd8-4760-bcc0-c1e045114ecf" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeAttack()):DamageReduction(All, Flat, CharismaModifier+DexterityModifier);" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(RemoveCause(StatusRemoveCause.Condition)):UseActionResource(ReactionActionPoint,1)" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -1719,17 +1719,44 @@
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="630a0b93-aa4e-46e0-9b34-68b1c7f7debc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SWIFT_WINDS_DURATION_TECHNICAL" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf040dc80gb90egc971g8fd0g96a4983b941c" version="4" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_SWIFT_WINDS_DURATION_TECHNICAL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="IF(StatusDurationMoreThan(context.Source,'EMLUTE_PERFORM_POSITIVE_CHARGE',2)):ApplyStatus(EMLUTE_SWIFT_WINDS_AURA_PROC,100,1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="560f37c7-1e35-47e2-a1e1-78bc93e9896d" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SWIFT_WINDS_AURA" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="91e29808-1422-4c31-afbd-517a37957d26" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe52a04dg28d2g9df8g11f8gb1bc59754bc9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h27965174g4d7fg7cc5g81a4g240022a5a9f9" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SWIFT_WINDS_AURA_PROC" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="15" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Party() and not Tagged('EMLUTE_TINY_CHARM')):ApplyStatus(EMLUTE_SWIFT_WINDS,100,-1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0d1deebg2423g176fg5ef5g22d40a67c98b" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_SWIFT_WINDS_AURA_PROC" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EMLUTE_SWIFT_WINDS,100,1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_SWIFT_WINDS_DURATION_TECHNICAL)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ccb54be6-d6cc-417a-a283-118ced53c0cd" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SWIFT_WINDS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h164d1d07g88b6gb70bgc37bgc65cb2b58d76" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Longstrider" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="SoundStart" type="StringTableFieldDefinition" value="Spell_Status_CounterCharmAura_Enter" />
-        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="15" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Character() and Party()):ApplyStatus(LONGSTRIDER,100,-1)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_SWIFT_WINDS" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('LONGSTRIDER')):ApplyStatus(LONGSTRIDER,100,-1)" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

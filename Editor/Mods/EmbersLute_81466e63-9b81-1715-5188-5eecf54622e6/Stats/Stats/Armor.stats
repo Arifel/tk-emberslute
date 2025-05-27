@@ -142,7 +142,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="faa99fb1-930b-4cf1-bb6c-c64a38a92bc7" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LYSANDRA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fa511bfa-913f-4467-b3b0-06c6f2b3148f" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Lyre;" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Lyre;" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ea5ab27e-06ae-415f-8f0a-eb23ce649c58" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Instrument_Generic_FX_Emlute);UnlockSpell(Target_MAG_Shadow_FogCloud);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">

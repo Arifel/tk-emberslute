@@ -881,8 +881,8 @@
   <content contentuid="hc9662891gf271g53cdgfb99g28a342abe31d" version="1">Swift Winds</content>
   <content contentuid="h7d1e4105ga48ag6998g5751gec168adc35eb" version="1">Boosting your party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
   <content contentuid="h72a2f8f4g25a3gb752gb59bgcb1ad6f5c000" version="1">Swift Winds</content>
-  <content contentuid="h3a9e2110g5737gc7edg7f2fgad4093131a7e" version="2">Once per day, a musical performance with at least [1] &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_POSITIVE_CHARGE"&gt;Showmanship&lt;/LSTag&gt; charges will buff your party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
-  <content contentuid="hfe52a04dg28d2g9df8g11f8gb1bc59754bc9" version="1">Swift Winds</content>
+  <content contentuid="h3a9e2110g5737gc7edg7f2fgad4093131a7e" version="3">Once per short rest, a musical performance with at least [1] &lt;LSTag Type="Status" Tooltip="EMLUTE_PERFORM_POSITIVE_CHARGE"&gt;Showmanship&lt;/LSTag&gt; charges will buff your party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
+  <content contentuid="hfe52a04dg28d2g9df8g11f8gb1bc59754bc9" version="2">Swift Winds Proc</content>
   <content contentuid="h27965174g4d7fg7cc5g81a4g240022a5a9f9" version="1">Boosting the party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
   <content contentuid="hfb3f70b0gdea4g58abge19eg29a3de0649c3" version="2">Read to learn how to perform The Power on one of Ember's instruments.</content>
   <content contentuid="h3bdd17dag6611g457cg2bf4g28ebedda834a" version="1">Read to learn how to perform the  Water Queen's Hymn on one of Ember's instruments.</content>
@@ -890,4 +890,8 @@
   <content contentuid="hb20e93c5gb24fg9899g00b6gd2e8fb2797c5" version="3">Lysandra Dusksong's Lute of Dark Moods</content>
   <content contentuid="h17133679g2ea2gc1d5g7ee8gecb02771528e" version="3">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
   <content contentuid="hd86de52dg645ag2fe6g3c71g6f28fc9d2d36" version="3">This lute once belonged to Lysandra Dusksong, a performer in the ensemble Vicious Rockery. She was known for her inclination toward the serious, and refusal to smile on stage. Lysandra was never shy in hiding her distaste for the group's pursuit of 'common' music with high crowd appeal.</content>
+  <content contentuid="h164d1d07g88b6gb70bgc37bgc65cb2b58d76" version="2">|Hidden| Swift Winds Apply</content>
+  <content contentuid="h0613e352g475dg5125gd8a4g391c25a4a7c6" version="1">Boosting the party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
+  <content contentuid="hf040dc80gb90egc971g8fd0g96a4983b941c" version="4">|Hidden| Swift Winds Tick</content>
+  <content contentuid="hb0d1deebg2423g176fg5ef5g22d40a67c98b" version="2">|Hidden| Swift Winds AOE</content>
 </contentList>

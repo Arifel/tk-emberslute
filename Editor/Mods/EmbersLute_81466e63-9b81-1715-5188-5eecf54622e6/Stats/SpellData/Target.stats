@@ -17,7 +17,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsAttack;IsMelee;IsHarmful;DisableBlood;DontAbortPerforming" enumeration_type_name="SpellFlagList" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#00FFFFFF" is_substat="false">
+    <stat_object color="#FF9400D3" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
         <field name="Name" type="NameTableFieldDefinition" value="Summon_Vicious_Rockery_Emlute" />
@@ -51,7 +51,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF9400D3" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8179aeed-1d34-49be-bc2f-5656b9dc3e7f" />
         <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Violin_Spirit_Emlute" />
@@ -62,7 +62,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc9266932g15ebgb66bg984eg52431a2179ee" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF9400D3" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="118d934e-1a5a-480c-9f6e-936f4296a7ad" />
         <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Drum_Spirit_Emlute" />
@@ -73,7 +73,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha5439e92g54c7gff63gc982gcf1bca4b619c" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF9400D3" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e9b1b0f9-fe96-47ea-ba2d-b0b4e973ed9e" />
         <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Flute_Spirit_Emlute" />
@@ -84,7 +84,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h32523697g8accgaa35gb14fgf63d2a4de264" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF9400D3" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0194a17f-cbe6-4dfc-acea-65583fe7b347" />
         <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Lyre_Spirit_Emlute" />
@@ -95,7 +95,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha84c6a77g7fb2geec7gde83g5388fe72d2ff" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF9400D3" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1c2d9b2b-578c-4b52-ae78-892a66668d57" />
         <field name="Name" type="NameTableFieldDefinition" value="Conjure_Gnome_Lute_Spirit_Emlute" />
@@ -106,7 +106,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdc9cb77agff7agfe87g5b17ge98ab3597578" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF8B0000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9ddb09d2-0da1-4478-af4e-dae298b01daa" />
         <field name="Name" type="NameTableFieldDefinition" value="Summon_Skelly_Band_Emlute" />
@@ -116,6 +116,16 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_RollingBones" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h37258c8fg2e65g88c0g94fbgc2c853a2ab9b" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6856cc8dgfb25gd941ga826g911c306ee0b1" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF2E8B57" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0f1c56ab-6965-41e9-9740-5c80788c2404" />
+        <field name="Name" type="NameTableFieldDefinition" value="Summon_Goblin_Dancers_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7dd9597e-fe45-4125-967e-3fc00d0c1ac7" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Summon(b404b4a8-f345-4565-9b69-6a0fecca43cf,UntilLongRest,,,'GoblinDancerStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);GROUND:Summon(92680a72-1346-4f25-b3c6-8ec4610ebb92,UntilLongRest,,,'GoblinDancerStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);GROUND:Summon(8828b7b7-4a70-426a-ae71-fa62100ec670,UntilLongRest,,,'GoblinDancerStack',,UNSUMMON_ABLE,EMLUTE_VICIOUS_ROCKERY_GNOME);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he8ddd9b9ga038g8ef3gf749g2aa055e451bd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5e8df649gf44eg9127g1515g252d84d3328c" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

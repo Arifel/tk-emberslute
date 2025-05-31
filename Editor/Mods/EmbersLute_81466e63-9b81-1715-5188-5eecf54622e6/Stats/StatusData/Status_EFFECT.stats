@@ -116,7 +116,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="b8d6cf1a-4abb-4bc3-9fb5-44c6a0536320" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_01" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="bd4c63aa-b751-4b29-aca1-c569b31f412c" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6a1b03d1-c08f-4270-876c-b57a18bb4eaa" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="8061dd8c-c8c4-47f0-b12d-ba391869e410" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -124,7 +124,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="04bc898e-4e49-40ac-994a-e203acb1b406" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_02" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="64a9b215-da6d-4bc4-a371-26d062a7a817" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a6814be1-8954-47d5-97ad-c89210f3c89d" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="5ae99b6b-ec5a-4d35-85be-d18bc8464bce" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -132,7 +132,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3c6ca724-bbaa-41e6-b0d2-71dd828c893a" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_03" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ed1249de-329f-409e-bc20-918be436f6d7" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c5017809-0087-43d3-aefc-e0d55e029849" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="591832c7-b430-4cdb-a640-459fa8ff9f9b" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -140,7 +140,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="87b18faa-48b9-4b74-aad6-5adf5f3698bb" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_04" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="180fe56c-6de1-4bca-ac0d-1f8c7298eb66" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="491df49b-4f78-4fc0-91c7-68013ce8af4e" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="66fd9fe2-8f7f-4587-b154-f653f7184e04" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -148,7 +148,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2d29123c-c00f-4b1e-9616-273cdabaded8" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_05" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="180fe56c-6de1-4bca-ac0d-1f8c7298eb66" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6fefc8f9-31bd-46d7-bfaf-1f834ecfa46a" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="e7863b04-6e6c-4b2b-a685-be850e346bf3" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -156,7 +156,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="38376d3a-b5ed-4dd7-a9be-ad3f3c61c8c8" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DARKMUSICAURA_VFX_06" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="7118c724-b1fd-46c2-af44-d8759179993f" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9097cd53-551e-470e-a5f4-2938c9510bc0" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="a5115b1e-bd39-4b48-a834-7c5ad34fdf2a" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">

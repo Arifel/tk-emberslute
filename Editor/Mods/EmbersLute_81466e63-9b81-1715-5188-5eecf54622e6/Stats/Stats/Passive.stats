@@ -541,6 +541,20 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99" />
       </fields>
     </stat_object>
+    <stat_object color="#FF2F4F4F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7ce42db6-79e9-4f81-8746-e65082051369" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Dancer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08fb41bcg956fgd013gc69aga263a6e6febe" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0ad39bb3g5995g7cb7g1b22g6291d748f1f2" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_DanceOfTheSprites" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="99" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Emlute_StatusIsPerform();" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_DANCING_SPIRIT,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF3A5D9E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6fd9a55f-3aa8-43d2-8e0a-2e7aa4672e0c" />

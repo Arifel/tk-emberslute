@@ -703,7 +703,7 @@
   <content contentuid="h3f1f8d0ag0fcag73e4g2267gf98590f57525" version="1">Adding insult to injury.</content>
   <content contentuid="h265cbcebg17ceg2133gb8ebgc5218cb4786b" version="1">Critical Mockery</content>
   <content contentuid="h05c571ddg2acag9ad1g834cg44e332bb409e" version="1">Adding insult to injury.</content>
-  <content contentuid="hdc7960beg461cg8401g3c00g76b103f066f0" version="5">Risky Underwear of Unknown Origin</content>
+  <content contentuid="hdc7960beg461cg8401g3c00g76b103f066f0" version="6">Risky Underwear of Unknown Origin</content>
   <content contentuid="h57e9b966gcf6agf5ebg6adag3356ec2ec041" version="3">Ring of Critical Mockery</content>
   <content contentuid="h6cae8babg2214ge16eg476fg87c5bf31e738" version="3">A ring that inspires the wearer to add insult to injury. It was left to you as a gift of appreciation for your musical performances.</content>
   <content contentuid="hd1827aedg3ac6g5f8ag650dgbe539c085de1" version="1">Gifting a Ring</content>
@@ -726,8 +726,8 @@
   <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="8">This rapier hums with an emboldening energy, ready to lash out mockingly at whomever misses its wielder in a melee or ranged attack..&lt;br&gt;&lt;br&gt;"Your music reminded me of an adventuring friend of mine from long ago. They'd have wanted you to have this, I think. Thank you."</content>
   <content contentuid="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1">Dexterous Jump</content>
   <content contentuid="hf03fd80cgd49bg2e66ge20egd6eadd5e1fba" version="1">Use your dexterity modifier to jump.</content>
-  <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="4">Grants immunity to fear, at the cost of your dignity.</content>
-  <content contentuid="h1db21cf5g1a39g54b2g3f26g8a261dd7622e" version="4">A "gift" from a fan, found carefully folded and tucked inside your backpack following a musical performance. It smells mostly like leather, and looks clean enough... but nevertheless, it would take levels of bravery found only in true heroes of Faerûn, to don underwear of unknown origins.</content>
+  <content contentuid="hc1fb6075g73cbgea71g0e61g951bdc0d7d75" version="5">Grants immunity to fear, at the cost of your dignity.</content>
+  <content contentuid="h1db21cf5g1a39g54b2g3f26g8a261dd7622e" version="5">A "gift" from a fan of your music, found carefully folded and tucked inside your backpack. It smells mostly like leather, and looks clean enough... but nevertheless, it would take levels of bravery found only in true heroes of Faerûn, to don underwear of unknown origins.</content>
   <content contentuid="hda18fb58g8d3egd3a5g2415g3a092f1b6aff" version="2">Legendary Performance: Bolstering Magic</content>
   <content contentuid="h704f39f6ge688g1b94g7dafg8759fabf4fcc" version="3">Musical sprites are blessing you with &lt;LSTag Type="Status" Tooltip="BOLSTERING_MAGIC"&gt;Bolstering Magic&lt;/LSTag&gt; until the end of the day.</content>
   <content contentuid="hf5beb527g6172g9908gdf4ag31c608d579ea" version="2">Great Performance: Rally</content>
@@ -894,4 +894,22 @@
   <content contentuid="h0613e352g475dg5125gd8a4g391c25a4a7c6" version="1">Boosting the party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
   <content contentuid="hf040dc80gb90egc971g8fd0g96a4983b941c" version="4">|Hidden| Swift Winds Tick</content>
   <content contentuid="hb0d1deebg2423g176fg5ef5g22d40a67c98b" version="2">|Hidden| Swift Winds AOE</content>
+  <content contentuid="h08571f13g1aeag903bge1a3ga4298e01754b" version="1">Quests relating to magical instruments and sheet music.</content>
+  <content contentuid="h8c39ffd2gf02eg0cf8gec9bg9c050321c3d5" version="1">Music of Faerûn</content>
+  <content contentuid="ha2e10d83gd7begadaag7b3dgbdfbc0d3ba33" version="1">Found and read the sheet music for The Weeping Dawn.</content>
+  <content contentuid="h95409132g29a7g42f3ge6d9gaecc158628ef" version="1">Found and read the sheet music for The Power.</content>
+  <content contentuid="h546e0140gcd2egc765gb9a6g933cb6369f45" version="1">Found and read the sheet music for The Endless Spring.</content>
+  <content contentuid="hb776566bgd019gb7d9gfcb5g3cf28a1d21bc" version="1">Find and read sheet music across Faerûn, and learn to perform the songs.</content>
+  <content contentuid="h65c5b3a7g27d2g1a59g4a03g06468d55025e" version="1">Ember's Echo of Euphony</content>
+  <content contentuid="hf9822220g1b4bg1e76g98d1ga4d46cccb2e1" version="1">Store the Showmanship charges earned from a musical performance, and unleash them in battle to heal or to harm.</content>
+  <content contentuid="h487b42dbg7704g1e8dgc805ge272b1894db6" version="1">Drawing a divine power from audiences, this necklace hums with the voices of crowds long dispersed. Each cheer, each chant, each clap lives on inside. Its wielder can let that power surge outward, choosing whether it uplifts the fallen—or drowns enemies in a chorus of chaos.</content>
+  <content contentuid="he8ddd9b9ga038g8ef3gf749g2aa055e451bd" version="1">The Grimjig Gang</content>
+  <content contentuid="h5e8df649gf44eg9127g1515g252d84d3328c" version="1">Call upon the dancing trio Snicker, Snap, and Slay. Guaranteed moves to get the goblin party started wherever you are.</content>
+  <content contentuid="hf63c362fg9452g75bdg6967g48b7c52b4c7c" version="1">Dancing</content>
+  <content contentuid="h68631918g2b7bg39dfga0beg74684f6b31ba" version="1">Dancing along to your performance.</content>
+  <content contentuid="h08fb41bcg956fgd013gc69aga263a6e6febe" version="1">Dancing Spirit</content>
+  <content contentuid="h0ad39bb3g5995g7cb7g1b22g6291d748f1f2" version="1">Start a performance on one of Ember's instruments; this character will dance along.</content>
+  <content contentuid="hd3664e8dgdd50ga6bbg489eg256baa5988ba" version="2">Grimjig Summoning Skivvies</content>
+  <content contentuid="hbc64598bg7cd0ga679g14beg5b76fc6ef2be" version="2">Summon &lt;i&gt;The Grimjig Gang&lt;/i&gt;.</content>
+  <content contentuid="h1094fba7g58a4g36d9g18f2g0cbd26870a2a" version="2">Inscribed with booyahg runes and faintly humming with off-beat rhythms, this underwear lets the wearer conjure The Grimjig Gang: a goblin trio who can entertain (or alarm) with their energetic dance steps. Just don’t ask where they go when the music ends.</content>
 </contentList>

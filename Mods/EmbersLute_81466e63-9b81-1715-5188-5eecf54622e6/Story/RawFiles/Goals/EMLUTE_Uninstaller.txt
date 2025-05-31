@@ -49,7 +49,7 @@ KBSECTION
 // The timer procs every half a second to check when all custom items have been unequipped.
 // Once nothing is found, it then deletes all the items with the custom mod tag.
 
-// n.b. this won't work on items scattered across the realm, or clear out vendors.
+// n.b. this won't work on items scattered across the realm
 // We'll recommend the player takes a long rest to clean up, before attempting to uninstall.
 
 IF
@@ -92,6 +92,7 @@ PROC_CleanUpCustom_EmbersLute();
 PROC_ClearPerformingNPCBards();
 PROC_CleanUpFailsafe_EmbersLute();
 PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
+PROC_ResetRewardTracker_EmbersLute();
 OpenMessageBox(_Player,"EMLUTE_CompletedUninstall");
 NOT DB_ItemCleanUp_EmbersLute(_Player);
 
@@ -297,6 +298,13 @@ AND
 DB_Templates_EmbersLute(_Template)
 THEN
 NOT DB_Was_InCombat(_GUID,_OtherGUID);
+
+PROC
+PROC_ResetRewardTracker_EmbersLute()
+AND
+DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+THEN
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 EXITSECTION
 
 ENDEXITSECTION

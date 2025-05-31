@@ -267,7 +267,7 @@ DB_BardReactionActionsOverrideByTag_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30
 
 // Bard unique rewards for busking mode
 //REGION
-DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,11,150);
+DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,9,150);
 DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,4,45);
 DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,3,30);
 DB_PerformanceRewardUnique_EmbersLute(4,(ITEMROOT)EmbersLute_PerformanceReward_CriticalMockeryRing_81663c50-4997-47a3-884e-404b85b49fcd,10,150);
@@ -284,7 +284,8 @@ DB_PerformanceRewardUnique_EmbersLute(14,(ITEMROOT)EMLUTE_MusicSheet_TheWeepingD
 DB_PerformanceRewardUnique_EmbersLute(15,(ITEMROOT)EMLUTE_MusicSheet_FuneralHymn_5a2b4919-8e68-43d5-b8b7-5f95ff80ce05,9,55);
 DB_PerformanceRewardUnique_EmbersLute(16,(ITEMROOT)EMLUTE_MusicSheet_EndlessSpring_07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31,7,75);
 DB_PerformanceRewardUnique_EmbersLute(17,(ITEMROOT)EmbersLute_PerformanceReward_SwiftWindsRing_b7d913e6-e77c-4779-a25e-a4d74f72ec96,4,35);
-DB_PerformanceRewardUnique_EmbersLute(18,(ITEMROOT)EmbersLute_MusicalSprites_Lysandra_ea5ab27e-06ae-415f-8f0a-eb23ce649c58,4,35);
+DB_PerformanceRewardUnique_EmbersLute(18,(ITEMROOT)EmbersLute_MusicalSprites_Lysandra_ea5ab27e-06ae-415f-8f0a-eb23ce649c58,5,55);
+DB_PerformanceRewardUnique_EmbersLute(19,(ITEMROOT)EmbersLute_PerformanceReward_GoblinUnderwear_c1960b8b-3f23-41e2-bff5-1351cd58132b,4,35);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(12,(FLAG)LOW_HouseOfHope_State_RaphaelIsDead_655d7d21-99a2-4138-9a7a-af1850932e75);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(13,(FLAG)DEN_HarpyMeal_State_HarpiesAllDead_89fd908d-98b0-47d2-8f29-0d2ec34fea0a);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(14,(FLAG)ORI_DarkUrge_State_MurderedAlfiraOrAlternative_6bb5bfcc-e762-40d4-a05b-9bdf860ba099);
@@ -1195,16 +1196,8 @@ QRY
 QRY_SelectUniqueReward_EmbersLute((CHARACTER)_Performer)
 AND
 QRY_GetRandom("DB_PerformanceRewardUnique_Remaining_EmbersLute",1,"DB_PerformanceRewardUnique_Selected_EmbersLute")
-//AND
-//Random(18,_RND)
-//AND
-//IntegerSum(1,_RND,_RndInc)
-//AND
-//NOT DB_PerformanceRewardUnique_Given_EmbersLute(_RndInc)
 AND
 DB_PerformanceRewardUnique_Selected_EmbersLute((INTEGER)_Index)
-//AND
-//QRY_RewardConditionIsMet_EmbersLute(_Index)
 THEN
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Index);
 NOT DB_PerformanceRewardUnique_Selected_EmbersLute(_Index);

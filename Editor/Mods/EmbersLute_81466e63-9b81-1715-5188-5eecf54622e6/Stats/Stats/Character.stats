@@ -102,5 +102,15 @@
         <field name="Flags" type="EnumerationListTableFieldDefinition" value="Floating;InvulnerableAndInteractive" enumeration_type_name="AttributeFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6fde3ed9-a4a9-4380-a1ad-cc8b534088c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Dancing_Spirit" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="72251b29-a862-4275-813b-02907e682582" />
+        <field name="Flags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="Floating" enumeration_type_name="AttributeFlags" version="1" />
+        <field name="DefaultBoosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_Dancer;Emlute_Dismissable;Emlute_Pacifist" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -1480,7 +1480,7 @@
           </modules>
         </component>
       </track>
-      <track name="Track" muted="False" locked="False" mutestateoverride="None">
+      <track name="Track" muted="True" locked="False" mutestateoverride="None">
         <component class="OverlayMaterial" start="0.3836398" end="0.7436397" instancename="8cb761e3-7b17-439f-96cd-eef51020d721">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">

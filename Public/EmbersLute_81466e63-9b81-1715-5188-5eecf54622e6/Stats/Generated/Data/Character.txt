@@ -66,3 +66,10 @@ using "Emlute_TieflingBard_Spirit"
 data "Flags" "Floating;InvulnerableAndInteractive"
 data "Passives" "AttackOfOpportunity;DarknessRules;Emlute_Musical_Spirit;Emlute_Pacifist;Emlute_Dismissable;Ethereal;Emlute_TransientSingle_Spirit;Emlute_Join_WeepingDawn;Emlute_Join_EndlessSpring;Emlute_Join_HarpySong;Emlute_Join_WaterQueen;Emlute_Join_ThePowerVocals;Emlute_Join_FinalAct;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3"
 
+new entry "Emlute_Dancing_Spirit"
+type "Character"
+using "_Emlute_Vicious_Rockery_Gnome"
+data "Flags" ""
+data "DefaultBoosts" ""
+data "Passives" "Emlute_Dancer;Emlute_Dismissable;Emlute_Pacifist"
+

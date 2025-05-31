@@ -321,7 +321,6 @@ DB_CampNight_Error_CampNightFailedToPlay( (FLAG)_ )
 DB_SCL_OliverFight_PlushSpawnPoints( (TRIGGER)_ )
 DB_CampSafetyCheckTriggered( (STRING)_ )
 DB_WYR_Chess_LifeGems( (ITEM)_ )
-DB_GLO_PaladinMoments_AcceptedLastLightQuest( (FLAG)_ )
 DB_TWN_CentralSquare_UsedPlaques( (INTEGER)_, (ITEM)_ )
 DB_WYR_KillDirectorGortash_SteelWatcherReplacement_Temp( (CHARACTER)_ )
 

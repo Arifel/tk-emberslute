@@ -1571,6 +1571,21 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Cursed" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39109393-d4e2-4e20-804c-2fe9f7fc7266" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DANCING_SPIRIT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf63c362fg9452g75bdg6967g48b7c52b4c7c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68631918g2b7bg39dfga0beg74684f6b31ba" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_OttosIrresistibleDance" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Dancing" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Dance" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform())" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="StatusSheathing" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF1E4235" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8b19ef36-81da-4064-a11a-8b77bf0bd805" />

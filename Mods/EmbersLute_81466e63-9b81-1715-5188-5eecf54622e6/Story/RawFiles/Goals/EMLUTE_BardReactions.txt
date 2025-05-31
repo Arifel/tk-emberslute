@@ -666,6 +666,8 @@ DB_CRIME_MusicalPerformance_NPCs(_ID,_Performer,_NPC)
 AND
 NOT DB_BardReactions_ChargedAnimationIsPlaying_Emlute(_NPC)
 AND
+QRY_HasSupportedBardReactionsTag_EmbersLute(_NPC)
+AND
 Random(4000,_RND)
 AND
 IntegerSum(500,_RND,_Delay)

@@ -262,6 +262,7 @@ DB_PerformanceRewardUnique_EmbersLute(15,(ITEMROOT)EMLUTE_MusicSheet_FuneralHymn
 DB_PerformanceRewardUnique_EmbersLute(16,(ITEMROOT)EMLUTE_MusicSheet_EndlessSpring_07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31,7,75);
 DB_PerformanceRewardUnique_EmbersLute(17,(ITEMROOT)EmbersLute_PerformanceReward_SwiftWindsRing_b7d913e6-e77c-4779-a25e-a4d74f72ec96,4,35);
 DB_PerformanceRewardUnique_EmbersLute(18,(ITEMROOT)EmbersLute_MusicalSprites_Lysandra_ea5ab27e-06ae-415f-8f0a-eb23ce649c58,4,35);
+DB_PerformanceRewardUnique_EmbersLute(19,(ITEMROOT)EmbersLute_PerformanceReward_GoblinUnderwear_c1960b8b-3f23-41e2-bff5-1351cd58132b,4,35);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(12,(FLAG)LOW_HouseOfHope_State_RaphaelIsDead_655d7d21-99a2-4138-9a7a-af1850932e75);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(13,(FLAG)DEN_HarpyMeal_State_HarpiesAllDead_89fd908d-98b0-47d2-8f29-0d2ec34fea0a);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(14,(FLAG)ORI_DarkUrge_State_MurderedAlfiraOrAlternative_6bb5bfcc-e762-40d4-a05b-9bdf860ba099);

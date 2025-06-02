@@ -710,11 +710,11 @@
   <content contentuid="h47d759b4g00b1g0115g8822g1ba8dc89ef1e" version="1">Slipping a ring into your pocket.</content>
   <content contentuid="h1091201fgbf17g71ccg63a3gf46ba6db28dc" version="1">Gifting a Garment</content>
   <content contentuid="h5d100e53gc5a3gc282gf515gf6ac4385c5df" version="1">Something has been carefully folded and tucked into your backpack.</content>
-  <content contentuid="hf74da305g73c0g345dg2604g637a2e78e680" version="2">If wielding a finesse weapon, once per combat you may use a reaction to parry the next melee attack that hits you to reduce the damage by [1].</content>
+  <content contentuid="hf74da305g73c0g345dg2604g637a2e78e680" version="3">Parry a weapon attack to reduce incoming damage by [1] and retaliate with [2] damage. You may only retaliate if the attacker is in melee range.</content>
   <content contentuid="h3a6f74c9gb2d7g07b4g9c90g1e2542db7738" version="1">Defensive Finesse</content>
-  <content contentuid="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="1">Damage reduction is the sum of the Charisma and Dexterity modifiers.</content>
+  <content contentuid="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="2">You must be wielding a &lt;LSTag Tooltip="Finesse"&gt;Finesse Weapon&lt;/LSTag&gt;, see the attacker, and you can't be Incapacitated or Restrained.</content>
   <content contentuid="h1193c397g8878g456cgcd5cgaf8040016bdd" version="1">Defensive Finesse</content>
-  <content contentuid="hc880278fgff26g8416gdd16g871a0abf8238" version="1">You must be wielding a finesse weapon, see the attacker, and you can't be Incapacitated or Restrained.</content>
+  <content contentuid="hc880278fgff26g8416gdd16g871a0abf8238" version="2">You must be wielding a &lt;LSTag Tooltip="Finesse"&gt;Finesse Weapon&lt;/LSTag&gt;, see the attacker, and you can't be Incapacitated or Restrained.</content>
   <content contentuid="h63826570gf8f8g7755g3deegf1329bd867ab" version="4">Gloves of Persuasive Defence</content>
   <content contentuid="hff22d265g9f20g4ff8g123ag62cef5fb0e10" version="4">Once per combat, you can use a reaction to parry a melee attack, reducing the damage by the sum of your charisma and dexterity modifiers.</content>
   <content contentuid="h7d56b995g4d01g0dc1g4ce1ga72c9e9c819b" version="4">Gloves gifted to you by an admirer of your musical performance. There's a small note tucked inside the cuff.&lt;br&gt;&lt;br&gt;"You seem like the sort who attracts trouble. I'd love for you to survive long enough to perform again, so take these gloves with my blessing. May they help you graciously smile your way out of a tight spot or two. Or failing that, may they help you deflect the stabby end of the problem away from your good self."</content>
@@ -764,9 +764,9 @@
   <content contentuid="h50b17609g7e41g9832g7faeg21719ef80a5b" version="1">Must be in camp to perform this song.</content>
   <content contentuid="h98828027g0da4g787ag0237gcfaadf75984a" version="1">Demoralise</content>
   <content contentuid="he967cac7g56fbgfc4dgd9a4gd7391a0a32f5" version="1">Deliver a sharp counter attack to those that miss their target.</content>
-  <content contentuid="h17e73a0ag6d20gcddcgb405g039c4dd132df" version="1">Parry Missiles</content>
-  <content contentuid="h4fb40cc8g5c53g6e8dgd471g68caac6f393b" version="1">Use your reflexes to swat a missile out of the way with a finesse weapon equipped in your main hand.</content>
-  <content contentuid="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="1">Use your reflexes and a finesse weapon to swat a missile out of harm's way.</content>
+  <content contentuid="h17e73a0ag6d20gcddcgb405g039c4dd132df" version="2">Defensive Finesse</content>
+  <content contentuid="h4fb40cc8g5c53g6e8dgd471g68caac6f393b" version="3">Parry a weapon attack to retaliate with [2] damage. You may only retaliate if the attacker is in melee range.</content>
+  <content contentuid="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="2">Parry a weapon attack to reduce incoming damage by [1] and retaliate with [2] damage. You may only retaliate if the attacker is in melee range.</content>
   <content contentuid="h054e05c6g9041g27a1gcedeg4f3f79efc42b" version="1">Stage Setup</content>
   <content contentuid="he07ada99ge3d3g006bg29cbgcd3e027d186b" version="1">|HIDDEN| Hidden</content>
   <content contentuid="hb4ee9175geb22ga7beg213ag0e442681d55d" version="1">If you can see this it is a bug.</content>

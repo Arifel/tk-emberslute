@@ -36,13 +36,17 @@
         <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Emlute_Parry" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="493ec5bb-f3c5-49a3-b25c-d6bda949c4f9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1193c397g8878g456cgcd5cgaf8040016bdd" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc880278fgff26g8416gdd16g871a0abf8238" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier;DealDamage(1d6, MainMeleeWeaponDamageType)" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hc880278fgff26g8416gdd16g871a0abf8238" version="2" />
         <field name="Properties" type="StringTableFieldDefinition" value="AdjustRoll(OBSERVER_OBSERVER,-(CharismaModifier+DexterityModifier));UseSpell(SWAP,Projectile_ParryMissiles_Emlute,true,true,true,c4598bdb-fc07-40dd-a62c-90cc138bd76f);" />
         <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1;" />
-        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerCombat" enumeration_type_name="CooldownType" version="1" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="EnableCondition" type="StringTableFieldDefinition" value="WieldingFinesseWeapon();" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8e5eb8b9g25bcgc2d6g828fga718e7e6603e" version="2" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Target,context.Observer) and IsWeaponAttack() and not HasSpellFlag(SpellFlags.Spell) and HasDamageEffectFlag(DamageFlags.Hit) and not HasStatus('SG_Blinded') and not HasStatus('SG_Prone') and not HasStatus('SG_Incapacitated') and not HasStatus('SG_Restrained');" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled;Ask" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnTurn;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -60,6 +60,8 @@ object category "I_EMBERS_LUTE_THANKYOU_NOTE",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_REWARD_PARRY_GLOVES",1,0,0,0,0,0,0,0
 new subtable "1,1"
+object category "I_WPN_Shortbow_1",1,0,0,0,0,0,0,0
+new subtable "1,1"
 object category "I_EMBERS_LUTE_SUMMON_CHEST_SCROLL",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_ARI_CONT_EMBERSLUTE_MUSICALSPRITES",1,0,0,0,0,0,0,0

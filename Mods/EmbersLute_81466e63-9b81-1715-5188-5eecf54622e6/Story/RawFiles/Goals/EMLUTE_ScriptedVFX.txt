@@ -66,17 +66,13 @@ KBSECTION
 // Reset and cleaning up on level load and unload
 //REGION
 IF
-LevelGameplayStarted(_,_)
+LevelGameplayStarted(_,1)
 AND
 DB_Players(_Player)
 THEN
 PROC_ScriptedVFX_Reset_EmbersLute(_Player);
 PROC_ScriptedVFX_SpawnReset_EmbersLute(_Player);
 PROC_ScriptedVFX_HelperReset_EmbersLute(_Player);
-
-IF
-SavegameLoaded()
-THEN
 PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
 
 IF
@@ -476,11 +472,12 @@ NOT DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder);
 // While it is quite possible to use the VFX editor to create long-running
 // effects for the duration of a song, if you remove the FX part way through
 // the FX will still continue until it has completed all the phases. This isn't 
-// great as we don't really want characters wondering around exploding in flames
-// after the performance has ended.
+// great as we don't really want characters wandering around exploding in flames
+// 2 minutes after the performance has ended.
 
 // We're going to lazily hard code some of this for the Final Act performance.
 // Might improve it later if I ever add more scripted VFX performances.
+// Not that I think I will - this is special treatment only the Raphael song deserves.
 //REGION
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)

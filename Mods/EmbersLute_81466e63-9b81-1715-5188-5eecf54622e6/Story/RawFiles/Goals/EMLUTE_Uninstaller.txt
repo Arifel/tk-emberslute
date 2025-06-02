@@ -89,7 +89,7 @@ PROC_RemoveCustomPassives_EmbersLute();
 PROC_RemoveCustomStatuses_EmbersLute();
 //PROC_CleanUpVanillaTables_EmbersLute();
 PROC_CleanUpCustom_EmbersLute();
-PROC_ClearPerformingNPCBards();
+PROC_ClearPerformingNPCBards_EmbersLute();
 PROC_CleanUpFailsafe_EmbersLute();
 PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
 PROC_ResetRewardTracker_EmbersLute();

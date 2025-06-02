@@ -3,6 +3,191 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+// This is a hidden spell I'll stick on the tiefling bard
+// Used to manually trigger fact resets, in event of bugs etc.
+//REGION
+IF
+UsingSpell(_Caster,"Shout_Reset_BardReactions_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Clearing and re-creating bard reaction facts for Ember's Lute");
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+PROC_ResetBardReactionFacts_EmbersLute();
+PROC_RecreateBardReactionFacts_EmbersLute();
+IF
+UsingSpell(_Caster,"Shout_Reset_InstrumentFacts_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Clearing and re-creating instrument facts for Ember's Lute");
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+PROC_ResetInstrumentFacts_EmbersLute();
+PROC_RecreateInstrumentFacts_EmbersLute();
+IF
+UsingSpell(_Caster,"Shout_Reset_ScriptedVFXFacts_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Clearing and re-creating scripted VFX facts for Ember's Lute");
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+PROC_ResetScriptedVFXFacts_EmbersLute();
+PROC_RecreateScriptedVFXFacts_EmbersLute();
+IF
+UsingSpell(_Caster,"Shout_Reset_CustomPerformanceFacts_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Clearing and re-creating custom performance facts for Ember's Lute");
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+PROC_ResetSpecialPerformanceFacts_EmbersLute();
+PROC_RecreateSpecialPerformanceFacts_EmbersLute();
+IF
+UsingSpell(_Caster,"Shout_Reset_UniqueRewards_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Reset unique rewards given for Ember's Lute");
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+PROC_ResetUniqueRewards_EmbersLute();
+PROC_SetupUniqueRewardsRemaining_EmbersLute();
+//END_REGION
+
+// Version 3 mod patches final (post-release)
+//REGION
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3",_)
+THEN
+PROC_ResetBardReactionFacts_EmbersLute();
+PROC_RecreateBardReactionFacts_EmbersLute();
+PROC_ResetScriptedVFXFacts_EmbersLute();
+PROC_RecreateScriptedVFXFacts_EmbersLute();
+PROC_ResetSpecialPerformanceFacts_EmbersLute();
+PROC_RecreateSpecialPerformanceFacts_EmbersLute();
+PROC_ResetInstrumentFacts_EmbersLute();
+PROC_RecreateInstrumentFacts_EmbersLute();
+
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
+AND
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply")
+THEN
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply");
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",1);
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
+AND
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",0);
+//END_REGION
+
+// Version 2 mod patches
+//REGION
+// Summon repositioning was added in v2.0.2.21
+// Mark second column as 1 for patch required and applied (user update)
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",_)
+AND
+NOT DB_RepositionSummon_EmbersLute(_,_,_,_,_)
+THEN
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Gnome_a37df723-3ce0-436d-9356-f2d60c395ed0,1.5,0.0,-1.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Gnome_4118f9af-a8db-4a17-a785-eec7faadb2df,-1.5,0.0,-1.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Gnome_36f2416e-abb4-49af-94a8-855b95927e3f,0.0,0.0,-2.5,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Skelly_149fd908-e28c-4bb5-b158-774abc383f02,2.0,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0fc-cf88-4e7d-b110-ae3b205ad90d,-2.0,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,0.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,0.0,0.0,-2.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,0.0,0.0,2.0,0);
+DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",1);
+
+// Summon repositioning was added in v2.0.2.21
+// Mark second column as 0 for patch not required and not applied (new user)
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",_)
+AND
+DB_RepositionSummon_EmbersLute(_,_,_,_,_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",0);
+
+// Changes to how Passive toggles are applied in v2.1, requires instruments to be re-equipped
+// The first time player updates and loads, we'll auto unequip their instrument to force this
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",_)
+AND
+DB_Players(_Character)
+AND
+GetEquippedItem(_Character,"MusicalInstrument",_Instrument)
+AND
+IsTagged(_Instrument, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+Unequip(_Character,_Instrument);
+DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",1);
+
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",_)
+AND
+NOT DB_TagToPassiveMap_EmbersLute(_,_)
+THEN
+// Mapping config passive toggles to enable by instrument tag
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_ViolinsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_LyresToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_DrumsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_FlutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_LutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_VocalsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Vocal");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_TieflingBard");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_ViolinsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LyresToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_DrumsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_FlutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LutesToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_VocalsToggle");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_SPRITES_a0c53732-1d76-4222-b93c-35ea3bdcda8d,"Emlute_DancingSprites");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_HAUNTED_4fa397b1-21b1-458d-acd3-1391e79fa23a,"Emlute_Violin_Undead_Spirits");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseWingsVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseHaloVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_Spirits");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseWingsVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseHaloVFX");
+DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_FallenSpirits");
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_VocalsToggle",2100);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_ViolinsToggle",2110);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LyresToggle",2120);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_DrumsToggle",2130);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_FlutesToggle",2140);
+DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LutesToggle",2150);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_Spirits",2200);
+DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_FallenSpirits",2200);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform",2300);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Vocal",2310);
+DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_TieflingBard",2320);
+DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
+DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
+DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",1);
+
+// Mark second column as 0 for patch not required and not applied (new user)
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",_)
+AND
+DB_TagToPassiveMap_EmbersLute(_,_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",0);
+//END_REGION
+
 // Reset the bard reactions (helpers)
 //REGION
 PROC
@@ -316,6 +501,7 @@ DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_PER
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_PERFORM_DOS2_3_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeepingDawn","EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+PROC_SetupUniqueRewardsRemaining_EmbersLute();
 //END_REGION
 
 // Reset the scripted VFX
@@ -595,182 +781,6 @@ DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Cambions",2330
 DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_WaveServants",2340);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
-//END_REGION
-
-// Version 2 mod patches
-//REGION
-// Summon repositioning was added in v2.0.2.21
-// Mark second column as 1 for patch required and applied (user update)
-IF
-SavegameLoaded()
-AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",_)
-AND
-NOT DB_RepositionSummon_EmbersLute(_,_,_,_,_)
-THEN
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Gnome_a37df723-3ce0-436d-9356-f2d60c395ed0,1.5,0.0,-1.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Gnome_4118f9af-a8db-4a17-a785-eec7faadb2df,-1.5,0.0,-1.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Gnome_36f2416e-abb4-49af-94a8-855b95927e3f,0.0,0.0,-2.5,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Skelly_149fd908-e28c-4bb5-b158-774abc383f02,2.0,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0fc-cf88-4e7d-b110-ae3b205ad90d,-2.0,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,0.0,0.0,-2.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,0.0,0.0,2.0,0);
-DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",1);
-
-// Summon repositioning was added in v2.0.2.21
-// Mark second column as 0 for patch not required and not applied (new user)
-IF
-SavegameLoaded()
-AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",_)
-AND
-DB_RepositionSummon_EmbersLute(_,_,_,_,_)
-THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v2_0_2_21_RepositionSummon",0);
-
-// Changes to how Passive toggles are applied in v2.1, requires instruments to be re-equipped
-// The first time player updates and loads, we'll auto unequip their instrument to force this
-IF
-SavegameLoaded()
-AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",_)
-AND
-DB_Players(_Character)
-AND
-GetEquippedItem(_Character,"MusicalInstrument",_Instrument)
-AND
-IsTagged(_Instrument, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
-THEN
-Unequip(_Character,_Instrument);
-DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",1);
-
-IF
-SavegameLoaded()
-AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",_)
-AND
-NOT DB_TagToPassiveMap_EmbersLute(_,_)
-THEN
-// Mapping config passive toggles to enable by instrument tag
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_ViolinsToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_LyresToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_DrumsToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_FlutesToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_LutesToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_GNOME_MODE_ac260048-1979-4af5-8ebc-37bab10e321b,"Emlute_VocalsToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_Vocal");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_SummonOnPerform_TieflingBard");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_ViolinsToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LyresToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_DrumsToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_FlutesToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_LutesToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_SPIRIT_MODE_d90f40cc-8091-4807-961c-b3b1e225ad95,"Emlute_VocalsToggle");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_SPRITES_a0c53732-1d76-4222-b93c-35ea3bdcda8d,"Emlute_DancingSprites");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_HAUNTED_4fa397b1-21b1-458d-acd3-1391e79fa23a,"Emlute_Violin_Undead_Spirits");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseWingsVFX");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_UseHaloVFX");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879,"Emlute_CelestialLyre_Spirits");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseWingsVFX");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_UseHaloVFX");
-DB_TagToPassiveMap_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c,"Emlute_CelestialLyre_FallenSpirits");
-DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_VocalsToggle",2100);
-DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_ViolinsToggle",2110);
-DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LyresToggle",2120);
-DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_DrumsToggle",2130);
-DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_FlutesToggle",2140);
-DB_PassiveTimer_EmbersLute("MusicalConductor","Emlute_LutesToggle",2150);
-DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_DancingSprites",2200);
-DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_Violin_Undead_Spirits",2200);
-DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_Spirits",2200);
-DB_PassiveTimer_EmbersLute("InstrumentVFX","Emlute_CelestialLyre_FallenSpirits",2200);
-DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform",2300);
-DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Vocal",2310);
-DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_TieflingBard",2320);
-DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
-DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
-DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",1);
-
-// Mark second column as 0 for patch not required and not applied (new user)
-IF
-SavegameLoaded()
-AND
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",_)
-AND
-DB_TagToPassiveMap_EmbersLute(_,_)
-THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v2_2_1_n_PostPatch8",0);
-//END_REGION
-
-// Version 3 mod patches final (post-release)
-//REGION
-IF
-SavegameLoaded()
-THEN
-PROC_ResetBardReactionFacts_EmbersLute();
-TimerLaunch("RecreateBardReactions_EmbersLute",1000);
-
-IF
-TimerFinished("RecreateBardReactions_EmbersLute")
-THEN
-PROC_RecreateBardReactionFacts_EmbersLute();
-
-IF
-SavegameLoaded()
-THEN
-PROC_ResetScriptedVFXFacts_EmbersLute();
-TimerLaunch("RecreateScriptedVFX_EmbersLute",1000);
-
-IF
-TimerFinished("RecreateScriptedVFX_EmbersLute")
-THEN
-PROC_RecreateScriptedVFXFacts_EmbersLute();
-
-IF
-SavegameLoaded()
-THEN
-PROC_ResetSpecialPerformanceFacts_EmbersLute();
-TimerLaunch("RecreateSpecialPerformance_EmbersLute",1000);
-
-IF
-TimerFinished("RecreateSpecialPerformance_EmbersLute")
-THEN
-PROC_RecreateSpecialPerformanceFacts_EmbersLute();
-
-IF
-SavegameLoaded()
-THEN
-PROC_ResetInstrumentFacts_EmbersLute();
-TimerLaunch("RecreateInstrument_EmbersLute",1000);
-
-IF
-TimerFinished("RecreateInstrument_EmbersLute")
-THEN
-PROC_RecreateInstrumentFacts_EmbersLute();
-
-IF
-SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
-AND
-NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply")
-THEN
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply");
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",1);
-IF
-SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
-AND
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE","MusicalPerformance_Good_Emlute","OnStatusApply")
-THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",0);
-
 //END_REGION
 EXITSECTION
 

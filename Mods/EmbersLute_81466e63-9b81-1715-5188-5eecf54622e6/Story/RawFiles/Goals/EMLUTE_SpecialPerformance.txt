@@ -72,6 +72,37 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
+// Reset the performing state on save game load
+// Cleaning up, DB hygiene etc.
+//REGION
+IF
+LevelGameplayStarted(_,0)
+THEN
+PROC_ResetActivePerformanceState_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+
+IF
+LongRestStarted()
+THEN
+PROC_ResetActivePerformanceState_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+
+// We use this status as another way of catching any custom
+// objects or characters we may have otherwise lost track of.
+// The status should remove on long rest, trigger the death
+// or destruction call, for characters and items.
+IF
+StatusRemoved((CHARACTER)_Helper,"EMLUTE_CLEANUP_ON_LONGREST",_,_)
+THEN
+SetOnStage(_Helper,0);
+Die(_Helper,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+IF
+StatusRemoved((ITEM)_Helper,"EMLUTE_CLEANUP_ON_LONGREST",_,_)
+THEN
+PROC_GLO_SpellCast_CleanUp(_Helper,-1);
+RequestDelete(_Helper);
+//END_REGION
+
 // Safe and excluded performing areas tracker
 //REGION
 IF
@@ -162,37 +193,6 @@ AND
 IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
 THEN
 DB_NOOP(1);
-//END_REGION
-
-// Reset the performing state on save game load
-// Cleaning up, DB hygiene etc.
-//REGION
-IF
-SavegameLoaded()
-THEN
-PROC_ResetActivePerformanceState_EmbersLute();
-PROC_CleanUpFailsafe_EmbersLute();
-
-IF
-LongRestStarted()
-THEN
-PROC_ResetActivePerformanceState_EmbersLute();
-PROC_CleanUpFailsafe_EmbersLute();
-
-// We use this status as another way of catching any custom
-// objects or characters we may have otherwise lost track of.
-// The status should remove on long rest, trigger the death
-// or destruction call, for characters and items.
-IF
-StatusRemoved((CHARACTER)_Helper,"EMLUTE_CLEANUP_ON_LONGREST",_,_)
-THEN
-SetOnStage(_Helper,0);
-Die(_Helper,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
-IF
-StatusRemoved((ITEM)_Helper,"EMLUTE_CLEANUP_ON_LONGREST",_,_)
-THEN
-PROC_GLO_SpellCast_CleanUp(_Helper,-1);
-RequestDelete(_Helper);
 //END_REGION
 
 // Catch the special music performances and trigger the music events.

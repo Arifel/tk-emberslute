@@ -244,6 +244,24 @@ DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUT
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeepingDawn","EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 KBSECTION
+
+// Reset and cleaning up on level load and unload
+//REGION
+IF
+LevelGameplayStarted(_,0)
+THEN
+PROC_ResetCooldown_EmbersLute();
+PROC_ClearPerformingNPCBards_EmbersLute();
+PROC_ResetCrimes_EmbersLute();
+
+IF
+LongRestStarted()
+THEN
+PROC_ResetCooldown_EmbersLute();
+PROC_ClearPerformingNPCBards_EmbersLute();
+PROC_ResetCrimes_EmbersLute();
+//END_REGION
+
 // Here we are hooking into vanilla so it handles our custom reactions too.
 // Might be some jerky anim transitional behaviour as a consequence, since the 
 // anims in here will collide with the reactions anims in BaseCrimeActions.ann
@@ -341,21 +359,21 @@ PROC_DoFlourishInCampNPC_EmbersLute(_Performer);
 QRY
 QRY_ReactionsAsBuskingMode_EmbersLute((CHARACTER)_Performer)
 AND
+DB_GlobalFlag((FLAG)NIGHT_GoblinHunt_TieflingCelebration_1ad8c357-2695-4d5c-b5f9-8b8c07803121)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_ReactionsAsBuskingMode_EmbersLute((CHARACTER)_Performer)
+AND
+DB_GlobalFlag((FLAG)NIGHT_GoblinHunt_RaiderCelebration_86fee25f-1069-4f17-89fa-4c5b69f82e0b)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_ReactionsAsBuskingMode_EmbersLute((CHARACTER)_Performer)
+AND
 IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_ReactionsAsBuskingMode_EmbersLute((CHARACTER)_Performer)
-AND
-GetFlag(NULL_00000000-0000-0000-0000-000000000000,(FLAG)NIGHT_GoblinHunt_TieflingCelebration_1ad8c357-2695-4d5c-b5f9-8b8c07803121,1)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_ReactionsAsBuskingMode_EmbersLute((CHARACTER)_Performer)
-AND
-GetFlag(NULL_00000000-0000-0000-0000-000000000000,(FLAG)NIGHT_GoblinHunt_RaiderCelebration_86fee25f-1069-4f17-89fa-4c5b69f82e0b,1)
 THEN
 DB_NOOP(1);
 //END_REGION
@@ -946,17 +964,8 @@ THEN
 PROC_DoUniquePerformanceReward_EmbersLute(_Performer,_NPCCount);
 PROC_ResetCooldown_EmbersLute();
 
-// Do a flush of everything on game load as a failsafe
-IF
-SavegameLoaded()
-THEN
-PROC_ResetCooldown_EmbersLute();
-PROC_ClearPerformingNPCBards();
-PROC_SetupUniqueRewardsRemaining_EmbersLute();
-PROC_FixStuckCrimes_EmbersLute();
-
 PROC
-PROC_ClearPerformingNPCBards()
+PROC_ClearPerformingNPCBards_EmbersLute()
 AND
 DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID)
 THEN
@@ -974,7 +983,7 @@ ObjectTimerCancel(_NPC,"BardReaction_Busking_LoopOnceTimer_Emlute");
 NOT DB_BardReactions_ChargedAnimationIsPlaying_Emlute(_NPC);
 
 PROC
-PROC_FixStuckCrimes_EmbersLute()
+PROC_ResetCrimes_EmbersLute()
 AND
 DB_InternScene_ContinuousDisturbance(_CrimeID)
 AND
@@ -1037,6 +1046,13 @@ AND
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
 THEN
 DB_NOOP(1);
+
+PROC
+PROC_ResetUniqueRewards_EmbersLute()
+AND
+DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+THEN
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 
 PROC
 PROC_ClearCampAnims_NPC_EmbersLute((CHARACTER)_NPC)
@@ -1250,6 +1266,13 @@ DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index)
 THEN
 TemplateAddTo(_ItemRoot,_Performer,1,1);
 NOT DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
+
+IF
+FlagSet((FLAG)_Flag,_,_)
+AND
+DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_Index,_Flag)
+THEN
+PROC_SetupUniqueRewardsRemaining_EmbersLute();
 
 IF
 StatusApplied((CHARACTER)_Victim,"EMLUTE_REWARD_CRITICAL_MOCKERY",(CHARACTER)_Causee,_)

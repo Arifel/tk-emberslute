@@ -10,35 +10,35 @@ IF
 UsingSpell(_Caster,"Shout_Reset_BardReactions_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Clearing and re-creating bard reaction facts for Ember's Lute");
-UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
 PROC_ResetBardReactionFacts_EmbersLute();
 PROC_RecreateBardReactionFacts_EmbersLute();
 IF
 UsingSpell(_Caster,"Shout_Reset_InstrumentFacts_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Clearing and re-creating instrument facts for Ember's Lute");
-UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
 PROC_ResetInstrumentFacts_EmbersLute();
 PROC_RecreateInstrumentFacts_EmbersLute();
 IF
 UsingSpell(_Caster,"Shout_Reset_ScriptedVFXFacts_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Clearing and re-creating scripted VFX facts for Ember's Lute");
-UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
 PROC_ResetScriptedVFXFacts_EmbersLute();
 PROC_RecreateScriptedVFXFacts_EmbersLute();
 IF
 UsingSpell(_Caster,"Shout_Reset_CustomPerformanceFacts_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Clearing and re-creating custom performance facts for Ember's Lute");
-UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
 PROC_ResetSpecialPerformanceFacts_EmbersLute();
 PROC_RecreateSpecialPerformanceFacts_EmbersLute();
 IF
 UsingSpell(_Caster,"Shout_Reset_UniqueRewards_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Reset unique rewards given for Ember's Lute");
-UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
 PROC_ResetUniqueRewards_EmbersLute();
 PROC_SetupUniqueRewardsRemaining_EmbersLute();
 //END_REGION

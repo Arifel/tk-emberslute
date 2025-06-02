@@ -208,7 +208,7 @@
   <content contentuid="h25291922g749eg4e90gb28bg01a513b0a4ef" version="1">Dismissing sprites and musical spirit summons.</content>
   <content contentuid="h58128bbeg9c18g8aa7g24ffg85a858aa94a2" version="1">Curtain Call</content>
   <content contentuid="haeaedeb2gbb28g5c6dgdce6g8ae0135dc155" version="1">Dismissing musical sprites.</content>
-  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="7">Spirit of a Tragic Tiefling Bard</content>
+  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="8">Spirit of a Tragic Tiefling Bard</content>
   <content contentuid="h31850c2aga592g1894ga37eg89582b18352f" version="1">Melody Gearfiddle</content>
   <content contentuid="hc9266932g15ebgb66bg984eg52431a2179ee" version="1">Summon Melody Gearfiddle. Her rivals called her Queen Bow, because she wielded it like a rapier when crossed.</content>
   <content contentuid="he5c3fcc5g9177g365agcdcag493dfdaefdb8" version="1">Percival Stonegroove</content>
@@ -912,4 +912,15 @@
   <content contentuid="hd3664e8dgdd50ga6bbg489eg256baa5988ba" version="2">Grimjig Summoning Skivvies</content>
   <content contentuid="hbc64598bg7cd0ga679g14beg5b76fc6ef2be" version="2">Summon &lt;i&gt;The Grimjig Gang&lt;/i&gt;.</content>
   <content contentuid="h1094fba7g58a4g36d9g18f2g0cbd26870a2a" version="2">Inscribed with booyahg runes and faintly humming with off-beat rhythms, this underwear lets the wearer conjure The Grimjig Gang: a goblin trio who can entertain (or alarm) with their energetic dance steps. Just don’t ask where they go when the music ends.</content>
+  <content contentuid="h08a065dcgbf13g5657g48d6g99cb01e23784" version="1">Reset Bard Reaction Facts</content>
+  <content contentuid="h0fbc24cfgaf99gb322ge17fg138df0699962" version="1">Reset Instrument Facts</content>
+  <content contentuid="hae8cf200g43e3g548fg7d53g92700dec7cbd" version="1">Resetting Mod Facts</content>
+  <content contentuid="h5312e0f2gea9cge283ge882gad0b0fbe96dc" version="1">Developer tools to conveniently reset Osiris mod facts from in-game.</content>
+  <content contentuid="h7a98860ag9bd1g5a32gb5d3gec9b34e12c67" version="1">Save game before using these spells.</content>
+  <content contentuid="haf7302e1gadc8gf7ffgae54g7617112304da" version="1">Reset Scripted VFX Facts</content>
+  <content contentuid="h009705fbgbae7gb475g7a8eg4c3a5f87007f" version="1">Reset Custom Performance Facts</content>
+  <content contentuid="h3e796e3eg2bc8gca42g138agaee91fc2087f" version="1">Reset Unique Reward Facts</content>
+  <content contentuid="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="1">Ember's Lute - Reset Facts</content>
+  <content contentuid="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="1">Developer tools to reset Osiris mod facts.</content>
+  <content contentuid="h8c817240g6f86g26fag3607gb72abf22562a" version="1">Save game before using these spells.</content>
 </contentList>

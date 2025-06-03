@@ -71,5 +71,5 @@ type "Character"
 using "_Emlute_Vicious_Rockery_Gnome"
 data "Flags" ""
 data "DefaultBoosts" ""
-data "Passives" "Emlute_Dancer;Emlute_Dismissable;Emlute_Pacifist"
+data "Passives" "Emlute_Musical_Spirit;Emlute_Dancer;Emlute_Dismissable;Emlute_Pacifist;Emlute_TransientPerformance_Spirit"
 

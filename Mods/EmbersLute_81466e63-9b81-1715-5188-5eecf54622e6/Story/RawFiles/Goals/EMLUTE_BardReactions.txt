@@ -234,8 +234,8 @@ DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(15,(FLAG)LOW_WaterQueens
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(16,(FLAG)TWN_Hospital_State_SurgeonPermaDefeated_0820e94c-7007-4459-b935-2d33fbbf6aa9);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",-5);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GREAT",10);
-DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",15);
-DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",25);
+DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",25);
+DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",45);
 //END_REGION
 
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_PERFORM_THEPOWER_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
@@ -390,7 +390,23 @@ DB_NOOP(1);
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_,_)
 AND
-DB_Players(_Performer)
+HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
+THEN
+PROC_ObjectCountHelper(_Performer,"ShowmanshipChargeCount_EmbersLute");
+PROC_BardReactions_CrowdTracker_EmbersLute(_Performer);
+
+PROC
+PROC_BardReactions_CrowdTracker_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+THEN
+PROC_ObjectCountHelperReset(_Performer,"CrowdSize_EmbersLute");
+PROC_ObjectCountHelper(_Performer,"CrowdSize_EmbersLute",_NPCCount);
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_,_)
+AND
+DB_PartOfTheTeam(_Performer)
 AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
@@ -417,7 +433,7 @@ NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POS
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_,_)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
@@ -444,7 +460,7 @@ NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POS
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_,_)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
@@ -469,7 +485,7 @@ DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIV
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD",_,_)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 THEN
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD");
 NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT");
@@ -513,9 +529,12 @@ AND
 DB_BardReactionsInCamp_Emlute(_Tag,_Start,_Loop,_Stop)
 AND
 IsTagged(_NPC,_Tag,1)
+AND
+DB_BardReactionAnimsInCamp_PerformerToCrowd(_Performer,_NPC)
 THEN
 DB_BardReactionsInCamp_NPC_IsSitting_Emlute(_NPC);
 PROC_PlayLoopingAnimation(_NPC,_Start,_Loop,_Stop);
+LookAtEntity(_NPC,_Performer);
 
 // Fallback anims for humanoid tag
 PROC
@@ -949,26 +968,34 @@ EnteredCombat((CHARACTER)_Performer,_)
 AND
 DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
 THEN
-PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
-PROC_CRIME_StopForAllCriminals(_BardJoinsCrimeID);
-NOT DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID);
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE");
 
 IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE",_,_)
 AND
 DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
 THEN
-PROC_BardReactions_EndPerformance_EmbersLute(_Performer);
+PROC_EndPerformance_NPC_Bards_EmbersLute(_Performer);
 PROC_CRIME_StopForAllCriminals(_BardJoinsCrimeID);
+PROC_ObjectCountHelperReset(_Performer,"CRIME_MusicalPerformance_NPCs");
 NOT DB_CRIME_BardNPCPerforming_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID);
 
 IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",_,_)
 AND
-DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+DB_ObjectCountHelper(_Performer,"CrowdSize_EmbersLute",_CrowdSize)
 THEN
-PROC_DoUniquePerformanceReward_EmbersLute(_Performer,_NPCCount);
+PROC_ObjectCountHelperReset(_Performer,"CrowdSize_EmbersLute");
+PROC_DoUniquePerformanceReward_EmbersLute(_Performer,_CrowdSize);
 PROC_ResetCooldown_EmbersLute();
+
+PROC
+PROC_EndPerformance_NPC_Bards_EmbersLute((CHARACTER)_Performer)
+AND
+DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID)
+THEN
+RemoveStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD");
+NOT DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID);
 
 PROC
 PROC_ClearPerformingNPCBards_EmbersLute()
@@ -1107,14 +1134,41 @@ DB_NOOP(1);
 PROC
 PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 AND
 QRY_ReactionsAsBuskingMode_EmbersLute(_Performer)
 AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
 THEN
 PROC_ApplyPerformanceBuff_EmbersLute(_Performer,_Status);
-ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",500);
+
+PROC
+PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
+AND
+DB_PartOfTheTeam(_Performer)
+AND
+DB_ObjectCountHelper(_Performer,"ShowmanshipChargeCount_EmbersLute",_TickCount)
+AND
+_TickCount >= 3
+AND
+QRY_ReactionsAsBuskingMode_EmbersLute(_Performer)
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+AND
+QRY_CalcUniquePerformanceRewardBase_EmbersLute(_Performer,_Status,_NPCCount)
+AND
+DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base)
+AND
+QRY_SelectUniqueReward_EmbersLute(_Performer)
+AND
+DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
+THEN
+PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
+
+PROC
+PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
+THEN
+ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",9000);
 
 PROC
 PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_GREAT")
@@ -1137,42 +1191,22 @@ GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
 THEN
 UseSpell(_Instrument,"Shout_PerformanceExhaustion_Emlute",_Performer);
 
-PROC
-PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
-AND
-DB_Players(_Performer)
-AND
-IsTagged(_Performer,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,0)
-AND
-GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
-AND
-_Charges >= 3
-AND
-DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
-AND
-QRY_CalcUniquePerformanceRewardBase_EmbersLute(_Performer,_Status,_NPCCount)
-AND
-DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base)
-AND
-QRY_SelectUniqueReward_EmbersLute(_Performer)
-AND
-DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Selected)
-THEN
-PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
-
 IF
 ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
 AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
 THEN
 NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
+PROC_ObjectCountHelperReset(_Performer,"ShowmanshipChargeCount_EmbersLute");
 
 QRY
 QRY_CalcUniquePerformanceRewardBase_EmbersLute((CHARACTER)_Performer,(STRING)_Status,(INTEGER)_NPCCount)
 AND
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute(_Status,_Modifier)
 AND
-IntegerSum(_Modifier,_NPCCount,_Base)
+IntegerMin(_NPCCount,30,_NPCModifier)
+AND
+IntegerSum(_Modifier,_NPCModifier,_Base)
 THEN
 DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base);
 
@@ -1199,8 +1233,6 @@ QRY_HasRewardCondition_EmbersLute(_SelectedReward)
 AND
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_SelectedReward,_Flag)
 AND
-DB_Avatars(_Player)
-AND
 // Global flag checks only
 GetFlag(_Flag,NULL_00000000-0000-0000-0000-000000000000,1)
 THEN
@@ -1223,7 +1255,7 @@ DB_NOOP(1);
 PROC
 PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 AND
 IsTagged(_Performer,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59,0)
 AND
@@ -1247,7 +1279,7 @@ ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
 PROC
 PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 AND
 IsTagged(_Performer,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59,1)
 AND
@@ -1295,7 +1327,7 @@ PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery
 IF
 MainPerformerStarted((CHARACTER)_Performer,_Song)
 AND
-DB_Players(_Performer)
+DB_PartOfTheTeam(_Performer)
 AND
 QRY_HasEmbersLuteInstrument(_Performer)
 AND
@@ -1345,14 +1377,6 @@ EndRepose(_Bard);
 ApplyStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD",-1.0);
 ApplyStatus(_Bard,_JoinStatus,-1.0);
 ApplyStatus(_Bard,_AnimStatus,-1.0);
-
-PROC
-PROC_BardReactions_EndPerformance_EmbersLute((CHARACTER)_Performer)
-AND
-DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID)
-THEN
-RemoveStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD");
-NOT DB_CRIME_BardNPCPerformingWithPlayers_Emlute(_Bard,_Performer,_ID);
 
 QRY
 QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)

@@ -14,6 +14,8 @@
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK)" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(HasPassive('Emlute_TransientPerformance_Spirit')):ApplyStatus(EMLUTE_KEEP_ALIVE)" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">
@@ -32,6 +34,8 @@
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="e1fcf982-434a-40b9-9bb7-e00695208cb3" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">
@@ -405,6 +409,24 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="10a01af4-5363-4462-9b34-b90dbaf82e2e" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39109393-d4e2-4e20-804c-2fe9f7fc7266" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DANCING_SPIRIT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf63c362fg9452g75bdg6967g48b7c52b4c7c" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68631918g2b7bg39dfga0beg74684f6b31ba" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_OttosIrresistibleDance" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Dancing" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Dance" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Emlute_StatusIsJoinStatus();" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Green" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PERFORM" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_CURSED_APPLIED);Attribute(Grounded);SoundsBlocked()" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -1569,21 +1591,6 @@
         <field name="Passives" type="StringTableFieldDefinition" value="Emlute_Musical_Spirit;Emlute_Musical_Spirit_BardDance_Curse" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DANCE_CURSE')):RemoveStatus(EMLUTE_DANCE_CURSE)" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Cursed" enumeration_type_name="StatusGroupFlags" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF800080" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="39109393-d4e2-4e20-804c-2fe9f7fc7266" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DANCING_SPIRIT" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf63c362fg9452g75bdg6967g48b7c52b4c7c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68631918g2b7bg39dfga0beg74684f6b31ba" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_OttosIrresistibleDance" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Dancing" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Dance" enumeration_type_name="StillAnimPriority" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform())" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="StatusSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF1E4235" is_substat="false">

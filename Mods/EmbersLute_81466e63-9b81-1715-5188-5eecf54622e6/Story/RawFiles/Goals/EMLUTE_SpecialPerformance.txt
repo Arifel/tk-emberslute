@@ -182,6 +182,8 @@ AND
 DB_SpecialPerformance_SafeZones_EmbersLute(_SafePerformZoneTrigger)
 AND
 IsInTrigger(_PartyCharacter,_SafePerformZoneTrigger,1)
+AND
+NOT DB_GlobalFlag((FLAG)SCE_Epilogue_State_HasStarted_9b4bae0b-6464-4b0e-a0e3-41201c0c3c9e)
 THEN
 DB_NOOP(1);
 
@@ -189,6 +191,8 @@ QRY
 QRY_IsInAnySafeArea_EmbersLute((CHARACTER)_PartyCharacter)
 AND
 IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
+AND
+NOT DB_GlobalFlag((FLAG)SCE_Epilogue_State_HasStarted_9b4bae0b-6464-4b0e-a0e3-41201c0c3c9e)
 THEN
 DB_NOOP(1);
 //END_REGION

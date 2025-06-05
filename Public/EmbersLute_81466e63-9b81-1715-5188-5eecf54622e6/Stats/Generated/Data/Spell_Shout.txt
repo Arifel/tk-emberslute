@@ -155,7 +155,7 @@ using "Shout_Bard_Perform_WeepingDawn_Emlute"
 data "SpellProperties" ""
 data "Icon" "EmbersLute_Action_Help_LearningSongs"
 data "DisplayName" "h15c1b422gd836gaa68gba46gd9ccc82a9ea5;1"
-data "Description" "hc60a1773gab99g3190g16cbga4906ace28b2;1"
+data "Description" "hc60a1773gab99g3190g16cbga4906ace28b2;2"
 data "RequirementConditions" ""
 data "Sheathing" "DontChange"
 

@@ -181,7 +181,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha65ac812g1d11ge180gdeadgff2cdafd287c" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFC71585" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a18ff671-3529-4e03-80b4-a1284b897740" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Help_Emlute" />
@@ -189,7 +189,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Help_LearningSongs" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h15c1b422gd836gaa68gba46gd9ccc82a9ea5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc60a1773gab99g3190g16cbga4906ace28b2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc60a1773gab99g3190g16cbga4906ace28b2" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
       </fields>

@@ -450,16 +450,17 @@ SetTag(_Player,_Tag);
 OpenMessageBox(_Player,"EMLUTE_Song_Learned");
 
 IF
-CastSpell((CHARACTER)_Caster,"Shout_Bard_Perform_Help_Emlute",_,_,_)
+CastedSpell((CHARACTER)_Caster,"Shout_Bard_Perform_Help_Emlute",_,_,_)
+AND
+CreateAtObject((ITEMROOT)Emlute_Book_Info_LearningMusic_73f909de-e5f5-4abe-8203-688bdaff1a13,_Caster,0,0,"MusicLearningBook_EmbersLute",0,_MusicBook)
 THEN
-TemplateAddTo((ITEMROOT)Emlute_Book_Info_LearningMusic_73f909de-e5f5-4abe-8203-688bdaff1a13,_Caster,1,0);
+ToInventory(_MusicBook,_Caster,1,0,1);
+SetDualEntityEvent(_MusicBook,_Caster,"ReadTheBook_EmbersLute");
 
 IF
-EnteredLevel((ITEM)_MusicLearnBook,(ITEMROOT)Emlute_Book_Info_LearningMusic_73f909de-e5f5-4abe-8203-688bdaff1a13,_)
-AND
-GetOwner(_MusicLearnBook,_Character)
+DualEntityEvent((ITEM)_MusicBook,(CHARACTER)_Character,"ReadTheBook_EmbersLute")
 THEN
-Use(_Character,_MusicLearnBook,1,1,"ReadingMusicLearningBook_Emlute");
+Use(_Character,_MusicBook,1,0,"ReadingMusicLearningBook_Emlute");
 
 IF
 GameBookInterfaceClosed((ITEM)_MusicLearnBook, (CHARACTER)_Character)

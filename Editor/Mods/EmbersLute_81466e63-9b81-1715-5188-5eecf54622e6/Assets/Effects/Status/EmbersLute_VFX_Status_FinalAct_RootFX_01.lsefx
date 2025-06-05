@@ -14558,8 +14558,8 @@
                     <rampchannel type="Spline" id="97f27aa1-9a5e-431d-a46b-b424cd3a77e2">
                       <keyframes>
                         <keyframe time="0" value="3282176" />
-                        <keyframe time="0.5238096" value="-13626624" />
-                        <keyframe time="1" value="-13495040" />
+                        <keyframe time="0.5238096" value="-15398912" />
+                        <keyframe time="1" value="-15400960" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>

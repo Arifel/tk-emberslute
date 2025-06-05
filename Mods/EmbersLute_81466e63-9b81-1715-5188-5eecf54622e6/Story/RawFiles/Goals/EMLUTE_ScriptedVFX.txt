@@ -39,17 +39,12 @@ DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActL01_Ascend_01","Emlute_FinalAct
 DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_FinalActS02_Spotlight_04_STOP");
 //END_REGION
 
-// <<{[ Here be jank ]}>>
 // Mappings to calculate where to spawn characters around the performer's location
 //REGION
-DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_FINALACT");
-DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_FinalAct",(CHARACTERROOT)Humans_InvisibleHelper_d5589336-4ca7-4ef7-9f6d-ebfea51001fe,"ProjectileStrike_PositionFinder_5_Emlute");
-DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,"EMLUTE_PERFORM_FINALACT_NO_AURA");
-DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,"EMLUTE_PERFORM_FINALACT_NO_AURA");
-DB_ScriptedVFX_SongStatus_EmbersLute("Bard_Perform_FinalAct","EMLUTE_PERFORM_WATERQUEEN");
-DB_ScriptedVFX_JankPositionFinder_EmbersLute("Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_InvisibleHelper_d5589336-4ca7-4ef7-9f6d-ebfea51001fe,"ProjectileStrike_PositionFinder_5_Emlute");
-DB_ScriptedVFX_SongSpawnMapping_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
-DB_ScriptedVFX_SongSpawnMapping_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,"EMLUTE_PERFORM_WATERQUEEN_NO_AURA");
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,-1.5,0.0,0.0);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,1.5,0.0,0.0);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,-1.5,0.0,0.0);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,1.5,0.0,0.0);
 //END_REGION
 
 // This is so stupid, but it is better to spawn a vanilla template and then polymorph the visual, than spawn a custom template.
@@ -70,20 +65,10 @@ LevelGameplayStarted(_,1)
 AND
 DB_Players(_Player)
 THEN
-PROC_ScriptedVFX_Reset_EmbersLute(_Player);
 PROC_ScriptedVFX_SpawnReset_EmbersLute(_Player);
-PROC_ScriptedVFX_HelperReset_EmbersLute(_Player);
-PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
-
-IF
-LongRestStarted()
-THEN
-PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute();
 //END_REGION
 
-// <<{[ Here be jank ]}>>
 // Position finder for spawns
-// Did someone say jank? Hold my beer.
 //REGION
 IF
 EnteredLevel((ITEM)_HelperItem,(ITEMROOT)_Template, _)
@@ -92,13 +77,22 @@ DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM
 AND
 QRY_ScriptedVFX_SongSummonEnabled(_Performer,_Song)
 AND
-DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_,_Spell)
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(_Num,_Song,_CharTemplate,_X,_Y,_Z)
+AND
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute(_CharTemplate,_PolyStatus)
+AND
+GetWorldTransformFromLocal(_Performer, _X, _Y, _Z, 0.0 ,0.0, 0.0, _DestX, _DestY, _DestZ, _RotX, _RotY, _RotZ)
+AND
+CreateAtObject(_CharTemplate,_Performer,0,1,"CreateSongSpawn_EmbersLute",1,(CHARACTER)_Spawn)
+AND
+CreateAtObject((ITEMROOT)Emlute_Ring_Spawn_Helper_ef8ddca3-fc8e-4311-9758-ba773b875592,_Performer,0,1,"CreateSongSpawnHelper_EmbersLute",1,(ITEM)_SpawnHelper)
 THEN
-PROC_ScriptedVFX_Reset_EmbersLute(_Performer);
-PROC_ScriptedVFX_SpawnReset_EmbersLute(_Performer);
-PROC_CreateFieldOfViewChecker_EmbersLute(_Performer);
-UseSpell(_HelperItem,_Spell,_Performer);
-ObjectTimerLaunch(_Performer,"ScriptedVFX_SpawnHelpers_EmbersLute",500);
+ToTransform(_SpawnHelper,_DestX, _DestY, _DestZ,0.0,_RotY,0.0);
+TeleportTo(_Spawn,_SpawnHelper,"TeleportSpawn_EmbersLute", 0, 0, 0, 0, 1);
+ApplyStatus(_Spawn,_PolyStatus,-1.0);
+RequestDelete(_SpawnHelper);
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+SetEntityEvent(_Spawn,"SongSpawnFinishEvent_EmbersLute");
 
 QRY
 QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,"Bard_Perform_FinalAct")
@@ -115,325 +109,18 @@ THEN
 DB_NOOP(1);
 
 IF
-ObjectTimerFinished((CHARACTER)_Performer,"ScriptedVFX_SpawnHelpers_EmbersLute")
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
-THEN
-DebugText(_Performer,"Placing spawns...");
-// Works best when kept dumb, so we are just testing all the permutations
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,1);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,2);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,3);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,4);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,1,5);
-PROC_ScriptedVFX_PlaceSpawns_FallBack_EmbersLute(_Performer,_Song,1);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,1);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,2);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,3);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,4);
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute(_Performer,_Song,2,5);
-PROC_ScriptedVFX_PlaceSpawns_FallBack_EmbersLute(_Performer,_Song,2);
-ObjectTimerLaunch(_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute",2000);
-IF
-ObjectTimerFinished((CHARACTER)_Performer,"ScriptedVFX_MopUpHelpers_EmbersLute")
-AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
-THEN
-PROC_ScriptedVFX_MopUp_EmbersLute(_Performer,_Song);
-
-PROC
-PROC_CreateFieldOfViewChecker_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,_Spawn)
-THEN
-NOT DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,_Spawn);
-
-PROC
-PROC_CreateFieldOfViewChecker_EmbersLute((CHARACTER)_Performer)
-AND
-CreateAtObject((CHARACTERROOT)Helpers_InvisibleCaster_13865a62-6608-4322-be88-b94d0ae25240,_Performer,1,0,"SpawnFOVHelper_EmbersLute",1,(CHARACTER)_Spawn)
-THEN
-ApplyStatus(_Spawn,"EMLUTE_LEGEND_FOV_HELPER",-1.0);
-UseSpell(_Spawn,"Shout_RingOfDarkness_Emlute",_Performer);
-DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,(CHARACTER)_Spawn);
-
-IF
-EnteredLevel((CHARACTER)_PositionFinder,(CHARACTERROOT)_Template, _)
-AND
-DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell)
-AND
-DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
-AND
-QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_Count)
-THEN
-ApplyStatus(_PositionFinder,"SNEAKING",-1.0);
-DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_Count,0);
-
-IF
-EnteredLevel((CHARACTER)_PositionFinder,(CHARACTERROOT)_Template, _)
-AND
-DB_ScriptedVFX_JankPositionFinder_EmbersLute(_Song,_Template,_Spell)
-THEN
-DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder);
-
-QRY
-QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_Count)
-AND
-IntegerSum(_Count,1,_CountSum)
-THEN
-NOT DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_Count);
-DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_CountSum);
-
-QRY
-QRY_CountIncrement_EmbersLute((CHARACTER)_Performer)
-AND
-NOT QRY_AtLeastOne_EmbersLute((CHARACTER)_Performer)
-THEN
-DB_ScriptedVFX_PositionHelper_Count_EmbersLute((CHARACTER)_Performer,1);
-
-QRY
-QRY_AtLeastOne_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_Count)
-THEN
-DB_NOOP(1);
-
-IF
-StatusApplied((CHARACTER)_PositionFinder,"SNEAKING",_,_)
-AND
-DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0)
-AND
-DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,_PerformerFOV)
-AND
-CanSee(_Performer,_PositionFinder,0)
-AND
-GetPosition(_PositionFinder,_X,_Y,_Z)
-THEN
-PlayEffectAtPosition((EFFECTRESOURCE)VFX_Status_Leadership_Apply_01_f7de545f-6046-d4bd-d1a0-5374f59db058,_X,_Y,_Z);
-DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z);
-NOT DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0);
-PROC_RemovePositionHelper_EmbersLute(_PositionFinder,_PositionNum);
-
-IF
-StatusApplied((CHARACTER)_PositionFinder,"SNEAKING",_,_)
-AND
-DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0)
-AND
-DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,_PerformerFOV)
-AND
-CanSee(_Performer,_PositionFinder,1)
-AND
-GetPosition(_PositionFinder,_X,_Y,_Z)
-THEN
-DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z);
-NOT DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,0);
-PROC_RemovePositionHelper_EmbersLute(_PositionFinder,_PositionNum);
-
-PROC
-PROC_ScriptedVFX_PlaceSpawns_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_SpawnNum,(INTEGER)_PosNum)
-AND
-DB_ScriptedVFX_SongSpawnMapping_EmbersLute(_SpawnNum,_Song,_CharTemplate,_Status)
-AND
-NOT QRY_SpawnIsPlaced_EmbersLute(_Performer,_Song,_CharTemplate)
-AND
-QRY_PositionIsBehindPerformer_EmbersLute(_Performer,_Song,_PosNum)
-AND
-NOT QRY_PositionOccupied_EmbersLute(_Performer,_Song,_PosNum)
-AND
-QRY_CreateSpawnAtPosition_EmbersLute(_PosNum,_CharTemplate,_Performer,_Song,_Status)
-THEN
-DB_NOOP(1);
-
-PROC
-PROC_ScriptedVFX_PlaceSpawns_FallBack_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_SpawnNum)
-THEN
-PROC_ScriptedVFX_PlaceSpawns_FallBack_Pos_EmbersLute(_Performer,_Song,_SpawnNum,1);
-PROC_ScriptedVFX_PlaceSpawns_FallBack_Pos_EmbersLute(_Performer,_Song,_SpawnNum,2);
-PROC_ScriptedVFX_PlaceSpawns_FallBack_Pos_EmbersLute(_Performer,_Song,_SpawnNum,3);
-PROC_ScriptedVFX_PlaceSpawns_FallBack_Pos_EmbersLute(_Performer,_Song,_SpawnNum,4);
-PROC_ScriptedVFX_PlaceSpawns_FallBack_Pos_EmbersLute(_Performer,_Song,_SpawnNum,5);
-
-PROC
-PROC_ScriptedVFX_PlaceSpawns_FallBack_Pos_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_SpawnNum,(INTEGER)_PosNum)
-AND
-DB_ScriptedVFX_SongSpawnMapping_EmbersLute(_SpawnNum,_Song,_CharTemplate,_Status)
-AND
-NOT QRY_SpawnIsPlaced_EmbersLute(_Performer,_Song,_CharTemplate)
-AND
-QRY_PositionIsVisibleToPerformer_EmbersLute(_Performer,_Song,_PosNum)
-AND
-NOT QRY_PositionOccupied_EmbersLute(_Performer,_Song,_PosNum)
-AND
-QRY_CreateSpawnAtPosition_EmbersLute(_PosNum,_CharTemplate,_Performer,_Song,_Status)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_CreateSpawnAtPosition_EmbersLute((INTEGER)_PosNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
-AND
-DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PosNum,_X,_Y,_Z)
-AND
-QRY_CreateSpawnAtPositionXYZ_EmbersLute(_X,_Y,_Z,_PosNum,_CharTemplate,_Performer,_Song,_Status)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_CreateSpawnAtPosition_EmbersLute((INTEGER)_PosNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
-AND
-DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PosNum,_X,_Y,_Z)
-AND
-QRY_CreateSpawnAtPositionXYZ_EmbersLute(_X,_Y,_Z,_PosNum,_CharTemplate,_Performer,_Song,_Status)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_CreateSpawnAtPositionXYZ_EmbersLute((REAL)_X,(REAL)_Y,(REAL)_Z,(INTEGER)_PositionNum,(CHARACTERROOT)_CharTemplate,(CHARACTER)_Performer,(STRING)_Song,(STRING)_Status)
-AND
-IntegerToString(_PositionNum,_PosStr)
-AND
-Concatenate("Mapping template to position ", _PosStr, _DebugMsg)
-AND
-CreateAtObject(_CharTemplate,_Performer,0,1,"SongSpawnFinishEvent_EmbersLute",1,_Spawn)
-AND
-DB_ScriptedVFX_TemplatePolymorph_EmbersLute(_CharTemplate,_PolySatus)
-THEN
-DebugText(_Performer,_DebugMsg);
-ApplyStatus(_Spawn,_PolySatus,-1.0);
-TeleportToPosition(_Spawn,_X,_Y,_Z,"TeleportSpawnToPosition_EmbersLute",0,0,0,0,1);
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status);
-DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
-NOT DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z);
-NOT DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z);
-
-PROC
-PROC_ScriptedVFX_MopUp_EmbersLute((CHARACTER)_Performer,(STRING)_Song)
-AND
-DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,_IsBehind)
-AND
-NOT QRY_PositionOccupied_EmbersLute(_Performer,_Song,_PositionNum)
-AND
-IsDead(_PositionFinder,0)
-THEN
-PROC_RemovePositionHelper_EmbersLute(_PositionFinder,_PositionNum);
-NOT DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_PositionNum,_IsBehind);
-
-PROC
-PROC_ScriptedVFX_MopUp_EmbersLute((CHARACTER)_Performer,(STRING)_Song)
-AND
-DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,(CHARACTER)_PerformerFOV)
-AND
-IsDead(_PerformerFOV,0)
-THEN
-NOT DB_ScriptedVFX_FOVHelper_EmbersLute(_Performer,_PerformerFOV);
-PROC_RemovePositionHelper_EmbersLute(_PerformerFOV,-1);
-
-PROC
-PROC_RemovePositionHelper_EmbersLute((CHARACTER)_PositionFinder,(INTEGER)_PositionNumber)
-AND
-IntegerToString(_PositionNumber,_PosStr)
-AND
-Concatenate("Removing helper: ", _PosStr, _DebugMsg)
-THEN
-DebugText(_PositionFinder,_DebugMsg);
-SetOnStage(_PositionFinder,0);
-Die(_PositionFinder,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
-SetTag(_PositionFinder, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
-
-QRY
-QRY_SpawnIsPlaced_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(CHARACTERROOT)_CharTemplate)
-AND
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_PositionOccupied_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_PositionNum)
-AND
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_PositionIsBehindPerformer_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_PositionNum)
-AND
-DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z)
-THEN
-DB_NOOP(1);
-
-QRY
-QRY_PositionIsVisibleToPerformer_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(INTEGER)_PositionNum)
-AND
-DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z)
-THEN
-DB_NOOP(1);
-
-IF
-EntityEvent((CHARACTER)_Spawn,"SongSpawnFinishEvent_EmbersLute")
-AND
-DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
-AND
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status)
-THEN
-LookAtEntity(_Spawn,_Performer);
-
-IF
-EntityEvent((CHARACTER)_Spawn,"TeleportSpawnToPosition_EmbersLute")
-AND
-DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
-AND
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status)
-THEN
-LookAtEntity(_Spawn,_Performer);
-
-IF
 StatusRemoved((CHARACTER)_Spawn,(STRING)_Status,_,_)
 AND
 DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
-AND
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status)
 THEN
 SetOnStage(_Spawn,0);
 Die(_Spawn,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 SetTag(_Spawn, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
 NOT DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
-NOT DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status);
 //END_REGION
 
 // Position finder reset helpers
 //REGION
-PROC
-PROC_ScriptedVFX_Reset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_Count)
-THEN
-NOT DB_ScriptedVFX_PositionHelper_Count_EmbersLute(_Performer,_Count);
-
-PROC
-PROC_ScriptedVFX_Reset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z)
-THEN
-NOT DB_ScriptedVFX_BehindPerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z);
-
-PROC
-PROC_ScriptedVFX_Reset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z)
-THEN
-NOT DB_ScriptedVFX_PerformerXYZ_EmbersLute(_Performer,_Song,_PositionNum,_X,_Y,_Z);
-
-PROC
-PROC_ScriptedVFX_HelperReset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_CountSum,_IsBehind)
-THEN
-Die(_PositionFinder,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
-NOT DB_ScriptedVFX_PositionHelper_EmbersLute(_Performer,_Song,_PositionFinder,_CountSum,_IsBehind);
-
 PROC
 PROC_ScriptedVFX_SpawnReset_EmbersLute((CHARACTER)_Performer)
 AND
@@ -441,32 +128,6 @@ DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
 THEN
 Die(_Spawn,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
 NOT DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
-
-PROC
-PROC_ScriptedVFX_SpawnReset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status)
-THEN
-NOT DB_ScriptedVFX_SpawnPlaced_EmbersLute(_PositionNum,_Song,_Performer,_CharTemplate,_Status);
-
-PROC
-PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute()
-AND
-DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder)
-AND
-IsDead(_PositionFinder,0)
-THEN
-SetOnStage(_PositionFinder,0);
-Die(_PositionFinder,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
-
-PROC
-PROC_ScriptedVFX_CleanUp_Failsafe_EmbersLute()
-AND
-DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder)
-AND
-IsDead(_PositionFinder,1)
-THEN
-NOT DB_ScriptedVFX_JankPositionFinder_Audit_EmbersLute(_PositionFinder);
 //END_REGION
 
 // While it is quite possible to use the VFX editor to create long-running

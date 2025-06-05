@@ -37,7 +37,7 @@ DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUID
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,2.0,0.5,0.5,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.5,0.5,1);
 // Spawn the Vicious Rockery gnomes in ensemble formation
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);
@@ -218,8 +218,6 @@ DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
 THEN
 DebugText(_Performer,"Removing performing status");
 ObjectTimerCancel(_Performer,_Song);
-PROC_ScriptedVFX_Reset_EmbersLute(_Performer);
-PROC_ScriptedVFX_HelperReset_EmbersLute(_Performer);
 PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
 
 IF

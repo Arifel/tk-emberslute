@@ -338,7 +338,6 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" value="Performing" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9097cd53-551e-470e-a5f4-2938c9510bc0" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_UmberleeHymn" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="HorizontalFOVOverride(220);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -356,7 +355,6 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not Combat() and ((not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform()))) or (Combat() and Emlute_EventBreaksInCombatPerformance())" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EndEffect" type="GuidObjectTableFieldDefinition" value="126608f9-3374-45d3-bb54-4db37fb86272" />
       </fields>
     </stat_object>
@@ -370,7 +368,6 @@
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_FinalAct" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c5017809-0087-43d3-aefc-e0d55e029849" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_FinalAct" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="HorizontalFOVOverride(180);SightRangeOverride(10);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -384,7 +381,6 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="(not Combat() and ((not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform()))) or (Combat() and Emlute_EventBreaksInCombatPerformance())" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="EndEffect" type="GuidObjectTableFieldDefinition" value="b42a2770-7295-41be-908a-b617774ac179" />
       </fields>
     </stat_object>

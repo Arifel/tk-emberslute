@@ -41,10 +41,10 @@ DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_Final
 
 // Mappings to calculate where to spawn characters around the performer's location
 //REGION
-DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,-1.5,0.0,0.0);
-DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,1.5,0.0,0.0);
-DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,-1.5,0.0,0.0);
-DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,1.5,0.0,0.0);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,-1.5,0.0,-0.2);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,1.5,0.0,-0.2);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,-1.5,0.0,-0.2);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,1.5,0.0,-0.2);
 //END_REGION
 
 // This is so stupid, but it is better to spawn a vanilla template and then polymorph the visual, than spawn a custom template.

@@ -61,6 +61,21 @@ using "OBJ_Book"
 data "RootTemplate" "be081cf0-2809-4c9a-9fc0-959c0a6c64ad"
 data "Rarity" "VeryRare"
 
+new entry "EMBERS_LUTE_THANKYOU_NOTE_V3"
+type "Object"
+using "EMBERS_LUTE_THANKYOU_NOTE"
+data "RootTemplate" "24521003-c36c-4f84-8c93-53fd5de3d852"
+
+new entry "EMBERS_LUTE_BOOK_CHANGELOG_V3"
+type "Object"
+using "EMBERS_LUTE_THANKYOU_NOTE"
+data "RootTemplate" "285bdbfe-2e72-4f72-ac65-9fda54741525"
+
+new entry "EMBERS_LUTE_BOOK_VERSION"
+type "Object"
+using "EMBERS_LUTE_THANKYOU_NOTE"
+data "RootTemplate" "55a87ede-54a9-4eb6-b3ff-aebe2e09c0e9"
+
 new entry "EMBERS_LUTE_BOOK_FAQ"
 type "Object"
 using "OBJ_Book"
@@ -90,6 +105,11 @@ type "Object"
 using "OBJ_Book"
 data "RootTemplate" "0aa1e5e4-ec06-499e-b3d2-b5b9ca84b976"
 data "Rarity" "VeryRare"
+
+new entry "EMBERS_LUTE_BOOK_INFO_LEARNMUSIC"
+type "Object"
+using "EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES"
+data "RootTemplate" "73f909de-e5f5-4abe-8203-688bdaff1a13"
 
 new entry "EMBERS_LUTE_TEN_REASONS_BOOK"
 type "Object"

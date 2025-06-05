@@ -50,6 +50,8 @@ SavegameLoaded()
 AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3",_)
 THEN
+DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852);
+DB_OneTimeRewards_EmbersLute(96,(ITEMROOT)Emlute_Book_Version_3_0_0_ChangeLog_285bdbfe-2e72-4f72-ac65-9fda54741525);
 PROC_ResetBardReactionFacts_EmbersLute();
 PROC_RecreateBardReactionFacts_EmbersLute();
 PROC_ResetScriptedVFXFacts_EmbersLute();

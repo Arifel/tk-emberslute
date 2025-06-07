@@ -462,10 +462,17 @@ DualEntityEvent((ITEM)_MusicBook,(CHARACTER)_Character,"ReadTheBook_EmbersLute")
 THEN
 Use(_Character,_MusicBook,1,0,"ReadingMusicLearningBook_Emlute");
 
+// Noticed some strange UI locking in controller mode, so going to put in a short
+// delay before deleting the book. Not sure if this will fix, just a punt.
 IF
 GameBookInterfaceClosed((ITEM)_MusicLearnBook, (CHARACTER)_Character)
 AND
 GetTemplate(_MusicLearnBook,(ITEMROOT)Emlute_Book_Info_LearningMusic_73f909de-e5f5-4abe-8203-688bdaff1a13)
+THEN
+ObjectTimerLaunch(_MusicLearnBook,"DeleteMusicBook_EmbersLute",500);
+
+IF
+ObjectTimerFinished((ITEM)_MusicLearnBook,"DeleteMusicBook_EmbersLute")
 THEN
 RequestDelete(_MusicLearnBook);
 //END_REGION

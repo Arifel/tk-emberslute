@@ -656,16 +656,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Reward_Charismatic_Defence" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="9288e0cd-b0fe-4570-a49f-f5a687892c51" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a6f74c9gb2d7g07b4g9c90g1e2542db7738" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf74da305g73c0g345dg2604g637a2e78e680" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf74da305g73c0g345dg2604g637a2e78e680" version="5" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="CharismaModifier+DexterityModifier;DealDamage(1d4, MainMeleeWeaponDamageType)" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="4" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
-        <field name="EnabledConditions" type="StringTableFieldDefinition" value="HasActionResource('ReactionActionPoint', 1, 0, false, false, context.Source) and WieldingFinesseWeaponInSpecificHand(context.Source, false);" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnEquip;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="IsProficientWithEquippedWeapon();" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnTurn;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Emlute_Parry);" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;ToggledDefaultOn;Highlighted;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -688,7 +688,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h72a2f8f4g25a3gb752gb59bgcb1ad6f5c000" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3a9e2110g5737gc7edg7f2fgad4093131a7e" version="3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;OncePerShortRest" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_PERFORM_POSITIVE_CHARGE');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SWIFT_WINDS_DURATION_TECHNICAL,100,-1)" />
@@ -1067,6 +1067,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_BlueHand" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f35b9627-e41a-402a-ad2e-37ddb73e8317" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="656db106-cfd5-4047-a7f3-9910d9caf394" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
       </fields>
     </stat_object>
   </stat_objects>

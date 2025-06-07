@@ -545,5 +545,104 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ae175124-388d-46a2-8a3e-650c9e362c25" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_4" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6d916f78-8078-4cd6-890e-a1ceed73cf8e" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_5" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_BARD_SHOES" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ac264383-10ca-4aa3-a84a-b8ff9bd28f72" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_6" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_UNKNOWN_UNDERWEAR" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="95e49ab9-f90c-4fe8-b3b0-6a00f6e5421b" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_7" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_GRIMJIG_UNDERWEAR" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c15e50d1-309f-4ff3-8b39-da32a177456e" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_8" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_CRITICAL_MOCKERY_RING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cb9be0ab-b86b-4425-afa9-9638bb71410c" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_9" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_DEXTEROUS_JUMP_RING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d67e38b4-b57f-4866-b069-b65a4f7de725" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_10" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_PARRY_GLOVES" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="77ce7be4-1630-428a-afcd-ba53f0de00f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_11" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_SWIFT_WINGS_RING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF191919" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7f08cd19-388e-4841-a529-a26d3a859e6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515_substat_12" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_CHARISMATIC_STING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

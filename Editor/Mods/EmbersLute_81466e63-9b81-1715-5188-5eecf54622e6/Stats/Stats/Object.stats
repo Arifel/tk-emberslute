@@ -68,6 +68,14 @@
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="d0f807b4-0115-4e6c-9241-b16bc59480b0" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da9220da-d3c5-4a05-8489-3ad457e91582" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARI_CONT_EMBERSLUTE_SPOILERS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fceb991-ab43-4de3-afd2-6b5b3f8d4096" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="669cf84d-f222-4e82-b300-369001765514" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF663866" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="0799d758-ee44-4d2f-990b-93628b04c599" />

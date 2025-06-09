@@ -10,12 +10,20 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceRequest;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1)" />
-        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1);IF(Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_VANILLA,100,-1)" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK);RemoveStatus(EMLUTE_PERFORM_POSITIVE_VANILLA)" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusSheathing" version="1" />
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(HasPassive('Emlute_TransientPerformance_Spirit')):ApplyStatus(EMLUTE_KEEP_ALIVE)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF008000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="887ae097-d3b2-40ef-bdb7-2d0dd2c3419c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE_VANILLA" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE_VANILLA" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">

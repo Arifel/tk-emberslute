@@ -9,9 +9,15 @@ data "AuraStatuses" "TARGET:IF(HasPassive('Emlute_TransientPerformance_Spirit'))
 data "RemoveConditions" "(not Combat() and (((not IsStatusEvent(StatusEvent.OnMove)) and Emlute_EventBreaksPerformance()) or (IsStatusEvent(StatusEvent.OnMove) and (not HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE',context.Source))))) or (Combat() and Emlute_EventBreaksInCombatPerformance())"
 data "RemoveEvents" "OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceRequest;OnCombatEnded"
 data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
-data "OnApplyFunctors" "IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1)"
-data "OnRemoveFunctors" "RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK)"
+data "OnApplyFunctors" "IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1);IF(Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_VANILLA,100,-1)"
+data "OnRemoveFunctors" "RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK);RemoveStatus(EMLUTE_PERFORM_POSITIVE_VANILLA)"
 data "Sheathing" ""
+
+new entry "EMLUTE_PERFORM_POSITIVE_VANILLA"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackId" "EMLUTE_PERFORM_POSITIVE_VANILLA"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
 
 new entry "EMLUTE_PERFORM_POSITIVE_GOOD"
 type "StatusData"

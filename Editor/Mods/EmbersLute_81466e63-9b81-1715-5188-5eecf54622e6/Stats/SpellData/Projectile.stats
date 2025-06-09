@@ -121,9 +121,10 @@
         <field name="UUID" type="IdTableFieldDefinition" value="57a469c6-4ddc-40b9-8eda-8285b3c1a9ee" />
         <field name="Name" type="NameTableFieldDefinition" value="TossOnyx_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(6cbbe9f6-c346-4d6c-b1f1-4cbe6aaf99ef);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(49b84359-6a28-460e-af98-4526c5fca6fd);" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h034c40b0g345agdf4fg263bg7b79f4e27b28" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h034c40b0g345agdf4fg263bg7b79f4e27b28" version="2" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;db6bd6e4-9205-4560-8d22-6db59932d566,,:fb1ee9e6-eb35-4508-8ab7-a4cbf269b2f1,,;,,;,,;,,;,,;,,;,," />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -222,6 +223,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="1" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_TossACoin" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;f43888ef-1069-40d8-9159-ca0bc413fd5f,,;,,;,,;,,;,,;,,;,," />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

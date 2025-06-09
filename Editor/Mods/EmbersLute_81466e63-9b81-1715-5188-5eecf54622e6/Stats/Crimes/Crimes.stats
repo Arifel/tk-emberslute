@@ -22,11 +22,8 @@
         <field name="TargetDialogueFlags" type="EnumerationListTableFieldDefinition" value="Incl_Summon;Incl_Wildshape;Incl_OtherCannotTalk" enumeration_type_name="DisturbanceDialogueCapability" version="1" />
         <field name="Priority" type="IntegerTableFieldDefinition" value="100" />
         <field name="InvestigationKind" type="EnumerationTableFieldDefinition" value="InvestigateCriminalReact" enumeration_type_name="DisturbanceInvestigationKind" version="1" />
-        <field name="PrimarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_ContinuouslyWatchCriminalAndOptionalAD_ListeningToBardSong" />
-        <field name="SecondarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_ContinuouslyWatchCriminalAndOptionalAD_ListeningToBardSong" />
-        <field name="CustomInvestigationAD" type="StringTableFieldDefinition" value="GEB_AD_MusicalPerformance_Good_a85c57e8-c74d-f8a0-6261-d5f7a3d7f90a" />
-        <field name="Dialog" type="StringTableFieldDefinition" value="GEB_AD_MusicalPerformance_Good_a85c57e8-c74d-f8a0-6261-d5f7a3d7f90a" />
-        <field name="NoticedAD" type="StringTableFieldDefinition" value="GEB_AD_MusicalPerformance_Good_a85c57e8-c74d-f8a0-6261-d5f7a3d7f90a" />
+        <field name="PrimarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_OsirisPerformCrowdReaction_EmbersLute" />
+        <field name="SecondarySensibleAction" type="FixedStringTableFieldDefinition" value="CRIME_OsirisPerformCrowdReaction_EmbersLute" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">
@@ -64,6 +61,19 @@
         <field name="Tension" type="EnumerationTableFieldDefinition" value="any" enumeration_type_name="Tension" version="1" />
         <field name="TargetDialogueFlags" type="EnumerationListTableFieldDefinition" value="Incl_Summon;Incl_Wildshape;Incl_OtherCannotTalk" enumeration_type_name="DisturbanceDialogueCapability" version="1" />
         <field name="Priority" type="IntegerTableFieldDefinition" value="400" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="304da753-20b1-4270-8401-7c29ce8fa17a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a8d5073f-5d9c-407c-bcb9-5ae4f27a0a76" />
+        <field name="Name" type="NameTableFieldDefinition" value="304da753-20b1-4270-8401-7c29ce8fa17a_substat_3" />
+        <field name="ReactionCategory_Tag" type="FixedStringTableFieldDefinition" value="CROWDSYS_NPC" />
+        <field name="ParentTag" type="FixedStringTableFieldDefinition" value="HUMANOID" />
+        <field name="Tension" type="EnumerationTableFieldDefinition" value="any" enumeration_type_name="Tension" version="1" />
+        <field name="TargetDialogueFlags" type="EnumerationListTableFieldDefinition" value="Incl_Summon;Incl_Wildshape;Incl_OtherCannotTalk" enumeration_type_name="DisturbanceDialogueCapability" version="1" />
+        <field name="Priority" type="IntegerTableFieldDefinition" value="350" />
+        <field name="InvestigationKind" type="EnumerationTableFieldDefinition" value="ForceInvestigateSceneReact" enumeration_type_name="DisturbanceInvestigationKind" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">

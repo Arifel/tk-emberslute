@@ -692,9 +692,9 @@
   <content contentuid="h6592e521g9d60gead6g9a6fg985a7778e4dc" version="1">Use the combat animations for the Spellblade wizard subclass when enabled.</content>
   <content contentuid="h3e6a204dgfec4g47a9g1c64g3114103a4398" version="4">Simple Bard Shoes</content>
   <content contentuid="h3469e125g7652gfc84g511ag514aa08859af" version="4">These shoes were a gift from an admiring fan, inspired by the music you performed.</content>
-  <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="6">Spin Slippers</content>
-  <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="5" />
-  <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="5">These boots were donated by an appreciative audience member following a musical performance. They claimed these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
+  <content contentuid="h0faf462ag89c1g764dg272dgba94c536ac0a" version="7">The Last Encore</content>
+  <content contentuid="h974352acg35f1gc953g4ee1g97dfe3b6b833" version="6" />
+  <content contentuid="h9c0510cfgf3c6g6ac9g7c67g6121b9f1ed14" version="6">These boots were donated by an appreciative audience member following a musical performance. They claimed these soft-soled boots hold the echoes of the final performance of a legendary dancer.</content>
   <content contentuid="h57e450a2g0d4bg8552g0520g86ab76d25a5d" version="1">Gifting a Pair of Boots</content>
   <content contentuid="h5178e91dg6e4bg1044g7404g3dfeb6a40882" version="1">A pair of boots has been placed inside your pack.</content>
   <content contentuid="h7754fffdg0606geb52g16d7g83fe72a54d05" version="1">Gifting a Pair of Shoes</content>
@@ -715,13 +715,13 @@
   <content contentuid="h41a4b5deg4fc3g5752gb806ge7e934c4f69a" version="4">You must be wielding a &lt;LSTag Tooltip="Finesse"&gt;Finesse Weapon&lt;/LSTag&gt; you are proficient with, be able to see the attacker, and you can't be Incapacitated or Restrained. Damage reduction is the sum of the Charisma and Dexterity modifiers.</content>
   <content contentuid="h1193c397g8878g456cgcd5cgaf8040016bdd" version="1">Defensive Finesse</content>
   <content contentuid="hc880278fgff26g8416gdd16g871a0abf8238" version="2">You must be wielding a &lt;LSTag Tooltip="Finesse"&gt;Finesse Weapon&lt;/LSTag&gt;, see the attacker, and you can't be Incapacitated or Restrained.</content>
-  <content contentuid="h63826570gf8f8g7755g3deegf1329bd867ab" version="5">Gloves of Persuasive Defence</content>
-  <content contentuid="hff22d265g9f20g4ff8g123ag62cef5fb0e10" version="5">Use a reaction to parry a weapon attack, reducing the damage by the sum of your charisma and dexterity modifiers.</content>
-  <content contentuid="h7d56b995g4d01g0dc1g4ce1ga72c9e9c819b" version="5">Gloves gifted to you by an admirer of your musical performance. There's a small note tucked inside the cuff.&lt;br&gt;&lt;br&gt;"You seem like the sort who attracts trouble. I'd love for you to survive long enough to perform again, so take these gloves with my blessing. May they help you graciously smile your way out of a tight spot or two. Or failing that, may they help you deflect the stabby end of the problem away from your good self."</content>
+  <content contentuid="h63826570gf8f8g7755g3deegf1329bd867ab" version="6">Gloves of Persuasive Defence</content>
+  <content contentuid="hff22d265g9f20g4ff8g123ag62cef5fb0e10" version="6">Use a reaction to parry a weapon attack, reducing the damage by the sum of your charisma and dexterity modifiers.</content>
+  <content contentuid="h7d56b995g4d01g0dc1g4ce1ga72c9e9c819b" version="6">Gloves gifted to you by an admirer of your musical performance. There's a small note tucked inside the cuff.&lt;br&gt;&lt;br&gt;"You seem like the sort who attracts trouble. I'd love for you to survive long enough to perform again, so take these gloves with my blessing. May they help you graciously smile your way out of a tight spot or two. Or failing that, may they help you deflect the stabby end of the problem away from your good self."</content>
   <content contentuid="haa68c543g2ed4gf5cdg2bb1g84f1531c94e4" version="3">Fingerless Gauntlets</content>
   <content contentuid="h16b09302g0e4ag7da0g3503g85ad81c39297" version="3">A gift of appreciation for your musical performances. These gauntlets offer moderate protection while keeping the fingers free for strumming a loot (or rifling through pockets).</content>
-  <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="4">Ring of Dexterous Jumping</content>
-  <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="4">This ornate ring was a gift from an admirer of your musical performances.</content>
+  <content contentuid="h1d73ac6bg1674g6bd7gfb5egc11dd181517e" version="5">Ring of Dexterous Jumping</content>
+  <content contentuid="h284f1788gc16agc10bg87fbg507b3149b722" version="5">This ornate ring was a gift from an admirer of your musical performances.</content>
   <content contentuid="h51eccdf8gd86agbbbcg6329gab13bf8ba1da" version="8">Demoraliser</content>
   <content contentuid="h3d753a9fgfbf7g3462g0b1bg0d38b0a494f5" version="8">This rapier hums with an emboldening energy, ready to lash out mockingly at whomever misses its wielder in a melee or ranged attack..&lt;br&gt;&lt;br&gt;"Your music reminded me of an adventuring friend of mine from long ago. They'd have wanted you to have this, I think. Thank you."</content>
   <content contentuid="hf9e084d7gefe1g4092g75f3gc0a8f319ab70" version="1">Dexterous Jump</content>

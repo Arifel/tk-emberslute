@@ -1,6 +1,0 @@
-new entry "SNEAKING_OBSCURED_EMLUTE"
-type "StatusData"
-data "StatusType" "SNEAKING"
-using "SNEAKING"
-data "Boosts" "MovementSpeedLimit(Walk);Tag(VFX_SNEAKING);Invisibility()"
-

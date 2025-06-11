@@ -91,6 +91,10 @@ DB_BardReactions_AnimBank_Emlute("Waving",(ANIMATION)NULL_00000000-0000-0000-000
 DB_BardReactions_AnimBank_Emlute("CineAgreeClap01",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CINE_Cheer_AgreeClap_01_8775cd9a-9d7c-408b-aa4b-6a557f71e353,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,10700);
 DB_BardReactions_AnimBank_Emlute("CineClapStand",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CINE_Clap_StandL_01_f18ce053-ceca-4c54-8607-a9045cc31d75,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,7000);
 DB_BardReactions_AnimBank_Emlute("CineCheering03",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CINE_Cheer_Enthusiast_03_8f0d249c-d964-4f4d-9203-56a52c321ead,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,14730);
+DB_BardReactions_AnimBank_Emlute("CineHandMouthShout02",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CINE_Cheer_ShoutHandMouth_02_8eeaa8db-d3df-4751-be2a-b52f85dee181,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,22540);
+DB_BardReactions_AnimBank_Emlute("CINECheering04",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CINE_Cheer_Enthusiast_04_070c0efe-c43d-45ae-92ae-f96b1020c627,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,14240);
+DB_BardReactions_AnimBank_Emlute("CINECheeringLong03",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CINE_Cheer_Enthusiast_03_8f0d249c-d964-4f4d-9203-56a52c321ead,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,29500);
+DB_BardReactions_AnimBank_Emlute("CheeringLong01",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_Cheering_01_bb17118b-9bdc-4003-b9ad-26eda135e1a0,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,16800);
 DB_BardReactions_AnimBank_Emlute("DanceTechno",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_09_18b65bfd-0be7-4f45-87c1-123001fe639b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,15900);
 DB_BardReactions_AnimBank_Emlute("DanceTwist",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_10_38794bca-7a98-4a46-9401-85d2d75c8752,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,36800);
 DB_BardReactions_AnimBank_Emlute("DanceIrish",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_05_4748a465-1122-42cd-9f2e-562416e4750d,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,22100);
@@ -139,7 +143,7 @@ DB_BardReactions_Charges_Emlute(4,14,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-7674
 DB_BardReactions_Charges_Emlute(5,14,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,"GoblinPeePee");
 DB_BardReactions_Charges_Emlute(1,11,99,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72ec0b9d94d7,"DanceTechno");
 DB_BardReactions_Charges_Emlute(2,11,99,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72ec0b9d94d7,"DanceDisco");
-DB_BardReactions_Charges_Emlute(3,11,99,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72ec0b9d94d7,"DanceHopak");
+DB_BardReactions_Charges_Emlute(3,11,99,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72ec0b9d94d7,"CINECheering04");
 DB_BardReactions_Charges_Emlute(4,11,99,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72ec0b9d94d7,"Cheering01");
 DB_BardReactions_Charges_Emlute(5,11,99,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72ec0b9d94d7,"Cheering02");
 DB_BardReactions_Charges_Emlute(1,13,99,(TAG)HALFELF_34317158-8e6e-45a2-bd1e-6604d82fdda2,"DanceTechno");
@@ -177,7 +181,7 @@ DB_BardReactions_Charges_Emlute(2,8,99,(TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c
 DB_BardReactions_Charges_Emlute(3,8,99,(TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c,"DanceTechno");
 DB_BardReactions_Charges_Emlute(4,8,99,(TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c,"DanceIrish");
 DB_BardReactions_Charges_Emlute(5,8,99,(TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c,"Cheering02");
-DB_BardReactions_Charges_Emlute(1,5,9,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,"DanceHopak");
+DB_BardReactions_Charges_Emlute(1,5,9,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,"CheeringLong01");
 DB_BardReactions_Charges_Emlute(2,5,9,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,"DanceDisco");
 DB_BardReactions_Charges_Emlute(3,5,9,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,"GoblinDrinking");
 DB_BardReactions_Charges_Emlute(4,5,9,(TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,"GoblinDrinking");
@@ -201,17 +205,17 @@ DB_BardReactions_Charges_Emlute(1,1,4,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca
 DB_BardReactions_Charges_Emlute(2,1,4,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"ArmsCrossed");
 DB_BardReactions_Charges_Emlute(3,1,4,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CineAgreeClap01");
 DB_BardReactions_Charges_Emlute(4,1,4,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering01");
-DB_BardReactions_Charges_Emlute(5,1,4,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Pondering");
-DB_BardReactions_Charges_Emlute(1,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering01");
+DB_BardReactions_Charges_Emlute(5,1,4,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CINECheeringLong03");
+DB_BardReactions_Charges_Emlute(1,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CineHandMouthShout02");
 DB_BardReactions_Charges_Emlute(2,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CineAgreeClap01");
 DB_BardReactions_Charges_Emlute(3,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering02");
 DB_BardReactions_Charges_Emlute(4,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering01");
-DB_BardReactions_Charges_Emlute(5,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Pondering");
+DB_BardReactions_Charges_Emlute(5,5,9,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CineAgreeClap01");
 DB_BardReactions_Charges_Emlute(1,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering01");
-DB_BardReactions_Charges_Emlute(2,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering02");
-DB_BardReactions_Charges_Emlute(3,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Waving");
-DB_BardReactions_Charges_Emlute(4,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Cheering01");
-DB_BardReactions_Charges_Emlute(5,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"Waving");
+DB_BardReactions_Charges_Emlute(2,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CINECheeringLong03");
+DB_BardReactions_Charges_Emlute(3,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CheeringLong01");
+DB_BardReactions_Charges_Emlute(4,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CineHandMouthShout02");
+DB_BardReactions_Charges_Emlute(5,10,99,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8,"CINECheering04");
 //END_REGION
 
 // Bard reactions while in camp i.e. sit and chill mode
@@ -275,10 +279,10 @@ DB_BardReactions_TemporaryItems_Emlute((ITEMROOT)EmbersLute_PerformanceReward_Sh
 DB_BardReactions_TemporaryItems_Emlute((ITEMROOT)EmbersLute_PerformanceReward_ShabbyUnderwear_B_e6957ccd-e070-4f3a-96b4-aa4b3723d4ba);
 // Random things that will be thrown or reverse pick-pocketed into player inventory throughout the performance
 DB_BardReactions_ThrowActions_Emlute(1,"Projectile_GEB_Perform_TossCoin","",0);
-DB_BardReactions_ThrowActions_Emlute(2,"Projectile_TossFlowerAlt1_Emlute","",0);
-DB_BardReactions_ThrowActions_Emlute(3,"Projectile_GEB_Perform_TossCoin","Target_ReversePickPocket_Coin",1);
-DB_BardReactions_ThrowActions_Emlute(4,"Projectile_GEB_Perform_TossCoin","Target_ReversePickPocket_Coin",1);
-DB_BardReactions_ThrowActions_Emlute(5,"Projectile_GEB_Perform_TossCoin","Target_ReversePickPocket_Coin",1);
+DB_BardReactions_ThrowActions_Emlute(2,"Projectile_GEB_Perform_TossCoin","",0);
+DB_BardReactions_ThrowActions_Emlute(3,"Projectile_GEB_Perform_TossCoin","Projectile_TossFlowerAlt2_Emlute",1);
+DB_BardReactions_ThrowActions_Emlute(4,"Projectile_GEB_Perform_TossCoin","Projectile_TossFlowerAlt1_Emlute",1);
+DB_BardReactions_ThrowActions_Emlute(5,"Projectile_GEB_Perform_TossCoin","Projectile_TossFlowerAlt3_Emlute",1);
 DB_BardReactions_ThrowActions_Emlute(6,"Projectile_GEB_Perform_TossCoin","",0);
 DB_BardReactions_ThrowActions_Emlute(7,"Projectile_GEB_Perform_TossCoin","",0);
 DB_BardReactions_ThrowActions_Emlute(8,"Projectile_TossFlowerAlt2_Emlute","",0);
@@ -286,7 +290,7 @@ DB_BardReactions_ThrowActions_Emlute(9,"Projectile_TossFlowerAlt3_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(10,"Projectile_TossFlowerAlt2_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(11,"Projectile_TossFlowerAlt1_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(12,"Projectile_TossFlowerAlt2_Emlute","",0);
-DB_BardReactions_ThrowActions_Emlute(13,"Projectile_TossOnyx_Emlute","Target_ReversePickPocket_Coin",1);
+DB_BardReactions_ThrowActions_Emlute(13,"Projectile_TossOnyx_Emlute","Projectile_TossFlowerAlt1_Emlute",1);
 // Goblins should chuck meat and pants as a reward
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,1,"Projectile_TossShabbyPants1_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,3,"Projectile_TossMeat2_Emlute");
@@ -422,8 +426,12 @@ AND
 DB_BardReactions_MusicalPerformance_Emlute(_CrimeID,_Performer,"MusicalPerformance_Good_Emlute")
 AND
 NOT DB_CantAct(_NPC)
+AND
+GetPosition(_Performer,_PerformerX,_PerformerY,_PerformerZ)
+AND
+FindValidPosition(_PerformerX,_PerformerY,_PerformerZ,4.0,_NPC,1,_DestX,_DestY,_DestZ)
 THEN
-PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute");
+PROC_CharacterMoveToPosition(_NPC,_DestX,_DestY,_DestZ,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute");
 
 IF
 EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")

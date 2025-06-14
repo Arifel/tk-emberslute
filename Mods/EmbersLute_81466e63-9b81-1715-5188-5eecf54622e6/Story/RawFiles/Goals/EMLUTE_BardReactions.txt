@@ -429,7 +429,7 @@ NOT DB_CantAct(_NPC)
 AND
 GetPosition(_Performer,_PerformerX,_PerformerY,_PerformerZ)
 AND
-FindValidPosition(_PerformerX,_PerformerY,_PerformerZ,4.0,_NPC,1,_DestX,_DestY,_DestZ)
+FindValidPosition(_PerformerX,_PerformerY,_PerformerZ,7.0,_NPC,1,_DestX,_DestY,_DestZ)
 THEN
 PROC_CharacterMoveToPosition(_NPC,_DestX,_DestY,_DestZ,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute");
 

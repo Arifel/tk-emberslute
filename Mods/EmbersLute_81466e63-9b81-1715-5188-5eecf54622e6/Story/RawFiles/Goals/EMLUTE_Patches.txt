@@ -66,16 +66,16 @@ SavegameLoaded()
 AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
 AND
-NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE_VANILLA","MusicalPerformance_Good_Emlute","OnStatusApply")
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE_VANILLA","MusicalPerformance_Good","OnStatusApply")
 THEN
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE_VANILLA","MusicalPerformance_Good_Emlute","OnStatusApply");
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE_VANILLA","MusicalPerformance_Good","OnStatusApply");
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",1);
 IF
 SavegameLoaded()
 AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",_)
 AND
-DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE_VANILLA","MusicalPerformance_Good_Emlute","OnStatusApply")
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE_VANILLA","MusicalPerformance_Good","OnStatusApply")
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_CrowdReactions",0);
 //END_REGION

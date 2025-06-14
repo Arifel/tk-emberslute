@@ -1,6 +1,5 @@
 treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
 new treasuretable "EMLUTE_Chest_Content_MusicalSprites"
-CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_INFO_MUSICALSPRITES",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -14,7 +13,6 @@ object category "I_EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_A",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Ensembles"
-CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_INFO_ENSEMBLES",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -22,7 +20,6 @@ object category "I_EMBERS_LUTE_ROLLINGBONES",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_VICIOUSROCKERY",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Annoying"
-CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_INFO_ANNOYING",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -38,7 +35,6 @@ object category "I_EMBERS_LUTE_DYE_BLACKGOLD",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_DYE_WHITEBLACK",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Varnishes"
-CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_BOOK_INFO_VARNISHES",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -48,30 +44,28 @@ object category "I_EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE_BONES",1,0,0,0,0,0,0,
 new subtable "1,1"
 object category "I_EMBERS_LUTE_CONVERSION_POTION_GNOMEMODE",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Misc"
-CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_PANTS_OF_PERFORMANCE",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content"
-CanMerge 1
-new subtable "1,1"
+new subtable "-1"
 object category "I_EMBERS_LUTE_BOOK_FAQ",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_EMBERS_LUTE_THANKYOU_NOTE_V3",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_EMBERS_LUTE_BOOK_VERSION",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_EMBERS_LUTE_BOOK_CHANGELOG_V3",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_EMBERS_LUTE_SUMMON_CHEST_SCROLL",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_MUSICALSPRITES",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_ENSEMBLES",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_ANNOYING",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_VARNISHES",1,0,0,0,0,0,0,0
-new subtable "1,1"
+new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_MISC",1,0,0,0,0,0,0,0
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
@@ -122,7 +116,6 @@ CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_FINALACT",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Spoilers"
-CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_HARPYSONG",1,0,0,0,0,0,0,0
 new subtable "1,1"
@@ -153,3 +146,10 @@ new subtable "1,1"
 object category "I_EMBERS_LUTE_REWARD_SWIFT_WINGS_RING",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_REWARD_CHARISMATIC_STING",1,0,0,0,0,0,0,0
+new treasuretable "EMLUTE_Chest_Content_Flat"
+new subtable "1,1"
+object category "T_EMLUTE_Chest_Content_MusicalSprites",1,0,0,0,0,0,0,0
+object category "T_EMLUTE_Chest_Content_Ensembles",1,0,0,0,0,0,0,0
+object category "T_EMLUTE_Chest_Content_Annoying",1,0,0,0,0,0,0,0
+object category "T_EMLUTE_Chest_Content_Varnishes",1,0,0,0,0,0,0,0
+object category "T_EMLUTE_Chest_Content_Misc",1,0,0,0,0,0,0,0

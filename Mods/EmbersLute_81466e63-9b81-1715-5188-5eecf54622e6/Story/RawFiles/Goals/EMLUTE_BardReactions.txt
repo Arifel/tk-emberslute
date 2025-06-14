@@ -6,7 +6,7 @@ INITSECTION
 // so.... sorry, future me, this will be maintenance hell.
 
 // Doesn't really compensate for all the jank, 
-// but here's an attempt to list all temp tables, timers used etc.
+// but here's an attempt to list all temp tables, entity events used etc.
 //REGION
 // Transient Tables
 // DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,_DisturbanceName) - Crime ID to Performer tracking
@@ -431,6 +431,15 @@ PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_WalkToPerformer_Event
 
 IF
 EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+THEN
+UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer);
+//PROC_PlayLoopingListeningAnim_EmbersLute(_NPC);
+//PROC_BardReactions_NPC_Emlute(_Performer,_NPC);
+
+IF
+CastedSpell((CHARACTER)_NPC,"Projectile_ListenToMusic_Emlute",_,_,_)
 AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
 THEN

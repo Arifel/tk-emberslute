@@ -69,6 +69,7 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e020815g2075g5d79gdba3gb974d40cb304" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Status_SpriteSwarm" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -104,6 +105,24 @@
         <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="12" />
         <field name="AmountOfTargets" type="StringTableFieldDefinition" value="9" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_FacePaint" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d35c1e87-8654-44da-99c9-f3241ed68bf9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ListenToMusic_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ShakeTheLute" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h607e06e9ged47g9963g0d7bg5475021182d7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5fc6627aga9c1g830ag0246g4923413e1bbb" version="2" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;f18ce053-ceca-4c54-8607-a9045cc31d75,,;,,;,,;,,;,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -134,6 +153,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(6afe0665-ef74-44bb-916a-fb00a267b4b9);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h564c2ad7g85a2gce86g3ba5g2be9dab2acc7" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -143,6 +164,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(16c583b8-4729-4603-aeee-d224bf645653);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -177,6 +200,8 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(0ec52ef6-4459-4f6d-99ec-87295bea5b2d);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb7056274g4aecgc7d2g26bbgdb10488301c6" version="2" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -185,6 +210,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="TossShabbyPants2_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(e6957ccd-e070-4f3a-96b4-aa4b3723d4ba);" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -224,6 +251,9 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_TossACoin" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;f43888ef-1069-40d8-9159-ca0bc413fd5f,,;,,;,,;,,;,,;,,;,," />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="2" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

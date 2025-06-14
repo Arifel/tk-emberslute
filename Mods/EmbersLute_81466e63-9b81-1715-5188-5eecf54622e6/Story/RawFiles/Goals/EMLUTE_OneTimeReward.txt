@@ -19,7 +19,7 @@ PROC_OneTimeReward_GiveReward_EmbersLute(100,1,1,_Player);
 //PROC_OneTimeReward_GiveReward_EmbersLute(99,1,1,_Player);
 PROC_OneTimeReward_GiveReward_EmbersLute(98,1,1,_Player);
 PROC_OneTimeReward_GiveReward_EmbersLute(97,1,1,_Player);
-//PROC_OneTimeReward_GiveReward_EmbersLute(96,1,1,_Player);
+PROC_OneTimeReward_GiveReward_EmbersLute(96,1,1,_Player);
 
 //Send to inventory
 PROC

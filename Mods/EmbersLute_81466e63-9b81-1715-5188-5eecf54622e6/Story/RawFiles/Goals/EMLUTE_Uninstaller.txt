@@ -92,6 +92,7 @@ PROC_BardReactions_Reset_EmbersLute();
 PROC_ResetCrimes_EmbersLute();
 PROC_CleanUpFailsafe_EmbersLute();
 PROC_ResetRewardTracker_EmbersLute();
+PROC_ResetOneTimeRewards_EmbersLute();
 OpenMessageBox(_Player,"EMLUTE_CompletedUninstall");
 NOT DB_ItemCleanUp_EmbersLute(_Player);
 

@@ -31,6 +31,13 @@ DB_OneTimeRewards_EmbersLute(_RewardNo,_Reward)
 THEN
 DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo);
 TemplateAddTo(_Reward,_Player,_Amount,_Notification);
+
+PROC
+PROC_ResetOneTimeRewards_EmbersLute()
+AND
+DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo)
+THEN
+NOT DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo);
 EXITSECTION
 
 ENDEXITSECTION

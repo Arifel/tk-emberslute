@@ -426,12 +426,8 @@ AND
 DB_BardReactions_MusicalPerformance_Emlute(_CrimeID,_Performer,"MusicalPerformance_Good_Emlute")
 AND
 NOT DB_CantAct(_NPC)
-AND
-GetPosition(_Performer,_PerformerX,_PerformerY,_PerformerZ)
-AND
-FindValidPosition(_PerformerX,_PerformerY,_PerformerZ,7.0,_NPC,1,_DestX,_DestY,_DestZ)
 THEN
-PROC_CharacterMoveToPosition(_NPC,_DestX,_DestY,_DestZ,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute");
+PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute");
 
 IF
 EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")

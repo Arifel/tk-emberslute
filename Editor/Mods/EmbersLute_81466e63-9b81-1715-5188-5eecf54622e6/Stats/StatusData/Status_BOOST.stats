@@ -10,7 +10,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_POSITIVE" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceRequest;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1);IF(Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_VANILLA,100,-1)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_STACK,100,-1);IF(not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_GOOD,100,-1);IF(Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF')):ApplyStatus(EMLUTE_PERFORM_POSITIVE_VANILLA,100,-1)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(EMLUTE_PERFORM_POSITIVE_STACK);RemoveStatus(EMLUTE_PERFORM_POSITIVE_VANILLA)" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusSheathing" version="1" />
@@ -228,13 +228,6 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_SingForMe" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF000000" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="5fc54934-9ecf-48b2-829c-8cf48efe7f0a" />
-        <field name="Name" type="NameTableFieldDefinition" value="_LEGACY_AND_COMPATIBILITY" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b89de9e3-a035-4e61-aad5-c94523e0fbdd" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">

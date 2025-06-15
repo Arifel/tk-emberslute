@@ -282,6 +282,20 @@ AND
 DB_BardReactions_ExcludeTags_Emlute(_Tag)
 THEN
 NOT DB_BardReactions_ExcludeTags_Emlute(_Tag);
+
+PROC
+PROC_ResetBardReactionFacts_EmbersLute()
+AND
+DB_BardReactions_Status_Emlute(_Status,_Crime,_Action)
+THEN
+NOT DB_BardReactions_Status_Emlute(_Status,_Crime,_Action);
+
+PROC
+PROC_ResetBardReactionFacts_EmbersLute()
+AND
+DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE",_Crime,_Action)
+THEN
+NOT DB_CRIME_MusicalPerformance_Status("EMLUTE_PERFORM_POSITIVE",_Crime,_Action);
 //END_REGION
 
 // Recreate bard reactions (helpers)

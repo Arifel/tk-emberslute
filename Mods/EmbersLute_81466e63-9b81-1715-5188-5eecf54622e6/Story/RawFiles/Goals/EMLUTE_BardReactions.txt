@@ -1451,7 +1451,6 @@ DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus,_AnimStatus);
 PROC
 PROC_BardReactions_ClearAnyAnims_CrowdNPC((CHARACTER)_NPC)
 THEN
-StopAnimation(_NPC,0);
 ObjectTimerCancel(_NPC,"BardReactions_BuskingAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_BuskingAnim_Restart_Timer_Emlute");
@@ -1462,6 +1461,7 @@ ObjectTimerCancel(_NPC,"BardReactions_CampAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimTransition_FromSitting_Timer_EmbersLute");
 NOT DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC);
 NOT DB_BardReactions_NPC_SittingAnimationIsPlaying_Emlute(_NPC);
+StopAnimation(_NPC,0);
 
 PROC
 PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)

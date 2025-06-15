@@ -154,7 +154,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="50e6ef29-e08e-495a-be55-c0e4b78db360" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9a859ca1-8f11-40be-80aa-39c3ebcaa10a" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip;Emlute_PurpleHand;Emlute_BlueHand;Emlute_GreenHand;Emlute_GoldHand" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip;" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>

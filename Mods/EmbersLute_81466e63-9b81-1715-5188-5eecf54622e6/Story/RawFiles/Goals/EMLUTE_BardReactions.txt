@@ -27,6 +27,7 @@ INITSECTION
 //
 // Events and Timers
 // BardReactions_WalkToPerformer_Event_EmbersLute
+// BardReactions_Reposition_Event_EmbersLute
 // BardReactions_StopAmbient_Timer_EmbersLute
 // BardReactions_BuskingAnimTransition_Timer_EmbersLute
 // BardReactions_BuskingAnimTransition_Event_EmbersLute
@@ -37,6 +38,7 @@ INITSECTION
 // BardReactions_CampAnimTransition_Event_EmbersLute
 // BardReactions_CampAnimTransition_Timer_EmbersLute
 // BardReactions_CampAnimTransition_FromListening_Event_EmbersLute
+// BardReactions_CampAnimTransition_FromListening_Timer_EmbersLute
 // BardReactions_CampAnimLoopOnce_Timer_Emlute
 // BardReactions_CampAnimTransition_FromSitting_Timer_EmbersLute
 // BardReactions_CampAnimTransition_Restart_Timer_EmbersLute
@@ -445,7 +447,19 @@ THEN
 PROC_PlayLoopingListeningAnim_EmbersLute(_NPC);
 PROC_BardReactions_NPC_Emlute(_Performer,_NPC);
 
-// This is the animating state an NPC in the crowd will revert back to between custom animations
+// This is the animating state an NPC in the crowd will revert back to between custom animations.
+// But if the NPC has ended up too close to the performer, we'll try to correct it first.
+PROC
+PROC_PlayLoopingListeningAnim_EmbersLute((CHARACTER)_NPC)
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
+AND
+GetDistanceTo(_NPC,_Performer,_Distance)
+AND
+_Distance < 1.5
+THEN
+PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_Reposition_Event_EmbersLute");
+
 PROC
 PROC_PlayLoopingListeningAnim_EmbersLute((CHARACTER)_NPC)
 AND
@@ -796,8 +810,21 @@ ObjectTimerLaunch(_NPC,"BardReactions_CampAnimTransition_FromSitting_Timer_Ember
 
 IF
 ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_CampAnimTransition_FromSitting_Timer_EmbersLute")
+AND
+DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration)
+AND
+Random(2500,_RndOut)
+AND
+IntegerSum(2000,_RndOut,_RndDelay)
 THEN
+NOT DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC);
 NOT DB_BardReactions_NPC_SittingAnimationIsPlaying_Emlute(_NPC);
+PROC_PlayLoopingListeningAnim_EmbersLute(_NPC);
+ObjectTimerLaunch(_NPC,"BardReactions_CampAnimTransition_FromListening_Timer_EmbersLute",_RndDelay);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_CampAnimTransition_FromListening_Timer_EmbersLute")
+THEN
 PROC_BardReactions_CampMode_CrowdChar_PlayAnim_EmbersLute(_NPC);
 
 PROC

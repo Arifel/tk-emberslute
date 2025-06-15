@@ -108,7 +108,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_FacePaint" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFD2691E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d35c1e87-8654-44da-99c9-f3241ed68bf9" />
         <field name="Name" type="NameTableFieldDefinition" value="ListenToMusic_Emlute" />
@@ -123,9 +123,10 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="2f8023d3-c51d-4a2d-922b-4954ea410d72" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FFD2691E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8b1c7488-80ed-4625-adac-af08cf213a3a" />
         <field name="Name" type="NameTableFieldDefinition" value="EndListenToMusic_Emlute" />

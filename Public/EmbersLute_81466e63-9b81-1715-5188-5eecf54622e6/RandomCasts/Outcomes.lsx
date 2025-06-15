@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="10"/>
+    <version major="4" minor="8" revision="0" build="200"/>
     <region id="Outcomes">
         <node id="root">
             <children>
@@ -43,11 +43,6 @@
                     <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
                     <attribute id="Spell" type="FixedString" value="Shout_ExplodingPants_Emlute"/>
                     <attribute id="UUID" type="guid" value="ad1e2a2a-7756-410f-94c4-a71830165475"/>
-                </node>
-                <node id="Outcome">
-                    <attribute id="GroupName" type="FixedString" value="Chaoscharm_SafeMode"/>
-                    <attribute id="Spell" type="FixedString" value="Projectile_Fireworks_Box_A_Emlute"/>
-                    <attribute id="UUID" type="guid" value="61987dae-c17d-4e93-9b65-3d34c680b14d"/>
                 </node>
                 <node id="Outcome">
                     <attribute id="GroupName" type="FixedString" value="Chaoscharm"/>

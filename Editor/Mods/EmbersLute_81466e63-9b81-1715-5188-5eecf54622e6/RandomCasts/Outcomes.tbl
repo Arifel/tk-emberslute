@@ -67,14 +67,6 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
-        <field name="UUID" type="IdTableFieldDefinition" value="61987dae-c17d-4e93-9b65-3d34c680b14d" />
-        <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm_SafeMode" />
-        <field name="Spell" type="FixedStringTableFieldDefinition" value="Projectile_Fireworks_Box_A_Emlute" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
         <field name="UUID" type="IdTableFieldDefinition" value="8bea6562-2fb1-4608-a382-c9bb9a0b6a75" />
         <field name="GroupName" type="FixedStringTableFieldDefinition" value="Chaoscharm" />

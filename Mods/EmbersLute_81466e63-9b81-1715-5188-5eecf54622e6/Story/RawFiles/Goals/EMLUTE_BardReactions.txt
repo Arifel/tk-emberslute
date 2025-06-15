@@ -13,6 +13,7 @@ INITSECTION
 // DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC) - NPC Crowd tracking
 // DB_BardReactions_MusicalPerformance_AmbPlaying_Emlute(_Performer,"Amb_Walla_BardReactions_CrowdCheering_Stop") - playing ambient crowd cheering
 // DB_BardReactions_MusicalPerformance_ThrowActions_Emlute(_SelectedAction,_Performer) - Tracking the items that have been thrown
+// DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell) - track NPC to acknowledge end of performance
 // DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag) - select and track of the priority anim tag for each NPC joining the crowd 
 // DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration) - animation selected for NPC tracker
 // DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC) - animation is actively playing on NPC tracker
@@ -435,8 +436,6 @@ AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
 THEN
 UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer);
-//PROC_PlayLoopingListeningAnim_EmbersLute(_NPC);
-//PROC_BardReactions_NPC_Emlute(_Performer,_NPC);
 
 IF
 CastedSpell((CHARACTER)_NPC,"Projectile_ListenToMusic_Emlute",_,_,_)
@@ -461,6 +460,7 @@ AND
 QRY_ReactionsAsBuskingMode_EmbersLute(_Performer)
 THEN
 PROC_TryStartAD(GEB_AD_MusicalPerformance_Good_a85c57e8-c74d-f8a0-6261-d5f7a3d7f90a, (CHARACTER)_NPC);
+DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,"Projectile_GEB_Perform_TossCoin");
 PROC_BardReactions_BuskingMode_EmbersLute(_NPC);
 
 PROC
@@ -468,6 +468,7 @@ PROC_BardReactions_NPC_Emlute((CHARACTER)_Performer,(CHARACTER)_NPC)
 AND
 NOT QRY_ReactionsAsBuskingMode_EmbersLute(_Performer)
 THEN
+DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,"Projectile_EndListenToMusic_Emlute");
 PROC_BardReactions_CampMode_EmbersLute(_NPC);
 //END_REGION
 
@@ -1462,6 +1463,31 @@ ObjectTimerCancel(_NPC,"BardReactions_CampAnimTransition_FromSitting_Timer_Ember
 NOT DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC);
 NOT DB_BardReactions_NPC_SittingAnimationIsPlaying_Emlute(_NPC);
 StopAnimation(_NPC,0);
+
+PROC
+PROC_BardReactions_ClearAnyAnims_CrowdNPC((CHARACTER)_NPC)
+AND
+DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell)
+AND
+Random(500,_RndOut)
+AND
+IntegerSum(1000,_RndOut,_RndDelay)
+THEN
+ObjectTimerLaunch(_NPC,"BardReactions_EndPerformanceFlourish_Timer_EmbersLute",_RndDelay);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_EndPerformanceFlourish_Timer_EmbersLute")
+AND
+DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell)
+AND
+QRY_CanDoAction_EmbersLute(_Performer,_NPC)
+AND
+QRY_Helper_GetAnyRandomPositionInArea(_NPC,_Performer)
+AND
+DB_Helper_GetAnyRandomPositionInArea_Result(_X,_Y,_Z)
+THEN
+UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z);
+NOT DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell);
 
 PROC
 PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)

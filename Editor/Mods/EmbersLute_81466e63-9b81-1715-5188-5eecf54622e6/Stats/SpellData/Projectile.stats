@@ -118,11 +118,21 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ShakeTheLute" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h607e06e9ged47g9963g0d7bg5475021182d7" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5fc6627aga9c1g830ag0246g4923413e1bbb" version="2" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;f18ce053-ceca-4c54-8607-a9045cc31d75,,;,,;,,;,,;,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;c0564ec3-3280-4e8b-a949-8a9aaa583e19,,;,,;,,;,,;,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8b1c7488-80ed-4625-adac-af08cf213a3a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EndListenToMusic_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d35c1e87-8654-44da-99c9-f3241ed68bf9" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc900b890gaddfg6117ga80cg222d5631559c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd1ff1ee9g7b35g0354gbf25g7d1ef1ada6c4" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;f18ce053-ceca-4c54-8607-a9045cc31d75,,;,,;,,;,,;,,;,,;,," />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">

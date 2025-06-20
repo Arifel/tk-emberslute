@@ -57,6 +57,18 @@ DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)LOW_HouseOfHope_Cambi
 DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,"EMLUTE_POLYMORPH_WAVESERVANT_01");
 DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,"EMLUTE_POLYMORPH_WAVESERVANT_02");
 //END_REGION
+
+// Try to select the "male" or "female" role in the song by vocal tag first, with fallback to gender tag
+//REGION
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_1_MALE_84269483-f6fd-414e-b1a5-facb42314668,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_3_MALE_04fbb464-cc92-44de-89f1-8d4b1b0f33f4,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_5_MALE_75cbe7ab-c39e-498e-a08d-b3c9ba05038e,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_7_MALE_6052ef1f-bc50-4dff-968b-8d3a79fddeb7,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_2_FEMALE_3cf37529-bba1-4a4a-a904-a35138cf0074,"Supporter02");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_4_FEMALE_b94f535a-e9c7-42ac-afd8-f8b078ad9af8,"Supporter02");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_6_FEMALE_937b5b86-0d77-4cb5-bce1-36d828d4a90e,"Supporter02");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_8_FEMALE_6db4ba46-cd6a-4dfc-b698-393f71039385,"Supporter02");
+//END_REGION
 KBSECTION
 // Reset and cleaning up on level load and unload
 //REGION
@@ -150,6 +162,20 @@ PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Lead01");
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
 AND
+QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+THEN
+// Play the effects for a supporting performer, male vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+AND
 IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,1)
 AND
 IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
@@ -160,9 +186,23 @@ PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
 AND
-IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,1)
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
 AND
 IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,0)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
+THEN
+// Play the effects for a supporting performer, male vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
 THEN
 // Play the effects for a supporting performer, female vocals
 PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter02");
@@ -170,12 +210,34 @@ PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter02");
 IF
 StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
 AND
-IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
 AND
 IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,0)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,1)
 THEN
-// Play the effects for a supporting performer, non-binary (default to male vocals)
+// Play the effects for a supporting performer, female vocals
 PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+QRY
+QRY_IsSupporter01_ByVocals_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute(_Tag,"Supporter01")
+AND
+IsTagged(_Performer,_Tag,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsSupporter02_ByVocals_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute(_Tag,"Supporter02")
+AND
+IsTagged(_Performer,_Tag,1)
+THEN
+DB_NOOP(1);
 
 IF
 StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)

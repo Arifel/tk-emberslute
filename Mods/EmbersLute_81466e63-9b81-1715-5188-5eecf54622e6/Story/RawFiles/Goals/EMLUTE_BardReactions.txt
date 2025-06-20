@@ -14,6 +14,7 @@ INITSECTION
 // DB_BardReactions_MusicalPerformance_AmbPlaying_Emlute(_Performer,"Amb_Walla_BardReactions_CrowdCheering_Stop") - playing ambient crowd cheering
 // DB_BardReactions_MusicalPerformance_ThrowActions_Emlute(_SelectedAction,_Performer) - Tracking the items that have been thrown
 // DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell) - track NPC to acknowledge end of performance
+// DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC) - NPC crowd member is doing the final flourish spell
 // DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag) - select and track of the priority anim tag for each NPC joining the crowd 
 // DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration) - animation selected for NPC tracker
 // DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC) - animation is actively playing on NPC tracker
@@ -42,7 +43,9 @@ INITSECTION
 // BardReactions_CampAnimLoopOnce_Timer_Emlute
 // BardReactions_CampAnimTransition_FromSitting_Timer_EmbersLute
 // BardReactions_CampAnimTransition_Restart_Timer_EmbersLute
-// BardReactions_Busking_AutoDeleteItem_Timer
+// BardReactions_Busking_AutoDeleteItem_Timer_EmbersLute
+// BardReactions_ResetPerformanceRewardTracker_Timer_EmbersLute
+// BardReactions_ResetDelay_Timer_Emlute
 //
 // Counters
 // EMLUTE_MusicalPerformance_NPC_Counter
@@ -237,9 +240,9 @@ DB_BardReactionsInCamp_Charges_Emlute(3,7,99,(TAG)REALLY_KARLACH_1a2f70d6-8ead-4
 DB_BardReactionsInCamp_Charges_Emlute(1,6,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb,19000);
 DB_BardReactionsInCamp_Charges_Emlute(2,6,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Start_b33d650a-d3e3-4d46-b346-2cf54b1e7dc7,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_Loop_9dab7359-b7c6-468f-917d-d2fe76be0829,(ANIMATION)CUST_EPI_AvernusWyll_Dance_01_End_41bae6d7-3a5f-4849-a8c9-807f2569b5bb,19000);
 DB_BardReactionsInCamp_Charges_Emlute(3,6,99,(TAG)REALLY_WYLL_5f40def5-d3ec-4698-a367-01a339888956,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Start_53a8a375-7270-4e3d-ad9c-5a319c10085f,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_Loop_63221d04-2ae3-4d7e-a626-a86c0c717222,(ANIMATION)CUST_EPI_DukeWyll_EnjoyingTheMusic_01_End_c0c4f4d0-b7df-4500-8313-77b30a1a7b2a,32500);
-DB_BardReactionsInCamp_Charges_Emlute(1,9,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_01_5601700b-56be-499d-a075-e076db10112b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,15000);
+DB_BardReactionsInCamp_Charges_Emlute(1,9,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_GaleGod_IdleRandom_01_1c29e931-f968-42dd-b18d-f4452ffadb09,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,36660);
 DB_BardReactionsInCamp_Charges_Emlute(2,9,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,27500);
-DB_BardReactionsInCamp_Charges_Emlute(3,9,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_Gale_Drinking_01_Loop_ac8eb7ae-4e86-4f82-8586-ea152572f8c6,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,27500);
+DB_BardReactionsInCamp_Charges_Emlute(3,9,99,(TAG)REALLY_GALE_9b0354c0-56d9-4723-8034-918ac9abab19,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_EPI_GaleGod_Drinking_01_28c60b89-0685-4707-ab82-18fc12ca70d2,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,43460);
 DB_BardReactionsInCamp_Charges_Emlute(1,2,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,(ANIMATION)CUST_Urinating_01_Start_c9c60dd9-d17e-47b7-b1a0-bd59b4c1a237,(ANIMATION)CUST_Urinating_01_Loop_d7b689ac-2183-4c62-a481-eb5db76ac243,(ANIMATION)CUST_Urinating_01_End_5a33450b-f01d-4c11-8f27-d1b2a9f5e6eb,10200);
 DB_BardReactionsInCamp_Charges_Emlute(2,2,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_09_18b65bfd-0be7-4f45-87c1-123001fe639b,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,31800);
 DB_BardReactionsInCamp_Charges_Emlute(3,2,99,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)PM_Dancing_04_5994a828-467a-4973-b81b-4edb66218ce3,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,26000);
@@ -389,9 +392,9 @@ RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK");
 IF
 StatusRemoved((CHARACTER)_Performer,_Status,_,_)
 AND
-DB_BardReactions_Status_Emlute(_Status,_DisturbanceName,_)
+DB_BardReactions_Status_Emlute(_Status,"MusicalPerformance_Good_Emlute",_)
 AND
-DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,_DisturbanceName)
+DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,"MusicalPerformance_Good_Emlute")
 AND
 DB_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NPC_Counter",_CrowdSize)
 THEN
@@ -456,16 +459,30 @@ DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 AND
 GetDistanceTo(_NPC,_Performer,_Distance)
 AND
-_Distance < 1.5
+_Distance < 2.0
 THEN
 PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_Reposition_Event_EmbersLute");
+
+IF
+EntityEvent((CHARACTER)_NPC,"BardReactions_Reposition_Event_EmbersLute")
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+THEN
+SteerTo(_NPC,_Performer,0);
+LookAtEntity(_NPC,_Performer);
+PROC_PlayLoopingAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
 
 PROC
 PROC_PlayLoopingListeningAnim_EmbersLute((CHARACTER)_NPC)
 AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
+AND
+GetDistanceTo(_NPC,_Performer,_Distance)
+AND
+_Distance >= 2.0
 THEN
 SteerTo(_NPC,_Performer,0);
+LookAtEntity(_NPC,_Performer);
 PROC_PlayLoopingAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
 
 PROC
@@ -980,6 +997,8 @@ NOT DB_CantMove(_NPC)
 AND
 NOT DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC)
 AND
+NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC)
+AND
 QRY_IsInRange(_NPC,_Performer,10.0)
 AND
 QRY_Helper_GetAnyRandomPositionInArea(_NPC,_Performer)
@@ -1013,6 +1032,8 @@ AND
 DB_BardReactions_ThrowActions_Emlute(_SelectedAction,_,_AltSpell,_)
 AND 
 NOT DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC)
+AND
+NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC)
 AND
 NOT DB_CantAct(_NPC)
 AND
@@ -1064,9 +1085,9 @@ EnteredLevel((ITEM)_Item,(ITEMROOT)_Root,_)
 AND
 DB_BardReactions_TemporaryItems_Emlute(_Root)
 THEN
-ObjectTimerLaunch(_Item,"BardReactions_Busking_AutoDeleteItem_Timer",30000);	// 5 turns
+ObjectTimerLaunch(_Item,"BardReactions_Busking_AutoDeleteItem_Timer_EmbersLute",30000);	// 5 turns
 IF
-ObjectTimerFinished((ITEM)_Item,"BardReactions_Busking_AutoDeleteItem_Timer")
+ObjectTimerFinished((ITEM)_Item,"BardReactions_Busking_AutoDeleteItem_Timer_EmbersLute")
 THEN
 RequestDelete(_Item);
 //END_REGION
@@ -1241,7 +1262,7 @@ PROC_DoUniquePerformanceReward_Roll_EmbersLute(_Performer,_Selected,_Base);
 PROC
 PROC_DoUniquePerformanceReward_EmbersLute((CHARACTER)_Performer,(INTEGER)_NPCCount)
 THEN
-ObjectTimerLaunch(_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute",9000);
+ObjectTimerLaunch(_Performer,"BardReactions_ResetPerformanceRewardTracker_Timer_EmbersLute",4000);
 
 PROC
 PROC_ApplyPerformanceBuff_EmbersLute((CHARACTER)_Performer, "EMLUTE_PERFORM_POSITIVE_GREAT")
@@ -1265,12 +1286,12 @@ THEN
 UseSpell(_Instrument,"Shout_PerformanceExhaustion_Emlute",_Performer);
 
 IF
-ObjectTimerFinished((CHARACTER)_Performer,"ResetPerformanceRewardTracker_Timer_EmbersLute")
+ObjectTimerFinished((CHARACTER)_Performer,"BardReactions_ResetPerformanceRewardTracker_Timer_EmbersLute")
 AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
 THEN
-NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
 PROC_ObjectCountHelperReset(_Performer,"EMLUTE_MusicalPerformance_Showmanship_Counter");
+PROC_BardReactions_Rewards_Reset_EmbersLute(_Performer);
 
 QRY
 QRY_CalcUniquePerformanceRewardBase_EmbersLute((CHARACTER)_Performer,(STRING)_Status,(INTEGER)_NPCCount)
@@ -1484,6 +1505,7 @@ ObjectTimerCancel(_NPC,"BardReactions_CampAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_BuskingAnim_Restart_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_BuskingAnimTransition_Timer_EmbersLute");
 ObjectTimerCancel(_NPC,"BardReactions_Busking_MaybeThrow_Timer_Emlute");
+ObjectTimerCancel(_NPC,"BardReactions_Busking_ThrowSomething_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimTransition_Restart_Timer_EmbersLute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimTransition_FromSitting_Timer_EmbersLute");
@@ -1500,6 +1522,7 @@ Random(500,_RndOut)
 AND
 IntegerSum(1000,_RndOut,_RndDelay)
 THEN
+DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC);
 ObjectTimerLaunch(_NPC,"BardReactions_EndPerformanceFlourish_Timer_EmbersLute",_RndDelay);
 
 IF
@@ -1514,7 +1537,18 @@ AND
 DB_Helper_GetAnyRandomPositionInArea_Result(_X,_Y,_Z)
 THEN
 UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_EndPerformanceFlourish_Timer_EmbersLute")
+AND
+DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell)
+THEN
 NOT DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,_Spell);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_EndPerformanceFlourish_Timer_EmbersLute")
+THEN
+NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC);
 
 PROC
 PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
@@ -1522,6 +1556,12 @@ AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 THEN
 PROC_BardReactions_ClearAnyAnims_CrowdNPC(_NPC);
+ObjectTimerLaunch(_Performer,"BardReactions_ResetDelay_Timer_Emlute",3000);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,"BardReactions_ResetDelay_Timer_Emlute")
+THEN
+PROC_BardReactions_Reset_Delay_EmbersLute(_Performer);
 
 PROC
 PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
@@ -1551,14 +1591,15 @@ THEN
 NOT DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag);
 
 PROC
-PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
+PROC_BardReactions_Reset_Delay_EmbersLute((CHARACTER)_Performer)
 AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 THEN
 NOT DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC);
+StopAnimation(_NPC,1);
 
 PROC
-PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
+PROC_BardReactions_Reset_Delay_EmbersLute((CHARACTER)_Performer)
 AND
 DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,_DisturbanceName)
 THEN
@@ -1592,6 +1633,13 @@ AND
 DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Index)
 THEN
 NOT DB_PerformanceRewardUnique_Index_Out_EmbersLute(_Performer,_Index);
+
+PROC
+PROC_BardReactions_Rewards_Reset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status)
+THEN
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status);
 
 PROC
 PROC_SetupUniqueRewardsRemaining_EmbersLute()

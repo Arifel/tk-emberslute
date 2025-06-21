@@ -665,7 +665,7 @@ AND
 DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration)
 THEN
 StopAnimation(_NPC,0);
-ObjectTimerLaunch(_NPC,"BardReactions_BuskingAnim_Restart_Timer_Emlute",6000);
+ObjectTimerLaunch(_NPC,"BardReactions_BuskingAnim_Restart_Timer_Emlute",3000);
 
 IF
 ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_BuskingAnim_Restart_Timer_Emlute")
@@ -1499,6 +1499,20 @@ DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus,_AnimStatus);
 //REGION
 PROC
 PROC_BardReactions_ClearAnyAnims_CrowdNPC((CHARACTER)_NPC)
+AND
+DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration)
+THEN
+NOT DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration);
+
+PROC
+PROC_BardReactions_ClearAnyAnims_CrowdNPC((CHARACTER)_NPC)
+AND
+DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag)
+THEN
+NOT DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag);
+
+PROC
+PROC_BardReactions_ClearAnyAnims_CrowdNPC((CHARACTER)_NPC)
 THEN
 ObjectTimerCancel(_NPC,"BardReactions_BuskingAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimLoopOnce_Timer_Emlute");
@@ -1509,9 +1523,9 @@ ObjectTimerCancel(_NPC,"BardReactions_Busking_ThrowSomething_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimTransition_Restart_Timer_EmbersLute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimLoopOnce_Timer_Emlute");
 ObjectTimerCancel(_NPC,"BardReactions_CampAnimTransition_FromSitting_Timer_EmbersLute");
+StopAnimation(_NPC,0);
 NOT DB_BardReactions_NPC_AnimationIsPlaying_Emlute(_NPC);
 NOT DB_BardReactions_NPC_SittingAnimationIsPlaying_Emlute(_NPC);
-StopAnimation(_NPC,0);
 
 PROC
 PROC_BardReactions_ClearAnyAnims_CrowdNPC((CHARACTER)_NPC)
@@ -1556,6 +1570,12 @@ AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 THEN
 PROC_BardReactions_ClearAnyAnims_CrowdNPC(_NPC);
+
+PROC
+PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,_DisturbanceName)
+THEN
 ObjectTimerLaunch(_Performer,"BardReactions_ResetDelay_Timer_Emlute",3000);
 
 IF
@@ -1571,24 +1591,6 @@ THEN
 PlaySound(_Performer,_StopEvent);
 ObjectTimerCancel(_Performer,"BardReactions_StopAmbient_Timer_EmbersLute");
 NOT DB_BardReactions_MusicalPerformance_AmbPlaying_Emlute(_Performer,_StopEvent);
-
-PROC
-PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
-AND
-DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration)
-THEN
-NOT DB_BardReactions_NPC_SelectedAnimation_Emlute(_NPC,_Start,_Loop,_Stop,_Duration);
-
-PROC
-PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
-AND
-DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
-AND
-DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag)
-THEN
-NOT DB_BardReactions_NPC_PriorityAnimTag_Emlute(_NPC,_Tag);
 
 PROC
 PROC_BardReactions_Reset_Delay_EmbersLute((CHARACTER)_Performer)

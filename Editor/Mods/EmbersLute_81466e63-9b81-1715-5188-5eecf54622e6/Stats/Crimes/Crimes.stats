@@ -118,7 +118,7 @@
         <field name="CreatesCrimescene" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
         <field name="CanMergeConfrontation" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="MergeConditions" type="EnumerationTableFieldDefinition" value="SameVictim" enumeration_type_name="DisturbanceMergeConditions" version="1" />
-        <field name="MaxInvestigators" type="IntegerTableFieldDefinition" value="10" />
+        <field name="MaxInvestigators" type="IntegerTableFieldDefinition" value="5" />
         <field name="Properties" type="GuidObjectListTableFieldDefinition" value="db918cfb-a484-437c-93bb-8bc36fe98a9c;3b15b00d-6562-45c6-b3b1-67c4872f682b;e305c93f-eaf2-4b73-ae0a-0be56a1b0549;8a7650eb-da48-4597-89a5-76b2c0cddb78;58adcbdb-1bdf-4702-b0f0-f0f596d75b0e;844c56dc-81ec-478a-ad46-a3ec49152f36;22851ef8-a2af-4f10-a3dd-d3e7e81d7ae6" />
         <field name="ReactionCategory_Tag" type="FixedStringTableFieldDefinition" value="BARD" />
         <field name="Tension" type="EnumerationTableFieldDefinition" value="any" enumeration_type_name="Tension" version="1" />

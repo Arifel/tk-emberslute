@@ -230,7 +230,7 @@
                     <attribute id="CrimeType" type="LSString" value="MusicalPerformance_Good_BardNPC_Emlute"/>
                     <attribute id="DetectionRange" type="float" value="8"/>
                     <attribute id="Lifetime" type="float" value="10000"/>
-                    <attribute id="MaxInvestigators" type="int32" value="10"/>
+                    <attribute id="MaxInvestigators" type="int32" value="5"/>
                     <attribute id="MergeConditions" type="uint8" value="2"/>
                     <attribute id="TensionWeight" type="int32" value="6"/>
                     <children>

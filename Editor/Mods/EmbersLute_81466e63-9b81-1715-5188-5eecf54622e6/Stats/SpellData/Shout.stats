@@ -1456,18 +1456,18 @@
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h7a98860ag9bd1g5a32gb5d3gec9b34e12c67" version="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="51a59e53-a94e-44e2-bbbd-56f19c0d184a" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_Facts_Container_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Stop_Animations_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8c817240g6f86g26fag3607gb72abf22562a" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
+    <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_BardReactions_Emlute" />
@@ -1475,9 +1475,10 @@
         <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08a065dcgbf13g5657g48d6g99cb01e23784" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24263a85gc626gfdd6g155cg6e3e20cabbb5" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
+    <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1e5a5c0b-adc9-4a77-a922-6c8fc259faa5" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_InstrumentFacts_Emlute" />
@@ -1486,7 +1487,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0fbc24cfgaf99gb322ge17fg138df0699962" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
+    <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3d725ba8-9aea-4038-91bd-84e6ed59c9d5" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_ScriptedVFXFacts_Emlute" />
@@ -1495,12 +1496,23 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf7302e1gadc8gf7ffgae54g7617112304da" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF8B0000" is_substat="false">
+    <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fb8d1aaf-8961-4b5a-9932-a17095b622b2" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_CustomPerformanceFacts_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h009705fbgbae7gb475g7a8eg4c3a5f87007f" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a27ce8a-f3e2-4791-b625-06752704664d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Stop_Animations_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c8d6e9fg087bg8beag5e25ga9f353fa3c4f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he7c03135g803dg774bg70c0g2cca8ac25b51" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">
@@ -1509,6 +1521,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Reset_UniqueRewards_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e796e3eg2bc8gca42g138agaee91fc2087f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h61810c04gf2b1g189fg874fgdf89cb1b94b4" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -301,7 +301,7 @@ DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,2,"Projectile_TossMeat1_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,13,"Projectile_TossShabbyPants2_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,12,"Projectile_TossDrink_Emlute");
-DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,7,"Projectile_TossMeat1_Emlute");
+DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,7,"Projectile_TossMeat2_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,2,"Projectile_TossShabbyPants1_Emlute");
 //END_REGION
 

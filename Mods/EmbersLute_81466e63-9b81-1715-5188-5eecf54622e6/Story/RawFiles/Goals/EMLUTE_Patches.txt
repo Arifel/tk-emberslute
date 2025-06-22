@@ -7,6 +7,11 @@ KBSECTION
 // Used to manually trigger fact resets, in event of bugs etc.
 //REGION
 IF
+UsingSpellOnTarget((CHARACTER)_Caster,(CHARACTER)_Target,"Shout_Stop_Animations_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Stop looping animations on NPC");
+StopAnimation(_Target,1);
+IF
 UsingSpell(_Caster,"Shout_Reset_BardReactions_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Clearing and re-creating bard reaction facts for Ember's Lute");
@@ -507,9 +512,9 @@ DB_BardReactions_TemporaryItems_Emlute((ITEMROOT)EmbersLute_PerformanceReward_Sh
 DB_BardReactions_TemporaryItems_Emlute((ITEMROOT)EmbersLute_PerformanceReward_ShabbyUnderwear_B_e6957ccd-e070-4f3a-96b4-aa4b3723d4ba);
 DB_BardReactions_ThrowActions_Emlute(1,"Projectile_GEB_Perform_TossCoin","",0);
 DB_BardReactions_ThrowActions_Emlute(2,"Projectile_GEB_Perform_TossCoin","",0);
-DB_BardReactions_ThrowActions_Emlute(3,"Projectile_GEB_Perform_TossCoin","Projectile_TossFlowerAlt2_Emlute",1);
-DB_BardReactions_ThrowActions_Emlute(4,"Projectile_GEB_Perform_TossCoin","Projectile_TossFlowerAlt1_Emlute",1);
-DB_BardReactions_ThrowActions_Emlute(5,"Projectile_GEB_Perform_TossCoin","Projectile_TossFlowerAlt3_Emlute",1);
+DB_BardReactions_ThrowActions_Emlute(3,"Projectile_GEB_Perform_TossCoin","",0);
+DB_BardReactions_ThrowActions_Emlute(4,"Projectile_TossFlowerAlt1_Emlute","",0);
+DB_BardReactions_ThrowActions_Emlute(5,"Projectile_TossFlowerAlt3_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(6,"Projectile_GEB_Perform_TossCoin","",0);
 DB_BardReactions_ThrowActions_Emlute(7,"Projectile_GEB_Perform_TossCoin","",0);
 DB_BardReactions_ThrowActions_Emlute(8,"Projectile_TossFlowerAlt2_Emlute","",0);
@@ -517,18 +522,16 @@ DB_BardReactions_ThrowActions_Emlute(9,"Projectile_TossFlowerAlt3_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(10,"Projectile_TossFlowerAlt2_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(11,"Projectile_TossFlowerAlt1_Emlute","",0);
 DB_BardReactions_ThrowActions_Emlute(12,"Projectile_TossFlowerAlt2_Emlute","",0);
-DB_BardReactions_ThrowActions_Emlute(13,"Projectile_TossOnyx_Emlute","Projectile_TossFlowerAlt1_Emlute",1);
+DB_BardReactions_ThrowActions_Emlute(13,"Projectile_TossOnyx_Emlute","",0);
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,1,"Projectile_TossShabbyPants1_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,3,"Projectile_TossMeat2_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,12,"Projectile_TossMeat3_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,7,"Projectile_TossMeat1_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,2,"Projectile_TossMeat1_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925,13,"Projectile_TossShabbyPants2_Emlute");
-DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,1,"Projectile_TossDrink_Emlute");
-DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,3,"Projectile_TossDrink_Emlute");
 DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,12,"Projectile_TossDrink_Emlute");
-DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,7,"Projectile_TossMeat1_Emlute");
-DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,2,"Projectile_TossDrink_Emlute");
+DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,7,"Projectile_TossMeat2_Emlute");
+DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-bf63-30393e18cbdd,2,"Projectile_TossShabbyPants1_Emlute");
 DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,9,150);
 DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,4,45);
 DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,3,30);

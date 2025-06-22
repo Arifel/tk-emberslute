@@ -174,7 +174,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TossFlower_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(16c583b8-4729-4603-aeee-d224bf645653);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="2" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
       </fields>
@@ -185,7 +185,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TossFlowerAlt1_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="10781e2b-8cf8-4529-9767-3a7a7703bd4e" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(391318dc-3ba0-4ce7-91f3-5ba6953cb177);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e7dd7d6g58fag59c2g6708g8cce75aa4807" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e7dd7d6g58fag59c2g6708g8cce75aa4807" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -223,6 +223,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(e6957ccd-e070-4f3a-96b4-aa4b3723d4ba);" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4a9a712gad15g470dg36c2g87a6cc13ae2d" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -231,7 +232,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TossMeat1_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(45a43504-e639-4c85-a901-da1de6cf4ee9);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0200120fg627ag9559g9399gfefd04fa7403" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0200120fg627ag9559g9399gfefd04fa7403" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -239,8 +240,8 @@
         <field name="UUID" type="IdTableFieldDefinition" value="73623c0a-dac9-444c-9109-3d9ceac9ce00" />
         <field name="Name" type="NameTableFieldDefinition" value="TossMeat2_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="121d9b5f-4f47-49aa-be5c-5c29b7a03eb6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(8d2f1d5f-0cc8-4b13-8aa2-4bd509695608);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(3c35d25a-0d61-4071-b35b-9359f52c2d46);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -249,7 +250,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TossMeat3_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="121d9b5f-4f47-49aa-be5c-5c29b7a03eb6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:Spawn(d36be5aa-6ee3-4be7-9203-fe7f446b21de);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
@@ -258,7 +259,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="TossDrink_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0417b180-51ac-4aad-af90-5aacffadc811" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:CreateSurface(1,,Alcohol);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="2" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_TossACoin" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value=",,;,,;f43888ef-1069-40d8-9159-ca0bc413fd5f,,;,,;,,;,,;,,;,,;,," />

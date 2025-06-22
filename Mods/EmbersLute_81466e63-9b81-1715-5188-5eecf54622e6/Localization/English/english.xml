@@ -646,7 +646,7 @@
   <content contentuid="h564c2ad7g85a2gce86g3ba5g2be9dab2acc7" version="1">Throw Fancy Underwear</content>
   <content contentuid="hfad9cfc2g89d4g712ag5160g4e3c669446ea" version="1">Excited Dancing</content>
   <content contentuid="h762a32b5g4f7agf73fge719gbc1ab6f93f08" version="1">Happy Dancing</content>
-  <content contentuid="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="1">Throw Flower</content>
+  <content contentuid="h5dda11dcg14d3g5bdfg9213g77916c4e9a9a" version="2">Toss a Cute Flower</content>
   <content contentuid="h2ade9862ga471gfbe2g9e4fgbc362c5a6b93" version="1">Bards Join the Fun</content>
   <content contentuid="h2833855bgb898gc2d4g5470g2b49201de41b" version="1">What true bard can resist the opportunity to perform to a captive audience.</content>
   <content contentuid="h40a624cdgdf9fgb35bg2e88g6177ca91b5e4" version="1">Gifting Beverage</content>
@@ -657,7 +657,7 @@
   <content contentuid="h5f4d5076gb7d8g1eefg3ac0g219dfe9514ae" version="1">Did someone just put a sausage into your pocket?!</content>
   <content contentuid="h5ff7576cg0a45g7858g9b68g90bab5d1fbee" version="1">Gifting Coins</content>
   <content contentuid="h33dd7069g1536g6013g95e5g8f3bbe3750dd" version="2">Pouring a small handful of coins into your pocket.</content>
-  <content contentuid="h2e7dd7d6g58fag59c2g6708g8cce75aa4807" version="1">Throw Flower</content>
+  <content contentuid="h2e7dd7d6g58fag59c2g6708g8cce75aa4807" version="2">Toss a Cute Flower</content>
   <content contentuid="h1bdd875ege759g9f63g02d7gdff7f8db9fc8" version="1">Gifting Coin</content>
   <content contentuid="h7a42b8fbgb977g34f6g2eb3gaec010c329ef" version="1">Sliding a cold, single coin into your pocket.</content>
   <content contentuid="hddc6dfdbg3dedg6659gdf02g8f19e163fce6" version="1">gdfg</content>
@@ -679,9 +679,9 @@
   <content contentuid="ha2c34f4agbaafgd080g0a6eg7205823a2caf" version="3">Worn recently.</content>
   <content contentuid="h8a573613g8e9bg6450g9785gbfb59ad48acb" version="4">Well Worn Underwear</content>
   <content contentuid="h206ea9edg4624gbee5g26bbg4ec8be8d98bc" version="4">Worn recently.</content>
-  <content contentuid="h0200120fg627ag9559g9399gfefd04fa7403" version="1">Throw Fish</content>
-  <content contentuid="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="1">Throw Meat</content>
-  <content contentuid="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="1">Throw Meat</content>
+  <content contentuid="h0200120fg627ag9559g9399gfefd04fa7403" version="2">Toss a Fish</content>
+  <content contentuid="hfaa41e1eg4c04gb5cag0022g8c367d9e7982" version="2">Throw Sausage</content>
+  <content contentuid="h34b55e2ag96c8g311bg0293g7c3bf2eea399" version="2">Chuck Fried Rat</content>
   <content contentuid="h8cf1e6a7g3333g48c8ga47fg80b8b45516d0" version="5">Channelling Legendary Performance</content>
   <content contentuid="h0ddff1c6gdebbgf04ag3817g786e54a5c6c6" version="2">Stage Setup</content>
   <content contentuid="he9897de5g7226g1393g8f79g6ca6166e7f7c" version="8">Stage Helper</content>
@@ -751,7 +751,7 @@
   <content contentuid="he8ca1c23g5373gf396g7c59g25fcafdace54" version="7">CAVEAT&lt;br&gt;&lt;br&gt;This item clean up is not able to locate and erase any custom items from the Ember's Lute mods that have been lost or dropped in the world. It will only work on custom items kept in party inventories or in the Camp Chest.&lt;br&gt;&lt;br&gt;CONTINUE?&lt;br&gt;&lt;br&gt;Choosing "Yes" will delete all Ember's Lute mod items in your party inventories and the Camp Chest, and from any traders you have interacted with. This operation is not reversible.&lt;br&gt;&lt;br&gt;Continue?</content>
   <content contentuid="h7aaa0b70g4953g7c24g29d5g88d8cb31806d" version="1">When re-loading the Save, you will still see a warning from BG3 that a required mod is missing, but choose continue anyway. If successful, you will be able to load your Save.&lt;br&gt;&lt;br&gt; If not, you will land back at the BG3 Main Menu and will need to re-enable the mods to continue again.</content>
   <content contentuid="he2566417gd9aagb76egce90g4d2fb6e066d5" version="6">PLEASE NOTE&lt;br&gt;&lt;br&gt;When re-loading the Save, you will still see a warning from BG3 that a required mod is missing, but choose continue anyway. If successful, you will be able to load your Save.&lt;br&gt;&lt;br&gt; If not, you will land back at the BG3 Main Menu and will need to re-enable the mods to continue again.&lt;br&gt;&lt;br&gt;IF IT DOES NOT WORK&lt;br&gt;&lt;br&gt;It means your campaign has items or statuses woven deeper into Faerûn than this clean-up tool can reach.&lt;br&gt;&lt;br&gt;For a more thorough mod uninstaller, seek out Volitio's BG3 Mod Uninstaller on https://www.nexusmods.com. This is an excellent and highly recommended tool with very high success rates for mod removal.</content>
-  <content contentuid="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="1">Throw Bottle</content>
+  <content contentuid="h8c67979cg3101g2113gd8eag2fd512e35b9c" version="2">Spill Drink</content>
   <content contentuid="he06242f8gc9b5gc76fgc1aeg39c1c03b6b5e" version="1">Enable Showmanship</content>
   <content contentuid="h061146eega0edg0027g8262gbc0614398764" version="1">Enable Showmanship charges, for custom music performance crowd reactions.</content>
   <content contentuid="h415be63bgf76fgddbbgbf22g3a3c63301f00" version="1">Disable Showmanship</content>
@@ -920,8 +920,8 @@
   <content contentuid="haf7302e1gadc8gf7ffgae54g7617112304da" version="1">Reset Scripted VFX Facts</content>
   <content contentuid="h009705fbgbae7gb475g7a8eg4c3a5f87007f" version="1">Reset Custom Performance Facts</content>
   <content contentuid="h3e796e3eg2bc8gca42g138agaee91fc2087f" version="1">Reset Unique Reward Facts</content>
-  <content contentuid="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="1">Ember's Lute - Reset Facts</content>
-  <content contentuid="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="1">Developer tools to reset Osiris mod facts.</content>
+  <content contentuid="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="2">Ember's Lute - Developer Tools</content>
+  <content contentuid="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="2">Developer tools to reset Osiris mod facts and other convenience utilities.</content>
   <content contentuid="h8c817240g6f86g26fag3607gb72abf22562a" version="1">Save game before using these spells.</content>
   <content contentuid="h08324abag63f6g5041g8e18g5c23657baf23" version="2">Snap</content>
   <content contentuid="hec0a1b93g9215g3689g1a65g80fe2df2fac6" version="3">Slay</content>
@@ -945,4 +945,9 @@
   <content contentuid="h5fc6627aga9c1g830ag0246g4923413e1bbb" version="2">Attention has been piqued by music!</content>
   <content contentuid="hc900b890gaddfg6117ga80cg222d5631559c" version="1">Applause</content>
   <content contentuid="hd1ff1ee9g7b35g0354gbf25g7d1ef1ada6c4" version="1">Applauding an exemplary musical performance!</content>
+  <content contentuid="h24263a85gc626gfdd6g155cg6e3e20cabbb5" version="1">Developer tools to reset Osiris mod facts.</content>
+  <content contentuid="h61810c04gf2b1g189fg874fgdf89cb1b94b4" version="1">All previously granted performance rewards will become available again.</content>
+  <content contentuid="h3c8d6e9fg087bg8beag5e25ga9f353fa3c4f" version="1">Stop Looping Animation</content>
+  <content contentuid="he7c03135g803dg774bg70c0g2cca8ac25b51" version="1">Calls a stop animation command on the target.</content>
+  <content contentuid="ha4a9a712gad15g470dg36c2g87a6cc13ae2d" version="1">Fling Smallclothes</content>
 </contentList>

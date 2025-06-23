@@ -825,7 +825,7 @@
   <content contentuid="hcf2f287agfce6g2529g1177g5dfd147dd16a" version="5">Read to learn how to perform The Weeping Dawn on one of Ember's instruments. Requires Musical Proficiency.</content>
   <content contentuid="h6cdd5d56g447fg0fbag01eegd1562ac15f67" version="1">White Radiant Visual</content>
   <content contentuid="h0df07a1cg00e9gddc5gc9a3gf4b7cc6c2f89" version="1">A glowing white visual is applied to this instrument.</content>
-  <content contentuid="ha7635767g2193g2ad2ga22age578ea3e4551" version="5">Prismatic Flute</content>
+  <content contentuid="ha7635767g2193g2ad2ga22age578ea3e4551" version="6">Prismatic Flute</content>
   <content contentuid="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1">You have not yet learned how to perform this song.</content>
   <content contentuid="h1ecfab1cg41e1g48aaga306gfa53294c1dc3" version="1">An Ember's Lute instrument is not equipped.</content>
   <content contentuid="h70691659g4c53ga4c6g159bgc64431671701" version="1">An Ember's Lute Musical Sprites instrument is not equipped.</content>
@@ -950,4 +950,5 @@
   <content contentuid="h3c8d6e9fg087bg8beag5e25ga9f353fa3c4f" version="1">Stop Looping Animation</content>
   <content contentuid="he7c03135g803dg774bg70c0g2cca8ac25b51" version="1">Calls a stop animation command on the target.</content>
   <content contentuid="ha4a9a712gad15g470dg36c2g87a6cc13ae2d" version="1">Fling Smallclothes</content>
+  <content contentuid="hd3c78ee9g87d6gbf8cg0bf8gf2f4ea32c5d5" version="1">This curious flute is so densely packed with musical sprites, that it appears enveloped in a glowing aura that cycles through a spectrum of colours.</content>
 </contentList>

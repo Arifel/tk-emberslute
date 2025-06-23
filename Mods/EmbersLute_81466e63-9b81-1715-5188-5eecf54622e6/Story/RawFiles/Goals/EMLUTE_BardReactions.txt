@@ -463,8 +463,8 @@ AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 THEN
 SteerTo(_NPC,_Performer,0);
-LookAtEntity(_NPC,_Performer);
 PROC_PlayLoopingAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
+LookAtEntity(_NPC,_Performer,0.5);
 
 PROC
 PROC_BardReactions_NPC_Emlute((CHARACTER)_Performer,(CHARACTER)_NPC)
@@ -718,7 +718,7 @@ DB_BardReactions_MusicalPerformance_NPCs_Emlute(_,_Performer,_NPC)
 THEN
 DB_BardReactions_NPC_SittingAnimationIsPlaying_Emlute(_NPC);
 PROC_PlayLoopingAnimation(_NPC,_Start,_Loop,_Stop);
-LookAtEntity(_NPC,_Performer);
+LookAtEntity(_NPC,_Performer,0.5);
 
 // Fallback anims for humanoid tag
 PROC
@@ -734,7 +734,7 @@ DB_BardReactions_MusicalPerformance_NPCs_Emlute(_,_Performer,_NPC)
 THEN
 DB_BardReactions_NPC_SittingAnimationIsPlaying_Emlute(_NPC);
 PROC_PlayLoopingAnimation(_NPC,_Start,_Loop,_Stop);
-LookAtEntity(_NPC,_Performer);
+LookAtEntity(_NPC,_Performer,0.5);
 
 QRY
 QRY_HasBardReactionAnyCampTag_EmbersLute((CHARACTER)_NPC)

@@ -79,10 +79,16 @@ DB_BardReactions_Tag_Priorities_Emlute(25,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72e
 DB_BardReactions_Tag_Priorities_Emlute(0,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
 // Anything non humanoid leave with the default music listening reaction
 DB_BardReactions_SupportedTags_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
-// Not sure if Myconids are also humanoids??? So exclude them just in case
 DB_BardReactions_ExcludeTags_Emlute((TAG)MYCONID_480f5568-7c49-45e4-9543-7c06e43bdf52);
-// Probably for performance reasons, system NPCs have weird skeletons that don't animate well
 DB_BardReactions_ExcludeTags_Emlute((TAG)CROWDSYS_NPC_1274ffab-2fa2-4d6f-801e-751664ceb771);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5);
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)ACT2_HAV_ISOBEL_feddd4ac-752b-43db-97b7-78ad68654ee0);		
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)AASIMAR_41c6cdc9-aff5-46ae-afc4-aa0ccd9cd201);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5);
 //END_REGION
 
 // Collecting anims like a crazy magpie, behold my collection
@@ -464,7 +470,7 @@ DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 THEN
 SteerTo(_NPC,_Performer,0);
 PROC_PlayLoopingAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
-LookAtEntity(_NPC,_Performer,0.5);
+//LookAtEntity(_NPC,_Performer,0.5);
 
 PROC
 PROC_BardReactions_NPC_Emlute((CHARACTER)_Performer,(CHARACTER)_NPC)
@@ -943,12 +949,14 @@ DB_Helper_GetAnyRandomPositionInArea_Result(_X,_Y,_Z)
 THEN
 StopAnimation(_NPC,1);
 UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z);
+ObjectTimerLaunch(_NPC,"BardReactions_Busking_ThrowSpell_Timeout_Timer_Emlute",6000);
 
 IF
 CastedSpell((CHARACTER)_Caster,(STRING)_Spell,_,_,_)
 AND
 DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_Caster,_Spell)
 THEN
+ObjectTimerCancel(_Caster,"BardReactions_Busking_ThrowSpell_Timeout_Timer_Emlute");
 NOT DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_Caster,_Spell);
 PROC_PlayLoopingListeningAnim_EmbersLute(_Caster);
 
@@ -957,8 +965,17 @@ CastSpellFailed((CHARACTER)_Caster,(STRING)_Spell,_,_,_)
 AND
 DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_Caster,_Spell)
 THEN
+ObjectTimerCancel(_Caster,"BardReactions_Busking_ThrowSpell_Timeout_Timer_Emlute");
 NOT DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_Caster,_Spell);
 PROC_PlayLoopingListeningAnim_EmbersLute(_Caster);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_Busking_ThrowSpell_Timeout_Timer_Emlute")
+AND
+DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_NPC,_Spell)
+THEN
+NOT DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_NPC,_Spell);
+PROC_PlayLoopingListeningAnim_EmbersLute(_NPC);
 
 QRY
 QRY_HasThrowingOverrideTag_EmbersLute((CHARACTER)_NPC,(INTEGER)_SelectedAction)
@@ -1644,6 +1661,19 @@ QRY
 QRY_HasExcludedBardReactionsTag_EmbersLute((CHARACTER)_NPC)
 AND
 DB_BardReactions_ExcludeTags_Emlute(_Tag)
+AND
+IsTagged(_NPC,_Tag,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_HasExcludedBardReactionsTag_EmbersLute((CHARACTER)_NPC)
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+AND
+QRY_ReactionsAsBuskingMode_EmbersLute(_Performer)
+AND 
+DB_BardReactions_ExcludeTags_Busking_Emlute(_Tag)
 AND
 IsTagged(_NPC,_Tag,1)
 THEN

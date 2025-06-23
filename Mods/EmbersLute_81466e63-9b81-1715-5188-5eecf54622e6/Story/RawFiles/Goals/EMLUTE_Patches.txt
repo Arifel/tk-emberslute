@@ -332,7 +332,15 @@ DB_BardReactions_Tag_Priorities_Emlute(25,(TAG)HUMAN_69fd1443-7686-4ca9-9516-72e
 DB_BardReactions_Tag_Priorities_Emlute(0,(TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
 DB_BardReactions_SupportedTags_Emlute((TAG)HUMANOID_7fbed0d4-cabc-4a9d-804e-12ca6088a0a8);
 DB_BardReactions_ExcludeTags_Emlute((TAG)MYCONID_480f5568-7c49-45e4-9543-7c06e43bdf52);
-DB_BardReactions_ExcludeTags_Emlute((TAG)CROWDSYS_NPC_1274ffab-2fa2-4d6f-801e-751664ceb771);	
+DB_BardReactions_ExcludeTags_Emlute((TAG)CROWDSYS_NPC_1274ffab-2fa2-4d6f-801e-751664ceb771);		
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_JAHEIRA_8457eb5f-036c-4143-b6cf-447a9f555c7a);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_HALSIN_9b8709f9-8d2a-4b4e-a465-8505c561d7f5);
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)ACT2_HAV_ISOBEL_feddd4ac-752b-43db-97b7-78ad68654ee0);		
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)AASIMAR_41c6cdc9-aff5-46ae-afc4-aa0ccd9cd201);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_ASTARION_ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_SHADOWHEART_642d2aee-e3df-47e3-9f47-bbcd441bb9e0);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_MINTHARA_3e84e1cd-2193-4f9f-80b4-c2ededefaea6);	
+DB_BardReactions_ExcludeTags_Busking_Emlute((TAG)REALLY_LAEZEL_b5682d1d-c395-489c-9675-1f9b0c328ea5);
 DB_BardReactions_AnimBank_Emlute("Pondering",(ANIMATION)CUST_Pondering_01_Start_2d14e6a9-d3a3-4f98-9031-22831546c392,(ANIMATION)CUST_Pondering_01_Loop_a47454a1-05a2-4153-bdfe-7a0500fa62d0,(ANIMATION)CUST_Pondering_01_End_e15cc480-7f1a-4ed4-8a3c-36355a37c644,29100);
 DB_BardReactions_AnimBank_Emlute("ArmsCrossed",(ANIMATION)CUST_ArmsCrossed_01_Start_dafd0bbc-012a-403c-aabe-4963aca9cf25,(ANIMATION)CUST_ArmsCrossed_01_Loop_e6c49668-99b1-41d6-8daa-7ed6864b4e71,(ANIMATION)CUST_ArmsCrossed_01_End_ae43ea68-fc1b-456a-88ce-0e1d504e1d40,15100);
 DB_BardReactions_AnimBank_Emlute("Cheering01",(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,(ANIMATION)CUST_Cheering_01_bb17118b-9bdc-4003-b9ad-26eda135e1a0,(ANIMATION)NULL_00000000-0000-0000-0000-000000000000,5600);

@@ -7,10 +7,17 @@ KBSECTION
 // Used to manually trigger fact resets, in event of bugs etc.
 //REGION
 IF
-UsingSpellOnTarget((CHARACTER)_Caster,(CHARACTER)_Target,"Shout_Stop_Animations_Emlute",_,_,_)
+UsingSpellOnTarget((CHARACTER)_Caster,(CHARACTER)_Target,"Target_Stop_Animations_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Stop looping animations on NPC");
 StopAnimation(_Target,1);
+IF
+UsingSpell(_Caster,"Shout_Stop_AllBardCrimes_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Stop any active crime reactions to a bard performance");
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
+PROC_ResetCrimes_EmbersLute();
+PROC_BardReactions_Reset_EmbersLute();
 IF
 UsingSpell(_Caster,"Shout_Reset_BardReactions_Emlute",_,_,_)
 THEN

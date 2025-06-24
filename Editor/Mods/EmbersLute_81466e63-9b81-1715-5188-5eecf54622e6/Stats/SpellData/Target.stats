@@ -316,6 +316,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_OgreMockery_2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hee246026gccadg3f3agf3e6gdcf64bc7ff32" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9d98c405g8fb5gfad5g8383gba60c8940f2a" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -326,6 +328,32 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_POLYMORPH_LUMP,100,30)" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_OgreMockery_1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he5e9bf56gd745g8ab6g4644g139101485b03" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04958e92-b6c5-459f-9e05-714b3cc8b20b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Stop_Animations_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c985033f-9117-4f24-864b-71c06da93758" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Reset_Facts_Container_Emlute" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0077d814g05ffgf198g30e1g840adb4341fd" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd948432cgbb3eg2590gc744gb78e25fdeb5a" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="VerbalIntent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="491ebbd5-1671-4964-98d4-f839675c21fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Grant_AllCustomMusic_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="04958e92-b6c5-459f-9e05-714b3cc8b20b" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_GRANTALLCUSTOMMUSIC,100,10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8d91b6a1g29a7g0496gf0a5ga297a5be7369" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h212eb71bg9503g6a20gc20cg724082f96166" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

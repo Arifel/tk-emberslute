@@ -415,6 +415,18 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="10a01af4-5363-4462-9b34-b90dbaf82e2e" />
       </fields>
     </stat_object>
+    <stat_object color="#FF4B0082" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f5dec6a-0ebc-440a-b60e-dccf27de9402" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_GRANTALLCUSTOMMUSIC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6fbfe227g9d9bg2207g1294gfb9050a73d76" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h903b97c6gcd59g3445gabddge3af2a6e2b16" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Black" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING);Tag(EMLUTE_SHEETMUSIC_LEARNT_FINALACT);Tag(EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN);Tag(EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG);Tag(EMLUTE_SHEETMUSIC_LEARNT_THEPOWER);Tag(EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF800080" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="39109393-d4e2-4e20-804c-2fe9f7fc7266" />

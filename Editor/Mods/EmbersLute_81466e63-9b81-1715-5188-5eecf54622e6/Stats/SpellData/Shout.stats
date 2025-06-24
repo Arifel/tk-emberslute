@@ -837,6 +837,12 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(9)" />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasVerbalComponent;ImmediateCast" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="CrSpell_Cast_Leadership" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2f422ff1-2aba-4b40-ae4e-a5f5d2fab103" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="f857a71f-fdcd-415f-89e2-de63192cd86f" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="cd1b47d2-8d2e-45e8-97ac-5d569a5347a2" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF0000CD" is_substat="false">
@@ -851,6 +857,9 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BOON_1,100,-1);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Party() and not HasStatus('EMLUTE_PERFORM_BOON_1') and not HasPassive('Emlute_Musical_Spirit_Portal');" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(BOLSTERING_MAGIC,100,-1)" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="6e5e37e7-8d9e-4cb2-955b-7a4fec2d3d64" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ea434f70-87a9-47df-80ce-b91ad7209f7d" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="01000301-8fd3-4a77-86fb-9b125ed5e675" />
       </fields>
     </stat_object>
     <stat_object color="#FF0000CD" is_substat="false">
@@ -868,6 +877,10 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Debuff" enumeration_type_name="VerbalIntent" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Projectiles_Grenades_Cast_FireWorks" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9054a112-40c2-44b4-a521-d692933f5ef5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="f632bb78-68c4-45ba-b1f8-03bc09743c34" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="b92c749d-85b1-47a4-a6bc-50dd791b948a" />
       </fields>
     </stat_object>
     <stat_object color="#FFD633CF" is_substat="false">
@@ -1461,7 +1474,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="51a59e53-a94e-44e2-bbbd-56f19c0d184a" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_Facts_Container_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Stop_Animations_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Grant_AllCustomMusic_Emlute;Target_Stop_Animations_Emlute;Shout_Stop_AllBardCrimes_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8c817240g6f86g26fag3607gb72abf22562a" version="1" />
@@ -1472,10 +1485,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_BardReactions_Emlute" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Reset_Facts_Container_Emlute" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h08a065dcgbf13g5657g48d6g99cb01e23784" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h24263a85gc626gfdd6g155cg6e3e20cabbb5" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF800000" is_substat="false">
@@ -1483,7 +1498,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="1e5a5c0b-adc9-4a77-a922-6c8fc259faa5" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_InstrumentFacts_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0fbc24cfgaf99gb322ge17fg138df0699962" version="1" />
       </fields>
     </stat_object>
@@ -1492,7 +1506,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3d725ba8-9aea-4038-91bd-84e6ed59c9d5" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_ScriptedVFXFacts_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf7302e1gadc8gf7ffgae54g7617112304da" version="1" />
       </fields>
     </stat_object>
@@ -1507,12 +1520,10 @@
     <stat_object color="#FF800000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6a27ce8a-f3e2-4791-b625-06752704664d" />
-        <field name="Name" type="NameTableFieldDefinition" value="Stop_Animations_Emlute" />
+        <field name="Name" type="NameTableFieldDefinition" value="Stop_AllBardCrimes_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
-        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
-        <field name="Autocast" type="EnumerationTableFieldDefinition" value="No" enumeration_type_name="YesNo" version="1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c8d6e9fg087bg8beag5e25ga9f353fa3c4f" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he7c03135g803dg774bg70c0g2cca8ac25b51" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3c8d6e9fg087bg8beag5e25ga9f353fa3c4f" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he7c03135g803dg774bg70c0g2cca8ac25b51" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FF8B0000" is_substat="false">

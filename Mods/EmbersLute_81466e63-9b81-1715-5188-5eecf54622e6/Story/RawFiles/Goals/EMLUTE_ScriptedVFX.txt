@@ -219,7 +219,7 @@ AND
 IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,1)
 THEN
 // Play the effects for a supporting performer, female vocals
-PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter02");
 
 QRY
 QRY_IsSupporter01_ByVocals_EmbersLute((CHARACTER)_Performer)

@@ -184,6 +184,12 @@ DB_NOOP(1);
 IF
 MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
 AND
+DB_PartOfTheTeam(_Performer)
+AND
+IsSummon(_Performer,0)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_LEGEND_AURA_12b4df24-ba5b-4ae1-a406-6125b8110001,0)
+AND
 DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
 THEN
 PROC_DebugMusicState(_Performer);

@@ -387,6 +387,37 @@ PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
 // End instrument passive management events
 ///////////////////////////////////////////////////////////////////
 
+// Patch 8 Photomode bug causes VFX to drop if it has a tag on equipment check
+// Specfic workaround for violin bows, let's splat the tag on the player temporarily
+//REGION
+IF
+Equipped((ITEM)_Instrument, (CHARACTER)_Character)
+AND
+DB_Players(_Character)
+AND
+IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
+THEN
+SetTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
+
+IF
+Unequipped((ITEM)_Instrument, (CHARACTER)_Character)
+AND
+DB_Players(_Character)
+AND
+IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
+THEN
+ObjectTimerLaunch(_Character,"ViolinBowPhotomodeHack_EmbersLute",1500);
+
+IF
+ObjectTimerFinished((CHARACTER)_Character,"ViolinBowPhotomodeHack_EmbersLute")
+AND
+GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
+AND
+IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,0)
+THEN
+ClearTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
+//END_REGION
+
 // Helpers
 //REGION
 PROC

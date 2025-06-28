@@ -957,4 +957,6 @@
   <content contentuid="h903b97c6gcd59g3445gabddge3af2a6e2b16" version="1">Temporarily granted all custom music</content>
   <content contentuid="h8d91b6a1g29a7g0496gf0a5ga297a5be7369" version="1">Temporarily Grant All Custom Music</content>
   <content contentuid="h212eb71bg9503g6a20gc20cg724082f96166" version="1">For 10 turns, can start a performance for any custom music piece</content>
+  <content contentuid="h70673536g6282gf4c3gd436g54f5586a29f9" version="1">Stop Music</content>
+  <content contentuid="h92f72019gf2d1g2026gd67dg5a96797c4eff" version="1">Developer tools to trigger stop music events and reset game music state</content>
 </contentList>

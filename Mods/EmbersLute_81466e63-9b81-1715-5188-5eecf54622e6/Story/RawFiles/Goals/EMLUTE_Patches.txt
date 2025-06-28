@@ -7,6 +7,17 @@ KBSECTION
 // Used to manually trigger fact resets, in event of bugs etc.
 //REGION
 IF
+UsingSpell(_Caster,"Shout_Reset_MusicPlaying_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Run stop events for all the music to restore sound state");
+UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
+MusicPlayGeneral("SE_DEN_TieflingBard_Bard_Stop");
+MusicPlayGeneral("EPI_BardScripted_Off");
+MusicPlayGeneral("Music_Fight_End");
+MusicPlayGeneral("Credits_menu_Leave");
+MusicPlayGeneral("Music_Game_Enter");
+PROC_CleanUpFailsafe_EmbersLute();
+IF
 UsingSpellOnTarget((CHARACTER)_Caster,(CHARACTER)_Target,"Target_Stop_Animations_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Stop looping animations on NPC");

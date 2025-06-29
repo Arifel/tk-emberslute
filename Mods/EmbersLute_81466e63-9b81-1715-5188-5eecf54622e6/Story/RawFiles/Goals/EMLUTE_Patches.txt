@@ -71,7 +71,7 @@ PROC_SetupUniqueRewardsRemaining_EmbersLute();
 IF
 SavegameLoaded()
 AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3",_)
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",_)
 THEN
 DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852);
 DB_OneTimeRewards_EmbersLute(96,(ITEMROOT)Emlute_Book_Version_3_0_0_ChangeLog_285bdbfe-2e72-4f72-ac65-9fda54741525);
@@ -83,7 +83,16 @@ PROC_ResetSpecialPerformanceFacts_EmbersLute();
 PROC_RecreateSpecialPerformanceFacts_EmbersLute();
 PROC_ResetInstrumentFacts_EmbersLute();
 PROC_RecreateInstrumentFacts_EmbersLute();
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3",1);
+PROC_ResetUninstallerFacts_EmbersLute();
+PROC_RecreateUninstallerFacts_EmbersLute();
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",1);
+
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",0);
 
 IF
 SavegameLoaded()
@@ -146,6 +155,8 @@ SavegameLoaded()
 AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",_)
 AND
+NOT DB_TagToPassiveMap_EmbersLute(_,_)
+AND
 DB_Players(_Character)
 AND
 GetEquippedItem(_Character,"MusicalInstrument",_Instrument)
@@ -154,6 +165,16 @@ IsTagged(_Instrument, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
 THEN
 Unequip(_Character,_Instrument);
 DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",1);
+
+// Mark second column as 0 for patch not required and not applied (new user)
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",_)
+AND
+DB_TagToPassiveMap_EmbersLute(_,_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v2_1_0_n_Patch8",0);
 
 IF
 SavegameLoaded()
@@ -852,6 +873,96 @@ DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_Cambions",2330
 DB_PassiveTimer_EmbersLute("SummonToggle","Emlute_SummonOnPerform_WaveServants",2340);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseWingsVFX",2400);
 DB_PassiveTimer_EmbersLute("InstrumentConfig","Emlute_CelestialLyre_UseHaloVFX",2410);
+//END_REGION
+
+// Reset the uninstaller facts
+//REGION
+PROC
+PROC_ResetUninstallerFacts_EmbersLute()
+AND
+DB_StatusCleanUp_EmbersLute(_Status)
+THEN
+NOT DB_StatusCleanUp_EmbersLute(_Status);
+
+PROC
+PROC_ResetUninstallerFacts_EmbersLute()
+AND
+DB_SpellCleanUp_EmbersLute(_Spell)
+THEN
+NOT DB_SpellCleanUp_EmbersLute(_Spell);
+
+PROC
+PROC_ResetUninstallerFacts_EmbersLute()
+AND
+DB_Templates_EmbersLute(_Character)
+THEN
+NOT DB_Templates_EmbersLute(_Character);
+
+PROC
+PROC_ResetUninstallerFacts_EmbersLute()
+AND
+DB_ContainerTemplates_EmbersLute(_Container)
+THEN
+NOT DB_ContainerTemplates_EmbersLute(_Container);
+
+PROC
+PROC_ResetUninstallerFacts_EmbersLute()
+AND
+DB_PopulatedWorldContainers_EmbersLute(_Container)
+THEN
+NOT DB_PopulatedWorldContainers_EmbersLute(_Container);
+//END_REGION
+
+// Recreate the uninstaller facts
+//REGION
+PROC
+PROC_RecreateUninstallerFacts_EmbersLute()
+THEN
+DB_StatusCleanUp_EmbersLute("EMLUTE_PERFORM_BOON_1");
+DB_StatusCleanUp_EmbersLute("EMLUTE_PERFORM_BOON_2");
+DB_StatusCleanUp_EmbersLute("EMLUTE_PERFORM_CURSE");
+DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_SPIN_SLIPPERS");
+DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_CRITICAL_MOCKERY");
+DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_PARRY");
+DB_StatusCleanUp_EmbersLute("EMLUTE_ANNOYING_LUTE_VFX");
+DB_SpellCleanUp_EmbersLute("Shout_ConfigManager_Cont_Emlute");
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Gnome_a37df723-3ce0-436d-9356-f2d60c395ed0);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Gnome_4118f9af-a8db-4a17-a785-eec7faadb2df);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Gnome_36f2416e-abb4-49af-94a8-855b95927e3f);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Skelly_149fd908-e28c-4bb5-b158-774abc383f02);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0fc-cf88-4e7d-b110-ae3b205ad90d);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Drum_8105ce4f-41c8-4604-bf22-123edc4431af);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Flute_ccb848c3-7bb2-4839-9dba-56973c62d7a1);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Lute_15f95c4a-0ad8-4c65-99a4-d8bbce3f4c49);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Lyre_40dddfd8-c3fc-43b9-b89d-7d60dde48cf6);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Violin_de1c8a91-1b2f-4fb6-9f79-87e31a1e04f2);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Whistle_74e07e49-2031-4180-9c9c-b8e0ff5d69b8);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Annoying_a7845aa9-fc93-43ad-a6af-f46c5b89f680);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Ensembles_2f9950f5-2044-4821-a026-0449a5143722);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Haunted_8983eb29-b220-4ab7-9cb9-e2f475308ecd);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Main_f2ef5e3b-ae30-425a-98c0-7ec2e0186c10);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Misc_d0f807b4-0115-4e6c-9241-b16bc59480b0);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_MusicalSprites_201c7bd7-baf7-40a6-b9a6-aee748999b15);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Varnishes_81fc28be-061a-4f08-8db7-a1f27022b43a);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Spoilers_669cf84d-f222-4e82-b300-369001765514);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)EMLUTE_ContainerCelestialInstruments_f713ebc0-29fc-4009-a98c-f6bc436e7f59);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_Chest_Potions_e57e3af6-ae79-4d5c-9d11-f695b359c740);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_HouseOfHope_TreasurePile01_0278d4ae-3e7c-4c1e-a4bc-fbf99db35e02);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)LOOT_GEN_Backpack_C_Posed_A_Colorvar_B_001_5bbadea1-47c5-4d52-8d52-961989afefea);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_WaterQueensHouse_AllandrasChest_f624287a-4051-4377-a1ae-a0b55d74c1d0);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_DEN_HarpyNest_a5c87ab6-b38b-4c2b-bf4f-a1f5f391f79f);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_MOO_EntranceGhoul_003_019af169-5366-4a1f-8392-35df658b2e8e);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Jewel_A_Small_A_000_070a769c-6ca8-4e31-a387-7bf95eb21041);
 //END_REGION
 EXITSECTION
 

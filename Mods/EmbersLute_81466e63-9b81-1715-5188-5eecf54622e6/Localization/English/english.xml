@@ -797,19 +797,19 @@
   <content contentuid="h2a773dc2gca0agfb0fg5e52g26452f6236a7" version="1">Enable Easy Rewards</content>
   <content contentuid="h97e06f5ege329g6532g4c25g843d4b707680" version="1">Remove the restrictions and requirements of receiving special rewards for musical performances.</content>
   <content contentuid="hcc55a20ag5b9eg2d12g9729g30590771325b" version="2">Performance rewards will no longer be locked behind player level, and awarding a musical performance is much more likely.</content>
-  <content contentuid="h984a7285g034agf27cg03ffg708f37ce0b4c" version="10">Music and Lyrics: 'The Luring Song'</content>
-  <content contentuid="h201376efga824gf126g6fb7g8a43f47277ee" version="9">This appears to be sheet music of the harpy's luring song. The bones of whomever stopped to write this down are likely also somewhere in their nest now.</content>
-  <content contentuid="hc90d4215g14bdg5a3dg4da2g9b05866bd34c" version="8">Music and Lyrics: 'Endless Spring'</content>
-  <content contentuid="h9df0be09g9f85gf6fdgc60ag547700b60bee" version="8">Read to learn how to perform the Endless Spring on one of Ember's instruments. Requires Musical Proficiency.</content>
-  <content contentuid="h8fc4171dgf1d5g6734g1ad2g4824b9a39d3a" version="8">Sheet music for the Endless Spring.</content>
-  <content contentuid="hc715b154g639dg967agb88bga1e254125605" version="7">Read to learn how to perform the Luring Song on one of Ember's instruments. Requires Musical Proficiency.</content>
+  <content contentuid="h984a7285g034agf27cg03ffg708f37ce0b4c" version="11">Music and Lyrics: 'The Luring Song'</content>
+  <content contentuid="h201376efga824gf126g6fb7g8a43f47277ee" version="10">This appears to be sheet music of the harpy's luring song. The bones of whomever stopped to write this down are likely also somewhere in their nest now.</content>
+  <content contentuid="hc90d4215g14bdg5a3dg4da2g9b05866bd34c" version="9">Music and Lyrics: 'Endless Spring'</content>
+  <content contentuid="h9df0be09g9f85gf6fdgc60ag547700b60bee" version="9">Read to learn how to perform the Endless Spring on one of Ember's instruments. Requires Musical Proficiency.</content>
+  <content contentuid="h8fc4171dgf1d5g6734g1ad2g4824b9a39d3a" version="9">Sheet music for the Endless Spring.</content>
+  <content contentuid="hc715b154g639dg967agb88bga1e254125605" version="8">Read to learn how to perform the Luring Song on one of Ember's instruments. Requires Musical Proficiency.</content>
   <content contentuid="h2cb36f9eg4bbeg8ea5g5560gbad6a6e2b2be" version="8">Music and Lyrics: 'The Power'</content>
   <content contentuid="he8148937gf713g2d0eg2fc9gc25f3e8cc0e8" version="8">Sheet music for The Power.</content>
-  <content contentuid="h31e83004g2b33g54f4g19c7g20b749d95fa8" version="6">Music and Lyrics: 'The Final Act'</content>
-  <content contentuid="h019de7fag3ee6g845ag0292g9b80088638bf" version="6">Read to learn how to perform The Final Act on one of Ember's instruments. Requires Musical Proficiency.</content>
-  <content contentuid="h8c2f505bg1cb9g999ag2eb6g822512ac5849" version="6">Somehow this sheet music has endured the infernal heat of the Nine Hells.</content>
-  <content contentuid="hebf91c6dg0eddg0ea5g843cg9f31073c9944" version="7">Music and Lyrics: 'The Water Queen's Hymn'</content>
-  <content contentuid="haa0cc495gdd5bgaf0dg1c69g594e243406dd" version="7">It drips with water continuosly, yet the sheet music remains quite readable and the parchment seems no weaker for its permanently drenched state.</content>
+  <content contentuid="h31e83004g2b33g54f4g19c7g20b749d95fa8" version="7">Music and Lyrics: 'The Final Act'</content>
+  <content contentuid="h019de7fag3ee6g845ag0292g9b80088638bf" version="7">Read to learn how to perform The Final Act on one of Ember's instruments. Requires Musical Proficiency.</content>
+  <content contentuid="h8c2f505bg1cb9g999ag2eb6g822512ac5849" version="7">Somehow this sheet music has endured the infernal heat of the Nine Hells.</content>
+  <content contentuid="hebf91c6dg0eddg0ea5g843cg9f31073c9944" version="8">Music and Lyrics: 'The Water Queen's Hymn'</content>
+  <content contentuid="haa0cc495gdd5bgaf0dg1c69g594e243406dd" version="8">It drips with water continuosly, yet the sheet music remains quite readable and the parchment seems no weaker for its permanently drenched state.</content>
   <content contentuid="h83700f27g4884g67bag9d21g5f502d4441bb" version="9">Music and Lyrics: 'The Weeping Dawn'</content>
   <content contentuid="h1bd6c521gcf2ega662g571dg4d115aaf61bb" version="9">Music composed by Alfira the bard, in tribute to her teacher, Lihala.</content>
   <content contentuid="hf69c1901g860eg8b42gab2eg6a1c8b2d526c" version="24">Hell, Hell, Hell has its laws&lt;br&gt;Hell, Hell, effects and the cause&lt;br&gt;Curtain falls, but hold your applause&lt;br&gt;Squirm, squirm, for now down here come the claws&lt;br&gt;&lt;br&gt;&lt;i&gt;Composed by Borislav Slavov, performed by Andrew Winscott and Mariya Anastasova.&lt;/i&gt;&lt;br&gt;&lt;br&gt;[By default, this song can only be performed in camp]&lt;br&gt;&lt;br&gt;&lt;b&gt;Ariefel's Notes&lt;/b&gt;&lt;br&gt;Please note that due to the game state required to play this music track, switching character control during the performance of this song will cause BG3 to stop the music.&lt;br&gt;&lt;br&gt;If entering Photomode during a performance of this song, note that music and performance animations will become out of sync upon leaving Photomode. It's harmless, but might look strange!&lt;br&gt;</content>
@@ -885,7 +885,7 @@
   <content contentuid="hfe52a04dg28d2g9df8g11f8gb1bc59754bc9" version="2">Swift Winds Proc</content>
   <content contentuid="h27965174g4d7fg7cc5g81a4g240022a5a9f9" version="1">Boosting the party with &lt;LSTag Type="Status" Tooltip="LONGSTRIDER"&gt;Longstrider&lt;/LSTag&gt;.</content>
   <content contentuid="hfb3f70b0gdea4g58abge19eg29a3de0649c3" version="4">Read to learn how to perform The Power on one of Ember's instruments. Requires Musical Proficiency.</content>
-  <content contentuid="h3bdd17dag6611g457cg2bf4g28ebedda834a" version="3">Read to learn how to perform the  Water Queen's Hymn on one of Ember's instruments. Requires Musical Proficiency.</content>
+  <content contentuid="h3bdd17dag6611g457cg2bf4g28ebedda834a" version="4">Read to learn how to perform the  Water Queen's Hymn on one of Ember's instruments. Requires Musical Proficiency.</content>
   <content contentuid="hd8f34a38gf27cg3552g82f6gb871c8f79335" version="1">Dark Musical Sprites</content>
   <content contentuid="hb20e93c5gb24fg9899g00b6gd2e8fb2797c5" version="3">Lysandra Dusksong's Lute of Dark Moods</content>
   <content contentuid="h17133679g2ea2gc1d5g7ee8gecb02771528e" version="3">A variant of the Lute of Musical Sprites with the vanilla lute A visual. Differences are aesthetic only.</content>
@@ -932,15 +932,15 @@
   <content contentuid="h0b0bd3efg5689g310dg6299g67594ce509b8" version="14">The Ember's Lute version number currently active in this campaign is v3.0.0</content>
   <content contentuid="hd188d589g0e7agf85cg2c5cgbca97fa7bcbc" version="2">Ember's Lute Version 3 - Thank You!</content>
   <content contentuid="h63864807gc730ga5c9gc707g0238d0389bb8" version="2">A quick thank you, and a few tips to get you started.</content>
-  <content contentuid="h5f3f7694ga2adgce15gc8b0g651f7d8ec286" version="7">Ember's Lute Version 3 Change Log</content>
-  <content contentuid="ha0741f0eg7244g7c15g8d23gd0941b46dd4e" version="7">A changelog for version 3 of Ember's Lute.</content>
+  <content contentuid="h5f3f7694ga2adgce15gc8b0g651f7d8ec286" version="8">Ember's Lute Version 3 Change Log</content>
+  <content contentuid="ha0741f0eg7244g7c15g8d23gd0941b46dd4e" version="8">A changelog for version 3 of Ember's Lute.</content>
   <content contentuid="h93452635g3021gf05cg4642gb5ca605cf821" version="3">Learning Music</content>
   <content contentuid="hd30d6f6fg5dfdg59a1g8aa8gf88f2f963f0c" version="3">A quick explanation of learning music, and performance compromises to be aware of.</content>
   <content contentuid="h1edc658ege645g1cc6g6ce7g14470545e5fc" version="3">Ember's Lute Current Version 3.0.0</content>
   <content contentuid="h1d3f94d3ge0f2g4a8cg545dgb2ec3d4dbf2f" version="3">The mod version active in this campaign.</content>
   <content contentuid="hb4871cc7ge444g2551g0cf9ged3f1355bfb7" version="2">Musical Sprites</content>
-  <content contentuid="h23dc535fga5b3g88f3g173bg185cac3ae76a" version="1">SPOILERS</content>
-  <content contentuid="hb1f8d60bg299dga624g181dg0ea0849c593b" version="1">Contains SPOILERS</content>
+  <content contentuid="h23dc535fga5b3g88f3g173bg185cac3ae76a" version="2">SPOILERS</content>
+  <content contentuid="hb1f8d60bg299dga624g181dg0ea0849c593b" version="2">Contains SPOILERS</content>
   <content contentuid="h607e06e9ged47g9963g0d7bg5475021182d7" version="1">Listen To Music</content>
   <content contentuid="h5fc6627aga9c1g830ag0246g4923413e1bbb" version="2">Attention has been piqued by music!</content>
   <content contentuid="hc900b890gaddfg6117ga80cg222d5631559c" version="1">Applause</content>

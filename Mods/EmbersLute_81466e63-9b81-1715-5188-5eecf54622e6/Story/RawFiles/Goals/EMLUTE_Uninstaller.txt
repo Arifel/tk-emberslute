@@ -43,6 +43,19 @@ DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Main_f2ef5e3b-ae30-4
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Misc_d0f807b4-0115-4e6c-9241-b16bc59480b0);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_MusicalSprites_201c7bd7-baf7-40a6-b9a6-aee748999b15);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Varnishes_81fc28be-061a-4f08-8db7-a1f27022b43a);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Spoilers_669cf84d-f222-4e82-b300-369001765514);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)EMLUTE_ContainerCelestialInstruments_f713ebc0-29fc-4009-a98c-f6bc436e7f59);
+
+// Not sure if this will work, but somehow need to retrospectively get handle on previously encountered containers
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_Chest_Potions_e57e3af6-ae79-4d5c-9d11-f695b359c740);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_HouseOfHope_TreasurePile01_0278d4ae-3e7c-4c1e-a4bc-fbf99db35e02);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)LOOT_GEN_Backpack_C_Posed_A_Colorvar_B_001_5bbadea1-47c5-4d52-8d52-961989afefea);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_WaterQueensHouse_AllandrasChest_f624287a-4051-4377-a1ae-a0b55d74c1d0);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_DEN_HarpyNest_a5c87ab6-b38b-4c2b-bf4f-a1f5f391f79f);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_MOO_EntranceGhoul_003_019af169-5366-4a1f-8392-35df658b2e8e);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Jewel_A_Small_A_000_070a769c-6ca8-4e31-a387-7bf95eb21041);
+
+
 
 KBSECTION
 // We loop through all player characters, find any custom items and unequip.
@@ -93,8 +106,17 @@ PROC_ResetCrimes_EmbersLute();
 PROC_CleanUpFailsafe_EmbersLute();
 PROC_ResetRewardTracker_EmbersLute();
 PROC_ResetOneTimeRewards_EmbersLute();
+ObjectTimerLaunch(_Player,"ContainersMarkedForDeletion_Timer",2000);
 OpenMessageBox(_Player,"EMLUTE_CompletedUninstall");
 NOT DB_ItemCleanUp_EmbersLute(_Player);
+
+// Resort to timer (again)
+// Can't use entity events because tag iteration completed passes null guid...
+// Am sure it used to pass the guid...? But whatever
+IF
+ObjectTimerFinished(_Player,"ContainersMarkedForDeletion_Timer")
+THEN
+PROC_DeleteMarkedContainers_EmbersLute();
 
 IF
 MessageBoxClosed(_Player,"EMLUTE_CompletedUninstall")
@@ -116,6 +138,40 @@ THEN
 DB_IterateDeleteCounter_EmbersLute(_CountIncrement);
 TimerLaunch("DeleteItem_EmbersLute",500);
 
+// Handle the deletion of a found mod item
+// There's purposefully more entity event types than strictly necessary
+// This is mostly to help with debugging and identifying the source of the found item
+//REGION
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemOnPlayer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInCampChest")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemOnTrader")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInTrackedWorldContainer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInRetrospectiveWorldContainer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInEmluteContainer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
 IF
 EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItem")
 AND
@@ -123,7 +179,8 @@ GetTemplate(_Item,(ITEMROOT)_Template)
 AND
 DB_ContainerTemplates_EmbersLute(_Template)
 THEN
-IterateInventoryByTag(_Item,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_ContainerSearchDone");
+DB_MarkContainerForDeletion_EmbersLute(_Item);
+IterateInventoryByTag(_Item,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInEmluteContainer","EMLUTE_EmluteContainerSearchDone");
 
 IF
 EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItem")
@@ -133,6 +190,7 @@ AND
 NOT QRY_IsContainer_EmbersLute(_Template)
 THEN
 RequestDelete(_Item);
+//END_REGION
 
 QRY
 QRY_IsContainer_EmbersLute((ITEMROOT)_Template)
@@ -141,10 +199,72 @@ DB_ContainerTemplates_EmbersLute(_Template)
 THEN
 DB_NOOP(1);
 
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+THEN
+IterateInventoryByTag(_Player,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemOnPlayer","EMLUTE_PlayerSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_Camp_UserCampChest(_UserID,_Chest)
+THEN
+IterateInventoryByTag(_Chest,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInCampChest","EMLUTE_CampSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_TradeTreasureGeneratedEver(_Trader)
+THEN
+IterateInventoryByTag(_Trader,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemOnTrader","EMLUTE_TraderSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_TrackItemsForUninstall_EmbersLute(_ModItem,_InventoryOwner)
+THEN
+IterateInventoryByTag(_InventoryOwner,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInTrackedWorldContainer","EMLUTE_WorldContainerSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_PopulatedWorldContainers_EmbersLute(_Container)
+THEN
+IterateInventoryByTag(_Container,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInRetrospectiveWorldContainer","EMLUTE_WorldRetrospectiveContainerSearchDone");
+
+PROC
+PROC_DeleteMarkedContainers_EmbersLute()
+AND
+DB_MarkContainerForDeletion_EmbersLute(_Item)
+AND
+Exists(_Item,1)
+THEN
+RequestDelete(_Item);
+
+// Don't need to do anything with these entity events, but useful for log output
+//REGION
 IF
 EntityEvent((ITEM)_Container, "EMLUTE_ContainerSearchDone")
 THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_EmluteContainerSearchDone")
+THEN
+// These all seem to pass in null, so this doesn't actually do anything
 RequestDelete(_Container);
+
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_WorldContainerSearchDone")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_WorldRetrospectiveContainerSearchDone")
+THEN
+DB_NOOP(1);
 
 IF
 EntityEvent((ITEM)_Item, "EMLUTE_PlayerSearchDone")
@@ -160,28 +280,10 @@ IF
 EntityEvent((ITEM)_Item, "EMLUTE_TraderSearchDone")
 THEN
 DB_NOOP(1);
+//END_REGION
 
-PROC
-PROC_CleanUpCustom_EmbersLute()
-AND
-DB_PartOfTheTeam(_Player)
-THEN
-IterateInventoryByTag(_Player,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_PlayerSearchDone");
-
-PROC
-PROC_CleanUpCustom_EmbersLute()
-AND
-DB_Camp_UserCampChest(_UserID,_Chest)
-THEN
-IterateInventoryByTag(_Chest,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_CampSearchDone");
-
-PROC
-PROC_CleanUpCustom_EmbersLute()
-AND
-DB_TradeTreasureGeneratedEver(_Trader)
-THEN
-IterateInventoryByTag(_Trader,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItem","EMLUTE_TraderSearchDone");
-
+// Search and unequip helpers
+//REGION
 PROC
 PROC_UnequipCustom_EmbersLute()
 AND
@@ -232,6 +334,7 @@ AND
 IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
 THEN
 DB_NOOP(1);
+//END_REGION
 
 PROC
 PROC_RemoveCustomPassives_EmbersLute()
@@ -305,6 +408,22 @@ AND
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
 THEN
 NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
+
+// Inventory tracker - capture and track where main mod container gets instantiated in the world
+// Trying to filter this tracker down to only the specific items this mod places in vanilla containers
+//REGION
+IF
+TemplateAddedTo((ITEMROOT)Emlute_Container_Main_f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,(ITEM)_Container,(ITEM)_InventoryOwner,"Treasure")
+THEN
+DB_TrackItemsForUninstall_EmbersLute(_Container,_InventoryOwner);
+
+IF
+TemplateAddedTo((ITEMROOT)_ItemRoot,(ITEM)_Item,(ITEM)_InventoryOwner,"Treasure")
+AND
+IsTagged(_Item,(TAG)EMLUTE_SHEETMUSIC_80cecea2-70cf-4ffd-b37a-dff3086a3289,1)
+THEN
+DB_TrackItemsForUninstall_EmbersLute(_Item,_InventoryOwner);
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

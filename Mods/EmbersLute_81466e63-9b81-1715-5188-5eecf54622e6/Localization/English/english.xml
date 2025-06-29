@@ -921,8 +921,8 @@
   <content contentuid="h009705fbgbae7gb475g7a8eg4c3a5f87007f" version="1">Reset Custom Performance Facts</content>
   <content contentuid="h3e796e3eg2bc8gca42g138agaee91fc2087f" version="1">Reset Unique Reward Facts</content>
   <content contentuid="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="2">Ember's Lute - Developer Tools</content>
-  <content contentuid="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="2">Developer tools to reset Osiris mod facts and other convenience utilities.</content>
-  <content contentuid="h8c817240g6f86g26fag3607gb72abf22562a" version="1">Save game before using these spells.</content>
+  <content contentuid="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="3">You should never need to use these spells unless directed to for troubleshooting.</content>
+  <content contentuid="h8c817240g6f86g26fag3607gb72abf22562a" version="2">Just a set of dev tools that reset mod state or clear down events, added for my convenience during development. There's nothing especially exciting hidden here.</content>
   <content contentuid="h08324abag63f6g5041g8e18g5c23657baf23" version="2">Snap</content>
   <content contentuid="hec0a1b93g9215g3689g1a65g80fe2df2fac6" version="3">Slay</content>
   <content contentuid="h573d7b21g833bgfb7eg2e3eg0bce33450406" version="4">Snicker</content>
@@ -958,5 +958,7 @@
   <content contentuid="h8d91b6a1g29a7g0496gf0a5ga297a5be7369" version="1">Temporarily Grant All Custom Music</content>
   <content contentuid="h212eb71bg9503g6a20gc20cg724082f96166" version="1">For 10 turns, can start a performance for any custom music piece</content>
   <content contentuid="h70673536g6282gf4c3gd436g54f5586a29f9" version="1">Stop Music</content>
-  <content contentuid="h92f72019gf2d1g2026gd67dg5a96797c4eff" version="1">Developer tools to trigger stop music events and reset game music state</content>
+  <content contentuid="h92f72019gf2d1g2026gd67dg5a96797c4eff" version="2">Developer tools to trigger stop music events and reset game music state.</content>
+  <content contentuid="h1c1fc1c3g48b4g2714g97c6g9b8446acbd2d" version="1">Re-Initialise Version 3</content>
+  <content contentuid="h46a94c13ga63fgf044g1331g26755f8dde7c" version="1">Developer tools to run scripts to re-init mod version 3.</content>
 </contentList>

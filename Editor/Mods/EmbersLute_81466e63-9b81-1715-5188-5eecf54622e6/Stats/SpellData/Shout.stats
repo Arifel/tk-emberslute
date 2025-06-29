@@ -1474,10 +1474,11 @@
         <field name="UUID" type="IdTableFieldDefinition" value="51a59e53-a94e-44e2-bbbd-56f19c0d184a" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_Facts_Container_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Grant_AllCustomMusic_Emlute;Target_Stop_Animations_Emlute;Shout_Stop_AllBardCrimes_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;Shout_Reset_MusicPlaying_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Grant_AllCustomMusic_Emlute;Target_Stop_Animations_Emlute;Shout_Stop_AllBardCrimes_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;Shout_Reset_MusicPlaying_Emlute;Shout_Init_Version3_Emlute;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="2" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8c817240g6f86g26fag3607gb72abf22562a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8c817240g6f86g26fag3607gb72abf22562a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ItemCleanUp" />
       </fields>
     </stat_object>
     <stat_object color="#FF800000" is_substat="false">
@@ -1541,7 +1542,16 @@
         <field name="Name" type="NameTableFieldDefinition" value="Reset_MusicPlaying_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70673536g6282gf4c3gd436g54f5586a29f9" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92f72019gf2d1g2026gd67dg5a96797c4eff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92f72019gf2d1g2026gd67dg5a96797c4eff" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1ac453e-7cfe-4db2-9d9c-6d4d6e4fdde7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Init_Version3_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="70cdcd49-3faf-4aca-b300-054b8662688f" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1c1fc1c3g48b4g2714g97c6g9b8446acbd2d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h46a94c13ga63fgf044g1331g26755f8dde7c" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -64,6 +64,12 @@ DebugText(_Caster, "Reset unique rewards given for Ember's Lute");
 UseSpell(_Caster,"Shout_Reset_Facts_Emlute",_Caster);
 PROC_ResetUniqueRewards_EmbersLute();
 PROC_SetupUniqueRewardsRemaining_EmbersLute();
+IF
+UsingSpell(_Caster,"Shout_Init_Version3_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Run the init scripts for version 3");
+UseSpell(_Caster,"Shout_Init_Version3_Emlute",_Caster);
+PROC_InitV3_EmbersLute();
 //END_REGION
 
 // Version 3 mod patches final (post-release)
@@ -71,10 +77,27 @@ PROC_SetupUniqueRewardsRemaining_EmbersLute();
 IF
 SavegameLoaded()
 AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",_)
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_InitV3",_)
+AND
+NOT DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852)
 THEN
 DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852);
 DB_OneTimeRewards_EmbersLute(96,(ITEMROOT)Emlute_Book_Version_3_0_0_ChangeLog_285bdbfe-2e72-4f72-ac65-9fda54741525);
+PROC_InitV3_EmbersLute();
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_InitV3",1);
+
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_InitV3",_)
+AND
+DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_InitV3",0);
+
+PROC
+PROC_InitV3_EmbersLute()
+THEN
 PROC_ResetBardReactionFacts_EmbersLute();
 PROC_RecreateBardReactionFacts_EmbersLute();
 PROC_ResetScriptedVFXFacts_EmbersLute();
@@ -85,14 +108,6 @@ PROC_ResetInstrumentFacts_EmbersLute();
 PROC_RecreateInstrumentFacts_EmbersLute();
 PROC_ResetUninstallerFacts_EmbersLute();
 PROC_RecreateUninstallerFacts_EmbersLute();
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",1);
-
-IF
-SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",_)
-THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_UpgradeV3_b",0);
 
 IF
 SavegameLoaded()

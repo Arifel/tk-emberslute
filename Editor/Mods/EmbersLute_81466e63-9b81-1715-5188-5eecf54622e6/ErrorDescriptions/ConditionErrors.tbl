@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c045520a-c4bc-4b3a-a5d8-61667e0a1cc4">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0e9ebd4b-2e07-4d99-a3c3-402549daae73" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="NoEmluteInstrumentEquipped" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ecfab1cg41e1g48aaga306gfa53294c1dc3" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+        <field name="Hidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9a814d03-c398-4a02-857f-f51679d1938b" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="NotEmluteSpiritModeInstrumentEquipped" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h70691659g4c53ga4c6g159bgc64431671701" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+        <field name="Hidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5d559560-a314-459b-8104-b458136f46a8" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="NotEmluteCombatModeInstrumentEquipped" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90c138f4g6e29g2281gd9f3gfff30f60efef" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+        <field name="Hidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2d1552fe-18a1-40a5-bda5-54ae4356f81a" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="EmluteRapierNotEquipped" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h64105175gf4eeg4db2gd981ge539b39fcc69" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+        <field name="Hidden" type="BoolTableFieldDefinition" value="True" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_31" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b2706cbb-50f5-4c64-b50e-da591776399e" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="EmluteActivePerformance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha7665824g32bag9dbdgf9b8g77a474a1f933" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="65a05a58-6e9e-4556-8e03-49b18c171ead" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e7dbe997-834f-46a4-b691-3ec4c08daf9a" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h100a0f1fg9a35gebc8gd360g273f2f26ed5a" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="015fc5a0-17fd-40ba-b7b8-c2ebbbdcb710" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_FINALACT_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1aa49ea9gc8c2gd1e6g8233g5538df29c642" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2865c504-6b12-4258-9816-319555190364" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0eb3da38g147fga889g8cafg095c91f438b5" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="eb78edee-4efc-4b7f-9d71-ca9b8eb3b95c" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_THEPOWER_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1271694g5dc4g6a56g4988ga0dff982d064" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3b7d9eba-46d0-425f-aa7d-0fdcd9d776f8" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77c6fbecgea99gb971gb39ag14294548565c" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+        <field name="UUID" type="IdTableFieldDefinition" value="837c75cb-2681-41d2-8292-0a6e1df6301b" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_SAFE_PERFORM_ZONE_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he06f3cfcgdbbcge8f9gfde8gcc04bbac6c92" version="2" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dabcdf7e-be55-4507-a6e4-900179b2f2e0" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_MUSIC_VFX_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb2b5894ag0a74gea60g6654g2e66048e7e0a" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_18" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ce97d815-c076-4d25-8d42-75c7db2f643e" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_MUSIC_VFX_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0b7c7681ge3c5g9c7cg4078ga9292cba10e0" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5227cd30-a55a-4224-8413-bb38f4a05a56" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SPRITES_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdf93c311g2cfcg40e7g3e14g5cc98eb793e9" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_17" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f71f66bf-cd69-40c2-b815-cd98e8a49a9c" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SPRITES_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h757481dbgaf73ga736g9bc3g522ef7d69fb2" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3c12a6d5-ebde-4249-b815-1064acf99848" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SPRITES_VOCAL_ON_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h76bdff2agb086g4f84g989age5184248d213" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_16" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7a580a88-0f5e-4ddf-b665-507a1891bdef" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SPRITES_VOCAL_ON_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h26e5be5fgdfc2gd83dgc719g673c17a16f53" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_14" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7a4421bd-0bd3-4d95-97cf-c018af97c221" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h770081d9g049eg94a9g0b0dg13172cc7639e" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_15" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2643223d-e0d8-4710-ad7e-b116aa243738" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_TIEFLINGBARD_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc34c5321g8a39g5436gf7bbg1b3d7ce4227c" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_19" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1908bf78-5a28-40b5-98b2-08c7fa2a4c4a" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="heb08a604gb1f7g4234g0328g80b04d7cc3da" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_20" />
+        <field name="UUID" type="IdTableFieldDefinition" value="0f2c0c22-4e4c-4110-8ca7-91df77520a0c" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h747db769g18e5gd732g6d63g9fb41325555f" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_21" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4f6797b5-f38d-4e94-9ad7-c8580f8ae0a0" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3336ee63gdf0cg7f35gdf40g4cebe51faee9" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_22" />
+        <field name="UUID" type="IdTableFieldDefinition" value="00a06c43-2afe-440f-8699-0c4e2da85baf" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h413512deg17dcgd902gcc52gf4491c8afde4" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_23" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dcbeffe3-dd38-4cce-a323-c516418410d3" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_HARPY_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2e256746gf89cg17b9g7052gfd064b39c036" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_24" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ccc1600e-0fae-4dd0-b306-dabbd329f3f6" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SUMMON_HARPY_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0d646af1gf246g6c48g01e7gcb68bfec4424" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_25" />
+        <field name="UUID" type="IdTableFieldDefinition" value="09c7f319-6860-4420-959b-cf24f107da52" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SHOWMANSHIP_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65070f7ag7542g8df3g40c6g4bc5ee18b4ab" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_26" />
+        <field name="UUID" type="IdTableFieldDefinition" value="63aea7b7-0f6f-4353-aba0-276eedc14d50" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SHOWMANSHIP_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7f1a45e5g6602g9444ge887g42712c19a0db" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_27" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ca55f174-0b22-45c8-b832-7f14c3fb9b8e" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_EASYREWARDS_ON_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5be38cd8g2c8cg1d05ga423g1913d79d950d" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_28" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5392e60e-2bf9-4401-b1ba-b7b724bd59e5" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_EASYREWARDS_ON_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h626da4c7g9175gf9feg2cf4gec94f580d06b" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_29" />
+        <field name="UUID" type="IdTableFieldDefinition" value="8bcaa68a-5b7b-4f24-be99-1545c7ffc201" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SAFEZONES_OFF_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9a86068gc132g31bbgee88gb8b2d4810c7b" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_30" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4b10b970-de43-471d-8623-e12f2c5ec1e9" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_SAFEZONES_OFF_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haaf8485dgf717g4a30g0d73ged5b8d839f2f" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

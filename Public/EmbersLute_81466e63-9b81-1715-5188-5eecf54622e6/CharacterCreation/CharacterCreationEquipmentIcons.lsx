@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="7" revision="1" build="3"/>
+    <version major="4" minor="8" revision="0" build="10"/>
     <region id="CharacterCreationEquipmentIcons">
         <node id="root">
             <children>
                 <node id="CharacterCreationEquipmentIcon">
                     <attribute id="EquipmentTemplate" type="guid" value="888e0a01-2ed8-4392-be2f-cc2be009f021"/>
-                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute2"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute_Full"/>
                     <attribute id="UUID" type="guid" value="315d2e63-35db-49c1-90ac-2f0205639152"/>
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
                     <attribute id="EquipmentTemplate" type="guid" value="a2a12008-23ae-4006-9d3e-4cb55c1c829e"/>
-                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute2"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute_Full"/>
                     <attribute id="UUID" type="guid" value="1ef587de-b835-4e13-9e45-340dc86471c9"/>
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
                     <attribute id="EquipmentTemplate" type="guid" value="a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9"/>
-                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute2"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute_Full"/>
                     <attribute id="UUID" type="guid" value="354a8a83-03aa-4787-b704-3ed2fc172fe0"/>
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
@@ -26,7 +26,7 @@
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
                     <attribute id="EquipmentTemplate" type="guid" value="403e0f11-57dd-41db-b322-c3ca913331a3"/>
-                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute2"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute_Full"/>
                     <attribute id="UUID" type="guid" value="9ba27c0c-c12b-4d31-bdb9-6b054edb782f"/>
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
@@ -36,13 +36,18 @@
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
                     <attribute id="EquipmentTemplate" type="guid" value="13434016-05d6-49bf-8bac-fd629f062a72"/>
-                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute2"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute_Full"/>
                     <attribute id="UUID" type="guid" value="208be23b-98fc-4689-8e86-b872d0b7f27c"/>
                 </node>
                 <node id="CharacterCreationEquipmentIcon">
                     <attribute id="EquipmentTemplate" type="guid" value="f8bbaf8f-9f92-41ec-94b4-d53bcb7afec0"/>
-                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute2"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_Lute_Full"/>
                     <attribute id="UUID" type="guid" value="85ae58e3-ff03-4892-a0e0-ca96dcb8ef72"/>
+                </node>
+                <node id="CharacterCreationEquipmentIcon">
+                    <attribute id="EquipmentTemplate" type="guid" value="a1f03ba7-4ed4-4749-9443-6d4599fc0f3b"/>
+                    <attribute id="IconGenerationTrigger" type="FixedString" value="Icon_Music_LuteA_Full"/>
+                    <attribute id="UUID" type="guid" value="7d03c439-6ddc-4e05-a16a-4817bf5ae456"/>
                 </node>
             </children>
         </node>

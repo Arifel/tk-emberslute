@@ -4,6 +4,8 @@ INITSECTION
 DB_OneTimeRewards_EmbersLute(100,(ITEMROOT)EmbersLute_MusicalSpritesBlackMonochrome_888e0a01-2ed8-4392-be2f-cc2be009f021);
 DB_OneTimeRewards_EmbersLute(99,(ITEMROOT)Emlute_Book_GettingStarted_be081cf0-2809-4c9a-9fc0-959c0a6c64ad);
 DB_OneTimeRewards_EmbersLute(98,(ITEMROOT)Emlute_SCROLL_SummonInstrumentChest_9a39c161-b094-4ffd-a88d-9412d43f873e);
+DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852);
+DB_OneTimeRewards_EmbersLute(96,(ITEMROOT)Emlute_Book_Version_3_0_0_ChangeLog_285bdbfe-2e72-4f72-ac65-9fda54741525);
 
 KBSECTION
 //On loading or starting game, add the lutes to player inventory
@@ -14,8 +16,10 @@ DB_Avatars(_Player)
 THEN
 DebugText(_Player, "Debug: Level GameplayStarted event");
 PROC_OneTimeReward_GiveReward_EmbersLute(100,1,1,_Player);
-PROC_OneTimeReward_GiveReward_EmbersLute(99,1,1,_Player);
+//PROC_OneTimeReward_GiveReward_EmbersLute(99,1,1,_Player);
 PROC_OneTimeReward_GiveReward_EmbersLute(98,1,1,_Player);
+PROC_OneTimeReward_GiveReward_EmbersLute(97,1,1,_Player);
+PROC_OneTimeReward_GiveReward_EmbersLute(96,1,1,_Player);
 
 //Send to inventory
 PROC
@@ -27,6 +31,13 @@ DB_OneTimeRewards_EmbersLute(_RewardNo,_Reward)
 THEN
 DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo);
 TemplateAddTo(_Reward,_Player,_Amount,_Notification);
+
+PROC
+PROC_ResetOneTimeRewards_EmbersLute()
+AND
+DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo)
+THEN
+NOT DB_OneTimeRewards_RewardGiven_EmbersLute(_RewardNo);
 EXITSECTION
 
 ENDEXITSECTION

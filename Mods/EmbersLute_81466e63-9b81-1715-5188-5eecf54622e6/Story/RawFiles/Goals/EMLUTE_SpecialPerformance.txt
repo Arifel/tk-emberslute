@@ -1,12 +1,41 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-// One custom perform of The Weeping Dawn, would love to add more but not many sound events that can be re-used
+// Attach music resources to a temporary helper item
+DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
+
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",130500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",195600);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_ENDLESSSPRING",282500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",274000);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
+
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_065e0cda-6a6b-42e1-a1a7-ccd1ca1b793e);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_Close_Enter_ed771ea8-11c4-470b-80fb-231291e4f74f);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Endless_Spring_5d8656f7-b4c5-4c2a-88f2-f3a5528b5691);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)RaphaelsFinalAct_32bb5df9-997f-428d-95de-a6d425210f08);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Fight_Set_Raphael_On_ff12530d-562a-4555-832d-a501069cdf0b);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Drive_On_51280667-3665-446f-8c87-4345a9503cb8);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982);
+
+// Some music events need to be steered through a sequence to get back to the music game state
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.0,0.0,1);
-
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.5,0.5,1);
 // Spawn the Vicious Rockery gnomes in ensemble formation
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);
@@ -16,9 +45,20 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Gnome_36f2416
 // Spawn the Rolling Bones in ensemble formation
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Skelly_149fd908-e28c-4bb5-b158-774abc383f02,2.0,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0fc-cf88-4e7d-b110-ae3b205ad90d,-2.0,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,0.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,0.0,0.0,-2.0,0);
-DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,0.0,0.0,2.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e,0.0,0.0,-2.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718,2.0,0.0,-2.0,0);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b,-2.0,0.0,-2.0,0);
+// Spawn the Grimjig Gang in formation
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Poly_Goblin_Dancer_01_b404b4a8-f345-4565-9b69-6a0fecca43cf,2.0,0.0,0.0,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Poly_Goblin_Dancer_02_92680a72-1346-4f25-b3c6-8ec4610ebb92,-2.0,0.0,0.0,1);
+DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Poly_Goblin_Dancer_03_8828b7b7-4a70-426a-ae71-fa62100ec670,0.0,0.0,-2.0,1);
+
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_EndlessSpring_07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31,(TAG)EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING_4446abbf-0de2-48d8-a9b3-10e4c0e6b26f);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheFinalAct_d93f4771-b8f1-428f-9b1e-6b22e11ebb6e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_FINALACT_315aebf9-89b5-425a-832c-756ae56ace9c);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_FuneralHymn_5a2b4919-8e68-43d5-b8b7-5f95ff80ce05,(TAG)EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN_55489adb-9201-4051-880a-fef868054c0f);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheLuringSong_8bb696b2-1c96-4cc9-aac8-9890404bd297,(TAG)EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_dbb33529-eb79-433f-9623-eca24c7dc944);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_THEPOWER_c1d07c95-781b-404c-9049-1ff77c7fd14c);
+DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheWeepingDawn_f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN_652c61e4-a7db-47fe-9bab-f242c674fbca);
 
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
@@ -28,20 +68,152 @@ DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_D
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 KBSECTION
+// Reset the performing state on save game load
+// Cleaning up, DB hygiene etc.
+//REGION
+IF
+LevelGameplayStarted(_,0)
+THEN
+PROC_ResetActivePerformanceState_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+
+IF
+LongRestStarted()
+THEN
+PROC_ResetActivePerformanceState_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+
+// We use this status as another way of catching any custom
+// objects or characters we may have otherwise lost track of.
+// The status should remove on long rest, trigger the death
+// or destruction call, for characters and items.
+IF
+StatusRemoved((CHARACTER)_Helper,"EMLUTE_CLEANUP_ON_LONGREST",_,_)
+THEN
+SetOnStage(_Helper,0);
+Die(_Helper,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+IF
+StatusRemoved((ITEM)_Helper,"EMLUTE_CLEANUP_ON_LONGREST",_,_)
+THEN
+PROC_GLO_SpellCast_CleanUp(_Helper,-1);
+RequestDelete(_Helper);
+//END_REGION
+
+// Safe and excluded performing areas tracker
+//REGION
+IF
+LevelGameplayStarted(_,1)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+THEN
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+IF
+LevelGameplayStarted(_,0)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+THEN
+PROC_SetSafeZoneStatus_EmbersLute((CHARACTER)_PartyCharacter);
+
+IF
+TagCleared((CHARACTER)_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+THEN
+PROC_SetSafeZoneStatus_EmbersLute((CHARACTER)_PartyCharacter);
+
+IF
+TeleportedToCamp((CHARACTER)_PartyCharacter)
+AND
+DB_PartOfTheTeam(_PartyCharacter)
+AND
+IsTagged(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9,0)
+THEN
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
 
 PROC
-PROC_RepositionSummon_EmbersLute((CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
+PROC_SetSafeZoneStatus_EmbersLute((CHARACTER)_PartyCharacter)
 AND
-GetPosition(_Summon,_X,_Y,_Z)
+QRY_IsInAnySafeArea_EmbersLute(_PartyCharacter)
 AND
-RealSum(_X,_OffsetX,_NewX)
-AND
-RealSum(_Y,_OffsetY,_NewY)
-AND
-RealSum(_Z,_OffsetZ,_NewZ)
+IsTagged(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9,0)
 THEN
-PROC_StopFollow(_Summon);
-PROC_TeleportToSafePosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
+SetTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+PROC
+PROC_SetSafeZoneStatus_EmbersLute((CHARACTER)_PartyCharacter)
+AND
+NOT QRY_IsInAnySafeArea_EmbersLute(_PartyCharacter)
+AND
+IsTagged(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9,1)
+THEN
+ClearTag(_PartyCharacter,(TAG)EMLUTE_SAFE_PERFORM_ZONE_d12f6fc2-5e23-4181-8331-e839a06674c9);
+
+QRY
+QRY_IsInAnySafeArea_EmbersLute((CHARACTER)_PartyCharacter)
+AND
+IsTagged(_PartyCharacter,(TAG)EMLUTE_CONFIG_SAFEZONES_OFF_89f917c6-350e-4f43-81bd-f192cf1ae18c,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsInAnySafeArea_EmbersLute((CHARACTER)_PartyCharacter)
+AND
+IsTagged(_PartyCharacter,(TAG)IN_CAMP_7fe47378-d9dc-48b4-b7be-53efbfbdca20,1)
+THEN
+DB_NOOP(1);
+//END_REGION
+
+// Catch the special music performances and trigger the music events.
+// Timers are used to automatically stop the performance at the end 
+// of the song. Unlike the standard music performances, we won't loop.
+//REGION
+IF
+MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
+AND
+DB_PartOfTheTeam(_Performer)
+AND
+IsSummon(_Performer,0)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_LEGEND_AURA_12b4df24-ba5b-4ae1-a406-6125b8110001,0)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
+THEN
+PROC_DebugMusicState(_Performer);
+PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
+
+IF
+StatusRemoved((CHARACTER)_Performer,_Status,_,_)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
+THEN
+DebugText(_Performer,"Removing performing status");
+ObjectTimerCancel(_Performer,_Song);
+PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName,_HelperItem)
+AND
+DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
+THEN
+RemoveStatus(_Performer,_Status);
+
+// Reposition a character on joining party (summon formation).
+// Make them face the summon owner (lead performer).
+IF
+CharacterJoinedParty((CHARACTER)_Summon)
+AND
+GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
+AND
+DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
+AND
+CharacterGetOwner(_Summon,_Owner)
+THEN
+PROC_RepositionSummon_EmbersLute(_Owner,_Summon,_OffsetX,_OffsetY,_OffsetZ);
 
 IF
 Teleported((CHARACTER)_Summon,_,_,_,_,_,_,_,_)
@@ -51,65 +223,236 @@ AND
 DB_RepositionSummon_EmbersLute(_SummonTemplate,_,_,_,1)
 AND
 CharacterGetOwner(_Summon,_Owner)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Owner,_TimerName,_HelperItem)
 THEN
-DebugText(_Owner, "Debug: I am the summon owner");
-DebugText(_Summon, "Debug: I am the summon");
-LookAtEntity(_Owner,_Summon);
 LookAtEntity(_Summon,_Owner);
 
+// PROCS and QUERIES
+// Starts music on the lead performer, caches active performance and begins a timer
+// Also throws a couple of helper items onto the ground
 PROC
 PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,0)
+AND
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
+AND
+DB_SpecialPerformance_Helper_EmbersLute(_HelperTemplate)
+AND
+CreateAtObject(_HelperTemplate,_Performer,0,0,"",1,(ITEM)_HelperItem)
+AND
+GetPosition(_Performer,_X,_Y,_Z)
+AND
+RealSum(_Z,-0.5,_OffsetZ)
 THEN
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-MusicPlayOnCharacter(_Performer,_StartEvent);
+TeleportToPosition(_HelperItem,_X,_Y,_OffsetZ,"",0,0,0,0,1);
 ObjectTimerCancel(_Performer,_Song);
-ObjectTimerLaunch(_Performer,_Song,_Duration);
+RealtimeObjectTimerLaunch(_Performer,_Song,_Duration);
+PROC_PlayMusicOnItem(_Performer,_Song,_HelperItem);
+DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem);
 
+PROC
+PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
+AND 
+DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource)
+THEN
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem);
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+
+// Stops music on the lead performer and clears active performance cache
 PROC
 PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StopEvent)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,0)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 THEN
-NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song);
-MusicPlayOnCharacter(_Performer,_StopEvent);
-
+PROC_StopMusicOnItem(_Song,_HelperItem);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+ObjectTimerCancel(_HelperItem,"Emlute_DeleteHelperItem");
+ObjectTimerLaunch(_HelperItem,"Emlute_DeleteHelperItem",1000);
 IF
-MainPerformerStarted((CHARACTER)_Performer,(STRING)_Song)
-AND
-DB_SpecialPerformance_EmbersLute(_Song,_StartEvent,_,_,_Duration)
+ObjectTimerFinished((ITEM)_HelperItem,"Emlute_DeleteHelperItem")
 THEN
-PROC_StartSpecialPerformance_EmbersLute(_Performer,_Song,_StartEvent,_Duration);
+PROC_GLO_SpellCast_CleanUp(_HelperItem,-1);
+RequestDelete(_HelperItem);
 
+PROC
+PROC_StopMusicOnItem((STRING)_Song,(ITEM)_HelperItem)
+AND 
+DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource)
+THEN
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+
+PROC
+PROC_DebugMusicState((CHARACTER)_Performer)
+AND 
+DB_Audio_CurrentMusicState(_RestoreMusic)
+AND
+Concatenate("Current music state ",_RestoreMusic,_RestoreMessage)
+THEN
+DebugText(_Performer,_RestoreMessage);
+
+// Teleports a character to a relative offset position
+PROC
+PROC_RepositionSummon_EmbersLute((CHARACTER)_Owner,(CHARACTER)_Summon,(REAL)_OffsetX,(REAL)_OffsetY,(REAL)_OffsetZ)
+AND
+GetPosition(_Owner,_X,_Y,_Z)
+AND
+RealSum(_X,_OffsetX,_NewX)
+AND
+RealSum(_Y,_OffsetY,_NewY)
+AND
+RealSum(_Z,_OffsetZ,_NewZ)
+THEN
+PROC_StopFollow(_Summon);
+TeleportToPosition(_Summon,_NewX,_NewY,_NewZ,"",0,0,0,0,1);
+
+PROC
+PROC_ResetActivePerformanceState_EmbersLute()
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+THEN
+PROC_StopMusicOnItem(_Song,_HelperItem);
+RequestDelete(_HelperItem);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+
+PROC
+PROC_CleanUpFailsafe_EmbersLute()
+AND
+DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem)
+AND
+IsDestroyed(_HelperItem,0)
+THEN
+PROC_StopMusicOnItem(_Song,_HelperItem);
+PROC_GLO_SpellCast_CleanUp(_HelperItem,-1);
+RequestDelete(_HelperItem);
+
+PROC
+PROC_CleanUpFailsafe_EmbersLute()
+AND
+DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem)
+AND
+IsDestroyed(_HelperItem,1)
+THEN
+PROC_GLO_SpellCast_CleanUp(_HelperItem,-1);
+NOT DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem);
+//END_REGION
+
+// Legacy implementation, only applies to one song
+//REGION
 IF
-StatusRemoved((CHARACTER)_Performer,_Status,_,_)
+CastSpell((CHARACTER)_Caster,"Shout_Bard_Perform_WeepingDawn_Sprites_Emlute",_,_,_)
+THEN
+SetTag(_Caster,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
+
+// Legacy implementation, only applies to one song
+PROC
+PROC_StartSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_StartEvent,(INTEGER)_Duration)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song)
+IsTagged(_Performer, (TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
 AND
-DB_SpecialPerformance_EmbersLute(_Song,_,_StopEvent,_Status,_)
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
 THEN
 ObjectTimerCancel(_Performer,_Song);
-PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
+RealtimeObjectTimerLaunch(_Performer,_Song,_Duration);
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,(ITEM)NULL_00000000-0000-0000-0000-000000000000);
+PROC_MusicPlayGeneral(_Start);
 
+// Legacy implementation, only applies to one song
+PROC
+PROC_StopSpecialPerformance_EmbersLute((CHARACTER)_Performer,_Song,(STRING)_StopEvent)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904,1)
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Start,_Stop,_Status,_Duration)
+THEN
+PROC_MusicPlayGeneral(_Stop);
+NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
+ClearTag(_Performer,(TAG)EMLUTE_LEGEND_LEGACY_MODE_15462095-925f-4ec3-853f-8cae55d93904);
+//END_REGION
+
+// A sort of workaround for a couple of music events that require
+// the game to be in a certain state. BG3 auto corrects the music
+// state if the player switches control, and so the music stops.
+// Don't have a nice solution to this, so until then, we can at least
+// align the animations by stopping the performance, so the performer 
+// doesn't continue to play silence.
+//REGION
 IF
-ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
+GainedControl((CHARACTER)_Target)
 AND
-DB_ActiveSpecialPerformance_EmbersLute(_Performer,_TimerName)
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_)
 AND
-DB_SpecialPerformance_EmbersLute(_TimerName,_,_,_Status,_)
+QRY_SongRequiresControl_EmbersLute(_Song)
+AND
+_Target != _Performer
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_,_,_Status,_)
 THEN
 RemoveStatus(_Performer,_Status);
 
-IF
-CharacterJoinedParty((CHARACTER)_Summon)
-AND
-GetTemplate(_Summon,(CHARACTERROOT)_SummonTemplate)
-AND
-DB_RepositionSummon_EmbersLute(_SummonTemplate,_OffsetX,_OffsetY,_OffsetZ,_)
+QRY
+QRY_SongRequiresControl_EmbersLute("Bard_Perform_FinalAct")
 THEN
-PROC_RepositionSummon_EmbersLute(_Summon,_OffsetX,_OffsetY,_OffsetZ);
+DB_NOOP(1);
 
+QRY
+QRY_SongRequiresControl_EmbersLute("Bard_Perform_ThePowerVocals")
+THEN
+DB_NOOP(1);
+//END_REGION
+
+// Learning music from reading musicsheets
+//REGION
+IF
+GameBookInterfaceClosed((ITEM)_SheetMusic, (CHARACTER)_Player)
+AND
+GetTemplate(_SheetMusic,(ITEMROOT)_Template)
+AND
+DB_SheetMusicToSpellTag_EmbersLute(_Template,_Tag)
+AND
+IsTagged(_Player,_Tag,0)
+THEN
+SetTag(_Player,_Tag);
+OpenMessageBox(_Player,"EMLUTE_Song_Learned");
+
+IF
+CastedSpell((CHARACTER)_Caster,"Shout_Bard_Perform_Help_Emlute",_,_,_)
+AND
+CreateAtObject((ITEMROOT)Emlute_Book_Info_LearningMusic_73f909de-e5f5-4abe-8203-688bdaff1a13,_Caster,0,0,"MusicLearningBook_EmbersLute",0,_MusicBook)
+THEN
+ToInventory(_MusicBook,_Caster,1,0,1);
+SetDualEntityEvent(_MusicBook,_Caster,"ReadTheBook_EmbersLute");
+
+IF
+DualEntityEvent((ITEM)_MusicBook,(CHARACTER)_Character,"ReadTheBook_EmbersLute")
+THEN
+Use(_Character,_MusicBook,1,0,"ReadingMusicLearningBook_Emlute");
+
+// Noticed some strange UI locking in controller mode, so going to put in a short
+// delay before deleting the book. Not sure if this will fix, just a punt.
+IF
+GameBookInterfaceClosed((ITEM)_MusicLearnBook, (CHARACTER)_Character)
+AND
+GetTemplate(_MusicLearnBook,(ITEMROOT)Emlute_Book_Info_LearningMusic_73f909de-e5f5-4abe-8203-688bdaff1a13)
+THEN
+ObjectTimerLaunch(_MusicLearnBook,"DeleteMusicBook_EmbersLute",500);
+
+IF
+ObjectTimerFinished((ITEM)_MusicLearnBook,"DeleteMusicBook_EmbersLute")
+THEN
+RequestDelete(_MusicLearnBook);
+//END_REGION
+
+// Fix the music on Improved Countercharm summons by adding a short delay.
+// Feels a bit hacky. Seems to work though. 
+//REGION
 IF
 EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
 AND
@@ -125,7 +468,7 @@ DB_CountercharmFix_EmbersLute(_,_TimerName,_,_Status)
 THEN
 DebugText(_Summon, "Debug: Starting countercharm music");
 ApplyStatus(_Summon,_Status,-1.0);
-
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

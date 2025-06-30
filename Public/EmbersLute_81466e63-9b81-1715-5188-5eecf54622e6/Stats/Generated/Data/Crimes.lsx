@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="Crime">
+        <node id="root">
+            <children>
+                <node id="Crime">
+                    <attribute id="Audible" type="uint8" value="1"/>
+                    <attribute id="AudibleRange" type="float" value="20"/>
+                    <attribute id="Continuous" type="uint8" value="1"/>
+                    <attribute id="ContinuousDelayTimer" type="float" value="0.0099999998"/>
+                    <attribute id="CreatesCrimescene" type="uint8" value="0"/>
+                    <attribute id="CrimeType" type="LSString" value="MusicalPerformance_Good_Emlute"/>
+                    <attribute id="DetectionRange" type="float" value="20"/>
+                    <attribute id="Lifetime" type="float" value="10000"/>
+                    <attribute id="MaxInvestigators" type="int32" value="10"/>
+                    <attribute id="MergeConditions" type="uint8" value="3"/>
+                    <attribute id="TensionWeight" type="int32" value="5"/>
+                    <children>
+                        <node id="CrimeAction">
+                            <attribute id="InvestigationKind" type="uint8" value="9"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisPerformCrowdReaction_EmbersLute"/>
+                            <attribute id="Priority" type="int32" value="100"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="KID"/>
+                            <attribute id="SecondarySensibleAction" type="FixedString" value="CRIME_OsirisPerformCrowdReaction_EmbersLute"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="KID"/>
+                            <attribute id="Priority" type="int32" value="200"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="CIVILIAN"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="KID"/>
+                            <attribute id="Priority" type="int32" value="300"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="NOT_MESSING_AROUND"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="Parent" type="FixedString" value="KID"/>
+                            <attribute id="Priority" type="int32" value="400"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="HUMANOID"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="InvestigationKind" type="uint8" value="6"/>
+                            <attribute id="Parent" type="FixedString" value="HUMANOID"/>
+                            <attribute id="Priority" type="int32" value="350"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="CROWDSYS_NPC"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="InvestigationKind" type="uint8" value="9"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_ContinuouslyWatchCriminalAndOptionalAD"/>
+                            <attribute id="Priority" type="int32" value="500"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BEAST"/>
+                            <attribute id="SecondarySensibleAction" type="FixedString" value="CRIME_ContinuouslyWatchCriminalAndOptionalAD"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="CrimeAction">
+                            <attribute id="InvestigationKind" type="uint8" value="9"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_ContinuouslyWatchCriminalAndOptionalAD"/>
+                            <attribute id="Priority" type="int32" value="600"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="MYCONID"/>
+                            <attribute id="SecondarySensibleAction" type="FixedString" value="CRIME_ContinuouslyWatchCriminalAndOptionalAD"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="ExcludedTags">
+                            <children>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="33c625aa-6982-4c27-904f-e47029a9b140"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="1d156657-b014-48fa-b34c-327763480627"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="90101158-141e-4896-8e60-f8db03f6dde3"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="d93434bd-6b71-4789-b128-ee24156057cc"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="4c7f83f4-eb51-4ce4-82e4-06bdeb215614"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="4e4ec992-e703-4618-894b-ad165ca7644a"/>
+                                </node>
+                                <node id="Tag">
+                                    <attribute id="TagUUID" type="guid" value="28fd4948-6fe3-4237-91e2-6e592b8a7b45"/>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Properties">
+                            <children>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="db918cfb-a484-437c-93bb-8bc36fe98a9c"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="3b15b00d-6562-45c6-b3b1-67c4872f682b"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="e305c93f-eaf2-4b73-ae0a-0be56a1b0549"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="8a7650eb-da48-4597-89a5-76b2c0cddb78"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="58adcbdb-1bdf-4702-b0f0-f0f596d75b0e"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="22851ef8-a2af-4f10-a3dd-d3e7e81d7ae6"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Crime">
+                    <attribute id="Audible" type="uint8" value="1"/>
+                    <attribute id="AudibleRange" type="float" value="8"/>
+                    <attribute id="CanMergeConfrontation" type="uint8" value="1"/>
+                    <attribute id="Continuous" type="uint8" value="1"/>
+                    <attribute id="ContinuousDelayTimer" type="float" value="1"/>
+                    <attribute id="CreatesCrimescene" type="uint8" value="0"/>
+                    <attribute id="CrimeType" type="LSString" value="MusicalPerformance_Good_BardNPC_Emlute"/>
+                    <attribute id="DetectionRange" type="float" value="8"/>
+                    <attribute id="Lifetime" type="float" value="10000"/>
+                    <attribute id="MaxInvestigators" type="int32" value="5"/>
+                    <attribute id="MergeConditions" type="uint8" value="2"/>
+                    <attribute id="TensionWeight" type="int32" value="6"/>
+                    <children>
+                        <node id="CrimeAction">
+                            <attribute id="InvestigationKind" type="uint8" value="9"/>
+                            <attribute id="PrimarySensibleAction" type="FixedString" value="CRIME_OsirisBardPerformWellReaction_EmbersLute"/>
+                            <attribute id="Priority" type="int32" value="50"/>
+                            <attribute id="ReactionCategory_Tag" type="FixedString" value="BARD"/>
+                            <attribute id="SecondarySensibleAction" type="FixedString" value="CRIME_OsirisBardPerformWellReaction_EmbersLute"/>
+                            <attribute id="Tension" type="uint8" value="0"/>
+                            <children>
+                                <node id="TargetDialogueFlags">
+                                    <children>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="1"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="2"/>
+                                        </node>
+                                        <node id="DisturbanceDialogueCapability">
+                                            <attribute id="DisturbanceDialogueCapabilityObject" type="uint8" value="3"/>
+                                        </node>
+                                    </children>
+                                </node>
+                            </children>
+                        </node>
+                        <node id="Properties">
+                            <children>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="db918cfb-a484-437c-93bb-8bc36fe98a9c"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="3b15b00d-6562-45c6-b3b1-67c4872f682b"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="e305c93f-eaf2-4b73-ae0a-0be56a1b0549"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="8a7650eb-da48-4597-89a5-76b2c0cddb78"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="58adcbdb-1bdf-4702-b0f0-f0f596d75b0e"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="844c56dc-81ec-478a-ad46-a3ec49152f36"/>
+                                </node>
+                                <node id="Property">
+                                    <attribute id="Properties" type="guid" value="22851ef8-a2af-4f10-a3dd-d3e7e81d7ae6"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

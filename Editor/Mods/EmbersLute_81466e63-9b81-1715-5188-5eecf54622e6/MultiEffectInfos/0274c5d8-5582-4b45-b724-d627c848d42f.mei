@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="0274c5d8-5582-4b45-b724-d627c848d42f" OwnerUUID="56f6c2b4-2fb9-4846-ae98-070457442225" Name="EMLUTE_Instrument_StatusEffect_GoldRadianceGlow">
+  <EffectInfo UUID="cf2a7506-988b-4ca8-8133-36f71b2f9472" EffectResourceGuid="686f6be8-c525-2259-5189-58c314922323" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

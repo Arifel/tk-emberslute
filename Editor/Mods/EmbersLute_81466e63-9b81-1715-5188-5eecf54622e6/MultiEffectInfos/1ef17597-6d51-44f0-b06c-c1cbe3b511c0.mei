@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="1ef17597-6d51-44f0-b06c-c1cbe3b511c0" OwnerUUID="56f6c2b4-2fb9-4846-ae98-070457442225" Name="EMLUTE_Instrument_StatusEffect_WhiteRadianceGlow">
+  <EffectInfo UUID="22d92d2a-b6c1-408f-8bda-d692a7eeb27a" EffectResourceGuid="de09d5e3-382d-6a18-feec-a73c3b45772b" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

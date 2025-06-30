@@ -22,5 +22,47 @@
         <field name="TemplateID" type="StringTableFieldDefinition" value="a86aa3b5-18b7-40cf-8656-b3efc1469ce9" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4078d28-0a06-43c8-99b2-5cf00920a4c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_CAMBION_FEMALE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8bed7965-0332-40b4-a2c0-70af4435ac69" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7cafa3ddg046fgf4f6g9f48gfb7e556c4756" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hca24c98cg3a5ege428gb359g82d2fc8f80fd" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_FinalAct" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_Musical_Spirit;Emlute_Dismissable;Ethereal;Emlute_TransientSingle_Spirit;Emlute_Join_FinalAct;" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="661e1f04-10a5-44e3-9fb8-0479bd976fa1" />
+        <field name="Rules" type="GuidObjectTableFieldDefinition" value="093939c7-8b40-44b3-898b-21a49a35e5d1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5549fdb-6e1f-41bb-99da-81072d444244" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_CAMBION_MALE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4078d28-0a06-43c8-99b2-5cf00920a4c4" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="1e0e1e8c-823c-40da-aa1a-5f29b0a671e0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="651d9a1b-e397-4b0b-9257-37de16228d4a" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_WAVESERVANT_01" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b4078d28-0a06-43c8-99b2-5cf00920a4c4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcb353ab2g9e1fgbfa2g3515g228c13a69028" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9e8237e8gb9fcg1843g488cg6da6c40acafe" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_UmberleeHymn" />
+        <field name="Passives" type="StringTableFieldDefinition" value="Emlute_Musical_Spirit;Emlute_Dismissable;Ethereal;Emlute_TransientSingle_Spirit;Emlute_Join_WaterQueen;" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="133d8908-55e5-4c3a-9aba-fe104d32f075" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4dd86f38-d8b8-464f-992e-c7ec29b65e70" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_POLYMORPH_WAVESERVANT_02" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="651d9a1b-e397-4b0b-9257-37de16228d4a" />
+        <field name="TemplateID" type="StringTableFieldDefinition" value="a687484a-5201-4db6-bc14-175254ebab7e" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

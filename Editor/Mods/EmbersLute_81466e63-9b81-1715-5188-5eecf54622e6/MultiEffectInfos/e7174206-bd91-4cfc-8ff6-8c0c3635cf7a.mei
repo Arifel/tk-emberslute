@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="e7174206-bd91-4cfc-8ff6-8c0c3635cf7a" OwnerUUID="56f6c2b4-2fb9-4846-ae98-070457442225" Name="EMLUTE_Instrument_StatusEffect_GreenBlackGlow">
+  <EffectInfo UUID="137eb3fb-3a6e-4815-acd4-3631daabd082" EffectResourceGuid="51e4baf6-58c9-fd7a-09c4-406b846c8095" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

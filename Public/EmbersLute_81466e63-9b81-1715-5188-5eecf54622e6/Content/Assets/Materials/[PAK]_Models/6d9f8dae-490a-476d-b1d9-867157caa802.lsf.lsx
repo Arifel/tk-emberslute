@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<save>
+	<version major="4" minor="8" revision="0" build="10" lslib_meta="v1,bswap_guids,lsf_keys_adjacency" />
+	<region id="VisualBank">
+		<node id="VisualBank">
+			<children>
+				<node id="Resource">
+					<attribute id="ID" type="FixedString" value="6d9f8dae-490a-476d-b1d9-867157caa802" />
+					<attribute id="Name" type="LSString" value="EmbersLute_Proxy_CAMBION_F_NKD_Body_A" />
+					<attribute id="SourceFile" type="LSString" value="Generated/Public/Shared/Assets/Characters/_Anims/Tieflings/_Female/Resources/Proxy_TIF_F_Fullbody.GR2" />
+					<attribute id="Slot" type="FixedString" value="Unassigned" />
+					<attribute id="RemapperSlotId" type="FixedString" value="" />
+					<attribute id="AttachmentSkeletonResource" type="FixedString" value="" />
+					<attribute id="AttachBone" type="FixedString" value="" />
+					<attribute id="Template" type="FixedString" value="Generated/Public/Shared/Assets/Characters/_Anims/Tieflings/_Female/Resources/Proxy_TIF_F_Fullbody.Dummy_Root.0" />
+					<attribute id="SupportsVertexColorMask" type="bool" value="False" />
+					<attribute id="NeedsSkeletonRemap" type="bool" value="False" />
+					<attribute id="SkeletonResource" type="FixedString" value="" />
+					<attribute id="SoftbodyResourceID" type="FixedString" value="" />
+					<attribute id="HairPresetResourceId" type="FixedString" value="" />
+					<attribute id="ScalpMaterialId" type="FixedString" value="" />
+					<attribute id="SkeletonSlot" type="FixedString" value="" />
+					<attribute id="BlueprintInstanceResourceID" type="FixedString" value="" />
+					<attribute id="MaterialType" type="uint8" value="0" />
+					<attribute id="HairType" type="uint8" value="0" />
+					<attribute id="BoundsMin" type="fvec3" value="-0.72707784 -0.0042826585 -0.16562359" />
+					<attribute id="BoundsMax" type="fvec3" value="0.72707856 1.944267 1.2248805" />
+					<attribute id="ClothColliderResourceID" type="FixedString" value="" />
+					<children>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Body_A_Mesh.0" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Tail_A_Mesh.1" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Head_C_Eyes_Mesh.2" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Head_C_Mesh.3" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Head_C_Eyebrows_Mesh.4" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Head_C_Ears_Mesh.5" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_F_NKD_Head_C_MouthInterior_Mesh.6" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="Objects">
+							<attribute id="ObjectID" type="FixedString" value="Proxy_TIF_F_Fullbody.Proxy_TIF_M_NKD_Horns_A_Mesh.7" />
+							<attribute id="MaterialID" type="FixedString" value="00cbb112-3476-ff57-6b67-28a27951f377" />
+							<attribute id="LOD" type="uint8" value="0" />
+						</node>
+						<node id="AnimationWaterfall">
+							<attribute id="Object" type="FixedString" value="" />
+						</node>
+						<node id="ClothProxyMapping" />
+						<node id="Base" />
+					</children>
+				</node>
+			</children>
+		</node>
+	</region>
+</save>

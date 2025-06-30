@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="c1b23b24-4c3a-4667-b6ab-9d5f5bf52a66" OwnerUUID="56f6c2b4-2fb9-4846-ae98-070457442225" Name="EMLUTE_Instrument_StatusEffect_RedBrandingGlow">
+  <EffectInfo UUID="d266c486-7a9f-43bf-91b2-35c085bd90d9" EffectResourceGuid="c756fee0-1331-5ed5-a552-ab814edb3e2e" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

@@ -1,0 +1,429 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_IterateDeleteCounter_EmbersLute(0);
+
+// Just the non temporary statuses
+DB_StatusCleanUp_EmbersLute("EMLUTE_PERFORM_BOON_1");
+DB_StatusCleanUp_EmbersLute("EMLUTE_PERFORM_BOON_2");
+DB_StatusCleanUp_EmbersLute("EMLUTE_PERFORM_CURSE");
+DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_SPIN_SLIPPERS");
+DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_CRITICAL_MOCKERY");
+DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_PARRY");
+DB_StatusCleanUp_EmbersLute("EMLUTE_ANNOYING_LUTE_VFX");
+
+DB_SpellCleanUp_EmbersLute("Shout_ConfigManager_Cont_Emlute");
+
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Gnome_a37df723-3ce0-436d-9356-f2d60c395ed0);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Gnome_4118f9af-a8db-4a17-a785-eec7faadb2df);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Gnome_36f2416e-abb4-49af-94a8-855b95927e3f);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Skelly_149fd908-e28c-4bb5-b158-774abc383f02);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Skelly_4a91d0fc-cf88-4e7d-b110-ae3b205ad90d);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lute_Spirit_Skelly_9525c5df-6899-413a-8ead-9d5ed865c69e);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Lyre_Spirit_Skelly_a2c49c2d-7c98-4313-8ee2-d50cf8999718);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d828-782d-4e85-a55c-cf088065728b);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_01_133d8908-55e5-4c3a-9aba-fe104d32f075);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Female_Umberlee_02_a687484a-5201-4db6-bc14-175254ebab7e);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Male_Cambion_01_1e0e1e8c-823c-40da-aa1a-5f29b0a671e0);
+DB_Templates_EmbersLute((CHARACTERROOT)Emlute_Female_Cambion_01_661e1f04-10a5-44e3-9fb8-0479bd976fa1);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Drum_8105ce4f-41c8-4604-bf22-123edc4431af);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Flute_ccb848c3-7bb2-4839-9dba-56973c62d7a1);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Lute_15f95c4a-0ad8-4c65-99a4-d8bbce3f4c49);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Lyre_40dddfd8-c3fc-43b9-b89d-7d60dde48cf6);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Violin_de1c8a91-1b2f-4fb6-9f79-87e31a1e04f2);
+DB_Templates_EmbersLute((CHARACTERROOT)EMLUTE_MusicalSprite_Whistle_74e07e49-2031-4180-9c9c-b8e0ff5d69b8);
+
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Annoying_a7845aa9-fc93-43ad-a6af-f46c5b89f680);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Ensembles_2f9950f5-2044-4821-a026-0449a5143722);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Haunted_8983eb29-b220-4ab7-9cb9-e2f475308ecd);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Main_f2ef5e3b-ae30-425a-98c0-7ec2e0186c10);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Misc_d0f807b4-0115-4e6c-9241-b16bc59480b0);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_MusicalSprites_201c7bd7-baf7-40a6-b9a6-aee748999b15);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Varnishes_81fc28be-061a-4f08-8db7-a1f27022b43a);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Spoilers_669cf84d-f222-4e82-b300-369001765514);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)EMLUTE_ContainerCelestialInstruments_f713ebc0-29fc-4009-a98c-f6bc436e7f59);
+
+// Not sure if this will work, but somehow need to retrospectively get handle on previously encountered containers
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_Chest_Potions_e57e3af6-ae79-4d5c-9d11-f695b359c740);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_HouseOfHope_TreasurePile01_0278d4ae-3e7c-4c1e-a4bc-fbf99db35e02);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)LOOT_GEN_Backpack_C_Posed_A_Colorvar_B_001_5bbadea1-47c5-4d52-8d52-961989afefea);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_WaterQueensHouse_AllandrasChest_f624287a-4051-4377-a1ae-a0b55d74c1d0);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_DEN_HarpyNest_a5c87ab6-b38b-4c2b-bf4f-a1f5f391f79f);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_MOO_EntranceGhoul_003_019af169-5366-4a1f-8392-35df658b2e8e);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Jewel_A_Small_A_000_070a769c-6ca8-4e31-a387-7bf95eb21041);
+
+
+
+KBSECTION
+// We loop through all player characters, find any custom items and unequip.
+// The timer procs every half a second to check when all custom items have been unequipped.
+// Once nothing is found, it then deletes all the items with the custom mod tag.
+
+// n.b. this won't work on items scattered across the realm
+// We'll recommend the player takes a long rest to clean up, before attempting to uninstall.
+
+IF
+CastedSpell((CHARACTER)_Caster,"Shout_CleanUp_Emlute",_,_,_)
+AND
+DB_Players(_Player)
+THEN
+OpenMessageBoxYesNo(_Caster,"EMLUTE_ConfirmUninstall");
+
+IF
+MessageBoxYesNoClosed(_Player,"EMLUTE_ConfirmUninstall",1)
+THEN
+OpenMessageBoxYesNo(_Player,"EMLUTE_ConfirmUninstall_2");
+
+IF
+MessageBoxYesNoClosed(_Player,"EMLUTE_ConfirmUninstall_2",1)
+THEN
+OpenMessageBoxYesNo(_Player,"EMLUTE_ConfirmUninstall_3");
+
+IF
+MessageBoxYesNoClosed(_Player,"EMLUTE_ConfirmUninstall_3",1)
+THEN
+DB_ItemCleanUp_EmbersLute(_Player);
+PROC_UnequipCustom_EmbersLute();
+TimerLaunch("DeleteItem_EmbersLute",1500);
+
+// No more equipped items found, so safe to delete now
+IF
+TimerFinished("DeleteItem_EmbersLute")
+AND
+NOT QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
+AND
+DB_ItemCleanUp_EmbersLute(_Player)
+THEN
+PROC_RemoveCustomSpells_EmbersLute();
+PROC_RemoveCustomPassives_EmbersLute();
+PROC_RemoveCustomStatuses_EmbersLute();
+PROC_CleanUpCustom_EmbersLute();
+PROC_BardReactions_Reset_EmbersLute();
+PROC_ResetCrimes_EmbersLute();
+PROC_CleanUpFailsafe_EmbersLute();
+PROC_ResetRewardTracker_EmbersLute();
+PROC_ResetOneTimeRewards_EmbersLute();
+ObjectTimerLaunch(_Player,"ContainersMarkedForDeletion_Timer",2000);
+OpenMessageBox(_Player,"EMLUTE_CompletedUninstall");
+NOT DB_ItemCleanUp_EmbersLute(_Player);
+
+// Resort to timer (again)
+// Can't use entity events because tag iteration completed passes null guid...
+// Am sure it used to pass the guid...? But whatever
+IF
+ObjectTimerFinished(_Player,"ContainersMarkedForDeletion_Timer")
+THEN
+PROC_DeleteMarkedContainers_EmbersLute();
+
+IF
+MessageBoxClosed(_Player,"EMLUTE_CompletedUninstall")
+THEN
+OpenMessageBox(_Player,"EMLUTE_CompletedUninstall_2");
+
+// Put a failsafe in for max 10 wait loops
+IF
+TimerFinished("DeleteItem_EmbersLute")
+AND
+DB_IterateDeleteCounter_EmbersLute(_Count)
+AND
+_Count < 10
+AND
+QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
+AND
+IntegerSum(_Count,1,_CountIncrement)
+THEN
+DB_IterateDeleteCounter_EmbersLute(_CountIncrement);
+TimerLaunch("DeleteItem_EmbersLute",500);
+
+// Handle the deletion of a found mod item
+// There's purposefully more entity event types than strictly necessary
+// This is mostly to help with debugging and identifying the source of the found item
+//REGION
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemOnPlayer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInCampChest")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemOnTrader")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInTrackedWorldContainer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInRetrospectiveWorldContainer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItemInEmluteContainer")
+THEN
+SetEntityEvent(_Item,"EMLUTE_FoundEmluteItem");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItem")
+AND
+GetTemplate(_Item,(ITEMROOT)_Template)
+AND
+DB_ContainerTemplates_EmbersLute(_Template)
+THEN
+DB_MarkContainerForDeletion_EmbersLute(_Item);
+IterateInventoryByTag(_Item,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInEmluteContainer","EMLUTE_EmluteContainerSearchDone");
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_FoundEmluteItem")
+AND
+GetTemplate(_Item,(ITEMROOT)_Template)
+AND
+NOT QRY_IsContainer_EmbersLute(_Template)
+THEN
+RequestDelete(_Item);
+//END_REGION
+
+QRY
+QRY_IsContainer_EmbersLute((ITEMROOT)_Template)
+AND
+DB_ContainerTemplates_EmbersLute(_Template)
+THEN
+DB_NOOP(1);
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+THEN
+IterateInventoryByTag(_Player,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemOnPlayer","EMLUTE_PlayerSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_Camp_UserCampChest(_UserID,_Chest)
+THEN
+IterateInventoryByTag(_Chest,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInCampChest","EMLUTE_CampSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_TradeTreasureGeneratedEver(_Trader)
+THEN
+IterateInventoryByTag(_Trader,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemOnTrader","EMLUTE_TraderSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_TrackItemsForUninstall_EmbersLute(_ModItem,_InventoryOwner)
+THEN
+IterateInventoryByTag(_InventoryOwner,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInTrackedWorldContainer","EMLUTE_WorldContainerSearchDone");
+
+PROC
+PROC_CleanUpCustom_EmbersLute()
+AND
+DB_PopulatedWorldContainers_EmbersLute(_Container)
+THEN
+IterateInventoryByTag(_Container,"EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086","EMLUTE_FoundEmluteItemInRetrospectiveWorldContainer","EMLUTE_WorldRetrospectiveContainerSearchDone");
+
+PROC
+PROC_DeleteMarkedContainers_EmbersLute()
+AND
+DB_MarkContainerForDeletion_EmbersLute(_Item)
+AND
+Exists(_Item,1)
+THEN
+RequestDelete(_Item);
+
+// Don't need to do anything with these entity events, but useful for log output
+//REGION
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_ContainerSearchDone")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_EmluteContainerSearchDone")
+THEN
+// These all seem to pass in null, so this doesn't actually do anything
+RequestDelete(_Container);
+
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_WorldContainerSearchDone")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Container, "EMLUTE_WorldRetrospectiveContainerSearchDone")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_PlayerSearchDone")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_CampSearchDone")
+THEN
+DB_NOOP(1);
+
+IF
+EntityEvent((ITEM)_Item, "EMLUTE_TraderSearchDone")
+THEN
+DB_NOOP(1);
+//END_REGION
+
+// Search and unequip helpers
+//REGION
+PROC
+PROC_UnequipCustom_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+DB_EquippedItemSlots(_Slot)
+AND
+GetEquippedItem(_Player, _Slot, _Equipped)
+AND
+IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+ApplyStatus(_Player,"BLADE_WARD",1.0);
+Unequip(_Player,_Equipped);
+
+// DB_EquippedItemSlots doesn't include Musical Instruments?! Rude.
+PROC
+PROC_UnequipCustom_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+GetEquippedItem(_Player, "MusicalInstrument", _Equipped)
+AND
+IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+ApplyStatus(_Player,"BLADE_WARD",1.0);
+Unequip(_Player,_Equipped);
+
+QRY
+QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+DB_EquippedItemSlots(_Slot)
+AND
+GetEquippedItem(_Player, _Slot, _Equipped)
+AND
+IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_AtLeastOneCustomItemStillEquipped_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+GetEquippedItem(_Player, "MusicalInstrument", _Equipped)
+AND
+IsTagged(_Equipped, (TAG)EMLUTE_a56f1251-c4f5-4570-97a1-d0bd7be19086, 1)
+THEN
+DB_NOOP(1);
+//END_REGION
+
+PROC
+PROC_RemoveCustomPassives_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+DB_TagToPassiveMap_EmbersLute(_,_Passive)
+AND
+HasPassive(_Player,_Passive,1)
+THEN
+RemovePassive(_Player,_Passive);
+
+PROC
+PROC_RemoveCustomStatuses_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+DB_StatusCleanUp_EmbersLute(_Status)
+AND
+HasActiveStatus(_Player,_Status,1)
+THEN
+RemoveStatus(_Player,_Status);
+
+PROC
+PROC_RemoveCustomSpells_EmbersLute()
+AND
+DB_PartOfTheTeam(_Player)
+AND
+DB_SpellCleanUp_EmbersLute(_Spell)
+AND
+HasSpell(_Player,_Spell,1)
+THEN
+RemoveSpell(_Player,_Spell,1);
+
+PROC
+PROC_CleanUpVanillaTables_EmbersLute()
+AND
+DB_ActivePlayerMarker(_Character,_Region)
+AND
+GetTemplate(_Character,(CHARACTERROOT)_Template)
+AND
+DB_Templates_EmbersLute(_Template)
+THEN
+NOT DB_ActivePlayerMarker(_Character,_Region);
+
+PROC
+PROC_CleanUpVanillaTables_EmbersLute()
+AND
+DB_CorpseLooting_CanBeOwned(_Character)
+AND
+GetTemplate(_Character,(CHARACTERROOT)_Template)
+AND
+DB_Templates_EmbersLute(_Template)
+THEN
+NOT DB_CorpseLooting_CanBeOwned(_Character);
+
+PROC
+PROC_CleanUpVanillaTables_EmbersLute()
+AND
+DB_Was_InCombat(_GUID,_OtherGUID)
+AND
+GetTemplate(_GUID,(CHARACTERROOT)_Template)
+AND
+DB_Templates_EmbersLute(_Template)
+THEN
+NOT DB_Was_InCombat(_GUID,_OtherGUID);
+
+PROC
+PROC_ResetRewardTracker_EmbersLute()
+AND
+DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+THEN
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
+
+// Inventory tracker - capture and track where main mod container gets instantiated in the world
+// Trying to filter this tracker down to only the specific items this mod places in vanilla containers
+//REGION
+IF
+TemplateAddedTo((ITEMROOT)Emlute_Container_Main_f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,(ITEM)_Container,(ITEM)_InventoryOwner,"Treasure")
+THEN
+DB_TrackItemsForUninstall_EmbersLute(_Container,_InventoryOwner);
+
+IF
+TemplateAddedTo((ITEMROOT)_ItemRoot,(ITEM)_Item,(ITEM)_InventoryOwner,"Treasure")
+AND
+IsTagged(_Item,(TAG)EMLUTE_SHEETMUSIC_80cecea2-70cf-4ffd-b37a-dff3086a3289,1)
+THEN
+DB_TrackItemsForUninstall_EmbersLute(_Item,_InventoryOwner);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
   <stat_objects>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_BLACK" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="888e0a01-2ed8-4392-be2f-cc2be009f021" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Lute_BlackMonoFlourish_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
@@ -15,39 +15,77 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="77c291cf-0d11-497a-86ad-88aa2b990dab" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_WHITE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a2a12008-23ae-4006-9d3e-4cb55c1c829e" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Lute_WhiteSheetMusic_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Lute_WhiteSheetMusic_GlowMaps_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ce785834-a430-4f7b-b938-0c85994bdf9e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_B" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a16cecde-a1ac-4f16-8bde-afb7a3dfe9d9" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Instrument_Generic_FX_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fa511bfa-913f-4467-b3b0-06c6f2b3148f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LUTE_VANILLA_A" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ce785834-a430-4f7b-b938-0c85994bdf9e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a1f03ba7-4ed4-4749-9443-6d4599fc0f3b" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Instrument_Generic_FX_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4062bfa7-7dda-4d2d-aae4-79b0c63f02d6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_VIOLIN_WHITE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Violin" enumeration_type_name="InstrumentType" version="1" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="91296545-64fe-4f4f-adf5-5069f5bed91e" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dee84f6e-50d5-46a8-b3ac-491955270faa" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_FLUTE_PRISMATIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="e2c1b4ed-e244-4422-8823-76c2a6f5ef2f" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Weight" type="FloatTableFieldDefinition" value="0.1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Target_ImprovedCountercharm_Emlute)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Lyre;" />
+        <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Flute" enumeration_type_name="InstrumentType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF4B0082" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="462aaa2f-a574-4c77-95c5-b2b9b4a9f1a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_COMBAT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6c5c214e-1b4c-42ae-a3ef-6ccc83e2420b" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="1e7b4319-e589-4643-89e6-cd14c74cb386" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="a57433fc-8be8-4efb-ac6b-a625b3bdcd18" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Combat_Emlute);AC(1);RollBonus(SavingThrow,1)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_MusicalSprites_DazzlingDance;Emlute_MusicalSprites_DazzlingDance_Start;" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7b0902a7-1912-46bb-980b-1f53b94551ff" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VICIOUSROCKERY" />
@@ -61,7 +99,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="16e6dec4-3e49-47ab-a507-ddfe24cb1e56" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_ROLLINGBONES" />
@@ -75,14 +113,14 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="95cf3bc4-7a96-46c0-b0f4-6ed10eae700c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLING" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d9ac61a9-6fea-4ccb-9888-9cf06abb10bb" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="Weight" type="FloatTableFieldDefinition" value="0.2" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Augment_Emlute);UnlockSpell(Shout_Annoying_Spells_Container_Emlute);UnlockSpell(Shout_Chaoscharm_Container_Emlute);UnlockSpell(Target_MildMockery_Emlute)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Augment_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Annoying_Spells_Container_Emlute);UnlockSpell(Shout_Chaoscharm_Container_Emlute);UnlockSpell(Target_MildMockery_Emlute)" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_EnchantedInstrument;Emlute_AugmentAuras_Whistling;" />
         <field name="StatusOnEquip" type="StringTableFieldDefinition" value="EMLUTE_ANNOYING_SPIRIT" />
         <field name="InstrumentType" type="EnumerationTableFieldDefinition" value="Lute" enumeration_type_name="InstrumentType" version="1" />
@@ -90,7 +128,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FF360F38" is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="cffcd9df-ecf0-4dcb-bad9-5badaab5b6b5" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_WHISTLING_DYEABLE" />
@@ -101,13 +139,123 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="faa99fb1-930b-4cf1-bb6c-c64a38a92bc7" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LYSANDRA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fa511bfa-913f-4467-b3b0-06c6f2b3148f" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Lute;Emlute_SummonOnPerform_Lyre;" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="ea5ab27e-06ae-415f-8f0a-eb23ce649c58" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Custom_Emlute);UnlockSpell(Shout_Instrument_Generic_FX_Emlute);UnlockSpell(Target_MAG_Shadow_FogCloud);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF4169E1" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ffd912c7-3455-4342-81d5-003f3b977edb" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_PANTS_OF_PERFORMANCE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="50e6ef29-e08e-495a-be55-c0e4b78db360" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="9a859ca1-8f11-40be-80aa-39c3ebcaa10a" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute)" />
-        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip;Emlute_PurpleHand;Emlute_BlueHand;Emlute_GreenHand;Emlute_GoldHand" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Light_BonusCantrip;" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="38e9dc1d-8bd4-4c44-8491-cfb4e91f026e" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SPIN_SLIPPERS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b6c999d1-2fa0-4c64-a13d-568c44735d07" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="e2e85c50-c4fb-4207-954a-5fbdf4402737" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="adfdafe5-f4da-4c64-a1e6-a33d626437d2" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="1" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,2);Advantage(SavingThrow,Dexterity);AC(1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9e59e688-a82d-4c42-9feb-cadf60a1242f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_BARD_SHOES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="24257734-f17c-4881-8e0e-6a277911fa9c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="7d29f16c-79dc-4e44-9ce2-b9e5055f05a9" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_Restore_BardicInspiration);ActionResource(BardicInspiration,1, 0);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e62c8bc0-ff7d-4302-9597-4a2d36d88f4f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_UNKNOWN_UNDERWEAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="78cb2b2e-a4d1-4cfc-b116-de4419c7a1d2" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="6f987732-15d7-4798-8a77-b51fc182e19f" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow, Constitution)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="MAG_Frightened_Immunity_Passive;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFFA500" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="260a5594-0e09-415f-902e-dc25857600bf" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_GRIMJIG_UNDERWEAR" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50e6ef29-e08e-495a-be55-c0e4b78db360" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="c1960b8b-3f23-41e2-bff5-1351cd58132b" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Summon_Goblin_Dancers_Emlute);Skill(Acrobatics,1);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fbab9a3f-d217-4d51-b55f-ce2c8cee7e2c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_CRITICAL_MOCKERY_RING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d026524e-2c0f-45cd-b91c-c89d9321f64c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="81663c50-4997-47a3-884e-404b85b49fcd" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Critical_Mockery;" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f72e4c0f-314b-46dc-8a8f-ee2c529696b0" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_DEXTEROUS_JUMP_RING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1fd5d49b-3311-49da-8694-4131ca3fe5e1" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="695cf59a-415b-4a90-894b-0725db1fdf66" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="f46eb019-edd0-4216-99df-9dae89a83ce7" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Legendary" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_DexterousJump)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a801b19-2ba3-4234-9561-93ee28bea9a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_PARRY_GLOVES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4b9e958f-c776-4d99-917b-ab294af83443" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="85671d18-e1e7-4478-9478-33b54f29e6a3" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Persuasion,2);Skill(Deception,2)" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Charismatic_Defence" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF8C00" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="06df1112-0b83-4acf-8383-f9f0e48acdcc" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SHORT_GLOVES" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="56cee01a-05e1-47fb-86db-619ed5ac90be" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="acf4ebae-5d0d-4f4a-bc4e-4b98de380a42" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="240eb257-ef20-4877-89bd-6956b4b7c41a" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Skill(SleightOfHand,2);AC(1)" />
+        <field name="ArmorType" type="EnumerationTableFieldDefinition" value="StuddedLeather" enumeration_type_name="ArmorType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFE39C19" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="91cbf427-97a5-4099-8820-7417ec1e108b" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SWIFT_WINGS_RING" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d026524e-2c0f-45cd-b91c-c89d9321f64c" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="b7d913e6-e77c-4779-a25e-a4d74f72ec96" />
+        <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Swift_Winds" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

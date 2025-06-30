@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="7221bc12-7c4f-4a68-9f6f-40d34afeae0a" OwnerUUID="00000000-0000-0000-0000-000000000000" Name="EMLUTE_AppearEffect_WaterSplash_01">
+  <EffectInfo UUID="d4ab9959-79ef-40c7-92a4-3f4869e4f614" EffectResourceGuid="513a4f44-7bd3-03ea-c7e9-d219b7921274" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

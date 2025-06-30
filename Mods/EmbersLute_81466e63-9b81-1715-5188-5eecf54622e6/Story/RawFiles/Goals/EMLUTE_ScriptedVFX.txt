@@ -1,0 +1,341 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+// Scripted VFX for Final Act song
+//REGION
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100,51000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,51600,14600);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,66070,34700);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,100040,15860);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,115790,9100);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,124500,30270);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_DarkOverlay_04",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,130000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter01","Emlute_FinalActS01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,100,24800);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,24900,50900);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,76520,24810);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_02",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,100890,32610);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,133240,20860);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_DarkOverlay_03",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_DarkOverlay_RootFX_01_002290fd-004d-66ca-30f9-d08f2236a1d8,154510,96500);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Lead01","Emlute_FinalActL01_Ascend_01",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Ascend_RootFX_01_2a4223c6-046f-04cb-9c5f-b358e0dd8610,137000,18000);
+DB_ScriptedVFX_EmbersLute("FinalAct","Supporter02","Emlute_FinalActS02_Spotlight_04",(EFFECTRESOURCE)EmbersLute_VFX_Scripted_FinalAct_Spotlight_RootFX_01_77e066f4-be8d-9b3e-43ea-d7dc9311583f,251000,23000);
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_01","Emlute_FinalActS01_DarkOverlay_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_01","Emlute_FinalActS01_Spotlight_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_02","Emlute_FinalActS01_DarkOverlay_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_02","Emlute_FinalActS01_Spotlight_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_03","Emlute_FinalActS01_DarkOverlay_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Spotlight_03","Emlute_FinalActS01_Spotlight_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_DarkOverlay_04","Emlute_FinalActS01_DarkOverlay_04_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS01_Ascend_01","Emlute_FinalActS01_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_01","Emlute_FinalActS02_Spotlight_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_01","Emlute_FinalActS02_DarkOverlay_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_02","Emlute_FinalActS02_Spotlight_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_02","Emlute_FinalActS02_DarkOverlay_02_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_03","Emlute_FinalActS02_Spotlight_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_DarkOverlay_03","Emlute_FinalActS02_DarkOverlay_03_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Ascend_01","Emlute_FinalActS02_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActL01_Ascend_01","Emlute_FinalActL01_Ascend_01_STOP");
+DB_ScriptedVFX_StopFX_EmbersLute("Emlute_FinalActS02_Spotlight_04","Emlute_FinalActS02_Spotlight_04_STOP");
+//END_REGION
+
+// Mappings to calculate where to spawn characters around the performer's location
+//REGION
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_FinalAct",(CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,-1.5,0.0,-0.2);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_FinalAct",(CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,1.5,0.0,-0.2);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(1,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,-1.5,0.0,-0.2);
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(2,"Bard_Perform_WaterQueen",(CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,1.5,0.0,-0.2);
+//END_REGION
+
+// This is so stupid, but it is better to spawn a vanilla template and then polymorph the visual, than spawn a custom template.
+// I don't know what I'm missing, but it seems nearly impossible to clean out a (non-summon) custom spawn from a save game without a 300 error code. 
+// Not even Volito's Uninstaller Mod seems to be able to do it.
+// While most players probably won't care to remove mods mid-campaign, would still prefer it to be an option - not keen on mods that hold 100+ hour campaigns hostage.
+//REGION
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)UNI_MizorasPact_Cambion_05705023-c3c0-40b3-a6ed-f210e8136c1e,"EMLUTE_POLYMORPH_CAMBION_FEMALE");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)LOW_HouseOfHope_Cambion_Male_38440539-7630-42fd-a163-0a9383e56fd5,"EMLUTE_POLYMORPH_CAMBION_MALE");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)Humans_Female_Umberlee_Cultist_Untaken_ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8,"EMLUTE_POLYMORPH_WAVESERVANT_01");
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute((CHARACTERROOT)Humans_Female_Umberlee_Cultist_DarkBreaker_2824f90c-4cf7-442f-a0e1-83d4cfb9625a,"EMLUTE_POLYMORPH_WAVESERVANT_02");
+//END_REGION
+
+// Try to select the "male" or "female" role in the song by vocal tag first, with fallback to gender tag
+//REGION
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_1_MALE_84269483-f6fd-414e-b1a5-facb42314668,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_3_MALE_04fbb464-cc92-44de-89f1-8d4b1b0f33f4,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_5_MALE_75cbe7ab-c39e-498e-a08d-b3c9ba05038e,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_7_MALE_6052ef1f-bc50-4dff-968b-8d3a79fddeb7,"Supporter01");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_2_FEMALE_3cf37529-bba1-4a4a-a904-a35138cf0074,"Supporter02");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_4_FEMALE_b94f535a-e9c7-42ac-afd8-f8b078ad9af8,"Supporter02");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_6_FEMALE_937b5b86-0d77-4cb5-bce1-36d828d4a90e,"Supporter02");
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute((TAG)GENERIC_VOICE_8_FEMALE_6db4ba46-cd6a-4dfc-b698-393f71039385,"Supporter02");
+//END_REGION
+KBSECTION
+// Reset and cleaning up on level load and unload
+//REGION
+IF
+LevelGameplayStarted(_,1)
+AND
+DB_Players(_Player)
+THEN
+PROC_ScriptedVFX_SpawnReset_EmbersLute(_Player);
+//END_REGION
+
+// Position finder for spawns
+//REGION
+IF
+EnteredLevel((ITEM)_HelperItem,(ITEMROOT)_Template, _)
+AND
+DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
+AND
+QRY_ScriptedVFX_SongSummonEnabled(_Performer,_Song)
+AND
+DB_ScriptedVFX_SongSpawnMapping_LocalOffset_EmbersLute(_Num,_Song,_CharTemplate,_X,_Y,_Z)
+AND
+DB_ScriptedVFX_TemplatePolymorph_EmbersLute(_CharTemplate,_PolyStatus)
+AND
+GetWorldTransformFromLocal(_Performer, _X, _Y, _Z, 0.0 ,0.0, 0.0, _DestX, _DestY, _DestZ, _RotX, _RotY, _RotZ)
+AND
+CreateAtObject(_CharTemplate,_Performer,0,1,"CreateSongSpawn_EmbersLute",1,(CHARACTER)_Spawn)
+AND
+CreateAtObject((ITEMROOT)Emlute_Ring_Spawn_Helper_ef8ddca3-fc8e-4311-9758-ba773b875592,_Performer,0,1,"CreateSongSpawnHelper_EmbersLute",1,(ITEM)_SpawnHelper)
+THEN
+ToTransform(_SpawnHelper,_DestX, _DestY, _DestZ,0.0,_RotY,0.0);
+TeleportTo(_Spawn,_SpawnHelper,"TeleportSpawn_EmbersLute", 0, 0, 0, 0, 1);
+ApplyStatus(_Spawn,_PolyStatus,-1.0);
+RequestDelete(_SpawnHelper);
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+SetEntityEvent(_Spawn,"SongSpawnFinishEvent_EmbersLute");
+
+QRY
+QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,"Bard_Perform_FinalAct")
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_SUMMON_CAMBIONS_OFF_52d23a7a-29ce-4d74-b998-3ce9708aef63,0)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_ScriptedVFX_SongSummonEnabled((CHARACTER)_Performer,"Bard_Perform_WaterQueen")
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_SUMMON_WAVESERVANT_OFF_a3520d78-9493-4580-b262-7fe02727875b,0)
+THEN
+DB_NOOP(1);
+
+IF
+StatusRemoved((CHARACTER)_Spawn,(STRING)_Status,_,_)
+AND
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
+THEN
+SetOnStage(_Spawn,0);
+Die(_Spawn,DEATHTYPE.Lifetime, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+SetTag(_Spawn, (TAG)BLOCK_RESURRECTION_22a75dbb-1588-407e-b559-5aa4e6d4e6a6);
+NOT DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+//END_REGION
+
+// Position finder reset helpers
+//REGION
+PROC
+PROC_ScriptedVFX_SpawnReset_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn)
+THEN
+Die(_Spawn,DEATHTYPE.Incinerate, NULL_00000000-0000-0000-0000-000000000000, 0, 1);
+NOT DB_ScriptedVFX_SpawnPlaced_Spawn_EmbersLute(_Performer,_CharTemplate,_Spawn);
+//END_REGION
+
+// While it is quite possible to use the VFX editor to create long-running
+// effects for the duration of a song, if you remove the FX part way through
+// the FX will still continue until it has completed all the phases. This isn't 
+// great as we don't really want characters wandering around exploding in flames
+// 2 minutes after the performance has ended.
+
+// We're going to lazily hard code some of this for the Final Act performance.
+// Might improve it later if I ever add more scripted VFX performances.
+// Not that I think I will - this is special treatment only the Raphael song deserves.
+//REGION
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
+THEN
+// Play the effects for the lead performer
+DB_ScriptedVFX_ActiveSongLead_EmbersLute(_Performer,"FinalAct");
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Lead01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+THEN
+// Play the effects for a supporting performer, male vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+AND
+IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,1)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
+THEN
+// Play the effects for a supporting performer, male vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+AND
+IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,0)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,0)
+THEN
+// Play the effects for a supporting performer, male vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter01");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+THEN
+// Play the effects for a supporting performer, female vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter02");
+
+IF
+StatusApplied((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+AND
+NOT QRY_IsSupporter01_ByVocals_EmbersLute(_Performer)
+AND
+NOT QRY_IsSupporter02_ByVocals_EmbersLute(_Performer)
+AND
+IsTagged(_Performer,(TAG)MALE_8f74d144-041e-4035-a9ac-72f41fc32de7,0)
+AND
+IsTagged(_Performer,(TAG)FEMALE_3806477c-65a7-4100-9f92-be4c12c4fa4f,1)
+THEN
+// Play the effects for a supporting performer, female vocals
+PROC_PlayFinalAct_EmbersLute(_Performer,"FinalAct","Supporter02");
+
+QRY
+QRY_IsSupporter01_ByVocals_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute(_Tag,"Supporter01")
+AND
+IsTagged(_Performer,_Tag,1)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsSupporter02_ByVocals_EmbersLute((CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_TagToRoleMapping_EmbersLute(_Tag,"Supporter02")
+AND
+IsTagged(_Performer,_Tag,1)
+THEN
+DB_NOOP(1);
+
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT",_,_)
+THEN
+PROC_CleanUpEffectTimers_EmbersLute("FinalAct",_Performer);
+PROC_CleanUpEffects_EmbersLute("FinalAct",_Performer);
+NOT DB_ScriptedVFX_ActiveSongLead_EmbersLute(_Performer,"Bard_Perform_FinalAct");
+
+IF
+StatusRemoved((CHARACTER)_Performer,"EMLUTE_PERFORM_FINALACT_NO_AURA",_,_)
+THEN
+PROC_CleanUpEffectTimers_EmbersLute("FinalAct",_Performer);
+PROC_CleanUpEffects_EmbersLute("FinalAct",_Performer);
+
+PROC
+PROC_PlayFinalAct_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(STRING)_Role)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+THEN
+RealtimeObjectTimerLaunch(_Performer,_FXEvent,_Start);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+DB_ScriptedVFX_ActiveSongLead_EmbersLute(_,_Song)
+THEN
+PROC_StartScriptedFX_EmbersLute(_Performer,_FXEvent);
+
+PROC
+PROC_StartScriptedFX_EmbersLute((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+Concatenate("Starting FX: ",_FXEvent,_DebugMsg)
+AND
+Concatenate(_FXEvent,"_STOP",_StopTimer)
+AND
+PlayLoopEffect(_Performer,_Effect,"Dummy_Root",1.0,_FXHandle)
+THEN
+DebugText(_Performer,_DebugMsg);
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
+RealtimeObjectTimerLaunch(_Performer,_StopTimer,_Stop);
+
+IF
+ObjectTimerFinished((CHARACTER)_Performer,(STRING)_StopTimer)
+AND
+DB_ScriptedVFX_StopFX_EmbersLute(_FXEvent,_StopTimer)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer)
+THEN
+StopLoopEffect(_FXHandle);
+NOT DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
+
+PROC
+PROC_CleanUpEffectTimers_EmbersLute((STRING)_Song,(CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+Concatenate(_FXEvent,"_STOP",_StopTimer)
+THEN
+ObjectTimerCancel(_Performer,_FXEvent);
+ObjectTimerCancel(_Performer,_StopTimer);
+
+PROC
+PROC_CleanUpEffects_EmbersLute((STRING)_Song,(CHARACTER)_Performer)
+AND
+DB_ScriptedVFX_EmbersLute(_Song,_Role,_FXEvent,_Effect,_Start,_Stop)
+AND
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer)
+THEN
+StopLoopEffect(_FXHandle);
+NOT DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_FXHandle,_StopTimer);
+
+QRY
+QRY_IsScriptedFXEvent_EmbersLute((STRING)_FXEvent)
+AND 
+DB_ScriptedVFX_EmbersLute(_,_,_FXEvent,_,_,_)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_IsScriptedStopFXEvent_EmbersLute((STRING)_FXStopEvent)
+AND 
+DB_ScriptedVFX_StopFX_EmbersLute(_,_FXStopEvent)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_HasActiveEffect_EmbersLute((CHARACTER)_Performer,(STRING)_FXEvent)
+AND
+DB_ScriptedVFX_Active_EmbersLute(_Performer,_FXEvent,_,_)
+THEN
+DB_NOOP(1);
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

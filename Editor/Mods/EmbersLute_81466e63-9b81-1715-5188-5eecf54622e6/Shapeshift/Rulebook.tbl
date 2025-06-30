@@ -19,5 +19,24 @@
         <field name="SpellsRemove" type="StringTableFieldDefinition" value="Target_Shove" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="093939c7-8b40-44b3-898b-21a49a35e5d1" />
+        <field name="RuleName" type="StringTableFieldDefinition" value="EmluteLegendSpawn" />
+        <field name="RemoveOldTags" type="BoolTableFieldDefinition" value="False" />
+        <field name="ApplyTagsFromTemplate" type="BoolTableFieldDefinition" value="True" />
+        <field name="ChangeRace" type="BoolTableFieldDefinition" value="False" />
+        <field name="ChangeBodyType" type="BoolTableFieldDefinition" value="False" />
+        <field name="UseShapeshiftIdentity" type="BoolTableFieldDefinition" value="True" />
+        <field name="ApplyVisual" type="BoolTableFieldDefinition" value="True" />
+        <field name="RetainDisplayName" type="BoolTableFieldDefinition" value="False" />
+        <field name="ChangeIcon" type="BoolTableFieldDefinition" value="False" />
+        <field name="PassivesInheritanceType" type="EnumerationTableFieldDefinition" value="KeepOriginal" enumeration_type_name="ShapeshiftInheritanceType" version="1" />
+        <field name="BloodSurfaceTypeInheritanceType" type="EnumerationTableFieldDefinition" value="ReplaceOriginal" enumeration_type_name="ShapeshiftInheritanceTypeNoMerge" version="1" />
+        <field name="HitBloodTypeInheritanceType" type="EnumerationTableFieldDefinition" value="ReplaceOriginal" enumeration_type_name="ShapeshiftInheritanceTypeNoMerge" version="1" />
+        <field name="DeathActionsInheritanceType" type="EnumerationTableFieldDefinition" value="ReplaceOriginal" enumeration_type_name="ShapeshiftInheritanceTypeNoMerge" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

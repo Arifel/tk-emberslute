@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="bf882274-2f26-4203-a0d3-950a100bb998" OwnerUUID="56f6c2b4-2fb9-4846-ae98-070457442225" Name="EMLUTE_Instrument_StatusEffect_GoldShimmerGlow">
+  <EffectInfo UUID="f4d1f907-4f30-46c8-b004-78c13c718dcd" EffectResourceGuid="22d8a72d-21f7-8ed5-1c24-982b68119e25" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

@@ -85,6 +85,22 @@ new subtable "-1"
 object category "I_EMBERS_LUTE_VANILLA_LUTEB_MUSIC_DYEABLE",1,0,0,0,0,0,0,0
 new subtable "-1"
 object category "I_EMBERS_LUTE_VANILLA_LUTEB_FLOURISH_DYEABLE",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_BLACKRED",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_BLACKTEAL",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_BLACKGOLD",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_WHITEBLACK",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_CHARCOAL",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_DARKPURPLE",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_GREENGOLD",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_DYE_BROWNGOLD",1,0,0,0,0,0,0,0
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
 new subtable "1,1"

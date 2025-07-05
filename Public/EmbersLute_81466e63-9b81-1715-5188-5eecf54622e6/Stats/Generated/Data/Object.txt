@@ -224,6 +224,26 @@ type "Object"
 using "EMBERS_LUTE_DYE_BLACKRED"
 data "RootTemplate" "cc7752ad-a1a6-4bc8-be8c-b01c0cb7f461"
 
+new entry "EMBERS_LUTE_DYE_BROWNGOLD"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "7e9f6ae7-475b-436f-9ce4-e7a8a93f92c4"
+
+new entry "EMBERS_LUTE_DYE_CHARCOAL"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "6f2b521d-95bd-4bd2-8bea-0caa0855767a"
+
+new entry "EMBERS_LUTE_DYE_DARKPURPLE"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "22776b2c-a567-40c3-b39e-bc8eddaf5338"
+
+new entry "EMBERS_LUTE_DYE_GREENGOLD"
+type "Object"
+using "EMBERS_LUTE_DYE_BLACKRED"
+data "RootTemplate" "c9acc4b6-2909-4aa5-a320-8702fe42b9bf"
+
 new entry "_DEPRECATED"
 type "Object"
 

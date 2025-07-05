@@ -383,6 +383,86 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="33c92bd8-1c33-4cdd-b58b-c10bb4f1fc2d" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_5" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_BLACKRED" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9c5aa0c5-f8f8-4260-a08f-66cbbc4c8362" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_6" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_BLACKTEAL" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="374b383d-cd0c-4a3f-8e53-2e028b654270" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_9" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_BLACKGOLD" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="778fa2ab-ea79-42fb-a41f-b793c112c53f" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_7" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_WHITEBLACK" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a9d16b4e-87f9-4ca6-a43d-75ef385e103a" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_8" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_CHARCOAL" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a56413e1-2a2c-4fbc-8a22-c5f344b320d9" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_10" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_DARKPURPLE" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3471cc3b-a4c1-4b41-8601-8193620d63c7" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_11" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_GREENGOLD" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e9c7fc38-46d3-4e17-be2f-5725f7200c83" />
+        <field name="Name" type="NameTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a_substat_12" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_DYE_BROWNGOLD" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF141D61" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e63e2daf-4179-4c88-8445-ad7b78a663f7" />

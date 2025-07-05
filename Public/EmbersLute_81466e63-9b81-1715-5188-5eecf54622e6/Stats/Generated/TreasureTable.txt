@@ -68,6 +68,23 @@ new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_VARNISHES",1,0,0,0,0,0,0,0
 new subtable "-1"
 object category "I_ARI_CONT_EMBERSLUTE_MISC",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_ARI_CONT_EMBERSLUTE_VANILLA",1,0,0,0,0,0,0,0
+new treasuretable "EMLUTE_Chest_Content_Vanilla"
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_LUTEB_WHITE_01",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_LUTEB_MONO_01",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_LUTEA_DYEABLE",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_VIOLIN_DYEABLE",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_FLUTE_PRISMATIC",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_LUTEB_MUSIC_DYEABLE",1,0,0,0,0,0,0,0
+new subtable "-1"
+object category "I_EMBERS_LUTE_VANILLA_LUTEB_FLOURISH_DYEABLE",1,0,0,0,0,0,0,0
 new treasuretable "DEN_Entrance_Trade"
 CanMerge 1
 new subtable "1,1"

@@ -189,6 +189,45 @@ data "ValueUUID" "c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa"
 data "Rarity" "VeryRare"
 data "PassivesOnEquip" "Emlute_Reward_Swift_Winds"
 
+new entry "EMBERS_LUTE_VANILLA_LUTEB_MONO_01"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "876d411a-299e-42e5-ab89-f4d2ad4677db"
+
+new entry "EMBERS_LUTE_VANILLA_LUTEB_WHITE_01"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "0f35b135-bbe5-448a-91dd-1c428e17da2d"
+
+new entry "EMBERS_LUTE_VANILLA_LUTEA_DYEABLE"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "a6a196a3-6141-4360-bfe6-1a044dec0c54"
+data "ComboCategory" "DyableArmor"
+
+new entry "EMBERS_LUTE_VANILLA_VIOLIN_DYEABLE"
+type "Armor"
+using "ARM_Instrument_Violin"
+data "RootTemplate" "753c8cf7-9311-4e1e-b486-204f468f9f02"
+data "ComboCategory" "DyableArmor"
+
+new entry "EMBERS_LUTE_VANILLA_FLUTE_PRISMATIC"
+type "Armor"
+using "ARM_Instrument_Flute"
+data "RootTemplate" "79d87252-963f-4f74-bfa0-12d749e6e637"
+
+new entry "EMBERS_LUTE_VANILLA_LUTEB_MUSIC_DYEABLE"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "b631c072-5550-427a-b63d-bbe2b41f831f"
+data "ComboCategory" "DyableArmor"
+
+new entry "EMBERS_LUTE_VANILLA_LUTEB_FLOURISH_DYEABLE"
+type "Armor"
+using "ARM_Instrument_Lute"
+data "RootTemplate" "679043d8-bd05-4d39-997a-9a2ae0fbf181"
+data "ComboCategory" "DyableArmor"
+
 new entry "_EMBERS_LUTE_HELPERS"
 type "Armor"
 

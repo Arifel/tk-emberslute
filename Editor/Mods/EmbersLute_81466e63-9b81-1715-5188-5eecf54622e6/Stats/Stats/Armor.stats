@@ -137,7 +137,7 @@
         <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
+    <stat_object color="#FF4B0082" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="faa99fb1-930b-4cf1-bb6c-c64a38a92bc7" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_MUSICALSPRITES_LYSANDRA" />
@@ -158,7 +158,7 @@
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="Rare" enumeration_type_name="Rarity" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="38e9dc1d-8bd4-4c44-8491-cfb4e91f026e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SPIN_SLIPPERS" />
@@ -170,7 +170,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Skill(Performance,2);Advantage(SavingThrow,Dexterity);AC(1)" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9e59e688-a82d-4c42-9feb-cadf60a1242f" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_BARD_SHOES" />
@@ -179,7 +179,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_Restore_BardicInspiration);ActionResource(BardicInspiration,1, 0);" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e62c8bc0-ff7d-4302-9597-4a2d36d88f4f" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_UNKNOWN_UNDERWEAR" />
@@ -201,7 +201,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Summon_Goblin_Dancers_Emlute);Skill(Acrobatics,1);" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="fbab9a3f-d217-4d51-b55f-ce2c8cee7e2c" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_CRITICAL_MOCKERY_RING" />
@@ -212,7 +212,7 @@
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Critical_Mockery;" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f72e4c0f-314b-46dc-8a8f-ee2c529696b0" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_DEXTEROUS_JUMP_RING" />
@@ -223,7 +223,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_DexterousJump)" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4a801b19-2ba3-4234-9561-93ee28bea9a8" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_PARRY_GLOVES" />
@@ -235,7 +235,7 @@
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Charismatic_Defence" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF8C00" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="06df1112-0b83-4acf-8383-f9f0e48acdcc" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SHORT_GLOVES" />
@@ -247,7 +247,7 @@
         <field name="ArmorType" type="EnumerationTableFieldDefinition" value="StuddedLeather" enumeration_type_name="ArmorType" version="1" />
       </fields>
     </stat_object>
-    <stat_object color="#FFE39C19" is_substat="false">
+    <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="91cbf427-97a5-4099-8820-7417ec1e108b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_SWIFT_WINGS_RING" />
@@ -256,6 +256,66 @@
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="Emlute_Reward_Swift_Winds" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="79d11291-8925-4166-9b23-c27bc25de602" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_LUTEB_MONO_01" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9710e1b-87ce-4336-9eab-05be9544fe03" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="876d411a-299e-42e5-ab89-f4d2ad4677db" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b99cbab6-63c6-424a-8571-a6aad1b794f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_LUTEB_WHITE_01" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9710e1b-87ce-4336-9eab-05be9544fe03" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="0f35b135-bbe5-448a-91dd-1c428e17da2d" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b65e0013-1d85-4e21-84df-d6b9638975f1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_LUTEA_DYEABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9710e1b-87ce-4336-9eab-05be9544fe03" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="a6a196a3-6141-4360-bfe6-1a044dec0c54" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d0d4ec46-89bd-460a-952b-9bbe7d407ab3" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_VIOLIN_DYEABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ff14af19-63c5-4443-9cad-3009a578cc85" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="753c8cf7-9311-4e1e-b486-204f468f9f02" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2e238486-ad2e-4d42-b972-01edec7a60c9" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_FLUTE_PRISMATIC" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2e47582b-2b78-4cae-8978-73884ae67d5e" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="79d87252-963f-4f74-bfa0-12d749e6e637" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="af1c1716-7ab0-4581-bc2b-74a648b26359" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_LUTEB_MUSIC_DYEABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9710e1b-87ce-4336-9eab-05be9544fe03" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="b631c072-5550-427a-b63d-bbe2b41f831f" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cccd590-b0b1-4ecd-ba12-c29c45b9f8c1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_VANILLA_LUTEB_FLOURISH_DYEABLE" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f9710e1b-87ce-4336-9eab-05be9544fe03" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="679043d8-bd05-4d39-997a-9a2ae0fbf181" />
+        <field name="ComboCategory" type="StringTableFieldDefinition" value="DyableArmor" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

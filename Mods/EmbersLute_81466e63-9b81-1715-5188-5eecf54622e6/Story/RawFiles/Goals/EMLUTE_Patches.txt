@@ -77,6 +77,25 @@ PROC_InitV3_EmbersLute();
 IF
 SavegameLoaded()
 AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_1_n_VanillaContainer",_)
+AND
+NOT DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Vanilla_2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86)
+THEN
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Vanilla_2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_1_n_VanillaContainer",1);
+
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_1_n_VanillaContainer",_)
+AND
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Vanilla_2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_1_n_VanillaContainer",0);
+
+IF
+SavegameLoaded()
+AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_0_n_InitV3",_)
 AND
 NOT DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_24521003-c36c-4f84-8c93-53fd5de3d852)
@@ -970,6 +989,7 @@ DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Misc_d0f807b4-0115-4
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_MusicalSprites_201c7bd7-baf7-40a6-b9a6-aee748999b15);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Varnishes_81fc28be-061a-4f08-8db7-a1f27022b43a);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Spoilers_669cf84d-f222-4e82-b300-369001765514);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Vanilla_2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)EMLUTE_ContainerCelestialInstruments_f713ebc0-29fc-4009-a98c-f6bc436e7f59);
 DB_PopulatedWorldContainers_EmbersLute((ITEM)S_Chest_Potions_e57e3af6-ae79-4d5c-9d11-f695b359c740);
 DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_HouseOfHope_TreasurePile01_0278d4ae-3e7c-4c1e-a4bc-fbf99db35e02);

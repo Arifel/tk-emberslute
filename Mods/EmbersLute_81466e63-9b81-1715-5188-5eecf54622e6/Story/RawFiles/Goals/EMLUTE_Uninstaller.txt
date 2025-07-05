@@ -44,6 +44,7 @@ DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Misc_d0f807b4-0115-4
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_MusicalSprites_201c7bd7-baf7-40a6-b9a6-aee748999b15);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Varnishes_81fc28be-061a-4f08-8db7-a1f27022b43a);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Spoilers_669cf84d-f222-4e82-b300-369001765514);
+DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Vanilla_2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86);
 DB_ContainerTemplates_EmbersLute((ITEMROOT)EMLUTE_ContainerCelestialInstruments_f713ebc0-29fc-4009-a98c-f6bc436e7f59);
 
 // Not sure if this will work, but somehow need to retrospectively get handle on previously encountered containers

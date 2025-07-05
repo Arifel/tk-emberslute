@@ -41,6 +41,11 @@ type "Object"
 using "ARI_CONT_EMBERSLUTE"
 data "RootTemplate" "d0f807b4-0115-4e6c-9241-b16bc59480b0"
 
+new entry "ARI_CONT_EMBERSLUTE_VANILLA"
+type "Object"
+using "ARI_CONT_EMBERSLUTE"
+data "RootTemplate" "2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86"
+
 new entry "ARI_CONT_EMBERSLUTE_SPOILERS"
 type "Object"
 using "ARI_CONT_EMBERSLUTE"

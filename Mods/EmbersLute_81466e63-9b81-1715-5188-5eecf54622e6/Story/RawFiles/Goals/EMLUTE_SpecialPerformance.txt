@@ -33,6 +33,7 @@ DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.5,0.5,1);

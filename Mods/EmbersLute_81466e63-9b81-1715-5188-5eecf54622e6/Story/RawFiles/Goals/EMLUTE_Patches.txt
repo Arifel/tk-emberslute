@@ -77,6 +77,16 @@ PROC_InitV3_EmbersLute();
 IF
 SavegameLoaded()
 AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_2_n_HarpySongBugfix",_)
+AND
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737)
+THEN
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_2_n_HarpySongBugfix",1);
+
+IF
+SavegameLoaded()
+AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_1_n_VanillaContainer",_)
 AND
 NOT DB_ContainerTemplates_EmbersLute((ITEMROOT)Emlute_Container_Vanilla_2d8dc0e4-dc1a-4cc8-ae22-24a3293a5f86)
@@ -820,6 +830,7 @@ DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,2.0,0.5,0.5,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);

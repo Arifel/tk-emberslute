@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="200"/>
+    <version major="4" minor="8" revision="0" build="400"/>
     <region id="Crime">
         <node id="root">
             <children>
@@ -223,7 +223,7 @@
                 <node id="Crime">
                     <attribute id="Audible" type="uint8" value="1"/>
                     <attribute id="AudibleRange" type="float" value="8"/>
-                    <attribute id="CanMergeConfrontation" type="uint8" value="1"/>
+                    <attribute id="CanMergeConfrontation" type="uint8" value="0"/>
                     <attribute id="Continuous" type="uint8" value="1"/>
                     <attribute id="ContinuousDelayTimer" type="float" value="1"/>
                     <attribute id="CreatesCrimescene" type="uint8" value="0"/>
@@ -231,7 +231,7 @@
                     <attribute id="DetectionRange" type="float" value="8"/>
                     <attribute id="Lifetime" type="float" value="10000"/>
                     <attribute id="MaxInvestigators" type="int32" value="5"/>
-                    <attribute id="MergeConditions" type="uint8" value="2"/>
+                    <attribute id="MergeConditions" type="uint8" value="3"/>
                     <attribute id="TensionWeight" type="int32" value="6"/>
                     <children>
                         <node id="CrimeAction">

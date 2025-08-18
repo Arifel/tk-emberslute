@@ -21,6 +21,7 @@ INITSECTION
 // DB_BardReactions_NPC_ThrowingActionIsPlaying_Emlute(_NPC,_Spell) - tracker for when NPC is throwing something
 // DB_BardReactions_NPCBardsJoin_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID) - associate performing crime id to bard join crime id
 // DB_BardReactions_NPCBardsJoin_NPCBards_Emlute(_Bard,_Performer,_ID) - tracking NPC bards playing along
+// DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_Performer,_ActiveSongStatus,_ActiveAnimStatus) - tracking the active song NPC bards are reacting to
 // DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status) - status tracker for reward selection logic
 //
 // Query results
@@ -1322,16 +1323,20 @@ THEN
 PROC_TryStartSpellVocalAD((DIALOGRESOURCE)GLO_SpellVocalComponent_ViciousMockery_Cast_6dafdccd-091d-c0f4-4543-1199bdcb46d6,_Causee);
 //END_REGION
 
-// NPC bard reactions to performing on Ember's Lute
+// NPC bard reactions to performing on Ember's Lute.
+// I have disabled the crime reaction merging for NPC bards joining: MusicalPerformance_Good_BardNPC_Emlute.
+// Merging is not required for these custom NPC bard reactions as the EMLUTE_MUSICAL_SPIRIT_BARD status does the
+// work of switching songs along with the lead performer.
+// Also I think there might be something off with crime reaction merging logic - possibly causing bugs where the crime doesn't stop.
 //REGION 
 IF
 MainPerformerStarted((CHARACTER)_Performer,_Song)
 AND
-DB_PartOfTheTeam(_Performer)
+DB_Players(_Performer)
 AND
 QRY_HasEmbersLuteInstrument(_Performer)
 AND
-QRY_BardReactions_SongToJoinStatus_EmbersLute(_Song)
+QRY_BardReactions_SongToJoinStatus_EmbersLute(_Performer,_Song)
 THEN
 ObjectTimerCancel(_Performer,"BardReactionDelay_EmbersLute");
 ObjectTimerLaunch(_Performer,"BardReactionDelay_EmbersLute",1000);
@@ -1343,7 +1348,7 @@ DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,_DisturbanceName)
 AND
 DB_BardReactions_Status_Emlute(_Status,_DisturbanceName,"OnStatusApply")
 AND
-NOT QRY_HasActiveBardJoinCrime_EmbersLute(_Performer,_ID)
+NOT QRY_HasActiveBardJoinCrime_EmbersLute(_Performer)
 AND
 CrimeGetNewID(_CrimeID)
 THEN
@@ -1351,9 +1356,9 @@ DB_BardReactions_NPCBardsJoin_Emlute(_Performer,_ID,_CrimeID);
 PROC_CharacterRegisterCrime(_Performer,"MusicalPerformance_Good_BardNPC_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,_CrimeID);
 
 QRY
-QRY_HasActiveBardJoinCrime_EmbersLute((CHARACTER)_Performer,(INTEGER)_ID)
+QRY_HasActiveBardJoinCrime_EmbersLute((CHARACTER)_Performer)
 AND
-DB_BardReactions_NPCBardsJoin_Emlute(_Performer,_ID,_BardJoinCrimeID)
+DB_BardReactions_NPCBardsJoin_Emlute(_Performer,_,_)
 THEN
 DB_NOOP(1);
 
@@ -1376,29 +1381,31 @@ THEN
 CrimeConfrontationDone(_CrimeID,_Bard);
 
 PROC
-PROC_BardReactions_BardJoins_EmbersLute((CHARACTER)_Bard,(CHARACTER)_Criminal,(INTEGER)_CrimeID)
+PROC_BardReactions_BardJoins_EmbersLute((CHARACTER)_Bard,(CHARACTER)_LeadPerformer,(INTEGER)_CrimeID)
 AND
-DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus,_AnimStatus)
+DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_LeadPerformer,_JoinStatus,_AnimStatus)
 THEN
-DB_BardReactions_NPCBardsJoin_NPCBards_Emlute(_Bard,_Criminal,_CrimeID);
+DB_BardReactions_NPCBardsJoin_NPCBards_Emlute(_Bard,_LeadPerformer,_CrimeID);
 EndRepose(_Bard);
 ApplyStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD",-1.0);
+// We only need to apply these statuses to nudge the bard into performance for the first song
+// After that, the MUSICAL SPIRIT status will automatically keep the NPC bard playing along, matching the song of the lead performer
 ApplyStatus(_Bard,_JoinStatus,-1.0);
 ApplyStatus(_Bard,_AnimStatus,-1.0);
 
 QRY
-QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)
+QRY_BardReactions_SongToJoinStatus_EmbersLute((CHARACTER)_LeadPerformer,(STRING)_Song)
 AND
-DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus,_PrevAnimStatus)
+DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_LeadPerformer,_PrevStatus,_PrevAnimStatus)
 THEN
-NOT DB_BardReactions_BardsJoinActiveStatus_Emlute(_PrevStatus,_PrevAnimStatus);
+NOT DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_LeadPerformer,_PrevStatus,_PrevAnimStatus);
 
 QRY
-QRY_BardReactions_SongToJoinStatus_EmbersLute((STRING)_Song)
+QRY_BardReactions_SongToJoinStatus_EmbersLute((CHARACTER)_LeadPerformer,(STRING)_Song)
 AND
 DB_BardReactions_SongToStatusMapping_Emlute(_Song,_JoinStatus,_AnimStatus)
 THEN
-DB_BardReactions_BardsJoinActiveStatus_Emlute(_JoinStatus,_AnimStatus);
+DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_LeadPerformer,_JoinStatus,_AnimStatus);
 //END_REGION
 
 // Helpers
@@ -1599,6 +1606,13 @@ AND
 DB_BardReactions_NPCBardsJoin_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID)
 THEN
 NOT DB_BardReactions_NPCBardsJoin_Emlute(_Performer,_WatchingCrimeID,_BardJoinsCrimeID);
+
+PROC
+PROC_BardReactions_Reset_NPCBardsJoin_EmbersLute((CHARACTER)_Performer)
+AND
+DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_Performer,_SongStatus,_AnimStatus)
+THEN
+NOT DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_Performer,_SongStatus,_AnimStatus);
 
 PROC
 PROC_BardReactions_Rewards_Reset_EmbersLute((CHARACTER)_Performer)

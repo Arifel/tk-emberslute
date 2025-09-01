@@ -76,6 +76,19 @@ PROC_InitV3_EmbersLute();
 //REGION
 IF
 SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_3_n_BardReactionsHousekeeping",_)
+AND
+NOT DB_BardReactions_MusicalPerformance_Emlute(_,_,"MusicalPerformance_Good_Emlute")
+THEN
+// Do a reset of transient tables as long as no active reactions to music performance on game load
+// This has been added to longrest too
+PROC_BardReactions_Reset_EmbersLute();
+PROC_ResetCrimes_EmbersLute();
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_3_n_BardReactionsHousekeeping",1);
+
+IF
+SavegameLoaded()
 AND 
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_2_n_HarpySongBugfix",_)
 AND

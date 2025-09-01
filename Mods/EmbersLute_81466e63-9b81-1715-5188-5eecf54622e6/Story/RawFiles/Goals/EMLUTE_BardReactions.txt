@@ -23,6 +23,7 @@ INITSECTION
 // DB_BardReactions_NPCBardsJoin_NPCBards_Emlute(_Bard,_Performer,_ID) - tracking NPC bards playing along
 // DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_Performer,_ActiveSongStatus,_ActiveAnimStatus) - tracking the active song NPC bards are reacting to
 // DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status) - status tracker for reward selection logic
+// DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC) - tracker to ensure only one increment per crowd member
 //
 // Query results
 // DB_QRYRTN_BardReactions_PriorityTag_Emlute(_NPC,_BestPriority,_BestTag) - result for query to select highest priority tag for anims
@@ -1577,6 +1578,13 @@ NOT DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC);
 StopAnimation(_NPC,1);
 
 PROC
+PROC_BardReactions_CrowdNPC_CleanUp_EmbersLute((CHARACTER)_NPC)
+AND
+DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC)
+THEN
+NOT DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC);
+
+PROC
 PROC_BardReactions_Reset_EmbersLute((CHARACTER)_Performer)
 AND
 DB_BardReactions_MusicalPerformance_AmbPlaying_Emlute(_Performer,_StopEvent)
@@ -1853,11 +1861,43 @@ THEN
 PROC_BardReactions_Reset_EmbersLute(_Player);
 
 PROC
+PROC_BardReactions_Reset_EmbersLute()
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+THEN
+NOT DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC);
+
+PROC
+PROC_BardReactions_Reset_EmbersLute()
+AND
+DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC)
+THEN
+NOT DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC);
+
+PROC
 PROC_ResetUniqueRewards_EmbersLute()
 AND
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
 THEN
 NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
+//END_REGION
+
+// Bugfix to re-enable the busking achievement when using custom performances
+//REGION
+IF
+CastedSpell((CHARACTER)_NPC,"Projectile_GEB_Perform_TossCoin",_,_,_)
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,(CHARACTER)_Performer,_NPC)
+AND
+NOT DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC)
+THEN
+DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC);
+PROC_CRIME_MusicalPerformance_TossedCoin((CHARACTER)_NPC,(CHARACTER)_Performer);
+
+PROC
+PROC_CRIME_MusicalPerformance_TossedCoin((CHARACTER)_,(CHARACTER)_)
+THEN
+DB_NOOP(1); //for Gustav story compilation
 //END_REGION
 EXITSECTION
 

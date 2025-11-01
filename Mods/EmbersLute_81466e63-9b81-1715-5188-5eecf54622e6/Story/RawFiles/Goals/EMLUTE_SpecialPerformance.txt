@@ -263,6 +263,8 @@ RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_1_Timer_Emlute",10);
 // Using timer to chain, since not sure if PlaySoundResource is immediate, or if async could mess up sequence.
 IF
 ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_1_Timer_Emlute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,1)
 THEN
@@ -270,6 +272,8 @@ PlaySoundResource(_HelperItem,_MusicSoundResource);
 RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_2_Timer_Emlute",100);
 IF
 ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_2_Timer_Emlute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,2)
 THEN
@@ -277,6 +281,8 @@ PlaySoundResource(_HelperItem,_MusicSoundResource);
 RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_3_Timer_Emlute",100);
 IF
 ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_3_Timer_Emlute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,3)
 THEN
@@ -284,6 +290,8 @@ PlaySoundResource(_HelperItem,_MusicSoundResource);
 RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_4_Timer_Emlute",100);
 IF
 ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_4_Timer_Emlute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,4)
 THEN
@@ -302,21 +310,19 @@ PROC_StopMusicOnItem(_Song,_HelperItem);
 NOT DB_ActiveSpecialPerformance_EmbersLute(_Performer,_Song,_HelperItem);
 ObjectTimerCancel(_HelperItem,"Emlute_DeleteHelperItem");
 ObjectTimerLaunch(_HelperItem,"Emlute_DeleteHelperItem",1000);
-IF
-ObjectTimerFinished((ITEM)_HelperItem,"Emlute_DeleteHelperItem")
-THEN
-PROC_GLO_SpellCast_CleanUp(_HelperItem,-1);
-RequestDelete(_HelperItem);
 
 PROC
 PROC_StopMusicOnItem((STRING)_Song,(ITEM)_HelperItem)
 THEN
+DB_StoppingPerformance_EmbersLute(_Song,_HelperItem);
 RealtimeObjectTimerLaunch(_HelperItem, "StopMusicOnItem_1_Timer_Emlute",10);
 
 // Forcing the sound events in sequence, as it seems to matter.
 // Using timer to chain, since not sure if PlaySoundResource is immediate, or if async could mess up sequence.
 IF
 ObjectTimerFinished((ITEM)_HelperItem, "StopMusicOnItem_1_Timer_Emlute")
+AND
+DB_StoppingPerformance_EmbersLute(_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource,1)
 THEN
@@ -324,10 +330,24 @@ PlaySoundResource(_HelperItem,_MusicSoundResource);
 RealtimeObjectTimerLaunch(_HelperItem, "StopMusicOnItem_2_Timer_Emlute",100);
 IF
 ObjectTimerFinished((ITEM)_HelperItem, "StopMusicOnItem_2_Timer_Emlute")
+AND
+DB_StoppingPerformance_EmbersLute(_Song,_HelperItem)
 AND 
 DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource,2)
 THEN
 PlaySoundResource(_HelperItem,_MusicSoundResource);
+
+IF
+ObjectTimerFinished((ITEM)_HelperItem,"Emlute_DeleteHelperItem")
+THEN
+PROC_GLO_SpellCast_CleanUp(_HelperItem,-1);
+RequestDelete(_HelperItem);
+IF
+ObjectTimerFinished((ITEM)_HelperItem,"Emlute_DeleteHelperItem")
+AND
+DB_StoppingPerformance_EmbersLute(_Song,_HelperItem)
+THEN
+NOT DB_StoppingPerformance_EmbersLute(_Song,_HelperItem);
 
 PROC
 PROC_DebugMusicState((CHARACTER)_Performer)

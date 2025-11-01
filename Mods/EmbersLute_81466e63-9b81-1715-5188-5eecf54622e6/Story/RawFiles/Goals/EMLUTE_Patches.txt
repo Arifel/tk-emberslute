@@ -83,6 +83,16 @@ NOT DB_SpecialPerformance_Mapping_EmbersLute(_,_)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_4_n_SequenceSoundEvents",0);
 
+// This is redundant, only added to stop Osiris being whiny about orphan queries
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_4_n_SequenceSoundEvents",_)
+AND
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute(_,_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_4_n_SequenceSoundEvents",0);
+
 IF
 SavegameLoaded()
 AND
@@ -103,6 +113,14 @@ NOT DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING
 NOT DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Drive_On_51280667-3665-446f-8c87-4345a9503cb8);
 NOT DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047);
 NOT DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
+NOT DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033,2);
@@ -116,6 +134,14 @@ DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Fig
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Drive_On_51280667-3665-446f-8c87-4345a9503cb8,3);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047,4);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737,1);
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_4_n_SequenceSoundEvents",1);
 
 IF

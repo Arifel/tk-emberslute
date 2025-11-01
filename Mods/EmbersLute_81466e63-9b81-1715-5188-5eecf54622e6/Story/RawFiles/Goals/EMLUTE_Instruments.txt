@@ -390,12 +390,40 @@ PROC_Emlute_RemovePassive(_Character, _PassiveToggle);
 // Patch 8 Photomode bug causes VFX to drop if it has a tag on equipment check
 // Specfic workaround for violin bows, let's splat the tag on the player temporarily
 //REGION
+// Reset the hacky tag on game load
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_PartOfTheTeam(_Character)
+AND
+IsTagged(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
+AND
+HasActiveStatus(_Character,"EMLUTE_VICIOUS_ROCKERY_GNOME",0)
+THEN
+ClearTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
+
+// Check the instrument equipped and decide whether to put hacky tag back or not
+IF
+LevelGameplayStarted(_,_)
+AND
+DB_PartOfTheTeam(_Character)
+AND
+GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
+AND
+IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
+AND
+IsTagged(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,0)
+THEN
+SetTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
+
 IF
 Equipped((ITEM)_Instrument, (CHARACTER)_Character)
 AND
 DB_Players(_Character)
 AND
 IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
+AND
+IsTagged(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,0)
 THEN
 SetTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
 
@@ -406,16 +434,18 @@ DB_Players(_Character)
 AND
 IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
 THEN
+ClearTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
 ObjectTimerLaunch(_Character,"ViolinBowPhotomodeHack_EmbersLute",1500);
 
+// Catch the instrument hotswap case after a short pause, put the tag back
 IF
 ObjectTimerFinished((CHARACTER)_Character,"ViolinBowPhotomodeHack_EmbersLute")
 AND
 GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
 AND
-IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,0)
+IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
 THEN
-ClearTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
+SetTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
 //END_REGION
 
 // Helpers

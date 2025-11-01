@@ -11,29 +11,29 @@ DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_
 DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",274000);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
 
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_065e0cda-6a6b-42e1-a1a7-ccd1ca1b793e);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_Close_Enter_ed771ea8-11c4-470b-80fb-231291e4f74f);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Endless_Spring_5d8656f7-b4c5-4c2a-88f2-f3a5528b5691);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)RaphaelsFinalAct_32bb5df9-997f-428d-95de-a6d425210f08);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Fight_Set_Raphael_On_ff12530d-562a-4555-832d-a501069cdf0b);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Drive_On_51280667-3665-446f-8c87-4345a9503cb8);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_065e0cda-6a6b-42e1-a1a7-ccd1ca1b793e,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WaterQueen",(GUIDSTRING)SE_CTY_WaterQueensHouse_Music_Close_Enter_ed771ea8-11c4-470b-80fb-231291e4f74f,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Endless_Spring_5d8656f7-b4c5-4c2a-88f2-f3a5528b5691,3);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)RaphaelsFinalAct_32bb5df9-997f-428d-95de-a6d425210f08,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Fight_Set_Raphael_On_ff12530d-562a-4555-832d-a501069cdf0b,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Drive_On_51280667-3665-446f-8c87-4345a9503cb8,3);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047,4);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982,1);
 
 // Some music events need to be steered through a sequence to get back to the music game state
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_End_85bdedd6-2e60-2e8c-0b31-86f8d25ac65c,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737,1);
 
 // Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.5,0.5,1);
@@ -255,11 +255,40 @@ DB_SpecialPerformance_HelperItemAudit_EmbersLute(_Song,_HelperItem);
 
 PROC
 PROC_PlayMusicOnItem((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem)
-AND 
-DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource)
 THEN
 DB_ActiveSpecialPerformance_EmbersLute((CHARACTER)_Performer,(STRING)_Song,(ITEM)_HelperItem);
+RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_1_Timer_Emlute",10);
+
+// Forcing the sound events in sequence, as it seems to matter.
+// Using timer to chain, since not sure if PlaySoundResource is immediate, or if async could mess up sequence.
+IF
+ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_1_Timer_Emlute")
+AND 
+DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,1)
+THEN
 PlaySoundResource(_HelperItem,_MusicSoundResource);
+RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_2_Timer_Emlute",100);
+IF
+ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_2_Timer_Emlute")
+AND 
+DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,2)
+THEN
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_3_Timer_Emlute",100);
+IF
+ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_3_Timer_Emlute")
+AND 
+DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,3)
+THEN
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+RealtimeObjectTimerLaunch(_HelperItem, "PlayMusicOnItem_4_Timer_Emlute",100);
+IF
+ObjectTimerFinished((ITEM)_HelperItem, "PlayMusicOnItem_4_Timer_Emlute")
+AND 
+DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,4)
+THEN
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+
 
 // Stops music on the lead performer and clears active performance cache
 PROC
@@ -281,8 +310,22 @@ RequestDelete(_HelperItem);
 
 PROC
 PROC_StopMusicOnItem((STRING)_Song,(ITEM)_HelperItem)
+THEN
+RealtimeObjectTimerLaunch(_HelperItem, "StopMusicOnItem_1_Timer_Emlute",10);
+
+// Forcing the sound events in sequence, as it seems to matter.
+// Using timer to chain, since not sure if PlaySoundResource is immediate, or if async could mess up sequence.
+IF
+ObjectTimerFinished((ITEM)_HelperItem, "StopMusicOnItem_1_Timer_Emlute")
 AND 
-DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource)
+DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource,1)
+THEN
+PlaySoundResource(_HelperItem,_MusicSoundResource);
+RealtimeObjectTimerLaunch(_HelperItem, "StopMusicOnItem_2_Timer_Emlute",100);
+IF
+ObjectTimerFinished((ITEM)_HelperItem, "StopMusicOnItem_2_Timer_Emlute")
+AND 
+DB_SpecialPerformance_Mapping_Off_EmbersLute(_Song,_MusicSoundResource,2)
 THEN
 PlaySoundResource(_HelperItem,_MusicSoundResource);
 

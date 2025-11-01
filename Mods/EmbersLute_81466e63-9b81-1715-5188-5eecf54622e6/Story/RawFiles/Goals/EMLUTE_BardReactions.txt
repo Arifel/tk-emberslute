@@ -390,6 +390,16 @@ HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 THEN
 RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK");
 
+// Teleporting for any reason should stop the crowd reactions
+IF
+Teleported((CHARACTER)_Performer,_,_,_,_,_,_,_,_)
+AND
+DB_PartOfTheTeam(_Performer)
+AND
+HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
+THEN
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK");
+
 // Note crowd size and trigger performance rewards
 IF
 StatusRemoved((CHARACTER)_Performer,_Status,_,_)

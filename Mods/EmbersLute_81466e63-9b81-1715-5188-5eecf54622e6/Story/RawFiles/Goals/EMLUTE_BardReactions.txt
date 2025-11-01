@@ -450,6 +450,8 @@ EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")
 AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
 AND
+QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
+AND
 GetDistanceTo(_NPC,_Performer,_Distance)
 AND
 _Distance < 3.5
@@ -460,6 +462,9 @@ IF
 EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")
 AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+AND
+// Avoid doing something silly like teleporting along with the performer
+QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
 AND
 GetDistanceTo(_NPC,_Performer,_Distance)
 AND
@@ -1772,6 +1777,19 @@ AND
 NOT DB_CantMove(_NPC)
 AND
 QRY_IsInRange(_NPC,_Performer,10.0)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CanDoActionType_EmbersLute((CHARACTER)_Performer,(CHARACTER)_NPC, (STRING)_Action)
+AND
+_Action == "Join"
+AND
+NOT DB_CantAct(_NPC)
+AND
+NOT DB_CantMove(_NPC)
+AND
+QRY_IsInRange(_NPC,_Performer,18.0)
 THEN
 DB_NOOP(1);
 

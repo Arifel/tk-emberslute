@@ -381,6 +381,22 @@ AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus)
 THEN
 NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus);
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD");
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT");
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY");
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_DANGEROUS");
+
+// No rewards if teleporting interrupts performance
+IF
+Teleported((CHARACTER)_Performer,_,_,_,_,_,_,_,_)
+AND
+DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus)
+THEN
+NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus);
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD");
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT");
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY");
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_DANGEROUS");
 
 // Trigger cancellation of any crowd reactions on entering combat
 IF

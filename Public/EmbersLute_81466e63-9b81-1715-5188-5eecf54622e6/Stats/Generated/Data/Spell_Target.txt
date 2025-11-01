@@ -303,7 +303,7 @@ new entry "Target_Grant_AllCustomMusic_Emlute"
 type "SpellData"
 data "SpellType" "Target"
 using "Target_Stop_Animations_Emlute"
-data "SpellProperties" "ApplyStatus(EMLUTE_GRANTALLCUSTOMMUSIC,100,10);"
+data "SpellProperties" "ApplyStatus(EMLUTE_GRANTALLCUSTOMMUSIC,100,100);"
 data "DisplayName" "h8d91b6a1g29a7g0496gf0a5ga297a5be7369;1"
 data "Description" "h212eb71bg9503g6a20gc20cg724082f96166;1"
 

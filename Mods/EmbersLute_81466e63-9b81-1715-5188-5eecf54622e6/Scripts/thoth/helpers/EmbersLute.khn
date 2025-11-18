@@ -212,3 +212,13 @@ function Emlute_IsNotPerforming_CE(entity)
 	local notPerforming = ~Emlute_IsPerforming(entity);
 	return ConditionResult(notPerforming.Result, {ConditionError("EmluteActivePerformance")})
 end
+
+function Emlute_TargetIsMusicCombatAlly(entity)
+	local entity = entity or context.Target
+	return (~Self(entity) & Ally(entity) & ~Dead(entity) & Character(entity) & ~Tagged('EMLUTE_TINY_CHARM',entity))
+end
+
+function Emlute_TargetIsMusicCombatEnemy(entity)
+	local entity = entity or context.Target
+	return (Enemy(entity) & ~Dead(entity) & Character(entity))
+end

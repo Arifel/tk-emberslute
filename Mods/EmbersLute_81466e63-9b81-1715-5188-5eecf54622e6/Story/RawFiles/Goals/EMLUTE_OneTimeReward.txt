@@ -8,6 +8,13 @@ DB_OneTimeRewards_EmbersLute(97,(ITEMROOT)Emlute_Book_GettingStartedVersion3_245
 DB_OneTimeRewards_EmbersLute(96,(ITEMROOT)Emlute_Book_Version_3_0_0_ChangeLog_285bdbfe-2e72-4f72-ac65-9fda54741525);
 
 KBSECTION
+IF
+LevelGameplayStarted(_,1)
+AND
+DB_Avatars(_Player)
+THEN
+TemplateAddTo((ITEMROOT)EmbersLute_MusicalSpritesCombat_1e7b4319-e589-4643-89e6-cd14c74cb386,_Player,1,0);
+
 //On loading or starting game, add the lutes to player inventory
 IF
 LevelGameplayStarted(_,_)

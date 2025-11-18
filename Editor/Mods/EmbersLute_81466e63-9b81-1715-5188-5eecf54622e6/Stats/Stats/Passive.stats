@@ -351,10 +351,12 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_ThePower" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f61b67dg08afg92e9gfbb2gd78262d50625" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0edd7310g2ed7g96a8ga3cega9b4735d78be" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_THEPOWER')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWER_SPRITES,100,-1);IF(not HasPassive('Emlute_Musical_Spirit_Portal')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1)" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not Combat() or (Combat() and not Tagged('EMLUTE_NO_COMBAT_JOIN'));" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted;OnCombatEnded" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
@@ -409,6 +411,9 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_WEEPINGDAWN')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA,100,-1)" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not Combat() or (Combat() and not Tagged('EMLUTE_NO_COMBAT_JOIN'));" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnCombatStarted;OnCombatEnded" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden;IsToggled;ToggledDefaultOn" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">

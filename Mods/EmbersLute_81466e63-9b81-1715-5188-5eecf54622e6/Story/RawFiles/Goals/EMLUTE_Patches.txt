@@ -3,7 +3,6 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
-
 // Version 2 mod patches
 //REGION
 
@@ -293,6 +292,110 @@ AND
 NOT DB_SpecialPerformance_Mapping_Off_EmbersLute(_,_)
 THEN
 DB_NOOP(1);
+//END_REGION
+
+//REGION V3.0.5
+// Auto-remove the Share Musical Gifts status on all party members
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_TempMusicSpirit",_)
+AND
+DB_PartOfTheTeam(_Character)
+AND
+HasActiveStatus(_Character,"EMLUTE_MUSICAL_SPIRIT_TEMPORARY",1)
+THEN
+RemoveStatus(_Character,"EMLUTE_MUSICAL_SPIRIT_TEMPORARY");
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_TempMusicSpirit",_)
+AND
+DB_PartOfTheTeam(_Character)
+AND
+HasActiveStatus(_Character,"EMLUTE_MUSICAL_SPIRIT_TEMPORARY",0)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements",0);
+
+// Auto-remove performing statuses if in combat
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",_)
+THEN
+TimerLaunch("RemovePerformIfDetectAura_EmbersLute_Timer",1000);
+TimerLaunch("RemoveEquippedWings_EmbersLute_Timer",900);
+TimerLaunch("RemoveVarnish_EmbersLute_Timer",800);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",_)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",0);
+//END_REGION
+
+//REGION remove combat music performance (helpers)
+IF
+TimerFinished("RemovePerformIfDetectAura_EmbersLute_Timer")
+THEN
+PROC_RemovePerformIfDetectAura_EmbersLute();
+
+PROC
+PROC_RemovePerformIfDetectAura_EmbersLute()
+AND
+DB_PartOfTheTeam(_Character)
+AND
+DB_Is_InCombat(_Character,_)
+THEN
+PROC_GLO_BreakConcentration(_Character);
+RemoveStatus(_Character,"EMLUTE_PERFORM_THEPOWER");
+RemoveStatus(_Character,"EMLUTE_PERFORM_BARDDANCE");
+RemoveStatus(_Character,"EMLUTE_PERFORM_STARGAZING");
+RemoveStatus(_Character,"EMLUTE_PERFORM_DOS2_1");
+RemoveStatus(_Character,"EMLUTE_PERFORM_DOS2_2");
+RemoveStatus(_Character,"EMLUTE_PERFORM_DOS2_3");
+RemoveStatus(_Character,"EMLUTE_SPIRIT_MGMT_AURA");
+RemoveStatus(_Character,"EMLUTE_SPIRIT_MGMT_AURA_GNOMES");
+//END_REGION
+
+//REGION unequip celestial wings
+IF
+TimerFinished("RemoveEquippedWings_EmbersLute_Timer")
+THEN
+PROC_RemoveEquippedWings_EmbersLute();
+
+PROC
+PROC_RemoveEquippedWings_EmbersLute()
+AND
+DB_PartOfTheTeam(_Character)
+AND
+IsTagged(_Character,(TAG)EMLUTE_CELESTIAL_SUPPRESS_WINGS_OVERRIDE_ca9f24ef-43b0-4e42-a15b-3e4c4e1e59fc,1)
+AND
+GetEquippedItem(_Character, "Underwear", _Underwear)
+THEN
+Unequip(_Character,_Underwear);
+//END_REGION
+
+//REGION remove varnish on spirit instruments
+IF
+TimerFinished("RemoveVarnish_EmbersLute_Timer")
+THEN
+PROC_RemoveVarnishOnSpiritInstruments_EmbersLute();
+
+PROC
+PROC_RemoveVarnishOnSpiritInstruments_EmbersLute()
+AND
+DB_PartOfTheTeam(_Character)
+AND
+IsTagged(_Character, (TAG)EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED_50c850f0-fbc0-4c24-b8b8-68b37ddf0965,1)
+AND
+IsTagged(_Character, (TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883, 1)
+AND
+GetEquippedItem(_Character, "MusicalInstrument", _Instrument)
+THEN
+Unequip(_Character,_Instrument);
 //END_REGION
 
 // This is a hidden spell I'll stick on the tiefling bard

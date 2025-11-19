@@ -26,7 +26,7 @@ KBSECTION
 // DLC SPELL TRIGGERS
 // Think I can re-use the same logic as the Gustav script here for the DLC spell triggers
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+//REGION
 // Player with Divinity DLC enabled equips an instrument from the Ember's Lute mod.
 IF
 Equipped(_Instrument, _Character)
@@ -140,6 +140,7 @@ AND
 DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute(_Tag, _Spell)
 THEN
 RemoveSpell(_Character, _Spell, 1);
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

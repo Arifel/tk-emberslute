@@ -984,4 +984,7 @@
   <content contentuid="hffc9f334gb290g6064gde11g186d049713d8" version="1">A re-usable dark green dye with pale gold metallics. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
   <content contentuid="hcce6b29fg514dg7d85gace7g26381d41757a" version="1">Dark Purple Instrument Dye</content>
   <content contentuid="hd831a12agcda5g76acge6e1g8863de8fdf76" version="1">A re-usable dark purple dye. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
+  <content contentuid="hf817cbaagf47eg0866g18ffgf21baf6f4f23" version="3">Your musical conductor is too far away. Get closer!</content>
+  <content contentuid="he441cac9g1c79gb8c5g670fgadcda842bd42" version="1">There is no performer nearby.</content>
+  <content contentuid="hd50a77ddg5dadgdf77g4a44gb875a0e15087" version="1">There is a lead performer nearby. Perform music to join in.</content>
 </contentList>

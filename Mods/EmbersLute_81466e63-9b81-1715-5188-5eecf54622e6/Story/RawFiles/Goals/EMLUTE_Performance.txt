@@ -1,0 +1,50 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+// Adding some restrictions to enforce only one lead performer at a time
+// Aim is to improve stability by preventing scenarios that BG3 likes to CTD about
+//REGION
+IF
+TagSet((CHARACTER)_Performer,(TAG)EMLUTE_HAS_CONDUCTOR_AURA_d455c3eb-6993-4aa2-80f5-f3d5bf473967)
+THEN
+ClearTag(_Performer, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
+PROC_TagRestOfPartyForLeadPerformer(_Performer);
+
+IF
+TagCleared((CHARACTER)_Performer,(TAG)EMLUTE_HAS_CONDUCTOR_AURA_d455c3eb-6993-4aa2-80f5-f3d5bf473967)
+THEN
+ClearTag(_Performer, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
+PROC_TagRemoveRestOfPartyForLeadPerformer(_Performer);
+
+PROC
+PROC_TagRestOfPartyForLeadPerformer((CHARACTER)_Performer)
+AND
+DB_PartOfTheTeam(_PartyMember)
+AND
+_PartyMember != _Performer
+AND
+IsTagged(_PartyMember,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d,0)
+THEN
+SetTag(_PartyMember, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
+
+PROC
+PROC_TagRemoveRestOfPartyForLeadPerformer((CHARACTER)_Performer)
+AND
+DB_PartOfTheTeam(_PartyMember)
+AND
+_PartyMember != _Performer
+AND
+IsTagged(_PartyMember,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d,1)
+THEN
+ClearTag(_PartyMember, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
+//END_REGION
+
+IF
+TagSet((CHARACTER)_Test,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d)
+THEN
+ApplyStatus(_Test,"BLADE_WARD",6.0);
+EXITSECTION
+
+ENDEXITSECTION

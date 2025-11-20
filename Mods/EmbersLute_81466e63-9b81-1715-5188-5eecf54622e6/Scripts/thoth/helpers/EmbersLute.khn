@@ -10,7 +10,8 @@ end
 
 function Emlute_TargetHasManagementAura(entity)
 	local entity = entity or context.Target
-	return HasStatus('EMLUTE_SPIRIT_MGMT_AURA',entity) | HasStatus('EMLUTE_SPIRIT_MGMT_AURA_DEPLETED',entity) | HasStatus('EMLUTE_SPIRIT_MGMT_AURA_GNOMES',entity)
+	return Tagged('EMLUTE_HAS_CONDUCTOR_AURA',entity)
+	--return HasStatus('EMLUTE_SPIRIT_MGMT_AURA',entity) | HasStatus('EMLUTE_SPIRIT_MGMT_AURA_DEPLETED',entity) | HasStatus('EMLUTE_SPIRIT_MGMT_AURA_GNOMES',entity)
 end
 
 function Emlute_HasMusicJoinStatus(entity)
@@ -221,4 +222,20 @@ end
 function Emlute_TargetIsMusicCombatEnemy(entity)
 	local entity = entity or context.Target
 	return (Enemy(entity) & ~Dead(entity) & Character(entity))
+end
+
+-- if there is a performer in range, no error condition since can auto join
+-- if there are no performers in range, then check outside range and return error if found
+function Emlute_LeadPerformerTooFar_CE(source)
+	local source = source or context.Source
+	local ce = Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER',source) & ~Tagged('EMLUTE_CONDUCTOR_AURA',source)
+	return ConditionResult(ce.Result,{ConditionError("EmluteMainPerformerTooFar")})
+end
+
+-- if there is a performer in range, no error condition since can auto join
+-- if there are no performers in range, then check outside range and return error if found
+function Emlute_CanStartOrJoinPerformance_CE(source)
+	local source = source or context.Source
+	local ce = Tagged('EMLUTE_CONDUCTOR_AURA',source) & Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER',source) | ~Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER',source)
+	return ConditionResult(ce.Result,{ConditionError("EmluteMainPerformerTooFar")})
 end

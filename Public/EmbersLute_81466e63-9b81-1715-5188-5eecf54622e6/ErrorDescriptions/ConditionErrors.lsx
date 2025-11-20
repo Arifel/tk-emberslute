@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="200"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="ConditionErrors">
         <node id="root">
             <children>
@@ -37,6 +37,12 @@
                     <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
                     <attribute id="Identifier" type="FixedString" value="EmluteActivePerformance"/>
                     <attribute id="UUID" type="guid" value="b2706cbb-50f5-4c64-b50e-da591776399e"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hf817cbaagf47eg0866g18ffgf21baf6f4f23" version="3"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="EmluteMainPerformerTooFar"/>
+                    <attribute id="UUID" type="guid" value="a293f068-32a0-45ac-80a2-54fa7b568ba6"/>
                 </node>
                 <node id="ConditionErrors">
                     <attribute id="DisplayName" type="TranslatedString" handle="h400b6c8bg3d44g5a14g78ecg3641c1d2b952" version="1"/>

@@ -239,7 +239,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_ThePower_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f1308056-8a05-4979-b097-4f2636f31d1c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWER,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_THEPOWER,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_THEPOWER_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,1);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
@@ -252,7 +252,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_BardDance_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4f310a22-7772-4462-8eaa-d2f77455f210" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BARDDANCE,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_BARDDANCE,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_BARDDANCE_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_2,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
@@ -265,7 +265,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stargazing_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="db6ef2b3-97f5-40b5-9c95-b72702e347d3" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_STARGAZING,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_STARGAZING,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_STARGAZING_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_3,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
@@ -278,7 +278,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_1_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="899d0ded-7bb8-4d07-b4e0-659ff2665fd0" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_1,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_1,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_1_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
@@ -291,7 +291,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_2_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8f7b4213-0488-47ba-9d3e-a57f59df9507" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_2,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
@@ -304,7 +304,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_3_Combat_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="d01b2df4-38e6-4476-9b9e-69cc6ed20cb7" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Combat_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_3_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);ApplyStatus(EMLUTE_MUSIC_COMBAT_OVERRIDE,100,-1);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="ImmediateCast;HasVerbalComponent;DontAbortPerforming;IsConcentration" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
@@ -330,7 +330,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_ThePower_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="865ed572-4e59-4777-b099-ad0c5033387d" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWER,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_THEPOWER,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_THEPOWER_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_ThePower" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>
@@ -341,7 +341,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_BardDance_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="60d98d5c-51ec-42e8-98b6-768efa75042d" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_BARDDANCE,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_BARDDANCE,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_BARDDANCE_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_2,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_BardDance" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>
@@ -352,7 +352,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stargazing_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="50cafdf6-4ba5-4a8f-a344-418e3affe427" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_STARGAZING,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_12100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_OldTimeBattles" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>
@@ -363,7 +363,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_1_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e824f193-9771-49ee-81cf-1fd7abdd1cdc" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_1,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_1,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_1_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_OfDivinityAndSin" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>
@@ -374,7 +374,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_2_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="a8ecb166-265b-4fe0-ba3b-824f359ebdbf" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_2,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_SingForMe" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>
@@ -385,7 +385,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_3_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="af3385e5-6c62-4b76-8372-c6b02f6f41d7" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_3_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_TheQueensHighSeas" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>

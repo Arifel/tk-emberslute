@@ -44,7 +44,12 @@ ClearTag(_PartyMember, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a
 IF
 TagSet((CHARACTER)_Test,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d)
 THEN
-ApplyStatus(_Test,"BLADE_WARD",6.0);
+DebugText(_Test, "Lead Performer Tag Set");
+
+IF
+TagCleared((CHARACTER)_Test,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d)
+THEN
+DebugText(_Test, "Lead Performer Tag Cleared");
 EXITSECTION
 
 ENDEXITSECTION

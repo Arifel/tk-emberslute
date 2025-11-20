@@ -66,7 +66,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_MusicalSprites_DazzlingDance_Start" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE') and not Tagged('EMLUTE_PERFORM_AURA');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(EMLUTE_DAZZLINGDANCE_1,100,-1)" />
       </fields>
     </stat_object>

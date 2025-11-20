@@ -352,7 +352,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stargazing_Ensemble_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="50cafdf6-4ba5-4a8f-a344-418e3affe427" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Ensemble_Emlute" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_12100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_STARGAZING,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_STARGAZING_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Song_OldTimeBattles" />
         <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
       </fields>
@@ -406,6 +406,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_ThePower_Augment_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="79c572d4-6ab6-4a1e-bc1a-559a2d4f894b" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Augment_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_THEPOWER,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_THEPOWER_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1F613C" is_substat="false">
@@ -414,6 +415,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_BardDance_Augment_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="039b5ad7-e937-4323-9069-c67ae151b94c" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Augment_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_BARDDANCE,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_BARDDANCE_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_2,100,-1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1F613C" is_substat="false">
@@ -422,6 +424,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Stargazing_Augment_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="553e4ab6-1b04-4a71-8890-7c95aac7a326" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Augment_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_STARGAZING,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_STARGAZING_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1F613C" is_substat="false">
@@ -430,6 +433,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_1_Augment_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5d37b854-0885-4e8f-926d-6db5803e668b" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Augment_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_1,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_1_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1F613C" is_substat="false">
@@ -438,6 +442,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_2_Augment_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="ad2f94d5-3b6b-42fb-a2e2-4b8c6b196f26" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Augment_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_2_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF1F613C" is_substat="false">
@@ -446,6 +451,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DoS2_3_Augment_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="71e64910-1265-4bad-bc1c-f7840f55c4a7" />
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Bard_Perform_Augment_Emlute" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_3,100,-1);TARGET:IF(not Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_DOS2_3_SPRITES,100,-1);TARGET:IF(Tagged('EMLUTE_PERFORM_AURA')):ApplyStatus(EMLUTE_PERFORM_ADD_ANIM_1,100,-1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">

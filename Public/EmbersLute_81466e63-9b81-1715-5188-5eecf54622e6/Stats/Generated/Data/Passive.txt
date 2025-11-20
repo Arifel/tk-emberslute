@@ -49,7 +49,7 @@ new entry "Emlute_MusicalSprites_DazzlingDance_Start"
 type "PassiveData"
 data "Properties" "IsHidden"
 data "StatsFunctorContext" "OnStatusApplied"
-data "Conditions" "StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE');"
+data "Conditions" "StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE') and not Tagged('EMLUTE_PERFORM_AURA');"
 data "StatsFunctors" "IF(not HasStatus('EMLUTE_DAZZLINGDANCE_2',context.Source) and not HasStatus('EMLUTE_DAZZLINGDANCE_3',context.Source)):ApplyStatus(EMLUTE_DAZZLINGDANCE_1,100,-1)"
 
 new entry "Emlute_DarkSprites"

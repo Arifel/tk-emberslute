@@ -236,7 +236,7 @@ end
 -- also disabled if in combat and tagged as not allowed
 function Emlute_AutoJoinPerformanceEnabled(source)
 	local source = source or context.Source
-	local hasAura = Tagged('EMLUTE_HAS_CONDUCTOR_AURA',source) | Tagged('EMLUTE_PERFORM_AURA',source) | Tagged('EMLUTE_LEGEND_AURA',source)
+	local hasAura = Tagged('EMLUTE_HAS_ANY_AURA',source)
 	local combatJoinAllowed = Combat() and ~Tagged('EMLUTE_NO_COMBAT_JOIN',source)
 	local canJoin = ~hasAura & (~Combat() | combatJoinAllowed)
 	return canJoin

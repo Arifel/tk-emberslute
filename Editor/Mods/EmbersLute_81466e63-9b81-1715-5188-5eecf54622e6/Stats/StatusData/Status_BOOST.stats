@@ -180,7 +180,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_ThePower" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -193,7 +193,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_BardDance" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -206,7 +206,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_OldTimeBattles" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -219,7 +219,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_MainTheme" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -232,7 +232,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_SingForMe" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -245,7 +245,7 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_HighSeas" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="LightBlue" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_MUSIC_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -779,7 +779,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(HasPassive('Emlute_Transient_Spirit')):ApplyStatus(EMLUTE_KEEP_ALIVE);TARGET:IF(HasPassive('Emlute_Musical_Spirit',context.Target) and ((Emlute_IsVocalist() and not Tagged('EMLUTE_VOCALS_ON',context.Source)) or (Emlute_HasDrumEquipped() and not Tagged('EMLUTE_DRUMS_ON',context.Source)) or (Emlute_HasFluteEquipped() and not Tagged('EMLUTE_FLUTES_ON',context.Source)) or (Emlute_HasViolinEquipped() and not Tagged('EMLUTE_VIOLINS_ON',context.Source)) or (Emlute_HasLyreEquipped() and not Tagged('EMLUTE_LYRES_ON',context.Source)) or (Emlute_HasLuteEquipped() and not Tagged('EMLUTE_LUTES_ON',context.Source)))):ApplyStatus(EMLUTE_SILENCED_SPIRIT,100,-1);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_CONDUCTOR_AURA,100,-1)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not IsStatusEvent(StatusEvent.OnMove) or not HasAllyWithinRange('SG_Incapacitated',2,'EMLUTE_TINY_CHARM')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnEquip;OnUnequip;OnMove" enumeration_type_name="StatusEvent" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_CONDUCTOR_AURA);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_HAS_CONDUCTOR_AURA);Tag(EMLUTE_HAS_ANY_AURA);" />
       </fields>
     </stat_object>
     <stat_object color="#FF110782" is_substat="false">

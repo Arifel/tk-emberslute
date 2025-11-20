@@ -44,12 +44,22 @@ ClearTag(_PartyMember, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a
 IF
 TagSet((CHARACTER)_Test,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d)
 THEN
-DebugText(_Test, "Lead Performer Tag Set");
+DebugText(_Test, "My Party Has a Lead Performer Tag Set");
 
 IF
 TagCleared((CHARACTER)_Test,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d)
 THEN
-DebugText(_Test, "Lead Performer Tag Cleared");
+DebugText(_Test, "My Party Has a Lead Performer Tag Cleared");
+
+IF
+TagSet((CHARACTER)_Test,(TAG)EMLUTE_PERFORM_AURA_620cd30e-449e-4a75-baf8-4a003a2e5801)
+THEN
+DebugText(_Test, "I'm in a music performance aura");
+
+IF
+TagSet((CHARACTER)_Test,(TAG)EMLUTE_LEGEND_AURA_12b4df24-ba5b-4ae1-a406-6125b8110001)
+THEN
+DebugText(_Test, "I'm in a music legend aura");
 EXITSECTION
 
 ENDEXITSECTION

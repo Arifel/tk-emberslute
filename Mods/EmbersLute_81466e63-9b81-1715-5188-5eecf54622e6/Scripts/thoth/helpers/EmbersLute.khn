@@ -83,27 +83,38 @@ function Emlute_StatusIsJoinStatus(entity)
 	return (emluteJoin | emluteCustomJoin)
 end
 
--- This is an experiment to invert the logic for interrupting performances.
--- The intention is to make this mod more defendable against other mods that do
--- things which interrupt music performances, like continuously apply statuses.
+-- Invert logic for interrupting music performances
 function Emlute_StatusSHOULDInterruptPerform()
     return Emlute_StatusIsPerform() | StatusId('EMLUTE_SILENCED_SPIRIT')
 end
 
+-- Reminder to self: I split it out like this, because whenever I try to test combat state in khonsu, the logic breaks and I can't figure out why
 function Emlute_EventBreaksPerformance()
-	return ((not IsStatusEvent(StatusEvent.OnStatusApplied)) or (IsStatusEvent(StatusEvent.OnStatusApplied) and Emlute_StatusSHOULDInterruptPerform()))
+	return ((~IsStatusEvent(StatusEvent.OnStatusApplied)) | (IsStatusEvent(StatusEvent.OnStatusApplied) & Emlute_StatusSHOULDInterruptPerform()))
 end
-
--- Actions which I think should end an in-combat performance (force concentration break)
 function Emlute_EventBreaksInCombatPerformance()
 	return (IsStatusEvent(StatusEvent.OnSpellCast) | IsStatusEvent(StatusEvent.OnEquip) | IsStatusEvent(StatusEvent.OnUnequip) | IsStatusEvent(StatusEvent.OnCombatEnded))
 end
 
-function Emlute_EventBreaksPerformanceCanMove(entity)
-	local entity = entity or context.Source
-	local removeStatus = ((not IsStatusEvent(StatusEvent.OnMove)) and Emlute_EventBreaksPerformance())  
-	local removeRange = (IsStatusEvent(StatusEvent.OnMove) and (not HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE',entity)))
-	return (removeStatus or removeRange)
+function Emlute_EventBreaksMusicJoinPerformance()
+	local statusRemove = IsStatusEvent(StatusEvent.OnStatusApplied) & Emlute_StatusSHOULDInterruptPerform()
+	local moveRemove = IsStatusEvent(StatusEvent.OnMove) & ~Tagged('EMLUTE_PERFORM_AURA')
+	local anyOtherEvent = ~IsStatusEvent(StatusEvent.OnStatusApplied) & ~IsStatusEvent(StatusEvent.OnMove)	
+	return (statusRemove | moveRemove | anyOtherEvent)
+end
+
+function Emlute_EventBreaksLegendPerformance()
+	local statusRemove = IsStatusEvent(StatusEvent.OnStatusApplied) & Emlute_StatusSHOULDInterruptPerform()
+	local moveRemove = IsStatusEvent(StatusEvent.OnMove) & ~HasStatus('EMLUTE_IN_PERFORM_MOVE_RANGE')
+	local anyOtherEvent = ~IsStatusEvent(StatusEvent.OnStatusApplied) & ~IsStatusEvent(StatusEvent.OnMove)	
+	return (statusRemove | moveRemove | anyOtherEvent)
+end
+
+function Emlute_EventBreaksLegendJoinPerformance()
+	local statusRemove = IsStatusEvent(StatusEvent.OnStatusApplied) & Emlute_StatusSHOULDInterruptPerform()
+	local moveRemove = IsStatusEvent(StatusEvent.OnMove) & ~Tagged('EMLUTE_LEGEND_AURA')
+	local anyOtherEvent = ~IsStatusEvent(StatusEvent.OnStatusApplied) & ~IsStatusEvent(StatusEvent.OnMove)	
+	return (statusRemove | moveRemove | anyOtherEvent)
 end
 
 function Emlute_IsPerformingBaseGame(entity)

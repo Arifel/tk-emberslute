@@ -3,7 +3,7 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
-// Adding some restrictions to enforce only one lead performer at a time
+// Adding some restrictions to enforce only one lead conductor at a time
 // Aim is to improve stability by preventing scenarios that BG3 likes to CTD about
 //REGION
 IF

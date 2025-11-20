@@ -239,3 +239,9 @@ function Emlute_CanStartOrJoinPerformance_CE(source)
 	local ce = Tagged('EMLUTE_CONDUCTOR_AURA',source) & Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER',source) | ~Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER',source)
 	return ConditionResult(ce.Result,{ConditionError("EmluteMainPerformerTooFar")})
 end
+
+function Emlute_AutoJoinPerformanceEnabled(source)
+	local source = source or context.Source
+	local canJoin = ~Tagged('EMLUTE_HAS_CONDUCTOR_AURA',source) & (~Combat() | (Combat() and ~Tagged('EMLUTE_NO_COMBAT_JOIN',source)))
+	return canJoin
+end

@@ -7,10 +7,18 @@ KBSECTION
 // Aim is to improve stability by preventing scenarios that BG3 likes to CTD about
 //REGION
 IF
-TagSet((CHARACTER)_Performer,(TAG)EMLUTE_HAS_CONDUCTOR_AURA_d455c3eb-6993-4aa2-80f5-f3d5bf473967)
+TagSet((CHARACTER)_Performer,(TAG)EMLUTE_HAS_MUSIC_AURA_cc15edea-cdb8-448b-8bcb-57d6cb9c2985)
 THEN
 ClearTag(_Performer, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
 PROC_TagRestOfPartyForLeadPerformer(_Performer);
+
+IF
+TagCleared((CHARACTER)_Performer,(TAG)EMLUTE_HAS_MUSIC_AURA_cc15edea-cdb8-448b-8bcb-57d6cb9c2985)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_HAS_CONDUCTOR_AURA_d455c3eb-6993-4aa2-80f5-f3d5bf473967,0)
+THEN
+ClearTag(_Performer, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
+PROC_TagRemoveRestOfPartyForLeadPerformer(_Performer);
 
 IF
 TagCleared((CHARACTER)_Performer,(TAG)EMLUTE_HAS_CONDUCTOR_AURA_d455c3eb-6993-4aa2-80f5-f3d5bf473967)

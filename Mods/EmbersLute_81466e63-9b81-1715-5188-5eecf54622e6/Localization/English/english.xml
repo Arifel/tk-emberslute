@@ -987,4 +987,8 @@
   <content contentuid="hf817cbaagf47eg0866g18ffgf21baf6f4f23" version="3">Your musical conductor is too far away. Get closer!</content>
   <content contentuid="he441cac9g1c79gb8c5g670fgadcda842bd42" version="1">There is no performer nearby.</content>
   <content contentuid="hd50a77ddg5dadgdf77g4a44gb875a0e15087" version="1">There is a lead performer nearby. Perform music to join in.</content>
+  <content contentuid="hf4cf0d71gbd48g6f95g781bg9598087ef857" version="1">Grant Musical Gifts</content>
+  <content contentuid="h419816adg03f8g0f86gd1d1g6ab495df7b2d" version="1">Instrument sprites will grant musical gifts to your target. The target will auto join in with music if the lead perfomer is using one of Ember's instruments.</content>
+  <content contentuid="h41e7c607gf5c2g3e61g91c4ge4792f746fb9" version="1">Revoke Musical Gifts</content>
+  <content contentuid="hfada51cag0b17gd4b5ge9f9g42c427eb0bc3" version="1">Remove the musical gifts granted to your target. They will stop automatically joining in with musical performances.</content>
 </contentList>

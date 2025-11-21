@@ -356,5 +356,31 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h212eb71bg9503g6a20gc20cg724082f96166" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27f82058-f264-4ebb-901a-fef403e7fc56" />
+        <field name="Name" type="NameTableFieldDefinition" value="Share_MusicalSpirits_Single_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a1514974-90a8-440c-abe1-c07e11463020" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_AURA_VORTEX_INSTRUMENTS_VFX,100,1);ApplyStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY,100,-1);" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Combat" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Party() and not Dead() and not Self();" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ShareMusicalSpirits" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf4cf0d71gbd48g6f95g781bg9598087ef857" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h419816adg03f8g0f86gd1d1g6ab495df7b2d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFFF00FF" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3501c269-b33c-4378-9f34-f31ff2df3503" />
+        <field name="Name" type="NameTableFieldDefinition" value="Share_MusicalSpirits_Remove_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="27f82058-f264-4ebb-901a-fef403e7fc56" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and HasStatus('EMLUTE_MUSICAL_SPIRIT_TEMPORARY');" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41e7c607gf5c2g3e61g91c4ge4792f746fb9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfada51cag0b17gd4b5ge9f9g42c427eb0bc3" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="RemoveStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY)" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

@@ -60,6 +60,11 @@ IF
 TagSet((CHARACTER)_Test,(TAG)EMLUTE_LEGEND_AURA_12b4df24-ba5b-4ae1-a406-6125b8110001)
 THEN
 DebugText(_Test, "I'm in a music legend aura");
+
+IF
+TagCleared((CHARACTER)_Test,(TAG)EMLUTE_LEGEND_AURA_12b4df24-ba5b-4ae1-a406-6125b8110001)
+THEN
+DebugText(_Test, "I have left a music legend aura");
 EXITSECTION
 
 ENDEXITSECTION

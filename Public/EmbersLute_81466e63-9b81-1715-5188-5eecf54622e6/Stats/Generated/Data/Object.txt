@@ -81,6 +81,11 @@ type "Object"
 using "EMBERS_LUTE_THANKYOU_NOTE"
 data "RootTemplate" "285bdbfe-2e72-4f72-ac65-9fda54741525"
 
+new entry "EMBERS_LUTE_BOOK_CHANGELOG_V3_0_5"
+type "Object"
+using "EMBERS_LUTE_BOOK_CHANGELOG_V3"
+data "RootTemplate" "f7b2c630-c127-4031-9711-882105d10b15"
+
 new entry "EMBERS_LUTE_BOOK_VERSION"
 type "Object"
 using "EMBERS_LUTE_THANKYOU_NOTE"

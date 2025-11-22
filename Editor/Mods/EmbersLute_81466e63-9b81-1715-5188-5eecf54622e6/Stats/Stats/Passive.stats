@@ -38,7 +38,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h59c40e85g303dg41acg1cafg1e1d048057c4" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Passive_MusicalConductor" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Share_MusicalSpirits_Emlute);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Share_MusicalSpirits_Container_Emlute);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);" />
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="82" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h630492fag00c2g47b7g2c0bgc4ca8f9269d8" version="1" />
         <field name="LoreDescription" type="TranslatedStringTableFieldDefinition" handle="h961fc30fg6b1eg97e0g6419gb9d238ab4796" version="1" />

@@ -368,6 +368,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf4cf0d71gbd48g6f95g781bg9598087ef857" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h419816adg03f8g0f86gd1d1g6ab495df7b2d" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY,100,-1)" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Share_MusicalSpirits_Container_Emlute" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -380,6 +382,9 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41e7c607gf5c2g3e61g91c4ge4792f746fb9" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfada51cag0b17gd4b5ge9f9g42c427eb0bc3" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="RemoveStatus(EMLUTE_MUSICAL_SPIRIT_TEMPORARY)" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Share_MusicalSpirits_Container_Emlute" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Abjuration_DispelMagic" />
       </fields>
     </stat_object>
   </stat_objects>

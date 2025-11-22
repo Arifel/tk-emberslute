@@ -30,7 +30,7 @@ data "LoreDescription" "h961fc30fg6b1eg97e0g6419gb9d238ab4796;1"
 data "Icon" "EmbersLute_Passive_MusicalConductor"
 data "PriorityOrder" "82"
 data "Properties" "Highlighted"
-data "Boosts" "UnlockSpell(Shout_Share_MusicalSpirits_Emlute);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);"
+data "Boosts" "UnlockSpell(Shout_Share_MusicalSpirits_Container_Emlute);Tag(EMLUTE_SPIRIT_INSTRUMENT_EQUIPPED);"
 
 new entry "Emlute_MusicalSprites_DazzlingDance"
 type "PassiveData"

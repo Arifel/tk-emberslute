@@ -995,4 +995,6 @@
   <content contentuid="h67a72394gf89eg3aafga7c6g009f4fbe0cd4" version="1">At the end of each round, any nearby allies with less than [1] hit points will receive [2] turns of &lt;LSTag Type="Status" Tooltip="BLADE_WARD"&gt;Blade Ward&lt;/LSTag&gt;.</content>
   <content contentuid="h56441505gc528g1e16gba85gf5bf2e05a1cb" version="1">|Hidden| Hidden</content>
   <content contentuid="h335454b8g5dc6g102bgf12cgd291b3e2e5f6" version="1">|Hidden| Hidden</content>
+  <content contentuid="h2c69b232g56ebgaa4bgef10g98e0cb233613" version="1">Share Musical Gifts</content>
+  <content contentuid="h4db2fbb7g0387g492ega953gcee336185087" version="1">Instrument sprites will grant musical gifts to your nearby party. They will auto join in with music if the lead perfomer is using one of Ember's instruments.</content>
 </contentList>

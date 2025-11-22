@@ -57,10 +57,10 @@ DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute(_Tag,_Status)
 AND
 IsTagged(_Instrument,_Tag,1)
 THEN
-PROC_ApplyCombatBuffToParty_EmbersLute(_Status);
+PROC_ApplyCombatBuffToParty_EmbersLute(_Status,_Performer);
 
 PROC
-PROC_ApplyCombatBuffToParty_EmbersLute((STRING)_Status)
+PROC_ApplyCombatBuffToParty_EmbersLute((STRING)_Status, (CHARACTER)_Cause)
 AND
 DB_Players(_Player)
 AND
@@ -68,7 +68,7 @@ IsTagged(_Player,(TAG)EMLUTE_HAS_ANY_AURA_3623a4cd-f630-4ba8-9ca2-0914d345802c,0
 AND
 HasActiveStatus(_Player,_Status,0)
 THEN
-ApplyStatus(_Player,_Status,-1.0);
+ApplyStatus(_Player,_Status,-1.0,0,_Cause);
 
 IF
 TagCleared((CHARACTER)_Performer,(TAG)EMLUTE_COMBAT_SUPPORT_ACTIVE_d8cc0958-1777-4a4a-97d8-e0ca48cdfeee)

@@ -358,6 +358,24 @@ AND
 DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_DoS2_1_Combat_Emlute")
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_CombatSpellTypoFix",0);
+
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",_)
+AND
+NOT DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
+THEN
+DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",1);
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",_)
+AND
+DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",0);
 //END_REGION
 
 //REGION remove combat music performance (helpers)

@@ -334,6 +334,30 @@ AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",_)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",0);
+
+// Fix a dumb typo in some spell names
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_CombatSpellTypoFix",_)
+AND
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_1_Emlute")
+THEN
+NOT DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_1_Emlute");
+NOT DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_2_Emlute");
+NOT DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_Combat_DoS2_3_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_DoS2_1_Combat_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_DoS2_2_Combat_Emlute");
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_DoS2_3_Combat_Emlute");
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_CombatSpellTypoFix",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_CombatSpellTypoFix",_)
+AND
+DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_DoS2_1_Combat_Emlute")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_CombatSpellTypoFix",0);
 //END_REGION
 
 //REGION remove combat music performance (helpers)

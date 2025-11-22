@@ -1,11 +1,15 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-
+//DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_2591e6f8-c1cb-4002-a631-6e4b58b92879)
+//DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute((TAG)EMLUTE_VFX_CELESTIAL_FALLEN_2403cf12-c7ee-44f0-856a-d593198e698c)
+DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute((TAG)EMLUTE_VFX_DARKSPRITES_2c23d854-9dc3-4b11-b044-e8bc5b54af0c, "EMLUTE_DAZZLINGDANCE_SUPPORT_PROTECC");
+//DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute((TAG)EMLUTE_VFX_HAUNTED_4fa397b1-21b1-458d-acd3-1391e79fa23a)
+DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute((TAG)EMLUTE_VFX_SPRITES_a0c53732-1d76-4222-b93c-35ea3bdcda8d, "EMLUTE_DAZZLINGDANCE_SUPPORT_PROTECC");
 KBSECTION
 // Adding some restrictions to enforce only one lead conductor at a time
 // Aim is to improve stability by preventing scenarios that BG3 likes to CTD about
-//REGION
+//REGION music performance range tracker
 IF
 TagSet((CHARACTER)_Performer,(TAG)EMLUTE_HAS_ANY_AURA_3623a4cd-f630-4ba8-9ca2-0914d345802c)
 THEN
@@ -39,6 +43,49 @@ AND
 IsTagged(_PartyMember,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d,1)
 THEN
 ClearTag(_PartyMember, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
+//END_REGION
+
+// This exists because auras suck and I'm bored of trying to stop them tripping CTDs
+// Maybe at some point I nuke all the auras and replace with Osiris
+//REGION music combat support
+IF
+TagSet((CHARACTER)_Performer,(TAG)EMLUTE_COMBAT_SUPPORT_ACTIVE_d8cc0958-1777-4a4a-97d8-e0ca48cdfeee)
+AND
+GetEquippedItem(_Performer,"MusicalInstrument",_Instrument)
+AND
+DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute(_Tag,_Status)
+AND
+IsTagged(_Instrument,_Tag,1)
+THEN
+PROC_ApplyCombatBuffToParty_EmbersLute(_Status);
+
+PROC
+PROC_ApplyCombatBuffToParty_EmbersLute((STRING)_Status)
+AND
+DB_Players(_Player)
+AND
+IsTagged(_Player,(TAG)EMLUTE_HAS_ANY_AURA_3623a4cd-f630-4ba8-9ca2-0914d345802c,0)
+AND
+HasActiveStatus(_Player,_Status,0)
+THEN
+ApplyStatus(_Player,_Status,-1.0);
+
+IF
+TagCleared((CHARACTER)_Performer,(TAG)EMLUTE_COMBAT_SUPPORT_ACTIVE_d8cc0958-1777-4a4a-97d8-e0ca48cdfeee)
+AND
+DB_InstrumentVFX_ToCombatSupportStatus_EmbersLute(_Tag,_Status)
+THEN
+PROC_RemoveCombatBuffFromParty_EmbersLute(_Status);
+
+PROC
+PROC_RemoveCombatBuffFromParty_EmbersLute((STRING)_Status)
+AND
+DB_Players(_Player)
+AND
+HasActiveStatus(_Player,_Status,0)
+THEN
+RemoveStatus(_Player,_Status);
+
 //END_REGION
 
 //REGION finger flares vfx

@@ -933,7 +933,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9a326244-76ae-4982-b86a-26d846a66624" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_MUSICALSPRITES_SANCTUARY" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd72c9c45g62fbg752dg1900g6d5d51e02f08" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd72c9c45g62fbg752dg1900g6d5d51e02f08" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h878de251g8dc8gce9dg7b9cg97ffaca0e170" version="3" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Emlute_IsPerforming()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
@@ -1087,35 +1087,28 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="e25ca3dd-e19b-4d1f-91f8-eb7c730095b7" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_SUPPORT" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf6055bddgf4e3g10eegf3dfg9ffada3346f8" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67a72394gf89eg3aafga7c6g009f4fbe0cd4" version="4" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(10);1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf6055bddgf4e3g10eegf3dfg9ffada3346f8" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67a72394gf89eg3aafga7c6g009f4fbe0cd4" version="5" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ApplyGlowMaps" />
-        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Emlute_IsPerformingSprites()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_DAZZLINGDANCE_SUPPORT_AOE_PROC,100,0)" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FF5C3434" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="1e0a0db2-047a-4f2c-8cbe-efd07311b0b3" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_SUPPORT_AOE_PROC" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56441505gc528g1e16gba85gf5bf2e05a1cb" version="1" />
-        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicSupportCombatAlly() and not HasStatus('BLADE_WARD')):ApplyStatus(EMLUTE_DAZZLINGDANCE_SUPPORT_PROTECC)" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IsInvulnerable" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_COMBAT_SUPPORT" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_COMBAT_SUPPORT_ACTIVE);" />
       </fields>
     </stat_object>
     <stat_object color="#FF5C3434" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4a58632d-a602-48a3-833e-a6bc6b21cfd4" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_SUPPORT_PROTECC" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h335454b8g5dc6g102bgf12cgd291b3e2e5f6" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IsInvulnerable" enumeration_type_name="StatusPropertyFlags" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h335454b8g5dc6g102bgf12cgd291b3e2e5f6" version="2" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f4155e8g860fg29e3g6401gf12d4f09279b" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);1.5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FastMovement" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceMultiplier(1.5);ActionResource(Movement,4.5,0);" />
       </fields>
     </stat_object>
     <stat_object color="#FF611515" is_substat="false">

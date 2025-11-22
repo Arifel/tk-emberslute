@@ -330,8 +330,8 @@ IF
 TagCleared(_Character,(TAG)EMLUTE_INSTRUMENT_VARNISH_6dfa4afa-a78c-4240-98c8-3d6b615d8883)
 THEN
 DebugText(_Character, "Varnish status removed from player");
-ObjectTimerCancel(_Character,"EmbersLute_VarnishedRemoved");
-ObjectTimerLaunch(_Character,"EmbersLute_VarnishedRemoved",1500);
+RealtimeObjectTimerCancel(_Character,"EmbersLute_VarnishedRemoved");
+RealtimeObjectTimerLaunch(_Character,"EmbersLute_VarnishedRemoved",1500);
 IF
 ObjectTimerFinished((CHARACTER)_Character, "EmbersLute_VarnishedRemoved")
 AND
@@ -354,8 +354,8 @@ Concatenate("Remove check timer for: ", _PassiveToggle, _DebugMsg)
 THEN
 // THROW TIMER
 DebugText(_Character,_DebugMsg);
-ObjectTimerCancel(_Character,_PassiveToggle);
-ObjectTimerLaunch(_Character,_PassiveToggle,_Delay);
+RealtimeObjectTimerCancel(_Character,_PassiveToggle);
+RealtimeObjectTimerLaunch(_Character,_PassiveToggle,_Delay);
 // CATCH TIMER
 // Only remove toggle if no longer needed.
 IF
@@ -435,7 +435,7 @@ AND
 IsTagged(_Instrument,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023,1)
 THEN
 ClearTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
-ObjectTimerLaunch(_Character,"ViolinBowPhotomodeHack_EmbersLute",1500);
+RealtimeObjectTimerLaunch(_Character,"ViolinBowPhotomodeHack_EmbersLute",1500);
 
 // Catch the instrument hotswap case after a short pause, put the tag back
 IF

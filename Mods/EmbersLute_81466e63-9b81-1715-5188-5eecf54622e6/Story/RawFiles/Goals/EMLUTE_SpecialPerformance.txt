@@ -522,8 +522,8 @@ EnteredLevel((CHARACTER)_Summon,(CHARACTERROOT)_Template, _)
 AND
 DB_CountercharmFix_EmbersLute(_Template,_TimerName,_Duration,_)
 THEN
-ObjectTimerCancel(_Summon,_TimerName);
-ObjectTimerLaunch(_Summon,_TimerName,_Duration);
+RealtimeObjectTimerCancel(_Summon,_TimerName);
+RealtimeObjectTimerLaunch(_Summon,_TimerName,_Duration);
 
 IF
 ObjectTimerFinished((CHARACTER)_Summon,_TimerName)

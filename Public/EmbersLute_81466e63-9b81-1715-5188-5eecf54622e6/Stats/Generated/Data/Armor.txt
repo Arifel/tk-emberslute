@@ -58,7 +58,7 @@ using "EMBERS_LUTE_MUSICALSPRITES_BLACK"
 data "RootTemplate" "1e7b4319-e589-4643-89e6-cd14c74cb386"
 data "ValueUUID" "a57433fc-8be8-4efb-ac6b-a625b3bdcd18"
 data "Boosts" "UnlockSpell(Shout_Bard_Perform_Emlute);UnlockSpell(Shout_Bard_Perform_Combat_Emlute);AC(1);RollBonus(SavingThrow,1)"
-data "PassivesOnEquip" "Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_MusicalSprites_DazzlingDance;Emlute_MusicalSprites_DazzlingDance_Start;"
+data "PassivesOnEquip" "Emlute_ManagementAura;Emlute_EnchantedInstrument;Emlute_MusicalConductor;Emlute_SummonOnPerform_Drum;Emlute_SummonOnPerform_Violin;Emlute_SummonOnPerform_Flute;Emlute_SummonOnPerform_Lyre;Emlute_MusicalSprites_DazzlingDance;Emlute_MusicalSprites_DazzlingDance_Start;Emlute_MusicalSprites_DazzlingDance_Join;"
 data "ComboCategory" "DyableArmor"
 
 new entry "EMBERS_LUTE_VICIOUSROCKERY"

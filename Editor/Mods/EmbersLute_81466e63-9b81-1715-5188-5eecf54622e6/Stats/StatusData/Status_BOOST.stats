@@ -1044,10 +1044,10 @@
         <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Emlute_IsPerforming()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_MUSICALSPRITES_SANCTUARY,100,10)" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_MUSICALSPRITES_SANCTUARY,100,3)" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_1" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_1,100,-1);TARGET:IF(Emlute_TargetIsMusicCombatEnemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_1,100,-1)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_1);TARGET:IF(Emlute_TargetIsMusicCombatEnemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Status_DazzlingDance1" />
       </fields>
     </stat_object>
@@ -1058,7 +1058,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2da3b6cb-6371-4a5a-bfdf-767e2823cc25" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h44995a87gdfe4ga674ga43dg7d157d928c6d" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h652118d2gd13dg2fbeg1c16g3e8f6bdfc6db" version="2" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_2,100,-1);TARGET:IF(Emlute_TargetIsMusicCombatEnemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_2,100,-1)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_2);TARGET:IF(Emlute_TargetIsMusicCombatEnemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_2)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DAZZLINGDANCE_1')):RemoveStatus(EMLUTE_DAZZLINGDANCE_1);BreakConcentration()" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_2" />
@@ -1072,7 +1072,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2da3b6cb-6371-4a5a-bfdf-767e2823cc25" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6146c296g34beg6a02gac95gbdc481ef528a" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8bb2e71aga30cgceb3g4e0bg86930218f023" version="2" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_3,100,-1);TARGET:IF(Emlute_TargetIsMusicCombatEnemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_3,100,-1)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_ALLYBONUS_3);TARGET:IF(Emlute_TargetIsMusicCombatEnemy()):ApplyStatus(EMLUTE_DAZZLINGDANCE_DEBUFF_3)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('EMLUTE_DAZZLINGDANCE_2')):RemoveStatus(EMLUTE_DAZZLINGDANCE_2);BreakConcentration()" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_3" />
@@ -1081,6 +1081,41 @@
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_SPRITES_DAZZLINGDANCE_USESPELL,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Status_DazzlingDance3" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="40%" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5C3434" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e25ca3dd-e19b-4d1f-91f8-eb7c730095b7" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_SUPPORT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf6055bddgf4e3g10eegf3dfg9ffada3346f8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67a72394gf89eg3aafga7c6g009f4fbe0cd4" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="50%;2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ApplyGlowMaps" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndRound" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Emlute_IsPerformingSprites()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_DAZZLINGDANCE_SUPPORT_AOE_PROC,100,0)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="BreakConcentration()" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5C3434" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e0a0db2-047a-4f2c-8cbe-efd07311b0b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_SUPPORT_AOE_PROC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h56441505gc528g1e16gba85gf5bf2e05a1cb" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="10" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF(Emlute_TargetIsMusicCombatAlly()):ApplyStatus(EMLUTE_DAZZLINGDANCE_SUPPORT_PROTECC)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IsInvulnerable" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF5C3434" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a58632d-a602-48a3-833e-a6bc6b21cfd4" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_DAZZLINGDANCE_SUPPORT_PROTECC" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h335454b8g5dc6g102bgf12cgd291b3e2e5f6" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IsInvulnerable" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(BLADE_WARD,100,2)" />
       </fields>
     </stat_object>
     <stat_object color="#FF611515" is_substat="false">

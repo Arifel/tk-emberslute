@@ -1109,6 +1109,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4.5);1.5" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_FastMovement" />
         <field name="Boosts" type="StringTableFieldDefinition" value="JumpMaxDistanceMultiplier(1.5);ActionResource(Movement,4.5,0);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Emlute_IsPerformingSprites()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF611515" is_substat="false">

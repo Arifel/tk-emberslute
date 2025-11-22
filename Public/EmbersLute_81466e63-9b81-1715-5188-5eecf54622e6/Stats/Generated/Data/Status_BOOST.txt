@@ -932,6 +932,8 @@ data "Description" "h0f4155e8g860fg29e3g6401gf12d4f09279b;1"
 data "DescriptionParams" "Distance(4.5);1.5"
 data "Icon" "PassiveFeature_FastMovement"
 data "Boosts" "JumpMaxDistanceMultiplier(1.5);ActionResource(Movement,4.5,0);"
+data "RemoveConditions" "not Emlute_IsPerformingSprites()"
+data "RemoveEvents" "OnStatusRemoved;OnCombatEnded"
 data "StatusPropertyFlags" "DisableOverhead"
 
 new entry "EMLUTE_SPRITES_DAZZLINGDANCE_USESPELL"

@@ -70,7 +70,7 @@ end
 function Emlute_StatusIsPerform()
 	local baseGamePerform = Emlute_StatusIsPerformBaseGame()
 	local emlutePerform1 = Emlute_StatusIsPerformWithSpirits()
-	local emlutePerform2 = StatusId('EMLUTE_PERFORM_THEPOWER_NO_AURA') | StatusId('EMLUTE_PERFORM_BARDDANCE_NO_AURA') | StatusId('EMLUTE_PERFORM_STARGAZING_NO_AURA') | StatusId('EMLUTE_PERFORM_DOS2_1_NO_AURA') | StatusId('EMLUTE_PERFORM_DOS2_2_NO_AURA') | StatusId('EMLUTE_PERFORM_DOS2_3_NO_AURA') | StatusId('EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA') | StatusId('EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA') | StatusId('EMLUTE_PERFORM_WELIVE_NO_AURA') | StatusId('EMLUTE_PERFORM_HARPYSONG_NO_AURA') | StatusId('EMLUTE_PERFORM_WATERQUEEN_NO_AURA')| StatusId('EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA') | StatusId('EMLUTE_PERFORM_FINALACT_NO_AURA') 
+	local emlutePerform2 = StatusId('EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA') | StatusId('EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA') | StatusId('EMLUTE_PERFORM_WELIVE_NO_AURA') | StatusId('EMLUTE_PERFORM_HARPYSONG_NO_AURA') | StatusId('EMLUTE_PERFORM_WATERQUEEN_NO_AURA')| StatusId('EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA') | StatusId('EMLUTE_PERFORM_FINALACT_NO_AURA') 
 	local emlutePerform3 = StatusId('EMLUTE_PERFORM_THEPOWER_SPRITES') | StatusId('EMLUTE_PERFORM_BARDDANCE_SPRITES') | StatusId('EMLUTE_PERFORM_STARGAZING_SPRITES') | StatusId('EMLUTE_PERFORM_DOS2_1_SPRITES') | StatusId('EMLUTE_PERFORM_DOS2_2_SPRITES') | StatusId('EMLUTE_PERFORM_DOS2_3_SPRITES')
 	local emluteOther = StatusId('EMLUTE_DANCING_SPIRIT')
 	return (baseGamePerform | emlutePerform1 | emlutePerform2 | emlutePerform3 | emluteOther)
@@ -122,10 +122,15 @@ function Emlute_IsPerformingBaseGame(entity)
 	return HasAnyStatus({'PERFORM_POSITIVE_THEPOWER','PERFORM_POSITIVE_STARGAZING','PERFORM_POSITIVE_BARDDANCE','PERFORM_POSITIVE_DOS2_1','PERFORM_POSITIVE_DOS2_2','PERFORM_POSITIVE_DOS2_3'},{},{},entity)
 end
 
+function Emlute_IsPerformingSprites(entity)
+	local entity = entity or context.Source
+	return HasAnyStatus({'EMLUTE_PERFORM_THEPOWER_SPRITES','EMLUTE_PERFORM_BARDDANCE_SPRITES','EMLUTE_PERFORM_STARGAZING_SPRITES','EMLUTE_PERFORM_DOS2_1_SPRITES','EMLUTE_PERFORM_DOS2_2_SPRITES','EMLUTE_PERFORM_DOS2_3_SPRITES'},{},{},entity)
+end
+
 function Emlute_IsPerforming(entity)
 	local entity = entity or context.Source
 	local musicStatus = HasAnyStatus({'EMLUTE_PERFORM_THEPOWER','EMLUTE_PERFORM_BARDDANCE','EMLUTE_PERFORM_STARGAZING','EMLUTE_PERFORM_DOS2_1','EMLUTE_PERFORM_DOS2_2','EMLUTE_PERFORM_DOS2_3','EMLUTE_PERFORM_WEEPINGDAWN','EMLUTE_PERFORM_ENDLESSSPRING','EMLUTE_PERFORM_WELIVE','EMLUTE_PERFORM_HARPYSONG','EMLUTE_PERFORM_WATERQUEEN','EMLUTE_PERFORM_THEPOWERVOCALS','EMLUTE_PERFORM_FINALACT'},{},{},entity)
-	local noAuraStatus = HasAnyStatus({'EMLUTE_PERFORM_THEPOWER_NO_AURA','EMLUTE_PERFORM_BARDDANCE_NO_AURA','EMLUTE_PERFORM_STARGAZING_NO_AURA','EMLUTE_PERFORM_DOS2_1_NO_AURA','EMLUTE_PERFORM_DOS2_2_NO_AURA','EMLUTE_PERFORM_DOS2_3_NO_AURA','EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA','EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA','EMLUTE_PERFORM_WELIVE_NO_AURA','EMLUTE_PERFORM_HARPYSONG_NO_AURA','EMLUTE_PERFORM_WATERQUEEN_NO_AURA','EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA','EMLUTE_PERFORM_FINALACT_NO_AURA'},{},{},entity)
+	local noAuraStatus = HasAnyStatus({'EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA','EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA','EMLUTE_PERFORM_WELIVE_NO_AURA','EMLUTE_PERFORM_HARPYSONG_NO_AURA','EMLUTE_PERFORM_WATERQUEEN_NO_AURA','EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA','EMLUTE_PERFORM_FINALACT_NO_AURA'},{},{},entity)
 	local otherStatus = HasAnyStatus({'EMLUTE_DANCING_SPIRIT'},{},{},entity)
 	return (musicStatus | noAuraStatus | otherStatus)
 end
@@ -227,7 +232,7 @@ end
 
 function Emlute_TargetIsMusicCombatAlly(entity)
 	local entity = entity or context.Target
-	return (~Self(context.Source,entity) & Ally() & ~Dead(entity) & Character(entity) & ~Tagged('EMLUTE_TINY_CHARM',entity))
+	return (~Self(context.Source,entity) & Ally() & ~Dead(entity) & Character(entity) & ~Tagged('EMLUTE_TINY_CHARM',entity) & ~Tagged('EMLUTE_HAS_ANY_AURA',entity))
 end
 
 function Emlute_TargetIsMusicCombatEnemy(entity)
@@ -251,4 +256,14 @@ function Emlute_AutoJoinPerformanceEnabled(source)
 	local combatJoinAllowed = Combat() and ~Tagged('EMLUTE_NO_COMBAT_JOIN',source)
 	local canJoin = ~hasAura & (~Combat() | combatJoinAllowed)
 	return canJoin
+end
+
+-- only lead performer starts main combat aura
+function Emlute_CanStartCombatAuraMain()
+	return (StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE') & ~Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER'))
+end
+
+-- other performers will support, if in range of lead performer
+function Emlute_CanStartCombatAuraSupport()
+	return (StatusId('EMLUTE_MUSIC_COMBAT_OVERRIDE') & Tagged('EMLUTE_PERFORM_AURA') & Tagged('EMLUTE_PARTY_HAS_LEAD_PERFORMER'))
 end

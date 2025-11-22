@@ -235,6 +235,11 @@ function Emlute_TargetIsMusicCombatAlly(entity)
 	return (~Self(context.Source,entity) & Ally() & ~Dead(entity) & Character(entity) & ~Tagged('EMLUTE_TINY_CHARM',entity) & ~Tagged('EMLUTE_HAS_ANY_AURA',entity))
 end
 
+function Emlute_TargetIsMusicSupportCombatAlly(entity)
+	local entity = entity or context.Target
+	return (Ally() & ~Dead(entity) & Character(entity) & ~Tagged('EMLUTE_TINY_CHARM',entity))
+end
+
 function Emlute_TargetIsMusicCombatEnemy(entity)
 	local entity = entity or context.Target
 	return (Enemy(entity) & ~Dead(entity) & Character(entity))

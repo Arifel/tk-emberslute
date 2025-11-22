@@ -992,7 +992,7 @@
   <content contentuid="h41e7c607gf5c2g3e61g91c4ge4792f746fb9" version="1">Revoke Musical Gifts</content>
   <content contentuid="hfada51cag0b17gd4b5ge9f9g42c427eb0bc3" version="1">Remove the musical gifts granted to your target. They will stop automatically joining in with musical performances.</content>
   <content contentuid="hf6055bddgf4e3g10eegf3dfg9ffada3346f8" version="1">Sprite's Ward</content>
-  <content contentuid="h67a72394gf89eg3aafga7c6g009f4fbe0cd4" version="1">At the end of each round, any nearby allies with less than [1] hit points will receive [2] turns of &lt;LSTag Type="Status" Tooltip="BLADE_WARD"&gt;Blade Ward&lt;/LSTag&gt;.</content>
+  <content contentuid="h67a72394gf89eg3aafga7c6g009f4fbe0cd4" version="3">At the end of each round, any allies within [1] will receive [2] turn of &lt;LSTag Type="Status" Tooltip="BLADE_WARD"&gt;Blade Ward&lt;/LSTag&gt;.</content>
   <content contentuid="h56441505gc528g1e16gba85gf5bf2e05a1cb" version="1">|Hidden| Hidden</content>
   <content contentuid="h335454b8g5dc6g102bgf12cgd291b3e2e5f6" version="1">|Hidden| Hidden</content>
   <content contentuid="h2c69b232g56ebgaa4bgef10g98e0cb233613" version="1">Share Musical Gifts</content>

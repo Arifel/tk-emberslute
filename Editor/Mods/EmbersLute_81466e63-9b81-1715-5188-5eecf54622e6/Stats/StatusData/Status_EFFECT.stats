@@ -80,8 +80,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e2616ac0-2715-4e91-a8d4-a8e5a0826c0e" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_GOLD_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6f8e3499-11c1-4c16-bbe9-26392d399d1b" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnUnequip" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
@@ -89,8 +90,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="49a9bac7-2bae-48ec-85e4-d85bfbfc3e51" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_PURPLE_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="559b11d4-ffa7-4ddf-9cd3-df53af923bee" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnUnequip" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
@@ -98,8 +100,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="0c5a3a14-c33e-4fd9-8811-1ff59f555382" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_GREEN_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="6ad16325-8426-4610-86ef-3214a7f5afab" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnUnequip" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF8C00" is_substat="false">
@@ -107,8 +110,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="812f5a79-7a64-4541-bf6d-7aee21279c78" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_HAND_BLUE_VFX" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_HAND_VFX" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="83114b3a-9660-4f9c-96cf-e65b6efc9b2f" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnUnequip" enumeration_type_name="StatusEvent" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

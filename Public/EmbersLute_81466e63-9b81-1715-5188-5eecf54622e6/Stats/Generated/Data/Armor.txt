@@ -113,7 +113,7 @@ type "Armor"
 using "ARM_Underwear_Humans"
 data "RootTemplate" "9a859ca1-8f11-40be-80aa-39c3ebcaa10a"
 data "Rarity" "Rare"
-data "Boosts" "Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute)"
+data "Boosts" "Skill(Performance,3);Proficiency(MusicalInstrument);UnlockSpell(Shout_FingerFlares_Container_Emlute);Tag(EMLUTE_PANTS_OF_PERFORMANCE_EQUIPPED)"
 data "PassivesOnEquip" "Light_BonusCantrip;"
 
 new entry "EMBERS_LUTE_REWARD_SPIN_SLIPPERS"

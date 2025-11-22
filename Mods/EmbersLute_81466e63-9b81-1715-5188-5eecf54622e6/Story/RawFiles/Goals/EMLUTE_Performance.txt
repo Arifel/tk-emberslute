@@ -41,6 +41,23 @@ THEN
 ClearTag(_PartyMember, (TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d);
 //END_REGION
 
+//REGION finger flares vfx
+IF
+TagCleared((CHARACTER)_Character, (TAG)EMLUTE_PANTS_OF_PERFORMANCE_EQUIPPED_7492ea6d-3277-4cdd-a57b-9c4d0cf6f6a6)
+AND
+IsTagged(_Character, (TAG)EMLUTE_FINGER_FLARES_2cbf865a-1c8a-405a-9e0c-edb857e2bd40, 1)
+THEN
+AddSpell(_Character, "Shout_RemoveFingerFlares_NoContainer_Emlute", 0, 0);
+
+IF
+TagCleared((CHARACTER)_Character, (TAG)EMLUTE_FINGER_FLARES_2cbf865a-1c8a-405a-9e0c-edb857e2bd40)
+AND
+HasSpell(_Character,"Shout_RemoveFingerFlares_NoContainer_Emlute",1)
+THEN
+RemoveSpell(_Character, "Shout_RemoveFingerFlares_NoContainer_Emlute",0);
+//END_REGION
+
+//REGION debug and test
 IF
 TagSet((CHARACTER)_Test,(TAG)EMLUTE_PARTY_HAS_LEAD_PERFORMER_10b86b2c-8cdf-44fc-a920-a7c5562faf6d)
 THEN
@@ -65,6 +82,7 @@ IF
 TagCleared((CHARACTER)_Test,(TAG)EMLUTE_LEGEND_AURA_12b4df24-ba5b-4ae1-a406-6125b8110001)
 THEN
 DebugText(_Test, "I have left a music legend aura");
+//END_REGION
 EXITSECTION
 
 ENDEXITSECTION

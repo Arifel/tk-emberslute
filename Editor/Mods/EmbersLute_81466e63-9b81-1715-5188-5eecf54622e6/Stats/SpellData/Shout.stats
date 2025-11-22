@@ -1185,6 +1185,14 @@
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
+    <stat_object color="#FF556B2F" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0569b54-093f-4e00-a868-9bf0ca390d6c" />
+        <field name="Name" type="NameTableFieldDefinition" value="RemoveFingerFlares_NoContainer_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4ae3f001-88d4-4441-83dd-a96edd932295" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="f9a65a92-47da-46a1-9cea-1e574def22ff" />

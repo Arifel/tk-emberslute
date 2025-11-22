@@ -1004,6 +1004,12 @@ data "DisplayName" "h1e4a9284gec9fg710bg38dag7613649d2596;1"
 data "Description" "hcff324c6gcae6g9ecegccffg2f1ec3664e41;1"
 data "FollowUpOriginalSpell" ""
 
+new entry "Shout_RemoveFingerFlares_NoContainer_Emlute"
+type "SpellData"
+data "SpellType" "Shout"
+using "Shout_RemoveFingerFlares_Emlute"
+data "SpellContainerID" ""
+
 new entry "Shout_RingOfDarkness_Emlute"
 type "SpellData"
 data "SpellType" "Shout"

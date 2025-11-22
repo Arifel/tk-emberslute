@@ -11,6 +11,10 @@ DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_SPIN_SLIPPERS");
 DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_CRITICAL_MOCKERY");
 DB_StatusCleanUp_EmbersLute("EMLUTE_REWARD_PARRY");
 DB_StatusCleanUp_EmbersLute("EMLUTE_ANNOYING_LUTE_VFX");
+DB_StatusCleanUp_EmbersLute("EMLUTE_HAND_GOLD_VFX");
+DB_StatusCleanUp_EmbersLute("EMLUTE_HAND_PURPLE_VFX");
+DB_StatusCleanUp_EmbersLute("EMLUTE_HAND_GREEN_VFX");
+DB_StatusCleanUp_EmbersLute("EMLUTE_HAND_BLUE_VFX");
 
 DB_SpellCleanUp_EmbersLute("Shout_ConfigManager_Cont_Emlute");
 

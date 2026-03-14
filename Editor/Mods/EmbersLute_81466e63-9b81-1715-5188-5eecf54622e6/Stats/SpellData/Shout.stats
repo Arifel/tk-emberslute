@@ -1564,7 +1564,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="51a59e53-a94e-44e2-bbbd-56f19c0d184a" />
         <field name="Name" type="NameTableFieldDefinition" value="Reset_Facts_Container_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="aa49bc3d-cdcb-4a99-af41-4535350a93f3" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Grant_AllCustomMusic_Emlute;Target_Stop_Animations_Emlute;Shout_Stop_AllBardCrimes_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;Shout_Reset_MusicPlaying_Emlute;Shout_Init_Version3_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Target_Grant_AllCustomMusic_Emlute;Target_Stop_Animations_Emlute;Shout_Stop_AllBardCrimes_Emlute;Shout_Reset_BardReactions_Emlute;Shout_Reset_InstrumentFacts_Emlute;Shout_Reset_ScriptedVFXFacts_Emlute;Shout_Reset_CustomPerformanceFacts_Emlute;Shout_Reset_UniqueRewards_Emlute;Shout_Reset_MusicPlaying_Emlute;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a315039ga492gd2c1gaa1cg24865fbce7dd" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6a9a219gf093g003cg054cg9ae5dc00e886" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8c817240g6f86g26fag3607gb72abf22562a" version="2" />

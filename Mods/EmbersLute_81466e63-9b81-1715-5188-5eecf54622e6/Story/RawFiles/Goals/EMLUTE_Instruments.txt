@@ -489,23 +489,14 @@ THEN
 DB_BardicInspirationBonusConsumed_EmbersLute(_Character);
 RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
 
-// When unequipped, clear the status but don't clear the granted flag if already consumed
-IF
-TagCleared((CHARACTER)_Character,(TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79)
-AND
-HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 1)
-AND
-DB_BardicInspirationBonusConsumed_EmbersLute(_Character)
-THEN
-RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
-
-// When unequipped, throw a timer to test for the tag again after a second and ensure we're clear of a hot swap scenario
+// When unequipped, throw a timer to be sure the tag is still cleared after a second
+// (To catch case where two instruments with the tag are swapped in inventory slot, rather than removed outright) 
 IF
 TagCleared((CHARACTER)_Character,(TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79)
 AND
 HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 1)
 THEN
-RealtimeObjectTimerLaunch(_Character,"EmbersLute_EnchantedInstrumentUnequipped_Timer",1500);
+RealtimeObjectTimerLaunch(_Character,"EmbersLute_EnchantedInstrumentUnequipped_Timer",2200);
 
 // If the charge is consumed, clear the status but retain the granted flag to prevent subsequent charges awarded
 IF

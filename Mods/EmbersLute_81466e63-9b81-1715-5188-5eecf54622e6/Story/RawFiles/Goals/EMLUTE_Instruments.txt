@@ -122,6 +122,7 @@ AddSpell(_Player, "Shout_ConfigManager_Cont_Emlute", 1, 1);
 // we don't have to worry about managing a config clean up process.
 //
 // Boilerplate lessss goooo. I can rewrite this smarter. But will I.
+// Yes I know my logic flags are inconsistent. It's because I hate myself ok shut up.
 //REGION
 IF
 UsingSpell(_Caster,"Shout_Config_SuppressMusicVFX_Emlute",_,_,_)
@@ -238,6 +239,19 @@ UsingSpell(_Caster,"Shout_Config_EnableEasyRewardMode_Emlute",_,_,_)
 THEN
 DebugText(_Caster, "Enabling easy performance rewards");
 SetTag(_Caster,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+
+IF
+UsingSpell(_Caster,"Shout_Config_SuppressBardicInspirationBuff_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Disabling Bardic Inspiration action resource buff");
+ClearTag(_Caster,(TAG)EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_b4bec563-e20b-40bb-a8e7-0d47ceb096a1);
+UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
+IF
+UsingSpell(_Caster,"Shout_Config_EnableBardicInspirationBuff_Emlute",_,_,_)
+THEN
+DebugText(_Caster, "Enabling Bardic Inspiration action resource buff");
+SetTag(_Caster,(TAG)EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_b4bec563-e20b-40bb-a8e7-0d47ceb096a1);
 UseSpell(_Caster,"Shout_Update_Preferences_Emlute",_Caster);
 
 IF

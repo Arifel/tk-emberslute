@@ -1009,4 +1009,8 @@
   <content contentuid="h2ee8162dg67ddg0b01g0fcfgc3c609d0bcfb" version="2">Technical status to trigger an osiris event for managing the inspiration resource tracking</content>
   <content contentuid="ha77793fdg4781g5a51g3f6eg05be7ccf567e" version="1">|HIDDEN| Hidden</content>
   <content contentuid="ha0ab6785g434eg9b01g37d6g63f235b9a328" version="1">Optionally grants an additional action resource for bardic inspiration</content>
+  <content contentuid="h73ddd084g4f32gfd77g5337g12feadf700ae" version="1">Disable Inspiration Resource Buff</content>
+  <content contentuid="h13455306g2609gdb81gbdf8g51c7f5ef7203" version="1">Equipping an instrument with the Enchanted Performances passive, will not grant an additional Action Resource for Bardic Inspiration.</content>
+  <content contentuid="h14aa0eefgd590g6470g2e39g73b3d2bdbd05" version="1">Enable Inspiration Resource Buff</content>
+  <content contentuid="heeae491dg3b91g5d2ag5e78g2ff298c72350" version="1">Equipping an instrument with the Enchanted Performances passive, will grant an additional Action Resource for Bardic Inspiration (one use per day).</content>
 </contentList>

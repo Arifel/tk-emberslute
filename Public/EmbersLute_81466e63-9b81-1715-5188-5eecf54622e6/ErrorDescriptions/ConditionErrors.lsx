@@ -206,6 +206,18 @@
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_SAFEZONES_OFF_False"/>
                     <attribute id="UUID" type="guid" value="4b10b970-de43-471d-8623-e12f2c5ec1e9"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h3a34aefcg3a15g6f6ag60f8g512a6bd07560" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_True"/>
+                    <attribute id="UUID" type="guid" value="7c98ee15-b670-4bb9-b9c3-754513e6b814"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="he26825feg8517g9139gc2b8g8ef8a1208714" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_False"/>
+                    <attribute id="UUID" type="guid" value="12c5d363-fb81-42fb-a853-d92033e1edde"/>
+                </node>
             </children>
         </node>
     </region>

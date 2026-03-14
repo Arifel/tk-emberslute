@@ -302,5 +302,23 @@
         <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_33" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7c98ee15-b670-4bb9-b9c3-754513e6b814" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_True" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a34aefcg3a15g6f6ag60f8g512a6bd07560" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_34" />
+        <field name="UUID" type="IdTableFieldDefinition" value="12c5d363-fb81-42fb-a853-d92033e1edde" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Tag_EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he26825feg8517g9139gc2b8g8ef8a1208714" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

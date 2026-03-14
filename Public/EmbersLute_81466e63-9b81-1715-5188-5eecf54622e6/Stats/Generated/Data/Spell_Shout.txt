@@ -1262,7 +1262,7 @@ data "Description" "h97e06f5ege329g6532g4c25g843d4b707680;1"
 data "ExtraDescription" "hcc55a20ag5b9eg2d12g9729g30590771325b;2"
 data "RequirementConditions" "not Tagged('EMLUTE_CONFIG_EASYREWARDS_ON') and not Tagged('EMLUTE_CONFIG_SHOWMANSHIP_OFF');"
 
-new entry "Shout_Config_EnableSafeZzones_Emlute"
+new entry "Shout_Config_EnableSafeZones_Emlute"
 type "SpellData"
 data "SpellType" "Shout"
 using "Shout_Config_SuppressMusicVFX_Emlute"

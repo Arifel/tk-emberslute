@@ -1494,7 +1494,7 @@
     <stat_object color="#FF0D0C2E" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c26cec82-49ef-430a-a702-f7aecbf12b95" />
-        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSafeZzones_Emlute" />
+        <field name="Name" type="NameTableFieldDefinition" value="Config_EnableSafeZones_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="379981bd-1032-4cda-b6b7-8edd92119d41" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Safezones_Enable" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h897dd12ag02c6gbcbcg5d90g512b38048b46" version="1" />

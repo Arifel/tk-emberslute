@@ -489,7 +489,7 @@
   <content contentuid="h7a252a63gbe76gf334g31cfga084cc674187" version="2">Ember's Lute - FAQ</content>
   <content contentuid="hc7c344b2gbcddgd30ag95c6gc2465c08f3eb" version="2">Frequently asked questions for the Ember's Lute mods.</content>
   <content contentuid="h8fd0ed0ege16egf781g7586g02bc179abc38" version="3">Enchanted Performances</content>
-  <content contentuid="h6b9e2237g5020g03c0g709dg4a7af40dc954" version="3">Grants Musical Proficiency and other subtle blessings.</content>
+  <content contentuid="h6b9e2237g5020g03c0g709dg4a7af40dc954" version="4">Grants Musical Proficiency, &lt;LSTag Tooltip="Advantage"&gt;Advantage&lt;/LSTag&gt; to Performance and an additional Bardic Inspiration.</content>
   <content contentuid="hbcb57a98gdf3bg0d33g27c9g70556ec30bfd" version="4">Any novice can perform adequately on this instrument.</content>
   <content contentuid="h5a95f75eg47dbg4aa8g2e3dg183a27e3b318" version="1">Performing 'Harpy Song'</content>
   <content contentuid="hfa24e99eg0725g75f9gd427g030caa79270d" version="2">Singing an eerie melody with an unsettling allure.</content>
@@ -1004,4 +1004,9 @@
   <content contentuid="h0f4155e8g860fg29e3g6401gf12d4f09279b" version="1">Tiny neon instrument sprites infuse your body with rhythm. Your movement is increased by [1] and your jump distance is multiplied by [2].</content>
   <content contentuid="h6bd07c9agbb58g2395g4b5fg664516a21aed" version="1">|HIDDEN| Hidden</content>
   <content contentuid="hf10ef480g4f03g6861gb7b1g891c0c663d95" version="1">This a hidden technical status to stop the AI wasting turns hitting the invulnerable musical sprite summons.</content>
+  <content contentuid="he6d99fe3geb1dg136eg5527g5de2b529ecbf" version="1">Enchanted Performances Enhanced</content>
+  <content contentuid="h0e63bffdg35afg8ef2g91a5gd8c906c90390" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="h2ee8162dg67ddg0b01g0fcfgc3c609d0bcfb" version="2">Technical status to trigger an osiris event for managing the inspiration resource tracking</content>
+  <content contentuid="ha77793fdg4781g5a51g3f6eg05be7ccf567e" version="1">|HIDDEN| Hidden</content>
+  <content contentuid="ha0ab6785g434eg9b01g37d6g63f235b9a328" version="1">Optionally grants an additional action resource for bardic inspiration</content>
 </contentList>

@@ -1869,5 +1869,27 @@
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('LONGSTRIDER')):ApplyStatus(LONGSTRIDER,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="775688fb-cc54-43da-9e0b-27a781d5533f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0e63bffdg35afg8ef2g91a5gd8c906c90390" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ee8162dg67ddg0b01g0fcfgc3c609d0bcfb" version="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF800080" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01660f70-5bf5-4236-b0a1-c79e8852a14f" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ec1d4ebf-731f-49e4-8834-4eeeae24f501" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha77793fdg4781g5a51g3f6eg05be7ccf567e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha0ab6785g434eg9b01g37d6g63f235b9a328" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(BardicInspiration, 1, 0)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IgnoreResting;ApplyToDead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

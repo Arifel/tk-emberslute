@@ -448,6 +448,92 @@ THEN
 SetTag(_Character,(TAG)MUSIC_VFX_VIOLIN_81dbb2dd-ffe9-4b6a-9159-2c32c889e023);
 //END_REGION
 
+// Implementation of mechanic to grant a point of BardicInspiration on lute equip
+// Avoids the farming of action resources via unequip and re-equip
+//REGION
+// When the lute is equipped, grant the charge only if we haven't already and the preference is enabled
+IF
+TagSet((CHARACTER)_Character,(TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79)
+AND
+IsTagged(_Character,(TAG)EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_b4bec563-e20b-40bb-a8e7-0d47ceb096a1,1)
+AND
+HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 0)
+AND
+NOT DB_BardicInspirationBonusGranted_EmbersLute(_Character)
+THEN
+DB_BardicInspirationBonusGranted_EmbersLute(_Character);
+ApplyStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", -1.0);
+
+// When a Bardic Inspiration resource is used, we remove the status and track the consumption
+IF
+TagSet((CHARACTER)_Character,(TAG)EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED_6b32b3ee-3da3-4888-b18b-c90683a9bcfe)
+AND
+DB_BardicInspirationBonusGranted_EmbersLute(_Character)
+AND
+HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 1)
+THEN
+DB_BardicInspirationBonusConsumed_EmbersLute(_Character);
+RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
+
+// When unequipped, clear the status but don't clear the granted flag if already consumed
+IF
+TagCleared((CHARACTER)_Character,(TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79)
+AND
+HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 1)
+AND
+DB_BardicInspirationBonusConsumed_EmbersLute(_Character)
+THEN
+RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
+
+// When unequipped, throw a timer to test for the tag again after a second and ensure we're clear of a hot swap scenario
+IF
+TagCleared((CHARACTER)_Character,(TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79)
+AND
+HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 1)
+THEN
+RealtimeObjectTimerLaunch(_Character,"EmbersLute_EnchantedInstrumentUnequipped_Timer",1500);
+
+// If the charge is consumed, clear the status but retain the granted flag to prevent subsequent charges awarded
+IF
+ObjectTimerFinished((CHARACTER)_Character,"EmbersLute_EnchantedInstrumentUnequipped_Timer")
+AND
+IsTagged(_Character, (TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79, 0)
+AND
+DB_BardicInspirationBonusConsumed_EmbersLute(_Character)
+THEN
+RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
+
+// If the charge is not consumed, clear the status and the granted flag
+IF
+ObjectTimerFinished((CHARACTER)_Character,"EmbersLute_EnchantedInstrumentUnequipped_Timer")
+AND
+IsTagged(_Character, (TAG)EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE_e7336d87-e1e4-4648-811f-ca2f4fde9c79, 0)
+AND
+NOT DB_BardicInspirationBonusConsumed_EmbersLute(_Character)
+THEN
+NOT DB_BardicInspirationBonusGranted_EmbersLute(_Character);
+RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
+
+// Clear all tracking flags for all team characters on a long rest
+PROC
+PROC_LongRest()
+AND
+DB_PartOfTheTeam(_Character)
+AND
+DB_BardicInspirationBonusConsumed_EmbersLute(_Character)
+THEN
+NOT DB_BardicInspirationBonusConsumed_EmbersLute(_Character);
+
+PROC
+PROC_LongRest()
+AND
+DB_PartOfTheTeam(_Character)
+AND
+DB_BardicInspirationBonusGranted_EmbersLute(_Character)
+THEN
+NOT DB_BardicInspirationBonusGranted_EmbersLute(_Character);
+//END_REGION
+
 // Helpers
 //REGION
 PROC

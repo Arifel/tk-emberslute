@@ -921,12 +921,14 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="67c49a63-9f47-41b1-a58f-809d6560f00b" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_SPRITE_SANCTUARY" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="838a4c72-31d4-4654-a322-4cb84bd6bcb9" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;IsInvulnerable" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ManagedStatusEffectType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="ManagedStatusEffectType" version="1" />
         <field name="ManagedStatusEffectGroup" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6bd07c9agbb58g2395g4b5fg664516a21aed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf10ef480g4f03g6861gb7b1g891c0c663d95" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(AI_IGNORED_TARGET);" />
       </fields>
     </stat_object>
     <stat_object color="#FF611515" is_substat="false">

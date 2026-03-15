@@ -30,7 +30,7 @@
         <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="81" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack;OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="HasUseCosts('BardicInspiration');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MusicalInstrument, EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED, 100, 1);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED, 100, 1);" />
       </fields>
     </stat_object>
     <stat_object color="#FF9932CC" is_substat="false">

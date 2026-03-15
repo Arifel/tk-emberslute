@@ -486,6 +486,7 @@ DB_BardicInspirationBonusGranted_EmbersLute(_Character)
 AND
 HasActiveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION", 1)
 THEN
+DebugText(_Character,"Used Bardic Inspiration");
 DB_BardicInspirationBonusConsumed_EmbersLute(_Character);
 RemoveStatus(_Character, "EMLUTE_ENCHANTEDINSTRUMENT_BARDIC_INSPIRATION");
 

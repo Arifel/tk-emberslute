@@ -22,7 +22,7 @@ data "Properties" "Highlighted"
 data "Boosts" "Proficiency(MusicalInstrument);Advantage(Skill,Performance);Tag(EMLUTE_ENCHANTEDINSTRUMENT_HASPASSIVE);"
 data "StatsFunctorContext" "OnAttack;OnCast"
 data "Conditions" "HasUseCosts('BardicInspiration');"
-data "StatsFunctors" "ApplyEquipmentStatus(MusicalInstrument, EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED, 100, 1);"
+data "StatsFunctors" "ApplyStatus(EMLUTE_ENCHANTEDINSTRUMENT_CONSUMED, 100, 1);"
 
 new entry "Emlute_MusicalConductor"
 type "PassiveData"

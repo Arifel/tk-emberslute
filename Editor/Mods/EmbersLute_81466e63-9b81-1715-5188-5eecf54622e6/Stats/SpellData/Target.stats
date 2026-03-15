@@ -281,13 +281,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b813d6d9-1637-4589-9daf-fa479ff2b717" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteChestScroll_Ground_Temporary" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="SummonInInventory(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,10,1,false,false,false)" />
-        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SummonInInventory(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,Permanent,1,false,false,false);" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_SummonInstrumentChest" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha1cac233g8866gc4d2g1aafgb3c6d7e51c05" version="3" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbc42e4d9g3d93g594bg6949gbc79bf97cd5f" version="3" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3b589fc0gd5b8gdd65g76c7g3696e6982694" version="3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha1cac233g8866gc4d2g1aafgb3c6d7e51c05" version="4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5187e28dg323fg6582g9d25g80bb375d3993" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h8f3fd61age67fg9389g0995g15409d24ed55" version="1" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Instrument_Bard_Silence" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Bard_SongOfRest_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Bard_SongOfRest_L1to3" />
@@ -301,8 +301,8 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="46e75e74-a09a-48e6-8706-d9b5ff846ae4" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="c20fcf83-26a4-460c-abeb-52bcbbae37a6" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="10" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="10" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="10" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
@@ -311,12 +311,12 @@
         <field name="UUID" type="IdTableFieldDefinition" value="6f508cf1-bff6-493b-8d14-d6cc4a980198" />
         <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteChestScroll_Ground_Permanent" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b813d6d9-1637-4589-9daf-fa479ff2b717" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="SummonInInventory(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,Permanent,1,false,false,false);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9617a5ddg58dcg918cgb398g2e804272ea9d" version="2" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="SummonInInventory(f2ef5e3b-ae30-425a-98c0-7ec2e0186c10,10,1,false,false,false);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9617a5ddg58dcg918cgb398g2e804272ea9d" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb90654c6gdac6g3e29g516bga6092a9b8d90" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he6fde13cg952ag14b8gdd7fg79daab9f2b47" version="1" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he6fde13cg952ag14b8gdd7fg79daab9f2b47" version="2" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="10" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

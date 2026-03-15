@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="200"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="IconUVList">
         <node id="root">
             <children>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Action_BardicInspirationBuff_Disable"/>
+                    <attribute id="U1" type="float" value="0.56298828"/>
+                    <attribute id="U2" type="float" value="0.62451172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Action_BardicInspirationBuff_Enable"/>
+                    <attribute id="U1" type="float" value="0.50048828"/>
+                    <attribute id="U2" type="float" value="0.56201172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
+                </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="EmbersLute_Action_Chaoscharm"/>
                     <attribute id="U1" type="float" value="0.12548828"/>
@@ -423,6 +437,41 @@
                     <attribute id="U2" type="float" value="0.62451172"/>
                     <attribute id="V1" type="float" value="0.062988281"/>
                     <attribute id="V2" type="float" value="0.12451172"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_FingerFlares"/>
+                    <attribute id="U1" type="float" value="0.43798828"/>
+                    <attribute id="U2" type="float" value="0.49951172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_FingerFlares_Blue"/>
+                    <attribute id="U1" type="float" value="0.18798828"/>
+                    <attribute id="U2" type="float" value="0.24951172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_FingerFlares_Gold"/>
+                    <attribute id="U1" type="float" value="0.37548828"/>
+                    <attribute id="U2" type="float" value="0.43701172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_FingerFlares_Green"/>
+                    <attribute id="U1" type="float" value="0.25048828"/>
+                    <attribute id="U2" type="float" value="0.31201172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_FingerFlares_Purple"/>
+                    <attribute id="U1" type="float" value="0.31298828"/>
+                    <attribute id="U2" type="float" value="0.37451172"/>
+                    <attribute id="V1" type="float" value="0.31298828"/>
+                    <attribute id="V2" type="float" value="0.37451172"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="EmbersLute_Spell_ImprovedCounterCharm"/>

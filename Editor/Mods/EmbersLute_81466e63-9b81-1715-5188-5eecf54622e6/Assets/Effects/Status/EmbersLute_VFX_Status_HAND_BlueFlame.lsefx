@@ -539,20 +539,14 @@
                 <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="20" />
               </data>
             </property>
-            <property id="2bd3e2db-d026-4087-9ffa-2acdf9cf7e25">
+            <property id="eee0f178-cc3a-419a-9da5-28990a669357">
               <data>
                 <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000">
                   <rampchanneldata>
-                    <rampchannel type="Linear" id="0eb7bfda-4934-450c-a5f9-a08d0a0d409c">
+                    <rampchannel type="Linear" id="4287af35-b349-44b8-9af9-42d1a879eb01" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="-2146483847" />
-                        <keyframe time="1" value="-2146483848" />
-                      </keyframes>
-                    </rampchannel>
-                    <rampchannel type="Linear" id="754d0452-189e-4469-8d70-b89d385a0871">
-                      <keyframes>
-                        <keyframe time="0" value="-1" />
-                        <keyframe time="1" value="-1" />
+                        <keyframe time="0" value="1" />
+                        <keyframe time="1" value="1" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -645,14 +639,20 @@
                 <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1" />
               </data>
             </property>
-            <property id="eee0f178-cc3a-419a-9da5-28990a669357">
+            <property id="2bd3e2db-d026-4087-9ffa-2acdf9cf7e25">
               <data>
                 <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000">
                   <rampchanneldata>
-                    <rampchannel type="Linear" id="4287af35-b349-44b8-9af9-42d1a879eb01" selected="True">
+                    <rampchannel type="Linear" id="0eb7bfda-4934-450c-a5f9-a08d0a0d409c">
                       <keyframes>
-                        <keyframe time="0" value="1" />
-                        <keyframe time="1" value="1" />
+                        <keyframe time="0" value="-2144594823" />
+                        <keyframe time="1" value="-2144660104" />
+                      </keyframes>
+                    </rampchannel>
+                    <rampchannel type="Linear" id="754d0452-189e-4469-8d70-b89d385a0871">
+                      <keyframes>
+                        <keyframe time="0" value="-1" />
+                        <keyframe time="1" value="-1" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -799,89 +799,9 @@
           </properties>
           <modules>
             <module id="286df729-035e-4bb8-a210-c836ddbbbacc" muted="False" index="0" />
-            <module id="b369fad0-cc26-42f3-bdc2-0b8f120c6081" muted="True" index="1">
-              <properties>
-                <property id="2bd3e2db-d026-4087-9ffa-2acdf9cf7e25">
-                  <data>
-                    <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000">
-                      <rampchanneldata>
-                        <rampchannel type="Linear" id="0eb7bfda-4934-450c-a5f9-a08d0a0d409c">
-                          <keyframes>
-                            <keyframe time="0" value="-2139546860" />
-                            <keyframe time="1" value="-2139612652" />
-                          </keyframes>
-                        </rampchannel>
-                        <rampchannel type="Linear" id="754d0452-189e-4469-8d70-b89d385a0871">
-                          <keyframes>
-                            <keyframe time="0" value="-1" />
-                            <keyframe time="1" value="-1" />
-                          </keyframes>
-                        </rampchannel>
-                      </rampchanneldata>
-                    </datum>
-                  </data>
-                  <platformmetadata platform="00000000-0000-0000-0000-000000000000" expanded="True" />
-                </property>
-                <property id="eee0f178-cc3a-419a-9da5-28990a669357">
-                  <data>
-                    <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000">
-                      <rampchanneldata>
-                        <rampchannel type="Linear" id="4287af35-b349-44b8-9af9-42d1a879eb01" selected="True">
-                          <keyframes>
-                            <keyframe time="0" value="1" />
-                            <keyframe time="1" value="1" />
-                          </keyframes>
-                        </rampchannel>
-                      </rampchanneldata>
-                    </datum>
-                  </data>
-                  <platformmetadata platform="00000000-0000-0000-0000-000000000000" expanded="True" />
-                </property>
-              </properties>
-            </module>
-            <module id="e2afc256-8cf0-4fb7-94ab-88cfb02cc1f4" muted="False" index="2" />
-            <module id="6b638fb9-009a-4391-b313-900f8ad0cac4" muted="False" index="3" />
-            <module id="b369fad0-cc26-42f3-bdc2-0b8f120c6081" muted="True" index="4">
-              <properties>
-                <property id="2bd3e2db-d026-4087-9ffa-2acdf9cf7e25">
-                  <data>
-                    <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000">
-                      <rampchanneldata>
-                        <rampchannel type="Linear" id="0eb7bfda-4934-450c-a5f9-a08d0a0d409c">
-                          <keyframes>
-                            <keyframe time="0" value="-2144594823" />
-                            <keyframe time="1" value="-2144660104" />
-                          </keyframes>
-                        </rampchannel>
-                        <rampchannel type="Linear" id="754d0452-189e-4469-8d70-b89d385a0871">
-                          <keyframes>
-                            <keyframe time="0" value="-1" />
-                            <keyframe time="1" value="-1" />
-                          </keyframes>
-                        </rampchannel>
-                      </rampchanneldata>
-                    </datum>
-                  </data>
-                  <platformmetadata platform="00000000-0000-0000-0000-000000000000" expanded="True" />
-                </property>
-                <property id="eee0f178-cc3a-419a-9da5-28990a669357">
-                  <data>
-                    <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000">
-                      <rampchanneldata>
-                        <rampchannel type="Linear" id="4287af35-b349-44b8-9af9-42d1a879eb01" selected="True">
-                          <keyframes>
-                            <keyframe time="0" value="1" />
-                            <keyframe time="1" value="1" />
-                          </keyframes>
-                        </rampchannel>
-                      </rampchanneldata>
-                    </datum>
-                  </data>
-                  <platformmetadata platform="00000000-0000-0000-0000-000000000000" expanded="True" />
-                </property>
-              </properties>
-            </module>
-            <module id="b369fad0-cc26-42f3-bdc2-0b8f120c6081" muted="False" index="5" />
+            <module id="e2afc256-8cf0-4fb7-94ab-88cfb02cc1f4" muted="False" index="1" />
+            <module id="6b638fb9-009a-4391-b313-900f8ad0cac4" muted="False" index="2" />
+            <module id="b369fad0-cc26-42f3-bdc2-0b8f120c6081" muted="False" index="3" />
           </modules>
         </component>
       </track>
@@ -991,8 +911,8 @@
                     <rampchannel type="Spline" id="abb3483f-3e08-4e5e-be32-ebbdf1f6a11b" selected="True">
                       <keyframes>
                         <keyframe time="0" value="0" />
-                        <keyframe time="0.2547376" value="0.7935483" />
-                        <keyframe time="0.5098853" value="0.7935483" />
+                        <keyframe time="0.2517472" value="0.4258063" />
+                        <keyframe time="0.5068949" value="0.4258063" />
                         <keyframe time="1" value="0" />
                       </keyframes>
                     </rampchannel>
@@ -1066,7 +986,7 @@
             </property>
             <property id="d185f572-3310-4908-8066-52c3813e3256">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.3" />
               </data>
             </property>
             <property id="eee0f178-cc3a-419a-9da5-28990a669357">
@@ -1185,6 +1105,7 @@
             <module id="286df729-035e-4bb8-a210-c836ddbbbacc" muted="False" index="0" />
             <module id="e2afc256-8cf0-4fb7-94ab-88cfb02cc1f4" muted="False" index="1" />
             <module id="6b638fb9-009a-4391-b313-900f8ad0cac4" muted="False" index="2" />
+            <module id="6737872c-53c1-424d-a16d-61a87a84d8e7" muted="False" index="3" />
           </modules>
         </component>
       </track>
@@ -2695,8 +2616,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="0eb7bfda-4934-450c-a5f9-a08d0a0d409c">
                       <keyframes>
-                        <keyframe time="0" value="-16711689" />
-                        <keyframe time="1" value="-16711689" />
+                        <keyframe time="0" value="-16732673" />
+                        <keyframe time="1" value="-16732673" />
                       </keyframes>
                     </rampchannel>
                     <rampchannel type="Linear" id="754d0452-189e-4469-8d70-b89d385a0871">
@@ -2975,8 +2896,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="93b34a52-eef2-4f88-80f6-19e3126188ca">
                       <keyframes>
-                        <keyframe time="0" value="-16711695" />
-                        <keyframe time="1" value="-16711699" />
+                        <keyframe time="0" value="-16740097" />
+                        <keyframe time="1" value="-16740097" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -6841,9 +6762,9 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="93b34a52-eef2-4f88-80f6-19e3126188ca">
                       <keyframes>
-                        <keyframe time="0" value="-10163987" />
-                        <keyframe time="0.25" value="-9306120" />
-                        <keyframe time="0.4956012" value="-12473420" />
+                        <keyframe time="0" value="-4270099" />
+                        <keyframe time="0.25" value="-12482588" />
+                        <keyframe time="0.4956012" value="-14063180" />
                         <keyframe time="1" value="-16504278" />
                       </keyframes>
                     </rampchannel>

@@ -176,7 +176,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="EMBERS_LUTE_REWARD_BARD_SHOES" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="24257734-f17c-4881-8e0e-6a277911fa9c" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="7d29f16c-79dc-4e44-9ce2-b9e5055f05a9" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_Restore_BardicInspiration);ActionResource(BardicInspiration,1, 0);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_MAG_Restore_BardicInspiration);" />
       </fields>
     </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">

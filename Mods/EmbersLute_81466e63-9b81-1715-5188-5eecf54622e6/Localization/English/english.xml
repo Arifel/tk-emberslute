@@ -83,10 +83,10 @@
   <content contentuid="h807ce98fg81e1g7e84g2a40g4bc19bf24607" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
   <content contentuid="h73ecad53ge8feg1eccg20a8g2e7a8033988d" version="12">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h21b08a58ge98bgbb67g601dg392dd6b44a45" version="12">Tiny, dancing lights run back and forth across the surface of this lute.</content>
-  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="7">Musical Sprites Instruments</content>
-  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="7">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
-  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="10">Instrument Chest</content>
-  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="10">A sturdy chest for storing all manner of unusual and interesting instruments.</content>
+  <content contentuid="hafe4a42fg723fg2420geb4egdd61473eba01" version="8">Musical Sprites Instruments</content>
+  <content contentuid="h8782bfaega6d8g7308gb768g7d8a17c61407" version="8">Tiny dancing instrument sprites flit around the keyhole of this chest.</content>
+  <content contentuid="haca5ff43gfee9g3881ga1eegebc6063885c9" version="11">Instrument Chest</content>
+  <content contentuid="h6c5371e6g2419g08e6g1f85ga3914dc00fb0" version="11">A grand and sturdy chest for storing all manner of unusual and interesting instruments. The kind that tend to find their way to interesting people.</content>
   <content contentuid="h0ac0c1ecg5bb4g42b5g786eg9abad6698016" version="11">Lute of Musical Sprites (White)</content>
   <content contentuid="h8ee8c2f0gc032gdd4fg94beg4f1d76c42471" version="11">Check your Passives to toggle instruments while you are performing.</content>
   <content contentuid="h695866eag7888gc928g59cbgeacad3274fe8" version="11">Tiny, dancing lights run back and forth across the surface of this lute.</content>
@@ -366,16 +366,16 @@
   <content contentuid="hb0e48dbeg5788g30a9g7919g823a85a84021" version="1">Magical varnish has imbued this instrument with a mysterious connection to otherworldly, musical realms.</content>
   <content contentuid="h44d35f58gd3aagfa73g4c29g2ff2cf0838ce" version="1">Clearing Varnish</content>
   <content contentuid="h40f805f3g74f1gffbfg2c52gbc8a851334d1" version="1">Removing the instrument varnish effects.</content>
-  <content contentuid="hd399abacg74b7g4de5g9ba7g4476ab0512c1" version="13">Annoying Instruments</content>
-  <content contentuid="h53b5ccedg5b6bg466dg9d87ge0ed8fddf84d" version="13">Slightly off-key whistling can be heard as you approach this chest, shortly followed by a muffled giggle.</content>
-  <content contentuid="h13d110ebg59d5g4a79gb868g7e893b3f4700" version="12">Ensemble Instruments</content>
-  <content contentuid="h7cb3b632gaeb1g4a1fg9cbag397f7a125a2f" version="12">This chest holds strong bonds to the souls of long-forgotten musical ensembles.</content>
-  <content contentuid="h52698444g590dg4828gb95ag741178a4acc7" version="11">Haunted Instruments</content>
-  <content contentuid="h4adbac4ega444g4409g8961gf591bee41b36" version="10">Miscelleaneous</content>
-  <content contentuid="h666d822fg1ab1g43e8g9403ge0f24b97a440" version="10">Contains a few miscelleaneous bonus items.</content>
-  <content contentuid="h56c82aeeg4fd7g43dcga142gfa3e2530920b" version="9">Instrument Varnishes</content>
-  <content contentuid="hfc21e371gbcc1g413dg897bgae3297d399ac" version="9">Not to be mistaken for dyes. Varnishes let you temporarily grant the various abilities of Ember's instruments to other instruments of Faerûn.</content>
-  <content contentuid="h7e17cce8g1810g40a3g84b5g300967e1bfdf" version="5">You feel a sudden drop in temperature as you regard this chest.</content>
+  <content contentuid="hd399abacg74b7g4de5g9ba7g4476ab0512c1" version="20">Annoying Instruments</content>
+  <content contentuid="h53b5ccedg5b6bg466dg9d87ge0ed8fddf84d" version="20">Slightly off-key whistling can be heard as you approach this chest, shortly followed by a muffled giggle.</content>
+  <content contentuid="h13d110ebg59d5g4a79gb868g7e893b3f4700" version="19">Ensemble Instruments</content>
+  <content contentuid="h7cb3b632gaeb1g4a1fg9cbag397f7a125a2f" version="19">This chest holds strong bonds to the souls of long-forgotten musical ensembles.</content>
+  <content contentuid="h52698444g590dg4828gb95ag741178a4acc7" version="18">Haunted Instruments</content>
+  <content contentuid="h4adbac4ega444g4409g8961gf591bee41b36" version="17">Miscelleaneous</content>
+  <content contentuid="h666d822fg1ab1g43e8g9403ge0f24b97a440" version="17">This chest contains a neatly stacked collection of books, assorted notes, and, inexplicably, underwear. The organisational system defies explanation, but the contents reward the curious.</content>
+  <content contentuid="h56c82aeeg4fd7g43dcga142gfa3e2530920b" version="16">Instrument Varnishes</content>
+  <content contentuid="hfc21e371gbcc1g413dg897bgae3297d399ac" version="16">Not to be mistaken for dyes. Varnishes let you temporarily grant the various abilities of Ember's instruments to other instruments of Faerûn.</content>
+  <content contentuid="h7e17cce8g1810g40a3g84b5g300967e1bfdf" version="12">You feel a sudden drop in temperature as you regard this chest.</content>
   <content contentuid="h8fef0bb1gcd3bg4b8cg9d4fgcff09c815d71" version="11">Varnish |The Vicious Rockery|</content>
   <content contentuid="haecb9bd3gd7cbg39f3ga4e5gc0b129a9ca43" version="10">The effects of this varnish will be removed when you unequip the instrument. Cannot be applied to another Spirit or Sprites instrument.</content>
   <content contentuid="h3f977cb5gb430g40e1ga68fgd8643e342f56" version="11">Apply this varnish to your equipped instrument, and gain the ability to summon the souls of long-forgotten Rock Gnome ensemble, The Vicious Rockery.</content>
@@ -975,9 +975,9 @@
   <content contentuid="h64d8f56fg9568g67bagd384gcc4a4c50caf1" version="2">A "normal" lute, with custom visuals only.</content>
   <content contentuid="h8d12dd02g106cge327g9518g75e13f6dc38d" version="1">Dyeable Lute with Sheet Music Engraving</content>
   <content contentuid="h8e4085abg8e09g67beg8bd6gdc8c8c44f3bd" version="1">A "normal" lute, with custom visuals only.</content>
-  <content contentuid="hfb7e7245g6ed9gd959g4064g05049847a81e" version="4">Vanilla Instruments</content>
-  <content contentuid="h81de64c4g3e25gd6a9g369fgdfc9d02cd09d" version="4">A box of "normal" instruments, with custom visuals and some dyeable options.</content>
-  <content contentuid="hda6d3d36g3384g5dd3g6891gba0bf70f3f90" version="4">A trunk for storing instruments</content>
+  <content contentuid="hfb7e7245g6ed9gd959g4064g05049847a81e" version="5">Vanilla Instruments</content>
+  <content contentuid="h81de64c4g3e25gd6a9g369fgdfc9d02cd09d" version="5">A box of "normal" instruments, with custom visuals and some dyeable options.</content>
+  <content contentuid="hda6d3d36g3384g5dd3g6891gba0bf70f3f90" version="5">A ordinary trunk for storing ordinary instruments that aren't boring at all.</content>
   <content contentuid="hfc7abbe0g7f8bg5b97g8b7fgb40a2da0835b" version="1">Charcoal Instrument Dye</content>
   <content contentuid="h437ffa2agefe8g3ea6ge636g72c1cfc313fd" version="1">A re-usable charcoal dye with silver metallics. Designed with a dyeable wooden instrument in mind, but can be applied to any dyeable armor.</content>
   <content contentuid="hba8be596g533bg5ae6g4a8ag703b313f1bbf" version="1">Green and Gold Instrument Dye</content>
@@ -1018,4 +1018,11 @@
   <content contentuid="h9617a5ddg58dcg918cgb398g2e804272ea9d" version="2">Summon Ember's Instrument Chest</content>
   <content contentuid="hb90654c6gdac6g3e29g516bga6092a9b8d90" version="1">Summon Ember's chest of instruments into your inventory.</content>
   <content contentuid="he6fde13cg952ag14b8gdd7fg79daab9f2b47" version="1">This spell has been updated in v3.0.6: the summoned container is no longer temporary.</content>
+  <content contentuid="h36552b37g1c99g6155gab2bga0001eebfa79" version="1">Main container for the Ember's Lute mod and its add ons.</content>
+  <content contentuid="h08ae16deg1966gd064g3c9egb02e2d9e6568" version="2">Ember's Lute container for instruments with the 'Annoying' theme.</content>
+  <content contentuid="h5adf16ceg52d0g9d19ga1f1ge21145bed4c7" version="2">Ember's Lute container for readme books and any other miscelleaneous items included with the mod and its add ons.</content>
+  <content contentuid="haedde10dg4d44g50cag0ec6g5e6598de91b4" version="2">Ember's Lute container for instrument varnishes.</content>
+  <content contentuid="he2b718f9g8c5cg5839g07dfg9cc368e882fb" version="2">Ember's Lute container for instruments with the 'Ensembles' theme.</content>
+  <content contentuid="h6363ce38g895bgdf51ga3c1g1efe870d55aa" version="2">Ember's Lute container for instruments with the 'Haunted' theme.</content>
+  <content contentuid="h63114262gc84age7e5g67b9g62071ae58595" version="1">Ember's Lute container for instruments with the 'Musical Sprites' theme.</content>
 </contentList>

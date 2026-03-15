@@ -197,15 +197,6 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d956ce51-2106-47bd-88bd-093067716ba1" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_Misc" />
-        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
-        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_PANTS_OF_PERFORMANCE" />
-        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
-      </fields>
-    </stat_object>
     <stat_object color="#FFFFA500" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="921ae7f9-753c-43e7-8e83-9f5c5082601a" />
@@ -414,13 +405,32 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d956ce51-2106-47bd-88bd-093067716ba1" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_Misc" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="T_EMLUTE_Chest_Content_Starter" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d956ce51-2106-47bd-88bd-093067716ba1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="22633f3f-9134-4617-b88e-417b259d2fa8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_Misc_substat" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_PANTS_OF_PERFORMANCE" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3a3b5b3c-5bd6-4b59-b3b1-59c2bff293a5" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content" />
         <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_ARI_CONT_EMBERSLUTE_MUSICALSPRITES" />
-        <field name="Frequency" type="IntegerTableFieldDefinition" color="#FF3D1A3D" value="1" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" color="#FFC71585" value="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="true">

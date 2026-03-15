@@ -387,6 +387,16 @@
     <stat_object color="#FF4B0082" is_substat="true">
       <fields>
         <field name="Using" type="BaseClassTableFieldDefinition" value="d1c2fe6a-8f1f-42a4-b7f4-6ed18e04b2f2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c7439d23-c531-4c44-90f3-c83e3138c6aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="d1c2fe6a-8f1f-42a4-b7f4-6ed18e04b2f2_substat_3" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_BOOK_CHANGELOG_V3_0_5" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF4B0082" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d1c2fe6a-8f1f-42a4-b7f4-6ed18e04b2f2" />
         <field name="UUID" type="IdTableFieldDefinition" value="cd1e35d5-fdf3-4fcd-9681-ce2eccbfe7b8" />
         <field name="Name" type="NameTableFieldDefinition" value="d1c2fe6a-8f1f-42a4-b7f4-6ed18e04b2f2_substat_1" />
         <field name="DropCount" type="StringTableFieldDefinition" value="-1" />

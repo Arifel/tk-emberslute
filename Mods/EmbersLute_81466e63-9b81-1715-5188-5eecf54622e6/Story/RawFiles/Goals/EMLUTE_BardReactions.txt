@@ -315,24 +315,24 @@ DB_BardReactions_ThrowActions_TagOverride_Emlute((TAG)DWARF_486a2562-31ae-437b-b
 
 // Bard unique rewards for busking mode
 //REGION
-DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,9,150);
+DB_PerformanceRewardUnique_EmbersLute(1,(ITEMROOT)EmbersLute_PerformanceReward_CharismaticSting_ff3c6664-e161-41dc-8aea-112e16a344d3,12,150);
 DB_PerformanceRewardUnique_EmbersLute(2,(ITEMROOT)EmbersLute_PerformanceReward_BardShoes_7d29f16c-79dc-4e44-9ce2-b9e5055f05a9,4,45);
-DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,3,30);
+DB_PerformanceRewardUnique_EmbersLute(3,(ITEMROOT)EmbersLute_PerformanceReward_BraveUnderwear_6f987732-15d7-4798-8a77-b51fc182e19f,6,75);
 DB_PerformanceRewardUnique_EmbersLute(4,(ITEMROOT)EmbersLute_PerformanceReward_CriticalMockeryRing_81663c50-4997-47a3-884e-404b85b49fcd,10,150);
-DB_PerformanceRewardUnique_EmbersLute(5,(ITEMROOT)EmbersLute_PerformanceReward_DexterousJumping_695cf59a-415b-4a90-894b-0725db1fdf66,7,125);
+DB_PerformanceRewardUnique_EmbersLute(5,(ITEMROOT)EmbersLute_PerformanceReward_DexterousJumping_695cf59a-415b-4a90-894b-0725db1fdf66,9,125);
 DB_PerformanceRewardUnique_EmbersLute(6,(ITEMROOT)EmbersLute_PerformanceReward_DancersBoots_e2e85c50-c4fb-4207-954a-5fbdf4402737,6,75);
 DB_PerformanceRewardUnique_EmbersLute(7,(ITEMROOT)EmbersLute_PerformanceReward_ParryingGloves_85671d18-e1e7-4478-9478-33b54f29e6a3,9,100);
 DB_PerformanceRewardUnique_EmbersLute(8,(ITEMROOT)EmbersLute_PerformanceReward_ProficiencyGloves_acf4ebae-5d0d-4f4a-bc4e-4b98de380a42,3,50);
-DB_PerformanceRewardUnique_EmbersLute(9,(ITEMROOT)EmbersLute_MusicalSprites_PrismaticFlute_e2c1b4ed-e244-4422-8823-76c2a6f5ef2f,5,50);
+DB_PerformanceRewardUnique_EmbersLute(9,(ITEMROOT)EmbersLute_MusicalSprites_PrismaticFlute_e2c1b4ed-e244-4422-8823-76c2a6f5ef2f,3,50);
 DB_PerformanceRewardUnique_EmbersLute(10,(ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,3,150);
-DB_PerformanceRewardUnique_EmbersLute(11,(ITEMROOT)EmbersLute_MusicalSpritesCombat_1e7b4319-e589-4643-89e6-cd14c74cb386,6,30);
+DB_PerformanceRewardUnique_EmbersLute(11,(ITEMROOT)EmbersLute_MusicalSpritesCombat_1e7b4319-e589-4643-89e6-cd14c74cb386,8,150);
 DB_PerformanceRewardUnique_EmbersLute(12,(ITEMROOT)EMLUTE_MusicSheet_TheFinalAct_d93f4771-b8f1-428f-9b1e-6b22e11ebb6e,10,75);
 DB_PerformanceRewardUnique_EmbersLute(13,(ITEMROOT)EMLUTE_MusicSheet_TheLuringSong_8bb696b2-1c96-4cc9-aac8-9890404bd297,2,25);
 DB_PerformanceRewardUnique_EmbersLute(14,(ITEMROOT)EMLUTE_MusicSheet_TheWeepingDawn_f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e,2,75);
 DB_PerformanceRewardUnique_EmbersLute(15,(ITEMROOT)EMLUTE_MusicSheet_FuneralHymn_5a2b4919-8e68-43d5-b8b7-5f95ff80ce05,9,55);
 DB_PerformanceRewardUnique_EmbersLute(16,(ITEMROOT)EMLUTE_MusicSheet_EndlessSpring_07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31,7,75);
 DB_PerformanceRewardUnique_EmbersLute(17,(ITEMROOT)EmbersLute_PerformanceReward_SwiftWindsRing_b7d913e6-e77c-4779-a25e-a4d74f72ec96,4,35);
-DB_PerformanceRewardUnique_EmbersLute(18,(ITEMROOT)EmbersLute_MusicalSprites_Lysandra_ea5ab27e-06ae-415f-8f0a-eb23ce649c58,5,55);
+DB_PerformanceRewardUnique_EmbersLute(18,(ITEMROOT)EmbersLute_MusicalSprites_Lysandra_ea5ab27e-06ae-415f-8f0a-eb23ce649c58,2,55);
 DB_PerformanceRewardUnique_EmbersLute(19,(ITEMROOT)EmbersLute_PerformanceReward_GoblinUnderwear_c1960b8b-3f23-41e2-bff5-1351cd58132b,4,35);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(12,(FLAG)LOW_HouseOfHope_State_RaphaelIsDead_655d7d21-99a2-4138-9a7a-af1850932e75);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(13,(FLAG)DEN_HarpyMeal_State_HarpiesAllDead_89fd908d-98b0-47d2-8f29-0d2ec34fea0a);

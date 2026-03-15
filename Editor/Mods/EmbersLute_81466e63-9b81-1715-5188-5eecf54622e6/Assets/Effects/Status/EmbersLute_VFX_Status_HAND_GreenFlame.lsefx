@@ -1066,7 +1066,7 @@
             </property>
             <property id="d185f572-3310-4908-8066-52c3813e3256">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.3" />
               </data>
             </property>
             <property id="eee0f178-cc3a-419a-9da5-28990a669357">
@@ -1185,6 +1185,7 @@
             <module id="286df729-035e-4bb8-a210-c836ddbbbacc" muted="False" index="0" />
             <module id="e2afc256-8cf0-4fb7-94ab-88cfb02cc1f4" muted="False" index="1" />
             <module id="6b638fb9-009a-4391-b313-900f8ad0cac4" muted="False" index="2" />
+            <module id="6737872c-53c1-424d-a16d-61a87a84d8e7" muted="False" index="3" />
           </modules>
         </component>
       </track>

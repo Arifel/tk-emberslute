@@ -133,6 +133,17 @@ data "OnApplyFunctors" "IF(HasStatus('EMLUTE_PERFORM_BOON_1')):RemoveStatus(EMLU
 data "ApplyEffect" "c3d87811-3ea9-4e40-925f-fb8a6f29fefa"
 data "StatusEffect" "c8d04f2e-65c5-4ad2-8368-ccf93bb8be41"
 
+new entry "EMLUTE_LISTENING_TO_MUSIC"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "h6fa93515g0ca0ga69dg9bd5g6c9bb381252b;1"
+data "Description" "h550a549dg254cgf346ge665gf1f0ec8fdf25;1"
+data "Icon" "EmbersLute_Status_SpriteSwarm"
+data "HitAnimationType" "None"
+data "StackId" "EMLUTE_LISTENING_TO_MUSIC"
+data "Boosts" "MovementSpeedLimit(Stroll);"
+data "StatusPropertyFlags" "DisablePortraitIndicator"
+
 new entry "EMLUTE_REACTIONS_DELAY"
 type "StatusData"
 data "StatusType" "BOOST"

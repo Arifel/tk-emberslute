@@ -348,6 +348,23 @@ DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DA
 KBSECTION
 // Hard reset on long rest
 //REGION
+// No rewards if long rest interrupts performance
+IF
+LongRestStarted()
+AND
+DB_PartOfTheTeam((CHARACTER)_Performer)
+THEN
+PROC_CancelPerformanceRewards_EmbersLute(_Performer);
+
+IF
+LongRestStarted()
+AND
+DB_PartOfTheTeam((CHARACTER)_Performer)
+AND
+HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
+THEN
+RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK");
+
 IF
 LongRestStarted()
 THEN
@@ -377,18 +394,17 @@ PROC_CharacterRegisterCrime(_Performer,_DisturbanceName,_Performer,NULL_00000000
 // No rewards if combat interrupts performance
 IF
 EnteredCombat((CHARACTER)_Performer,_)
-AND
-DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus)
 THEN
-NOT DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus);
-RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GOOD");
-RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT");
-RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_LEGENDARY");
-RemoveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_DANGEROUS");
+PROC_CancelPerformanceRewards_EmbersLute(_Performer);
 
 // No rewards if teleporting interrupts performance
 IF
 Teleported((CHARACTER)_Performer,_,_,_,_,_,_,_,_)
+THEN
+PROC_CancelPerformanceRewards_EmbersLute(_Performer);
+
+PROC
+PROC_CancelPerformanceRewards_EmbersLute((CHARACTER)_Performer)
 AND
 DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_PerformStatus)
 THEN
@@ -457,9 +473,28 @@ CharacterOnCrimeSensibleActionNotification(_NPC,_,_CrimeID,"CRIME_OsirisPerformC
 AND
 DB_BardReactions_MusicalPerformance_Emlute(_CrimeID,_Performer,"MusicalPerformance_Good_Emlute")
 AND
-NOT DB_CantAct(_NPC)
+QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
+AND
+Random(2500,_RndOut)
+AND
+IntegerSum(500,_RndOut,_RndDelay)
 THEN
-PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute");
+// MoveTo is handled a bit aggressively by the BG3 engine. "Check" only tests for whether the character is restrained,
+// not whether it can path to its destination. If there is no pathing, BG3 will get the character to its target by popping
+// it into existence at the destination. For our crowd reaction purposes, this causes undesired behaviour with NPCs that
+// are free to move and act, but should be constrained e.g. they are in a cage or a prison.
+//PROC_CharacterMoveTo(_NPC,_Performer,"Walk","BardReactions_WalkToPerformer_Event_EmbersLute","check");
+//
+// So we use spells and their target range instead, where the behaviour seems closer to the point and click movement, 
+// and the character will respect any obstacles that are blocking its way (like a cage) to the destination.
+ObjectTimerLaunch(_NPC,"BardReactions_ListenToPerformer_Timer_EmbersLute",_RndDelay);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_ListenToPerformer_Timer_EmbersLute")
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+THEN
+SetEntityEvent(_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute");
 
 IF
 EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")
@@ -467,26 +502,9 @@ AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
 AND
 QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
-AND
-GetDistanceTo(_NPC,_Performer,_Distance)
-AND
-_Distance < 3.5
 THEN
-PROC_BardReactions_BuskingMode_DoThrow_CastSpell_EmbersLute(_Performer,_NPC,"Projectile_ListenToMusic_Emlute",0);
-
-IF
-EntityEvent((CHARACTER)_NPC,"BardReactions_WalkToPerformer_Event_EmbersLute")
-AND
-DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
-AND
-// Avoid doing something silly like teleporting along with the performer
-QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
-AND
-GetDistanceTo(_NPC,_Performer,_Distance)
-AND
-_Distance >= 3.5
-THEN
-UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer);
+ApplyStatus(_NPC,"EMLUTE_LISTENING_TO_MUSIC",12.0);  // temporarily forces stroll speed
+UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,0);
 
 IF
 CastedSpell((CHARACTER)_NPC,"Projectile_ListenToMusic_Emlute",_,_,_)
@@ -503,7 +521,6 @@ DB_BardReactions_MusicalPerformance_NPCs_Emlute(_ID,_Performer,_NPC)
 THEN
 SteerTo(_NPC,_Performer,0);
 PROC_PlayLoopingAnimation(_NPC,(ANIMATION)CUST_MusicListening_01_Start_b056b29f-6fc0-4930-97f3-4ad0f16b9606,(ANIMATION)CUST_MusicListening_01_Loop_7fb126dd-e788-4984-abc3-8a57c65afdd8,(ANIMATION)CUST_MusicListening_01_End_969df56a-1c5b-44ec-9cb0-69ee3294ccfb);
-//LookAtEntity(_NPC,_Performer,0.5);
 
 PROC
 PROC_BardReactions_NPC_Emlute((CHARACTER)_Performer,(CHARACTER)_NPC)
@@ -981,7 +998,7 @@ AND
 DB_Helper_GetAnyRandomPositionInArea_Result(_X,_Y,_Z)
 THEN
 StopAnimation(_NPC,1);
-UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z);
+UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z,0);
 ObjectTimerLaunch(_NPC,"BardReactions_Busking_ThrowSpell_Timeout_Timer_Emlute",6000);
 
 IF
@@ -1543,7 +1560,7 @@ AND
 DB_Helper_GetAnyRandomPositionInArea_Result(_X,_Y,_Z)
 THEN
 StopAnimation(_NPC,1);
-UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z);
+UseSpellAtPosition(_NPC,_Spell,_X,_Y,_Z,0);
 
 IF
 ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_EndPerformanceFlourish_Timer_EmbersLute")
@@ -1733,17 +1750,6 @@ THEN
 DB_NOOP(1);
 
 QRY
-QRY_CanDoAction_EmbersLute((CHARACTER)_Performer,(CHARACTER)_NPC)
-AND
-NOT DB_CantAct(_NPC)
-AND
-NOT DB_CantMove(_NPC)
-AND
-QRY_IsInRange(_NPC,_Performer,10.0)
-THEN
-DB_NOOP(1);
-
-QRY
 QRY_CanDoActionType_EmbersLute((CHARACTER)_Performer,(CHARACTER)_NPC, (STRING)_Action)
 AND
 _Action == "Throw"
@@ -1760,7 +1766,7 @@ NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC)
 AND
 NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_Performer)
 AND
-QRY_IsInRange(_NPC,_Performer,10.0)
+QRY_IsInRange(_NPC,_Performer,8.0)
 THEN
 DB_NOOP(1);
 
@@ -1779,7 +1785,7 @@ NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_NPC)
 AND
 NOT DB_BardReactions_MusicalPerformance_IsEnding_Emlute(_Performer)
 AND
-QRY_IsInRange(_NPC,_Performer,10.0)
+QRY_IsInRange(_NPC,_Performer,12.0)
 THEN
 DB_NOOP(1);
 
@@ -1792,7 +1798,7 @@ NOT DB_CantAct(_NPC)
 AND
 NOT DB_CantMove(_NPC)
 AND
-QRY_IsInRange(_NPC,_Performer,10.0)
+QRY_IsInRange(_NPC,_Performer,8.0)
 THEN
 DB_NOOP(1);
 
@@ -1805,7 +1811,20 @@ NOT DB_CantAct(_NPC)
 AND
 NOT DB_CantMove(_NPC)
 AND
-QRY_IsInRange(_NPC,_Performer,18.0)
+QRY_IsInRange(_NPC,_Performer,15.0)
+THEN
+DB_NOOP(1);
+
+QRY
+QRY_CanDoActionType_EmbersLute((CHARACTER)_Performer,(CHARACTER)_NPC, (STRING)_Action)
+AND
+_Action == "Listen"
+AND
+NOT DB_CantAct(_NPC)
+AND
+NOT DB_CantMove(_NPC)
+AND
+QRY_IsInRange(_NPC,_Performer,7.0)
 THEN
 DB_NOOP(1);
 

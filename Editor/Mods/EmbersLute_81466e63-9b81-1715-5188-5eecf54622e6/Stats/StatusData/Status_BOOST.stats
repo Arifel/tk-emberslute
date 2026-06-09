@@ -170,7 +170,8 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_LISTENING_TO_MUSIC" />
         <field name="Boosts" type="StringTableFieldDefinition" value="MovementSpeedLimit(Stroll);" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF140D35" is_substat="false">

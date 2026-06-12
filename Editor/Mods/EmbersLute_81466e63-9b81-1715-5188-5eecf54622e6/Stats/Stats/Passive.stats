@@ -474,6 +474,15 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a8d98ea5-8f3f-4d95-a9f1-8022e96d1d37" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_DownByTheRiver" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_DOWNBYTHERIVER');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DOWNBYTHERIVER_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7ce42db6-79e9-4f81-8746-e65082051369" />

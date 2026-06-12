@@ -348,6 +348,12 @@ using "Emlute_Join_WeepingDawn"
 data "Conditions" "StatusId('EMLUTE_JOIN_THEPOWERVOCALS');"
 data "StatsFunctors" "ApplyStatus(EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA,100,-1)"
 
+new entry "Emlute_Join_DownByTheRiver"
+type "PassiveData"
+using "Emlute_Join_WeepingDawn"
+data "Conditions" "StatusId('EMLUTE_JOIN_DOWNBYTHERIVER');"
+data "StatsFunctors" "ApplyStatus(EMLUTE_PERFORM_DOWNBYTHERIVER_NO_AURA,100,-1)"
+
 new entry "Emlute_Dancer"
 type "PassiveData"
 data "DisplayName" "h08fb41bcg956fgd013gc69aga263a6e6febe;1"

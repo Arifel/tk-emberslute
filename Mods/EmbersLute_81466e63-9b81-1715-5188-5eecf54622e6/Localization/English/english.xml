@@ -194,7 +194,7 @@
   <content contentuid="h73bdb72cg50beg9c34gf5a6g4e0c3803c381" version="1">Perform with an Ensemble</content>
   <content contentuid="h2a74394fg7755gf5ecg09abgb94bc4a9e43f" version="1">Perform music with summoned ensembles.</content>
   <content contentuid="h44ed2f5cg3991ge7f0g326egfca8c7845e7f" version="1">Performing 'The Weeping Dawn'</content>
-  <content contentuid="hbc2373f8g7784g6757gd364ga191e4146e4b" version="1">Playing a heartfelt tribute to lost friends..</content>
+  <content contentuid="hbc2373f8g7784g6757gd364ga191e4146e4b" version="2">Playing a heartfelt tribute to lost friends.</content>
   <content contentuid="h3e6f6028gba8ega408gb8ecgb5b051ed82b8" version="1">Perform 'The Weeping Dawn'</content>
   <content contentuid="he2d45343g932dgecefgb33bg72062277cfb4" version="1">Join the spirit of a tragic tiefling bard and play a heartfelt tribute to lost friends.</content>
   <content contentuid="hc6d5f327g7033gccc1g483fgc0913d622a1e" version="3">Ver1 Legacy</content>
@@ -1029,6 +1029,16 @@
   <content contentuid="h8f3fd61age67fg9389g0995g15409d24ed55" version="1">This spell has been updated in v3.0.6: the summoned container is no longer temporary.</content>
   <content contentuid="h6fa93515g0ca0ga69dg9bd5g6c9bb381252b" version="1">Listening To Music</content>
   <content contentuid="h550a549dg254cgf346ge665gf1f0ec8fdf25" version="1">Attention has been piqued by music!</content>
-  <content contentuid="h72b01352gcefdg66e0gae7eg5765347ed551" version="2">Performing 'We Live Another Day'</content>
-  <content contentuid="ha3c163f5g6d5eg4dbdgef31g87525c8531da" version="2">Perform 'We Live Another Day'</content>
+  <content contentuid="h72b01352gcefdg66e0gae7eg5765347ed551" version="3">Performing 'The Power'</content>
+  <content contentuid="ha3c163f5g6d5eg4dbdgef31g87525c8531da" version="3">Perform 'The Power - Orchestral'</content>
+  <content contentuid="h0f6ead68g48e2g5befg4cc2gd74c48cc3379" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="hab1baf67g15d6gadf2gc826g61f4f649b578" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="h8ed5bdd0g2e96g23begbb97g01cc1beff348" version="1">Perform a hopeful melody of endurance.</content>
+  <content contentuid="hdc612e99gf591g46ccg1ae3g223846e18b0e" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="h80ed3527ge1d3g012ag0181g08f51691848c" version="1">Perform an orchestral rendition of 'The Power'.</content>
+  <content contentuid="he93ed0edg750eg536fg7e0dg66536e241c24" version="1">Must be in camp to perform this song.</content>
+  <content contentuid="h6a5878f9gabcdg2640gf419g897cf4530e5e" version="1">Performing a dramatic piece about the inevitable finality of the mortal coil...</content>
+  <content contentuid="h64f13e2bga325g3dbcgc574g1d2da4531801" version="1">Performing a song of reflection and resilience.</content>
+  <content contentuid="hba1650fag6e3agce9eg98eegd051eea91833" version="1">Performing a hopeful melody of endurance.</content>
+  <content contentuid="ha2739841ga959gf508gbb9bg7fa0c61e9c0e" version="1">Performing an orchestral variant of The Power.</content>
 </contentList>

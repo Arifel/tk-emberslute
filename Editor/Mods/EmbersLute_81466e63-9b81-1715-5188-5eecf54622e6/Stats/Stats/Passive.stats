@@ -492,6 +492,15 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_THEPOWERORCHESTRAL_NO_AURA,100,-1)" />
       </fields>
     </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5a6b7c8-d901-e234-5678-9012345678f5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_TestSoundEvent" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_TESTSOUNDEVENT');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_TESTSOUNDEVENT_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF2F4F4F" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7ce42db6-79e9-4f81-8746-e65082051369" />

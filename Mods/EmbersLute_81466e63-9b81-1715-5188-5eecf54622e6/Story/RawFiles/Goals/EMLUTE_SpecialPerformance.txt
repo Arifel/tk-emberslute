@@ -4,6 +4,19 @@ INITSECTION
 // Attach music resources to a temporary helper item
 DB_SpecialPerformance_Helper_EmbersLute((ITEMROOT)Emlute_Ring_Music_Helper_3debbfbe-e1ef-4067-b66f-4732146fd6bf);
 
+//REGION test special performance sound event
+DB_SpecialPerformance_EmbersLute("Bard_Perform_TestSoundEvent","test","","EMLUTE_PERFORM_TESTSOUNDEVENT",279500);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)EPI_BardScripted_CampBard_Streets_and_Faces_68376087-9c85-4481-bb66-88e58bf34f26,3);
+//DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)CAMP_DaisyIntro_AvD_ms01A_5071cfc8-2ab7-4ccc-9b17-ba8ddca0000f,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+//DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)CAMP_DaisyIntro_AvD_Music_Exit_42473fa0-1d64-4815-b7b7-40647fc95610,2);
+//DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_TestSoundEvent",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,3);
+//END_REGION
+
+//REGION special performance facts
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeepingDawn","SE_DEN_TieflingBard_Bard","SE_DEN_TieflingBard_Bard_Stop","EMLUTE_PERFORM_WEEPINGDAWN",169500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_HarpySong","SE_DEN_Harpy_Music","","EMLUTE_PERFORM_HARPYSONG",130500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHouse_Music","","EMLUTE_PERFORM_WATERQUEEN",195600);
@@ -12,6 +25,11 @@ DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerOrchestral","CharacterCreation_Theme_Start","","EMLUTE_PERFORM_THEPOWERORCHESTRAL",279500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_SkinnyShart","CAMP_Shadowheart_SkinnyDipping_Music_Enter","","EMLUTE_PERFORM_SKINNYSHART",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_DaisyReveal","CAMP_DaisyIntro_AvD_Music_Enter","","EMLUTE_PERFORM_DAISYREVEAL",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_Incubus","LOW_HouseOfHope_ROM_Incubus_Music_Enter","","EMLUTE_PERFORM_INCUBUS",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_NewLight","EPI_BardScripted_CampBard_New_Light","","EMLUTE_PERFORM_NEWLIGHT",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_StreetsAndFaces","EPI_BardScripted_CampBard_Streets_and_Faces","","EMLUTE_PERFORM_STREETSANDFACES",999999);
 
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f,1);
@@ -29,9 +47,18 @@ DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRI
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_CamBard_We_Live_Another_Day_ce661a39-56ea-4021-a9b2-9002b0be0792,3);
-DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)UI_State_NonHUDWidget_On_c533eac9-a045-4a17-8996-f765db4400b6,4);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)CharacterCreation_Theme_Start_feb735ea-ce4e-00d0-9cec-480aba1c870d,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)Music_Bard_Screen_On_972e4c5f-928b-4827-ab10-b6c5748efd20,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_SkinnyShart",(GUIDSTRING)CAMP_Shadowheart_SkinnyDipping_Music_Enter_ec19d32b-1213-4166-ba20-405994e62381,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_Music_Enter_974b0d3d-4d6c-491b-8a2d-6955e1eb56f3,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_ms01A_5071cfc8-2ab7-4ccc-9b17-ba8ddca0000f,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_Incubus",(GUIDSTRING)LOW_HouseOfHope_ROM_Incubus_Music_Enter_d524e82f-499f-47a0-91ff-723a2c7edc7d,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_CampBard_New_Light_853e86c2-c8e1-4389-b62c-204ddec1060e,3);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_CampBard_Streets_and_Faces_68376087-9c85-4481-bb66-88e58bf34f26,3);
 
 // Some music events need to be steered through a sequence to get back to the music game state
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64,1);
@@ -42,12 +69,22 @@ DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968,1);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737,1);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)UI_State_NonHUDWidget_Off_b530c99f-0156-43c5-9cc7-7757325b209e,1);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,2);
-DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,3);
+//DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)UI_State_NonHUDWidget_Off_b530c99f-0156-43c5-9cc7-7757325b209e,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)Music_Bard_Screen_Off_b613fbc0-f737-4085-9472-7c2cbb73f71e,1);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_SkinnyShart",(GUIDSTRING)CAMP_Shadowheart_SkinnyDipping_Music_Exit_b7f8a9e9-8757-424e-aa82-a6621ea70bb3,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_ms02B_74c71c93-0c62-49f6-8fb0-edac4c0954a7,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_Music_Exit_42473fa0-1d64-4815-b7b7-40647fc95610,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_Incubus",(GUIDSTRING)LOW_HouseOfHope_ROM_Incubus_Music_Exit_164b5645-3982-4b7f-8906-723c039df7df,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+//END_REGION
 
+//REGION ensemble performance summons
 // Move the tiefling spirit a little bit away from the player when she spawns in
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,1.5,0.5,0.5,1);
 // Spawn the Vicious Rockery gnomes in ensemble formation
@@ -66,14 +103,18 @@ DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Violin_Spirit_Skelly_e009d8
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Poly_Goblin_Dancer_01_b404b4a8-f345-4565-9b69-6a0fecca43cf,2.0,0.0,0.0,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Poly_Goblin_Dancer_02_92680a72-1346-4f25-b3c6-8ec4610ebb92,-2.0,0.0,0.0,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Poly_Goblin_Dancer_03_8828b7b7-4a70-426a-ae71-fa62100ec670,0.0,0.0,-2.0,1);
+//END_REGION
 
+//REGION learnable sheet music
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_EndlessSpring_07d2a5bd-9fc9-4016-ab2a-e25ee6d1be31,(TAG)EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING_4446abbf-0de2-48d8-a9b3-10e4c0e6b26f);
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheFinalAct_d93f4771-b8f1-428f-9b1e-6b22e11ebb6e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_FINALACT_315aebf9-89b5-425a-832c-756ae56ace9c);
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_FuneralHymn_5a2b4919-8e68-43d5-b8b7-5f95ff80ce05,(TAG)EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN_55489adb-9201-4051-880a-fef868054c0f);
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheLuringSong_8bb696b2-1c96-4cc9-aac8-9890404bd297,(TAG)EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG_dbb33529-eb79-433f-9623-eca24c7dc944);
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_ThePower_cb98a71d-27b5-4cdb-aa67-e13a2f59a84e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_THEPOWER_c1d07c95-781b-404c-9049-1ff77c7fd14c);
 DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheWeepingDawn_f0ce7272-c05d-4dcf-91c1-e4bf8e4ff57e,(TAG)EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN_652c61e4-a7db-47fe-9bab-f242c674fbca);
+//END_REGION
 
+//REGION countercharm hack
 // Found a weird issue with Countercharms in Patch7: they play silent music when they are summoned in.
 // My theory is something to do with trying to start a main performer event before the character spawning is complete?
 // Issue seems to affect vanilla Countercharm as well as my custom variant, though I'm going to leave vanilla alone since
@@ -81,6 +122,7 @@ DB_SheetMusicToSpellTag_EmbersLute((ITEMROOT)EMLUTE_MusicSheet_TheWeepingDawn_f0
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Drum_ed79a011-50f7-4ce1-be1e-c91d6b5f61e6,"EmbersLuteCountercharmDrum",3500,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Lyre_f0f9422a-41cf-46bb-9ade-af9aa92fa652,"EmbersLuteCountercharmFlute",3600,"EMLUTE_COUNTERCHARM_MUSIC");
 DB_CountercharmFix_EmbersLute((CHARACTERROOT)EMLUTE_Countercharm_MusicalSprite_Violin_913c7b82-cd4c-4bd4-b354-69fde9692684,"EmbersLuteCountercharmMusicBox",3600,"EMLUTE_COUNTERCHARM_MUSIC");
+//END_REGION
 KBSECTION
 // Reset the performing state on save game load
 // Cleaning up, DB hygiene etc.
@@ -309,7 +351,12 @@ AND
 DB_SpecialPerformance_Mapping_EmbersLute(_Song,_MusicSoundResource,4)
 THEN
 PlaySoundResource(_HelperItem,_MusicSoundResource);
-
+IF
+ObjectTimerFinished((CHARACTER)_Performer, "IncreaseVolume_Timer_Emlute")
+AND
+DB_ActiveSpecialPerformance_EmbersLute(_Performer,_,_)
+THEN
+MusicPlayGeneral("UI_State_NonHUDWidget_On");
 
 // Stops music on the lead performer and clears active performance cache
 PROC

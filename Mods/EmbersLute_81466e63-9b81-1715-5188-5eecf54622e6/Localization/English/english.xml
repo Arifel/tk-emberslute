@@ -1030,7 +1030,8 @@
   <content contentuid="h6fa93515g0ca0ga69dg9bd5g6c9bb381252b" version="1">Listening To Music</content>
   <content contentuid="h550a549dg254cgf346ge665gf1f0ec8fdf25" version="1">Attention has been piqued by music!</content>
   <content contentuid="h72b01352gcefdg66e0gae7eg5765347ed551" version="3">Performing 'The Power'</content>
-  <content contentuid="ha3c163f5g6d5eg4dbdgef31g87525c8531da" version="3">Perform 'The Power - Orchestral'</content>
+  <content contentuid="ha3c163f5g6d5eg4dbdgef31g87525c8531da" version="3">Perform 'We Live'</content>
+  <content contentuid="h763f72fbgdfb7g42dbga3ebg7427f38a7808" version="1">Perform 'The Power (Orchestral)'</content>
   <content contentuid="h0f6ead68g48e2g5befg4cc2gd74c48cc3379" version="1">Must be in camp to perform this song.</content>
   <content contentuid="hab1baf67g15d6gadf2gc826g61f4f649b578" version="1">Must be in camp to perform this song.</content>
   <content contentuid="h8ed5bdd0g2e96g23begbb97g01cc1beff348" version="1">Perform a hopeful melody of endurance.</content>
@@ -1041,4 +1042,6 @@
   <content contentuid="h64f13e2bga325g3dbcgc574g1d2da4531801" version="1">Performing a song of reflection and resilience.</content>
   <content contentuid="hba1650fag6e3agce9eg98eegd051eea91833" version="1">Performing a hopeful melody of endurance.</content>
   <content contentuid="ha2739841ga959gf508gbb9bg7fa0c61e9c0e" version="1">Performing an orchestral variant of The Power.</content>
+  <content contentuid="h2ced159dg0df5g4448g9d13gace441668d58" version="1">Test Sound Event</content>
+  <content contentuid="hc7454ba1g7e93g48ccg9dafgea1f33dbcabb" version="1">Test a Sound Event</content>
 </contentList>

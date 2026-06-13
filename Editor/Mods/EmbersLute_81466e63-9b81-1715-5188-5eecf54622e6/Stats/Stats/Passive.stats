@@ -440,6 +440,51 @@
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="404d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_SkinnyShart" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_SKINNYSHART');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_SKINNYSHART_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="909cade0-cf2a-4b4c-5d6e-7f8a9bc1d2e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_DaisyReveal" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_DAISYREVEAL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DAISYREVEAL_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e4e1c2d5-145f-4a9b-acd2-e3f4a5b6c7d8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_Incubus" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_INCUBUS');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_INCUBUS_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="39d6b7ca-69ae-4fa0-f1c7-d8e9fabbc2d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_NewLight" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_NEWLIGHT');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_NEWLIGHT_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ecbac1f-beef-4ef5-e6bc-dcbdbd3e4f8a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_StreetsAndFaces" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('EMLUTE_JOIN_STREETSANDFACES');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_STREETSANDFACES_NO_AURA,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4c2c684a-0897-4041-90be-389ab1cdba2e" />
         <field name="Name" type="NameTableFieldDefinition" value="Emlute_Join_EndlessSpring" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5508371f-e8fb-426f-9ac4-164d7883b6ff" />

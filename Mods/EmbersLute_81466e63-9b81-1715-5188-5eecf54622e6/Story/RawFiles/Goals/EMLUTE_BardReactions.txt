@@ -1428,6 +1428,8 @@ NOT DB_CantAct(_Bard)
 AND
 NOT HasActiveStatus(_Bard,"SILENCED",1)
 AND
+NOT HasPassive(_Bard,"Emlute_Musical_Spirit",1)
+AND
 NOT DB_BardReactions_NPCBardsJoin_NPCBards_Emlute(_Bard,_,_)
 THEN
 PROC_BardReactions_BardJoins_EmbersLute(_Bard,_Criminal1,_CrimeID);
@@ -1446,11 +1448,28 @@ DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_LeadPerformer,_JoinS
 THEN
 DB_BardReactions_NPCBardsJoin_NPCBards_Emlute(_Bard,_LeadPerformer,_CrimeID);
 EndRepose(_Bard);
-ApplyStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD",-1.0);
+PROC_RemoveVanillaPerform_EmbersLute(_Bard, "PERFORM_THEPOWER");
+PROC_RemoveVanillaPerform_EmbersLute(_Bard, "PERFORM_BARDDANCE");
+ApplyStatus(_Bard,"EMLUTE_MUSICAL_SPIRT_BARD",600.0);
 // We only need to apply these statuses to nudge the bard into performance for the first song
 // After that, the MUSICAL SPIRIT status will automatically keep the NPC bard playing along, matching the song of the lead performer
 ApplyStatus(_Bard,_JoinStatus,-1.0);
 ApplyStatus(_Bard,_AnimStatus,-1.0);
+
+PROC
+PROC_RemoveVanillaPerform_EmbersLute((CHARACTER)_Bard,"PERFORM_THEPOWER")
+AND
+HasActiveStatus(_Bard, "PERFORM_THEPOWER",1)
+THEN
+RemoveStatus(_Bard, "PERFORM_POSITIVE");
+RemoveStatus(_Bard, "PERFORM_THEPOWER");
+PROC
+PROC_RemoveVanillaPerform_EmbersLute((CHARACTER)_Bard,"PERFORM_BARDDANCE")
+AND
+HasActiveStatus(_Bard, "PERFORM_BARDDANCE",1)
+THEN
+RemoveStatus(_Bard, "PERFORM_POSITIVE");
+RemoveStatus(_Bard, "PERFORM_BARDDANCE");
 
 QRY
 QRY_BardReactions_SongToJoinStatus_EmbersLute((CHARACTER)_LeadPerformer,(STRING)_Song)

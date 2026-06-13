@@ -922,6 +922,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="48e664b0-1b0a-4767-bcfe-f22b4f0aa551" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_JOIN_WEEPINGDAWN" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -1060,6 +1061,8 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Bard_RestoreBardicInspiration" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(MusicalInstrument);Skill(Performance,2);Tag(EMLUTE_NO_COMBAT_JOIN);" />
         <field name="Passives" type="StringTableFieldDefinition" value="Emlute_Musical_Spirit;Emlute_Join_ThePower;Emlute_Join_BardDance;Emlute_Join_Stargazing;Emlute_Join_DoS2_1;Emlute_Join_DoS2_2;Emlute_Join_DoS2_3;Emlute_Join_WeepingDawn;Emlute_Join_HarpySong;Emlute_Join_EndlessSpring;Emlute_Join_WaterQueen;Emlute_Join_FinalAct;Emlute_Join_ThePowerVocals;Emlute_Join_WeLive;Emlute_Join_ThePowerOrchestral;Emlute_Join_SkinnyShart;Emlute_Join_DaisyReveal;Emlute_Join_Incubus;Emlute_Join_NewLight;Emlute_Join_StreetsAndFaces;" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_MUSICAL_SPIRT_BARD" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF800080" is_substat="false">

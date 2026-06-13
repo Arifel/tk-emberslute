@@ -60,6 +60,7 @@ DB_BardReactions_Status_Emlute("EMLUTE_PERFORM_POSITIVE_STACK","MusicalPerforman
 DB_BardReactions_Status_Emlute("EMLUTE_PERFORM_POSITIVE_STACK","MusicalPerformance_Good_BardNPC_Emlute", "OnMainPerformerStart");
 DB_BardReactions_CrimeTypes_Emlute("MusicalPerformance_Good_Emlute");
 DB_BardReactions_CrimeTypes_Emlute("MusicalPerformance_Good_BardNPC_Emlute");
+// Wish I could remember the reason I had for going with this specific subset of songs - only used for NPC Bards joining
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePower","EMLUTE_PERFORM_THEPOWER_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_BardDance","EMLUTE_PERFORM_BARDDANCE_SPRITES","EMLUTE_PERFORM_ADD_ANIM_2");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_Stargazing","EMLUTE_PERFORM_STARGAZING_SPRITES","EMLUTE_PERFORM_ADD_ANIM_3");
@@ -68,6 +69,15 @@ DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_PER
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_PERFORM_DOS2_3_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeepingDawn","EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_EndlessSpring","EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeLive","EMLUTE_PERFORM_WELIVE_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerOrchestral","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERORCHESTRAL_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SkinnyShart","EMLUTE_PERFORM_SKINNYSHART_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_DaisyReveal","EMLUTE_PERFORM_DAISYREVEAL_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_NewLight","EMLUTE_PERFORM_NEWLIGHT_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_StreetsAndFaces","EMLUTE_PERFORM_STREETSANDFACES_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+
 // Tag priorities for anim selections
 DB_BardReactions_Tag_Priorities_Emlute(90,(TAG)KID_ee978587-6c68-4186-9bfc-3b3cc719a835);
 DB_BardReactions_Tag_Priorities_Emlute(80,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925);

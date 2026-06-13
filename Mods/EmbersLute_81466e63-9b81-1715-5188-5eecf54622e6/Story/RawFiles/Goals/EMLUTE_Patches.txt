@@ -378,6 +378,28 @@ THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",0);
 //END_REGION
 
+//REGION V3.1.0
+// Recreate the special performance facts
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_MorePerformableMusic",_)
+AND
+NOT DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000)
+THEN
+PROC_ResetAndRecreateSpecialPerformanceFacts_EmbersLute();
+PROC_ResetBardReactionFacts_EmbersLute();
+DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_MorePerformableMusic",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_MorePerformableMusic",_)
+AND
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_MorePerformableMusic",0);
+//END_REGION
+
 //REGION remove combat music performance (helpers)
 IF
 TimerFinished("RemovePerformIfDetectAura_EmbersLute_Timer")
@@ -526,6 +548,30 @@ PROC_ResetUninstallerFacts_EmbersLute();
 PROC_RecreateUninstallerFacts_EmbersLute();
 //END_REGION
 
+//REGION reset and recreate special performance facts with timer
+PROC
+PROC_ResetAndRecreateSpecialPerformanceFacts_EmbersLute()
+THEN
+PROC_ResetSpecialPerformanceFacts_EmbersLute();
+TimerLaunch("RecreateSpecialPerformanceFactsTimer_Emlute",3000);
+IF
+TimerFinished("RecreateSpecialPerformanceFactsTimer_Emlute")
+THEN
+PROC_RecreateSpecialPerformanceFacts_EmbersLute();
+//END_REGION
+
+//REGION reset and recreate bard reaction facts with timer
+PROC
+PROC_ResetAndRecreateBardReactionFacts_EmbersLute()
+THEN
+PROC_ResetBardReactionFacts_EmbersLute();
+TimerLaunch("RecreateBardReactionFactsTimer_Emlute",3500);
+IF
+TimerFinished("RecreateBardReactionFactsTimer_Emlute")
+THEN
+PROC_RecreateBardReactionFacts_EmbersLute();
+//END_REGION
+
 // Reset the bard reactions (helpers)
 //REGION
 PROC
@@ -651,6 +697,14 @@ DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SingForMe","EMLUTE_PER
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_QueensHighSeas","EMLUTE_PERFORM_DOS2_3_SPRITES","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeepingDawn","EMLUTE_PERFORM_WEEPINGDAWN_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_EndlessSpring","EMLUTE_PERFORM_ENDLESSSPRING_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_WeLive","EMLUTE_PERFORM_WELIVE_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerOrchestral","EMLUTE_PERFORM_THEPOWERVOCALS_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_ThePowerVocals","EMLUTE_PERFORM_THEPOWERORCHESTRAL_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_SkinnyShart","EMLUTE_PERFORM_SKINNYSHART_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_DaisyReveal","EMLUTE_PERFORM_DAISYREVEAL_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_NewLight","EMLUTE_PERFORM_NEWLIGHT_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
+DB_BardReactions_SongToStatusMapping_Emlute("Bard_Perform_StreetsAndFaces","EMLUTE_PERFORM_STREETSANDFACES_NO_AURA","EMLUTE_PERFORM_ADD_ANIM_1");
 DB_BardReactions_Tag_Priorities_Emlute(90,(TAG)KID_ee978587-6c68-4186-9bfc-3b3cc719a835);
 DB_BardReactions_Tag_Priorities_Emlute(80,(TAG)GOBLIN_608597d9-bf00-4ede-aabe-767457280925);
 DB_BardReactions_Tag_Priorities_Emlute(65,(TAG)GNOME_1f0551f3-d769-47a9-b02b-5d3a8c51978c);
@@ -1057,6 +1111,13 @@ DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHo
 DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_ENDLESSSPRING",282500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",274000);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerOrchestral","CharacterCreation_Theme_Start","","EMLUTE_PERFORM_THEPOWERORCHESTRAL",279500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_SkinnyShart","CAMP_Shadowheart_SkinnyDipping_Music_Enter","","EMLUTE_PERFORM_SKINNYSHART",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_DaisyReveal","CAMP_DaisyIntro_AvD_Music_Enter","","EMLUTE_PERFORM_DAISYREVEAL",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_Incubus","LOW_HouseOfHope_ROM_Incubus_Music_Enter","","EMLUTE_PERFORM_INCUBUS",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_NewLight","EPI_BardScripted_CampBard_New_Light","","EMLUTE_PERFORM_NEWLIGHT",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_StreetsAndFaces","EPI_BardScripted_CampBard_Streets_and_Faces","","EMLUTE_PERFORM_STREETSANDFACES",999999);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033,2);
@@ -1070,6 +1131,21 @@ DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Fig
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Drive_On_51280667-3665-446f-8c87-4345a9503cb8,3);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING)Music_Fight_Resume_9d3ce0e4-8511-56a8-7273-d31b48a4c047,4);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Enter_2cf5956c-bf2f-6284-31b3-22382296b982,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeLive",(GUIDSTRING)EPI_BardScripted_CamBard_We_Live_Another_Day_ce661a39-56ea-4021-a9b2-9002b0be0792,3);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)CharacterCreation_Theme_Start_feb735ea-ce4e-00d0-9cec-480aba1c870d,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)Music_Bard_Screen_On_972e4c5f-928b-4827-ab10-b6c5748efd20,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_SkinnyShart",(GUIDSTRING)CAMP_Shadowheart_SkinnyDipping_Music_Enter_ec19d32b-1213-4166-ba20-405994e62381,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_Music_Enter_974b0d3d-4d6c-491b-8a2d-6955e1eb56f3,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_ms01A_5071cfc8-2ab7-4ccc-9b17-ba8ddca0000f,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_Incubus",(GUIDSTRING)LOW_HouseOfHope_ROM_Incubus_Music_Enter_d524e82f-499f-47a0-91ff-723a2c7edc7d,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_CampBard_New_Light_853e86c2-c8e1-4389-b62c-204ddec1060e,3);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_On_8e7fd934-1d71-4820-ad3d-4d918c79b6c9,1);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_Start_d1e077c1-a18d-4711-8211-6b866824d693,2);
+DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_CampBard_Streets_and_Faces_68376087-9c85-4481-bb66-88e58bf34f26,3);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_Stop_d2dfc5f9-bf04-946a-8878-810964428d64,1);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_EndlessSpring",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
@@ -1078,6 +1154,16 @@ DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_FinalAct",(GUIDSTRING
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Credits_menu_Leave_086dd84e-7b55-8ee2-18d6-499d8406f968,1);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerVocals",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
 DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Leave_07cea99d-15aa-276a-e44b-1d7093530737,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)Music_Bard_Screen_Off_b613fbc0-f737-4085-9472-7c2cbb73f71e,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_ThePowerOrchestral",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_SkinnyShart",(GUIDSTRING)CAMP_Shadowheart_SkinnyDipping_Music_Exit_b7f8a9e9-8757-424e-aa82-a6621ea70bb3,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_ms02B_74c71c93-0c62-49f6-8fb0-edac4c0954a7,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_DaisyReveal",(GUIDSTRING)CAMP_DaisyIntro_AvD_Music_Exit_42473fa0-1d64-4815-b7b7-40647fc95610,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_Incubus",(GUIDSTRING)LOW_HouseOfHope_ROM_Incubus_Music_Exit_164b5645-3982-4b7f-8906-723c039df7df,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_NewLight",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)EPI_BardScripted_Off_65724098-1292-43af-a4b2-d07a9063af48,1);
+DB_SpecialPerformance_Mapping_Off_EmbersLute("Bard_Perform_StreetsAndFaces",(GUIDSTRING)Music_Game_Enter_de4fd7c3-b698-a8b6-959f-66db92ea9540,2);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_TieflingBard_Spirit_43d08735-7bb2-48a4-a446-b8814d4409c6,2.0,0.5,0.5,1);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Drum_Spirit_Gnome_2507263a-a2c8-495f-b485-be77566ba1ff,2.5,0.0,0.0,0);
 DB_RepositionSummon_EmbersLute((CHARACTERROOT)Emlute_Flute_Spirit_Gnome_7f8ae293-5f9b-41ed-bad4-d113b0058ed0,-2.5,0.0,0.0,0);

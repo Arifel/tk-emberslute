@@ -114,7 +114,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2f8fca48-9f8c-4793-bd7b-88f713cdc70d" />
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Custom_Emlute" />
-        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;Shout_Bard_Perform_WeLive_Emlute;Shout_Bard_Perform_ThePowerOrchestral_Emlute;Shout_Bard_Perform_SkinnyShart_Emlute;Shout_Bard_Perform_DaisyReveal_Emlute;Shout_Bard_Perform_Incubus_Emlute;Shout_Bard_Perform_NewLight_Emlute;Shout_Bard_Perform_StreetsAndFaces_Emlute;Shout_Bard_Perform_TestSoundEvent_Emlute;Shout_Bard_Perform_Help_Emlute;Shout_Bard_Perform_Stop_Emlute;" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Bard_Perform_WeepingDawn_Emlute;Shout_Bard_Perform_HarpySong_Emlute;Shout_Bard_Perform_EndlessSpring_Emlute;Shout_Bard_Perform_WaterQueen_Emlute;Shout_Bard_Perform_ThePowerVocals_Emlute;Shout_Bard_Perform_FinalAct_Emlute;Shout_Bard_Perform_WeLive_Emlute;Shout_Bard_Perform_ThePowerOrchestral_Emlute;Shout_Bard_Perform_SkinnyShart_Emlute;Shout_Bard_Perform_DaisyReveal_Emlute;Shout_Bard_Perform_NewLight_Emlute;Shout_Bard_Perform_StreetsAndFaces_Emlute;Shout_Bard_Perform_Help_Emlute;Shout_Bard_Perform_Stop_Emlute;" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeepingDawn" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfcc964f7gfff3g25b2ge124g1e7db6015f5c" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8dac814gdc75g0d76gaf53g0b63cef665e7" version="1" />
@@ -212,7 +212,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha3c163f5g6d5eg4dbdgef31g87525c8531da" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8ed5bdd0g2e96g23begbb97g01cc1beff348" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8ed5bdd0g2e96g23begbb97g01cc1beff348" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdc612e99gf591g46ccg1ae3g223846e18b0e" version="1" />
       </fields>
     </stat_object>
@@ -225,7 +225,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h763f72fbgdfb7g42dbga3ebg7427f38a7808" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80ed3527ge1d3g012ag0181g08f51691848c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h80ed3527ge1d3g012ag0181g08f51691848c" version="2" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he93ed0edg750eg536fg7e0dg66536e241c24" version="1" />
       </fields>
     </stat_object>
@@ -235,10 +235,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_SkinnyShart_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_SKINNYSHART,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f2b206eg4666g4e9agbe2egaaf5d06a5d9e" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f2b206eg4666g4e9agbe2egaaf5d06a5d9e" version="3" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbd6012e0g1fd0g46d3g975eg466744558e67" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbd6012e0g1fd0g46d3g975eg466744558e67" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h2b767adag71c2g4fd2g99b3gc8efec82cd44" version="2" />
       </fields>
     </stat_object>
@@ -248,24 +248,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DaisyReveal_Emlute" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_DAISYREVEAL,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h237c5d50g869bg4632g9c11geae155796fdb" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h237c5d50g869bg4632g9c11geae155796fdb" version="3" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84df8a6fg639fg4137gb4fbg269c1d9b0aa4" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84df8a6fg639fg4137gb4fbg269c1d9b0aa4" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h22ba2538g6f03g450cg8786g5ea906174c21" version="2" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FFC71585" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f5f2d3e6-256a-4bac-bde3-f4a5b6c7d8e9" />
-        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_Incubus_Emlute" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_INCUBUS,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9bf9033gdd74g48f3ga180g003c19a96741" version="2" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf41bb76ga4b4g4e71gb0f5g4dc826b2ae84" version="2" />
-        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hd3f87803gd76ag4a71g824bgb89cf4d19adb" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FFC71585" is_substat="false">
@@ -277,7 +264,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92db0b06gd059g478bgaf17g3f33e7a175a8" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03405001gd5f7g4556gaf1egb3fd41e73df5" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03405001gd5f7g4556gaf1egb3fd41e73df5" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hdc61956dg5e20g40d6ga07bg4ab2b5e336f1" version="2" />
       </fields>
     </stat_object>
@@ -290,7 +277,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h665e869eg901dg4cd0g8857g7e4ca03f4bb9" version="2" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h729dbf6eg49e5g4962gb373gf0ffebe0e803" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h729dbf6eg49e5g4962gb373gf0ffebe0e803" version="3" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h79d9a94cg29e3g4795g8e1eg11dc3cbc55be" version="2" />
       </fields>
     </stat_object>
@@ -306,6 +293,19 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
         <field name="RequirementEvents" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusEvent" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFC71585" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5f2d3e6-256a-4bac-bde3-f4a5b6c7d8e9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Bard_Perform_DONTUSE_Incubus_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="739e578a-9e4c-43ad-ad62-3b448a81eba8" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(EMLUTE_PERFORM_INCUBUS,100,-1);ApplyStatus(EMLUTE_REACTIONS_DELAY,100,1);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9bf9033gdd74g48f3ga180g003c19a96741" version="3" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="Emlute_CanStartOrJoinPerformance_CE() and Emlute_IsNotPerforming_CE()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf41bb76ga4b4g4e71gb0f5g4dc826b2ae84" version="3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hd3f87803gd76ag4a71g824bgb89cf4d19adb" version="2" />
       </fields>
     </stat_object>
     <stat_object color="#FFA1106B" is_substat="false">

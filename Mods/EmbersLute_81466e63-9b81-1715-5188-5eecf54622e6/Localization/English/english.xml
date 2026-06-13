@@ -1034,9 +1034,9 @@
   <content contentuid="h763f72fbgdfb7g42dbga3ebg7427f38a7808" version="1">Perform 'The Power (Orchestral)'</content>
   <content contentuid="h0f6ead68g48e2g5befg4cc2gd74c48cc3379" version="1">Must be in camp to perform this song.</content>
   <content contentuid="hab1baf67g15d6gadf2gc826g61f4f649b578" version="1">Must be in camp to perform this song.</content>
-  <content contentuid="h8ed5bdd0g2e96g23begbb97g01cc1beff348" version="1">Perform a hopeful melody of endurance.</content>
+  <content contentuid="h8ed5bdd0g2e96g23begbb97g01cc1beff348" version="2">Perform Milil's variant of 'I Want to Live' with musical sprites.</content>
   <content contentuid="hdc612e99gf591g46ccg1ae3g223846e18b0e" version="1">Must be in camp to perform this song.</content>
-  <content contentuid="h80ed3527ge1d3g012ag0181g08f51691848c" version="1">Perform an orchestral rendition of 'The Power'.</content>
+  <content contentuid="h80ed3527ge1d3g012ag0181g08f51691848c" version="2">Join musical sprites in an orchestral rendition of 'The Power'.</content>
   <content contentuid="he93ed0edg750eg536fg7e0dg66536e241c24" version="1">Must be in camp to perform this song.</content>
   <content contentuid="h6a5878f9gabcdg2640gf419g897cf4530e5e" version="1">Performing a dramatic piece about the inevitable finality of the mortal coil...</content>
   <content contentuid="h64f13e2bga325g3dbcgc574g1d2da4531801" version="1">Performing a song of reflection and resilience.</content>
@@ -1044,19 +1044,19 @@
   <content contentuid="ha2739841ga959gf508gbb9bg7fa0c61e9c0e" version="1">Performing an orchestral variant of The Power.</content>
   <content contentuid="h2ced159dg0df5g4448g9d13gace441668d58" version="1">Test Sound Event</content>
   <content contentuid="hc7454ba1g7e93g48ccg9dafgea1f33dbcabb" version="1">Test a Sound Event</content>
-  <content contentuid="h2f2b206eg4666g4e9agbe2egaaf5d06a5d9e" version="2">Perform 'Making Sandcastles'</content>
-  <content contentuid="hbd6012e0g1fd0g46d3g975eg466744558e67" version="2">Not the actual song title, just a placeholder!</content>
+  <content contentuid="h2f2b206eg4666g4e9agbe2egaaf5d06a5d9e" version="3">Perform 'I Want To Live' (Romance)</content>
+  <content contentuid="hbd6012e0g1fd0g46d3g975eg466744558e67" version="3">Join musical sprites in a romantic rendition of 'I Want To Live'.</content>
   <content contentuid="h2b767adag71c2g4fd2g99b3gc8efec82cd44" version="2">Must be in camp to perform this song.</content>
-  <content contentuid="h237c5d50g869bg4632g9c11geae155796fdb" version="2">Perform 'Dream Visits'</content>
-  <content contentuid="h84df8a6fg639fg4137gb4fbg269c1d9b0aa4" version="2">Not the actual song title, just a placeholder!</content>
+  <content contentuid="h237c5d50g869bg4632g9c11geae155796fdb" version="3">Perform 'Down by the River' (Dreamer)</content>
+  <content contentuid="h84df8a6fg639fg4137gb4fbg269c1d9b0aa4" version="3">Join musical sprites in a dreamy variant of Down by the River.</content>
   <content contentuid="h22ba2538g6f03g450cg8786g5ea906174c21" version="2">Must be in camp to perform this song.</content>
-  <content contentuid="he9bf9033gdd74g48f3ga180g003c19a96741" version="2">Perform 'Dangerous Liasions'</content>
-  <content contentuid="hdf41bb76ga4b4g4e71gb0f5g4dc826b2ae84" version="2">Not the actual song title, just a placeholder!</content>
+  <content contentuid="he9bf9033gdd74g48f3ga180g003c19a96741" version="3">DON'T USE</content>
+  <content contentuid="hdf41bb76ga4b4g4e71gb0f5g4dc826b2ae84" version="3">The sound event is too quiet.</content>
   <content contentuid="hd3f87803gd76ag4a71g824bgb89cf4d19adb" version="2">Must be in camp to perform this song.</content>
   <content contentuid="h92db0b06gd059g478bgaf17g3f33e7a175a8" version="2">Perform 'New Light'</content>
-  <content contentuid="h03405001gd5f7g4556gaf1egb3fd41e73df5" version="2">Perform Milil's variant of 'Last Light'.</content>
+  <content contentuid="h03405001gd5f7g4556gaf1egb3fd41e73df5" version="3">Perform Milil's variant of 'Last Light' with musical sprites.</content>
   <content contentuid="hdc61956dg5e20g40d6ga07bg4ab2b5e336f1" version="2">Must be in camp to perform this song.</content>
   <content contentuid="h665e869eg901dg4cd0g8857g7e4ca03f4bb9" version="2">Perform 'Streets and Faces'</content>
-  <content contentuid="h729dbf6eg49e5g4962gb373gf0ffebe0e803" version="2">Perform something rich and warm.</content>
+  <content contentuid="h729dbf6eg49e5g4962gb373gf0ffebe0e803" version="3">Join musical sprites in a rendition of something rich and warm.</content>
   <content contentuid="h79d9a94cg29e3g4795g8e1eg11dc3cbc55be" version="2">Must be in camp to perform this song.</content>
 </contentList>

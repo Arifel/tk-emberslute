@@ -1746,7 +1746,7 @@
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="Billboard_Green" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="Very slight refraction" />
               </data>
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
@@ -1799,12 +1799,12 @@
                       <keyframes>
                         <keyframe time="0" value="0" />
                         <keyframe time="0.1631993" value="0" is_control_point="True" />
-                        <keyframe time="0.1243054" value="0.2064516" is_control_point="True" />
-                        <keyframe time="0.2875047" value="0.2064516" />
-                        <keyframe time="0.3143192" value="0.2064516" is_control_point="True" />
-                        <keyframe time="0.4146394" value="0.2064516" is_control_point="True" />
-                        <keyframe time="0.4414538" value="0.2064516" />
-                        <keyframe time="0.471137" value="-0.7935485" is_control_point="True" />
+                        <keyframe time="0.1233429" value="0.01290322" is_control_point="True" />
+                        <keyframe time="0.2865422" value="0.01290323" />
+                        <keyframe time="0.3133567" value="0.01290322" is_control_point="True" />
+                        <keyframe time="0.4136769" value="0.01290322" is_control_point="True" />
+                        <keyframe time="0.4404913" value="0.01290323" />
+                        <keyframe time="0.4701745" value="-0.9870969" is_control_point="True" />
                         <keyframe time="0.8566805" value="0" is_control_point="True" />
                         <keyframe time="1" value="0" />
                       </keyframes>
@@ -5349,7 +5349,7 @@
         <id value="7" />
       </ids>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="ParticleSystem" start="0.52" end="0.778098" instancename="10846f5b-1836-44d7-b0c6-3f64d0c7af1d">
+        <component class="ParticleSystem" start="0.5068479" end="0.7649459" instancename="10846f5b-1836-44d7-b0c6-3f64d0c7af1d">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -5358,7 +5358,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.52,0.778098" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.5068479,0.7649459" />
               </data>
             </property>
             <property id="758f33a5-c5a2-4149-bc97-1e888d58c564">
@@ -5552,8 +5552,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="93b34a52-eef2-4f88-80f6-19e3126188ca">
                       <keyframes>
-                        <keyframe time="0" value="-16732929" />
-                        <keyframe time="1" value="-16732929" />
+                        <keyframe time="0" value="-13290646" />
+                        <keyframe time="1" value="-14474453" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -6141,8 +6141,8 @@
                   <rampchanneldata>
                     <rampchannel type="FreeTangentSpline" id="abb3483f-3e08-4e5e-be32-ebbdf1f6a11b" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="0.5" />
-                        <keyframe time="0.3333333" value="0.5" is_control_point="True" />
+                        <keyframe time="0" value="0.2354839" />
+                        <keyframe time="0.3333333" value="0.2354839" is_control_point="True" />
                         <keyframe time="0.6666666" value="0" is_control_point="True" />
                         <keyframe time="1" value="0" />
                       </keyframes>
@@ -6288,8 +6288,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="8874e7de-635d-4fee-9906-bbf928937e2f" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="9.354838" />
-                        <keyframe time="1" value="9.354838" />
+                        <keyframe time="0" value="5" />
+                        <keyframe time="1" value="5" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -6831,7 +6831,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="ParticleSystem" start="0.5031701" end="0.7832853" instancename="eb22850a-27dc-4153-bbe6-09840555be39">
+        <component class="ParticleSystem" start="0.5325575" end="0.8126727" instancename="eb22850a-27dc-4153-bbe6-09840555be39">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -6840,7 +6840,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.5031701,0.7832853" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.5325575,0.8126727" />
               </data>
             </property>
             <property id="758f33a5-c5a2-4149-bc97-1e888d58c564">
@@ -7034,8 +7034,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="93b34a52-eef2-4f88-80f6-19e3126188ca">
                       <keyframes>
-                        <keyframe time="0" value="-2359041" />
-                        <keyframe time="1" value="-2359041" />
+                        <keyframe time="0" value="-13884802" />
+                        <keyframe time="1" value="-14213055" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>

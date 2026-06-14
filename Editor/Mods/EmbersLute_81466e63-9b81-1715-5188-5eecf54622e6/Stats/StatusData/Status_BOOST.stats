@@ -367,6 +367,7 @@
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_DaisyReveal" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f49349a6-dc4f-4661-884c-a69f030948b8" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -382,7 +383,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Emlute_EventBreaksLegendJoinPerformance()" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ffa9dbc9-d6ec-4024-b943-a2b9579d4b97" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="907f97c7-2ce5-41cb-b9d2-b5e94df03508" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">

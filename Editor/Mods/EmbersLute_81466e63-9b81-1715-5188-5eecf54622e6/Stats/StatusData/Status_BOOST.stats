@@ -388,35 +388,6 @@
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="b1befca2-e14c-4d6e-7f8a-9bc1d2e3f4a5" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_INCUBUS" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9bf9033gdd74g48f3ga180g003c19a96741" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf41bb76ga4b4g4e71gb0f5g4dc826b2ae84" version="1" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_INCUBUS);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
-        <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_Incubus" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FFFF00FF" is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c2cfa0b3-f25d-4e7f-8a9b-c1d2e3f4a5b6" />
-        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_INCUBUS_NO_AURA" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="b1befca2-e14c-4d6e-7f8a-9bc1d2e3f4a5" />
-        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
-        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Emlute_EventBreaksLegendJoinPerformance()" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ffa9dbc9-d6ec-4024-b943-a2b9579d4b97" />
-      </fields>
-    </stat_object>
-    <stat_object color="#FFFF00FF" is_substat="false">
-      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="06a3e4f7-367b-4cbd-cef4-a5b6c7d8e9fa" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_NEWLIGHT" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
@@ -456,6 +427,7 @@
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_StreetsAndFaces" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="244d8336-f878-4c47-b9e2-11c999ae1bab" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -471,7 +443,7 @@
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Emlute_EventBreaksLegendJoinPerformance()" />
         <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ffa9dbc9-d6ec-4024-b943-a2b9579d4b97" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="907f97c7-2ce5-41cb-b9d2-b5e94df03508" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -626,7 +598,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h72b01352gcefdg66e0gae7eg5765347ed551" version="3" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_THEPOWERORCHESTRAL);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
-        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9097cd53-551e-470e-a5f4-2938c9510bc0" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="75be8d9c-846f-4107-a0a0-f4b8617f9bfc" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePowerOrchestral" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha2739841ga959gf508gbb9bg7fa0c61e9c0e" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
@@ -646,7 +618,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ffa9dbc9-d6ec-4024-b943-a2b9579d4b97" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF00FF" is_substat="false">
+    <stat_object color="#FF541250" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="c1d2e3f4-5678-9012-3456-789012345678" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_TESTSOUNDEVENT" />
@@ -659,7 +631,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
       </fields>
     </stat_object>
-    <stat_object color="#FFFF00FF" is_substat="false">
+    <stat_object color="#FF541250" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d2e3f4a5-6789-0123-4567-890123456789" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_TESTSOUNDEVENT_NO_AURA" />
@@ -671,6 +643,34 @@
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Emlute_EventBreaksLegendJoinPerformance()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ffa9dbc9-d6ec-4024-b943-a2b9579d4b97" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1befca2-e14c-4d6e-7f8a-9bc1d2e3f4a5" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_INCUBUS" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f1b6e526-cf9a-4795-b6ed-e1a334cf26f1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he9bf9033gdd74g48f3ga180g003c19a96741" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf41bb76ga4b4g4e71gb0f5g4dc826b2ae84" version="1" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_INCUBUS);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
+        <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_Incubus" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF696969" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2cfa0b3-f25d-4e7f-8a9b-c1d2e3f4a5b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_INCUBUS_NO_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b1befca2-e14c-4d6e-7f8a-9bc1d2e3f4a5" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnSpellCast;OnDamage;OnEquip;OnUnequip;OnMove;OnRemovePerformanceRequest;OnStatusApplied;OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="Emlute_EventBreaksLegendJoinPerformance()" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF4B0082" is_substat="false">

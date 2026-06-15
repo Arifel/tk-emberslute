@@ -336,7 +336,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_SKINNYSHART);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_SkinnyShart" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_RomanticInterlude" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="28bbf205-9b97-4688-86f2-1e02567e93ba" />
       </fields>
     </stat_object>
@@ -366,7 +366,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_DAISYREVEAL);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_DaisyReveal" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_DreamerReveal" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="f49349a6-dc4f-4661-884c-a69f030948b8" />
       </fields>
     </stat_object>
@@ -426,7 +426,7 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="TARGET:IF((HasPassive('Emlute_Musical_Spirit')) and not Emlute_TargetHasExcludedFromAuraStatus()):ApplyStatus(EMLUTE_JOIN_STREETSANDFACES);TARGET:IF(Character()):ApplyStatus(EMLUTE_IN_LEGEND_AURA)" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_StreetsAndFaces" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_StreetsAndFaces" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="244d8336-f878-4c47-b9e2-11c999ae1bab" />
       </fields>
     </stat_object>
@@ -574,7 +574,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="9ed80197-975d-4446-9865-51dde0afe85a" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_WeLive" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hba1650fag6e3agce9eg98eegd051eea91833" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_WeLiveAnotherDay" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -601,7 +601,7 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="75be8d9c-846f-4107-a0a0-f4b8617f9bfc" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePowerOrchestral" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha2739841ga959gf508gbb9bg7fa0c61e9c0e" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_EndlessSpring" />
+        <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_Song_ThePowerOrchestral" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">

@@ -218,6 +218,42 @@
                     <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_CONFIG_BARDIC_INSPIRATION_ON_False"/>
                     <attribute id="UUID" type="guid" value="12c5d363-fb81-42fb-a853-d92033e1edde"/>
                 </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hfb0ed34fg3fccgb007g6bd1g52c75463a842" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_NEWLIGHT_False"/>
+                    <attribute id="UUID" type="guid" value="23777ca1-af62-48ab-9820-69bde4094a51"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hc615d804ga611gc9b5gb4b2g7392db548f3b" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_WELIVE_False"/>
+                    <attribute id="UUID" type="guid" value="2940c795-dd41-4fe6-9ff0-859ee4a3d906"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h700af5fcg8703g4e12g2d29g1f2af7c58bdd" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_STREETSANDFACES_False"/>
+                    <attribute id="UUID" type="guid" value="ca0c2769-1d28-4fb1-86bd-314d5f708db1"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="ha8a1b2f5g2a60g1d38g39c9gf4a95c358d50" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_THEPOWERORCHESTRAL_False"/>
+                    <attribute id="UUID" type="guid" value="53e28fe1-d96c-4e51-b193-b712850465f8"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h763951a6gc811gfd4dgacdbg34f47c161b76" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_DAISYREVEAL_False"/>
+                    <attribute id="UUID" type="guid" value="2aad5903-3b75-4871-8a02-d5d41291a8a4"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h5a270468g89a1gbbffg4cc3g5550792fddc7" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Tag_EMLUTE_SHEETMUSIC_LEARNT_SKINNYSHART_False"/>
+                    <attribute id="UUID" type="guid" value="46a90e97-f663-49bb-960e-e38eae1aec06"/>
+                </node>
             </children>
         </node>
     </region>

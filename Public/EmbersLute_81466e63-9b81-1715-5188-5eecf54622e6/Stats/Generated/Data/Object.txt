@@ -169,6 +169,36 @@ type "Object"
 using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
 data "RootTemplate" "8bb696b2-1c96-4cc9-aac8-9890404bd297"
 
+new entry "EMBERS_LUTE_SHEETMUSIC_NEWLIGHT"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "fb4ae7b9-7a6d-43de-bad9-94ff21250f55"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_WELIVE"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "126289ce-e231-49b9-975f-bbda20c7fdf8"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_STREETSANDFACES"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "dd0f3146-6106-4f05-b857-dbc8244cc213"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_THEPOWERORCHESTRAL"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "94ff9f6c-8b68-4d62-b069-69c0bc8cde05"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_DAISYREVEAL"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "14672dc5-9858-420f-8236-8c30e97f86d2"
+
+new entry "EMBERS_LUTE_SHEETMUSIC_SKINNYSHART"
+type "Object"
+using "EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN"
+data "RootTemplate" "16f1b7ca-ed83-48a4-afea-65b97941a62c"
+
 new entry "EMBERS_LUTE_PUDDLEPOP_MEAD"
 type "Object"
 using "_CONS_Alcohol_Rich"

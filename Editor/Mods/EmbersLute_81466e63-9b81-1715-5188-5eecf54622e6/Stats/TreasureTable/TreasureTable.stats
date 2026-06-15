@@ -542,6 +542,244 @@
         <field name="DropCount" type="StringTableFieldDefinition" value="-1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_SheetMusic" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_HARPYSONG" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b108d9e8-0ee8-451f-87c7-979aadb163a2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_SheetMusic_substat" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_ENDLESSSPRING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d651441c-26dd-4959-9c83-19b89f1c8e23" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_0" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_THEPOWER" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e33623db-a935-402c-82cb-55ba0c62bd9d" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e4150227-bee4-4448-896a-7d59295073eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_2" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_WATERHYMN" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9b3d8c0e-30be-4df7-a53b-452fd4a00437" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_3" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_FINALACT" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a79d43a4-01bb-4ae8-a6ae-5df57fa718c0" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_4" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="48560b6b-e110-4aee-bcc4-8052e0ba2fb2" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_5" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_WELIVE" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e045931b-3f7f-4ba0-a4f4-5747b260593f" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_6" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_STREETSANDFACES" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="bd8e74d5-eb69-41ec-99cd-15ca9cb44e59" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_7" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_THEPOWERORCHESTRAL" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d672b7e3-6dc7-4473-97cb-1a4dd79f51d5" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_8" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_DAISYREVEAL" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5547bea3-7a3c-4131-a52e-ad92b73351aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="57404d5c-c4f9-499d-92ea-1bd02e5ecb2c_substat_9" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_SKINNYSHART" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_Spoilers_Rewards" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="2efd9f4a-ee05-4f2b-957e-0016baab6da8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_Chest_Content_Spoilers_Rewards_substat" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_BARD_SHOES" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="337c55b6-cc77-4115-a837-fde99388a9bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_0" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_UNKNOWN_UNDERWEAR" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f4e0cb87-52a0-415c-b580-5d7db2ac311c" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_GRIMJIG_UNDERWEAR" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1a4a29cc-758f-4ccb-8f08-82ae05ffa2c2" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_2" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_CRITICAL_MOCKERY_RING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f571c8d7-2bc2-4e62-848c-515e7d9f7da5" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_3" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_DEXTEROUS_JUMP_RING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5e57c713-3360-4d02-88b0-992ed50cde13" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_4" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_PARRY_GLOVES" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3454ef7a-ef28-4a83-bc7e-ff590d23341c" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_5" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_SWIFT_WINGS_RING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="46c55540-a68e-4bad-9fd8-b3d0c3f7860a" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_6" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_REWARD_CHARISMATIC_STING" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d838b217-4ebe-4624-a78b-cc0d2a503638" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_7" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_MUSICALSPRITES_COMBAT" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="111d99d2-b1bb-45ed-8f0d-64c3f12983db" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_8" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_MUSICALSPRITES_LYSANDRA" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="9c8d06c7-6829-4e95-86b3-4846dfc39b96" />
+        <field name="Name" type="NameTableFieldDefinition" value="e8dfd028-0129-439c-ac1c-197f1cde4ff2_substat_9" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_MUSICALSPRITES_FLUTE_PRISMATIC" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b4929f44-e97a-417c-9c6f-952bda30b515" />

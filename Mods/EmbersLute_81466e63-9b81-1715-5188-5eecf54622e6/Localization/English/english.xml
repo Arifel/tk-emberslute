@@ -208,7 +208,7 @@
   <content contentuid="h25291922g749eg4e90gb28bg01a513b0a4ef" version="1">Dismissing sprites and musical spirit summons.</content>
   <content contentuid="h58128bbeg9c18g8aa7g24ffg85a858aa94a2" version="1">Curtain Call</content>
   <content contentuid="haeaedeb2gbb28g5c6dgdce6g8ae0135dc155" version="1">Dismissing musical sprites.</content>
-  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="13">Spirit of a Tragic Tiefling Bard</content>
+  <content contentuid="h67e41ca2g654fg4610gbf34gf38fbe887958" version="14">Spirit of a Tragic Tiefling Bard</content>
   <content contentuid="h31850c2aga592g1894ga37eg89582b18352f" version="1">Melody Gearfiddle</content>
   <content contentuid="hc9266932g15ebgb66bg984eg52431a2179ee" version="1">Summon Melody Gearfiddle. Her rivals called her Queen Bow, because she wielded it like a rapier when crossed.</content>
   <content contentuid="he5c3fcc5g9177g365agcdcag493dfdaefdb8" version="1">Percival Stonegroove</content>
@@ -939,8 +939,8 @@
   <content contentuid="h1edc658ege645g1cc6g6ce7g14470545e5fc" version="3">Ember's Lute Current Version 3.0.0</content>
   <content contentuid="h1d3f94d3ge0f2g4a8cg545dgb2ec3d4dbf2f" version="3">The mod version active in this campaign.</content>
   <content contentuid="hb4871cc7ge444g2551g0cf9ged3f1355bfb7" version="4">Musical Sprites</content>
-  <content contentuid="h23dc535fga5b3g88f3g173bg185cac3ae76a" version="2">SPOILERS</content>
-  <content contentuid="hb1f8d60bg299dga624g181dg0ea0849c593b" version="2">Contains SPOILERS</content>
+  <content contentuid="h23dc535fga5b3g88f3g173bg185cac3ae76a" version="3">SPOILERS</content>
+  <content contentuid="hb1f8d60bg299dga624g181dg0ea0849c593b" version="3">Contains SPOLIERS for the Ember's Lute mod.</content>
   <content contentuid="h607e06e9ged47g9963g0d7bg5475021182d7" version="1">Listen To Music</content>
   <content contentuid="h5fc6627aga9c1g830ag0246g4923413e1bbb" version="2">Attention has been piqued by music!</content>
   <content contentuid="hc900b890gaddfg6117ga80cg222d5631559c" version="1">Applause</content>
@@ -1089,4 +1089,13 @@
   <content contentuid="ha8a1b2f5g2a60g1d38g39c9gf4a95c358d50" version="1">You have not yet learned how to perform this song.</content>
   <content contentuid="h763951a6gc811gfd4dgacdbg34f47c161b76" version="1">You have not yet learned how to perform this song.</content>
   <content contentuid="h5a270468g89a1gbbffg4cc3g5550792fddc7" version="1">You have not yet learned how to perform this song.</content>
+  <content contentuid="h5da13ba9g3a2cg1e2bg4571g6d98a2b7dd42" version="3">SPOILERS (Performance Rewards)</content>
+  <content contentuid="h156eee12g519bgb677gc812gfc1a96932cb2" version="3">Contains SPOLIERS for the Ember's Lute mod.</content>
+  <content contentuid="hd77f3894g845egd4e1g3425gc46b2e88d24d" version="2">SPOILERS (Sheet Music)</content>
+  <content contentuid="hd5478992g160fg89cegc310g3b53f4d53f89" version="2">Contains SPOLIERS for the Ember's Lute mod.</content>
+  <content contentuid="h99d5cec1g6a28ga8ccg8ae1g8a177433eea2" version="1">(Mod Spoiler) Grant all Performance Reward Items</content>
+  <content contentuid="h263f6150g5c18gc002g0918g48e2d33f6415" version="1">Summon a bag containing all possible rewards for busking into the target's inventory.</content>
+  <content contentuid="h3244662bg1f13g6386g01e4gf981a8fcc99d" version="1">WARNING: This spell is a mod SPOILER.</content>
+  <content contentuid="ha08a7f9cg544fgd6beg8badge679e439c266" version="1">(Mod Spoiler) Grant all Music Sheet Items</content>
+  <content contentuid="hb7148ea9gb30eg2616gdb72g953dafb3d448" version="1">Summon a pouch containing all sheet music into the target's inventory.</content>
 </contentList>

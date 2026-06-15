@@ -301,8 +301,8 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalNonDamage" enumeration_type_name="HitAnimationType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="46e75e74-a09a-48e6-8706-d9b5ff846ae4" />
         <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="c20fcf83-26a4-460c-abeb-52bcbbae37a6" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="10" />
-        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
       </fields>
     </stat_object>
@@ -317,6 +317,28 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="he6fde13cg952ag14b8gdd7fg79daab9f2b47" version="2" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000CD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da5d9b68-5757-4d63-87aa-dc1a402097cf" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteSpoilerSpell_OSI_Rewards_Permanent" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b813d6d9-1637-4589-9daf-fa479ff2b717" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="7" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and Party() and not Dead() and not Self();" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h99d5cec1g6a28ga8ccg8ae1g8a177433eea2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h263f6150g5c18gc002g0918g48e2d33f6415" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h3244662bg1f13g6386g01e4gf981a8fcc99d" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF0000CD" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="14cd789e-eb51-4a52-a9ef-ff261accd235" />
+        <field name="Name" type="NameTableFieldDefinition" value="SummonEmluteSpoilerSpell_OSI_SheetMusic_Permanent" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="da5d9b68-5757-4d63-87aa-dc1a402097cf" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha08a7f9cg544fgd6beg8badge679e439c266" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb7148ea9gb30eg2616gdb72g953dafb3d448" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

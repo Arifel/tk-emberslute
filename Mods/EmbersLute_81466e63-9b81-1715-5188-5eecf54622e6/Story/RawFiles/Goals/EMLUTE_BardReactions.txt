@@ -24,6 +24,7 @@ INITSECTION
 // DB_BardReactions_NPCBardsJoin_PerformerActiveStatus_Emlute(_Performer,_ActiveSongStatus,_ActiveAnimStatus) - tracking the active song NPC bards are reacting to
 // DB_PerformanceRewardUnique_Tracker_EmbersLute(_Performer,_Status) - status tracker for reward selection logic
 // DB_BuskingAchievement_Tracker_EmbersLute(_Performer,_NPC) - tracker to ensure only one increment per crowd member
+// DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index) - pool of currently attainable uncollected rewards
 //
 // Query results
 // DB_QRYRTN_BardReactions_PriorityTag_Emlute(_NPC,_BestPriority,_BestTag) - result for query to select highest priority tag for anims
@@ -349,13 +350,20 @@ DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(13,(FLAG)DEN_HarpyMeal_S
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(14,(FLAG)ORI_DarkUrge_State_MurderedAlfiraOrAlternative_6bb5bfcc-e762-40d4-a05b-9bdf860ba099);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(15,(FLAG)LOW_WaterQueensHouse_State_FuneralEnded_cebde540-6e92-ea5d-2187-c40eb9f5f95f);
 DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(16,(FLAG)TWN_Hospital_State_SurgeonPermaDefeated_0820e94c-7007-4459-b935-2d33fbbf6aa9);
-DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",-5);
+DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GOOD",0);
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_GREAT",10);
-DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",25);
-DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",45);
+DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_LEGENDARY",20);
+DB_PerformanceRewardUnique_StatusModifier_EmbersLute("EMLUTE_PERFORM_POSITIVE_DANGEROUS",35);
 //END_REGION
 
 KBSECTION
+//REGION reset the reward status on game load
+IF
+LevelGameplayStarted(_,_)
+THEN
+PROC_SetupUniqueRewardsRemaining_EmbersLute();
+//END_REGION
+
 // Hard reset on long rest
 //REGION
 // No rewards if long rest interrupts performance
@@ -1135,7 +1143,7 @@ HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
 DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
 AND
-DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+DB_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NPC_Counter",_NPCCount)
 AND
 _NPCCount > 6
 AND
@@ -1162,7 +1170,7 @@ HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
 DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
 AND
-DB_ObjectCountHelper(_Performer,"CRIME_MusicalPerformance_NPCs",_NPCCount)
+DB_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NPC_Counter",_NPCCount)
 AND
 _NPCCount > 6
 AND
@@ -1264,9 +1272,23 @@ QRY_CalcUniquePerformanceRewardBase_EmbersLute((CHARACTER)_Performer,(STRING)_St
 AND
 DB_PerformanceRewardUnique_StatusModifier_EmbersLute(_Status,_Modifier)
 AND
-IntegerMin(_NPCCount,30,_NPCModifier)
+GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
-IntegerSum(_Modifier,_NPCModifier,_Base)
+IntegerDivide(_Charges,2,_ShowmanshipBonus)
+AND
+IntegerMin(_ShowmanshipBonus,10,_ShowmanshipBonusCapped)
+AND
+IntegerMin(_NPCCount,10,_CrowdBonus)
+AND
+DB_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NoReward_Counter",_PityCount)
+AND
+IntegerMin(_PityCount,40,_PityCapped)
+AND
+IntegerSum(_Modifier,_ShowmanshipBonusCapped,_BaseA)
+AND
+IntegerSum(_BaseA,_CrowdBonus,_BaseB)
+AND
+IntegerSum(_BaseB,_PityCapped,_Base)
 THEN
 DB_PerformanceRewardUnique_Base_Out_EmbersLute(_Performer,_Base);
 
@@ -1312,6 +1334,7 @@ DB_PerformanceRewardUnique_StoryConditionMet_EmbersLute(_SelectedReward,_Flag)
 THEN
 DB_NOOP(1);
 
+// Successful roll path
 PROC
 PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
 AND
@@ -1334,8 +1357,50 @@ THEN
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
 NOT DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index);
+PROC_ObjectCountHelperReset(_Performer,"EMLUTE_MusicalPerformance_NoReward_Counter");
 ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
 
+// Unsuccessful path (fail roll)
+PROC
+PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
+AND
+DB_PartOfTheTeam(_Performer)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59,0)
+AND
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+AND
+DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_DC)
+AND
+GetLevel(_Performer,_CharLevel)
+AND
+_CharLevel >= _MinLevel
+AND
+Random(_DC,_Roll)
+AND
+_Roll >= _Base
+THEN
+PROC_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NoReward_Counter",5);
+
+// Unsuccessful path (do not meet level requirements)
+PROC
+PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
+AND
+DB_PartOfTheTeam(_Performer)
+AND
+IsTagged(_Performer,(TAG)EMLUTE_CONFIG_EASYREWARDS_ON_5004840b-4cfd-4c82-b180-7ab7a600ed59,0)
+AND
+NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
+AND
+DB_PerformanceRewardUnique_EmbersLute(_Index,_ItemRoot,_MinLevel,_DC)
+AND
+GetLevel(_Performer,_CharLevel)
+AND
+_CharLevel < _MinLevel
+THEN
+PROC_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NoReward_Counter",5);
+
+// Successful path (easy mode is enabled, skips level requirements)
 PROC
 PROC_DoUniquePerformanceReward_Roll_EmbersLute((CHARACTER)_Performer,(INTEGER)_Index,(INTEGER)_Base)
 AND
@@ -1350,6 +1415,7 @@ THEN
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
 DB_PerformanceRewardUnique_GiveTo_EmbersLute(_Performer,_ItemRoot,_Index);
 NOT DB_PerformanceRewardUnique_Remaining_EmbersLute(_Index);
+PROC_ObjectCountHelperReset(_Performer,"EMLUTE_MusicalPerformance_NoReward_Counter");
 ObjectTimerLaunch(_Performer,"EMLUTE_PerformanceGiftTimer",1500);
 
 IF
@@ -1972,6 +2038,18 @@ AND
 DB_PerformanceRewardUnique_Given_EmbersLute(_Index)
 THEN
 NOT DB_PerformanceRewardUnique_Given_EmbersLute(_Index);
+
+PROC
+PROC_ResetUniqueRewards_EmbersLute()
+AND
+DB_PartOfTheTeam(_Performer)
+THEN
+PROC_ObjectCountHelperReset(_Performer,"EMLUTE_MusicalPerformance_NoReward_Counter");
+
+PROC
+PROC_ResetUniqueRewards_EmbersLute()
+THEN
+PROC_SetupUniqueRewardsRemaining_EmbersLute();
 //END_REGION
 
 // Bugfix to re-enable the busking achievement when using custom performances

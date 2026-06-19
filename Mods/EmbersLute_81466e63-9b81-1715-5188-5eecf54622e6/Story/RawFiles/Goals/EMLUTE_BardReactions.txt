@@ -1125,7 +1125,7 @@ GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
 _Charges > 9
 AND
-_Charges < 20
+_Charges < 16
 AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_GREAT",0)
 THEN
@@ -1142,15 +1142,15 @@ DB_PartOfTheTeam(_Performer)
 AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
-DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
+DB_BardReactions_MusicalPerformance_Emlute(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
 AND
 DB_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NPC_Counter",_NPCCount)
 AND
-_NPCCount > 6
+_NPCCount > 5
 AND
 GetStatusTurns(_Performer,"EMLUTE_PERFORM_POSITIVE_CHARGE",_Charges)
 AND
-_Charges > 19
+_Charges > 15
 AND
 _Charges < 30
 AND
@@ -1169,7 +1169,7 @@ DB_PartOfTheTeam(_Performer)
 AND
 HasActiveStatus(_Performer,"EMLUTE_PERFORM_POSITIVE_STACK",1)
 AND
-DB_CRIME_MusicalPerformance(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
+DB_BardReactions_MusicalPerformance_Emlute(_ID,(CHARACTER)_Performer,"MusicalPerformance_Good_Emlute")
 AND
 DB_ObjectCountHelper(_Performer,"EMLUTE_MusicalPerformance_NPC_Counter",_NPCCount)
 AND

@@ -52,7 +52,7 @@ data "StatusType" "BOOST"
 using "EMLUTE_PERFORM_POSITIVE_GOOD"
 data "DisplayName" "hea46e979gdb78g9578gf611gebe08665b1bc;1"
 data "Description" "h8312bc21g0fc9g6b14g53e1gdaa9c773256d;2"
-data "DescriptionParams" "7:20"
+data "DescriptionParams" "6:15"
 data "FormatColor" "Gold"
 
 new entry "EMLUTE_PERFORM_POSITIVE_DANGEROUS"

@@ -65,7 +65,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea46e979gdb78g9578gf611gebe08665b1bc" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8312bc21g0fc9g6b14g53e1gdaa9c773256d" version="2" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Gold" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="7:20" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="6:15" />
       </fields>
     </stat_object>
     <stat_object color="#FF068C41" is_substat="false">

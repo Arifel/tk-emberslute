@@ -136,14 +136,46 @@ KBSECTION
 IF
 LevelGameplayStarted(_,0)
 THEN
-PROC_ResetActivePerformanceState_EmbersLute();
-PROC_CleanUpFailsafe_EmbersLute();
+PROC_StopPerformanceAndCleanUp_EmbersLute();
 
 IF
 LongRestStarted()
 THEN
+PROC_StopPerformanceAndCleanUp_EmbersLute();
+
+// Auto-end performance on teleporting (not sure if counts as move)
+IF
+Teleported((CHARACTER)_Performer,_,_,_,_,_,_,_,_)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Event,_StopEvent,_MusicStatus,_Duration)
+AND
+HasActiveStatus(_Performer,_MusicStatus,1)
+THEN
+RemoveStatus(_Performer,_MusicStatus);
+
+PROC
+PROC_StopPerformanceAndCleanUp_EmbersLute()
+THEN
+PROC_StopAnyActivePerformance_EmbersLute();
+// Make sure we leave enough time for the performance to end gracefully first
+// The next clean up is only a fallback, and should have nothing to do
+TimerLaunch("CleanUpSpecialActivePerformance_Emlute_Timer", 3000);
+IF
+TimerFinished("CleanUpSpecialActivePerformance_Emlute_Timer")
+THEN
 PROC_ResetActivePerformanceState_EmbersLute();
 PROC_CleanUpFailsafe_EmbersLute();
+
+PROC
+PROC_StopAnyActivePerformance_EmbersLute()
+AND
+DB_PartOfTheTeam((CHARACTER)_Performer)
+AND
+DB_SpecialPerformance_EmbersLute(_Song,_Event,_StopEvent,_MusicStatus,_Duration)
+AND
+HasActiveStatus(_Performer,_MusicStatus,1)
+THEN
+RemoveStatus(_Performer,_MusicStatus);
 
 // We use this status as another way of catching any custom
 // objects or characters we may have otherwise lost track of.
@@ -255,6 +287,7 @@ DebugText(_Performer,"Removing performing status");
 ObjectTimerCancel(_Performer,_Song);
 PROC_StopSpecialPerformance_EmbersLute(_Performer,_Song,_StopEvent);
 
+// We stop the performance automatically if it reaches full song duration
 IF
 ObjectTimerFinished((CHARACTER)_Performer,_TimerName)
 AND

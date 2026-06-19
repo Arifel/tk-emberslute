@@ -681,7 +681,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h903b97c6gcd59g3445gabddge3af2a6e2b16" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Action_ConfigManager" />
         <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Black" enumeration_type_name="FormatStringColor" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING);Tag(EMLUTE_SHEETMUSIC_LEARNT_FINALACT);Tag(EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN);Tag(EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG);Tag(EMLUTE_SHEETMUSIC_LEARNT_THEPOWER);Tag(EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN);Tag(EMLUTE_SHEETMUSIC_LEARNT_WELIVE);Tag(EMLUTE_SHEETMUSIC_LEARNT_THEPOWERORCHESTRAL);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(EMLUTE_SHEETMUSIC_LEARNT_ENDLESSSPRING);Tag(EMLUTE_SHEETMUSIC_LEARNT_FINALACT);Tag(EMLUTE_SHEETMUSIC_LEARNT_FUNERALHYMN);Tag(EMLUTE_SHEETMUSIC_LEARNT_LURINGSONG);Tag(EMLUTE_SHEETMUSIC_LEARNT_THEPOWER);Tag(EMLUTE_SHEETMUSIC_LEARNT_WEEPINGDAWN);Tag(EMLUTE_SHEETMUSIC_LEARNT_WELIVE);Tag(EMLUTE_SHEETMUSIC_LEARNT_THEPOWERORCHESTRAL);Tag(EMLUTE_SHEETMUSIC_LEARNT_STREETSANDFACES);Tag(EMLUTE_SHEETMUSIC_LEARNT_NEWLIGHT);Tag(EMLUTE_SHEETMUSIC_LEARNT_SKINNYSHART);Tag(EMLUTE_SHEETMUSIC_LEARNT_DAISYREVEAL);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>

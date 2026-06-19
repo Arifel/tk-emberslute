@@ -212,6 +212,15 @@ THEN
 PROC_BardReactions_Reset_EmbersLute();
 PROC_ResetCrimes_EmbersLute();
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_3_n_BardReactionsHousekeeping",1);
+IF
+SavegameLoaded()
+AND
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_3_n_BardReactionsHousekeeping",_)
+AND
+DB_BardReactions_MusicalPerformance_Emlute(_,_,"MusicalPerformance_Good_Emlute")
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_3_n_BardReactionsHousekeeping",0);
+
 //END_REGION
 
 //REGION V3.0.4
@@ -295,34 +304,54 @@ DB_NOOP(1);
 //END_REGION
 
 //REGION V3.0.5
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",_)
+AND
+NOT DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
+THEN
+DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",1);
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",_)
+AND
+DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",0);
+
 // Auto-remove the Share Musical Gifts status on all party members
 IF
 SavegameLoaded()
 AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_TempMusicSpirit",_)
 AND
+NOT DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
+AND
 DB_PartOfTheTeam(_Character)
 AND
 HasActiveStatus(_Character,"EMLUTE_MUSICAL_SPIRIT_TEMPORARY",1)
 THEN
 RemoveStatus(_Character,"EMLUTE_MUSICAL_SPIRIT_TEMPORARY");
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements",1);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_TempMusicSpirit",1);
 IF
 SavegameLoaded()
 AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_TempMusicSpirit",_)
 AND
-DB_PartOfTheTeam(_Character)
-AND
-HasActiveStatus(_Character,"EMLUTE_MUSICAL_SPIRIT_TEMPORARY",0)
+DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
 THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements",0);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_TempMusicSpirit",0);
 
 // Auto-remove performing statuses if in combat
 IF
 SavegameLoaded()
 AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",_)
+AND
+NOT DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
 THEN
 TimerLaunch("RemovePerformIfDetectAura_EmbersLute_Timer",1000);
 TimerLaunch("RemoveEquippedWings_EmbersLute_Timer",900);
@@ -332,6 +361,8 @@ IF
 SavegameLoaded()
 AND
 NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",_)
+AND
+DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_StabilityImprovements_AuraClash",0);
 
@@ -358,24 +389,6 @@ AND
 DB_DLC_DivinitySongPack_InstrumentSpells_EmbersLute((TAG)EMLUTE_COMBAT_MODE_e4e561b2-7fa9-4c52-9e5f-bb8e995bc31f,"Shout_Bard_Perform_DoS2_1_Combat_Emlute")
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_CombatSpellTypoFix",0);
-
-IF
-SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",_)
-AND
-NOT DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
-THEN
-DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15);
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",1);
-IF
-SavegameLoaded()
-AND 
-NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",_)
-AND
-DB_OneTimeRewards_EmbersLute(95,(ITEMROOT)Emlute_Book_Version_3_0_5_ChangeLog_f7b2c630-c127-4031-9711-882105d10b15)
-THEN
-DB_PatchApplied_Marker_EmbersLute("EML_v3_0_5_n_ChangeLogBook",0);
 //END_REGION
 
 //REGION V3.1.0
@@ -388,7 +401,7 @@ AND
 NOT DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000)
 THEN
 PROC_ResetAndRecreateSpecialPerformanceFacts_EmbersLute();
-PROC_ResetBardReactionFacts_EmbersLute();
+PROC_ResetAndRecreateBardReactionFacts_EmbersLute();
 DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_MorePerformableMusic",1);
 IF
 SavegameLoaded()
@@ -398,6 +411,25 @@ AND
 DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000)
 THEN
 DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_MorePerformableMusic",0);
+
+// Add new container location for uninstaller
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_NewSheetMusicLocation",_)
+AND
+NOT DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Wood_A_000_dd1992e0-4efe-455f-98ef-b8a19ff8569b)
+THEN
+DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Wood_A_000_dd1992e0-4efe-455f-98ef-b8a19ff8569b);
+DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_NewSheetMusicLocation",1);
+IF
+SavegameLoaded()
+AND 
+NOT DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_NewSheetMusicLocation",_)
+AND
+DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Wood_A_000_dd1992e0-4efe-455f-98ef-b8a19ff8569b)
+THEN
+DB_PatchApplied_Marker_EmbersLute("EML_v3_1_0_n_NewSheetMusicLocation",0);
 //END_REGION
 
 //REGION remove combat music performance (helpers)
@@ -1126,13 +1158,13 @@ DB_SpecialPerformance_EmbersLute("Bard_Perform_WaterQueen","SE_CTY_WaterQueensHo
 DB_SpecialPerformance_EmbersLute("Bard_Perform_EndlessSpring","EPI_BardScripted_Endless_Spring","","EMLUTE_PERFORM_ENDLESSSPRING",282500);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_FinalAct","RaphaelsFinalAct","","EMLUTE_PERFORM_FINALACT",274000);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerVocals","Credits_menu_Enter","","EMLUTE_PERFORM_THEPOWERVOCALS",230500);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",273000);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerOrchestral","CharacterCreation_Theme_Start","","EMLUTE_PERFORM_THEPOWERORCHESTRAL",279500);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_SkinnyShart","CAMP_Shadowheart_SkinnyDipping_Music_Enter","","EMLUTE_PERFORM_SKINNYSHART",999999);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_DaisyReveal","CAMP_DaisyIntro_AvD_Music_Enter","","EMLUTE_PERFORM_DAISYREVEAL",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_WeLive","EPI_BardScripted_CamBard_We_Live_Another_Day","","EMLUTE_PERFORM_WELIVE",267000);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_ThePowerOrchestral","CharacterCreation_Theme_Start","","EMLUTE_PERFORM_THEPOWERORCHESTRAL",277500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_SkinnyShart","CAMP_Shadowheart_SkinnyDipping_Music_Enter","","EMLUTE_PERFORM_SKINNYSHART",235500);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_DaisyReveal","CAMP_DaisyIntro_AvD_Music_Enter","","EMLUTE_PERFORM_DAISYREVEAL",84000);
 DB_SpecialPerformance_EmbersLute("Bard_Perform_Incubus","LOW_HouseOfHope_ROM_Incubus_Music_Enter","","EMLUTE_PERFORM_INCUBUS",999999);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_NewLight","EPI_BardScripted_CampBard_New_Light","","EMLUTE_PERFORM_NEWLIGHT",999999);
-DB_SpecialPerformance_EmbersLute("Bard_Perform_StreetsAndFaces","EPI_BardScripted_CampBard_Streets_and_Faces","","EMLUTE_PERFORM_STREETSANDFACES",999999);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_NewLight","EPI_BardScripted_CampBard_New_Light","","EMLUTE_PERFORM_NEWLIGHT",139000);
+DB_SpecialPerformance_EmbersLute("Bard_Perform_StreetsAndFaces","EPI_BardScripted_CampBard_Streets_and_Faces","","EMLUTE_PERFORM_STREETSANDFACES",157000);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_WeepingDawn",(GUIDSTRING)SE_DEN_TieflingBard_Bard_a01d680e-75ff-e25b-a854-b633b01dc4e3,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_06852a82-79e4-616c-3bb9-b91e029e7d2f,1);
 DB_SpecialPerformance_Mapping_EmbersLute("Bard_Perform_HarpySong",(GUIDSTRING)SE_DEN_Harpy_Music_Close_Enter_603f95a8-99da-6ada-45f8-cf45f7931033,2);

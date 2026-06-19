@@ -405,6 +405,7 @@ DB_BardReactions_Status_Emlute(_Status,_DisturbanceName,"OnStatusApply")
 AND
 CrimeGetNewID(_ID)
 THEN
+DebugText(_Performer,"Starting new crowd reaction");
 DB_BardReactions_MusicalPerformance_Emlute(_ID,_Performer,_DisturbanceName);
 PROC_ObjectCountHelperReset(_Performer,"EMLUTE_MusicalPerformance_NPC_Counter");
 PROC_CharacterRegisterCrime(_Performer,_DisturbanceName,_Performer,NULL_00000000-0000-0000-0000-000000000000,_ID);

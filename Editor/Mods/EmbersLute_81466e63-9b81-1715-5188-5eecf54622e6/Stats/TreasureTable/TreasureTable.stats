@@ -1013,6 +1013,16 @@
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FF66CDAA" is_substat="true">
+      <fields>
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c8fa67d5-fb34-4b80-a08c-1a395e38ec46" />
+        <field name="UUID" type="IdTableFieldDefinition" value="dd99febf-f01d-4653-b570-b22ee754786b" />
+        <field name="Name" type="NameTableFieldDefinition" value="c8fa67d5-fb34-4b80-a08c-1a395e38ec46_substat_3" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF6A5ACD" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9bf3f395-8ac4-4cb2-9320-650bd07c79a4" />
@@ -1070,6 +1080,36 @@
         <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
         <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_FINALACT" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7B68EE" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f511da49-4e36-47bc-81d8-b6bb70e0ec20" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_Elfsong_Barkeep" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_DAISYREVEAL" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7B68EE" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6230492e-87c0-4348-8633-d74f4b98f80e" />
+        <field name="Name" type="NameTableFieldDefinition" value="LOW_Mohan" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_STREETSANDFACES" />
+        <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF7B68EE" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3babaf78-830b-4a00-9128-a35079c9c5e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="HAV_TavernTrapped_Chest" />
+        <field name="CanMerge" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="DropCount" type="StringTableFieldDefinition" value="1,1" />
+        <field name="ObjectCategory" type="StringTableFieldDefinition" value="I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT" />
         <field name="Frequency" type="IntegerTableFieldDefinition" value="1" />
       </fields>
     </stat_object>

@@ -6339,8 +6339,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="66c1ee74-05bd-4d7a-93f4-8eabf167c27f" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="1.5" />
-                        <keyframe time="1" value="1.5" />
+                        <keyframe time="0" value="1" />
+                        <keyframe time="1" value="1" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -6926,14 +6926,14 @@
                   <rampchanneldata>
                     <rampchannel type="FreeTangentSpline" id="a462b01f-d4af-43eb-ab78-fcb71bc19075" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="0.3180642" />
-                        <keyframe time="0.05278911" value="0.576129" is_control_point="True" />
-                        <keyframe time="0.07315744" value="-0.0199993" is_control_point="True" />
-                        <keyframe time="0.1648905" value="-0.02" />
-                        <keyframe time="0.2566235" value="-0.0199993" is_control_point="True" />
-                        <keyframe time="0.5392985" value="-0.08451539" is_control_point="True" />
-                        <keyframe time="0.5827881" value="-0.02" />
-                        <keyframe time="0.6262776" value="0.04451681" is_control_point="True" />
+                        <keyframe time="0" value="0.35" />
+                        <keyframe time="0.05278911" value="0.6080648" is_control_point="True" />
+                        <keyframe time="0.07315744" value="-0.0499993" is_control_point="True" />
+                        <keyframe time="0.1648905" value="-0.05" />
+                        <keyframe time="0.2566235" value="-0.0499993" is_control_point="True" />
+                        <keyframe time="0.5392985" value="-0.1145154" is_control_point="True" />
+                        <keyframe time="0.5827881" value="-0.05" />
+                        <keyframe time="0.6262776" value="0.01451681" is_control_point="True" />
                         <keyframe time="0.7194558" value="0.06" is_control_point="True" />
                         <keyframe time="1" value="0.06" />
                       </keyframes>
@@ -7909,8 +7909,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="66c1ee74-05bd-4d7a-93f4-8eabf167c27f" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="1.5" />
-                        <keyframe time="1" value="1.5" />
+                        <keyframe time="0" value="1" />
+                        <keyframe time="1" value="1" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -8496,14 +8496,14 @@
                   <rampchanneldata>
                     <rampchannel type="FreeTangentSpline" id="a462b01f-d4af-43eb-ab78-fcb71bc19075" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="0.3180642" />
-                        <keyframe time="0.05278911" value="0.576129" is_control_point="True" />
-                        <keyframe time="0.07315744" value="-0.0199993" is_control_point="True" />
-                        <keyframe time="0.1648905" value="-0.02" />
-                        <keyframe time="0.2566235" value="-0.0199993" is_control_point="True" />
-                        <keyframe time="0.5392985" value="-0.08451539" is_control_point="True" />
-                        <keyframe time="0.5827881" value="-0.02" />
-                        <keyframe time="0.6262776" value="0.04451681" is_control_point="True" />
+                        <keyframe time="0" value="0.35" />
+                        <keyframe time="0.05278911" value="0.6080648" is_control_point="True" />
+                        <keyframe time="0.07315744" value="-0.0499993" is_control_point="True" />
+                        <keyframe time="0.1648905" value="-0.05" />
+                        <keyframe time="0.2566235" value="-0.0499993" is_control_point="True" />
+                        <keyframe time="0.5392985" value="-0.1145154" is_control_point="True" />
+                        <keyframe time="0.5827881" value="-0.05" />
+                        <keyframe time="0.6262776" value="0.01451681" is_control_point="True" />
                         <keyframe time="0.7194558" value="0.06" is_control_point="True" />
                         <keyframe time="1" value="0.06" />
                       </keyframes>

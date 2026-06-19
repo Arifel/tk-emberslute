@@ -223,6 +223,8 @@ new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_THEPOWER",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_WEEPINGDAWN",1,0,0,0,0,0,0,0
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT",1,0,0,0,0,0,0,0
 new treasuretable "DEN_Harpy_Nest"
 CanMerge 1
 new subtable "1,1"
@@ -247,3 +249,15 @@ new treasuretable "LOW_Legendary_HoH_Treasure"
 CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_FINALACT",1,0,0,0,0,0,0,0
+new treasuretable "LOW_Elfsong_Barkeep"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_DAISYREVEAL",1,0,0,0,0,0,0,0
+new treasuretable "LOW_Mohan"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_STREETSANDFACES",1,0,0,0,0,0,0,0
+new treasuretable "HAV_TavernTrapped_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT",1,0,0,0,0,0,0,0

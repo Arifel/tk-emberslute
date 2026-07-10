@@ -199,6 +199,8 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePower" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h38e91361g3a50g5810g8826gbc947c46d09b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1b1220eeg6da4gb74dgfc22g493d39354700" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -219,6 +221,8 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_BardDance" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9ede156dg1058g8075gbdc5ge04b7b0fa94e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5895a58egb355g78f7gba6eg4ba3952f4a09" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -239,6 +243,8 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_Stargazing" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1031eb44ga772g2276gc032g60c0a72efc8a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4a495bb3gebcegba4bg0476g4640e3e7c216" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -259,6 +265,8 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_MainTheme" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7bb9c99bgc0e0g07fdg1eeag134068b5d2cf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7f934282gb498g701cg7839g0c3e35e2d1d7" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -279,6 +287,8 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_SingForMe" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c7576e0g20a1gc247ge702g8fa148d65d01" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdc5a8c73g1b1eg45d3g7669ga31060575417" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FF4169E1" is_substat="false">
@@ -299,6 +309,8 @@
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ca312dc4-39cb-4423-b535-92a6540818ff" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_QueensHighSeas" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h97b7ac05g38bag9db4gd7ceg60ae7d291119" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0bfa79fbg19d4g9ca7gebdbg7b88d82be99c" version="1" />
       </fields>
     </stat_object>
     <stat_object color="#FFFF00FF" is_substat="false">
@@ -702,7 +714,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c2cfa0b3-f25d-4e7f-8a9b-c1d2e3f4a5b6" />
         <field name="Name" type="NameTableFieldDefinition" value="EMLUTE_PERFORM_INCUBUS_NO_AURA" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b1befca2-e14c-4d6e-7f8a-9bc1d2e3f4a5" />
-        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="Performing1" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="EMLUTE_PERFORM_SPRITES" />
@@ -756,6 +768,11 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_ThePower" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="775cb6f2-1d40-4fbf-acf9-f9b0dd418b5c" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -772,6 +789,11 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_BardDance" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2fd2c916-8fbe-4368-9e22-858d8bf13077" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -788,6 +810,11 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_Stargazing" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="beba0c2f-915b-40ef-8d75-78dd062daeaf" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -805,6 +832,10 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_MainTheme" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8131ef73-a095-4e3f-ad6a-0655005d2dc9" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -822,6 +853,10 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_SingForMe" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="124a076c-f619-4906-8df9-6cf97bbfac81" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF3C24D1" is_substat="false">
@@ -839,6 +874,10 @@
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="PerformEventName" type="StringTableFieldDefinition" value="Bard_Perform_QueensHighSeas" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Instrument" enumeration_type_name="StatusSheathing" version="1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="11d612dd-1f83-4c1f-a85b-346d15721dc7" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Pink" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" clear_inherited_value="true" color="#FFFF0000" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF0C0C7D" is_substat="false">

@@ -60,6 +60,7 @@ DB_PopulatedWorldContainers_EmbersLute((ITEM)S_DEN_HarpyNest_a5c87ab6-b38b-4c2b-
 DB_PopulatedWorldContainers_EmbersLute((ITEM)S_MOO_EntranceGhoul_003_019af169-5366-4a1f-8392-35df658b2e8e);
 DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Jewel_A_Small_A_000_070a769c-6ca8-4e31-a387-7bf95eb21041);
 DB_PopulatedWorldContainers_EmbersLute((ITEM)CONT_GEN_Chest_Wood_A_000_dd1992e0-4efe-455f-98ef-b8a19ff8569b);
+DB_PopulatedWorldContainers_EmbersLute((ITEM)S_LOW_PhilgravesMansion_AncientLairObject_002_f721addc-feed-494e-b2d2-94da197daf3c);
 
 
 

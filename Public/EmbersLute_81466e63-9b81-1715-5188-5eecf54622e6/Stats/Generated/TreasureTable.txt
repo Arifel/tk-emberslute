@@ -134,15 +134,15 @@ object category "I_EMBERS_LUTE_SHEETMUSIC_FINALACT",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_EMBERS_LUTE_SHEETMUSIC_WELIVE",0,0,0,0,0,0,0,0
+object category "I_EMBERS_LUTE_SHEETMUSIC_WELIVE",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_STREETSANDFACES",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_EMBERS_LUTE_SHEETMUSIC_THEPOWERORCHESTRAL",0,0,0,0,0,0,0,0
+object category "I_EMBERS_LUTE_SHEETMUSIC_THEPOWERORCHESTRAL",1,0,0,0,0,0,0,0
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_DAISYREVEAL",1,0,0,0,0,0,0,0
 new subtable "1,1"
-object category "I_EMBERS_LUTE_SHEETMUSIC_SKINNYSHART",0,0,0,0,0,0,0,0
+object category "I_EMBERS_LUTE_SHEETMUSIC_SKINNYSHART",1,0,0,0,0,0,0,0
 new treasuretable "EMLUTE_Chest_Content_Spoilers_Rewards"
 new subtable "1,1"
 object category "I_EMBERS_LUTE_REWARD_SPIN_SLIPPERS",1,0,0,0,0,0,0,0
@@ -261,3 +261,15 @@ new treasuretable "HAV_TavernTrapped_Chest"
 CanMerge 1
 new subtable "1,1"
 object category "I_EMBERS_LUTE_SHEETMUSIC_NEWLIGHT",1,0,0,0,0,0,0,0
+new treasuretable "WYR_SharessCaress_Bartender_Trade_Potent"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_SKINNYSHART",1,0,0,0,0,0,0,0
+new treasuretable "LOW_Streets_MyCabbage_Trader"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_THEPOWERORCHESTRAL",1,0,0,0,0,0,0,0
+new treasuretable "LOW_MysticCarrion_Hoard_Chest"
+CanMerge 1
+new subtable "1,1"
+object category "I_EMBERS_LUTE_SHEETMUSIC_WELIVE",1,0,0,0,0,0,0,0

@@ -494,7 +494,7 @@ DB_BardReactions_MusicalPerformance_Emlute(_CrimeID,_Performer,"MusicalPerforman
 AND
 QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
 AND
-Random(2500,_RndOut)
+Random(3500,_RndOut)
 AND
 IntegerSum(500,_RndOut,_RndDelay)
 THEN
@@ -530,8 +530,29 @@ ApplyStatus(_NPC,"EMLUTE_LISTENING_TO_MUSIC",12.0);  // temporarily forces strol
 UseSpellAtPosition(_NPC,"Projectile_ListenToMusic_Emlute",_X,_Y,_Z,0);
 //UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,0);
 
+// Once the NPC is in range, we then have them "cast" another spell to reposition
 IF
 CastedSpell((CHARACTER)_NPC,"Projectile_ListenToMusic_Emlute",_,_,_)
+AND
+Random(1500,_RndOut)
+AND
+IntegerSum(500,_RndOut,_RndDelay)
+THEN
+ObjectTimerLaunch(_NPC,"BardReactions_RepositionToPerformer_Timer_EmbersLute",_RndDelay);
+
+IF
+ObjectTimerFinished((CHARACTER)_NPC,"BardReactions_RepositionToPerformer_Timer_EmbersLute")
+AND
+DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
+AND
+QRY_Helper_GetAnyRandomPositionInArea(_NPC,_Performer)
+AND
+DB_Helper_GetAnyRandomPositionInArea_Result(_X,_Y,_Z)
+THEN
+UseSpellAtPosition(_NPC,"Projectile_ListenToMusic_Reposition_Emlute",_X,_Y,_Z,0);
+
+IF
+CastedSpell((CHARACTER)_NPC,"Projectile_ListenToMusic_Reposition_Emlute",_,_,_)
 AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
 THEN
@@ -565,7 +586,9 @@ PROC_BardReactions_CampMode_EmbersLute(_NPC);
 //END_REGION
 
 // Helper for locating a random spot near performer
+// Goal is to stop NPCs choosing the same location and stacking
 //REGION 
+
 QRY
 QRY_Performer_GetNearRandomPosition_EmbersLute((GUIDSTRING)_Char, (GUIDSTRING)_Target)
 AND
@@ -573,12 +596,35 @@ DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z)
 THEN
 NOT DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z);
 
+// yey for maths with orisis, hope u like vertical scrolling
+// this looks complicated, but it's actually just very simply adding 
+// jitter to the X and Z coords (in the most verbose way possible)
 QRY
 QRY_Performer_GetNearRandomPosition_EmbersLute((GUIDSTRING)_Char, (GUIDSTRING)_Target)
 AND
-GetPosition(_Target, _X, _Y, _Z)
+GetPosition(_Target, _TX, _TY, _TZ)
 AND
-FindValidPosition(_X, _Y, _Z, 5.0, _Char, 1, _ValidX, _ValidY, _ValidZ)
+Random(400, _RndX)
+AND
+IntegerToReal(_RndX, _RealRndX)
+AND
+RealDivide(_RealRndX, 100.0, _ScaledRndX)
+AND
+RealSum(_TX, _ScaledRndX, _SumX)
+AND
+RealSubtract(_SumX, 2.0, _JitterX)
+AND
+Random(400, _RndY)
+AND
+IntegerToReal(_RndY, _RealRndY)
+AND
+RealDivide(_RealRndY, 100.0, _ScaledRndY)
+AND
+RealSum(_TY, _ScaledRndY, _SumY)
+AND
+RealSubtract(_SumY, 2.0, _JitterY)
+AND
+FindValidPosition(_JitterX, _JitterY, _TZ, 4.0, _Char, 1, _ValidX, _ValidY, _ValidZ)
 THEN
 DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_ValidX, _ValidY, _ValidZ);
 
@@ -587,9 +633,29 @@ QRY_Performer_GetNearRandomPosition_EmbersLute((GUIDSTRING)_Char, (GUIDSTRING)_T
 AND
 NOT DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_, _, _)
 AND
-GetPosition(_Target, _X, _Y, _Z)
+GetPosition(_Target, _TX, _TY, _TZ)
+AND
+Random(400, _RndX)
+AND
+IntegerToReal(_RndX, _RealRndX)
+AND
+RealDivide(_RealRndX, 100.0, _ScaledRndX)
+AND
+RealSum(_TX, _ScaledRndX, _SumX)
+AND
+RealSubtract(_SumX, 2.0, _JitterX)
+AND
+Random(400, _RndY)
+AND
+IntegerToReal(_RndY, _RealRndY)
+AND
+RealDivide(_RealRndY, 100.0, _ScaledRndY)
+AND
+RealSum(_TY, _ScaledRndY, _SumY)
+AND
+RealSubtract(_SumY, 2.0, _JitterY)
 THEN
-DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z);
+DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_JitterX, _JitterY, _TZ);
 //END_REGION
 
 // Crowd and showmanship counters for NPCs

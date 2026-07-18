@@ -112,8 +112,6 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d35c1e87-8654-44da-99c9-f3241ed68bf9" />
         <field name="Name" type="NameTableFieldDefinition" value="ListenToMusic_Emlute" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="2664f517-e811-4a45-a5c7-b382451c94f3" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="EmbersLute_Spell_ShakeTheLute" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h607e06e9ged47g9963g0d7bg5475021182d7" version="1" />
@@ -125,6 +123,16 @@
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="2f8023d3-c51d-4a2d-922b-4954ea410d72" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreSourceBounds;RangeIgnoreTargetBounds;RangeIgnoreVerticalThreshold;RangeIgnoreBlindness;IgnoreSilence;IgnoreVisionBlock" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ae58a580-ea12-4483-8a01-75efa23f90fa" />
+        <field name="Name" type="NameTableFieldDefinition" value="ListenToMusic_Reposition_Emlute" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d35c1e87-8654-44da-99c9-f3241ed68bf9" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="4" />
       </fields>
     </stat_object>
     <stat_object color="#FFD2691E" is_substat="false">

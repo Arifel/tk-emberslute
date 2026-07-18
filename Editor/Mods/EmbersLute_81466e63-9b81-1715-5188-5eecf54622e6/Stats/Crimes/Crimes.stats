@@ -7,8 +7,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="MusicalPerformance_Good_Emlute" />
         <field name="TensionWeight" type="IntegerTableFieldDefinition" value="5" />
         <field name="Lifetime" type="FloatTableFieldDefinition" value="10000" />
-        <field name="DetectionRange" type="FloatTableFieldDefinition" value="20" />
-        <field name="AudibleRange" type="FloatTableFieldDefinition" value="20" />
+        <field name="DetectionRange" type="FloatTableFieldDefinition" value="25" />
+        <field name="AudibleRange" type="FloatTableFieldDefinition" value="25" />
         <field name="Audible" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="DisturbanceYesNoIgnoreStats" version="1" />
         <field name="Continuous" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
         <field name="ContinuousDelayTimer" type="FloatTableFieldDefinition" value="0.01" />

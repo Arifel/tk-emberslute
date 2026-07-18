@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="400"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="Crime">
         <node id="root">
             <children>
                 <node id="Crime">
                     <attribute id="Audible" type="uint8" value="1"/>
-                    <attribute id="AudibleRange" type="float" value="20"/>
+                    <attribute id="AudibleRange" type="float" value="25"/>
                     <attribute id="Continuous" type="uint8" value="1"/>
                     <attribute id="ContinuousDelayTimer" type="float" value="0.0099999998"/>
                     <attribute id="CreatesCrimescene" type="uint8" value="0"/>
                     <attribute id="CrimeType" type="LSString" value="MusicalPerformance_Good_Emlute"/>
-                    <attribute id="DetectionRange" type="float" value="20"/>
+                    <attribute id="DetectionRange" type="float" value="25"/>
                     <attribute id="Lifetime" type="float" value="10000"/>
                     <attribute id="MaxInvestigators" type="int32" value="10"/>
                     <attribute id="MergeConditions" type="uint8" value="3"/>

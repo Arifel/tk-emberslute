@@ -521,9 +521,14 @@ AND
 DB_BardReactions_MusicalPerformance_NPCs_Emlute(_CrimeID,_Performer,_NPC)
 AND
 QRY_CanDoActionType_EmbersLute(_Performer,_NPC,"Join")
+AND
+QRY_Performer_GetNearRandomPosition_EmbersLute(_NPC, _Performer)
+AND
+DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z)
 THEN
 ApplyStatus(_NPC,"EMLUTE_LISTENING_TO_MUSIC",12.0);  // temporarily forces stroll speed
-UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,0);
+UseSpellAtPosition(_NPC,"Projectile_ListenToMusic_Emlute",_X,_Y,_Z,0);
+//UseSpell(_NPC,"Projectile_ListenToMusic_Emlute",_Performer,NULL_00000000-0000-0000-0000-000000000000,0);
 
 IF
 CastedSpell((CHARACTER)_NPC,"Projectile_ListenToMusic_Emlute",_,_,_)
@@ -557,6 +562,34 @@ NOT QRY_ReactionsAsBuskingMode_EmbersLute(_Performer)
 THEN
 DB_BardReactions_MusicalPerformance_EndPerformance_Emlute(_Performer,_NPC,"Projectile_EndListenToMusic_Emlute");
 PROC_BardReactions_CampMode_EmbersLute(_NPC);
+//END_REGION
+
+// Helper for locating a random spot near performer
+//REGION 
+QRY
+QRY_Performer_GetNearRandomPosition_EmbersLute((GUIDSTRING)_Char, (GUIDSTRING)_Target)
+AND
+DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z)
+THEN
+NOT DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z);
+
+QRY
+QRY_Performer_GetNearRandomPosition_EmbersLute((GUIDSTRING)_Char, (GUIDSTRING)_Target)
+AND
+GetPosition(_Target, _X, _Y, _Z)
+AND
+FindValidPosition(_X, _Y, _Z, 5.0, _Char, 1, _ValidX, _ValidY, _ValidZ)
+THEN
+DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_ValidX, _ValidY, _ValidZ);
+
+QRY
+QRY_Performer_GetNearRandomPosition_EmbersLute((GUIDSTRING)_Char, (GUIDSTRING)_Target)
+AND
+NOT DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_, _, _)
+AND
+GetPosition(_Target, _X, _Y, _Z)
+THEN
+DB_QRYRTN_Performer_GetNearRandomPosition_EmbersLute(_X, _Y, _Z);
 //END_REGION
 
 // Crowd and showmanship counters for NPCs
